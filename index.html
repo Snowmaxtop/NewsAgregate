@@ -1021,10 +1021,27 @@ document.getElementById('ghSaveBtn').addEventListener('click', async () => {
     return;
   }
   saveGithubConfig({ owner, repo, token });
+
+  const saveBtn = document.getElementById('ghSaveBtn');
+  saveBtn.disabled = true;
+  saveBtn.textContent = 'Connecting…';
+
+  await loadState();                        // pulls existing state if the file already exists
+  if (githubConnected) await saveState();    // creates/updates the file, migrating any local favorites up
+
+  saveBtn.disabled = false;
+  saveBtn.textContent = 'Save & Connect';
+
+  if (!githubConnected) {
+    alert(
+      'Could not connect to GitHub.\n\n' +
+      (syncNoteEl.title || 'Unknown error') +
+      '\n\nCheck: is the username correct, does the repo exist, and does the token have "Contents: Read and write" access to that exact repo?'
+    );
+    return; // keep the modal open so the fields can be fixed
+  }
+
   closeGithubModal();
-  syncNoteEl.textContent = '🐙 connecting…';
-  await loadState();   // pulls existing state if the file already exists
-  await saveState();   // creates/updates the file, migrating any local favorites up
   render();
 });
 
