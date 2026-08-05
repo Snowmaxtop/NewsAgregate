@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISPATCH — Video Game Newswire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14181C;
+    --ink-2:#1B2126;
+    --ink-3:#20272D;
+    --paper:#E9E4D8;
+    --paper-dim:#8B9096;
+    --line:rgba(233,228,216,0.10);
+    --line-strong:rgba(233,228,216,0.22);
+    --gamer:#4C86FF;
+    --industry:#E8A93B;
+    --unread:#FF4B4B;
+    --star:#FFD166;
+    --ok:#4CD97B;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'IBM Plex Sans', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:28px 20px 80px;}
+
+  /* Header */
+  .masthead{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    border-bottom:2px solid var(--line-strong);
+    padding-bottom:14px;
+    margin-bottom:4px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .masthead h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:28px;
+    letter-spacing:0.5px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .masthead h1 .blink{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--ok);
+    box-shadow:0 0 8px var(--ok);
+    animation:pulse 2.2s ease-in-out infinite;
+    flex-shrink:0;
+  }
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
+  .masthead .meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--paper-dim);
+    text-align:right;
+    line-height:1.5;
+  }
+  #syncNote{transition:color .2s ease;cursor:pointer;}
+  #syncNote.connected{color:#7EE787;}
+  #syncNote.error{color:var(--unread);}
+  .gh-settings-btn{
+    background:none;border:1px solid var(--line-strong);color:var(--paper-dim);
+    border-radius:6px;width:28px;height:28px;cursor:pointer;font-size:14px;
+    flex-shrink:0;
+  }
+  .gh-settings-btn:hover{color:var(--paper);border-color:var(--paper);}
+
+  .modal-overlay{
+    display:none;
+    position:fixed;inset:0;background:rgba(0,0,0,0.6);
+    align-items:center;justify-content:center;z-index:200;padding:20px;
+  }
+  .modal-overlay.show{display:flex;}
+  .modal-box{
+    background:var(--ink-2);border:1px solid var(--line-strong);
+    border-radius:12px;padding:26px;max-width:420px;width:100%;
+    max-height:85vh;overflow-y:auto;
+  }
+  .modal-box h2{
+    font-family:'Space Grotesk', sans-serif;font-size:19px;margin:0 0 10px;color:var(--paper);
+  }
+  .modal-note{
+    font-family:'IBM Plex Sans', sans-serif;font-size:13px;color:var(--paper-dim);
+    line-height:1.5;margin:0 0 18px;
+  }
+  .modal-box label{
+    display:block;font-family:'IBM Plex Mono', monospace;font-size:11px;
+    color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.5px;
+    margin-bottom:14px;
+  }
+  .modal-box input{
+    display:block;width:100%;margin-top:6px;
+    background:var(--ink);border:1px solid var(--line-strong);border-radius:6px;
+    padding:9px 10px;color:var(--paper);font-family:'IBM Plex Mono', monospace;font-size:13px;
+    box-sizing:border-box;
+  }
+  .modal-box input:focus{outline:none;border-color:var(--paper-dim);}
+  .modal-hint{
+    font-family:'IBM Plex Sans', sans-serif;font-size:11.5px;color:var(--paper-dim);
+    line-height:1.5;margin:4px 0 20px;
+  }
+  .modal-hint a{color:var(--gamer);}
+  .modal-actions{display:flex;gap:8px;flex-wrap:wrap;}
+  .modal-actions button{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    text-transform:uppercase;padding:9px 14px;border-radius:6px;cursor:pointer;
+    border:1px solid var(--line-strong);background:none;color:var(--paper-dim);
+  }
+  .modal-primary{background:var(--paper) !important;color:var(--ink) !important;font-weight:600;border-color:var(--paper) !important;}
+  .modal-danger:hover{color:var(--unread);border-color:var(--unread);}
+  .modal-cancel:hover{color:var(--paper);border-color:var(--paper);}
+  .mc-link{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.3px;
+    color:var(--paper-dim);
+    text-decoration:none;
+    border:1px solid var(--line-strong);
+    border-radius:999px;
+    padding:6px 12px;
+    white-space:nowrap;
+    transition:all .15s ease;
+  }
+  .mc-link:hover{color:var(--paper);border-color:var(--paper);}
+
+  /* Source legend / status strip */
+  .legend{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    padding:12px 0 16px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:16px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--paper-dim);
+  }
+  .legend .src{display:flex;align-items:center;gap:6px;}
+  .legend .src a{color:inherit;text-decoration:none;}
+  .legend .src a:hover{color:var(--paper);text-decoration:underline;}
+  .legend .mc-link{margin-left:auto;}
+
+  .search-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--ink-2);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:9px 12px;
+    margin-bottom:16px;
+  }
+  .search-icon{font-size:12px;opacity:0.6;flex-shrink:0;}
+  .search-bar{
+    flex:1;
+    background:none;
+    border:none;
+    outline:none;
+    color:var(--paper);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+  }
+  .search-bar::placeholder{color:var(--paper-dim);}
+  .clear-search{
+    background:none;border:none;cursor:pointer;
+    color:var(--paper-dim);font-size:12px;padding:2px 4px;flex-shrink:0;
+  }
+  .clear-search:hover{color:var(--paper);}
+  .legend .dot{width:7px;height:7px;border-radius:50%;background:var(--paper-dim);flex-shrink:0;}
+  .legend .dot.ok{background:var(--ok);box-shadow:0 0 6px var(--ok);}
+  .legend .dot.ai{background:#B98CFF;box-shadow:0 0 6px #B98CFF;}
+  .legend .dot.fail{background:var(--unread);box-shadow:0 0 6px var(--unread);}
+  .legend .dot.pending{background:var(--paper-dim);animation:pulse 1.2s ease-in-out infinite;}
+
+  .legend-key{
+    display:flex;gap:16px;flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;color:var(--paper-dim);
+    margin:-8px 0 16px;
+  }
+  .legend-key span{display:flex;align-items:center;gap:5px;}
+  .legend-key .sw{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+
+  /* Controls */
+  .controls{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .filters{display:flex;gap:6px;flex-wrap:wrap;}
+  .pill{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    padding:7px 12px;
+    border-radius:999px;
+    border:1px solid var(--line-strong);
+    background:transparent;
+    color:var(--paper-dim);
+    cursor:pointer;
+    transition:all .15s ease;
+    white-space:nowrap;
+  }
+  .pill:hover{border-color:var(--paper);color:var(--paper);}
+  .pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .pill .count{opacity:0.6;margin-left:4px;}
+  .actions{display:flex;gap:8px;}
+  .actions button{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    background:none;
+    border:1px solid var(--line-strong);
+    color:var(--paper-dim);
+    padding:7px 10px;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .actions button:hover{border-color:var(--paper);color:var(--paper);}
+
+  .sites-wrap{position:relative;}
+  .sites-btn{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;background:none;
+    border:1px solid var(--line-strong);color:var(--paper-dim);
+    padding:7px 10px;border-radius:6px;cursor:pointer;
+  }
+  .sites-btn:hover{border-color:var(--paper);color:var(--paper);}
+  .sites-btn.active{background:var(--paper);color:var(--ink);border-color:var(--paper);}
+  .sites-dropdown{
+    display:none;flex-direction:column;gap:2px;
+    position:absolute;top:calc(100% + 6px);left:0;
+    background:var(--ink-2);border:1px solid var(--line-strong);border-radius:8px;
+    padding:8px;min-width:200px;z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,0.45);
+    max-height:320px;overflow-y:auto;
+  }
+  .sites-dropdown.show{display:flex;}
+  .sites-dropdown a{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    color:var(--paper);text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;font-size:12px;
+    padding:7px 9px;border-radius:5px;
+  }
+  .sites-dropdown a:hover{background:var(--ink);}
+  .sites-dropdown a .ext-icon{color:var(--paper-dim);font-size:11px;}
+
+  .lang-filters{
+    display:flex;gap:6px;margin-bottom:14px;
+  }
+  .lang-pill{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    padding:6px 11px;border-radius:999px;
+    border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);
+    cursor:pointer;transition:all .15s ease;
+  }
+  .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
+  .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+
+  /* Feed list */
+  .feed{border-top:1px solid var(--line);}
+  .day-sep{
+    display:flex;align-items:center;gap:10px;
+    margin:20px 0 4px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;letter-spacing:1.5px;
+    color:var(--paper-dim);text-transform:uppercase;
+  }
+  .day-sep:first-child{margin-top:6px;}
+  .day-sep::before,.day-sep::after{content:'';flex:1;height:1px;background:var(--line-strong);}
+  .row{
+    display:grid;
+    grid-template-columns:56px 96px 1fr 28px;
+    gap:14px;
+    align-items:start;
+    padding:13px 4px;
+    border-bottom:1px solid var(--line);
+    transition:background .15s ease;
+  }
+  .row.has-thumb{grid-template-columns:56px 96px 72px 1fr 28px;}
+  .row .thumb{
+    width:72px;height:72px;border-radius:6px;overflow:hidden;
+    background:var(--ink-2);flex-shrink:0;
+  }
+  .row .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .row:hover{background:var(--ink-2);}
+  .row .dot-col{
+    display:flex;justify-content:center;padding-top:5px;
+  }
+  .row .dot-col .u{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--unread);
+    box-shadow:0 0 6px var(--unread);
+  }
+  .row.read .dot-col .u{visibility:hidden;}
+  .row .time{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--paper-dim);
+    padding-top:3px;
+    white-space:nowrap;
+  }
+  .row .tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9.5px;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    padding:2px 6px;
+    border-radius:4px;
+    margin-bottom:5px;
+  }
+  .tag.gamer{background:rgba(76,134,255,0.16);color:var(--gamer);}
+  .tag.industry{background:rgba(232,169,59,0.16);color:var(--industry);}
+  .row .headline{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:15.5px;
+    line-height:1.35;
+    color:var(--paper);
+    text-decoration:none;
+    display:block;
+    font-weight:500;
+  }
+  .row.read .headline{color:var(--paper-dim);font-weight:400;}
+  .row .source-name{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--paper-dim);
+    margin-top:4px;
+  }
+  .row .source-name .ai-badge{
+    color:#B98CFF;
+    margin-left:6px;
+  }
+  .row .star{
+    background:none;border:none;cursor:pointer;
+    font-size:17px;line-height:1;padding-top:2px;
+    color:var(--line-strong);
+  }
+  .row .star.on{color:var(--star);text-shadow:0 0 8px rgba(255,209,102,0.5);}
+  .row .star:hover{color:var(--star);}
+  .row-actions{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:2px;}
+  .row .bin{
+    background:none;border:none;cursor:pointer;
+    font-size:14px;line-height:1;color:var(--line-strong);opacity:0.75;
+  }
+  .row .bin:hover{color:var(--unread);opacity:1;}
+  .row .mc-check{
+    font-size:13px;line-height:1;text-decoration:none;opacity:0.55;
+    filter:grayscale(1);transition:all .15s ease;
+  }
+  .row .mc-check:hover{opacity:1;filter:grayscale(0);}
+
+  .undo-toast{
+    position:fixed;bottom:24px;left:50%;
+    transform:translateX(-50%) translateY(20px);
+    background:var(--ink-2);border:1px solid var(--line-strong);color:var(--paper);
+    font-family:'IBM Plex Mono', monospace;font-size:12px;
+    padding:10px 16px;border-radius:8px;
+    display:flex;align-items:center;gap:12px;
+    opacity:0;pointer-events:none;
+    transition:all .25s ease;z-index:100;
+  }
+  .undo-toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto;}
+  .undo-toast #undoBtn{
+    background:none;border:none;color:var(--star);
+    font-family:inherit;font-size:inherit;cursor:pointer;
+    text-decoration:underline;padding:0;
+  }
+
+  .empty{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--paper-dim);
+    text-align:center;
+    padding:60px 20px;
+    letter-spacing:0.5px;
+  }
+  .empty .cursor{display:inline-block;width:7px;height:12px;background:var(--paper-dim);margin-left:4px;animation:pulse 1s step-end infinite;vertical-align:middle;}
+
+  footer{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--paper-dim);
+    padding-top:30px;
+    opacity:0.6;
+  }
+
+  @media (max-width:520px){
+    .row{grid-template-columns:36px 1fr 24px;}
+    .row.has-thumb{grid-template-columns:36px 52px 1fr 24px;}
+    .row.has-thumb .thumb{width:52px;height:52px;}
+    .row .time{display:none;}
+    .masthead .meta{text-align:left;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1><span class="blink"></span>DISPATCH</h1>
+    <div class="meta">
+      <div id="syncNote">⚙ set up GitHub sync</div>
+      <div id="clock">— / —</div>
+    </div>
+    <button id="ghSettingsBtn" class="gh-settings-btn" title="GitHub sync settings">⚙</button>
+  </div>
+
+  <div class="legend" id="legend"></div>
+  <div class="legend-key" id="legendKey"></div>
+
+  <div class="search-row">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Filter headlines by keyword…" autocomplete="off">
+    <button id="clearSearchBtn" class="clear-search" title="Clear" style="display:none;">✕</button>
+  </div>
+
+  <div class="controls">
+    <div class="filters" id="filters">
+      <button class="pill active" data-filter="all">All <span class="count" id="c-all">0</span></button>
+      <button class="pill" data-filter="gamer">Gamer <span class="count" id="c-gamer">0</span></button>
+      <button class="pill" data-filter="industry">Industry <span class="count" id="c-industry">0</span></button>
+      <button class="pill" data-filter="favorites">★ Favorites <span class="count" id="c-fav">0</span></button>
+    </div>
+    <div class="actions">
+      <div class="sites-wrap">
+        <button id="sitesBtn" class="sites-btn" title="Aller directement sur un site">🌐 Sites</button>
+        <div id="sitesDropdown" class="sites-dropdown"></div>
+      </div>
+      <button id="markAllBtn">Mark all read</button>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+  </div>
+
+  <div class="lang-filters" id="langFilters">
+    <button class="lang-pill active" data-lang="all">Toutes langues</button>
+    <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
+    <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+  </div>
+
+  <div class="feed" id="feed">
+    <div class="empty">AWAITING SIGNAL<span class="cursor"></span></div>
+  </div>
+
+  <footer>SOURCES — IGN FRANCE · ROCK PAPER SHOTGUN · GAME DEVELOPER · GAMESINDUSTRY.BIZ</footer>
+</div>
+
+<div id="githubModal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>GitHub Sync</h2>
+    <p class="modal-note">Your read/favorite/hidden state gets saved as a small JSON file inside a repo you choose — synced across every device where you set this up.</p>
+
+    <label>GitHub username
+      <input type="text" id="ghOwner" placeholder="e.g. octocat" autocomplete="off">
+    </label>
+    <label>Repository name
+      <input type="text" id="ghRepo" placeholder="e.g. dispatch-data" autocomplete="off">
+    </label>
+    <label>Personal access token
+      <input type="password" id="ghToken" placeholder="fine-grained token" autocomplete="off">
+    </label>
+
+    <p class="modal-hint">
+      Use a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a>
+      scoped to only this one repo, with just "Contents: Read and write" permission — not a classic token with full account access.
+      The token is stored only in this browser's local storage, never sent anywhere except directly to GitHub's API.
+    </p>
+
+    <div class="modal-actions">
+      <button id="ghSaveBtn" class="modal-primary">Save &amp; Connect</button>
+      <button id="ghDisconnectBtn" class="modal-danger">Disconnect</button>
+      <button id="ghCancelBtn" class="modal-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const SOURCES = [
+  { id:'ign',       name:'IGN France',       category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://fr.ign.com/feed.xml', home:'https://fr.ign.com/' },
+  { id:'rps',       name:'Rock Paper Shotgun', category:'gamer',  color:'gamer', lang:'en',
+    feed:'https://www.rockpapershotgun.com/feed/', home:'https://www.rockpapershotgun.com/' },
+  { id:'gamedev',   name:'Game Developer',   category:'industry', color:'industry', lang:'en',
+    feed:'https://www.gamedeveloper.com/rss.xml', home:'https://www.gamedeveloper.com/' },
+  { id:'gibiz',     name:'GamesIndustry.biz', category:'industry', color:'industry', lang:'en',
+    feed:'https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss', home:'https://www.gamesindustry.biz/' },
+  { id:'jv',        name:'Jeuxvideo.com',    category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.jeuxvideo.com/rss/rss.xml', home:'https://www.jeuxvideo.com/' },
+  { id:'gameblog',  name:'Gameblog',         category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.gameblog.fr/rssmap/rss_all.xml', home:'https://www.gameblog.fr/' },
+  { id:'gamekult',  name:'Gamekult',         category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.gamekult.com/feed.xml', home:'https://www.gamekult.com/' },
+  { id:'kotaku',    name:'Kotaku',           category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://kotaku.com/feed', home:'https://kotaku.com/' },
+  { id:'pcgamer',   name:'PC Gamer',         category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.pcgamer.com/feeds.xml', home:'https://www.pcgamer.com/' },
+  { id:'eurogamer', name:'Eurogamer',        category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.eurogamer.net/?format=rss', home:'https://www.eurogamer.net/' },
+  { id:'polygon',   name:'Polygon',          category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.polygon.com/rss/index.xml', home:'https://www.polygon.com/' },
+];
+
+const PROXIES = [
+  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  url => `https://thingproxy.freeboard.io/fetch/${url}`,
+];
+
+function fetchWithTimeout(url, ms){
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  return fetch(url, { signal: controller.signal }).finally(() => clearTimeout(timer));
+}
+
+let state = { read: [], favorites: [], hidden: [] };
+let articles = [];
+let currentFilter = 'all';
+let currentLang = 'all';
+let searchQuery = '';
+let usingExtensionData = false;
+let githubConnected = false;
+let githubSha = null;
+
+const feedEl = document.getElementById('feed');
+const legendEl = document.getElementById('legend');
+const clockEl = document.getElementById('clock');
+const syncNoteEl = document.getElementById('syncNote');
+
+// --- Local storage abstraction ----------------------------------------
+// Works whether this page is running as a Claude artifact (window.storage)
+// or as a standalone site, e.g. on GitHub Pages (plain localStorage).
+async function localGet(key){
+  if (window.storage) {
+    try { const r = await window.storage.get(key); return r ? r.value : null; } catch (e) { return null; }
+  }
+  try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+async function localSet(key, value){
+  if (window.storage) {
+    try { await window.storage.set(key, value); return; } catch (e) { /* fall through */ }
+  }
+  try { localStorage.setItem(key, value); } catch (e) { /* ignore */ }
+}
+
+// --- GitHub sync --------------------------------------------------------
+// Optional: stores read/favorite/hidden state as a JSON file inside a repo
+// you configure, via GitHub's REST API (which supports CORS for browser
+// requests, including authenticated PUT). This is what makes state follow
+// you across devices when this page is hosted somewhere like GitHub Pages.
+const GITHUB_CONFIG_KEY = 'dispatch-github-config';
+const GITHUB_DATA_PATH = 'dispatch-state.json';
+
+function getGithubConfig(){
+  try {
+    const raw = localStorage.getItem(GITHUB_CONFIG_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+function saveGithubConfig(cfg){ localStorage.setItem(GITHUB_CONFIG_KEY, JSON.stringify(cfg)); }
+function clearGithubConfig(){ localStorage.removeItem(GITHUB_CONFIG_KEY); }
+
+function utf8ToBase64(str){ return btoa(unescape(encodeURIComponent(str))); }
+function base64ToUtf8(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g, '')))); }
+
+async function githubGetFile(cfg){
+  const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${GITHUB_DATA_PATH}`;
+  const res = await fetch(url, {
+    headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github+json' }
+  });
+  if (res.status === 404) return { content: null, sha: null };
+  if (!res.ok) throw new Error('GitHub GET failed: ' + res.status);
+  const data = await res.json();
+  return { content: JSON.parse(base64ToUtf8(data.content)), sha: data.sha };
+}
+
+async function githubPutFile(cfg, contentObj, sha){
+  const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${GITHUB_DATA_PATH}`;
+  const body = { message: 'Update Dispatch state', content: utf8ToBase64(JSON.stringify(contentObj, null, 2)) };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${cfg.token}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) throw new Error('GitHub PUT failed: ' + res.status + ' ' + await res.text());
+  const data = await res.json();
+  return data.content.sha;
+}
+
+function updateSyncNote(errorMsg){
+  syncNoteEl.title = '';
+  if (githubConnected) {
+    syncNoteEl.textContent = '🐙 synced via GitHub';
+    syncNoteEl.classList.add('connected');
+    syncNoteEl.classList.remove('error');
+  } else if (errorMsg) {
+    syncNoteEl.textContent = '⚠ GitHub sync error';
+    syncNoteEl.title = errorMsg;
+    syncNoteEl.classList.add('error');
+    syncNoteEl.classList.remove('connected');
+  } else if (usingExtensionData) {
+    syncNoteEl.textContent = '🔌 synced via extension';
+    syncNoteEl.classList.add('connected');
+    syncNoteEl.classList.remove('error');
+  } else {
+    syncNoteEl.textContent = '⚙ set up GitHub sync';
+    syncNoteEl.classList.remove('connected', 'error');
+  }
+}
+
+// --- Extension bridge -------------------------------------------------
+// If the Dispatch browser extension is installed and this page is open at
+// an origin its content script matches (file://, localhost, 127.0.0.1, or
+// *.github.io), it pushes real fetched articles + read/favorite state in
+// here directly, bypassing the CORS proxy chain entirely. Falls back to
+// proxies below when no extension is present. If GitHub sync is
+// configured, GitHub remains the source of truth for read/favorite/hidden
+// state — only the article list is taken from the extension.
+window.addEventListener('message', (event) => {
+  if (!event.data || event.data.source !== 'dispatch-extension') return;
+  if (event.data.type !== 'DISPATCH_SYNC') return;
+  applyExtensionData(event.data.articles, event.data.state);
+});
+
+function applyExtensionData(cachedArticles, extState){
+  usingExtensionData = true;
+
+  if (!getGithubConfig()) {
+    state.read = extState.read || [];
+    state.favorites = extState.favorites || [];
+    state.hidden = extState.hidden || [];
+  }
+
+  articles = (cachedArticles || [])
+    .map(a => {
+      const source = SOURCES.find(s => s.id === a.sourceId);
+      if (!source) return null;
+      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.date - a.date);
+
+  document.querySelectorAll('.legend .dot').forEach(d => {
+    d.classList.remove('fail', 'pending');
+    d.classList.add('ok');
+  });
+
+  updateSyncNote();
+  render();
+}
+
+function pushStateToExtension(){
+  window.postMessage({ source: 'dispatch-website', type: 'DISPATCH_SET_STATE', state }, '*');
+}
+
+function updateClock(){
+  const now = new Date();
+  clockEl.textContent = now.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) + ' / ' +
+    now.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+}
+updateClock();
+setInterval(updateClock, 30000);
+
+async function loadState(){
+  const cfg = getGithubConfig();
+  if (cfg) {
+    try {
+      const { content, sha } = await githubGetFile(cfg);
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+      githubConnected = true;
+      updateSyncNote();
+      return;
+    } catch (e) {
+      console.error('GitHub sync load failed, falling back to local storage:', e);
+      githubConnected = false;
+      updateSyncNote(e.message);
+    }
+  }
+
+  try {
+    const raw = await localGet('article-state');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      state.read = parsed.read || [];
+      state.favorites = parsed.favorites || [];
+      state.hidden = parsed.hidden || [];
+    }
+  } catch (e) { /* no saved state yet */ }
+}
+
+async function saveState(){
+  await localSet('article-state', JSON.stringify(state)); // fast local cache regardless of GitHub sync
+
+  const cfg = getGithubConfig();
+  if (!cfg) return;
+  try {
+    const { sha } = await githubGetFile(cfg); // fetch latest sha in case another device wrote since
+    githubSha = await githubPutFile(cfg, state, sha);
+    githubConnected = true;
+    updateSyncNote();
+  } catch (e) {
+    console.error('GitHub sync save failed:', e);
+    githubConnected = false;
+    updateSyncNote(e.message);
+  }
+}
+
+function idFor(item){ return item.link; }
+
+function stripHtml(str){
+  const div = document.createElement('div');
+  div.innerHTML = str || '';
+  return (div.textContent || div.innerText || '').trim();
+}
+
+async function fetchViaProxies(url, sourceId){
+  let lastErr;
+  for(const buildProxy of PROXIES){
+    try{
+      const res = await fetchWithTimeout(buildProxy(url), 6000);
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      const text = await res.text();
+      if(!text || text.length < 20) throw new Error('empty response');
+      return text;
+    }catch(e){
+      lastErr = e;
+      console.warn(`[${sourceId}] proxy failed:`, buildProxy('...').split('?')[0], e.message);
+    }
+  }
+  throw lastErr || new Error('all proxies failed');
+}
+
+async function aiFallback(source){
+  const hostname = new URL(source.feed).hostname.replace('www.','');
+  const prompt = `Search the web for the 5 most recent video game news articles published on ${hostname} in the last 3 days. Respond with ONLY a raw JSON array, no markdown fences, no commentary, no explanation before or after. Each item must have exactly these keys: "title" (string), "link" (the full real article URL from your search results), "date" (ISO 8601 string, best estimate). Output nothing but the JSON array.`;
+
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-6",
+      max_tokens: 1000,
+      messages: [{ role: "user", content: prompt }],
+      tools: [{ type: "web_search_20250305", name: "web_search" }]
+    })
+  });
+  if(!res.ok) throw new Error('AI fallback HTTP ' + res.status);
+  const data = await res.json();
+
+  const textBlocks = (data.content || []).filter(b => b.type === "text").map(b => b.text);
+  const combined = textBlocks.join('\n').trim();
+  const cleaned = combined.replace(/```json|```/g, '').trim();
+  const match = cleaned.match(/\[[\s\S]*\]/);
+  const jsonStr = match ? match[0] : cleaned;
+
+  const parsed = JSON.parse(jsonStr);
+  return parsed
+    .filter(p => p && p.title && p.link)
+    .map(p => ({
+      title: p.title,
+      link: p.link,
+      date: p.date ? new Date(p.date) : new Date(),
+      source,
+      viaAI: true
+    }));
+}
+
+function extractImage(el){
+  // media:thumbnail
+  let node = el.getElementsByTagName('media:thumbnail')[0];
+  if(node && node.getAttribute('url')) return node.getAttribute('url');
+
+  // media:content (image type)
+  const mediaContents = el.getElementsByTagName('media:content');
+  for(const mc of mediaContents){
+    const medium = mc.getAttribute('medium') || '';
+    const type = mc.getAttribute('type') || '';
+    const url = mc.getAttribute('url');
+    if(url && (medium === 'image' || type.startsWith('image'))) return url;
+  }
+
+  // enclosure
+  node = el.getElementsByTagName('enclosure')[0];
+  if(node){
+    const type = node.getAttribute('type') || '';
+    const url = node.getAttribute('url');
+    if(url && (type.startsWith('image') || !type)) return url;
+  }
+
+  // fallback: first <img> inside content:encoded or description HTML
+  const contentEncoded = el.getElementsByTagName('content:encoded')[0];
+  const description = el.querySelector('description') || el.querySelector('summary') || el.querySelector('content');
+  const htmlBlob = (contentEncoded && contentEncoded.textContent) || (description && description.textContent) || '';
+  const match = htmlBlob.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match ? match[1] : null;
+}
+
+function parseFeed(xmlText, source){
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xmlText, 'text/xml');
+  if(doc.querySelector('parsererror')) throw new Error('parse error');
+
+  const isAtom = doc.querySelector('feed') !== null;
+  const items = [];
+
+  if(isAtom){
+    doc.querySelectorAll('entry').forEach(entry => {
+      const title = stripHtml(entry.querySelector('title')?.textContent);
+      let link = entry.querySelector('link')?.getAttribute('href');
+      if(!link){
+        const linkEl = entry.querySelector('link');
+        link = linkEl ? linkEl.textContent : '';
+      }
+      const dateStr = entry.querySelector('updated')?.textContent || entry.querySelector('published')?.textContent;
+      const date = dateStr ? new Date(dateStr) : new Date();
+      const image = extractImage(entry);
+      if(title && link) items.push({ title, link, date, source, image });
+    });
+  } else {
+    doc.querySelectorAll('item').forEach(item => {
+      const title = stripHtml(item.querySelector('title')?.textContent);
+      const link = item.querySelector('link')?.textContent;
+      const dateStr = item.querySelector('pubDate')?.textContent;
+      const date = dateStr ? new Date(dateStr) : new Date();
+      const image = extractImage(item);
+      if(title && link) items.push({ title, link, date, source, image });
+    });
+  }
+  return items;
+}
+
+function setLegendStatus(sourceId, status){
+  const dot = document.querySelector(`.legend .dot[data-src="${sourceId}"]`);
+  if(!dot) return;
+  dot.classList.remove('ok','fail','pending');
+  dot.classList.add(status);
+}
+
+function renderLegend(){
+  legendEl.innerHTML = SOURCES.map(s => `
+    <span class="src">
+      <span class="dot pending" data-src="${s.id}"></span><a href="${s.home}" target="_blank" rel="noopener">${s.name}</a>
+    </span>
+  `).join('') + `
+    <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="mc-link" title="Browse new releases on Metacritic">🎮 Metacritic ↗</a>
+  `;
+  document.getElementById('legendKey').innerHTML = `
+    <span><span class="sw" style="background:var(--ok)"></span>live RSS</span>
+    <span><span class="sw" style="background:#B98CFF"></span>AI search fallback</span>
+    <span><span class="sw" style="background:var(--unread)"></span>unavailable</span>
+  `;
+}
+
+function formatTime(date){
+  return date.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) +
+    ' · ' + date.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+}
+
+function sameDay(d1, d2){
+  return d1.toDateString() === d2.toDateString();
+}
+
+function dayLabel(date){
+  const now = new Date();
+  const d0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const d1 = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const diffDays = Math.round((d0 - d1) / 86400000);
+  if(diffDays === 0) return "AUJOURD'HUI";
+  if(diffDays === 1) return 'HIER';
+  return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long'}).toUpperCase();
+}
+
+function updateCounts(){
+  const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
+  const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
+  const unreadGamer = visible.filter(a => a.source.category==='gamer' && !state.read.includes(idFor(a))).length;
+  const unreadIndustry = visible.filter(a => a.source.category==='industry' && !state.read.includes(idFor(a))).length;
+  document.getElementById('c-all').textContent = unreadAll;
+  document.getElementById('c-gamer').textContent = unreadGamer;
+  document.getElementById('c-industry').textContent = unreadIndustry;
+  document.getElementById('c-fav').textContent = state.favorites.length;
+}
+
+function render(){
+  updateCounts();
+
+  let list = articles.filter(a => !state.hidden.includes(idFor(a)));
+  if(currentFilter === 'gamer') list = list.filter(a => a.source.category === 'gamer');
+  if(currentFilter === 'industry') list = list.filter(a => a.source.category === 'industry');
+  if(currentFilter === 'favorites') list = list.filter(a => state.favorites.includes(idFor(a)));
+  if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
+  if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
+
+  if(list.length === 0){
+    let msg = 'AWAITING SIGNAL';
+    if(articles.length > 0){
+      msg = searchQuery ? `NO MATCHES FOR "${escapeHtml(searchQuery)}"` : 'NO ARTICLES ON THIS CHANNEL';
+    }
+    feedEl.innerHTML = `<div class="empty">${msg}<span class="cursor"></span></div>`;
+    return;
+  }
+
+  feedEl.innerHTML = list.map((a, idx) => {
+    const id = idFor(a);
+    const isRead = state.read.includes(id);
+    const isFav = state.favorites.includes(id);
+    const hasThumb = !!a.image;
+    const showSeparator = idx === 0 || !sameDay(a.date, list[idx - 1].date);
+    const separatorHtml = showSeparator ? `<div class="day-sep"><span>${dayLabel(a.date)}</span></div>` : '';
+    return separatorHtml + `
+      <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
+        <div class="dot-col"><span class="u"></span></div>
+        <div class="time">${formatTime(a.date)}</div>
+        ${hasThumb ? `<div class="thumb"><img src="${a.image}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
+        <div>
+          <span class="tag ${a.source.color}">${a.source.category}</span>
+          <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+          <div class="source-name">${a.source.name}${a.viaAI ? '<span class="ai-badge">· via AI search</span>' : ''}</div>
+        </div>
+        <div class="row-actions">
+          <button class="star ${isFav ? 'on' : ''}" title="Save as favorite">${isFav ? '★' : '☆'}</button>
+          <a class="mc-check" href="https://www.metacritic.com/search/${encodeURIComponent(a.title)}/" target="_blank" rel="noopener" title="Check on Metacritic">🎮</a>
+          <button class="bin" title="Remove">🗑</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function escapeHtml(str){
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+let lastHiddenId = null;
+let undoTimeout = null;
+
+function hideArticle(id){
+  if(!state.hidden.includes(id)) state.hidden.push(id);
+  lastHiddenId = id;
+  saveState();
+  pushStateToExtension();
+  render();
+  showUndoToast();
+}
+
+function showUndoToast(){
+  clearTimeout(undoTimeout);
+  let toast = document.getElementById('undoToast');
+  if(!toast){
+    toast = document.createElement('div');
+    toast.id = 'undoToast';
+    toast.className = 'undo-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `Removed <button id="undoBtn" type="button">Undo</button>`;
+  toast.classList.add('show');
+  document.getElementById('undoBtn').onclick = () => {
+    if(lastHiddenId){
+      const idx = state.hidden.indexOf(lastHiddenId);
+      if(idx !== -1) state.hidden.splice(idx, 1);
+      saveState();
+      pushStateToExtension();
+      render();
+    }
+    toast.classList.remove('show');
+  };
+  undoTimeout = setTimeout(() => toast.classList.remove('show'), 4000);
+}
+
+feedEl.addEventListener('click', (e) => {
+  const row = e.target.closest('.row');
+  if(!row) return;
+  const id = decodeURIComponent(row.dataset.id);
+
+  if(e.target.classList.contains('bin')){
+    e.preventDefault();
+    hideArticle(id);
+    return;
+  }
+
+  if(e.target.classList.contains('star')){
+    e.preventDefault();
+    const idx = state.favorites.indexOf(id);
+    if(idx === -1) state.favorites.push(id);
+    else state.favorites.splice(idx, 1);
+    saveState();
+    pushStateToExtension();
+    render();
+    return;
+  }
+
+  if(e.target.classList.contains('headline')){
+    if(!state.read.includes(id)){
+      state.read.push(id);
+      saveState();
+      pushStateToExtension();
+    }
+    row.classList.add('read');
+    updateCounts();
+  }
+});
+
+const searchInputEl = document.getElementById('searchInput');
+const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+searchInputEl.addEventListener('input', () => {
+  searchQuery = searchInputEl.value.trim().toLowerCase();
+  clearSearchBtn.style.display = searchQuery ? 'block' : 'none';
+  render();
+});
+
+clearSearchBtn.addEventListener('click', () => {
+  searchInputEl.value = '';
+  searchQuery = '';
+  clearSearchBtn.style.display = 'none';
+  searchInputEl.focus();
+  render();
+});
+
+document.getElementById('filters').addEventListener('click', (e) => {
+  const btn = e.target.closest('.pill');
+  if(!btn) return;
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter = btn.dataset.filter;
+  render();
+});
+
+document.getElementById('langFilters').addEventListener('click', (e) => {
+  const btn = e.target.closest('.lang-pill');
+  if(!btn) return;
+  document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentLang = btn.dataset.lang;
+  render();
+});
+
+// --- Sites quick-access dropdown ---------------------------------------
+function renderSitesDropdown(){
+  const dropdown = document.getElementById('sitesDropdown');
+  dropdown.innerHTML = SOURCES.map(s => `
+    <a href="${s.home}" target="_blank" rel="noopener">${s.name} <span class="ext-icon">↗</span></a>
+  `).join('');
+}
+renderSitesDropdown();
+
+const sitesBtn = document.getElementById('sitesBtn');
+const sitesDropdown = document.getElementById('sitesDropdown');
+sitesBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  sitesDropdown.classList.toggle('show');
+  sitesBtn.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+  if (!sitesDropdown.contains(e.target) && e.target !== sitesBtn) {
+    sitesDropdown.classList.remove('show');
+    sitesBtn.classList.remove('active');
+  }
+});
+
+document.getElementById('markAllBtn').addEventListener('click', () => {
+  articles.forEach(a => {
+    const id = idFor(a);
+    if(!state.read.includes(id)) state.read.push(id);
+  });
+  saveState();
+  pushStateToExtension();
+  render();
+});
+
+document.getElementById('refreshBtn').addEventListener('click', () => {
+  if (usingExtensionData) {
+    window.postMessage({ source: 'dispatch-website', type: 'DISPATCH_REQUEST_SYNC' }, '*');
+  } else {
+    loadFeeds();
+  }
+});
+
+async function loadFeeds(){
+  if (usingExtensionData) return; // extension already delivered real data, no need for proxies
+
+  renderLegend();
+  feedEl.innerHTML = `<div class="empty">TUNING IN<span class="cursor"></span></div>`;
+
+  const results = await Promise.all(SOURCES.map(async (source) => {
+    try{
+      const xml = await fetchViaProxies(source.feed, source.id);
+      const items = parseFeed(xml, source);
+      setLegendStatus(source.id, 'ok');
+      return items;
+    }catch(e){
+      console.warn(`[${source.id}] all proxies failed, trying AI fallback:`, e.message);
+      try{
+        const items = await aiFallback(source);
+        setLegendStatus(source.id, 'ai');
+        return items;
+      }catch(e2){
+        console.error(`[${source.id}] AI fallback also failed:`, e2.message);
+        setLegendStatus(source.id, 'fail');
+        return [];
+      }
+    }
+  }));
+
+  if (usingExtensionData) return; // bridge data arrived while proxies were in flight — keep it
+
+  articles = results.flat();
+  // dedupe by link
+  const seen = new Set();
+  articles = articles.filter(a => {
+    if(seen.has(a.link)) return false;
+    seen.add(a.link);
+    return true;
+  });
+  articles.sort((a,b) => b.date - a.date);
+
+  render();
+}
+
+// --- GitHub settings modal ---------------------------------------------
+const ghModal = document.getElementById('githubModal');
+
+function openGithubModal(){
+  const cfg = getGithubConfig();
+  document.getElementById('ghOwner').value = cfg?.owner || '';
+  document.getElementById('ghRepo').value = cfg?.repo || '';
+  document.getElementById('ghToken').value = cfg?.token || '';
+  ghModal.classList.add('show');
+}
+function closeGithubModal(){ ghModal.classList.remove('show'); }
+
+document.getElementById('ghSettingsBtn').addEventListener('click', openGithubModal);
+syncNoteEl.addEventListener('click', openGithubModal);
+document.getElementById('ghCancelBtn').addEventListener('click', closeGithubModal);
+ghModal.addEventListener('click', (e) => { if (e.target === ghModal) closeGithubModal(); });
+
+document.getElementById('ghSaveBtn').addEventListener('click', async () => {
+  const owner = document.getElementById('ghOwner').value.trim();
+  const repo = document.getElementById('ghRepo').value.trim();
+  const token = document.getElementById('ghToken').value.trim();
+  if (!owner || !repo || !token) {
+    alert('Please fill in all three fields.');
+    return;
+  }
+  saveGithubConfig({ owner, repo, token });
+
+  const saveBtn = document.getElementById('ghSaveBtn');
+  saveBtn.disabled = true;
+  saveBtn.textContent = 'Connecting…';
+
+  await loadState();                        // pulls existing state if the file already exists
+  if (githubConnected) await saveState();    // creates/updates the file, migrating any local favorites up
+
+  saveBtn.disabled = false;
+  saveBtn.textContent = 'Save & Connect';
+
+  if (!githubConnected) {
+    alert(
+      'Could not connect to GitHub.\n\n' +
+      (syncNoteEl.title || 'Unknown error') +
+      '\n\nCheck: is the username correct, does the repo exist, and does the token have "Contents: Read and write" access to that exact repo?'
+    );
+    return; // keep the modal open so the fields can be fixed
+  }
+
+  closeGithubModal();
+  render();
+});
+
+document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
+  clearGithubConfig();
+  githubConnected = false;
+  closeGithubModal();
+  updateSyncNote();
+});
+
+(async function init(){
+  await loadState();
+  await loadFeeds();
+})();
+</script>
+
+</body>
+</html>
