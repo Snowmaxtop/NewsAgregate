@@ -113,6 +113,14 @@
     box-sizing:border-box;
   }
   .modal-box input:focus{outline:none;border-color:var(--paper-dim);}
+  .token-field{position:relative;display:block;}
+  .token-field input{padding-right:40px;}
+  .token-reveal{
+    position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    background:none;border:none;cursor:pointer;font-size:15px;
+    padding:4px 6px;opacity:0.6;
+  }
+  .token-reveal:hover{opacity:1;}
   .modal-hint{
     font-family:'IBM Plex Sans', sans-serif;font-size:11.5px;color:var(--paper-dim);
     line-height:1.5;margin:4px 0 20px;
@@ -519,13 +527,16 @@
     <p class="modal-note">Your read/favorite/hidden state gets saved as a small JSON file inside a repo you choose — synced across every device where you set this up.</p>
 
     <label>GitHub username
-      <input type="text" id="ghOwner" placeholder="e.g. octocat" autocomplete="off">
+      <input type="text" id="ghOwner" placeholder="e.g. octocat" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     </label>
     <label>Repository name
-      <input type="text" id="ghRepo" placeholder="e.g. dispatch-data" autocomplete="off">
+      <input type="text" id="ghRepo" placeholder="e.g. dispatch-data" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     </label>
     <label>Personal access token
-      <input type="password" id="ghToken" placeholder="fine-grained token" autocomplete="off">
+      <span class="token-field">
+        <input type="password" id="ghToken" placeholder="fine-grained token" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        <button type="button" id="ghTokenReveal" class="token-reveal" title="Afficher / masquer">👁</button>
+      </span>
     </label>
 
     <p class="modal-hint">
@@ -1417,6 +1428,13 @@ async function loadFeeds(){
 // --- GitHub settings modal ---------------------------------------------
 const ghModal = document.getElementById('githubModal');
 
+// Strips ALL whitespace including invisible/unicode variants (non-breaking
+// spaces, zero-width chars) that mobile keyboards and copy-paste sometimes
+// inject — a plain .trim() misses these and they silently break the token.
+function cleanField(v){
+  return (v || '').replace(/[\s\u00A0\u200B-\u200D\uFEFF]/g, '');
+}
+
 function openGithubModal(){
   const cfg = getGithubConfig();
   document.getElementById('ghOwner').value = cfg?.owner || '';
@@ -1431,10 +1449,16 @@ syncNoteEl.addEventListener('click', openGithubModal);
 document.getElementById('ghCancelBtn').addEventListener('click', closeGithubModal);
 ghModal.addEventListener('click', (e) => { if (e.target === ghModal) closeGithubModal(); });
 
+// Reveal/hide the token so it can be visually verified on mobile
+document.getElementById('ghTokenReveal').addEventListener('click', () => {
+  const input = document.getElementById('ghToken');
+  input.type = input.type === 'password' ? 'text' : 'password';
+});
+
 document.getElementById('ghSaveBtn').addEventListener('click', async () => {
-  const owner = document.getElementById('ghOwner').value.trim();
-  const repo = document.getElementById('ghRepo').value.trim();
-  const token = document.getElementById('ghToken').value.trim();
+  const owner = cleanField(document.getElementById('ghOwner').value);
+  const repo = cleanField(document.getElementById('ghRepo').value);
+  const token = cleanField(document.getElementById('ghToken').value);
   if (!owner || !repo || !token) {
     alert('Please fill in all three fields.');
     return;
@@ -1452,11 +1476,21 @@ document.getElementById('ghSaveBtn').addEventListener('click', async () => {
   saveBtn.textContent = 'Save & Connect';
 
   if (!githubConnected) {
-    alert(
-      'Could not connect to GitHub.\n\n' +
-      (syncNoteEl.title || 'Unknown error') +
-      '\n\nCheck: is the username correct, does the repo exist, and does the token have "Contents: Read and write" access to that exact repo?'
-    );
+    const rawErr = syncNoteEl.title || 'Unknown error';
+    let hint = '';
+    if (rawErr.includes('404')) {
+      hint = '\n\nUn 404 signifie presque toujours l\'une de ces trois choses :\n' +
+        '• le token ne donne pas accès à CE repo précis (Repository access → Only select repositories → ce repo), ou n\'est pas en "Contents: Read and write"\n' +
+        '• le token a expiré\n' +
+        '• une faute de casse dans le nom d\'utilisateur ou du repo\n\n' +
+        `URL testée : api.github.com/repos/${owner}/${repo}/contents/dispatch-state.json\n\n` +
+        'Astuce : appuie sur 👁 pour révéler le token et vérifier qu\'il n\'a pas d\'espace ni de majuscule parasite.';
+    } else if (rawErr.includes('403')) {
+      hint = '\n\nUn 403 = permissions insuffisantes : le token doit être en "Contents: Read and write".';
+    } else if (rawErr.includes('401')) {
+      hint = '\n\nUn 401 = token non reconnu (invalide ou expiré). Régénère un token.';
+    }
+    alert('Impossible de se connecter à GitHub.\n\nErreur : ' + rawErr + hint);
     return; // keep the modal open so the fields can be fixed
   }
 
