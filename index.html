@@ -284,8 +284,6 @@
   }
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
-  .scroll-read-toggle{margin-left:auto;}
-  .scroll-read-toggle.active{background:var(--ok);color:var(--ink);border-color:var(--ok);}
 
   /* Feed list */
   .feed{border-top:1px solid var(--line);}
@@ -514,7 +512,6 @@
     <button class="lang-pill active" data-lang="all">Toutes langues</button>
     <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
     <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
-    <button class="lang-pill scroll-read-toggle" id="scrollReadToggle" title="Marquer comme lu les articles dépassés en défilant">👁 Lu au défilement : OFF</button>
   </div>
 
   <div class="feed" id="feed">
@@ -1091,19 +1088,46 @@ function updateCounts(){
 }
 
 // --- App icon badge ----------------------------------------------------
-// Uses the Badging API (supported by Chrome on Android for installed
-// PWAs). Shows the number of unread articles on the home-screen icon.
-// While the app is open this stays live; a periodic recount below keeps
-// it fresh as the GitHub Action adds new articles over time. (Updating it
-// while the app is fully closed requires the Push API — a planned second
-// step.)
+// Shows the number of unread (and non-hidden) articles on the home-screen
+// icon via the Badging API. Kept live from three places so it's as close
+// to "always current" as a PWA allows:
+//   1. every updateCounts() (any read/hide/favorite action, every render)
+//   2. a periodic in-page refresh while the app is open or backgrounded
+//   3. the service worker's periodic background sync (see sw.js), which can
+//      update the badge even when no page/tab is actively rendering.
+function computeUnreadCount(){
+  const readSet = new Set(state.read);
+  const hiddenSet = new Set(state.hidden);
+  return articles.filter(a => {
+    const id = idFor(a);
+    return !readSet.has(id) && !hiddenSet.has(id);
+  }).length;
+}
+
 function updateAppBadge(count){
+  if (typeof count !== 'number') count = computeUnreadCount();
   try {
     if ('setAppBadge' in navigator) {
       if (count > 0) navigator.setAppBadge(count);
       else navigator.clearAppBadge();
     }
   } catch (e) { /* badging not available, ignore */ }
+
+  // Cache the latest count for reference.
+  try { localStorage.setItem('dispatch-unread-count', String(count)); } catch(e){}
+
+  // Hand the current read/hidden state to the service worker so it can
+  // recompute the badge on its own during background periodic sync, when
+  // no page is actively rendering.
+  try {
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({
+        type: 'dispatch-state-update',
+        read: state.read,
+        hidden: state.hidden,
+      });
+    }
+  } catch (e) { /* SW not ready yet */ }
 }
 
 function isFavorited(id){
@@ -1182,9 +1206,8 @@ function render(){
 // read. We require it to have been intersecting first (seenIds), so simply
 // rendering below the fold or scrolling upward past unseen items does not
 // mark them. This matches the gesture: scrolling down past headlines you
-// don't care about.
-let scrollReadEnabled = false;
-try { scrollReadEnabled = localStorage.getItem('scroll-read') === 'on'; } catch(e){}
+// don't care about. This behaviour is always on.
+const scrollReadEnabled = true;
 
 const seenIds = new Set();
 let scrollObserver = null;
@@ -1425,25 +1448,10 @@ document.getElementById('filters').addEventListener('click', (e) => {
 document.getElementById('langFilters').addEventListener('click', (e) => {
   const btn = e.target.closest('.lang-pill');
   if(!btn) return;
-  if(btn.id === 'scrollReadToggle') return; // handled separately below
-  document.querySelectorAll('.lang-pill:not(#scrollReadToggle)').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentLang = btn.dataset.lang;
   render();
-});
-
-// Scroll-to-read toggle
-const scrollReadToggleBtn = document.getElementById('scrollReadToggle');
-function refreshScrollReadToggleLabel(){
-  scrollReadToggleBtn.textContent = `👁 Lu au défilement : ${scrollReadEnabled ? 'ON' : 'OFF'}`;
-  scrollReadToggleBtn.classList.toggle('active', scrollReadEnabled);
-}
-refreshScrollReadToggleLabel();
-scrollReadToggleBtn.addEventListener('click', () => {
-  scrollReadEnabled = !scrollReadEnabled;
-  try { localStorage.setItem('scroll-read', scrollReadEnabled ? 'on' : 'off'); } catch(e){}
-  refreshScrollReadToggleLabel();
-  observeRowsForScrollRead(); // re-arm or tear down the observer immediately
 });
 
 // --- Sites quick-access dropdown ---------------------------------------
@@ -1657,36 +1665,56 @@ function enrichLegacyFavorites(){
 }
 
 // Keep articles (and therefore the unread badge) fresh while the app is
-// open or backgrounded: re-pull articles.json every 15 minutes, and also
-// whenever the app regains focus (e.g. you switch back to it). This is how
-// the badge count can climb through the day as the GitHub Action commits
-// new articles — without needing the app to be reopened from scratch.
-const ARTICLES_REFRESH_MS = 15 * 60 * 1000;
+// open or backgrounded: re-pull articles.json regularly, and also whenever
+// the app regains focus. This is how the badge count climbs through the
+// day as the GitHub Action commits new articles.
+const ARTICLES_REFRESH_MS = 5 * 60 * 1000; // 5 min while the app is alive
 
 async function refreshArticlesQuietly(){
-  if (usingExtensionData) return;
+  if (usingExtensionData) { updateAppBadge(); return; }
   try {
     const res = await fetch('./articles.json', { cache: 'no-store' });
-    if (!res.ok) return;
-    const data = await res.json();
-    if (Array.isArray(data.articles) && data.articles.length > 0) {
-      await applyJsonData(data); // this calls render() → updateCounts() → badge refresh
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.articles) && data.articles.length > 0) {
+        await applyJsonData(data); // render() → updateCounts() → badge refresh
+        return;
+      }
     }
   } catch (e) { /* offline or not deployed yet; keep current data */ }
+  updateAppBadge(); // even if the fetch failed, keep the badge correct
 }
 
 setInterval(refreshArticlesQuietly, ARTICLES_REFRESH_MS);
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') refreshArticlesQuietly();
 });
+window.addEventListener('focus', refreshArticlesQuietly);
 
-// Register the service worker: enables offline access and lets Chrome
-// offer "Install app" / "Add to Home screen" on Android.
+// Register the service worker: offline support, installability, AND
+// periodic background sync so the badge can update while the app is merely
+// backgrounded (not actively rendering).
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch((err) => {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('./sw.js');
+
+      // Ask for Periodic Background Sync if available (Chrome/Android).
+      // This lets the service worker wake up roughly every so often to
+      // recount unread articles and refresh the badge on its own.
+      if ('periodicSync' in reg) {
+        try {
+          const status = await navigator.permissions.query({ name: 'periodic-background-sync' });
+          if (status.state === 'granted') {
+            await reg.periodicSync.register('dispatch-badge-refresh', {
+              minInterval: 60 * 60 * 1000, // ~1h; the browser decides the real cadence
+            });
+          }
+        } catch (e) { /* periodic sync not available or not permitted */ }
+      }
+    } catch (err) {
       console.warn('Service worker registration failed:', err);
-    });
+    }
   });
 }
 </script>

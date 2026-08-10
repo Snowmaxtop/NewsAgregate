@@ -1,18 +1,20 @@
 // Dispatch service worker.
 //
 // Strategy:
-// - The page itself and articles.json are "network-first": always try to
-//   get the freshest version when online, and only fall back to the
-//   cached copy when there's no connection. This matters because a news
-//   app showing stale-but-cached headlines while actually online would be
-//   worse than showing nothing.
-// - Everything else (fonts, icons, article thumbnail images) is
-//   "cache-first": these rarely change, so serve the cached copy
-//   immediately and don't force a network round-trip on every visit.
+// - The page and articles.json are "network-first": always try the freshest
+//   version when online, fall back to cache offline.
+// - Other assets (fonts, icons, thumbnails) are "cache-first".
+// - Periodic background sync recomputes the unread badge even when the app
+//   is only backgrounded (no page actively rendering).
 //
-// Bump CACHE_NAME whenever this file or the app shell changes, so old
-// caches get cleaned up automatically on the next activate.
-const CACHE_NAME = 'dispatch-v2';
+// Note: service workers cannot read localStorage. To recompute the unread
+// count in the background, the page stashes two things into Cache Storage
+// (which the SW *can* read): the latest articles.json response, and a small
+// JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
+// reads both and counts unread = articles not in read and not in hidden.
+
+const CACHE_NAME = 'dispatch-v3';
+const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
   './index.html',
@@ -25,7 +27,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => cache.addAll(APP_SHELL))
-      .catch(() => { /* offline-friendly: don't fail install if one asset 404s */ })
+      .catch(() => { /* don't fail install if one asset 404s */ })
   );
   self.skipWaiting();
 });
@@ -45,10 +47,7 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(req.url);
 
-  // Never intercept GitHub API calls. They're authenticated, dynamic, and
-  // used for optimistic-concurrency writes (fetch current SHA, then PUT
-  // with it) — serving a cached GET here causes silent 409 conflicts on
-  // save, since the SHA the app thinks is current is stale.
+  // Never intercept GitHub API calls (authenticated, concurrency-sensitive).
   if (url.hostname === 'api.github.com') return;
 
   const isNavigation = req.mode === 'navigate';
@@ -81,4 +80,68 @@ self.addEventListener('fetch', (event) => {
         .catch(() => cached);
     })
   );
+});
+
+// --- Badge recomputation ------------------------------------------------
+
+async function readCachedJson(request){
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    const res = await cache.match(request);
+    if (!res) return null;
+    return await res.json();
+  } catch (e) { return null; }
+}
+
+async function computeAndSetBadge(){
+  try {
+    let articlesData = null;
+    try {
+      const res = await fetch('./articles.json', { cache: 'no-store' });
+      if (res.ok) {
+        articlesData = await res.clone().json();
+        const cache = await caches.open(CACHE_NAME);
+        cache.put('./articles.json', res.clone());
+      }
+    } catch (e) { /* offline */ }
+
+    if (!articlesData) articlesData = await readCachedJson('./articles.json');
+    if (!articlesData || !Array.isArray(articlesData.articles)) return;
+
+    const stateBlob = await readCachedJson(STATE_CACHE_KEY) || { read: [], hidden: [] };
+    const readSet = new Set(stateBlob.read || []);
+    const hiddenSet = new Set(stateBlob.hidden || []);
+
+    const unread = articlesData.articles.filter((a) => {
+      const id = a.link;
+      return !readSet.has(id) && !hiddenSet.has(id);
+    }).length;
+
+    if ('setAppBadge' in self.navigator) {
+      if (unread > 0) await self.navigator.setAppBadge(unread);
+      else await self.navigator.clearAppBadge();
+    }
+  } catch (e) { /* nothing we can do in the background */ }
+}
+
+self.addEventListener('periodicsync', (event) => {
+  if (event.tag === 'dispatch-badge-refresh') {
+    event.waitUntil(computeAndSetBadge());
+  }
+});
+
+self.addEventListener('message', (event) => {
+  const data = event.data || {};
+  if (data.type === 'dispatch-state-update') {
+    event.waitUntil((async () => {
+      try {
+        const cache = await caches.open(CACHE_NAME);
+        const body = JSON.stringify({ read: data.read || [], hidden: data.hidden || [] });
+        await cache.put(STATE_CACHE_KEY, new Response(body, { headers: { 'Content-Type': 'application/json' } }));
+      } catch (e) { /* ignore */ }
+      await computeAndSetBadge();
+    })());
+  } else if (data.type === 'dispatch-refresh-badge') {
+    event.waitUntil(computeAndSetBadge());
+  }
 });
