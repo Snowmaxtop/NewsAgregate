@@ -109,11 +109,18 @@ async function main() {
     }
   }
 
+  const RETENTION_DAYS = 7;
+  const cutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+
   const seen = new Set();
+  const beforeCount = allArticles.length;
   allArticles = allArticles
     .filter((a) => (seen.has(a.link) ? false : (seen.add(a.link), true)))
+    .filter((a) => new Date(a.date).getTime() >= cutoff)
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 300); // keep the file a reasonable size
+    .slice(0, 1000); // safety cap in case a feed misbehaves; retention above is the real limit
+
+  console.log(`Pruned to last ${RETENTION_DAYS} days: ${beforeCount} → ${allArticles.length} articles`);
 
   const output = {
     generatedAt: new Date().toISOString(),
