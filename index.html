@@ -610,6 +610,55 @@ async function localSet(key, value){
   try { localStorage.setItem(key, value); } catch (e) { /* ignore */ }
 }
 
+// Writes state to localStorage synchronously — no await, no network. This
+// is critical for the "mark as read" flow: opening an article navigates
+// away (target=_blank on mobile can interrupt in-flight async work), so
+// the read state must be committed locally *before* that happens. The
+// slower GitHub sync then runs separately and catches up when it can.
+function saveStateInstant(){
+  try { localStorage.setItem('article-state', JSON.stringify(state)); } catch (e) { /* ignore */ }
+}
+
+// Unions the locally-cached read/hidden lists on top of the current state
+// (which normally came from GitHub). If local had entries GitHub didn't,
+// they're kept and pushed back up so nothing marked-read is ever lost to
+// an interrupted sync. Favorites are objects, so they're merged by link.
+function mergeLocalIntoState(){
+  let localRaw;
+  try { localRaw = localStorage.getItem('article-state'); } catch (e) { return; }
+  if (!localRaw) return;
+
+  let local;
+  try { local = JSON.parse(localRaw); } catch (e) { return; }
+
+  const before = {
+    read: state.read.length,
+    hidden: state.hidden.length,
+    favorites: state.favorites.length,
+  };
+
+  const unionLinks = (a = [], b = []) => Array.from(new Set([...a, ...b]));
+  state.read = unionLinks(state.read, local.read);
+  state.hidden = unionLinks(state.hidden, local.hidden);
+
+  // Favorites: merge by link, preferring whichever entry has a real title
+  const favByLink = new Map();
+  [...(state.favorites || []), ...(local.favorites || [])].forEach(f => {
+    if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    const existing = favByLink.get(f.link);
+    if (!existing || (existing.title === '(article expiré)' && f.title !== '(article expiré)')) {
+      favByLink.set(f.link, f);
+    }
+  });
+  state.favorites = Array.from(favByLink.values());
+
+  const grew = state.read.length > before.read || state.hidden.length > before.hidden || state.favorites.length > before.favorites;
+  if (grew) {
+    saveStateInstant();
+    saveState(); // push the merged superset back up to GitHub
+  }
+}
+
 // --- GitHub sync --------------------------------------------------------
 // Optional: stores read/favorite/hidden state as a JSON file inside a repo
 // you configure, via GitHub's REST API (which supports CORS for browser
@@ -789,6 +838,13 @@ async function loadState(){
         state.hidden = content.hidden || [];
       }
       githubConnected = true;
+
+      // Merge any locally-cached state on top of what GitHub returned. A
+      // "mark as read" committed to localStorage just before the app was
+      // closed may not have finished syncing to GitHub — without this
+      // merge, that read would appear to revert on reload. We union the
+      // link lists (local wins) and re-sync if local had anything extra.
+      mergeLocalIntoState();
       updateSyncNote();
       return;
     } catch (e) {
@@ -1019,19 +1075,41 @@ function updateCounts(){
   document.getElementById('c-fav').textContent = state.favorites.length;
 }
 
+function isFavorited(id){
+  return state.favorites.some(f => f.link === id);
+}
+
+function favoritesAsArticles(){
+  return state.favorites.map(f => {
+    const source = SOURCES.find(s => s.id === f.sourceId) || { name: 'Source inconnue', category: 'gamer', color: 'gamer', lang: 'fr' };
+    return {
+      title: f.title || '(article expiré)',
+      link: f.link,
+      date: f.date ? new Date(f.date) : new Date(0),
+      source,
+      image: f.image || null
+    };
+  });
+}
+
 function render(){
   updateCounts();
 
-  let list = articles.filter(a => !state.hidden.includes(idFor(a)));
-  if(currentFilter === 'gamer') list = list.filter(a => a.source.category === 'gamer');
-  if(currentFilter === 'industry') list = list.filter(a => a.source.category === 'industry');
-  if(currentFilter === 'favorites') list = list.filter(a => state.favorites.includes(idFor(a)));
+  let list;
+  if(currentFilter === 'favorites'){
+    list = favoritesAsArticles().filter(a => !state.hidden.includes(idFor(a)));
+  } else {
+    list = articles.filter(a => !state.hidden.includes(idFor(a)));
+    if(currentFilter === 'gamer') list = list.filter(a => a.source.category === 'gamer');
+    if(currentFilter === 'industry') list = list.filter(a => a.source.category === 'industry');
+  }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
+  list.sort((a,b) => b.date - a.date);
 
   if(list.length === 0){
     let msg = 'AWAITING SIGNAL';
-    if(articles.length > 0){
+    if(articles.length > 0 || currentFilter === 'favorites'){
       msg = searchQuery ? `NO MATCHES FOR "${escapeHtml(searchQuery)}"` : 'NO ARTICLES ON THIS CHANNEL';
     }
     feedEl.innerHTML = `<div class="empty">${msg}<span class="cursor"></span></div>`;
@@ -1041,7 +1119,7 @@ function render(){
   feedEl.innerHTML = list.map((a, idx) => {
     const id = idFor(a);
     const isRead = state.read.includes(id);
-    const isFav = state.favorites.includes(id);
+    const isFav = isFavorited(id);
     const hasThumb = !!a.image;
     const showSeparator = idx === 0 || !sameDay(a.date, list[idx - 1].date);
     const separatorHtml = showSeparator ? `<div class="day-sep"><span>${dayLabel(a.date)}</span></div>` : '';
@@ -1120,9 +1198,21 @@ feedEl.addEventListener('click', (e) => {
 
   if(e.target.classList.contains('star')){
     e.preventDefault();
-    const idx = state.favorites.indexOf(id);
-    if(idx === -1) state.favorites.push(id);
-    else state.favorites.splice(idx, 1);
+    const idx = state.favorites.findIndex(f => f.link === id);
+    if(idx === -1){
+      const article = articles.find(a => idFor(a) === id) || favoritesAsArticles().find(a => idFor(a) === id);
+      if(article){
+        state.favorites.push({
+          link: article.link,
+          title: article.title,
+          date: article.date.toISOString(),
+          image: article.image || null,
+          sourceId: article.source.id
+        });
+      }
+    } else {
+      state.favorites.splice(idx, 1);
+    }
     saveState();
     pushStateToExtension();
     render();
@@ -1130,14 +1220,32 @@ feedEl.addEventListener('click', (e) => {
   }
 
   if(e.target.classList.contains('headline')){
-    if(!state.read.includes(id)){
-      state.read.push(id);
-      saveState();
-      pushStateToExtension();
-    }
-    row.classList.add('read');
-    updateCounts();
+    markAsRead(id, row);
   }
+});
+
+// Mark-as-read must survive the tab switch that opening an article causes.
+// We commit synchronously to localStorage first (saveStateInstant), update
+// the UI immediately, and only then kick off the slower GitHub sync. We
+// also hook pointerdown (fires before the link navigates) so the local
+// write is guaranteed to happen even if the browser backgrounds this tab.
+function markAsRead(id, row){
+  if(!state.read.includes(id)){
+    state.read.push(id);
+    saveStateInstant();      // synchronous, guaranteed before navigation
+    saveState();             // async GitHub sync, catches up when it can
+  }
+  if(row) row.classList.add('read');
+  updateCounts();
+}
+
+feedEl.addEventListener('pointerdown', (e) => {
+  const link = e.target.closest('.headline');
+  if(!link) return;
+  const row = e.target.closest('.row');
+  if(!row) return;
+  const id = decodeURIComponent(row.dataset.id);
+  markAsRead(id, row);
 });
 
 const searchInputEl = document.getElementById('searchInput');
@@ -1336,7 +1444,31 @@ document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
 (async function init(){
   await loadState();
   await loadFeeds();
+  enrichLegacyFavorites();
 })();
+
+// One-time migration: favorites used to be stored as plain link strings.
+// Now they carry a full snapshot (title/date/image/source) so the
+// Favorites tab still works once an article ages out of articles.json.
+// This upgrades any old-format entries using whatever's currently loaded,
+// then persists the upgrade so it only has to happen once.
+function enrichLegacyFavorites(){
+  let changed = false;
+  state.favorites = state.favorites.map(f => {
+    if (typeof f === 'string') {
+      const match = articles.find(a => a.link === f);
+      changed = true;
+      return match
+        ? { link: f, title: match.title, date: match.date.toISOString(), image: match.image || null, sourceId: match.source.id }
+        : { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    }
+    return f;
+  });
+  if (changed) {
+    saveState();
+    render();
+  }
+}
 
 // Register the service worker: enables offline access and lets Chrome
 // offer "Install app" / "Add to Home screen" on Android.
