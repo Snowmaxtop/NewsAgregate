@@ -22,7 +22,7 @@
     --ok:#4CD97B;
   }
   *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
+  html,body{margin:0;padding:0;overflow-x:hidden;}
   body{
     background:var(--ink);
     color:var(--paper);
@@ -403,12 +403,57 @@
     opacity:0.6;
   }
 
-  @media (max-width:520px){
-    .row{grid-template-columns:36px 1fr 24px;}
-    .row.has-thumb{grid-template-columns:36px 52px 1fr 24px;}
-    .row.has-thumb .thumb{width:52px;height:52px;}
+  @media (max-width:640px){
+    .wrap{padding:16px 14px 60px;}
+
+    .masthead{padding-bottom:10px;gap:8px;}
+    .masthead h1{font-size:21px;}
+    .masthead .meta{text-align:left;order:3;flex-basis:100%;}
+    .gh-settings-btn{width:32px;height:32px;font-size:15px;}
+
+    .legend{gap:10px;font-size:10px;padding:10px 0 12px;}
+    .legend .src{padding:2px 0;} /* a bit more vertical breathing room per tap target */
+    .legend .mc-link{order:99;margin-left:0;flex-basis:100%;display:flex;justify-content:center;margin-top:6px;padding:8px 14px;}
+
+    .search-row{padding:11px 12px;}
+    .search-bar{font-size:16px;} /* avoids mobile browsers auto-zooming on focus */
+    .clear-search{padding:6px;}
+
+    .controls{gap:8px;}
+    .filters{gap:6px;width:100%;}
+    .pill{padding:9px 13px;font-size:11px;}
+    .actions{gap:8px;flex-wrap:wrap;width:100%;}
+    .actions button{padding:9px 12px;flex:1;min-width:90px;}
+    .sites-wrap{flex:1;}
+    .sites-btn{padding:9px 12px;width:100%;}
+    .sites-dropdown{left:0;right:auto;max-width:calc(100vw - 48px);}
+
+    .lang-filters{margin-bottom:12px;}
+    .lang-pill{padding:8px 13px;}
+
+    .row{grid-template-columns:30px 1fr 36px;gap:10px;padding:13px 2px;}
+    .row.has-thumb{grid-template-columns:30px 56px 1fr 36px;}
+    .row.has-thumb .thumb{width:56px;height:56px;}
     .row .time{display:none;}
-    .masthead .meta{text-align:left;}
+    .row .headline{font-size:15px;line-height:1.4;}
+    .row .dot-col .u{width:9px;height:9px;}
+
+    /* Bigger touch targets on the row action icons without changing their visual size */
+    .row-actions{gap:0;}
+    .row .star,.row .bin,.row .mc-check{
+      padding:10px;display:flex;align-items:center;justify-content:center;
+    }
+
+    .modal-overlay{padding:12px;}
+    .modal-box{padding:18px;border-radius:10px;}
+    .modal-box input{font-size:16px;padding:11px 10px;}
+    .modal-actions button{flex:1;min-width:100px;padding:11px 10px;}
+  }
+
+  @media (max-width:380px){
+    .masthead h1{font-size:18px;}
+    .filters{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+    .pill{text-align:center;}
   }
 </style>
 </head>
