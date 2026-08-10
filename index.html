@@ -820,6 +820,23 @@ async function saveState(){
     githubConnected = true;
     updateSyncNote();
   } catch (e) {
+    // A 409 means another device wrote in the tiny window between our GET
+    // and PUT — genuinely rare, but worth one automatic retry with a fresh
+    // SHA before surfacing an error.
+    if (String(e.message).includes('409')) {
+      try {
+        const { sha } = await githubGetFile(cfg);
+        githubSha = await githubPutFile(cfg, state, sha);
+        githubConnected = true;
+        updateSyncNote();
+        return;
+      } catch (e2) {
+        console.error('GitHub sync save failed (after retry):', e2);
+        githubConnected = false;
+        updateSyncNote(e2.message);
+        return;
+      }
+    }
     console.error('GitHub sync save failed:', e);
     githubConnected = false;
     updateSyncNote(e.message);

@@ -12,7 +12,7 @@
 //
 // Bump CACHE_NAME whenever this file or the app shell changes, so old
 // caches get cleaned up automatically on the next activate.
-const CACHE_NAME = 'dispatch-v1';
+const CACHE_NAME = 'dispatch-v2';
 const APP_SHELL = [
   './',
   './index.html',
@@ -44,6 +44,13 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
 
   const url = new URL(req.url);
+
+  // Never intercept GitHub API calls. They're authenticated, dynamic, and
+  // used for optimistic-concurrency writes (fetch current SHA, then PUT
+  // with it) — serving a cached GET here causes silent 409 conflicts on
+  // save, since the SHA the app thinks is current is stale.
+  if (url.hostname === 'api.github.com') return;
+
   const isNavigation = req.mode === 'navigate';
   const isArticlesJson = url.pathname.endsWith('articles.json');
 
