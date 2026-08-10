@@ -284,6 +284,8 @@
   }
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .scroll-read-toggle{margin-left:auto;}
+  .scroll-read-toggle.active{background:var(--ok);color:var(--ink);border-color:var(--ok);}
 
   /* Feed list */
   .feed{border-top:1px solid var(--line);}
@@ -512,6 +514,7 @@
     <button class="lang-pill active" data-lang="all">Toutes langues</button>
     <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
     <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+    <button class="lang-pill scroll-read-toggle" id="scrollReadToggle" title="Marquer comme lu les articles dépassés en défilant">👁 Lu au défilement : OFF</button>
   </div>
 
   <div class="feed" id="feed">
@@ -1084,6 +1087,23 @@ function updateCounts(){
   document.getElementById('c-gamer').textContent = unreadGamer;
   document.getElementById('c-industry').textContent = unreadIndustry;
   document.getElementById('c-fav').textContent = state.favorites.length;
+  updateAppBadge(unreadAll);
+}
+
+// --- App icon badge ----------------------------------------------------
+// Uses the Badging API (supported by Chrome on Android for installed
+// PWAs). Shows the number of unread articles on the home-screen icon.
+// While the app is open this stays live; a periodic recount below keeps
+// it fresh as the GitHub Action adds new articles over time. (Updating it
+// while the app is fully closed requires the Push API — a planned second
+// step.)
+function updateAppBadge(count){
+  try {
+    if ('setAppBadge' in navigator) {
+      if (count > 0) navigator.setAppBadge(count);
+      else navigator.clearAppBadge();
+    }
+  } catch (e) { /* badging not available, ignore */ }
 }
 
 function isFavorited(id){
@@ -1152,6 +1172,62 @@ function render(){
       </div>
     `;
   }).join('');
+
+  observeRowsForScrollRead();
+}
+
+// --- Mark-as-read on scroll-past ---------------------------------------
+// When enabled, an article that has actually been on screen and then
+// scrolls out past the TOP edge is treated as "seen and skipped" → marked
+// read. We require it to have been intersecting first (seenIds), so simply
+// rendering below the fold or scrolling upward past unseen items does not
+// mark them. This matches the gesture: scrolling down past headlines you
+// don't care about.
+let scrollReadEnabled = false;
+try { scrollReadEnabled = localStorage.getItem('scroll-read') === 'on'; } catch(e){}
+
+const seenIds = new Set();
+let scrollObserver = null;
+
+function observeRowsForScrollRead(){
+  if (scrollObserver) scrollObserver.disconnect();
+  seenIds.clear();
+  if (!scrollReadEnabled) return;
+
+  scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const row = entry.target;
+      const id = decodeURIComponent(row.dataset.id);
+
+      if (entry.isIntersecting) {
+        // Mark that we've actually laid eyes on this row
+        seenIds.add(id);
+      } else if (seenIds.has(id)) {
+        // It left the viewport. Only count it if it exited via the TOP
+        // (its bottom edge is above the viewport), i.e. scrolled past
+        // upward — not if it left because a filter re-rendered the list.
+        if (entry.boundingClientRect.bottom < entry.rootBounds?.top + 1) {
+          if (!state.read.includes(id)) {
+            state.read.push(id);
+            row.classList.add('read');
+            saveStateInstant();
+            scheduleScrollReadSync();
+          }
+        }
+      }
+    });
+  }, { threshold: 0.6 }); // needs ~60% visible to count as "seen"
+
+  document.querySelectorAll('.row').forEach(row => scrollObserver.observe(row));
+}
+
+// Batch the GitHub sync so a fast scroll past 20 items doesn't fire 20
+// network writes — coalesce into one save shortly after scrolling settles.
+let scrollSyncTimer = null;
+function scheduleScrollReadSync(){
+  updateCounts();
+  clearTimeout(scrollSyncTimer);
+  scrollSyncTimer = setTimeout(() => { saveState(); }, 1200);
 }
 
 function escapeHtml(str){
@@ -1318,10 +1394,25 @@ document.getElementById('filters').addEventListener('click', (e) => {
 document.getElementById('langFilters').addEventListener('click', (e) => {
   const btn = e.target.closest('.lang-pill');
   if(!btn) return;
-  document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
+  if(btn.id === 'scrollReadToggle') return; // handled separately below
+  document.querySelectorAll('.lang-pill:not(#scrollReadToggle)').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentLang = btn.dataset.lang;
   render();
+});
+
+// Scroll-to-read toggle
+const scrollReadToggleBtn = document.getElementById('scrollReadToggle');
+function refreshScrollReadToggleLabel(){
+  scrollReadToggleBtn.textContent = `👁 Lu au défilement : ${scrollReadEnabled ? 'ON' : 'OFF'}`;
+  scrollReadToggleBtn.classList.toggle('active', scrollReadEnabled);
+}
+refreshScrollReadToggleLabel();
+scrollReadToggleBtn.addEventListener('click', () => {
+  scrollReadEnabled = !scrollReadEnabled;
+  try { localStorage.setItem('scroll-read', scrollReadEnabled ? 'on' : 'off'); } catch(e){}
+  refreshScrollReadToggleLabel();
+  observeRowsForScrollRead(); // re-arm or tear down the observer immediately
 });
 
 // --- Sites quick-access dropdown ---------------------------------------
@@ -1533,6 +1624,30 @@ function enrichLegacyFavorites(){
     render();
   }
 }
+
+// Keep articles (and therefore the unread badge) fresh while the app is
+// open or backgrounded: re-pull articles.json every 15 minutes, and also
+// whenever the app regains focus (e.g. you switch back to it). This is how
+// the badge count can climb through the day as the GitHub Action commits
+// new articles — without needing the app to be reopened from scratch.
+const ARTICLES_REFRESH_MS = 15 * 60 * 1000;
+
+async function refreshArticlesQuietly(){
+  if (usingExtensionData) return;
+  try {
+    const res = await fetch('./articles.json', { cache: 'no-store' });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (Array.isArray(data.articles) && data.articles.length > 0) {
+      await applyJsonData(data); // this calls render() → updateCounts() → badge refresh
+    }
+  } catch (e) { /* offline or not deployed yet; keep current data */ }
+}
+
+setInterval(refreshArticlesQuietly, ARTICLES_REFRESH_MS);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') refreshArticlesQuietly();
+});
 
 // Register the service worker: enables offline access and lets Chrome
 // offer "Install app" / "Add to Home screen" on Android.
