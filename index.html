@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DISPATCH — Video Game Newswire</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#14181C">
+<link rel="icon" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -1316,6 +1320,16 @@ document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
   await loadState();
   await loadFeeds();
 })();
+
+// Register the service worker: enables offline access and lets Chrome
+// offer "Install app" / "Add to Home screen" on Android.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((err) => {
+      console.warn('Service worker registration failed:', err);
+    });
+  });
+}
 </script>
 
 </body>
