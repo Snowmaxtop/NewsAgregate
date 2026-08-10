@@ -1194,32 +1194,63 @@ function observeRowsForScrollRead(){
   seenIds.clear();
   if (!scrollReadEnabled) return;
 
+  // No explicit root → observes against the viewport, which is correct for
+  // both desktop (window scrolls) and the mobile PWA (also window scrolls).
   scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       const row = entry.target;
+      if (!row.dataset.id) return;
       const id = decodeURIComponent(row.dataset.id);
 
       if (entry.isIntersecting) {
-        // Mark that we've actually laid eyes on this row
+        // We've actually laid eyes on this row (≥50% visible).
         seenIds.add(id);
       } else if (seenIds.has(id)) {
-        // It left the viewport. Only count it if it exited via the TOP
-        // (its bottom edge is above the viewport), i.e. scrolled past
-        // upward — not if it left because a filter re-rendered the list.
-        if (entry.boundingClientRect.bottom < entry.rootBounds?.top + 1) {
-          if (!state.read.includes(id)) {
-            state.read.push(id);
-            row.classList.add('read');
-            saveStateInstant();
-            scheduleScrollReadSync();
-          }
+        // It left the viewport. Only count it as "skipped" if it exited via
+        // the TOP — i.e. its bottom edge is now above the top of the screen
+        // (y < 0). getBoundingClientRect is viewport-relative, so this is
+        // reliable on both desktop and mobile without needing rootBounds.
+        const rect = row.getBoundingClientRect();
+        if (rect.bottom <= 0) {
+          markRowReadFromScroll(id, row);
         }
       }
     });
-  }, { threshold: 0.6 }); // needs ~60% visible to count as "seen"
+  }, { threshold: [0, 0.5] }); // fire around both entering and the 50% seen mark
 
   document.querySelectorAll('.row').forEach(row => scrollObserver.observe(row));
 }
+
+function markRowReadFromScroll(id, row){
+  if (state.read.includes(id)) return;
+  if (state.favorites.some(f => f.link === id)) return; // never auto-read a favorite
+  state.read.push(id);
+  row.classList.add('read');
+  saveStateInstant();
+  scheduleScrollReadSync();
+}
+
+// Safety sweep: on a very fast fling the observer can miss the exact moment
+// a row crosses the top edge. On scroll (throttled via rAF) we also sweep
+// any already-seen rows that are now fully above the viewport.
+let sweepScheduled = false;
+function scrollReadSweep(){
+  if (!scrollReadEnabled) return;
+  if (sweepScheduled) return;
+  sweepScheduled = true;
+  requestAnimationFrame(() => {
+    sweepScheduled = false;
+    document.querySelectorAll('.row').forEach(row => {
+      if (!row.dataset.id) return;
+      const id = decodeURIComponent(row.dataset.id);
+      if (!seenIds.has(id)) return;          // only rows we actually saw
+      if (state.read.includes(id)) return;
+      const rect = row.getBoundingClientRect();
+      if (rect.bottom <= 0) markRowReadFromScroll(id, row);
+    });
+  });
+}
+window.addEventListener('scroll', scrollReadSweep, { passive: true });
 
 // Batch the GitHub sync so a fast scroll past 20 items doesn't fire 20
 // network writes — coalesce into one save shortly after scrolling settles.
