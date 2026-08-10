@@ -1220,15 +1220,15 @@ feedEl.addEventListener('click', (e) => {
   }
 
   if(e.target.classList.contains('headline')){
-    markAsRead(id, row);
+    // Read-marking is handled by the pointerup tap-detection below, so the
+    // link's default navigation is all that needs to happen here.
+    return;
   }
 });
 
 // Mark-as-read must survive the tab switch that opening an article causes.
 // We commit synchronously to localStorage first (saveStateInstant), update
-// the UI immediately, and only then kick off the slower GitHub sync. We
-// also hook pointerdown (fires before the link navigates) so the local
-// write is guaranteed to happen even if the browser backgrounds this tab.
+// the UI immediately, and only then kick off the slower GitHub sync.
 function markAsRead(id, row){
   if(!state.read.includes(id)){
     state.read.push(id);
@@ -1239,14 +1239,44 @@ function markAsRead(id, row){
   updateCounts();
 }
 
+// Tap-vs-scroll detection: on mobile, pressing a headline to start a
+// scroll must NOT count as opening it. We record where the finger lands
+// on pointerdown, then on pointerup only mark the article read if the
+// finger lifted close to where it started (a real tap) and quickly enough.
+// A drag beyond the threshold is a scroll and is ignored.
+const TAP_MOVE_THRESHOLD = 10; // px
+const TAP_TIME_THRESHOLD = 500; // ms
+let tapStart = null;
+
 feedEl.addEventListener('pointerdown', (e) => {
   const link = e.target.closest('.headline');
-  if(!link) return;
-  const row = e.target.closest('.row');
-  if(!row) return;
-  const id = decodeURIComponent(row.dataset.id);
-  markAsRead(id, row);
+  if(!link){ tapStart = null; return; }
+  tapStart = { x: e.clientX, y: e.clientY, t: Date.now(), link };
 });
+
+feedEl.addEventListener('pointerup', (e) => {
+  if(!tapStart) return;
+  const link = e.target.closest('.headline');
+  const start = tapStart;
+  tapStart = null;
+
+  // must lift on the same headline it started on
+  if(!link || link !== start.link) return;
+
+  const movedX = Math.abs(e.clientX - start.x);
+  const movedY = Math.abs(e.clientY - start.y);
+  const elapsed = Date.now() - start.t;
+
+  if(movedX <= TAP_MOVE_THRESHOLD && movedY <= TAP_MOVE_THRESHOLD && elapsed <= TAP_TIME_THRESHOLD){
+    const row = e.target.closest('.row');
+    if(!row) return;
+    const id = decodeURIComponent(row.dataset.id);
+    markAsRead(id, row);
+  }
+});
+
+// If the pointer leaves the feed area mid-gesture, abandon the pending tap
+feedEl.addEventListener('pointercancel', () => { tapStart = null; });
 
 const searchInputEl = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
