@@ -27,6 +27,29 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;overflow-x:hidden;}
+
+  .back-to-top{
+    position:fixed;
+    bottom:20px;right:20px;
+    width:46px;height:46px;
+    border-radius:50%;
+    background:var(--ink-2);
+    border:1px solid var(--line-strong);
+    color:var(--paper);
+    font-size:20px;line-height:1;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    opacity:0;transform:translateY(12px) scale(0.9);
+    pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease, border-color .15s ease;
+    z-index:150;
+  }
+  .back-to-top.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  .back-to-top:hover{background:var(--ink-3);border-color:var(--paper);}
+  @media (max-width:640px){
+    .back-to-top{bottom:16px;right:16px;width:44px;height:44px;}
+  }
   body{
     background:var(--ink);
     color:var(--paper);
@@ -350,6 +373,18 @@
     font-weight:500;
   }
   .row.read .headline{color:var(--paper-dim);font-weight:400;}
+  .row .summary{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:12.5px;
+    line-height:1.4;
+    color:var(--paper-dim);
+    margin-top:5px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .row.read .summary{opacity:0.65;}
   .row .source-name{
     font-family:'IBM Plex Mono', monospace;
     font-size:10px;
@@ -520,6 +555,8 @@
 
   <footer>SOURCES — IGN FRANCE · ROCK PAPER SHOTGUN · GAME DEVELOPER · GAMESINDUSTRY.BIZ</footer>
 </div>
+
+<button id="backToTop" class="back-to-top" title="Retour en haut" aria-label="Retour en haut">↑</button>
 
 <div id="githubModal" class="modal-overlay">
   <div class="modal-box">
@@ -767,7 +804,7 @@ function applyExtensionData(cachedArticles, extState){
     .map(a => {
       const source = SOURCES.find(s => s.id === a.sourceId);
       if (!source) return null;
-      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null };
+      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '' };
     })
     .filter(Boolean)
     .sort((a, b) => b.date - a.date);
@@ -811,7 +848,7 @@ async function applyJsonData(data){
     .map(a => {
       const source = SOURCES.find(s => s.id === a.sourceId);
       if (!source) return null;
-      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null };
+      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '' };
     })
     .filter(Boolean)
     .sort((a, b) => b.date - a.date);
@@ -1142,7 +1179,8 @@ function favoritesAsArticles(){
       link: f.link,
       date: f.date ? new Date(f.date) : new Date(0),
       source,
-      image: f.image || null
+      image: f.image || null,
+      summary: f.summary || ''
     };
   });
 }
@@ -1152,7 +1190,10 @@ function render(){
 
   let list;
   if(currentFilter === 'favorites'){
-    list = favoritesAsArticles().filter(a => !state.hidden.includes(idFor(a)));
+    // Favorites are always shown in full — never removed by the hidden
+    // filter. A favorite is an explicit "keep this forever" signal, so
+    // even if the same article was also binned, the favorite wins here.
+    list = favoritesAsArticles();
   } else {
     list = articles.filter(a => !state.hidden.includes(idFor(a)));
     if(currentFilter === 'gamer') list = list.filter(a => a.source.category === 'gamer');
@@ -1186,6 +1227,7 @@ function render(){
         <div>
           <span class="tag ${a.source.color}">${a.source.category}</span>
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+          ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}${a.viaAI ? '<span class="ai-badge">· via AI search</span>' : ''}</div>
         </div>
         <div class="row-actions">
@@ -1275,6 +1317,18 @@ function scrollReadSweep(){
 }
 window.addEventListener('scroll', scrollReadSweep, { passive: true });
 
+// --- Back-to-top button -------------------------------------------------
+const backToTopBtn = document.getElementById('backToTop');
+function updateBackToTop(){
+  if (window.scrollY > 400) backToTopBtn.classList.add('show');
+  else backToTopBtn.classList.remove('show');
+}
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+updateBackToTop();
+
 // Batch the GitHub sync so a fast scroll past 20 items doesn't fire 20
 // network writes — coalesce into one save shortly after scrolling settles.
 let scrollSyncTimer = null;
@@ -1348,7 +1402,8 @@ feedEl.addEventListener('click', (e) => {
           title: article.title,
           date: article.date.toISOString(),
           image: article.image || null,
-          sourceId: article.source.id
+          sourceId: article.source.id,
+          summary: article.summary || ''
         });
       }
     } else {
