@@ -944,7 +944,13 @@ function sameDay(d1, d2){
   return d1.toDateString() === d2.toDateString();
 }
 
-function dayLabel(date){
+function dayLabel(date, absolute){
+  // In the Favorites view we pass absolute=true: favorites can be weeks
+  // old, so "AUJOURD'HUI/HIER" would be misleading — always show the full
+  // date (with year, since favorites can span across years).
+  if (absolute) {
+    return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long', year:'numeric'}).toUpperCase();
+  }
   const now = new Date();
   const d0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const d1 = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -1061,7 +1067,7 @@ function render(){
     const isFav = isFavorited(id);
     const hasThumb = !!a.image;
     const showSeparator = idx === 0 || !sameDay(a.date, list[idx - 1].date);
-    const separatorHtml = showSeparator ? `<div class="day-sep"><span>${dayLabel(a.date)}</span></div>` : '';
+    const separatorHtml = showSeparator ? `<div class="day-sep"><span>${dayLabel(a.date, currentFilter === 'favorites')}</span></div>` : '';
     return separatorHtml + `
       <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
         <div class="dot-col"><span class="u"></span></div>
