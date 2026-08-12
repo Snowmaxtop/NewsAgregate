@@ -280,6 +280,27 @@
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
 
+  .tag-filters{display:flex;gap:6px;flex-wrap:wrap;}
+  .tag-pill{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    padding:6px 11px;border-radius:999px;
+    border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);
+    cursor:pointer;transition:all .15s ease;
+  }
+  .tag-pill:hover{border-color:var(--paper);color:var(--paper);}
+  .tag-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+
+  /* Per-article tag chips shown next to the category tag */
+  .row .content-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9px;letter-spacing:0.4px;text-transform:uppercase;
+    padding:2px 6px;border-radius:4px;margin-left:5px;
+    vertical-align:middle;
+  }
+  .content-tag.sortie{background:rgba(76,217,123,0.16);color:var(--ok);}
+  .content-tag.patch{background:rgba(185,140,255,0.16);color:#B98CFF;}
+
   .source-select{
     font-family:'IBM Plex Mono', monospace;
     font-size:11.5px;
@@ -312,6 +333,32 @@
     padding:13px 4px;
     border-bottom:1px solid var(--line);
     transition:background .15s ease;
+    position:relative;
+    background:var(--ink);           /* opaque so the reveal sits behind it */
+    touch-action:pan-y;              /* allow vertical scroll; we handle horizontal */
+    --swipe-progress:0;
+  }
+  /* Red "delete" layer revealed in the gap the row leaves as it slides
+     right. It's pinned to the row's left edge (left:-100%) so as the row
+     translates right, this layer fills the vacated space on the left. */
+  .row::before{
+    content:'🗑';
+    position:absolute;
+    top:0;bottom:0;
+    left:-100%;width:100%;
+    display:flex;align-items:center;justify-content:flex-end;
+    padding-right:24px;
+    font-size:20px;
+    background:linear-gradient(90deg, rgba(255,75,75,0.15), rgba(255,75,75,0.95));
+    color:#fff;
+    opacity:0;
+    pointer-events:none;
+  }
+  .row.swiping{transition:none;z-index:1;}
+  .row.swiping::before{opacity:1;}
+  .row.swipe-deleting{
+    transition:transform .28s cubic-bezier(.4,0,.2,1);
+    z-index:2;
   }
   .row.has-thumb{grid-template-columns:56px 96px 72px 1fr 28px;}
   .row .thumb{
@@ -535,6 +582,12 @@
         <option value="all">Toutes les sources</option>
       </select>
     </div>
+
+    <div class="tag-filters" id="tagFilters">
+      <button class="tag-pill active" data-tag="all">Tous les types</button>
+      <button class="tag-pill" data-tag="sortie">🚀 Sorties</button>
+      <button class="tag-pill" data-tag="patch">🔧 Patchs</button>
+    </div>
   </div>
 
   <div class="feed" id="feed">
@@ -624,8 +677,18 @@
    COMPORTEMENTS AUTOMATIQUES
    --------------------------
    - Lu au tap : pointerdown/up avec seuil 10px/500ms (tap ≠ scroll)
+   - Swipe → droite pour supprimer : geste tactile uniquement (jamais
+     souris), horizontal franc (dx>dy*1.3), déclenché à 110px, avec fond
+     rouge 🗑 révélé + animation de sortie. Gestion unifiée tap/scroll/
+     swipe dans un seul tracker `gesture` pour éviter les conflits.
+   - Tags de contenu (sortie/patch) : détectés côté serveur par mots-clés
+     (TAG_RULES dans fetch-articles.mjs), filtrables via #tagFilters.
+     Heuristique conservatrice (~quelques % des articles), volontairement.
    - Lu au défilement : IntersectionObserver (≥50% vu) + sortie par le
      haut (rect.bottom<=0) + balayage rAF de secours. Épargne les favoris.
+   - Purge read/hidden : côté APP au chargement (purgeStaleState) ET côté
+     SERVEUR à chaque run du workflow (fetch-articles.mjs réécrit
+     dispatch-state.json). Favoris jamais touchés.
    - saveStateInstant() : écriture localStorage SYNCHRONE avant toute
      navigation ; saveState() : sync GitHub async avec retry sur 409.
    - Badge : updateCounts() → updateAppBadge() ; refresh périodique 5min
@@ -669,6 +732,7 @@ let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
 let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
+let currentTag = 'all';     // 'all' | 'sortie' | 'patch' — set by #tagFilters
 let searchQuery = '';
 let githubConnected = false;
 let githubSha = null;
@@ -834,7 +898,7 @@ async function applyJsonData(data){
     .map(a => {
       const source = SOURCES.find(s => s.id === a.sourceId);
       if (!source) return null;
-      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '' };
+      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '', tags: a.tags || [] };
     })
     .filter(Boolean)
     .sort((a, b) => b.date - a.date);
@@ -1049,6 +1113,7 @@ function render(){
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
+  if(currentTag !== 'all') list = list.filter(a => (a.tags || []).includes(currentTag));
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
   list.sort((a,b) => b.date - a.date);
 
@@ -1074,7 +1139,7 @@ function render(){
         <div class="time">${formatTime(a.date)}</div>
         ${hasThumb ? `<div class="thumb"><img src="${a.image}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
         <div>
-          <span class="tag ${a.source.color}">${a.source.category}</span>
+          <span class="tag ${a.source.color}">${a.source.category}</span>${(a.tags || []).map(t => `<span class="content-tag ${t}">${t === 'sortie' ? '🚀 sortie' : '🔧 patch'}</span>`).join('')}
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}</div>
@@ -1286,39 +1351,119 @@ function markAsRead(id, row){
 // on pointerdown, then on pointerup only mark the article read if the
 // finger lifted close to where it started (a real tap) and quickly enough.
 // A drag beyond the threshold is a scroll and is ignored.
-const TAP_MOVE_THRESHOLD = 10; // px
-const TAP_TIME_THRESHOLD = 500; // ms
-let tapStart = null;
+// --- Unified pointer handling: tap-to-read + swipe-right-to-delete ------
+// A single gesture tracker so tap, vertical scroll, and horizontal swipe
+// never fight each other. Decision logic:
+//   • Movement stays small           → it's a TAP (mark read, if on title)
+//   • Movement is mostly VERTICAL     → let the browser scroll, do nothing
+//   • Movement is clearly HORIZONTAL  → it's a SWIPE; follow the finger,
+//     and if released past SWIPE_TRIGGER to the right, delete with an
+//     animation. Swipe is pointer/touch only (mouse drags are ignored so
+//     desktop keeps using the buttons).
+const TAP_MOVE_THRESHOLD = 10;    // px — below this, it's a tap
+const TAP_TIME_THRESHOLD = 500;   // ms
+const SWIPE_DIR_RATIO = 1.3;      // horizontal must exceed vertical by this factor to count as a swipe
+const SWIPE_TRIGGER = 110;        // px — how far right you must swipe to delete (deliberately "conséquent")
+const SWIPE_MAX_VISUAL = 160;     // caps how far the row visually follows the finger
+
+let gesture = null;
+
+function currentPointIsInteractive(target){
+  // taps on the action buttons/links keep their own click handlers
+  return target.closest('.star, .bin, .mc-check');
+}
 
 feedEl.addEventListener('pointerdown', (e) => {
-  const link = e.target.closest('.headline');
-  if(!link){ tapStart = null; return; }
-  tapStart = { x: e.clientX, y: e.clientY, t: Date.now(), link };
+  const row = e.target.closest('.row');
+  if(!row){ gesture = null; return; }
+  gesture = {
+    row,
+    id: decodeURIComponent(row.dataset.id),
+    x: e.clientX, y: e.clientY, t: Date.now(),
+    onHeadline: !!e.target.closest('.headline'),
+    onInteractive: !!currentPointIsInteractive(e.target),
+    mode: null,            // null | 'tap' | 'scroll' | 'swipe'
+    pointerType: e.pointerType,
+  };
 });
 
+feedEl.addEventListener('pointermove', (e) => {
+  if(!gesture) return;
+  const dx = e.clientX - gesture.x;
+  const dy = e.clientY - gesture.y;
+
+  // Lock the gesture mode once movement is meaningful
+  if(gesture.mode === null){
+    if(Math.abs(dx) < TAP_MOVE_THRESHOLD && Math.abs(dy) < TAP_MOVE_THRESHOLD) return;
+    // swipe only for touch/pen and only for rightward, clearly-horizontal motion
+    const horizontal = Math.abs(dx) > Math.abs(dy) * SWIPE_DIR_RATIO;
+    if(gesture.pointerType !== 'mouse' && horizontal && dx > 0 && !gesture.onInteractive){
+      gesture.mode = 'swipe';
+      gesture.row.classList.add('swiping');
+    } else {
+      gesture.mode = 'scroll'; // vertical or mouse → let the page handle it
+    }
+  }
+
+  if(gesture.mode === 'swipe'){
+    e.preventDefault(); // stop the page from scrolling while swiping a row
+    const travel = Math.max(0, Math.min(dx, SWIPE_MAX_VISUAL));
+    gesture.row.style.transform = `translateX(${travel}px)`;
+    // reveal intensity ramps up as you approach the trigger
+    const progress = Math.min(1, dx / SWIPE_TRIGGER);
+    gesture.row.style.setProperty('--swipe-progress', progress.toFixed(2));
+    gesture.row.classList.toggle('swipe-armed', dx >= SWIPE_TRIGGER);
+  }
+}, { passive: false });
+
 feedEl.addEventListener('pointerup', (e) => {
-  if(!tapStart) return;
-  const link = e.target.closest('.headline');
-  const start = tapStart;
-  tapStart = null;
+  if(!gesture) return;
+  const g = gesture;
+  gesture = null;
 
-  // must lift on the same headline it started on
-  if(!link || link !== start.link) return;
+  if(g.mode === 'swipe'){
+    const dx = e.clientX - g.x;
+    g.row.classList.remove('swiping', 'swipe-armed');
+    if(dx >= SWIPE_TRIGGER){
+      animateSwipeDelete(g.row, g.id);
+    } else {
+      // snap back
+      g.row.style.transform = '';
+      g.row.style.removeProperty('--swipe-progress');
+    }
+    return;
+  }
 
-  const movedX = Math.abs(e.clientX - start.x);
-  const movedY = Math.abs(e.clientY - start.y);
-  const elapsed = Date.now() - start.t;
-
-  if(movedX <= TAP_MOVE_THRESHOLD && movedY <= TAP_MOVE_THRESHOLD && elapsed <= TAP_TIME_THRESHOLD){
-    const row = e.target.closest('.row');
-    if(!row) return;
-    const id = decodeURIComponent(row.dataset.id);
-    markAsRead(id, row);
+  // Otherwise, treat as a possible tap-to-read (same rules as before)
+  if(g.onHeadline && !g.onInteractive){
+    const movedX = Math.abs(e.clientX - g.x);
+    const movedY = Math.abs(e.clientY - g.y);
+    const elapsed = Date.now() - g.t;
+    if(movedX <= TAP_MOVE_THRESHOLD && movedY <= TAP_MOVE_THRESHOLD && elapsed <= TAP_TIME_THRESHOLD){
+      markAsRead(g.id, g.row);
+    }
   }
 });
 
-// If the pointer leaves the feed area mid-gesture, abandon the pending tap
-feedEl.addEventListener('pointercancel', () => { tapStart = null; });
+feedEl.addEventListener('pointercancel', () => {
+  if(gesture && gesture.mode === 'swipe'){
+    gesture.row.classList.remove('swiping', 'swipe-armed');
+    gesture.row.style.transform = '';
+    gesture.row.style.removeProperty('--swipe-progress');
+  }
+  gesture = null;
+});
+
+// Slide the row fully off to the right, collapse its height, then delete.
+function animateSwipeDelete(row, id){
+  row.classList.add('swipe-deleting');
+  row.style.transform = 'translateX(110%)';
+  row.addEventListener('transitionend', function done(ev){
+    if(ev.propertyName !== 'transform') return;
+    row.removeEventListener('transitionend', done);
+    hideArticle(id); // adds to hidden, saves online, re-renders, shows Undo
+  }, { once: true });
+}
 
 const searchInputEl = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
@@ -1352,6 +1497,15 @@ document.getElementById('langFilters').addEventListener('click', (e) => {
   document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentLang = btn.dataset.lang;
+  render();
+});
+
+document.getElementById('tagFilters').addEventListener('click', (e) => {
+  const btn = e.target.closest('.tag-pill');
+  if(!btn) return;
+  document.querySelectorAll('.tag-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentTag = btn.dataset.tag;
   render();
 });
 
