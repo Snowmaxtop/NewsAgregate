@@ -58,6 +58,55 @@ function textOf(val) {
   return String(val);
 }
 
+// Builds a clean ~2-line plain-text summary from the feed's description or
+// summary field. Feeds embed HTML, images, "read more" links, and encoded
+// entities in there, so we strip all of it and truncate on a word
+// boundary. Quality varies by source (that's the known trade-off of the
+// free approach), so if nothing usable remains we return an empty string
+// and the site simply shows no summary for that item.
+const SUMMARY_MAX = 180;
+
+function decodeEntities(str) {
+  return str
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#8217;|&#039;|&#39;|&rsquo;/g, "'")
+    .replace(/&#8216;|&lsquo;/g, "'")
+    .replace(/&#8220;|&#8221;|&ldquo;|&rdquo;|&quot;/g, '"')
+    .replace(/&#8230;|&hellip;/g, '…')
+    .replace(/&#8211;|&ndash;/g, '–')
+    .replace(/&#8212;|&mdash;/g, '—')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)));
+}
+
+function extractSummary(item) {
+  let raw = textOf(item.description) || textOf(item.summary) || '';
+  if (!raw && item['content:encoded']) raw = textOf(item['content:encoded']);
+  if (!raw) return '';
+
+  let text = raw
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ');        // strip all remaining tags
+  text = decodeEntities(text);
+  text = text.replace(/\s+/g, ' ').trim();
+
+  // Drop common trailing boilerplate like "Read more", "Lire la suite", "[…]"
+  text = text.replace(/(read more|lire la suite|continue reading|the post .* appeared first.*)$/i, '').trim();
+
+  if (!text) return '';
+
+  if (text.length > SUMMARY_MAX) {
+    text = text.slice(0, SUMMARY_MAX);
+    const lastSpace = text.lastIndexOf(' ');
+    if (lastSpace > 60) text = text.slice(0, lastSpace);
+    text = text.replace(/[\s.,;:–—-]+$/, '') + '…';
+  }
+  return text;
+}
+
 async function fetchFeed(source) {
   const res = await fetch(source.feed, {
     headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DispatchBot/1.0; +https://github.com/)' },
@@ -88,6 +137,7 @@ async function fetchFeed(source) {
         date: isNaN(date) ? new Date().toISOString() : date.toISOString(),
         sourceId: source.id,
         image: extractImage(item),
+        summary: extractSummary(item),
       };
     })
     .filter((a) => a.title && a.link);
@@ -109,7 +159,10 @@ async function main() {
     }
   }
 
-  const RETENTION_DAYS = 7;
+  // 1 day: the user's reading model is "if I didn't read it today, it no
+  // longer interests me". Favorites are unaffected — they live as full
+  // snapshots in dispatch-state.json, independent of this file.
+  const RETENTION_DAYS = 1;
   const cutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
   const seen = new Set();
