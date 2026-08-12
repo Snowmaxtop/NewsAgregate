@@ -158,46 +158,29 @@
   .modal-primary{background:var(--paper) !important;color:var(--ink) !important;font-weight:600;border-color:var(--paper) !important;}
   .modal-danger:hover{color:var(--unread);border-color:var(--unread);}
   .modal-cancel:hover{color:var(--paper);border-color:var(--paper);}
-  .mc-link{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.3px;
-    color:var(--paper-dim);
-    text-decoration:none;
-    border:1px solid var(--line-strong);
-    border-radius:999px;
-    padding:6px 12px;
-    white-space:nowrap;
-    transition:all .15s ease;
-  }
-  .mc-link:hover{color:var(--paper);border-color:var(--paper);}
-
-  /* Source legend / status strip */
-  .legend{
+  /* ===================== TOOLBAR =====================
+     One visual panel containing: search, category pills + action icons,
+     then language pills + source select. Action buttons share .action-btn
+     for consistent sizing/touch targets. */
+  .toolbar{
+    background:var(--ink-2);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:18px;
     display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    padding:12px 0 16px;
-    border-bottom:1px solid var(--line);
-    margin-bottom:16px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--paper-dim);
+    flex-direction:column;
+    gap:10px;
   }
-  .legend .src{display:flex;align-items:center;gap:6px;}
-  .legend .src a{color:inherit;text-decoration:none;}
-  .legend .src a:hover{color:var(--paper);text-decoration:underline;}
-  .legend .mc-link{margin-left:auto;}
 
   .search-row{
     display:flex;
     align-items:center;
     gap:8px;
-    background:var(--ink-2);
+    background:var(--ink);
     border:1px solid var(--line);
     border-radius:8px;
     padding:9px 12px;
-    margin-bottom:16px;
   }
   .search-icon{font-size:12px;opacity:0.6;flex-shrink:0;}
   .search-bar{
@@ -215,29 +198,13 @@
     color:var(--paper-dim);font-size:12px;padding:2px 4px;flex-shrink:0;
   }
   .clear-search:hover{color:var(--paper);}
-  .legend .dot{width:7px;height:7px;border-radius:50%;background:var(--paper-dim);flex-shrink:0;}
-  .legend .dot.ok{background:var(--ok);box-shadow:0 0 6px var(--ok);}
-  .legend .dot.ai{background:#B98CFF;box-shadow:0 0 6px #B98CFF;}
-  .legend .dot.fail{background:var(--unread);box-shadow:0 0 6px var(--unread);}
-  .legend .dot.pending{background:var(--paper-dim);animation:pulse 1.2s ease-in-out infinite;}
 
-  .legend-key{
-    display:flex;gap:16px;flex-wrap:wrap;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:10px;color:var(--paper-dim);
-    margin:-8px 0 16px;
-  }
-  .legend-key span{display:flex;align-items:center;gap:5px;}
-  .legend-key .sw{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-
-  /* Controls */
   .controls{
     display:flex;
     align-items:center;
     justify-content:space-between;
     flex-wrap:wrap;
     gap:10px;
-    margin-bottom:18px;
   }
   .filters{display:flex;gap:6px;flex-wrap:wrap;}
   .pill{
@@ -257,30 +224,30 @@
   .pill:hover{border-color:var(--paper);color:var(--paper);}
   .pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
   .pill .count{opacity:0.6;margin-left:4px;}
-  .actions{display:flex;gap:8px;}
-  .actions button{
+
+  .actions{display:flex;gap:6px;}
+  .action-btn{
+    display:flex;align-items:center;justify-content:center;
+    width:36px;height:36px;
     font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
+    font-size:15px;
     background:none;
     border:1px solid var(--line-strong);
     color:var(--paper-dim);
-    padding:7px 10px;
-    border-radius:6px;
+    border-radius:8px;
     cursor:pointer;
+    text-decoration:none;
+    transition:all .15s ease;
   }
-  .actions button:hover{border-color:var(--paper);color:var(--paper);}
+  .action-btn:hover{border-color:var(--paper);color:var(--paper);}
+  .action-btn.active{background:var(--paper);color:var(--ink);border-color:var(--paper);}
+  .mc-action{filter:grayscale(1);opacity:0.75;}
+  .mc-action:hover{filter:grayscale(0);opacity:1;}
 
   .sites-wrap{position:relative;}
-  .sites-btn{
-    font-family:'IBM Plex Mono', monospace;font-size:11px;background:none;
-    border:1px solid var(--line-strong);color:var(--paper-dim);
-    padding:7px 10px;border-radius:6px;cursor:pointer;
-  }
-  .sites-btn:hover{border-color:var(--paper);color:var(--paper);}
-  .sites-btn.active{background:var(--paper);color:var(--ink);border-color:var(--paper);}
   .sites-dropdown{
     display:none;flex-direction:column;gap:2px;
-    position:absolute;top:calc(100% + 6px);left:0;
+    position:absolute;top:calc(100% + 6px);right:0;
     background:var(--ink-2);border:1px solid var(--line-strong);border-radius:8px;
     padding:8px;min-width:200px;z-index:60;
     box-shadow:0 10px 30px rgba(0,0,0,0.45);
@@ -296,9 +263,14 @@
   .sites-dropdown a:hover{background:var(--ink);}
   .sites-dropdown a .ext-icon{color:var(--paper-dim);font-size:11px;}
 
-  .lang-filters{
-    display:flex;gap:6px;margin-bottom:14px;
+  .filter-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
   }
+  .lang-filters{display:flex;gap:6px;flex-wrap:wrap;}
   .lang-pill{
     font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
     padding:6px 11px;border-radius:999px;
@@ -307,6 +279,19 @@
   }
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+
+  .source-select{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    background:var(--ink);
+    border:1px solid var(--line-strong);
+    color:var(--paper);
+    border-radius:8px;
+    padding:7px 10px;
+    cursor:pointer;
+    max-width:220px;
+  }
+  .source-select:focus{outline:none;border-color:var(--paper-dim);}
 
   /* Feed list */
   .feed{border-top:1px solid var(--line);}
@@ -391,10 +376,6 @@
     color:var(--paper-dim);
     margin-top:4px;
   }
-  .row .source-name .ai-badge{
-    color:#B98CFF;
-    margin-left:6px;
-  }
   .row .star{
     background:none;border:none;cursor:pointer;
     font-size:17px;line-height:1;padding-top:2px;
@@ -458,25 +439,22 @@
     .masthead .meta{text-align:left;order:3;flex-basis:100%;}
     .gh-settings-btn{width:32px;height:32px;font-size:15px;}
 
-    .legend{gap:10px;font-size:10px;padding:10px 0 12px;}
-    .legend .src{padding:2px 0;} /* a bit more vertical breathing room per tap target */
-    .legend .mc-link{order:99;margin-left:0;flex-basis:100%;display:flex;justify-content:center;margin-top:6px;padding:8px 14px;}
 
     .search-row{padding:11px 12px;}
     .search-bar{font-size:16px;} /* avoids mobile browsers auto-zooming on focus */
     .clear-search{padding:6px;}
 
+    .toolbar{padding:10px;gap:9px;}
     .controls{gap:8px;}
-    .filters{gap:6px;width:100%;}
+    .filters{gap:6px;}
     .pill{padding:9px 13px;font-size:11px;}
-    .actions{gap:8px;flex-wrap:wrap;width:100%;}
-    .actions button{padding:9px 12px;flex:1;min-width:90px;}
-    .sites-wrap{flex:1;}
-    .sites-btn{padding:9px 12px;width:100%;}
-    .sites-dropdown{left:0;right:auto;max-width:calc(100vw - 48px);}
+    .actions{gap:6px;margin-left:auto;}
+    .action-btn{width:40px;height:40px;font-size:16px;}
+    .sites-dropdown{right:0;left:auto;max-width:calc(100vw - 48px);}
 
-    .lang-filters{margin-bottom:12px;}
+    .filter-row{gap:8px;}
     .lang-pill{padding:8px 13px;}
+    .source-select{font-size:16px;max-width:100%;flex:1;} /* 16px avoids mobile zoom-on-focus */
 
     .row{grid-template-columns:30px 1fr 36px;gap:10px;padding:13px 2px;}
     .row.has-thumb{grid-template-columns:30px 56px 1fr 36px;}
@@ -517,36 +495,46 @@
     <button id="ghSettingsBtn" class="gh-settings-btn" title="GitHub sync settings">⚙</button>
   </div>
 
-  <div class="legend" id="legend"></div>
-  <div class="legend-key" id="legendKey"></div>
-
-  <div class="search-row">
-    <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" class="search-bar" placeholder="Filter headlines by keyword…" autocomplete="off">
-    <button id="clearSearchBtn" class="clear-search" title="Clear" style="display:none;">✕</button>
-  </div>
-
-  <div class="controls">
-    <div class="filters" id="filters">
-      <button class="pill active" data-filter="all">All <span class="count" id="c-all">0</span></button>
-      <button class="pill" data-filter="gamer">Gamer <span class="count" id="c-gamer">0</span></button>
-      <button class="pill" data-filter="industry">Industry <span class="count" id="c-industry">0</span></button>
-      <button class="pill" data-filter="favorites">★ Favorites <span class="count" id="c-fav">0</span></button>
+  <!-- ===================== TOOLBAR =====================
+       Row 1: keyword search
+       Row 2: category filters + action buttons
+       Row 3: language pills + per-source select
+       All filters combine (AND) — see render() for the pipeline. -->
+  <div class="toolbar">
+    <div class="search-row">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-bar" placeholder="Filtrer par mot-clé…" autocomplete="off">
+      <button id="clearSearchBtn" class="clear-search" title="Effacer" style="display:none;">✕</button>
     </div>
-    <div class="actions">
-      <div class="sites-wrap">
-        <button id="sitesBtn" class="sites-btn" title="Aller directement sur un site">🌐 Sites</button>
-        <div id="sitesDropdown" class="sites-dropdown"></div>
+
+    <div class="controls">
+      <div class="filters" id="filters">
+        <button class="pill active" data-filter="all">Tout <span class="count" id="c-all">0</span></button>
+        <button class="pill" data-filter="gamer">Gamer <span class="count" id="c-gamer">0</span></button>
+        <button class="pill" data-filter="industry">Industrie <span class="count" id="c-industry">0</span></button>
+        <button class="pill" data-filter="favorites">★ Favoris <span class="count" id="c-fav">0</span></button>
       </div>
-      <button id="markAllBtn">Mark all read</button>
-      <button id="refreshBtn">Refresh</button>
+      <div class="actions">
+        <div class="sites-wrap">
+          <button id="sitesBtn" class="action-btn" title="Aller directement sur un site">🌐</button>
+          <div id="sitesDropdown" class="sites-dropdown"></div>
+        </div>
+        <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="action-btn mc-action" title="Nouveautés sur Metacritic">🎮</a>
+        <button id="markAllBtn" class="action-btn" title="Tout marquer comme lu">✓</button>
+        <button id="refreshBtn" class="action-btn" title="Actualiser">⟳</button>
+      </div>
     </div>
-  </div>
 
-  <div class="lang-filters" id="langFilters">
-    <button class="lang-pill active" data-lang="all">Toutes langues</button>
-    <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
-    <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+    <div class="filter-row">
+      <div class="lang-filters" id="langFilters">
+        <button class="lang-pill active" data-lang="all">Toutes langues</button>
+        <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
+        <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+      </div>
+      <select id="sourceSelect" class="source-select" title="Filtrer par source">
+        <option value="all">Toutes les sources</option>
+      </select>
+    </div>
   </div>
 
   <div class="feed" id="feed">
@@ -591,6 +579,66 @@
 </div>
 
 <script>
+/* =========================================================================
+   DISPATCH — agrégateur de news jeu vidéo (PWA, GitHub Pages)
+   =========================================================================
+
+   ARCHITECTURE GLOBALE
+   --------------------
+   ┌─ GitHub Actions (.github/workflows/refresh-articles.yml, cron ~20min)
+   │    exécute scripts/fetch-articles.mjs (Node 24, fast-xml-parser)
+   │    → fetch des 11 flux RSS côté serveur (aucun souci CORS)
+   │    → nettoie titres/résumés/images, purge > RETENTION_DAYS (1 jour)
+   │    → commit articles.json à la racine du repo
+   │
+   ├─ Cette page (index.html) : lit ./articles.json (même origine).
+   │    AUCUN fetch RSS côté navigateur — pas de proxies, pas d'extension
+   │    (retirés lors de l'audit d'août 2026).
+   │
+   ├─ État perso (lu/favoris/masqués) : dispatch-state.json dans un repo
+   │    GitHub de l'utilisateur, lu/écrit via l'API REST GitHub (token
+   │    fine-grained "Contents: RW", stocké en localStorage par appareil).
+   │    localStorage sert de cache local synchrone + fusion au chargement
+   │    (mergeLocalIntoState) pour survivre aux syncs interrompues.
+   │
+   └─ PWA : manifest.webmanifest + sw.js (cache "dispatch-v4").
+        sw.js recalcule aussi le badge d'icône en arrière-plan
+        (periodicSync) à partir d'articles.json + d'un blob read/hidden
+        que la page lui pousse via postMessage.
+
+   STRUCTURE DE L'ÉTAT (state)
+   ---------------------------
+   state.read      : string[]  — liens des articles lus
+   state.hidden    : string[]  — liens masqués (poubelle)
+   state.favorites : object[]  — SNAPSHOTS complets {link,title,date,
+                     image,sourceId,summary}. INVARIANT : un favori
+                     survit à tout (purge du flux, lu, masqué) et
+                     l'onglet Favoris les affiche TOUS sans filtre hidden.
+
+   PIPELINE DE FILTRES (render)
+   ----------------------------
+   favoris ? snapshots : flux − hidden
+   → catégorie (gamer/industry) → langue (fr/en) → source (id) → recherche
+   Tous les filtres se combinent en ET.
+
+   COMPORTEMENTS AUTOMATIQUES
+   --------------------------
+   - Lu au tap : pointerdown/up avec seuil 10px/500ms (tap ≠ scroll)
+   - Lu au défilement : IntersectionObserver (≥50% vu) + sortie par le
+     haut (rect.bottom<=0) + balayage rAF de secours. Épargne les favoris.
+   - saveStateInstant() : écriture localStorage SYNCHRONE avant toute
+     navigation ; saveState() : sync GitHub async avec retry sur 409.
+   - Badge : updateCounts() → updateAppBadge() ; refresh périodique 5min
+     + visibilitychange/focus ; periodicSync côté SW quand l'app est
+     seulement en arrière-plan.
+
+   ÉLÉMENTS D'UI GÉNÉRÉS EN JS (absents du HTML statique)
+   ------------------------------------------------------
+   #undoToast (toast d'annulation), options de #sourceSelect.
+
+   NOTE — markAllBtn marque TOUS les articles comme lus, indépendamment
+   des filtres actifs (comportement volontaire, simple et prévisible).
+   ========================================================================= */
 const SOURCES = [
   { id:'ign',       name:'IGN France',       category:'gamer',    color:'gamer', lang:'fr',
     feed:'https://fr.ign.com/feed.xml', home:'https://fr.ign.com/' },
@@ -616,29 +664,16 @@ const SOURCES = [
     feed:'https://www.polygon.com/rss/index.xml', home:'https://www.polygon.com/' },
 ];
 
-const PROXIES = [
-  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-  url => `https://thingproxy.freeboard.io/fetch/${url}`,
-];
-
-function fetchWithTimeout(url, ms){
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), ms);
-  return fetch(url, { signal: controller.signal }).finally(() => clearTimeout(timer));
-}
-
 let state = { read: [], favorites: [], hidden: [] };
 let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
+let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
 let searchQuery = '';
-let usingExtensionData = false;
 let githubConnected = false;
 let githubSha = null;
 
 const feedEl = document.getElementById('feed');
-const legendEl = document.getElementById('legend');
 const clockEl = document.getElementById('clock');
 const syncNoteEl = document.getElementById('syncNote');
 
@@ -767,59 +802,10 @@ function updateSyncNote(errorMsg){
     syncNoteEl.title = errorMsg;
     syncNoteEl.classList.add('error');
     syncNoteEl.classList.remove('connected');
-  } else if (usingExtensionData) {
-    syncNoteEl.textContent = '🔌 synced via extension';
-    syncNoteEl.classList.add('connected');
-    syncNoteEl.classList.remove('error');
   } else {
     syncNoteEl.textContent = '⚙ set up GitHub sync';
     syncNoteEl.classList.remove('connected', 'error');
   }
-}
-
-// --- Extension bridge -------------------------------------------------
-// If the Dispatch browser extension is installed and this page is open at
-// an origin its content script matches (file://, localhost, 127.0.0.1, or
-// *.github.io), it pushes real fetched articles + read/favorite state in
-// here directly, bypassing the CORS proxy chain entirely. Falls back to
-// proxies below when no extension is present. If GitHub sync is
-// configured, GitHub remains the source of truth for read/favorite/hidden
-// state — only the article list is taken from the extension.
-window.addEventListener('message', (event) => {
-  if (!event.data || event.data.source !== 'dispatch-extension') return;
-  if (event.data.type !== 'DISPATCH_SYNC') return;
-  applyExtensionData(event.data.articles, event.data.state);
-});
-
-function applyExtensionData(cachedArticles, extState){
-  usingExtensionData = true;
-
-  if (!getGithubConfig()) {
-    state.read = extState.read || [];
-    state.favorites = extState.favorites || [];
-    state.hidden = extState.hidden || [];
-  }
-
-  articles = (cachedArticles || [])
-    .map(a => {
-      const source = SOURCES.find(s => s.id === a.sourceId);
-      if (!source) return null;
-      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '' };
-    })
-    .filter(Boolean)
-    .sort((a, b) => b.date - a.date);
-
-  document.querySelectorAll('.legend .dot').forEach(d => {
-    d.classList.remove('fail', 'pending');
-    d.classList.add('ok');
-  });
-
-  updateSyncNote();
-  render();
-}
-
-function pushStateToExtension(){
-  window.postMessage({ source: 'dispatch-website', type: 'DISPATCH_SET_STATE', state }, '*');
 }
 
 // --- Static articles.json (built by GitHub Actions) --------------------
@@ -852,12 +838,6 @@ async function applyJsonData(data){
     })
     .filter(Boolean)
     .sort((a, b) => b.date - a.date);
-
-  if (data.sourceStatus) {
-    SOURCES.forEach(s => setLegendStatus(s.id, data.sourceStatus[s.id] === 'ok' ? 'ok' : 'fail'));
-  } else {
-    document.querySelectorAll('.legend .dot').forEach(d => { d.classList.remove('fail','pending'); d.classList.add('ok'); });
-  }
 
   if (data.generatedAt) {
     articlesNoteEl.textContent = `📰 actualisé ${formatRelative(data.generatedAt)}`;
@@ -953,144 +933,6 @@ function stripHtml(str){
   const div = document.createElement('div');
   div.innerHTML = str || '';
   return (div.textContent || div.innerText || '').trim();
-}
-
-async function fetchViaProxies(url, sourceId){
-  let lastErr;
-  for(const buildProxy of PROXIES){
-    try{
-      const res = await fetchWithTimeout(buildProxy(url), 6000);
-      if(!res.ok) throw new Error('HTTP ' + res.status);
-      const text = await res.text();
-      if(!text || text.length < 20) throw new Error('empty response');
-      return text;
-    }catch(e){
-      lastErr = e;
-      console.warn(`[${sourceId}] proxy failed:`, buildProxy('...').split('?')[0], e.message);
-    }
-  }
-  throw lastErr || new Error('all proxies failed');
-}
-
-async function aiFallback(source){
-  const hostname = new URL(source.feed).hostname.replace('www.','');
-  const prompt = `Search the web for the 5 most recent video game news articles published on ${hostname} in the last 3 days. Respond with ONLY a raw JSON array, no markdown fences, no commentary, no explanation before or after. Each item must have exactly these keys: "title" (string), "link" (the full real article URL from your search results), "date" (ISO 8601 string, best estimate). Output nothing but the JSON array.`;
-
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-6",
-      max_tokens: 1000,
-      messages: [{ role: "user", content: prompt }],
-      tools: [{ type: "web_search_20250305", name: "web_search" }]
-    })
-  });
-  if(!res.ok) throw new Error('AI fallback HTTP ' + res.status);
-  const data = await res.json();
-
-  const textBlocks = (data.content || []).filter(b => b.type === "text").map(b => b.text);
-  const combined = textBlocks.join('\n').trim();
-  const cleaned = combined.replace(/```json|```/g, '').trim();
-  const match = cleaned.match(/\[[\s\S]*\]/);
-  const jsonStr = match ? match[0] : cleaned;
-
-  const parsed = JSON.parse(jsonStr);
-  return parsed
-    .filter(p => p && p.title && p.link)
-    .map(p => ({
-      title: p.title,
-      link: p.link,
-      date: p.date ? new Date(p.date) : new Date(),
-      source,
-      viaAI: true
-    }));
-}
-
-function extractImage(el){
-  // media:thumbnail
-  let node = el.getElementsByTagName('media:thumbnail')[0];
-  if(node && node.getAttribute('url')) return node.getAttribute('url');
-
-  // media:content (image type)
-  const mediaContents = el.getElementsByTagName('media:content');
-  for(const mc of mediaContents){
-    const medium = mc.getAttribute('medium') || '';
-    const type = mc.getAttribute('type') || '';
-    const url = mc.getAttribute('url');
-    if(url && (medium === 'image' || type.startsWith('image'))) return url;
-  }
-
-  // enclosure
-  node = el.getElementsByTagName('enclosure')[0];
-  if(node){
-    const type = node.getAttribute('type') || '';
-    const url = node.getAttribute('url');
-    if(url && (type.startsWith('image') || !type)) return url;
-  }
-
-  // fallback: first <img> inside content:encoded or description HTML
-  const contentEncoded = el.getElementsByTagName('content:encoded')[0];
-  const description = el.querySelector('description') || el.querySelector('summary') || el.querySelector('content');
-  const htmlBlob = (contentEncoded && contentEncoded.textContent) || (description && description.textContent) || '';
-  const match = htmlBlob.match(/<img[^>]+src=["']([^"']+)["']/i);
-  return match ? match[1] : null;
-}
-
-function parseFeed(xmlText, source){
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(xmlText, 'text/xml');
-  if(doc.querySelector('parsererror')) throw new Error('parse error');
-
-  const isAtom = doc.querySelector('feed') !== null;
-  const items = [];
-
-  if(isAtom){
-    doc.querySelectorAll('entry').forEach(entry => {
-      const title = stripHtml(entry.querySelector('title')?.textContent);
-      let link = entry.querySelector('link')?.getAttribute('href');
-      if(!link){
-        const linkEl = entry.querySelector('link');
-        link = linkEl ? linkEl.textContent : '';
-      }
-      const dateStr = entry.querySelector('updated')?.textContent || entry.querySelector('published')?.textContent;
-      const date = dateStr ? new Date(dateStr) : new Date();
-      const image = extractImage(entry);
-      if(title && link) items.push({ title, link, date, source, image });
-    });
-  } else {
-    doc.querySelectorAll('item').forEach(item => {
-      const title = stripHtml(item.querySelector('title')?.textContent);
-      const link = item.querySelector('link')?.textContent;
-      const dateStr = item.querySelector('pubDate')?.textContent;
-      const date = dateStr ? new Date(dateStr) : new Date();
-      const image = extractImage(item);
-      if(title && link) items.push({ title, link, date, source, image });
-    });
-  }
-  return items;
-}
-
-function setLegendStatus(sourceId, status){
-  const dot = document.querySelector(`.legend .dot[data-src="${sourceId}"]`);
-  if(!dot) return;
-  dot.classList.remove('ok','fail','pending');
-  dot.classList.add(status);
-}
-
-function renderLegend(){
-  legendEl.innerHTML = SOURCES.map(s => `
-    <span class="src">
-      <span class="dot pending" data-src="${s.id}"></span><a href="${s.home}" target="_blank" rel="noopener">${s.name}</a>
-    </span>
-  `).join('') + `
-    <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="mc-link" title="Browse new releases on Metacritic">🎮 Metacritic ↗</a>
-  `;
-  document.getElementById('legendKey').innerHTML = `
-    <span><span class="sw" style="background:var(--ok)"></span>live RSS</span>
-    <span><span class="sw" style="background:#B98CFF"></span>AI search fallback</span>
-    <span><span class="sw" style="background:var(--unread)"></span>unavailable</span>
-  `;
 }
 
 function formatTime(date){
@@ -1200,6 +1042,7 @@ function render(){
     if(currentFilter === 'industry') list = list.filter(a => a.source.category === 'industry');
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
+  if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
   list.sort((a,b) => b.date - a.date);
 
@@ -1228,7 +1071,7 @@ function render(){
           <span class="tag ${a.source.color}">${a.source.category}</span>
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
-          <div class="source-name">${a.source.name}${a.viaAI ? '<span class="ai-badge">· via AI search</span>' : ''}</div>
+          <div class="source-name">${a.source.name}</div>
         </div>
         <div class="row-actions">
           <button class="star ${isFav ? 'on' : ''}" title="Save as favorite">${isFav ? '★' : '☆'}</button>
@@ -1351,7 +1194,6 @@ function hideArticle(id){
   if(!state.hidden.includes(id)) state.hidden.push(id);
   lastHiddenId = id;
   saveState();
-  pushStateToExtension();
   render();
   showUndoToast();
 }
@@ -1372,7 +1214,6 @@ function showUndoToast(){
       const idx = state.hidden.indexOf(lastHiddenId);
       if(idx !== -1) state.hidden.splice(idx, 1);
       saveState();
-      pushStateToExtension();
       render();
     }
     toast.classList.remove('show');
@@ -1410,7 +1251,6 @@ feedEl.addEventListener('click', (e) => {
       state.favorites.splice(idx, 1);
     }
     saveState();
-    pushStateToExtension();
     render();
     return;
   }
@@ -1509,6 +1349,21 @@ document.getElementById('langFilters').addEventListener('click', (e) => {
   render();
 });
 
+// Source filter: a native <select> (most reliable control on mobile).
+// Options are generated from SOURCES so adding a source automatically
+// appears here with no extra wiring.
+const sourceSelectEl = document.getElementById('sourceSelect');
+SOURCES.forEach(s => {
+  const opt = document.createElement('option');
+  opt.value = s.id;
+  opt.textContent = s.name;
+  sourceSelectEl.appendChild(opt);
+});
+sourceSelectEl.addEventListener('change', () => {
+  currentSource = sourceSelectEl.value;
+  render();
+});
+
 // --- Sites quick-access dropdown ---------------------------------------
 function renderSitesDropdown(){
   const dropdown = document.getElementById('sitesDropdown');
@@ -1538,27 +1393,19 @@ document.getElementById('markAllBtn').addEventListener('click', () => {
     if(!state.read.includes(id)) state.read.push(id);
   });
   saveState();
-  pushStateToExtension();
   render();
 });
 
-document.getElementById('refreshBtn').addEventListener('click', () => {
-  if (usingExtensionData) {
-    window.postMessage({ source: 'dispatch-website', type: 'DISPATCH_REQUEST_SYNC' }, '*');
-  } else {
-    loadFeeds();
-  }
-});
+document.getElementById('refreshBtn').addEventListener('click', () => loadFeeds());
 
 async function loadFeeds(){
-  if (usingExtensionData) return; // extension already delivered real data, no need for anything else
-
-  renderLegend();
   feedEl.innerHTML = `<div class="empty">TUNING IN<span class="cursor"></span></div>`;
 
-  // Tier 1: static articles.json generated by the GitHub Actions workflow.
-  // Same-origin fetch, so it's never blocked — and it's the most reliable
-  // path once the workflow is set up and has run at least once.
+  // Single source of truth: articles.json, generated every ~20 min by the
+  // GitHub Actions workflow (scripts/fetch-articles.mjs). Same-origin
+  // fetch, so it's never CORS-blocked. If it's missing (workflow not yet
+  // run / hosting misconfigured), we show a clear message instead of
+  // silently spinning.
   try{
     const res = await fetch('./articles.json', { cache: 'no-store' });
     if (res.ok) {
@@ -1568,46 +1415,11 @@ async function loadFeeds(){
         return;
       }
     }
+    feedEl.innerHTML = `<div class="empty">ARTICLES.JSON VIDE OU INTROUVABLE — VÉRIFIE LE WORKFLOW GITHUB ACTIONS<span class="cursor"></span></div>`;
   }catch(e){
-    console.warn('articles.json unavailable, falling back to live proxy fetch:', e.message);
+    console.warn('articles.json unavailable:', e.message);
+    feedEl.innerHTML = `<div class="empty">HORS-LIGNE ET AUCUNE DONNÉE EN CACHE<span class="cursor"></span></div>`;
   }
-
-  // Tier 2: direct proxy-based fetch — kept as a fallback for before the
-  // GitHub Action has run for the first time, or if articles.json is
-  // ever missing/empty.
-  const results = await Promise.all(SOURCES.map(async (source) => {
-    try{
-      const xml = await fetchViaProxies(source.feed, source.id);
-      const items = parseFeed(xml, source);
-      setLegendStatus(source.id, 'ok');
-      return items;
-    }catch(e){
-      console.warn(`[${source.id}] all proxies failed, trying AI fallback:`, e.message);
-      try{
-        const items = await aiFallback(source);
-        setLegendStatus(source.id, 'ai');
-        return items;
-      }catch(e2){
-        console.error(`[${source.id}] AI fallback also failed:`, e2.message);
-        setLegendStatus(source.id, 'fail');
-        return [];
-      }
-    }
-  }));
-
-  if (usingExtensionData) return; // bridge data arrived while proxies were in flight — keep it
-
-  articles = results.flat();
-  // dedupe by link
-  const seen = new Set();
-  articles = articles.filter(a => {
-    if(seen.has(a.link)) return false;
-    seen.add(a.link);
-    return true;
-  });
-  articles.sort((a,b) => b.date - a.date);
-
-  render();
 }
 
 // --- GitHub settings modal ---------------------------------------------
