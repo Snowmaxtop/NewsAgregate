@@ -280,26 +280,7 @@
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
 
-  .tag-filters{display:flex;gap:6px;flex-wrap:wrap;}
-  .tag-pill{
-    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
-    padding:6px 11px;border-radius:999px;
-    border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);
-    cursor:pointer;transition:all .15s ease;
-  }
-  .tag-pill:hover{border-color:var(--paper);color:var(--paper);}
-  .tag-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
 
-  /* Per-article tag chips shown next to the category tag */
-  .row .content-tag{
-    display:inline-block;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:9px;letter-spacing:0.4px;text-transform:uppercase;
-    padding:2px 6px;border-radius:4px;margin-left:5px;
-    vertical-align:middle;
-  }
-  .content-tag.sortie{background:rgba(76,217,123,0.16);color:var(--ok);}
-  .content-tag.patch{background:rgba(185,140,255,0.16);color:#B98CFF;}
 
   .source-select{
     font-family:'IBM Plex Mono', monospace;
@@ -338,9 +319,10 @@
     touch-action:pan-y;              /* allow vertical scroll; we handle horizontal */
     --swipe-progress:0;
   }
-  /* Red "delete" layer revealed in the gap the row leaves as it slides
-     right. It's pinned to the row's left edge (left:-100%) so as the row
-     translates right, this layer fills the vacated space on the left. */
+  /* Directional swipe reveals. ::before = red "delete" pinned to the left
+     edge, shown when swiping RIGHT. ::after = amber "favorite" pinned to
+     the right edge, shown when swiping LEFT. Each fills the space the row
+     vacates as it translates. */
   .row::before{
     content:'🗑';
     position:absolute;
@@ -354,8 +336,22 @@
     opacity:0;
     pointer-events:none;
   }
+  .row::after{
+    content:'★';
+    position:absolute;
+    top:0;bottom:0;
+    right:-100%;width:100%;
+    display:flex;align-items:center;justify-content:flex-start;
+    padding-left:24px;
+    font-size:20px;
+    background:linear-gradient(90deg, rgba(255,209,102,0.95), rgba(255,209,102,0.15));
+    color:var(--ink);
+    opacity:0;
+    pointer-events:none;
+  }
   .row.swiping{transition:none;z-index:1;}
-  .row.swiping::before{opacity:1;}
+  .row.swiping.swipe-right::before{opacity:1;}
+  .row.swiping.swipe-left::after{opacity:1;}
   .row.swipe-deleting{
     transition:transform .28s cubic-bezier(.4,0,.2,1);
     z-index:2;
@@ -583,11 +579,6 @@
       </select>
     </div>
 
-    <div class="tag-filters" id="tagFilters">
-      <button class="tag-pill active" data-tag="all">Tous les types</button>
-      <button class="tag-pill" data-tag="sortie">🚀 Sorties</button>
-      <button class="tag-pill" data-tag="patch">🔧 Patchs</button>
-    </div>
   </div>
 
   <div class="feed" id="feed">
@@ -677,13 +668,14 @@
    COMPORTEMENTS AUTOMATIQUES
    --------------------------
    - Lu au tap : pointerdown/up avec seuil 10px/500ms (tap ≠ scroll)
-   - Swipe → droite pour supprimer : geste tactile uniquement (jamais
-     souris), horizontal franc (dx>dy*1.3), déclenché à 110px, avec fond
-     rouge 🗑 révélé + animation de sortie. Gestion unifiée tap/scroll/
-     swipe dans un seul tracker `gesture` pour éviter les conflits.
-   - Tags de contenu (sortie/patch) : détectés côté serveur par mots-clés
-     (TAG_RULES dans fetch-articles.mjs), filtrables via #tagFilters.
-     Heuristique conservatrice (~quelques % des articles), volontairement.
+   - Swipe bidirectionnel (tactile uniquement, jamais souris) :
+       → droite (≥110px) = SUPPRIMER (hideArticle : ajoute à hidden ET
+         retire des favoris), fond rouge 🗑, animation de sortie.
+       → gauche (≥110px) = BASCULER FAVORI (toggleFavorite), fond ambre ★,
+         la ligne revient en place.
+     Geste horizontal franc requis (dx>dy*1.3). Undo restaure hidden ET le
+     favori s'il en était un. Gestion unifiée tap/scroll/swipe (tracker
+     `gesture`).
    - Lu au défilement : IntersectionObserver (≥50% vu) + sortie par le
      haut (rect.bottom<=0) + balayage rAF de secours. Épargne les favoris.
    - Purge read/hidden : côté APP au chargement (purgeStaleState) ET côté
@@ -732,7 +724,6 @@ let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
 let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
-let currentTag = 'all';     // 'all' | 'sortie' | 'patch' — set by #tagFilters
 let searchQuery = '';
 let githubConnected = false;
 let githubSha = null;
@@ -1113,7 +1104,6 @@ function render(){
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
-  if(currentTag !== 'all') list = list.filter(a => (a.tags || []).includes(currentTag));
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
   list.sort((a,b) => b.date - a.date);
 
@@ -1139,7 +1129,7 @@ function render(){
         <div class="time">${formatTime(a.date)}</div>
         ${hasThumb ? `<div class="thumb"><img src="${a.image}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
         <div>
-          <span class="tag ${a.source.color}">${a.source.category}</span>${(a.tags || []).map(t => `<span class="content-tag ${t}">${t === 'sortie' ? '🚀 sortie' : '🔧 patch'}</span>`).join('')}
+          <span class="tag ${a.source.color}">${a.source.category}</span>
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}</div>
@@ -1259,12 +1249,43 @@ function escapeHtml(str){
 }
 
 let lastHiddenId = null;
+let lastHiddenWasFav = false;
 let undoTimeout = null;
+
+function isFav(id){ return state.favorites.some(f => f.link === id); }
+
+function addFavorite(id){
+  if(isFav(id)) return;
+  const article = articles.find(a => idFor(a) === id) || favoritesAsArticles().find(a => idFor(a) === id);
+  if(!article) return;
+  state.favorites.push({
+    link: article.link,
+    title: article.title,
+    date: article.date.toISOString(),
+    image: article.image || null,
+    sourceId: article.source.id,
+    summary: article.summary || ''
+  });
+}
+
+function removeFavorite(id){
+  const idx = state.favorites.findIndex(f => f.link === id);
+  if(idx !== -1) state.favorites.splice(idx, 1);
+}
+
+function toggleFavorite(id){
+  if(isFav(id)) removeFavorite(id);
+  else addFavorite(id);
+}
 
 function hideArticle(id){
   if(!state.hidden.includes(id)) state.hidden.push(id);
+  // Swipe-right / bin means "get this out of my way" — if it was a
+  // favorite, drop it from favorites too so it doesn't linger in ★.
+  lastHiddenWasFav = isFav(id);
+  removeFavorite(id);
   lastHiddenId = id;
-  saveState();
+  saveStateAndConfirm();
   render();
   showUndoToast();
 }
@@ -1278,13 +1299,14 @@ function showUndoToast(){
     toast.className = 'undo-toast';
     document.body.appendChild(toast);
   }
-  toast.innerHTML = `Removed <button id="undoBtn" type="button">Undo</button>`;
+  toast.innerHTML = `Supprimé <button id="undoBtn" type="button">Annuler</button>`;
   toast.classList.add('show');
   document.getElementById('undoBtn').onclick = () => {
     if(lastHiddenId){
       const idx = state.hidden.indexOf(lastHiddenId);
       if(idx !== -1) state.hidden.splice(idx, 1);
-      saveState();
+      if(lastHiddenWasFav) addFavorite(lastHiddenId); // restore the favorite too
+      saveStateAndConfirm();
       render();
     }
     toast.classList.remove('show');
@@ -1305,23 +1327,8 @@ feedEl.addEventListener('click', (e) => {
 
   if(e.target.classList.contains('star')){
     e.preventDefault();
-    const idx = state.favorites.findIndex(f => f.link === id);
-    if(idx === -1){
-      const article = articles.find(a => idFor(a) === id) || favoritesAsArticles().find(a => idFor(a) === id);
-      if(article){
-        state.favorites.push({
-          link: article.link,
-          title: article.title,
-          date: article.date.toISOString(),
-          image: article.image || null,
-          sourceId: article.source.id,
-          summary: article.summary || ''
-        });
-      }
-    } else {
-      state.favorites.splice(idx, 1);
-    }
-    saveState();
+    toggleFavorite(id);
+    saveStateAndConfirm();
     render();
     return;
   }
@@ -1395,9 +1402,9 @@ feedEl.addEventListener('pointermove', (e) => {
   // Lock the gesture mode once movement is meaningful
   if(gesture.mode === null){
     if(Math.abs(dx) < TAP_MOVE_THRESHOLD && Math.abs(dy) < TAP_MOVE_THRESHOLD) return;
-    // swipe only for touch/pen and only for rightward, clearly-horizontal motion
+    // Swipe only for touch/pen and clearly-horizontal motion (either way).
     const horizontal = Math.abs(dx) > Math.abs(dy) * SWIPE_DIR_RATIO;
-    if(gesture.pointerType !== 'mouse' && horizontal && dx > 0 && !gesture.onInteractive){
+    if(gesture.pointerType !== 'mouse' && horizontal && !gesture.onInteractive){
       gesture.mode = 'swipe';
       gesture.row.classList.add('swiping');
     } else {
@@ -1407,12 +1414,14 @@ feedEl.addEventListener('pointermove', (e) => {
 
   if(gesture.mode === 'swipe'){
     e.preventDefault(); // stop the page from scrolling while swiping a row
-    const travel = Math.max(0, Math.min(dx, SWIPE_MAX_VISUAL));
+    const dir = dx >= 0 ? 'right' : 'left';
+    gesture.row.classList.toggle('swipe-right', dir === 'right');
+    gesture.row.classList.toggle('swipe-left', dir === 'left');
+    const travel = Math.max(-SWIPE_MAX_VISUAL, Math.min(dx, SWIPE_MAX_VISUAL));
     gesture.row.style.transform = `translateX(${travel}px)`;
-    // reveal intensity ramps up as you approach the trigger
-    const progress = Math.min(1, dx / SWIPE_TRIGGER);
+    const progress = Math.min(1, Math.abs(dx) / SWIPE_TRIGGER);
     gesture.row.style.setProperty('--swipe-progress', progress.toFixed(2));
-    gesture.row.classList.toggle('swipe-armed', dx >= SWIPE_TRIGGER);
+    gesture.row.classList.toggle('swipe-armed', Math.abs(dx) >= SWIPE_TRIGGER);
   }
 }, { passive: false });
 
@@ -1423,11 +1432,19 @@ feedEl.addEventListener('pointerup', (e) => {
 
   if(g.mode === 'swipe'){
     const dx = e.clientX - g.x;
-    g.row.classList.remove('swiping', 'swipe-armed');
+    g.row.classList.remove('swiping', 'swipe-armed', 'swipe-right', 'swipe-left');
     if(dx >= SWIPE_TRIGGER){
+      // Right → delete (removes from favorites too, via hideArticle)
       animateSwipeDelete(g.row, g.id);
+    } else if(dx <= -SWIPE_TRIGGER){
+      // Left → toggle favorite; snap the row back into place
+      g.row.style.transform = '';
+      g.row.style.removeProperty('--swipe-progress');
+      toggleFavorite(g.id);
+      saveStateAndConfirm();
+      render();
     } else {
-      // snap back
+      // Not far enough either way → snap back
       g.row.style.transform = '';
       g.row.style.removeProperty('--swipe-progress');
     }
@@ -1447,21 +1464,21 @@ feedEl.addEventListener('pointerup', (e) => {
 
 feedEl.addEventListener('pointercancel', () => {
   if(gesture && gesture.mode === 'swipe'){
-    gesture.row.classList.remove('swiping', 'swipe-armed');
+    gesture.row.classList.remove('swiping', 'swipe-armed', 'swipe-right', 'swipe-left');
     gesture.row.style.transform = '';
     gesture.row.style.removeProperty('--swipe-progress');
   }
   gesture = null;
 });
 
-// Slide the row fully off to the right, collapse its height, then delete.
+// Slide the row fully off to the right, then delete.
 function animateSwipeDelete(row, id){
   row.classList.add('swipe-deleting');
   row.style.transform = 'translateX(110%)';
   row.addEventListener('transitionend', function done(ev){
     if(ev.propertyName !== 'transform') return;
     row.removeEventListener('transitionend', done);
-    hideArticle(id); // adds to hidden, saves online, re-renders, shows Undo
+    hideArticle(id); // adds to hidden (+ removes favorite), saves, re-renders, Undo
   }, { once: true });
 }
 
@@ -1497,15 +1514,6 @@ document.getElementById('langFilters').addEventListener('click', (e) => {
   document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentLang = btn.dataset.lang;
-  render();
-});
-
-document.getElementById('tagFilters').addEventListener('click', (e) => {
-  const btn = e.target.closest('.tag-pill');
-  if(!btn) return;
-  document.querySelectorAll('.tag-pill').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  currentTag = btn.dataset.tag;
   render();
 });
 
