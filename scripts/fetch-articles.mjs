@@ -4,7 +4,7 @@
 // there is no CORS restriction to work around — this is the same kind of
 // request curl or a backend server would make.
 import { XMLParser } from 'fast-xml-parser';
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 
 const SOURCES = [
   { id: 'ign',       feed: 'https://fr.ign.com/feed.xml' },
@@ -56,6 +56,45 @@ function textOf(val) {
   if (val == null) return '';
   if (typeof val === 'object') return String(val['#text'] ?? '');
   return String(val);
+}
+
+// --- Fine-grained content tags -----------------------------------------
+// Heuristic keyword tagging, computed server-side so the app can filter on
+// it. This is deliberately conservative: a title matches a tag only if it
+// contains one of the tag's keywords. Bilingual (FR/EN) keyword lists.
+// Known limitation: keyword matching catches maybe ~60-70% of cases and
+// will miss articles phrased unusually — good enough for coarse filtering,
+// not surgical. More tags can be added later by extending TAG_RULES.
+const TAG_RULES = [
+  {
+    tag: 'patch',
+    keywords: [
+      'patch', 'hotfix', 'mise à jour', 'mise a jour', 'màj',
+      'correctif', 'nerf', 'buff', 'rééquilibrage', 'équilibrage',
+      'patch notes', 'notes de version', 'season pass', 'battle pass',
+      'new season', 'nouvelle saison',
+    ],
+  },
+  {
+    tag: 'sortie',
+    keywords: [
+      'date de sortie', 'release date', 'now available', 'out now',
+      'available now', 'est disponible', 'sort le', 'arrive le',
+      'day one', 'launches on', 'released on', 'disponible sur',
+      'lancement du jeu', 'release window', 'sortie de',
+    ],
+  },
+];
+
+function detectTags(title, summary) {
+  const haystack = `${title} ${summary || ''}`.toLowerCase();
+  const tags = [];
+  for (const rule of TAG_RULES) {
+    if (rule.keywords.some((kw) => haystack.includes(kw))) {
+      tags.push(rule.tag);
+    }
+  }
+  return tags;
 }
 
 // Builds a clean ~2-line plain-text summary from the feed's description or
@@ -131,13 +170,15 @@ async function fetchFeed(source) {
       link = String(link || '').trim();
       const dateStr = item.pubDate || item.updated || item.published || '';
       const date = dateStr ? new Date(dateStr) : new Date();
+      const summary = extractSummary(item);
       return {
         title,
         link,
         date: isNaN(date) ? new Date().toISOString() : date.toISOString(),
         sourceId: source.id,
         image: extractImage(item),
-        summary: extractSummary(item),
+        summary,
+        tags: detectTags(title, summary),
       };
     })
     .filter((a) => a.title && a.link);
@@ -183,6 +224,40 @@ async function main() {
 
   writeFileSync('articles.json', JSON.stringify(output, null, 2));
   console.log(`\nWrote ${allArticles.length} articles to articles.json`);
+
+  // --- Server-side purge of dispatch-state.json -------------------------
+  // read[] and hidden[] only store links and grow forever. Here we trim
+  // them to just the links still present in the freshly-built feed, so the
+  // state file stays small even if the app is never opened. Favorites are
+  // NEVER touched (independent snapshots). We only rewrite the file if it
+  // exists and something actually changed, to avoid empty commits.
+  try {
+    if (existsSync('dispatch-state.json')) {
+      const state = JSON.parse(readFileSync('dispatch-state.json', 'utf8'));
+      const liveLinks = new Set(allArticles.map((a) => a.link));
+
+      const beforeRead = Array.isArray(state.read) ? state.read.length : 0;
+      const beforeHidden = Array.isArray(state.hidden) ? state.hidden.length : 0;
+
+      state.read = (state.read || []).filter((link) => liveLinks.has(link));
+      state.hidden = (state.hidden || []).filter((link) => liveLinks.has(link));
+      // state.favorites intentionally left as-is
+
+      const changed = state.read.length !== beforeRead || state.hidden.length !== beforeHidden;
+      if (changed) {
+        writeFileSync('dispatch-state.json', JSON.stringify(state, null, 2));
+        console.log(`State purge: read ${beforeRead}→${state.read.length}, hidden ${beforeHidden}→${state.hidden.length} (favorites kept: ${(state.favorites || []).length})`);
+      } else {
+        console.log('State purge: nothing to remove.');
+      }
+    } else {
+      console.log('dispatch-state.json not found — skipping state purge.');
+    }
+  } catch (e) {
+    // Never let a state-purge problem fail the whole run; articles.json is
+    // the critical output and it's already written.
+    console.error('State purge skipped due to error:', e.message);
+  }
 }
 
 main().catch((e) => {
