@@ -285,6 +285,13 @@
   .mc-action{filter:grayscale(1);opacity:0.75;}
   .mc-action:hover{filter:grayscale(0);opacity:1;}
 
+  /* Re-sync button states */
+  #syncBtn.spinning{pointer-events:none;color:var(--gamer);border-color:var(--gamer);}
+  #syncBtn.spinning{animation:sync-spin .8s linear infinite;}
+  #syncBtn.done{background:var(--ok);border-color:var(--ok);color:#fff;}
+  #syncBtn.failed{background:var(--unread);border-color:var(--unread);color:#fff;}
+  @keyframes sync-spin{to{transform:rotate(360deg);}}
+
   .sites-wrap{position:relative;}
   .sites-dropdown{
     display:none;flex-direction:column;gap:2px;
@@ -652,6 +659,7 @@
         </div>
         <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="action-btn mc-action" title="Nouveautés sur Metacritic">🎮</a>
         <button id="markAllBtn" class="action-btn" title="Tout marquer comme lu">✓</button>
+        <button id="syncBtn" class="action-btn" title="Re-synchroniser et nettoyer les incohérences">🔄</button>
         <button id="refreshBtn" class="action-btn" title="Actualiser">⟳</button>
       </div>
     </div>
@@ -1270,7 +1278,8 @@ function dayLabel(date, absolute){
 }
 
 function updateCounts(){
-  const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
+  // "Tout" is the triage queue: not hidden AND not favorited.
+  const visible = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   const totalAll = visible.length;
   const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
   document.getElementById('c-all').textContent = `${unreadAll}/${totalAll}`;
@@ -1350,7 +1359,9 @@ function render(){
     // even if the same article was also binned, the favorite wins here.
     list = favoritesAsArticles();
   } else {
-    list = articles.filter(a => !state.hidden.includes(idFor(a)));
+    // "Tout" is the triage queue: an article stays here until dealt with.
+    // Favorited and hidden articles both leave this list.
+    list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
@@ -1905,6 +1916,48 @@ document.getElementById('markAllBtn').addEventListener('click', () => {
 });
 
 document.getElementById('refreshBtn').addEventListener('click', () => loadFeeds());
+
+// Re-sync / cleanup button. Pulls the authoritative state from GitHub,
+// enforces the cross-list invariants (so any article that's both favorited
+// and still showing in "Tout" is reconciled — favorite wins, it leaves the
+// triage queue WITHOUT being deleted), re-renders, and saves the cleaned
+// state back. This is the manual recovery tool for cross-device drift.
+let syncBtnRunning = false;
+document.getElementById('syncBtn').addEventListener('click', async () => {
+  const btn = document.getElementById('syncBtn');
+  if (syncBtnRunning) return;
+  syncBtnRunning = true;
+  btn.classList.add('spinning');
+
+  const cfg = getGithubConfig();
+  try {
+    if (cfg) {
+      // Pull the freshest server state first (authoritative).
+      const { content, sha } = await githubGetFile(cfg);
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+    }
+    enforceStateConsistency();   // dedupe + a favorite is never hidden
+    saveStateInstant();
+    render();                    // Tout now excludes favorites correctly
+    if (cfg) await saveState();  // push the cleaned state back up
+
+    btn.classList.remove('spinning');
+    btn.classList.add('done');
+    setTimeout(() => btn.classList.remove('done'), 1500);
+  } catch (e) {
+    console.error('Re-sync failed:', e);
+    btn.classList.remove('spinning');
+    btn.classList.add('failed');
+    setTimeout(() => btn.classList.remove('failed'), 2500);
+  } finally {
+    syncBtnRunning = false;
+  }
+});
 
 async function loadFeeds(){
   feedEl.innerHTML = `<div class="empty">TUNING IN<span class="cursor"></span></div>`;
