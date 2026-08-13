@@ -47,8 +47,49 @@
   }
   .back-to-top.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
   .back-to-top:hover{background:var(--ink-3);border-color:var(--paper);}
+
+  /* Manual "save to GitHub" button — mirror of back-to-top, bottom-left.
+     Only shows when there are unsaved local changes. */
+  .save-btn{
+    position:fixed;
+    bottom:20px;left:20px;
+    min-width:46px;height:46px;padding:0 14px;
+    border-radius:23px;
+    background:var(--gamer);
+    border:1px solid var(--gamer);
+    color:#fff;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;font-weight:600;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.45);
+    opacity:0;transform:translateY(12px) scale(0.9);
+    pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease;
+    z-index:150;
+  }
+  .save-btn.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  .save-btn:hover{background:#3d74e6;}
+  .save-btn .save-icon{font-size:16px;line-height:1;display:flex;}
+  .save-btn .save-count{line-height:1;}
+  /* Saving: blue, spinner replaces the icon, count hidden */
+  .save-btn.saving{background:var(--gamer);pointer-events:none;}
+  .save-btn.saving .save-icon{
+    width:16px;height:16px;border:2px solid rgba(255,255,255,0.35);
+    border-top-color:#fff;border-radius:50%;
+    animation:save-spin .7s linear infinite;
+  }
+  .save-btn.saving .save-count{display:none;}
+  /* Saved: green with a check, then fades out */
+  .save-btn.saved{background:var(--ok);border-color:var(--ok);}
+  .save-btn.saved .save-count{display:none;}
+  /* Error: red, keeps the count so you can retry */
+  .save-btn.error{background:var(--unread);border-color:var(--unread);}
+  @keyframes save-spin{to{transform:rotate(360deg);}}
+
   @media (max-width:640px){
     .back-to-top{bottom:16px;right:16px;width:44px;height:44px;}
+    .save-btn{bottom:16px;left:16px;height:44px;}
   }
   body{
     background:var(--ink);
@@ -587,6 +628,9 @@
 </div>
 
 <button id="backToTop" class="back-to-top" title="Retour en haut" aria-label="Retour en haut">↑</button>
+<button id="saveBtn" class="save-btn" title="Envoyer les changements en ligne" aria-label="Sauvegarder">
+  <span class="save-icon">💾</span><span class="save-count" id="saveCount">0</span>
+</button>
 
 <div id="githubModal" class="modal-overlay">
   <div class="modal-box">
@@ -1026,39 +1070,66 @@ function idFor(item){ return item.link; }
 // If a save failed (offline, transient error), keep retrying quietly in
 // the background so the action isn't stuck local-only until the next
 // manual change. Stops once a push succeeds.
-let syncRetryTimer = null;
-function ensureBackgroundResync(){
-  if (syncRetryTimer) return;
-  syncRetryTimer = setInterval(async () => {
-    if (!getGithubConfig()) { clearInterval(syncRetryTimer); syncRetryTimer = null; return; }
-    if (lastSaveOk) { clearInterval(syncRetryTimer); syncRetryTimer = null; return; }
-    const ok = await saveState();
-    if (ok) { clearInterval(syncRetryTimer); syncRetryTimer = null; }
-  }, 15000); // retry every 15s until it lands
+// --- Manual grouped save -----------------------------------------------
+// Rationale: pushing to GitHub on every single action (favorite/hide/read)
+// meant two API calls each (GET sha + PUT), which hammered the token's
+// rate limit. Instead, actions now only write locally and bump a pending
+// counter; a floating Save button pushes everything at once when tapped.
+let pendingChanges = 0;
+
+// Called by every state-changing action. Writes to localStorage right away
+// (so nothing is lost) and increments the unsaved-changes counter shown on
+// the Save button. Does NOT hit the network.
+function markDirty(){
+  saveStateInstant();               // synchronous local cache
+  pendingChanges++;
+  updateSaveButton();
 }
 
-// Called by every user action that changes state (favorite / hide / undo).
-// Pushes to GitHub immediately; if that push fails, kicks off background
-// retries and flashes a brief, non-blocking warning.
-async function saveStateAndConfirm(){
-  const ok = await saveState();
-  if (!ok && getGithubConfig()) {
-    flashSyncWarning();
-    ensureBackgroundResync();
+function updateSaveButton(){
+  const btn = document.getElementById('saveBtn');
+  if (!btn) return;
+  const countEl = document.getElementById('saveCount');
+  if (pendingChanges > 0 && getGithubConfig()){
+    countEl.textContent = pendingChanges;
+    btn.classList.add('show');
+  } else if (!btn.classList.contains('saving') && !btn.classList.contains('saved')) {
+    btn.classList.remove('show');
   }
 }
 
-function flashSyncWarning(){
-  let t = document.getElementById('syncWarnToast');
-  if (!t){
-    t = document.createElement('div');
-    t.id = 'syncWarnToast';
-    t.className = 'undo-toast';
-    document.body.appendChild(t);
+// The Save button handler: push once, showing spinner → check / error.
+let manualSaveRunning = false;
+async function manualSave(){
+  const btn = document.getElementById('saveBtn');
+  if (!btn || manualSaveRunning || pendingChanges === 0) return;
+  const cfg = getGithubConfig();
+  if (!cfg){ openGithubModal(); return; } // no config yet → let them set it up
+
+  manualSaveRunning = true;
+  const snapshot = pendingChanges;      // remember how many we're flushing
+  btn.classList.remove('saved', 'error');
+  btn.classList.add('saving');
+
+  const ok = await saveState();         // single grouped push (serialized queue inside)
+
+  btn.classList.remove('saving');
+  manualSaveRunning = false;
+
+  if (ok){
+    pendingChanges = Math.max(0, pendingChanges - snapshot); // account for changes made mid-save
+    btn.classList.add('saved');
+    setTimeout(() => {
+      btn.classList.remove('saved');
+      updateSaveButton(); // hide if nothing pending, or show remaining count
+    }, 1600);
+  } else {
+    btn.classList.add('error');
+    setTimeout(() => {
+      btn.classList.remove('error');
+      updateSaveButton();
+    }, 2500);
   }
-  t.textContent = '⚠ Enregistré en local — synchro en attente';
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 3000);
 }
 
 function stripHtml(str){
@@ -1305,18 +1376,50 @@ backToTopBtn.addEventListener('click', () => {
 });
 updateBackToTop();
 
+// Save button: push all pending changes at once.
+document.getElementById('saveBtn').addEventListener('click', manualSave);
+
+// Warn before leaving if there are unsaved local changes. The user chose
+// manual saving, so this is a safety net, not automatic syncing.
+window.addEventListener('beforeunload', (e) => {
+  if (pendingChanges > 0 && getGithubConfig()){
+    e.preventDefault();
+    e.returnValue = ''; // required for the browser's native confirm dialog
+  }
+});
+
 // Batch the GitHub sync so a fast scroll past 20 items doesn't fire 20
 // network writes — coalesce into one save shortly after scrolling settles.
 let scrollSyncTimer = null;
 function scheduleScrollReadSync(){
   updateCounts();
-  clearTimeout(scrollSyncTimer);
-  scrollSyncTimer = setTimeout(() => { saveState(); }, 1200);
+  markDirty(); // local only; user pushes everything via the Save button
 }
 
+// Decodes HTML entities (&#8217; &rsquo; &amp; …) into real characters by
+// letting the browser parse them as text. RSS feeds often double-encode
+// punctuation (curly quotes, dashes), which otherwise shows up literally
+// as "&#8217;" in titles/summaries.
+function decodeEntities(str){
+  if (!str) return '';
+  const txt = document.createElement('textarea');
+  txt.innerHTML = str;
+  let out = txt.value;
+  // Some feeds double-encode (&amp;#8217;) — run one more pass to catch it.
+  if (/&#?\w+;/.test(out)) {
+    txt.innerHTML = out;
+    out = txt.value;
+  }
+  return out;
+}
+
+// Safe for insertion into HTML: first decode any entities the feed sent,
+// then escape so the text can't inject markup. This is why titles like
+// "Sony's" render correctly instead of "Sony&#8217;s".
 function escapeHtml(str){
+  const decoded = decodeEntities(str);
   const div = document.createElement('div');
-  div.textContent = str;
+  div.textContent = decoded;
   return div.innerHTML;
 }
 
@@ -1357,7 +1460,7 @@ function hideArticle(id){
   lastHiddenWasFav = isFav(id);
   removeFavorite(id);
   lastHiddenId = id;
-  saveStateAndConfirm();
+  markDirty();
   render();
   showUndoToast();
 }
@@ -1378,7 +1481,7 @@ function showUndoToast(){
       const idx = state.hidden.indexOf(lastHiddenId);
       if(idx !== -1) state.hidden.splice(idx, 1);
       if(lastHiddenWasFav) addFavorite(lastHiddenId); // restore the favorite too
-      saveStateAndConfirm();
+      markDirty();
       render();
     }
     toast.classList.remove('show');
@@ -1400,7 +1503,7 @@ feedEl.addEventListener('click', (e) => {
   if(e.target.classList.contains('star')){
     e.preventDefault();
     toggleFavorite(id);
-    saveStateAndConfirm();
+    markDirty();
     render();
     return;
   }
@@ -1413,13 +1516,13 @@ feedEl.addEventListener('click', (e) => {
 });
 
 // Mark-as-read must survive the tab switch that opening an article causes.
-// We commit synchronously to localStorage first (saveStateInstant), update
-// the UI immediately, and only then kick off the slower GitHub sync.
+// We commit synchronously to localStorage first (inside markDirty), so the
+// read state is safe even if navigation backgrounds the tab. The online
+// push happens later when the user taps Save.
 function markAsRead(id, row){
   if(!state.read.includes(id)){
     state.read.push(id);
-    saveStateInstant();      // synchronous, guaranteed before navigation
-    saveState();             // async GitHub sync, catches up when it can
+    markDirty();             // local write + pending counter; no network here
   }
   if(row) row.classList.add('read');
   updateCounts();
@@ -1513,7 +1616,7 @@ feedEl.addEventListener('pointerup', (e) => {
       g.row.style.transform = '';
       g.row.style.removeProperty('--swipe-progress');
       toggleFavorite(g.id);
-      saveStateAndConfirm();
+      markDirty();
       render();
     } else {
       // Not far enough either way → snap back
@@ -1632,7 +1735,7 @@ document.getElementById('markAllBtn').addEventListener('click', () => {
     const id = idFor(a);
     if(!state.read.includes(id)) state.read.push(id);
   });
-  saveState();
+  markDirty();
   render();
 });
 
