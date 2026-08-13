@@ -553,8 +553,6 @@
     <div class="controls">
       <div class="filters" id="filters">
         <button class="pill active" data-filter="all">Tout <span class="count" id="c-all">0</span></button>
-        <button class="pill" data-filter="gamer">Gamer <span class="count" id="c-gamer">0</span></button>
-        <button class="pill" data-filter="industry">Industrie <span class="count" id="c-industry">0</span></button>
         <button class="pill" data-filter="favorites">★ Favoris <span class="count" id="c-fav">0</span></button>
       </div>
       <div class="actions">
@@ -1018,11 +1016,7 @@ function dayLabel(date, absolute){
 function updateCounts(){
   const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
   const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
-  const unreadGamer = visible.filter(a => a.source.category==='gamer' && !state.read.includes(idFor(a))).length;
-  const unreadIndustry = visible.filter(a => a.source.category==='industry' && !state.read.includes(idFor(a))).length;
   document.getElementById('c-all').textContent = unreadAll;
-  document.getElementById('c-gamer').textContent = unreadGamer;
-  document.getElementById('c-industry').textContent = unreadIndustry;
   document.getElementById('c-fav').textContent = state.favorites.length;
   updateAppBadge(unreadAll);
 }
@@ -1099,8 +1093,6 @@ function render(){
     list = favoritesAsArticles();
   } else {
     list = articles.filter(a => !state.hidden.includes(idFor(a)));
-    if(currentFilter === 'gamer') list = list.filter(a => a.source.category === 'gamer');
-    if(currentFilter === 'industry') list = list.filter(a => a.source.category === 'industry');
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
