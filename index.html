@@ -1199,7 +1199,9 @@ function dayLabel(date, absolute){
 }
 
 function updateCounts(){
-  const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
+  // "Tout" counts only articles still awaiting triage: not hidden, not
+  // favorited. Favorites have their own tab and counter.
+  const visible = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   const totalAll = visible.length;
   const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
   document.getElementById('c-all').textContent = `${unreadAll}/${totalAll}`;
@@ -1278,7 +1280,10 @@ function render(){
     // even if the same article was also binned, the favorite wins here.
     list = favoritesAsArticles();
   } else {
-    list = articles.filter(a => !state.hidden.includes(idFor(a)));
+    // "Tout" is a triage queue: an article stays here until you deal with
+    // it — favorite it (to read later) or bin it. Favorited and hidden
+    // articles both leave this list.
+    list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
