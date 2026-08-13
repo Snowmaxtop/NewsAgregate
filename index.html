@@ -507,7 +507,16 @@
   }
   .row .star.on{color:var(--star);text-shadow:0 0 8px rgba(255,209,102,0.5);}
   .row .star:hover{color:var(--star);}
-  .row-actions{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:2px;}
+  .row-actions{display:none;flex-direction:column;align-items:center;gap:8px;padding-top:2px;}
+
+  /* Desktop only (mouse / fine pointer, hover-capable): show the per-row
+     action buttons, since there's no touch swipe there. Mobile keeps the
+     buttons hidden and relies on left/right swipe. */
+  @media (hover: hover) and (pointer: fine){
+    .row-actions{display:flex;}
+    .row{grid-template-columns:56px 96px 1fr auto;}
+    .row.has-thumb{grid-template-columns:56px 96px 72px 1fr auto;}
+  }
   .row .bin{
     background:none;border:none;cursor:pointer;
     font-size:14px;line-height:1;color:var(--line-strong);opacity:0.75;
@@ -838,6 +847,33 @@ async function localSet(key, value){
 // away (target=_blank on mobile can interrupt in-flight async work), so
 // the read state must be committed locally *before* that happens. The
 // slower GitHub sync then runs separately and catches up when it can.
+// Enforces the cross-list invariants so impossible states (e.g. an article
+// both favorited AND in the triage queue) can never persist, no matter how
+// two devices' edits merged:
+//   • A favorited link is removed from `hidden` (favorite wins over bin).
+//   • Dedupe every list.
+//   • `read` may overlap anything (read is orthogonal), but we dedupe it.
+// Note: "in Tout" isn't a stored list — it's computed as (not hidden AND
+// not favorited). So the only stored conflict to resolve is favorite-vs-
+// hidden; once that's clean, an item can't be both a favorite and in Tout.
+function enforceStateConsistency(){
+  const favLinks = new Set((state.favorites || []).map(f => f.link));
+
+  // Dedupe favorites by link (keep the richest snapshot).
+  const favByLink = new Map();
+  (state.favorites || []).forEach(f => {
+    if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    const ex = favByLink.get(f.link);
+    if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+  });
+  state.favorites = Array.from(favByLink.values());
+
+  // A favorite is never also hidden.
+  state.hidden = Array.from(new Set(state.hidden || [])).filter(link => !favLinks.has(link));
+
+  state.read = Array.from(new Set(state.read || []));
+}
+
 function saveStateInstant(){
   try { localStorage.setItem('article-state', JSON.stringify(state)); } catch (e) { /* ignore */ }
 }
@@ -846,40 +882,44 @@ function saveStateInstant(){
 // (which normally came from GitHub). If local had entries GitHub didn't,
 // they're kept and pushed back up so nothing marked-read is ever lost to
 // an interrupted sync. Favorites are objects, so they're merged by link.
+// GitHub is the source of truth. The local cache is only meaningful when
+// this device has changes it hasn't pushed yet (pendingChanges > 0) — e.g.
+// you closed the tab before saving. In that case we union so those unsynced
+// edits aren't lost. Otherwise we trust GitHub verbatim, which is what
+// makes removals (un-favorite, un-hide) actually propagate: a blind union
+// would resurrect stale entries from an old local cache and produce the
+// "favorited AND in Tout" ghost state. Consistency is enforced either way.
 function mergeLocalIntoState(){
-  let localRaw;
-  try { localRaw = localStorage.getItem('article-state'); } catch (e) { return; }
-  if (!localRaw) return;
+  const hasUnsynced = (typeof pendingChanges === 'number' && pendingChanges > 0);
 
-  let local;
-  try { local = JSON.parse(localRaw); } catch (e) { return; }
-
-  const before = {
-    read: state.read.length,
-    hidden: state.hidden.length,
-    favorites: state.favorites.length,
-  };
-
-  const unionLinks = (a = [], b = []) => Array.from(new Set([...a, ...b]));
-  state.read = unionLinks(state.read, local.read);
-  state.hidden = unionLinks(state.hidden, local.hidden);
-
-  // Favorites: merge by link, preferring whichever entry has a real title
-  const favByLink = new Map();
-  [...(state.favorites || []), ...(local.favorites || [])].forEach(f => {
-    if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
-    const existing = favByLink.get(f.link);
-    if (!existing || (existing.title === '(article expiré)' && f.title !== '(article expiré)')) {
-      favByLink.set(f.link, f);
-    }
-  });
-  state.favorites = Array.from(favByLink.values());
-
-  const grew = state.read.length > before.read || state.hidden.length > before.hidden || state.favorites.length > before.favorites;
-  if (grew) {
+  if (!hasUnsynced) {
+    // Trust GitHub as-is; just guarantee invariants and refresh the cache.
+    enforceStateConsistency();
     saveStateInstant();
-    saveState(); // push the merged superset back up to GitHub
+    return;
   }
+
+  // We have local edits that never reached GitHub — union them on top so
+  // they survive, then re-push the reconciled superset.
+  let local;
+  try { local = JSON.parse(localStorage.getItem('article-state')); } catch (e) { local = null; }
+  if (local) {
+    const unionLinks = (a = [], b = []) => Array.from(new Set([...a, ...b]));
+    state.read = unionLinks(state.read, local.read);
+    state.hidden = unionLinks(state.hidden, local.hidden);
+
+    const favByLink = new Map();
+    [...(state.favorites || []), ...(local.favorites || [])].forEach(f => {
+      if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+      const ex = favByLink.get(f.link);
+      if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+    });
+    state.favorites = Array.from(favByLink.values());
+  }
+
+  enforceStateConsistency();
+  saveStateInstant();
+  saveState(); // push the reconciled superset back up
 }
 
 // --- GitHub sync --------------------------------------------------------
@@ -1329,6 +1369,7 @@ function render(){
   const rowHtml = (a) => {
     const id = idFor(a);
     const isRead = state.read.includes(id);
+    const isFav = isFavorited(id);
     const hasThumb = !!a.image;
     return `
       <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
@@ -1340,6 +1381,10 @@ function render(){
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}</div>
+        </div>
+        <div class="row-actions">
+          <button class="star ${isFav ? 'on' : ''}" title="${isFav ? 'Retirer des favoris' : 'Mettre en favori'}">${isFav ? '★' : '☆'}</button>
+          <button class="bin" title="Supprimer">🗑</button>
         </div>
       </div>
     `;
@@ -1537,6 +1582,9 @@ function addFavorite(id){
     sourceId: article.source.id,
     summary: article.summary || ''
   });
+  // Invariant: a favorite is never also hidden.
+  const h = state.hidden.indexOf(id);
+  if(h !== -1) state.hidden.splice(h, 1);
 }
 
 function removeFavorite(id){
@@ -1598,6 +1646,26 @@ feedEl.addEventListener('click', (e) => {
 
   const row = e.target.closest('.row');
   if(!row) return;
+  const id = decodeURIComponent(row.dataset.id);
+
+  // Desktop action buttons. Mirror the swipe semantics:
+  //   • bin  → delete everywhere (hideArticle also drops from favorites)
+  //   • star → in Favorites tab, remove from favorites (article returns to
+  //            Tout); elsewhere, add to favorites (leaves the triage queue)
+  if(e.target.classList.contains('bin')){
+    e.preventDefault();
+    hideArticle(id);
+    return;
+  }
+  if(e.target.classList.contains('star')){
+    e.preventDefault();
+    if(currentFilter === 'favorites') removeFavorite(id);
+    else if(isFavorited(id)) removeFavorite(id);
+    else addFavorite(id);
+    markDirty();
+    render();
+    return;
+  }
 
   if(e.target.classList.contains('headline')){
     // Read-marking is handled by the pointerup tap-detection below, so the
@@ -1946,6 +2014,8 @@ document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
   await loadState();
   await loadFeeds();
   enrichLegacyFavorites();
+  enforceStateConsistency();  // final safety net: no impossible states at boot
+  render();
 })();
 
 // One-time migration: favorites used to be stored as plain link strings.
@@ -2008,13 +2078,17 @@ async function checkRemoteStateUpdate(){
   try {
     const { content, sha } = await githubGetFile(cfg);
     if (sha && sha !== githubSha) {
-      // Someone else wrote since we last knew the file. Adopt it.
+      // Someone else wrote since we last knew the file. Adopt it verbatim
+      // (GitHub is authoritative) then enforce invariants so we never show
+      // a favorited-and-in-Tout ghost even if the remote file had drifted.
       githubSha = sha;
       if (content) {
         state.read = content.read || [];
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
       }
+      enforceStateConsistency();
+      saveStateInstant();
       githubConnected = true;
       updateSyncNote();
       render();          // reflect the new read/hidden/favorites immediately
