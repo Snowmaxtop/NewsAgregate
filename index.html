@@ -381,7 +381,7 @@
   .day-group.collapsed .day-items{display:none;}
   .row{
     display:grid;
-    grid-template-columns:56px 96px 1fr 28px;
+    grid-template-columns:56px 96px 1fr;
     gap:14px;
     align-items:start;
     padding:13px 4px;
@@ -425,11 +425,19 @@
   .row.swiping{transition:none;z-index:1;}
   .row.swiping.swipe-right::before{opacity:1;}
   .row.swiping.swipe-left::after{opacity:1;}
+  /* In the Favorites tab, a left swipe REMOVES from favorites — show a
+     neutral "remove" cue instead of the amber "add to favorites" star. */
+  .in-favorites .row::after{
+    content:'✕ retirer';
+    font-size:13px;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;
+    background:linear-gradient(90deg, rgba(139,144,150,0.9), rgba(139,144,150,0.1));
+    color:#fff;
+  }
   .row.swipe-deleting{
     transition:transform .28s cubic-bezier(.4,0,.2,1);
     z-index:2;
   }
-  .row.has-thumb{grid-template-columns:56px 96px 72px 1fr 28px;}
+  .row.has-thumb{grid-template-columns:56px 96px 72px 1fr;}
   .row .thumb{
     width:72px;height:72px;border-radius:6px;overflow:hidden;
     background:var(--ink-2);flex-shrink:0;
@@ -572,8 +580,8 @@
     .lang-pill{padding:8px 13px;}
     .source-select{font-size:16px;max-width:100%;flex:1;} /* 16px avoids mobile zoom-on-focus */
 
-    .row{grid-template-columns:30px 1fr 36px;gap:10px;padding:13px 2px;}
-    .row.has-thumb{grid-template-columns:30px 56px 1fr 36px;}
+    .row{grid-template-columns:30px 1fr;gap:10px;padding:13px 2px;}
+    .row.has-thumb{grid-template-columns:30px 56px 1fr;}
     .row.has-thumb .thumb{width:56px;height:56px;}
     .row .time{display:none;}
     .row .headline{font-size:15px;line-height:1.4;}
@@ -1119,6 +1127,29 @@ function markDirty(){
   saveStateInstant();               // synchronous local cache
   pendingChanges++;
   updateSaveButton();
+  maybeAutoSaveOnEmpty();
+}
+
+// Count of articles still awaiting triage (not hidden, not favorited).
+function triageRemaining(){
+  return articles.filter(a => {
+    const id = idFor(a);
+    return !state.hidden.includes(id) && !isFavorited(id);
+  }).length;
+}
+
+// When the triage queue hits zero (you've dealt with every article) and
+// there are unsaved changes, push automatically so you don't have to tap
+// Save yourself. Guarded so it only fires on the transition to empty.
+let triageWasEmpty = false;
+function maybeAutoSaveOnEmpty(){
+  const remaining = triageRemaining();
+  if (remaining === 0 && !triageWasEmpty && pendingChanges > 0 && getGithubConfig() && !manualSaveRunning){
+    triageWasEmpty = true;
+    manualSave(); // same grouped push + spinner/check feedback as the button
+  } else if (remaining > 0){
+    triageWasEmpty = false; // re-arm once there's something to triage again
+  }
 }
 
 function updateSaveButton(){
@@ -1199,9 +1230,7 @@ function dayLabel(date, absolute){
 }
 
 function updateCounts(){
-  // "Tout" counts only articles still awaiting triage: not hidden, not
-  // favorited. Favorites have their own tab and counter.
-  const visible = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
+  const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
   const totalAll = visible.length;
   const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
   document.getElementById('c-all').textContent = `${unreadAll}/${totalAll}`;
@@ -1272,6 +1301,7 @@ function favoritesAsArticles(){
 
 function render(){
   updateCounts();
+  feedEl.classList.toggle('in-favorites', currentFilter === 'favorites');
 
   let list;
   if(currentFilter === 'favorites'){
@@ -1280,10 +1310,7 @@ function render(){
     // even if the same article was also binned, the favorite wins here.
     list = favoritesAsArticles();
   } else {
-    // "Tout" is a triage queue: an article stays here until you deal with
-    // it — favorite it (to read later) or bin it. Favorited and hidden
-    // articles both leave this list.
-    list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
+    list = articles.filter(a => !state.hidden.includes(idFor(a)));
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
@@ -1302,7 +1329,6 @@ function render(){
   const rowHtml = (a) => {
     const id = idFor(a);
     const isRead = state.read.includes(id);
-    const isFav = isFavorited(id);
     const hasThumb = !!a.image;
     return `
       <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
@@ -1314,11 +1340,6 @@ function render(){
           <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}</div>
-        </div>
-        <div class="row-actions">
-          <button class="star ${isFav ? 'on' : ''}" title="Save as favorite">${isFav ? '★' : '☆'}</button>
-          <a class="mc-check" href="https://www.metacritic.com/search/${encodeURIComponent(a.title)}/" target="_blank" rel="noopener" title="Check on Metacritic">🎮</a>
-          <button class="bin" title="Remove">🗑</button>
         </div>
       </div>
     `;
@@ -1577,21 +1598,6 @@ feedEl.addEventListener('click', (e) => {
 
   const row = e.target.closest('.row');
   if(!row) return;
-  const id = decodeURIComponent(row.dataset.id);
-
-  if(e.target.classList.contains('bin')){
-    e.preventDefault();
-    hideArticle(id);
-    return;
-  }
-
-  if(e.target.classList.contains('star')){
-    e.preventDefault();
-    toggleFavorite(id);
-    markDirty();
-    render();
-    return;
-  }
 
   if(e.target.classList.contains('headline')){
     // Read-marking is handled by the pointerup tap-detection below, so the
@@ -1694,13 +1700,19 @@ feedEl.addEventListener('pointerup', (e) => {
     const dx = e.clientX - g.x;
     g.row.classList.remove('swiping', 'swipe-armed', 'swipe-right', 'swipe-left');
     if(dx >= SWIPE_TRIGGER){
-      // Right → delete (removes from favorites too, via hideArticle)
+      // Right → delete everywhere (hideArticle also drops it from favorites)
       animateSwipeDelete(g.row, g.id);
     } else if(dx <= -SWIPE_TRIGGER){
-      // Left → toggle favorite; snap the row back into place
+      // Left → snap back, then act depending on the current tab:
+      //  • Favorites tab: remove from favorites (article returns to "Tout")
+      //  • Any other tab: add to favorites (leaves the triage queue)
       g.row.style.transform = '';
       g.row.style.removeProperty('--swipe-progress');
-      toggleFavorite(g.id);
+      if(currentFilter === 'favorites'){
+        removeFavorite(g.id);
+      } else {
+        addFavorite(g.id);
+      }
       markDirty();
       render();
     } else {
