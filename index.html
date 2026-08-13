@@ -1879,9 +1879,9 @@ function enrichLegacyFavorites(){
 // the app regains focus. This is how the badge count climbs through the
 // day as the GitHub Action commits new articles.
 const ARTICLES_REFRESH_MS = 5 * 60 * 1000; // 5 min while the app is alive
+const STATE_POLL_MS = 30 * 1000;           // 30s: check if another device saved
 
 async function refreshArticlesQuietly(){
-  if (usingExtensionData) { updateAppBadge(); return; }
   try {
     const res = await fetch('./articles.json', { cache: 'no-store' });
     if (res.ok) {
@@ -1895,11 +1895,71 @@ async function refreshArticlesQuietly(){
   updateAppBadge(); // even if the fetch failed, keep the badge correct
 }
 
+// --- Auto-refresh when another device saved ----------------------------
+// GitHub Pages can't push to us, so we poll dispatch-state.json's SHA. If
+// it changed and it wasn't us (no local unsaved changes, no save running),
+// another device (e.g. your phone) committed new state — pull it and
+// refresh automatically, no prompt. We skip the reload when this device
+// has pending unsaved changes, so we never silently clobber your own work.
+let checkingRemote = false;
+async function checkRemoteStateUpdate(){
+  const cfg = getGithubConfig();
+  if (!cfg || checkingRemote) return;
+  if (pendingChanges > 0 || manualSaveRunning) return; // don't overwrite local edits mid-flight
+
+  checkingRemote = true;
+  try {
+    const { content, sha } = await githubGetFile(cfg);
+    if (sha && sha !== githubSha) {
+      // Someone else wrote since we last knew the file. Adopt it.
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+      githubConnected = true;
+      updateSyncNote();
+      render();          // reflect the new read/hidden/favorites immediately
+      flashSyncedFromRemote();
+    }
+  } catch (e) {
+    // transient (offline, rate limit) — just try again next tick
+  } finally {
+    checkingRemote = false;
+  }
+}
+
+// Small, non-intrusive toast so you know the view updated itself.
+function flashSyncedFromRemote(){
+  let t = document.getElementById('remoteSyncToast');
+  if (!t){
+    t = document.createElement('div');
+    t.id = 'remoteSyncToast';
+    t.className = 'undo-toast';
+    document.body.appendChild(t);
+  }
+  t.textContent = '🔄 Mis à jour depuis un autre appareil';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
 setInterval(refreshArticlesQuietly, ARTICLES_REFRESH_MS);
+setInterval(() => {
+  // Only poll when the tab is actually visible — no point checking a
+  // background tab you're not looking at, and it saves API calls.
+  if (document.visibilityState === 'visible') checkRemoteStateUpdate();
+}, STATE_POLL_MS);
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') refreshArticlesQuietly();
+  if (document.visibilityState === 'visible'){
+    refreshArticlesQuietly();
+    checkRemoteStateUpdate(); // check the instant you switch back to this tab
+  }
 });
-window.addEventListener('focus', refreshArticlesQuietly);
+window.addEventListener('focus', () => {
+  refreshArticlesQuietly();
+  checkRemoteStateUpdate();
+});
 
 // Register the service worker: offline support, installability, AND
 // periodic background sync so the badge can update while the app is merely
