@@ -946,41 +946,120 @@ async function loadState(){
   } catch (e) { /* no saved state yet */ }
 }
 
+// --- Serialized GitHub save queue --------------------------------------
+// Every favorite/hide/read action wants to push state to GitHub right
+// away. But GitHub writes are optimistic-concurrency (GET sha → PUT with
+// sha): two saves running at once, or back-to-back before the first
+// finishes, collide on a stale sha → 409. To make each action reliably
+// reach the server, we serialize: saves run one at a time, in order, each
+// fetching a fresh sha. A save requested while one is in flight is
+// coalesced — we only ever need to push the *latest* full state.
+let saveInFlight = false;
+let savePending = false;
+let lastSaveOk = true;
+
 async function saveState(){
-  await localSet('article-state', JSON.stringify(state)); // fast local cache regardless of GitHub sync
+  // Always cache locally first, synchronously enough to survive navigation.
+  await localSet('article-state', JSON.stringify(state));
 
   const cfg = getGithubConfig();
-  if (!cfg) return;
+  if (!cfg) return true;
+
+  // If a save is already running, just mark that another is needed. The
+  // in-flight one will re-run at the end with the newest state.
+  if (saveInFlight) {
+    savePending = true;
+    return lastSaveOk;
+  }
+
+  saveInFlight = true;
+  let ok = false;
   try {
-    const { sha } = await githubGetFile(cfg); // fetch latest sha in case another device wrote since
+    ok = await pushToGithub(cfg);
+  } finally {
+    saveInFlight = false;
+    lastSaveOk = ok;
+  }
+
+  // If more changes happened while we were pushing, push again (once) so
+  // the server always ends up with the freshest state.
+  if (savePending) {
+    savePending = false;
+    return await saveState();
+  }
+  return ok;
+}
+
+async function pushToGithub(cfg){
+  try {
+    const { sha } = await githubGetFile(cfg); // fresh sha every attempt
     githubSha = await githubPutFile(cfg, state, sha);
     githubConnected = true;
     updateSyncNote();
+    return true;
   } catch (e) {
-    // A 409 means another device wrote in the tiny window between our GET
-    // and PUT — genuinely rare, but worth one automatic retry with a fresh
-    // SHA before surfacing an error.
+    // 409 = someone/something wrote between our GET and PUT. Retry once
+    // with a fresh sha.
     if (String(e.message).includes('409')) {
       try {
         const { sha } = await githubGetFile(cfg);
         githubSha = await githubPutFile(cfg, state, sha);
         githubConnected = true;
         updateSyncNote();
-        return;
+        return true;
       } catch (e2) {
-        console.error('GitHub sync save failed (after retry):', e2);
+        console.error('GitHub sync failed (after retry):', e2);
         githubConnected = false;
         updateSyncNote(e2.message);
-        return;
+        return false;
       }
     }
-    console.error('GitHub sync save failed:', e);
+    console.error('GitHub sync failed:', e);
     githubConnected = false;
     updateSyncNote(e.message);
+    return false;
   }
 }
 
 function idFor(item){ return item.link; }
+
+// If a save failed (offline, transient error), keep retrying quietly in
+// the background so the action isn't stuck local-only until the next
+// manual change. Stops once a push succeeds.
+let syncRetryTimer = null;
+function ensureBackgroundResync(){
+  if (syncRetryTimer) return;
+  syncRetryTimer = setInterval(async () => {
+    if (!getGithubConfig()) { clearInterval(syncRetryTimer); syncRetryTimer = null; return; }
+    if (lastSaveOk) { clearInterval(syncRetryTimer); syncRetryTimer = null; return; }
+    const ok = await saveState();
+    if (ok) { clearInterval(syncRetryTimer); syncRetryTimer = null; }
+  }, 15000); // retry every 15s until it lands
+}
+
+// Called by every user action that changes state (favorite / hide / undo).
+// Pushes to GitHub immediately; if that push fails, kicks off background
+// retries and flashes a brief, non-blocking warning.
+async function saveStateAndConfirm(){
+  const ok = await saveState();
+  if (!ok && getGithubConfig()) {
+    flashSyncWarning();
+    ensureBackgroundResync();
+  }
+}
+
+function flashSyncWarning(){
+  let t = document.getElementById('syncWarnToast');
+  if (!t){
+    t = document.createElement('div');
+    t.id = 'syncWarnToast';
+    t.className = 'undo-toast';
+    document.body.appendChild(t);
+  }
+  t.textContent = '⚠ Enregistré en local — synchro en attente';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
 
 function stripHtml(str){
   const div = document.createElement('div');
@@ -1015,8 +1094,9 @@ function dayLabel(date, absolute){
 
 function updateCounts(){
   const visible = articles.filter(a => !state.hidden.includes(idFor(a)));
+  const totalAll = visible.length;
   const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
-  document.getElementById('c-all').textContent = unreadAll;
+  document.getElementById('c-all').textContent = `${unreadAll}/${totalAll}`;
   document.getElementById('c-fav').textContent = state.favorites.length;
   updateAppBadge(unreadAll);
 }
