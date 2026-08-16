@@ -1,351 +1,2217 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Budget à Deux</title>
-<meta name="description" content="Gestion des dépenses personnelles et communes en couple, avec répartition automatique au prorata des salaires.">
-<meta name="theme-color" content="#FAF9F7">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Budget">
-<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISPATCH — Video Game Newswire</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#14181C">
+<link rel="icon" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14181C;
+    --ink-2:#1B2126;
+    --ink-3:#20272D;
+    --paper:#E9E4D8;
+    --paper-dim:#8B9096;
+    --line:rgba(233,228,216,0.10);
+    --line-strong:rgba(233,228,216,0.22);
+    --gamer:#4C86FF;
+    --industry:#E8A93B;
+    --unread:#FF4B4B;
+    --star:#FFD166;
+    --ok:#4CD97B;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;overflow-x:hidden;}
+
+  .back-to-top{
+    position:fixed;
+    bottom:20px;right:20px;
+    width:46px;height:46px;
+    border-radius:50%;
+    background:var(--ink-2);
+    border:1px solid var(--line-strong);
+    color:var(--paper);
+    font-size:20px;line-height:1;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    opacity:0;transform:translateY(12px) scale(0.9);
+    pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease, border-color .15s ease;
+    z-index:150;
+  }
+  .back-to-top.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  .back-to-top:hover{background:var(--ink-3);border-color:var(--paper);}
+
+  /* Manual "save to GitHub" button — mirror of back-to-top, bottom-left.
+     Only shows when there are unsaved local changes. */
+  .save-btn{
+    position:fixed;
+    bottom:20px;left:20px;
+    min-width:46px;height:46px;padding:0 14px;
+    border-radius:23px;
+    background:var(--gamer);
+    border:1px solid var(--gamer);
+    color:#fff;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;font-weight:600;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.45);
+    opacity:0;transform:translateY(12px) scale(0.9);
+    pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease;
+    z-index:150;
+  }
+  .save-btn.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  .save-btn:hover{background:#3d74e6;}
+  .save-btn .save-icon{font-size:16px;line-height:1;display:flex;}
+  .save-btn .save-count{line-height:1;}
+  /* Saving: blue, spinner replaces the icon, count hidden */
+  .save-btn.saving{background:var(--gamer);pointer-events:none;}
+  .save-btn.saving .save-icon{
+    width:16px;height:16px;border:2px solid rgba(255,255,255,0.35);
+    border-top-color:#fff;border-radius:50%;
+    animation:save-spin .7s linear infinite;
+  }
+  .save-btn.saving .save-count{display:none;}
+  /* Saved: green with a check, then fades out */
+  .save-btn.saved{background:var(--ok);border-color:var(--ok);}
+  .save-btn.saved .save-count{display:none;}
+  /* Error: red, keeps the count so you can retry */
+  .save-btn.error{background:var(--unread);border-color:var(--unread);}
+  @keyframes save-spin{to{transform:rotate(360deg);}}
+
+  @media (max-width:640px){
+    .back-to-top{bottom:16px;right:16px;width:44px;height:44px;}
+    .save-btn{bottom:16px;left:16px;height:44px;}
+  }
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'IBM Plex Sans', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:28px 20px 80px;}
+
+  /* Header */
+  .masthead{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    border-bottom:2px solid var(--line-strong);
+    padding-bottom:14px;
+    margin-bottom:4px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .masthead h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:28px;
+    letter-spacing:0.5px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .masthead h1 .blink{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--ok);
+    box-shadow:0 0 8px var(--ok);
+    animation:pulse 2.2s ease-in-out infinite;
+    flex-shrink:0;
+  }
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
+  .masthead .meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--paper-dim);
+    text-align:right;
+    line-height:1.5;
+  }
+  #syncNote{transition:color .2s ease;cursor:pointer;}
+  #articlesNote{color:var(--paper-dim);}
+  #syncNote.connected{color:#7EE787;}
+  #syncNote.error{color:var(--unread);}
+  .gh-settings-btn{
+    background:none;border:1px solid var(--line-strong);color:var(--paper-dim);
+    border-radius:6px;width:28px;height:28px;cursor:pointer;font-size:14px;
+    flex-shrink:0;
+  }
+  .gh-settings-btn:hover{color:var(--paper);border-color:var(--paper);}
+
+  .modal-overlay{
+    display:none;
+    position:fixed;inset:0;background:rgba(0,0,0,0.6);
+    align-items:center;justify-content:center;z-index:200;padding:20px;
+  }
+  .modal-overlay.show{display:flex;}
+  .modal-box{
+    background:var(--ink-2);border:1px solid var(--line-strong);
+    border-radius:12px;padding:26px;max-width:420px;width:100%;
+    max-height:85vh;overflow-y:auto;
+  }
+  .modal-box h2{
+    font-family:'Space Grotesk', sans-serif;font-size:19px;margin:0 0 10px;color:var(--paper);
+  }
+  .modal-note{
+    font-family:'IBM Plex Sans', sans-serif;font-size:13px;color:var(--paper-dim);
+    line-height:1.5;margin:0 0 18px;
+  }
+  .modal-box label{
+    display:block;font-family:'IBM Plex Mono', monospace;font-size:11px;
+    color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.5px;
+    margin-bottom:14px;
+  }
+  .modal-box input{
+    display:block;width:100%;margin-top:6px;
+    background:var(--ink);border:1px solid var(--line-strong);border-radius:6px;
+    padding:9px 10px;color:var(--paper);font-family:'IBM Plex Mono', monospace;font-size:13px;
+    box-sizing:border-box;
+  }
+  .modal-box input:focus{outline:none;border-color:var(--paper-dim);}
+  .token-field{position:relative;display:block;}
+  .token-field input{padding-right:40px;}
+  .token-reveal{
+    position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    background:none;border:none;cursor:pointer;font-size:15px;
+    padding:4px 6px;opacity:0.6;
+  }
+  .token-reveal:hover{opacity:1;}
+  .modal-hint{
+    font-family:'IBM Plex Sans', sans-serif;font-size:11.5px;color:var(--paper-dim);
+    line-height:1.5;margin:4px 0 20px;
+  }
+  .modal-hint a{color:var(--gamer);}
+  .modal-actions{display:flex;gap:8px;flex-wrap:wrap;}
+  .modal-actions button{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    text-transform:uppercase;padding:9px 14px;border-radius:6px;cursor:pointer;
+    border:1px solid var(--line-strong);background:none;color:var(--paper-dim);
+  }
+  .modal-primary{background:var(--paper) !important;color:var(--ink) !important;font-weight:600;border-color:var(--paper) !important;}
+  .modal-danger:hover{color:var(--unread);border-color:var(--unread);}
+  .modal-cancel:hover{color:var(--paper);border-color:var(--paper);}
+  /* ===================== TOOLBAR =====================
+     One visual panel containing: search, category pills + action icons,
+     then language pills + source select. Action buttons share .action-btn
+     for consistent sizing/touch targets. */
+  .toolbar{
+    background:var(--ink-2);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .search-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--ink);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:9px 12px;
+  }
+  .search-icon{font-size:12px;opacity:0.6;flex-shrink:0;}
+  .search-bar{
+    flex:1;
+    background:none;
+    border:none;
+    outline:none;
+    color:var(--paper);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+  }
+  .search-bar::placeholder{color:var(--paper-dim);}
+  .clear-search{
+    background:none;border:none;cursor:pointer;
+    color:var(--paper-dim);font-size:12px;padding:2px 4px;flex-shrink:0;
+  }
+  .clear-search:hover{color:var(--paper);}
+
+  .controls{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .filters{display:flex;gap:6px;flex-wrap:wrap;}
+  .pill{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    padding:7px 12px;
+    border-radius:999px;
+    border:1px solid var(--line-strong);
+    background:transparent;
+    color:var(--paper-dim);
+    cursor:pointer;
+    transition:all .15s ease;
+    white-space:nowrap;
+  }
+  .pill:hover{border-color:var(--paper);color:var(--paper);}
+  .pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .pill .count{opacity:0.6;margin-left:4px;}
+
+  .actions{display:flex;gap:6px;}
+  .action-btn{
+    display:flex;align-items:center;justify-content:center;
+    width:36px;height:36px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:15px;
+    background:none;
+    border:1px solid var(--line-strong);
+    color:var(--paper-dim);
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:all .15s ease;
+  }
+  .action-btn:hover{border-color:var(--paper);color:var(--paper);}
+  .action-btn.active{background:var(--paper);color:var(--ink);border-color:var(--paper);}
+  .mc-action{filter:grayscale(1);opacity:0.75;}
+  .mc-action:hover{filter:grayscale(0);opacity:1;}
+
+  /* Re-sync button states */
+  #syncBtn.spinning{pointer-events:none;color:var(--gamer);border-color:var(--gamer);}
+  #syncBtn.spinning{animation:sync-spin .8s linear infinite;}
+  #syncBtn.done{background:var(--ok);border-color:var(--ok);color:#fff;}
+  #syncBtn.failed{background:var(--unread);border-color:var(--unread);color:#fff;}
+  @keyframes sync-spin{to{transform:rotate(360deg);}}
+
+  .sites-wrap{position:relative;}
+  .sites-dropdown{
+    display:none;flex-direction:column;gap:2px;
+    position:absolute;top:calc(100% + 6px);right:0;
+    background:var(--ink-2);border:1px solid var(--line-strong);border-radius:8px;
+    padding:8px;min-width:200px;z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,0.45);
+    max-height:320px;overflow-y:auto;
+  }
+  .sites-dropdown.show{display:flex;}
+  .sites-dropdown a{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    color:var(--paper);text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;font-size:12px;
+    padding:7px 9px;border-radius:5px;
+  }
+  .sites-dropdown a:hover{background:var(--ink);}
+  .sites-dropdown a .ext-icon{color:var(--paper-dim);font-size:11px;}
+
+  .filter-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .lang-filters{display:flex;gap:6px;flex-wrap:wrap;}
+  .lang-pill{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    padding:6px 11px;border-radius:999px;
+    border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);
+    cursor:pointer;transition:all .15s ease;
+  }
+  .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
+  .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+
+
+
+  .source-select{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    background:var(--ink);
+    border:1px solid var(--line-strong);
+    color:var(--paper);
+    border-radius:8px;
+    padding:7px 10px;
+    cursor:pointer;
+    max-width:220px;
+  }
+  .source-select:focus{outline:none;border-color:var(--paper-dim);}
+
+  /* Feed list */
+  .feed{border-top:1px solid var(--line);}
+  .day-sep{
+    display:flex;align-items:center;gap:10px;
+    margin:20px 0 4px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;letter-spacing:1.5px;
+    color:var(--paper-dim);text-transform:uppercase;
+  }
+  .day-sep:first-child{margin-top:6px;}
+  .day-sep::before,.day-sep::after{content:'';flex:1;height:1px;background:var(--line-strong);}
+
+  /* Collapsible date sections (favorites view) */
+  .day-group{margin-top:14px;}
+  .day-group:first-child{margin-top:6px;}
+  .day-header{
+    display:flex;align-items:center;gap:10px;width:100%;
+    background:var(--ink-2);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:11px 14px;
+    cursor:pointer;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;letter-spacing:1px;
+    color:var(--paper);text-transform:uppercase;
+    transition:background .15s ease;
+  }
+  .day-header:hover{background:var(--ink-3);}
+  .day-chevron{
+    font-size:11px;color:var(--paper-dim);
+    transition:transform .2s ease;
+    flex-shrink:0;
+  }
+  .day-group.collapsed .day-chevron{transform:rotate(-90deg);}
+  .day-header-label{flex:1;text-align:left;}
+  .day-header-count{
+    background:var(--gamer);color:#fff;
+    font-size:10px;font-weight:600;
+    padding:2px 8px;border-radius:999px;
+    letter-spacing:0;
+  }
+  .day-items{padding-top:2px;}
+  .day-group.collapsed .day-items{display:none;}
+  .row{
+    display:grid;
+    grid-template-columns:56px 96px 1fr;
+    gap:14px;
+    align-items:start;
+    padding:13px 4px;
+    border-bottom:1px solid var(--line);
+    transition:background .15s ease;
+    position:relative;
+    background:var(--ink);           /* opaque so the reveal sits behind it */
+    touch-action:pan-y;              /* allow vertical scroll; we handle horizontal */
+    --swipe-progress:0;
+  }
+  /* Directional swipe reveals. ::before = red "delete" pinned to the left
+     edge, shown when swiping RIGHT. ::after = amber "favorite" pinned to
+     the right edge, shown when swiping LEFT. Each fills the space the row
+     vacates as it translates. */
+  .row::before{
+    content:'🗑';
+    position:absolute;
+    top:0;bottom:0;
+    left:-100%;width:100%;
+    display:flex;align-items:center;justify-content:flex-end;
+    padding-right:24px;
+    font-size:20px;
+    background:linear-gradient(90deg, rgba(255,75,75,0.15), rgba(255,75,75,0.95));
+    color:#fff;
+    opacity:0;
+    pointer-events:none;
+  }
+  .row::after{
+    content:'★';
+    position:absolute;
+    top:0;bottom:0;
+    right:-100%;width:100%;
+    display:flex;align-items:center;justify-content:flex-start;
+    padding-left:24px;
+    font-size:20px;
+    background:linear-gradient(90deg, rgba(255,209,102,0.95), rgba(255,209,102,0.15));
+    color:var(--ink);
+    opacity:0;
+    pointer-events:none;
+  }
+  .row.swiping{transition:none;z-index:1;}
+  .row.swiping.swipe-right::before{opacity:1;}
+  .row.swiping.swipe-left::after{opacity:1;}
+  /* In the Favorites tab, a left swipe REMOVES from favorites — show a
+     neutral "remove" cue instead of the amber "add to favorites" star. */
+  .in-favorites .row::after{
+    content:'✕ retirer';
+    font-size:13px;letter-spacing:1px;font-family:'IBM Plex Mono',monospace;
+    background:linear-gradient(90deg, rgba(139,144,150,0.9), rgba(139,144,150,0.1));
+    color:#fff;
+  }
+  .row.swipe-deleting{
+    transition:transform .28s cubic-bezier(.4,0,.2,1);
+    z-index:2;
+  }
+  .row.has-thumb{grid-template-columns:56px 96px 72px 1fr;}
+  .row .thumb{
+    width:72px;height:72px;border-radius:6px;overflow:hidden;
+    background:var(--ink-2);flex-shrink:0;
+  }
+  .row .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .row:hover{background:var(--ink-2);}
+  .row .dot-col{
+    display:flex;justify-content:center;padding-top:5px;
+  }
+  .row .dot-col .u{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--unread);
+    box-shadow:0 0 6px var(--unread);
+  }
+  .row.read .dot-col .u{visibility:hidden;}
+  .row .time{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--paper-dim);
+    padding-top:3px;
+    white-space:nowrap;
+  }
+  .row .tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9.5px;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    padding:2px 6px;
+    border-radius:4px;
+    margin-bottom:5px;
+  }
+  .tag.gamer{background:rgba(76,134,255,0.16);color:var(--gamer);}
+  .tag.industry{background:rgba(232,169,59,0.16);color:var(--industry);}
+  .row .headline{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:15.5px;
+    line-height:1.35;
+    color:var(--paper);
+    text-decoration:none;
+    display:block;
+    font-weight:500;
+  }
+  .row.read .headline{color:var(--paper-dim);font-weight:400;}
+  .row .summary{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:12.5px;
+    line-height:1.4;
+    color:var(--paper-dim);
+    margin-top:5px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .row.read .summary{opacity:0.65;}
+  .row .source-name{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--paper-dim);
+    margin-top:4px;
+  }
+  .row .star{
+    background:none;border:none;cursor:pointer;
+    font-size:17px;line-height:1;padding-top:2px;
+    color:var(--line-strong);
+  }
+  .row .star.on{color:var(--star);text-shadow:0 0 8px rgba(255,209,102,0.5);}
+  .row .star:hover{color:var(--star);}
+  .row-actions{display:none;flex-direction:column;align-items:center;gap:8px;padding-top:2px;}
+
+  /* Desktop only (mouse / fine pointer, hover-capable): show the per-row
+     action buttons, since there's no touch swipe there. Mobile keeps the
+     buttons hidden and relies on left/right swipe. */
+  @media (hover: hover) and (pointer: fine){
+    .row-actions{display:flex;}
+    .row{grid-template-columns:56px 96px 1fr auto;}
+    .row.has-thumb{grid-template-columns:56px 96px 72px 1fr auto;}
+  }
+  .row .bin{
+    background:none;border:none;cursor:pointer;
+    font-size:14px;line-height:1;color:var(--line-strong);opacity:0.75;
+  }
+  .row .bin:hover{color:var(--unread);opacity:1;}
+  .row .mc-check{
+    font-size:13px;line-height:1;text-decoration:none;opacity:0.55;
+    filter:grayscale(1);transition:all .15s ease;
+  }
+  .row .mc-check:hover{opacity:1;filter:grayscale(0);}
+
+  .undo-toast{
+    position:fixed;bottom:24px;left:50%;
+    transform:translateX(-50%) translateY(20px);
+    background:var(--ink-2);border:1px solid var(--line-strong);color:var(--paper);
+    font-family:'IBM Plex Mono', monospace;font-size:12px;
+    padding:10px 16px;border-radius:8px;
+    display:flex;align-items:center;gap:12px;
+    opacity:0;pointer-events:none;
+    transition:all .25s ease;z-index:100;
+  }
+  .undo-toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto;}
+  .undo-toast #undoBtn{
+    background:none;border:none;color:var(--star);
+    font-family:inherit;font-size:inherit;cursor:pointer;
+    text-decoration:underline;padding:0;
+  }
+
+  .empty{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--paper-dim);
+    text-align:center;
+    padding:60px 20px;
+    letter-spacing:0.5px;
+  }
+  .empty .cursor{display:inline-block;width:7px;height:12px;background:var(--paper-dim);margin-left:4px;animation:pulse 1s step-end infinite;vertical-align:middle;}
+
+  footer{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--paper-dim);
+    padding-top:30px;
+    opacity:0.6;
+  }
+
+  @media (max-width:640px){
+    .wrap{padding:16px 14px 60px;}
+
+    .masthead{padding-bottom:10px;gap:8px;}
+    .masthead h1{font-size:21px;}
+    .masthead .meta{text-align:left;order:3;flex-basis:100%;}
+    .gh-settings-btn{width:32px;height:32px;font-size:15px;}
+
+
+    .search-row{padding:11px 12px;}
+    .search-bar{font-size:16px;} /* avoids mobile browsers auto-zooming on focus */
+    .clear-search{padding:6px;}
+
+    .toolbar{padding:10px;gap:9px;}
+    .controls{gap:8px;}
+    .filters{gap:6px;}
+    .pill{padding:9px 13px;font-size:11px;}
+    .actions{gap:6px;margin-left:auto;}
+    .action-btn{width:40px;height:40px;font-size:16px;}
+    .sites-dropdown{right:0;left:auto;max-width:calc(100vw - 48px);}
+
+    .filter-row{gap:8px;}
+    .lang-pill{padding:8px 13px;}
+    .source-select{font-size:16px;max-width:100%;flex:1;} /* 16px avoids mobile zoom-on-focus */
+
+    .row{grid-template-columns:30px 1fr;gap:10px;padding:13px 2px;}
+    .row.has-thumb{grid-template-columns:30px 56px 1fr;}
+    .row.has-thumb .thumb{width:56px;height:56px;}
+    .row .time{display:none;}
+    .row .headline{font-size:15px;line-height:1.4;}
+    .row .dot-col .u{width:9px;height:9px;}
+
+    /* Bigger touch targets on the row action icons without changing their visual size */
+    .row-actions{gap:0;}
+    .row .star,.row .bin,.row .mc-check{
+      padding:10px;display:flex;align-items:center;justify-content:center;
+    }
+
+    .modal-overlay{padding:12px;}
+    .modal-box{padding:18px;border-radius:10px;}
+    .modal-box input{font-size:16px;padding:11px 10px;}
+    .modal-actions button{flex:1;min-width:100px;padding:11px 10px;}
+  }
+
+  @media (max-width:380px){
+    .masthead h1{font-size:18px;}
+    .filters{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+    .pill{text-align:center;}
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-<!-- ===== Écran de chargement (connexion Firebase automatique) ===== -->
-<div id="login-gate" class="login-gate">
-  <div class="login-card">
-    <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-      <rect width="40" height="40" rx="10" fill="var(--rose)"/>
-      <circle cx="16.5" cy="20" r="7.2" fill="#fff" fill-opacity="0.92"/>
-      <circle cx="23.5" cy="20" r="7.2" fill="#fff" fill-opacity="0.62"/>
-    </svg>
-    <h1>Budget à Deux</h1>
-    <p class="card-sub" id="login-status">Connexion…</p>
-    <p class="login-error" id="login-error" hidden></p>
+  <div class="masthead">
+    <h1><span class="blink"></span>DISPATCH</h1>
+    <div class="meta">
+      <div id="syncNote">⚙ set up GitHub sync</div>
+      <div id="articlesNote"></div>
+      <div id="clock">— / —</div>
+    </div>
+    <button id="ghSettingsBtn" class="gh-settings-btn" title="GitHub sync settings">⚙</button>
+  </div>
+
+  <!-- ===================== TOOLBAR =====================
+       Row 1: keyword search
+       Row 2: category filters + action buttons
+       Row 3: language pills + per-source select
+       All filters combine (AND) — see render() for the pipeline. -->
+  <div class="toolbar">
+    <div class="search-row">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-bar" placeholder="Filtrer par mot-clé…" autocomplete="off">
+      <button id="clearSearchBtn" class="clear-search" title="Effacer" style="display:none;">✕</button>
+    </div>
+
+    <div class="controls">
+      <div class="filters" id="filters">
+        <button class="pill active" data-filter="all">Tout <span class="count" id="c-all">0</span></button>
+        <button class="pill" data-filter="favorites">★ Favoris <span class="count" id="c-fav">0</span></button>
+      </div>
+      <div class="actions">
+        <div class="sites-wrap">
+          <button id="sitesBtn" class="action-btn" title="Aller directement sur un site">🌐</button>
+          <div id="sitesDropdown" class="sites-dropdown"></div>
+        </div>
+        <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="action-btn mc-action" title="Nouveautés sur Metacritic">🎮</a>
+        <button id="markAllBtn" class="action-btn" title="Tout marquer comme lu">✓</button>
+        <button id="syncBtn" class="action-btn" title="Re-synchroniser et nettoyer les incohérences">🔄</button>
+        <button id="refreshBtn" class="action-btn" title="Actualiser">⟳</button>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="lang-filters" id="langFilters">
+        <button class="lang-pill active" data-lang="all">Toutes langues</button>
+        <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
+        <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+      </div>
+      <select id="sourceSelect" class="source-select" title="Filtrer par source">
+        <option value="all">Toutes les sources</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="feed" id="feed">
+    <div class="empty">AWAITING SIGNAL<span class="cursor"></span></div>
+  </div>
+
+  <footer>SOURCES — IGN FRANCE · ROCK PAPER SHOTGUN · GAME DEVELOPER · GAMESINDUSTRY.BIZ</footer>
+</div>
+
+<button id="backToTop" class="back-to-top" title="Retour en haut" aria-label="Retour en haut">↑</button>
+<button id="saveBtn" class="save-btn" title="Envoyer les changements en ligne" aria-label="Sauvegarder">
+  <span class="save-icon">💾</span><span class="save-count" id="saveCount">0</span>
+</button>
+
+<div id="githubModal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>GitHub Sync</h2>
+    <p class="modal-note">Your read/favorite/hidden state gets saved as a small JSON file inside a repo you choose — synced across every device where you set this up.</p>
+
+    <label>GitHub username
+      <input type="text" id="ghOwner" placeholder="e.g. octocat" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    </label>
+    <label>Repository name
+      <input type="text" id="ghRepo" placeholder="e.g. dispatch-data" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    </label>
+    <label>Personal access token
+      <span class="token-field">
+        <input type="password" id="ghToken" placeholder="fine-grained token" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        <button type="button" id="ghTokenReveal" class="token-reveal" title="Afficher / masquer">👁</button>
+      </span>
+    </label>
+
+    <p class="modal-hint">
+      Use a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a>
+      scoped to only this one repo, with just "Contents: Read and write" permission — not a classic token with full account access.
+      The token is stored only in this browser's local storage, never sent anywhere except directly to GitHub's API.
+    </p>
+
+    <div class="modal-actions">
+      <button id="ghSaveBtn" class="modal-primary">Save &amp; Connect</button>
+      <button id="ghDisconnectBtn" class="modal-danger">Disconnect</button>
+      <button id="ghCancelBtn" class="modal-cancel">Cancel</button>
+    </div>
   </div>
 </div>
 
-<div id="app" hidden>
+<script>
+/* =========================================================================
+   DISPATCH — agrégateur de news jeu vidéo (PWA, GitHub Pages)
+   =========================================================================
 
-  <!-- ===== En-tête ===== -->
-  <header class="app-header">
-    <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect width="40" height="40" rx="10" fill="var(--rose)"/>
-        <circle cx="16.5" cy="20" r="7.2" fill="#fff" fill-opacity="0.92"/>
-        <circle cx="23.5" cy="20" r="7.2" fill="#fff" fill-opacity="0.62"/>
-      </svg>
-      <span class="brand-name">Budget à Deux</span>
-    </div>
-    <div id="sync-badge" class="sync-badge" hidden>
-      <span class="dot"></span>
-      <span id="sync-badge-text">Synchronisé</span>
-    </div>
-  </header>
+   ARCHITECTURE GLOBALE
+   --------------------
+   ┌─ GitHub Actions (.github/workflows/refresh-articles.yml, cron ~20min)
+   │    exécute scripts/fetch-articles.mjs (Node 24, fast-xml-parser)
+   │    → fetch des 11 flux RSS côté serveur (aucun souci CORS)
+   │    → nettoie titres/résumés/images, purge > RETENTION_DAYS (1 jour)
+   │    → commit articles.json à la racine du repo
+   │
+   ├─ Cette page (index.html) : lit ./articles.json (même origine).
+   │    AUCUN fetch RSS côté navigateur — pas de proxies, pas d'extension
+   │    (retirés lors de l'audit d'août 2026).
+   │
+   ├─ État perso (lu/favoris/masqués) : dispatch-state.json dans un repo
+   │    GitHub de l'utilisateur, lu/écrit via l'API REST GitHub (token
+   │    fine-grained "Contents: RW", stocké en localStorage par appareil).
+   │    localStorage sert de cache local synchrone + fusion au chargement
+   │    (mergeLocalIntoState) pour survivre aux syncs interrompues.
+   │
+   └─ PWA : manifest.webmanifest + sw.js (cache "dispatch-v4").
+        sw.js recalcule aussi le badge d'icône en arrière-plan
+        (periodicSync) à partir d'articles.json + d'un blob read/hidden
+        que la page lui pousse via postMessage.
 
-  <!-- ===== Navigation ===== -->
-  <nav class="nav" id="main-nav" aria-label="Navigation principale">
-    <button class="nav-item" data-view="dashboard" aria-label="Accueil">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Accueil</span>
-    </button>
-    <button class="nav-item" data-view="expenses" aria-label="Dépenses">
-      <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M4 10h16" stroke="currentColor" stroke-width="1.8"/><path d="M8 14.2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <span>Dépenses</span>
-    </button>
-    <button class="nav-item" data-view="recurring" aria-label="Récurrentes">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0 1 13.66-5.66L20 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M20 4.5v4h-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12a8 8 0 0 1-13.66 5.66L4 15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 19.5v-4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Récurrentes</span>
-    </button>
-    <button class="nav-item" data-view="history" aria-label="Historique">
-      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12.5" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.5v4.3l3 1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Historique</span>
-    </button>
-    <button class="nav-item" data-view="settings" aria-label="Réglages">
-      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 13.5a1.7 1.7 0 0 0 .34 1.87l.06.06a2.06 2.06 0 1 1-2.92 2.92l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56v.17a2.06 2.06 0 1 1-4.12 0v-.09a1.7 1.7 0 0 0-1.11-1.56 1.7 1.7 0 0 0-1.87.34l-.06.06a2.06 2.06 0 1 1-2.92-2.92l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.56-1.03h-.17a2.06 2.06 0 1 1 0-4.12h.09A1.7 1.7 0 0 0 5.15 7.3a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2.06 2.06 0 1 1 2.92-2.92l.06.06a1.7 1.7 0 0 0 1.87.34h.08A1.7 1.7 0 0 0 10.7 1.3v-.17a2.06 2.06 0 1 1 4.12 0v.09c.02.67.42 1.28 1.03 1.56h.08a1.7 1.7 0 0 0 1.87-.34l.06-.06a2.06 2.06 0 1 1 2.92 2.92l-.06.06a1.7 1.7 0 0 0-.34 1.87v.08c.28.6.89 1 1.56 1.03h.17a2.06 2.06 0 1 1 0 4.12h-.09a1.7 1.7 0 0 0-1.56 1.03Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span>Réglages</span>
-    </button>
-  </nav>
+   STRUCTURE DE L'ÉTAT (state)
+   ---------------------------
+   state.read      : string[]  — liens des articles lus
+   state.hidden    : string[]  — liens masqués (poubelle)
+   state.favorites : object[]  — SNAPSHOTS complets {link,title,date,
+                     image,sourceId,summary}. INVARIANT : un favori
+                     survit à tout (purge du flux, lu, masqué) et
+                     l'onglet Favoris les affiche TOUS sans filtre hidden.
 
-  <!-- ===== Contenu ===== -->
-  <main class="content">
+   PIPELINE DE FILTRES (render)
+   ----------------------------
+   favoris ? snapshots : flux − hidden
+   → catégorie (gamer/industry) → langue (fr/en) → source (id) → recherche
+   Tous les filtres se combinent en ET.
 
-    <!-- ---------- Accueil / Dashboard ---------- -->
-    <section class="view" id="view-dashboard">
-      <div class="month-switcher">
-        <button class="icon-btn" id="prev-month" aria-label="Mois précédent">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="month-label" id="month-label">—</div>
-        <button class="icon-btn" id="next-month" aria-label="Mois suivant">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
+   COMPORTEMENTS AUTOMATIQUES
+   --------------------------
+   - Lu au tap : pointerdown/up avec seuil 10px/500ms (tap ≠ scroll)
+   - Swipe bidirectionnel (tactile uniquement, jamais souris) :
+       → droite (≥110px) = SUPPRIMER (hideArticle : ajoute à hidden ET
+         retire des favoris), fond rouge 🗑, animation de sortie.
+       → gauche (≥110px) = BASCULER FAVORI (toggleFavorite), fond ambre ★,
+         la ligne revient en place.
+     Geste horizontal franc requis (dx>dy*1.3). Undo restaure hidden ET le
+     favori s'il en était un. Gestion unifiée tap/scroll/swipe (tracker
+     `gesture`).
+   - Lu au défilement : IntersectionObserver (≥50% vu) + sortie par le
+     haut (rect.bottom<=0) + balayage rAF de secours. Épargne les favoris.
+   - Purge read/hidden : côté APP au chargement (purgeStaleState) ET côté
+     SERVEUR à chaque run du workflow (fetch-articles.mjs réécrit
+     dispatch-state.json). Favoris jamais touchés.
+   - saveStateInstant() : écriture localStorage SYNCHRONE avant toute
+     navigation ; saveState() : sync GitHub async avec retry sur 409.
+   - Badge : updateCounts() → updateAppBadge() ; refresh périodique 5min
+     + visibilitychange/focus ; periodicSync côté SW quand l'app est
+     seulement en arrière-plan.
 
-      <div class="segmented" id="person-switch">
-        <button type="button" class="person-switch-opt" data-person-index="0">—</button>
-        <button type="button" class="person-switch-opt" data-person-index="1">—</button>
-      </div>
+   ÉLÉMENTS D'UI GÉNÉRÉS EN JS (absents du HTML statique)
+   ------------------------------------------------------
+   #undoToast (toast d'annulation), options de #sourceSelect.
 
-      <div class="gauge-card" id="personal-loisirs-card"></div>
+   NOTE — markAllBtn marque TOUS les articles comme lus, indépendamment
+   des filtres actifs (comportement volontaire, simple et prévisible).
+   ========================================================================= */
+const SOURCES = [
+  { id:'ign',       name:'IGN France',       category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://fr.ign.com/feed.xml', home:'https://fr.ign.com/' },
+  { id:'rps',       name:'Rock Paper Shotgun', category:'gamer',  color:'gamer', lang:'en',
+    feed:'https://www.rockpapershotgun.com/feed/', home:'https://www.rockpapershotgun.com/' },
+  { id:'gamedev',   name:'Game Developer',   category:'industry', color:'industry', lang:'en',
+    feed:'https://www.gamedeveloper.com/rss.xml', home:'https://www.gamedeveloper.com/' },
+  { id:'gibiz',     name:'GamesIndustry.biz', category:'industry', color:'industry', lang:'en',
+    feed:'https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss', home:'https://www.gamesindustry.biz/' },
+  { id:'jv',        name:'Jeuxvideo.com',    category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.jeuxvideo.com/rss/rss.xml', home:'https://www.jeuxvideo.com/' },
+  { id:'gameblog',  name:'Gameblog',         category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.gameblog.fr/rssmap/rss_all.xml', home:'https://www.gameblog.fr/' },
+  { id:'gamekult',  name:'Gamekult',         category:'gamer',    color:'gamer', lang:'fr',
+    feed:'https://www.gamekult.com/feed.xml', home:'https://www.gamekult.com/' },
+  { id:'kotaku',    name:'Kotaku',           category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://kotaku.com/feed', home:'https://kotaku.com/' },
+  { id:'pcgamer',   name:'PC Gamer',         category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.pcgamer.com/feeds.xml', home:'https://www.pcgamer.com/' },
+  { id:'eurogamer', name:'Eurogamer',        category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.eurogamer.net/?format=rss', home:'https://www.eurogamer.net/' },
+  { id:'polygon',   name:'Polygon',          category:'gamer',    color:'gamer', lang:'en',
+    feed:'https://www.polygon.com/rss/index.xml', home:'https://www.polygon.com/' },
+];
 
-      <div class="card">
-        <div class="section-title-row">
-          <h2 class="section-title">Dépenses personnelles (ce mois)</h2>
+let state = { read: [], favorites: [], hidden: [] };
+let articles = [];
+let currentFilter = 'all';
+let currentLang = 'all';
+let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
+let searchQuery = '';
+// Which favorite date-sections are collapsed (keys are Date.toDateString()).
+// Session-only: resets on reload, which is fine for a quick-scan archive.
+const collapsedDays = new Set();
+let githubConnected = false;
+let githubSha = null;
+
+const feedEl = document.getElementById('feed');
+const clockEl = document.getElementById('clock');
+const syncNoteEl = document.getElementById('syncNote');
+
+// --- Local storage abstraction ----------------------------------------
+// Works whether this page is running as a Claude artifact (window.storage)
+// or as a standalone site, e.g. on GitHub Pages (plain localStorage).
+async function localGet(key){
+  if (window.storage) {
+    try { const r = await window.storage.get(key); return r ? r.value : null; } catch (e) { return null; }
+  }
+  try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+async function localSet(key, value){
+  if (window.storage) {
+    try { await window.storage.set(key, value); return; } catch (e) { /* fall through */ }
+  }
+  try { localStorage.setItem(key, value); } catch (e) { /* ignore */ }
+}
+
+// Writes state to localStorage synchronously — no await, no network. This
+// is critical for the "mark as read" flow: opening an article navigates
+// away (target=_blank on mobile can interrupt in-flight async work), so
+// the read state must be committed locally *before* that happens. The
+// slower GitHub sync then runs separately and catches up when it can.
+// Enforces the cross-list invariants so impossible states (e.g. an article
+// both favorited AND in the triage queue) can never persist, no matter how
+// two devices' edits merged:
+//   • A favorited link is removed from `hidden` (favorite wins over bin).
+//   • Dedupe every list.
+//   • `read` may overlap anything (read is orthogonal), but we dedupe it.
+// Note: "in Tout" isn't a stored list — it's computed as (not hidden AND
+// not favorited). So the only stored conflict to resolve is favorite-vs-
+// hidden; once that's clean, an item can't be both a favorite and in Tout.
+function enforceStateConsistency(){
+  const favLinks = new Set((state.favorites || []).map(f => f.link));
+
+  // Dedupe favorites by link (keep the richest snapshot).
+  const favByLink = new Map();
+  (state.favorites || []).forEach(f => {
+    if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    const ex = favByLink.get(f.link);
+    if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+  });
+  state.favorites = Array.from(favByLink.values());
+
+  // A favorite is never also hidden.
+  state.hidden = Array.from(new Set(state.hidden || [])).filter(link => !favLinks.has(link));
+
+  state.read = Array.from(new Set(state.read || []));
+}
+
+function saveStateInstant(){
+  try { localStorage.setItem('article-state', JSON.stringify(state)); } catch (e) { /* ignore */ }
+}
+
+// Unions the locally-cached read/hidden lists on top of the current state
+// (which normally came from GitHub). If local had entries GitHub didn't,
+// they're kept and pushed back up so nothing marked-read is ever lost to
+// an interrupted sync. Favorites are objects, so they're merged by link.
+// GitHub is the source of truth. The local cache is only meaningful when
+// this device has changes it hasn't pushed yet (pendingChanges > 0) — e.g.
+// you closed the tab before saving. In that case we union so those unsynced
+// edits aren't lost. Otherwise we trust GitHub verbatim, which is what
+// makes removals (un-favorite, un-hide) actually propagate: a blind union
+// would resurrect stale entries from an old local cache and produce the
+// "favorited AND in Tout" ghost state. Consistency is enforced either way.
+function mergeLocalIntoState(){
+  const hasUnsynced = (typeof pendingChanges === 'number' && pendingChanges > 0);
+
+  if (!hasUnsynced) {
+    // Trust GitHub as-is; just guarantee invariants and refresh the cache.
+    enforceStateConsistency();
+    saveStateInstant();
+    return;
+  }
+
+  // We have local edits that never reached GitHub — union them on top so
+  // they survive, then re-push the reconciled superset.
+  let local;
+  try { local = JSON.parse(localStorage.getItem('article-state')); } catch (e) { local = null; }
+  if (local) {
+    const unionLinks = (a = [], b = []) => Array.from(new Set([...a, ...b]));
+    state.read = unionLinks(state.read, local.read);
+    state.hidden = unionLinks(state.hidden, local.hidden);
+
+    const favByLink = new Map();
+    [...(state.favorites || []), ...(local.favorites || [])].forEach(f => {
+      if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+      const ex = favByLink.get(f.link);
+      if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+    });
+    state.favorites = Array.from(favByLink.values());
+  }
+
+  enforceStateConsistency();
+  saveStateInstant();
+  saveState(); // push the reconciled superset back up
+}
+
+// --- GitHub sync --------------------------------------------------------
+// Optional: stores read/favorite/hidden state as a JSON file inside a repo
+// you configure, via GitHub's REST API (which supports CORS for browser
+// requests, including authenticated PUT). This is what makes state follow
+// you across devices when this page is hosted somewhere like GitHub Pages.
+const GITHUB_CONFIG_KEY = 'dispatch-github-config';
+const GITHUB_DATA_PATH = 'dispatch-state.json';
+
+function getGithubConfig(){
+  try {
+    const raw = localStorage.getItem(GITHUB_CONFIG_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+function saveGithubConfig(cfg){ localStorage.setItem(GITHUB_CONFIG_KEY, JSON.stringify(cfg)); }
+function clearGithubConfig(){ localStorage.removeItem(GITHUB_CONFIG_KEY); }
+
+function utf8ToBase64(str){ return btoa(unescape(encodeURIComponent(str))); }
+function base64ToUtf8(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g, '')))); }
+
+async function githubGetFile(cfg){
+  const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${GITHUB_DATA_PATH}`;
+  const res = await fetch(url, {
+    headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github+json' }
+  });
+  if (res.status === 404) return { content: null, sha: null };
+  if (!res.ok) throw new Error('GitHub GET failed: ' + res.status);
+  const data = await res.json();
+  return { content: JSON.parse(base64ToUtf8(data.content)), sha: data.sha };
+}
+
+async function githubPutFile(cfg, contentObj, sha){
+  const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${GITHUB_DATA_PATH}`;
+  const body = { message: 'Update Dispatch state', content: utf8ToBase64(JSON.stringify(contentObj, null, 2)) };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${cfg.token}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) throw new Error('GitHub PUT failed: ' + res.status + ' ' + await res.text());
+  const data = await res.json();
+  return data.content.sha;
+}
+
+function updateSyncNote(errorMsg){
+  syncNoteEl.title = '';
+  if (githubConnected) {
+    syncNoteEl.textContent = '🐙 synced via GitHub';
+    syncNoteEl.classList.add('connected');
+    syncNoteEl.classList.remove('error');
+  } else if (errorMsg) {
+    syncNoteEl.textContent = '⚠ GitHub sync error';
+    syncNoteEl.title = errorMsg;
+    syncNoteEl.classList.add('error');
+    syncNoteEl.classList.remove('connected');
+  } else {
+    syncNoteEl.textContent = '⚙ set up GitHub sync';
+    syncNoteEl.classList.remove('connected', 'error');
+  }
+}
+
+// --- Static articles.json (built by GitHub Actions) --------------------
+// This is the primary, reliable source of articles when this page is
+// hosted on GitHub Pages: a scheduled Action fetches every feed
+// server-side (no CORS involved at all) and commits articles.json, which
+// this page just reads like any other same-origin file. The extension
+// bridge (if present) still takes priority since it's the freshest
+// possible data; the proxy chain further below remains as a last-resort
+// fallback for when neither is available yet.
+const articlesNoteEl = document.getElementById('articlesNote');
+
+function formatRelative(dateStr){
+  const diffMs = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.round(diffMs / 60000);
+  if (mins < 1) return "à l'instant";
+  if (mins < 60) return `il y a ${mins} min`;
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return `il y a ${hours} h`;
+  const days = Math.round(hours / 24);
+  return `il y a ${days} j`;
+}
+
+async function applyJsonData(data){
+  articles = (data.articles || [])
+    .map(a => {
+      const source = SOURCES.find(s => s.id === a.sourceId);
+      if (!source) return null;
+      return { title: a.title, link: a.link, date: new Date(a.date), source, image: a.image || null, summary: a.summary || '', tags: a.tags || [] };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.date - a.date);
+
+  if (data.generatedAt) {
+    articlesNoteEl.textContent = `📰 actualisé ${formatRelative(data.generatedAt)}`;
+  }
+
+  render();
+}
+
+function updateClock(){
+  const now = new Date();
+  clockEl.textContent = now.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) + ' / ' +
+    now.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+}
+updateClock();
+setInterval(updateClock, 30000);
+
+async function loadState(){
+  const cfg = getGithubConfig();
+  if (cfg) {
+    try {
+      const { content, sha } = await githubGetFile(cfg);
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+      githubConnected = true;
+
+      // Merge any locally-cached state on top of what GitHub returned. A
+      // "mark as read" committed to localStorage just before the app was
+      // closed may not have finished syncing to GitHub — without this
+      // merge, that read would appear to revert on reload. We union the
+      // link lists (local wins) and re-sync if local had anything extra.
+      mergeLocalIntoState();
+      updateSyncNote();
+      return;
+    } catch (e) {
+      console.error('GitHub sync load failed, falling back to local storage:', e);
+      githubConnected = false;
+      updateSyncNote(e.message);
+    }
+  }
+
+  try {
+    const raw = await localGet('article-state');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      state.read = parsed.read || [];
+      state.favorites = parsed.favorites || [];
+      state.hidden = parsed.hidden || [];
+    }
+  } catch (e) { /* no saved state yet */ }
+}
+
+// --- Serialized GitHub save queue --------------------------------------
+// Every favorite/hide/read action wants to push state to GitHub right
+// away. But GitHub writes are optimistic-concurrency (GET sha → PUT with
+// sha): two saves running at once, or back-to-back before the first
+// finishes, collide on a stale sha → 409. To make each action reliably
+// reach the server, we serialize: saves run one at a time, in order, each
+// fetching a fresh sha. A save requested while one is in flight is
+// coalesced — we only ever need to push the *latest* full state.
+let saveInFlight = false;
+let savePending = false;
+let lastSaveOk = true;
+
+async function saveState(){
+  // Always cache locally first, synchronously enough to survive navigation.
+  await localSet('article-state', JSON.stringify(state));
+
+  const cfg = getGithubConfig();
+  if (!cfg) return true;
+
+  // If a save is already running, just mark that another is needed. The
+  // in-flight one will re-run at the end with the newest state.
+  if (saveInFlight) {
+    savePending = true;
+    return lastSaveOk;
+  }
+
+  saveInFlight = true;
+  let ok = false;
+  try {
+    ok = await pushToGithub(cfg);
+  } finally {
+    saveInFlight = false;
+    lastSaveOk = ok;
+  }
+
+  // If more changes happened while we were pushing, push again (once) so
+  // the server always ends up with the freshest state.
+  if (savePending) {
+    savePending = false;
+    return await saveState();
+  }
+  return ok;
+}
+
+async function pushToGithub(cfg){
+  try {
+    const { sha } = await githubGetFile(cfg); // fresh sha every attempt
+    githubSha = await githubPutFile(cfg, state, sha);
+    githubConnected = true;
+    updateSyncNote();
+    return true;
+  } catch (e) {
+    // 409 = someone/something wrote between our GET and PUT. Retry once
+    // with a fresh sha.
+    if (String(e.message).includes('409')) {
+      try {
+        const { sha } = await githubGetFile(cfg);
+        githubSha = await githubPutFile(cfg, state, sha);
+        githubConnected = true;
+        updateSyncNote();
+        return true;
+      } catch (e2) {
+        console.error('GitHub sync failed (after retry):', e2);
+        githubConnected = false;
+        updateSyncNote(e2.message);
+        return false;
+      }
+    }
+    console.error('GitHub sync failed:', e);
+    githubConnected = false;
+    updateSyncNote(e.message);
+    return false;
+  }
+}
+
+function idFor(item){ return item.link; }
+
+// If a save failed (offline, transient error), keep retrying quietly in
+// the background so the action isn't stuck local-only until the next
+// manual change. Stops once a push succeeds.
+// --- Manual grouped save -----------------------------------------------
+// Rationale: pushing to GitHub on every single action (favorite/hide/read)
+// meant two API calls each (GET sha + PUT), which hammered the token's
+// rate limit. Instead, actions now only write locally and bump a pending
+// counter; a floating Save button pushes everything at once when tapped.
+let pendingChanges = 0;
+
+// Called by every state-changing action. Writes to localStorage right away
+// (so nothing is lost) and increments the unsaved-changes counter shown on
+// the Save button. Does NOT hit the network.
+function markDirty(){
+  saveStateInstant();               // synchronous local cache
+  pendingChanges++;
+  updateSaveButton();
+  maybeAutoSaveOnEmpty();
+}
+
+// Count of articles still awaiting triage (not hidden, not favorited).
+function triageRemaining(){
+  return articles.filter(a => {
+    const id = idFor(a);
+    return !state.hidden.includes(id) && !isFavorited(id);
+  }).length;
+}
+
+// When the triage queue hits zero (you've dealt with every article) and
+// there are unsaved changes, push automatically so you don't have to tap
+// Save yourself. Guarded so it only fires on the transition to empty.
+let triageWasEmpty = false;
+function maybeAutoSaveOnEmpty(){
+  const remaining = triageRemaining();
+  if (remaining === 0 && !triageWasEmpty && pendingChanges > 0 && getGithubConfig() && !manualSaveRunning){
+    triageWasEmpty = true;
+    manualSave(); // same grouped push + spinner/check feedback as the button
+  } else if (remaining > 0){
+    triageWasEmpty = false; // re-arm once there's something to triage again
+  }
+}
+
+function updateSaveButton(){
+  const btn = document.getElementById('saveBtn');
+  if (!btn) return;
+  const countEl = document.getElementById('saveCount');
+  if (pendingChanges > 0 && getGithubConfig()){
+    countEl.textContent = pendingChanges;
+    btn.classList.add('show');
+  } else if (!btn.classList.contains('saving') && !btn.classList.contains('saved')) {
+    btn.classList.remove('show');
+  }
+}
+
+// The Save button handler: push once, showing spinner → check / error.
+let manualSaveRunning = false;
+async function manualSave(){
+  const btn = document.getElementById('saveBtn');
+  if (!btn || manualSaveRunning || pendingChanges === 0) return;
+  const cfg = getGithubConfig();
+  if (!cfg){ openGithubModal(); return; } // no config yet → let them set it up
+
+  manualSaveRunning = true;
+  const snapshot = pendingChanges;      // remember how many we're flushing
+  btn.classList.remove('saved', 'error');
+  btn.classList.add('saving');
+
+  const ok = await saveState();         // single grouped push (serialized queue inside)
+
+  btn.classList.remove('saving');
+  manualSaveRunning = false;
+
+  if (ok){
+    pendingChanges = Math.max(0, pendingChanges - snapshot); // account for changes made mid-save
+    btn.classList.add('saved');
+    setTimeout(() => {
+      btn.classList.remove('saved');
+      updateSaveButton(); // hide if nothing pending, or show remaining count
+    }, 1600);
+  } else {
+    btn.classList.add('error');
+    setTimeout(() => {
+      btn.classList.remove('error');
+      updateSaveButton();
+    }, 2500);
+  }
+}
+
+function stripHtml(str){
+  const div = document.createElement('div');
+  div.innerHTML = str || '';
+  return (div.textContent || div.innerText || '').trim();
+}
+
+function formatTime(date){
+  return date.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) +
+    ' · ' + date.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+}
+
+function sameDay(d1, d2){
+  return d1.toDateString() === d2.toDateString();
+}
+
+function dayLabel(date, absolute){
+  // In the Favorites view we pass absolute=true: favorites can be weeks
+  // old, so "AUJOURD'HUI/HIER" would be misleading — always show the full
+  // date (with year, since favorites can span across years).
+  if (absolute) {
+    return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long', year:'numeric'}).toUpperCase();
+  }
+  const now = new Date();
+  const d0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const d1 = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const diffDays = Math.round((d0 - d1) / 86400000);
+  if(diffDays === 0) return "AUJOURD'HUI";
+  if(diffDays === 1) return 'HIER';
+  return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long'}).toUpperCase();
+}
+
+function updateCounts(){
+  // "Tout" is the triage queue: not hidden AND not favorited.
+  const visible = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
+  const totalAll = visible.length;
+  const unreadAll = visible.filter(a => !state.read.includes(idFor(a))).length;
+  document.getElementById('c-all').textContent = `${unreadAll}/${totalAll}`;
+  document.getElementById('c-fav').textContent = state.favorites.length;
+  updateAppBadge(unreadAll);
+}
+
+// --- App icon badge ----------------------------------------------------
+// Shows the number of unread (and non-hidden) articles on the home-screen
+// icon via the Badging API. Kept live from three places so it's as close
+// to "always current" as a PWA allows:
+//   1. every updateCounts() (any read/hide/favorite action, every render)
+//   2. a periodic in-page refresh while the app is open or backgrounded
+//   3. the service worker's periodic background sync (see sw.js), which can
+//      update the badge even when no page/tab is actively rendering.
+function computeUnreadCount(){
+  const readSet = new Set(state.read);
+  const hiddenSet = new Set(state.hidden);
+  return articles.filter(a => {
+    const id = idFor(a);
+    return !readSet.has(id) && !hiddenSet.has(id);
+  }).length;
+}
+
+function updateAppBadge(count){
+  if (typeof count !== 'number') count = computeUnreadCount();
+  try {
+    if ('setAppBadge' in navigator) {
+      if (count > 0) navigator.setAppBadge(count);
+      else navigator.clearAppBadge();
+    }
+  } catch (e) { /* badging not available, ignore */ }
+
+  // Cache the latest count for reference.
+  try { localStorage.setItem('dispatch-unread-count', String(count)); } catch(e){}
+
+  // Hand the current read/hidden state to the service worker so it can
+  // recompute the badge on its own during background periodic sync, when
+  // no page is actively rendering.
+  try {
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({
+        type: 'dispatch-state-update',
+        read: state.read,
+        hidden: state.hidden,
+      });
+    }
+  } catch (e) { /* SW not ready yet */ }
+}
+
+function isFavorited(id){
+  return state.favorites.some(f => f.link === id);
+}
+
+function favoritesAsArticles(){
+  return state.favorites.map(f => {
+    const source = SOURCES.find(s => s.id === f.sourceId) || { name: 'Source inconnue', category: 'gamer', color: 'gamer', lang: 'fr' };
+    return {
+      title: f.title || '(article expiré)',
+      link: f.link,
+      date: f.date ? new Date(f.date) : new Date(0),
+      source,
+      image: f.image || null,
+      summary: f.summary || ''
+    };
+  });
+}
+
+function render(){
+  updateCounts();
+  feedEl.classList.toggle('in-favorites', currentFilter === 'favorites');
+
+  let list;
+  if(currentFilter === 'favorites'){
+    // Favorites are always shown in full — never removed by the hidden
+    // filter. A favorite is an explicit "keep this forever" signal, so
+    // even if the same article was also binned, the favorite wins here.
+    list = favoritesAsArticles();
+  } else {
+    // "Tout" is the triage queue: an article stays here until dealt with.
+    // Favorited and hidden articles both leave this list.
+    list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
+  }
+  if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
+  if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
+  if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
+  list.sort((a,b) => b.date - a.date);
+
+  if(list.length === 0){
+    let msg = 'AWAITING SIGNAL';
+    if(articles.length > 0 || currentFilter === 'favorites'){
+      msg = searchQuery ? `NO MATCHES FOR "${escapeHtml(searchQuery)}"` : 'NO ARTICLES ON THIS CHANNEL';
+    }
+    feedEl.innerHTML = `<div class="empty">${msg}<span class="cursor"></span></div>`;
+    return;
+  }
+
+  const rowHtml = (a) => {
+    const id = idFor(a);
+    const isRead = state.read.includes(id);
+    const isFav = isFavorited(id);
+    const hasThumb = !!a.image;
+    return `
+      <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
+        <div class="dot-col"><span class="u"></span></div>
+        <div class="time">${formatTime(a.date)}</div>
+        ${hasThumb ? `<div class="thumb"><img src="${a.image}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
+        <div>
+          <span class="tag ${a.source.color}">${a.source.category}</span>
+          <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+          ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
+          <div class="source-name">${a.source.name}</div>
         </div>
-        <div id="personal-expenses-list" class="expense-list"></div>
-      </div>
-
-      <div class="card">
-        <h2 class="section-title">À verser en fin de mois</h2>
-        <div id="personal-owed"></div>
-      </div>
-
-      <div id="onboarding-hint" class="hint-card" hidden>
-        Ajoutez vos deux salaires dans <button class="link-btn" data-goto="settings">Réglages</button> pour que la répartition se calcule automatiquement.
-      </div>
-
-      <div class="card hero-card">
-        <div class="hero-label">Dépenses communes</div>
-        <div class="hero-amount" id="dash-total">0,00&nbsp;€</div>
-        <div class="split-ribbon" id="split-ribbon">
-          <div class="split-seg split-a" id="split-seg-a"><span id="split-a-label"></span></div>
-          <div class="split-seg split-b" id="split-seg-b"><span id="split-b-label"></span></div>
+        <div class="row-actions">
+          <button class="star ${isFav ? 'on' : ''}" title="${isFav ? 'Retirer des favoris' : 'Mettre en favori'}">${isFav ? '★' : '☆'}</button>
+          <button class="bin" title="Supprimer">🗑</button>
         </div>
       </div>
+    `;
+  };
 
-      <div class="card balance-card" id="balance-card">
-        <div class="balance-message" id="balance-message">—</div>
-        <div class="balance-breakdown" id="balance-breakdown" hidden></div>
-        <div class="balance-actions">
-          <button class="btn btn-primary" id="settle-btn">Marquer comme réglé</button>
-          <div class="settled-note" id="settled-note" hidden></div>
+  if(currentFilter === 'favorites'){
+    // Favorites view: group by day into collapsible sections so long
+    // archives don't become an endless scroll. Each day header shows the
+    // count and toggles its articles open/closed (state in collapsedDays).
+    const groups = [];
+    let currentKey = null;
+    list.forEach(a => {
+      const key = a.date.toDateString();
+      if(key !== currentKey){
+        groups.push({ key, date: a.date, items: [] });
+        currentKey = key;
+      }
+      groups[groups.length - 1].items.push(a);
+    });
+
+    feedEl.innerHTML = groups.map(g => {
+      const collapsed = collapsedDays.has(g.key);
+      const rows = collapsed ? '' : g.items.map(rowHtml).join('');
+      return `
+        <div class="day-group ${collapsed ? 'collapsed' : ''}">
+          <button class="day-header" data-daykey="${encodeURIComponent(g.key)}">
+            <span class="day-chevron">▾</span>
+            <span class="day-header-label">${dayLabel(g.date, true)}</span>
+            <span class="day-header-count">${g.items.length}</span>
+          </button>
+          <div class="day-items">${rows}</div>
         </div>
-      </div>
+      `;
+    }).join('');
+  } else {
+    feedEl.innerHTML = list.map((a, idx) => {
+      const showSeparator = idx === 0 || !sameDay(a.date, list[idx - 1].date);
+      const separatorHtml = showSeparator ? `<div class="day-sep"><span>${dayLabel(a.date, false)}</span></div>` : '';
+      return separatorHtml + rowHtml(a);
+    }).join('');
+  }
 
-      <div class="card">
-        <div class="section-title-row">
-          <h2 class="section-title">Par catégorie</h2>
-        </div>
-        <div id="category-breakdown" class="category-breakdown"></div>
-      </div>
+  observeRowsForScrollRead();
+}
 
-      <div class="card">
-        <div class="section-title-row">
-          <h2 class="section-title">Dépenses récentes</h2>
-          <button class="link-btn" data-goto="expenses">Tout voir</button>
-        </div>
-        <div id="recent-expenses" class="expense-list"></div>
-      </div>
-    </section>
+// --- Mark-as-read on scroll-past ---------------------------------------
+// When enabled, an article that has actually been on screen and then
+// scrolls out past the TOP edge is treated as "seen and skipped" → marked
+// read. We require it to have been intersecting first (seenIds), so simply
+// rendering below the fold or scrolling upward past unseen items does not
+// mark them. This matches the gesture: scrolling down past headlines you
+// don't care about. This behaviour is always on.
+const scrollReadEnabled = true;
 
-    <!-- ---------- Dépenses ---------- -->
-    <section class="view" id="view-expenses">
-      <div class="filters-row">
-        <select id="filter-type" class="select-chip">
-          <option value="all">Toutes</option>
-          <option value="commun">Communes</option>
-          <option value="perso">Personnelles</option>
-        </select>
-        <select id="filter-person" class="select-chip"></select>
-        <select id="filter-month" class="select-chip"></select>
-      </div>
-      <div id="expenses-full-list" class="expense-list expense-list-grouped"></div>
-      <div id="expenses-empty" class="empty-state" hidden>
-        <p>Aucune dépense pour l'instant.</p>
-        <p class="empty-sub">Utilisez le bouton + pour ajouter votre première dépense.</p>
-      </div>
-    </section>
+const seenIds = new Set();
+let scrollObserver = null;
 
-    <!-- ---------- Récurrentes ---------- -->
-    <section class="view" id="view-recurring">
-      <div id="recurring-list" class="recurring-list"></div>
-      <div id="recurring-empty" class="empty-state" hidden>
-        <p>Aucune dépense récurrente.</p>
-        <p class="empty-sub">Loyer, abonnements, assurances… ajoutez-les une fois, elles se génèrent seules chaque mois.</p>
-      </div>
-    </section>
+function observeRowsForScrollRead(){
+  if (scrollObserver) scrollObserver.disconnect();
+  seenIds.clear();
+  if (!scrollReadEnabled) return;
 
-    <!-- ---------- Historique ---------- -->
-    <section class="view" id="view-history">
-      <div id="history-list" class="history-list"></div>
-      <div id="history-empty" class="empty-state" hidden>
-        <p>Pas encore d'historique.</p>
-        <p class="empty-sub">Chaque mois avec des dépenses communes apparaîtra ici.</p>
-      </div>
-    </section>
+  // No explicit root → observes against the viewport, which is correct for
+  // both desktop (window scrolls) and the mobile PWA (also window scrolls).
+  scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const row = entry.target;
+      if (!row.dataset.id) return;
+      const id = decodeURIComponent(row.dataset.id);
 
-    <!-- ---------- Réglages ---------- -->
-    <section class="view" id="view-settings">
+      if (entry.isIntersecting) {
+        // We've actually laid eyes on this row (≥50% visible).
+        seenIds.add(id);
+      } else if (seenIds.has(id)) {
+        // It left the viewport. Only count it as "skipped" if it exited via
+        // the TOP — i.e. its bottom edge is now above the top of the screen
+        // (y < 0). getBoundingClientRect is viewport-relative, so this is
+        // reliable on both desktop and mobile without needing rootBounds.
+        const rect = row.getBoundingClientRect();
+        if (rect.bottom <= 0) {
+          markRowReadFromScroll(id, row);
+        }
+      }
+    });
+  }, { threshold: [0, 0.5] }); // fire around both entering and the 50% seen mark
 
-      <div class="card">
-        <h2 class="section-title">Vos salaires</h2>
-        <p class="card-sub">La répartition des dépenses communes se recalcule automatiquement à partir de ces montants.</p>
-        <form id="settings-people-form" class="stacked-form">
-          <div class="person-row">
-            <span class="avatar avatar-a">A</span>
-            <input type="text" name="name0" class="input" placeholder="Prénom">
-            <input type="number" name="salary0" class="input" placeholder="Salaire net €" min="0" step="1" inputmode="decimal">
-          </div>
-          <div class="person-row">
-            <span class="avatar avatar-b">B</span>
-            <input type="text" name="name1" class="input" placeholder="Prénom">
-            <input type="number" name="salary1" class="input" placeholder="Salaire net €" min="0" step="1" inputmode="decimal">
-          </div>
-        </form>
-        <div class="shares-preview" id="shares-preview"></div>
-      </div>
+  document.querySelectorAll('.row').forEach(row => scrollObserver.observe(row));
+}
 
-      <div class="card">
-        <h2 class="section-title">Budget loisirs &amp; épargne</h2>
-        <p class="card-sub">Le budget loisirs se règle à la main. La part des dépenses communes récurrentes et l'épargne estimée se calculent automatiquement à partir de vos salaires et de vos dépenses récurrentes communes actives.</p>
-        <form id="settings-loisirs-form" class="stacked-form">
-          <div class="person-row">
-            <span class="avatar avatar-a">A</span>
-            <span class="budget-person-name" id="loisirs-name0">—</span>
-            <input type="number" name="loisirs0" class="input" placeholder="Budget loisirs €" min="0" step="1" inputmode="decimal">
-          </div>
-          <div class="person-row">
-            <span class="avatar avatar-b">B</span>
-            <span class="budget-person-name" id="loisirs-name1">—</span>
-            <input type="number" name="loisirs1" class="input" placeholder="Budget loisirs €" min="0" step="1" inputmode="decimal">
-          </div>
-        </form>
-        <div class="budget-breakdown" id="budget-breakdown"></div>
-      </div>
+function markRowReadFromScroll(id, row){
+  if (state.read.includes(id)) return;
+  if (state.favorites.some(f => f.link === id)) return; // never auto-read a favorite
+  state.read.push(id);
+  row.classList.add('read');
+  saveStateInstant();
+  scheduleScrollReadSync();
+}
 
-      <div class="card">
-        <h2 class="section-title">Sauvegarde</h2>
-        <p class="card-sub">Vos données sont synchronisées via Firebase. Exportez un fichier JSON de temps en temps si vous voulez garder une copie de secours en dehors du cloud.</p>
-        <div class="btn-row">
-          <button class="btn btn-secondary" id="export-btn">Exporter (.json)</button>
-          <label class="btn btn-secondary" for="import-input">Importer (.json)</label>
-          <input type="file" id="import-input" accept="application/json" hidden>
-        </div>
-      </div>
+// Safety sweep: on a very fast fling the observer can miss the exact moment
+// a row crosses the top edge. On scroll (throttled via rAF) we also sweep
+// any already-seen rows that are now fully above the viewport.
+let sweepScheduled = false;
+function scrollReadSweep(){
+  if (!scrollReadEnabled) return;
+  if (sweepScheduled) return;
+  sweepScheduled = true;
+  requestAnimationFrame(() => {
+    sweepScheduled = false;
+    document.querySelectorAll('.row').forEach(row => {
+      if (!row.dataset.id) return;
+      const id = decodeURIComponent(row.dataset.id);
+      if (!seenIds.has(id)) return;          // only rows we actually saw
+      if (state.read.includes(id)) return;
+      const rect = row.getBoundingClientRect();
+      if (rect.bottom <= 0) markRowReadFromScroll(id, row);
+    });
+  });
+}
+window.addEventListener('scroll', scrollReadSweep, { passive: true });
 
-      <div class="card">
-        <h2 class="section-title">Synchronisation</h2>
-        <p class="card-sub">Les données sont synchronisées en temps réel avec l'autre appareil connecté au même projet Firebase.</p>
-        <div id="sync-status" class="sync-status"></div>
-        <div class="btn-row">
-          <button class="btn btn-secondary" id="account-retry-btn">Renvoyer maintenant</button>
-        </div>
-      </div>
-    </section>
+// --- Back-to-top button -------------------------------------------------
+const backToTopBtn = document.getElementById('backToTop');
+function updateBackToTop(){
+  if (window.scrollY > 400) backToTopBtn.classList.add('show');
+  else backToTopBtn.classList.remove('show');
+}
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+updateBackToTop();
 
-  </main>
+// Save button: push all pending changes at once.
+document.getElementById('saveBtn').addEventListener('click', manualSave);
 
-  <button class="fab" id="fab-add" aria-label="Ajouter une dépense">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-  </button>
-</div>
+// Warn before leaving if there are unsaved local changes. The user chose
+// manual saving, so this is a safety net, not automatic syncing.
+window.addEventListener('beforeunload', (e) => {
+  if (pendingChanges > 0 && getGithubConfig()){
+    e.preventDefault();
+    e.returnValue = ''; // required for the browser's native confirm dialog
+  }
+});
 
-<!-- ===== Modale : ajouter / modifier une dépense ===== -->
-<dialog id="expense-modal">
-  <form id="expense-form" class="stacked-form modal-form">
-    <div class="modal-header">
-      <h2 id="expense-modal-title">Nouvelle dépense</h2>
-      <button type="button" class="icon-btn" id="expense-modal-close" aria-label="Fermer">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
-      </button>
-    </div>
+// Batch the GitHub sync so a fast scroll past 20 items doesn't fire 20
+// network writes — coalesce into one save shortly after scrolling settles.
+let scrollSyncTimer = null;
+function scheduleScrollReadSync(){
+  updateCounts();
+  markDirty(); // local only; user pushes everything via the Save button
+}
 
-    <div class="segmented" id="recurring-toggle-row">
-      <button type="button" class="segmented-opt active" data-recurring="false">Ponctuelle</button>
-      <button type="button" class="segmented-opt" data-recurring="true">Récurrente</button>
-    </div>
-    <div class="static-type-label" id="static-type-label" hidden></div>
-    <input type="hidden" name="isRecurring" id="isRecurring" value="false">
+// Decodes HTML entities (&#8217; &rsquo; &amp; …) into real characters by
+// letting the browser parse them as text. RSS feeds often double-encode
+// punctuation (curly quotes, dashes), which otherwise shows up literally
+// as "&#8217;" in titles/summaries.
+function decodeEntities(str){
+  if (!str) return '';
+  const txt = document.createElement('textarea');
+  txt.innerHTML = str;
+  let out = txt.value;
+  // Some feeds double-encode (&amp;#8217;) — run one more pass to catch it.
+  if (/&#?\w+;/.test(out)) {
+    txt.innerHTML = out;
+    out = txt.value;
+  }
+  return out;
+}
 
-    <label class="field-label">Libellé
-      <input type="text" name="label" class="input" placeholder="Loyer, courses, ciné…" required>
-    </label>
+// Safe for insertion into HTML: first decode any entities the feed sent,
+// then escape so the text can't inject markup. This is why titles like
+// "Sony's" render correctly instead of "Sony&#8217;s".
+function escapeHtml(str){
+  const decoded = decodeEntities(str);
+  const div = document.createElement('div');
+  div.textContent = decoded;
+  return div.innerHTML;
+}
 
-    <div class="field-row-2">
-      <label class="field-label">Montant
-        <input type="number" name="amount" class="input" placeholder="0,00" min="0.01" step="0.01" inputmode="decimal" required>
-      </label>
-      <label class="field-label">Catégorie
-        <input type="text" name="category" class="input" list="category-suggestions" placeholder="Logement">
-        <datalist id="category-suggestions">
-          <option value="Logement">
-          <option value="Alimentation">
-          <option value="Transport">
-          <option value="Loisirs">
-          <option value="Santé">
-          <option value="Abonnements">
-          <option value="Assurances">
-          <option value="Autre">
-        </datalist>
-      </label>
-    </div>
+let lastHiddenId = null;
+let lastHiddenWasFav = false;
+let undoTimeout = null;
 
-    <div class="field-row-2">
-      <label class="field-label">Type
-        <select name="type" class="input">
-          <option value="commun">Commune</option>
-          <option value="perso">Personnelle</option>
-        </select>
-      </label>
-      <label class="field-label">Payée par
-        <select name="personId" class="input" id="expense-person-select"></select>
-      </label>
-    </div>
+function isFav(id){ return state.favorites.some(f => f.link === id); }
 
-    <div class="field-group-oneoff">
-      <label class="field-label">Date
-        <input type="date" name="date" class="input">
-      </label>
-    </div>
+function addFavorite(id){
+  if(isFav(id)) return;
+  const article = articles.find(a => idFor(a) === id) || favoritesAsArticles().find(a => idFor(a) === id);
+  if(!article) return;
+  state.favorites.push({
+    link: article.link,
+    title: article.title,
+    date: article.date.toISOString(),
+    image: article.image || null,
+    sourceId: article.source.id,
+    summary: article.summary || ''
+  });
+  // Invariant: a favorite is never also hidden.
+  const h = state.hidden.indexOf(id);
+  if(h !== -1) state.hidden.splice(h, 1);
+}
 
-    <div class="split-mode-row" id="split-mode-row">
-      <label class="checkbox-row">
-        <input type="checkbox" name="splitFixed" id="split-fixed-toggle">
-        <span>Remboursement personnalisé (plutôt qu'au prorata)</span>
-      </label>
-      <div class="split-percent-row" id="split-percent-row" hidden>
-        <input type="range" name="splitPercent" id="split-percent" min="0" max="100" step="10" value="50">
-        <div class="split-percent-caption"><span id="split-percent-label">50%</span> remboursés par l'autre</div>
-      </div>
-    </div>
+function removeFavorite(id){
+  const idx = state.favorites.findIndex(f => f.link === id);
+  if(idx !== -1) state.favorites.splice(idx, 1);
+}
 
-    <div class="field-group-recurring" hidden>
-      <label class="field-label">Fréquence
-        <select name="frequency" class="input">
-          <option value="monthly">Mensuelle</option>
-          <option value="weekly">Hebdomadaire</option>
-          <option value="yearly">Annuelle</option>
-        </select>
-      </label>
-      <div class="field-row-2">
-        <label class="field-label">Première échéance
-          <input type="date" name="startDate" class="input">
-        </label>
-        <label class="field-label">Fin (optionnel)
-          <input type="date" name="endDate" class="input">
-        </label>
-      </div>
-    </div>
+function toggleFavorite(id){
+  if(isFav(id)) removeFavorite(id);
+  else addFavorite(id);
+}
 
-    <p class="fine-print" id="linked-recurring-note" hidden>Cette dépense provient d'une récurrence : la date n'est pas modifiable ici.</p>
+function hideArticle(id){
+  if(!state.hidden.includes(id)) state.hidden.push(id);
+  // Swipe-right / bin means "get this out of my way" — if it was a
+  // favorite, drop it from favorites too so it doesn't linger in ★.
+  lastHiddenWasFav = isFav(id);
+  removeFavorite(id);
+  lastHiddenId = id;
+  markDirty();
+  render();
+  showUndoToast();
+}
 
-    <div class="modal-actions">
-      <button type="button" class="btn btn-danger-outline" id="expense-delete-btn" hidden>Supprimer</button>
-      <button type="submit" class="btn btn-primary">Enregistrer</button>
-    </div>
-  </form>
-</dialog>
+function showUndoToast(){
+  clearTimeout(undoTimeout);
+  let toast = document.getElementById('undoToast');
+  if(!toast){
+    toast = document.createElement('div');
+    toast.id = 'undoToast';
+    toast.className = 'undo-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `Supprimé <button id="undoBtn" type="button">Annuler</button>`;
+  toast.classList.add('show');
+  document.getElementById('undoBtn').onclick = () => {
+    if(lastHiddenId){
+      const idx = state.hidden.indexOf(lastHiddenId);
+      if(idx !== -1) state.hidden.splice(idx, 1);
+      if(lastHiddenWasFav) addFavorite(lastHiddenId); // restore the favorite too
+      markDirty();
+      render();
+    }
+    toast.classList.remove('show');
+  };
+  undoTimeout = setTimeout(() => toast.classList.remove('show'), 4000);
+}
 
-<script src="js/storage.js"></script>
-<script src="js/calculations.js"></script>
-<script src="js/recurring.js"></script>
-<script type="module" src="js/firebase-sync.js"></script>
-<script src="js/app.js"></script>
+feedEl.addEventListener('click', (e) => {
+  // Day-section header (favorites view): toggle collapse
+  const header = e.target.closest('.day-header');
+  if(header){
+    const key = decodeURIComponent(header.dataset.daykey);
+    if(collapsedDays.has(key)) collapsedDays.delete(key);
+    else collapsedDays.add(key);
+    render();
+    return;
+  }
+
+  const row = e.target.closest('.row');
+  if(!row) return;
+  const id = decodeURIComponent(row.dataset.id);
+
+  // Desktop action buttons. Mirror the swipe semantics:
+  //   • bin  → delete everywhere (hideArticle also drops from favorites)
+  //   • star → in Favorites tab, remove from favorites (article returns to
+  //            Tout); elsewhere, add to favorites (leaves the triage queue)
+  if(e.target.classList.contains('bin')){
+    e.preventDefault();
+    hideArticle(id);
+    return;
+  }
+  if(e.target.classList.contains('star')){
+    e.preventDefault();
+    if(currentFilter === 'favorites') removeFavorite(id);
+    else if(isFavorited(id)) removeFavorite(id);
+    else addFavorite(id);
+    markDirty();
+    render();
+    return;
+  }
+
+  if(e.target.classList.contains('headline')){
+    // Read-marking is handled by the pointerup tap-detection below, so the
+    // link's default navigation is all that needs to happen here.
+    return;
+  }
+});
+
+// Mark-as-read must survive the tab switch that opening an article causes.
+// We commit synchronously to localStorage first (inside markDirty), so the
+// read state is safe even if navigation backgrounds the tab. The online
+// push happens later when the user taps Save.
+function markAsRead(id, row){
+  if(!state.read.includes(id)){
+    state.read.push(id);
+    markDirty();             // local write + pending counter; no network here
+  }
+  if(row) row.classList.add('read');
+  updateCounts();
+}
+
+// Tap-vs-scroll detection: on mobile, pressing a headline to start a
+// scroll must NOT count as opening it. We record where the finger lands
+// on pointerdown, then on pointerup only mark the article read if the
+// finger lifted close to where it started (a real tap) and quickly enough.
+// A drag beyond the threshold is a scroll and is ignored.
+// --- Unified pointer handling: tap-to-read + swipe-right-to-delete ------
+// A single gesture tracker so tap, vertical scroll, and horizontal swipe
+// never fight each other. Decision logic:
+//   • Movement stays small           → it's a TAP (mark read, if on title)
+//   • Movement is mostly VERTICAL     → let the browser scroll, do nothing
+//   • Movement is clearly HORIZONTAL  → it's a SWIPE; follow the finger,
+//     and if released past SWIPE_TRIGGER to the right, delete with an
+//     animation. Swipe is pointer/touch only (mouse drags are ignored so
+//     desktop keeps using the buttons).
+const TAP_MOVE_THRESHOLD = 10;    // px — below this, it's a tap
+const TAP_TIME_THRESHOLD = 500;   // ms
+const SWIPE_DIR_RATIO = 1.3;      // horizontal must exceed vertical by this factor to count as a swipe
+const SWIPE_TRIGGER = 110;        // px — how far right you must swipe to delete (deliberately "conséquent")
+const SWIPE_MAX_VISUAL = 160;     // caps how far the row visually follows the finger
+
+let gesture = null;
+
+function currentPointIsInteractive(target){
+  // taps on the action buttons/links keep their own click handlers
+  return target.closest('.star, .bin, .mc-check');
+}
+
+feedEl.addEventListener('pointerdown', (e) => {
+  const row = e.target.closest('.row');
+  if(!row){ gesture = null; return; }
+  gesture = {
+    row,
+    id: decodeURIComponent(row.dataset.id),
+    x: e.clientX, y: e.clientY, t: Date.now(),
+    onHeadline: !!e.target.closest('.headline'),
+    onInteractive: !!currentPointIsInteractive(e.target),
+    mode: null,            // null | 'tap' | 'scroll' | 'swipe'
+    pointerType: e.pointerType,
+  };
+});
+
+feedEl.addEventListener('pointermove', (e) => {
+  if(!gesture) return;
+  const dx = e.clientX - gesture.x;
+  const dy = e.clientY - gesture.y;
+
+  // Lock the gesture mode once movement is meaningful
+  if(gesture.mode === null){
+    if(Math.abs(dx) < TAP_MOVE_THRESHOLD && Math.abs(dy) < TAP_MOVE_THRESHOLD) return;
+    // Swipe only for touch/pen and clearly-horizontal motion (either way).
+    const horizontal = Math.abs(dx) > Math.abs(dy) * SWIPE_DIR_RATIO;
+    if(gesture.pointerType !== 'mouse' && horizontal && !gesture.onInteractive){
+      gesture.mode = 'swipe';
+      gesture.row.classList.add('swiping');
+    } else {
+      gesture.mode = 'scroll'; // vertical or mouse → let the page handle it
+    }
+  }
+
+  if(gesture.mode === 'swipe'){
+    e.preventDefault(); // stop the page from scrolling while swiping a row
+    const dir = dx >= 0 ? 'right' : 'left';
+    gesture.row.classList.toggle('swipe-right', dir === 'right');
+    gesture.row.classList.toggle('swipe-left', dir === 'left');
+    const travel = Math.max(-SWIPE_MAX_VISUAL, Math.min(dx, SWIPE_MAX_VISUAL));
+    gesture.row.style.transform = `translateX(${travel}px)`;
+    const progress = Math.min(1, Math.abs(dx) / SWIPE_TRIGGER);
+    gesture.row.style.setProperty('--swipe-progress', progress.toFixed(2));
+    gesture.row.classList.toggle('swipe-armed', Math.abs(dx) >= SWIPE_TRIGGER);
+  }
+}, { passive: false });
+
+feedEl.addEventListener('pointerup', (e) => {
+  if(!gesture) return;
+  const g = gesture;
+  gesture = null;
+
+  if(g.mode === 'swipe'){
+    const dx = e.clientX - g.x;
+    g.row.classList.remove('swiping', 'swipe-armed', 'swipe-right', 'swipe-left');
+    if(dx >= SWIPE_TRIGGER){
+      // Right → delete everywhere (hideArticle also drops it from favorites)
+      animateSwipeDelete(g.row, g.id);
+    } else if(dx <= -SWIPE_TRIGGER){
+      // Left → snap back, then act depending on the current tab:
+      //  • Favorites tab: remove from favorites (article returns to "Tout")
+      //  • Any other tab: add to favorites (leaves the triage queue)
+      g.row.style.transform = '';
+      g.row.style.removeProperty('--swipe-progress');
+      if(currentFilter === 'favorites'){
+        removeFavorite(g.id);
+      } else {
+        addFavorite(g.id);
+      }
+      markDirty();
+      render();
+    } else {
+      // Not far enough either way → snap back
+      g.row.style.transform = '';
+      g.row.style.removeProperty('--swipe-progress');
+    }
+    return;
+  }
+
+  // Otherwise, treat as a possible tap-to-read (same rules as before)
+  if(g.onHeadline && !g.onInteractive){
+    const movedX = Math.abs(e.clientX - g.x);
+    const movedY = Math.abs(e.clientY - g.y);
+    const elapsed = Date.now() - g.t;
+    if(movedX <= TAP_MOVE_THRESHOLD && movedY <= TAP_MOVE_THRESHOLD && elapsed <= TAP_TIME_THRESHOLD){
+      markAsRead(g.id, g.row);
+    }
+  }
+});
+
+feedEl.addEventListener('pointercancel', () => {
+  if(gesture && gesture.mode === 'swipe'){
+    gesture.row.classList.remove('swiping', 'swipe-armed', 'swipe-right', 'swipe-left');
+    gesture.row.style.transform = '';
+    gesture.row.style.removeProperty('--swipe-progress');
+  }
+  gesture = null;
+});
+
+// Slide the row fully off to the right, then delete.
+function animateSwipeDelete(row, id){
+  row.classList.add('swipe-deleting');
+  row.style.transform = 'translateX(110%)';
+  row.addEventListener('transitionend', function done(ev){
+    if(ev.propertyName !== 'transform') return;
+    row.removeEventListener('transitionend', done);
+    hideArticle(id); // adds to hidden (+ removes favorite), saves, re-renders, Undo
+  }, { once: true });
+}
+
+const searchInputEl = document.getElementById('searchInput');
+const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+searchInputEl.addEventListener('input', () => {
+  searchQuery = searchInputEl.value.trim().toLowerCase();
+  clearSearchBtn.style.display = searchQuery ? 'block' : 'none';
+  render();
+});
+
+clearSearchBtn.addEventListener('click', () => {
+  searchInputEl.value = '';
+  searchQuery = '';
+  clearSearchBtn.style.display = 'none';
+  searchInputEl.focus();
+  render();
+});
+
+document.getElementById('filters').addEventListener('click', (e) => {
+  const btn = e.target.closest('.pill');
+  if(!btn) return;
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter = btn.dataset.filter;
+  render();
+});
+
+document.getElementById('langFilters').addEventListener('click', (e) => {
+  const btn = e.target.closest('.lang-pill');
+  if(!btn) return;
+  document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentLang = btn.dataset.lang;
+  render();
+});
+
+// Source filter: a native <select> (most reliable control on mobile).
+// Options are generated from SOURCES so adding a source automatically
+// appears here with no extra wiring.
+const sourceSelectEl = document.getElementById('sourceSelect');
+SOURCES.forEach(s => {
+  const opt = document.createElement('option');
+  opt.value = s.id;
+  opt.textContent = s.name;
+  sourceSelectEl.appendChild(opt);
+});
+sourceSelectEl.addEventListener('change', () => {
+  currentSource = sourceSelectEl.value;
+  render();
+});
+
+// --- Sites quick-access dropdown ---------------------------------------
+function renderSitesDropdown(){
+  const dropdown = document.getElementById('sitesDropdown');
+  dropdown.innerHTML = SOURCES.map(s => `
+    <a href="${s.home}" target="_blank" rel="noopener">${s.name} <span class="ext-icon">↗</span></a>
+  `).join('');
+}
+renderSitesDropdown();
+
+const sitesBtn = document.getElementById('sitesBtn');
+const sitesDropdown = document.getElementById('sitesDropdown');
+sitesBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  sitesDropdown.classList.toggle('show');
+  sitesBtn.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+  if (!sitesDropdown.contains(e.target) && e.target !== sitesBtn) {
+    sitesDropdown.classList.remove('show');
+    sitesBtn.classList.remove('active');
+  }
+});
+
+document.getElementById('markAllBtn').addEventListener('click', () => {
+  articles.forEach(a => {
+    const id = idFor(a);
+    if(!state.read.includes(id)) state.read.push(id);
+  });
+  markDirty();
+  render();
+});
+
+document.getElementById('refreshBtn').addEventListener('click', () => loadFeeds());
+
+// Re-sync / cleanup button. Pulls the authoritative state from GitHub,
+// enforces the cross-list invariants (so any article that's both favorited
+// and still showing in "Tout" is reconciled — favorite wins, it leaves the
+// triage queue WITHOUT being deleted), re-renders, and saves the cleaned
+// state back. This is the manual recovery tool for cross-device drift.
+let syncBtnRunning = false;
+document.getElementById('syncBtn').addEventListener('click', async () => {
+  const btn = document.getElementById('syncBtn');
+  if (syncBtnRunning) return;
+  syncBtnRunning = true;
+  btn.classList.add('spinning');
+
+  const cfg = getGithubConfig();
+  try {
+    if (cfg) {
+      // Pull the freshest server state first (authoritative).
+      const { content, sha } = await githubGetFile(cfg);
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+    }
+    enforceStateConsistency();   // dedupe + a favorite is never hidden
+    saveStateInstant();
+    render();                    // Tout now excludes favorites correctly
+    if (cfg) await saveState();  // push the cleaned state back up
+
+    btn.classList.remove('spinning');
+    btn.classList.add('done');
+    setTimeout(() => btn.classList.remove('done'), 1500);
+  } catch (e) {
+    console.error('Re-sync failed:', e);
+    btn.classList.remove('spinning');
+    btn.classList.add('failed');
+    setTimeout(() => btn.classList.remove('failed'), 2500);
+  } finally {
+    syncBtnRunning = false;
+  }
+});
+
+async function loadFeeds(){
+  feedEl.innerHTML = `<div class="empty">TUNING IN<span class="cursor"></span></div>`;
+
+  // Single source of truth: articles.json, generated every ~20 min by the
+  // GitHub Actions workflow (scripts/fetch-articles.mjs). Same-origin
+  // fetch, so it's never CORS-blocked. If it's missing (workflow not yet
+  // run / hosting misconfigured), we show a clear message instead of
+  // silently spinning.
+  try{
+    const res = await fetch('./articles.json', { cache: 'no-store' });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.articles) && data.articles.length > 0) {
+        await applyJsonData(data);
+        return;
+      }
+    }
+    feedEl.innerHTML = `<div class="empty">ARTICLES.JSON VIDE OU INTROUVABLE — VÉRIFIE LE WORKFLOW GITHUB ACTIONS<span class="cursor"></span></div>`;
+  }catch(e){
+    console.warn('articles.json unavailable:', e.message);
+    feedEl.innerHTML = `<div class="empty">HORS-LIGNE ET AUCUNE DONNÉE EN CACHE<span class="cursor"></span></div>`;
+  }
+}
+
+// --- GitHub settings modal ---------------------------------------------
+const ghModal = document.getElementById('githubModal');
+
+// Strips ALL whitespace including invisible/unicode variants (non-breaking
+// spaces, zero-width chars) that mobile keyboards and copy-paste sometimes
+// inject — a plain .trim() misses these and they silently break the token.
+function cleanField(v){
+  return (v || '').replace(/[\s\u00A0\u200B-\u200D\uFEFF]/g, '');
+}
+
+function openGithubModal(){
+  const cfg = getGithubConfig();
+  document.getElementById('ghOwner').value = cfg?.owner || '';
+  document.getElementById('ghRepo').value = cfg?.repo || '';
+  document.getElementById('ghToken').value = cfg?.token || '';
+  ghModal.classList.add('show');
+}
+function closeGithubModal(){ ghModal.classList.remove('show'); }
+
+document.getElementById('ghSettingsBtn').addEventListener('click', openGithubModal);
+syncNoteEl.addEventListener('click', openGithubModal);
+document.getElementById('ghCancelBtn').addEventListener('click', closeGithubModal);
+ghModal.addEventListener('click', (e) => { if (e.target === ghModal) closeGithubModal(); });
+
+// Reveal/hide the token so it can be visually verified on mobile
+document.getElementById('ghTokenReveal').addEventListener('click', () => {
+  const input = document.getElementById('ghToken');
+  input.type = input.type === 'password' ? 'text' : 'password';
+});
+
+document.getElementById('ghSaveBtn').addEventListener('click', async () => {
+  const owner = cleanField(document.getElementById('ghOwner').value);
+  const repo = cleanField(document.getElementById('ghRepo').value);
+  const token = cleanField(document.getElementById('ghToken').value);
+  if (!owner || !repo || !token) {
+    alert('Please fill in all three fields.');
+    return;
+  }
+  saveGithubConfig({ owner, repo, token });
+
+  const saveBtn = document.getElementById('ghSaveBtn');
+  saveBtn.disabled = true;
+  saveBtn.textContent = 'Connecting…';
+
+  await loadState();                        // pulls existing state if the file already exists
+  if (githubConnected) await saveState();    // creates/updates the file, migrating any local favorites up
+
+  saveBtn.disabled = false;
+  saveBtn.textContent = 'Save & Connect';
+
+  if (!githubConnected) {
+    const rawErr = syncNoteEl.title || 'Unknown error';
+    let hint = '';
+    if (rawErr.includes('404')) {
+      hint = '\n\nUn 404 signifie presque toujours l\'une de ces trois choses :\n' +
+        '• le token ne donne pas accès à CE repo précis (Repository access → Only select repositories → ce repo), ou n\'est pas en "Contents: Read and write"\n' +
+        '• le token a expiré\n' +
+        '• une faute de casse dans le nom d\'utilisateur ou du repo\n\n' +
+        `URL testée : api.github.com/repos/${owner}/${repo}/contents/dispatch-state.json\n\n` +
+        'Astuce : appuie sur 👁 pour révéler le token et vérifier qu\'il n\'a pas d\'espace ni de majuscule parasite.';
+    } else if (rawErr.includes('403')) {
+      hint = '\n\nUn 403 = permissions insuffisantes : le token doit être en "Contents: Read and write".';
+    } else if (rawErr.includes('401')) {
+      hint = '\n\nUn 401 = token non reconnu (invalide ou expiré). Régénère un token.';
+    }
+    alert('Impossible de se connecter à GitHub.\n\nErreur : ' + rawErr + hint);
+    return; // keep the modal open so the fields can be fixed
+  }
+
+  closeGithubModal();
+  render();
+});
+
+document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
+  clearGithubConfig();
+  githubConnected = false;
+  closeGithubModal();
+  updateSyncNote();
+});
+
+(async function init(){
+  await loadState();
+  await loadFeeds();
+  enrichLegacyFavorites();
+  enforceStateConsistency();  // final safety net: no impossible states at boot
+  render();
+})();
+
+// One-time migration: favorites used to be stored as plain link strings.
+// Now they carry a full snapshot (title/date/image/source) so the
+// Favorites tab still works once an article ages out of articles.json.
+// This upgrades any old-format entries using whatever's currently loaded,
+// then persists the upgrade so it only has to happen once.
+function enrichLegacyFavorites(){
+  let changed = false;
+  state.favorites = state.favorites.map(f => {
+    if (typeof f === 'string') {
+      const match = articles.find(a => a.link === f);
+      changed = true;
+      return match
+        ? { link: f, title: match.title, date: match.date.toISOString(), image: match.image || null, sourceId: match.source.id }
+        : { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    }
+    return f;
+  });
+  if (changed) {
+    saveState();
+    render();
+  }
+}
+
+// Keep articles (and therefore the unread badge) fresh while the app is
+// open or backgrounded: re-pull articles.json regularly, and also whenever
+// the app regains focus. This is how the badge count climbs through the
+// day as the GitHub Action commits new articles.
+const ARTICLES_REFRESH_MS = 5 * 60 * 1000; // 5 min while the app is alive
+const STATE_POLL_MS = 30 * 1000;           // 30s: check if another device saved
+
+async function refreshArticlesQuietly(){
+  try {
+    const res = await fetch('./articles.json', { cache: 'no-store' });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.articles) && data.articles.length > 0) {
+        await applyJsonData(data); // render() → updateCounts() → badge refresh
+        return;
+      }
+    }
+  } catch (e) { /* offline or not deployed yet; keep current data */ }
+  updateAppBadge(); // even if the fetch failed, keep the badge correct
+}
+
+// --- Auto-refresh when another device saved ----------------------------
+// GitHub Pages can't push to us, so we poll dispatch-state.json's SHA. If
+// it changed and it wasn't us (no local unsaved changes, no save running),
+// another device (e.g. your phone) committed new state — pull it and
+// refresh automatically, no prompt. We skip the reload when this device
+// has pending unsaved changes, so we never silently clobber your own work.
+let checkingRemote = false;
+async function checkRemoteStateUpdate(){
+  const cfg = getGithubConfig();
+  if (!cfg || checkingRemote) return;
+  if (pendingChanges > 0 || manualSaveRunning) return; // don't overwrite local edits mid-flight
+
+  checkingRemote = true;
+  try {
+    const { content, sha } = await githubGetFile(cfg);
+    if (sha && sha !== githubSha) {
+      // Someone else wrote since we last knew the file. Adopt it verbatim
+      // (GitHub is authoritative) then enforce invariants so we never show
+      // a favorited-and-in-Tout ghost even if the remote file had drifted.
+      githubSha = sha;
+      if (content) {
+        state.read = content.read || [];
+        state.favorites = content.favorites || [];
+        state.hidden = content.hidden || [];
+      }
+      enforceStateConsistency();
+      saveStateInstant();
+      githubConnected = true;
+      updateSyncNote();
+      render();          // reflect the new read/hidden/favorites immediately
+      flashSyncedFromRemote();
+    }
+  } catch (e) {
+    // transient (offline, rate limit) — just try again next tick
+  } finally {
+    checkingRemote = false;
+  }
+}
+
+// Small, non-intrusive toast so you know the view updated itself.
+function flashSyncedFromRemote(){
+  let t = document.getElementById('remoteSyncToast');
+  if (!t){
+    t = document.createElement('div');
+    t.id = 'remoteSyncToast';
+    t.className = 'undo-toast';
+    document.body.appendChild(t);
+  }
+  t.textContent = '🔄 Mis à jour depuis un autre appareil';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+setInterval(refreshArticlesQuietly, ARTICLES_REFRESH_MS);
+setInterval(() => {
+  // Only poll when the tab is actually visible — no point checking a
+  // background tab you're not looking at, and it saves API calls.
+  if (document.visibilityState === 'visible') checkRemoteStateUpdate();
+}, STATE_POLL_MS);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible'){
+    refreshArticlesQuietly();
+    checkRemoteStateUpdate(); // check the instant you switch back to this tab
+  }
+});
+window.addEventListener('focus', () => {
+  refreshArticlesQuietly();
+  checkRemoteStateUpdate();
+});
+
+// Register the service worker: offline support, installability, AND
+// periodic background sync so the badge can update while the app is merely
+// backgrounded (not actively rendering).
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('./sw.js');
+
+      // Ask for Periodic Background Sync if available (Chrome/Android).
+      // This lets the service worker wake up roughly every so often to
+      // recount unread articles and refresh the badge on its own.
+      if ('periodicSync' in reg) {
+        try {
+          const status = await navigator.permissions.query({ name: 'periodic-background-sync' });
+          if (status.state === 'granted') {
+            await reg.periodicSync.register('dispatch-badge-refresh', {
+              minInterval: 60 * 60 * 1000, // ~1h; the browser decides the real cadence
+            });
+          }
+        } catch (e) { /* periodic sync not available or not permitted */ }
+      }
+    } catch (err) {
+      console.warn('Service worker registration failed:', err);
+    }
+  });
+}
+</script>
+
 </body>
 </html>
