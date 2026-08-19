@@ -824,9 +824,10 @@ let currentFilter = 'all';
 let currentLang = 'all';
 let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
 let searchQuery = '';
-// Which favorite date-sections are collapsed (keys are Date.toDateString()).
-// Session-only: resets on reload, which is fine for a quick-scan archive.
-const collapsedDays = new Set();
+// Which favorite date-sections are EXPANDED (keys are Date.toDateString()).
+// Default empty = all days collapsed, so the favorites tab opens as a tidy
+// list of day headers you expand on demand. Session-only.
+const expandedDays = new Set();
 let githubConnected = false;
 let githubSha = null;
 
@@ -1404,7 +1405,8 @@ function render(){
   if(currentFilter === 'favorites'){
     // Favorites view: group by day into collapsible sections so long
     // archives don't become an endless scroll. Each day header shows the
-    // count and toggles its articles open/closed (state in collapsedDays).
+    // count and toggles its articles open/closed (state in expandedDays;
+    // all days start collapsed for easy navigation).
     const groups = [];
     let currentKey = null;
     list.forEach(a => {
@@ -1417,7 +1419,7 @@ function render(){
     });
 
     feedEl.innerHTML = groups.map(g => {
-      const collapsed = collapsedDays.has(g.key);
+      const collapsed = !expandedDays.has(g.key);
       const rows = collapsed ? '' : g.items.map(rowHtml).join('');
       return `
         <div class="day-group ${collapsed ? 'collapsed' : ''}">
@@ -1645,12 +1647,12 @@ function showUndoToast(){
 }
 
 feedEl.addEventListener('click', (e) => {
-  // Day-section header (favorites view): toggle collapse
+  // Day-section header (favorites view): toggle expand/collapse
   const header = e.target.closest('.day-header');
   if(header){
     const key = decodeURIComponent(header.dataset.daykey);
-    if(collapsedDays.has(key)) collapsedDays.delete(key);
-    else collapsedDays.add(key);
+    if(expandedDays.has(key)) expandedDays.delete(key);
+    else expandedDays.add(key);
     render();
     return;
   }
@@ -1686,16 +1688,29 @@ feedEl.addEventListener('click', (e) => {
 });
 
 // Mark-as-read must survive the tab switch that opening an article causes.
-// We commit synchronously to localStorage first (inside markDirty), so the
-// read state is safe even if navigation backgrounds the tab. The online
-// push happens later when the user taps Save.
+// We commit synchronously to localStorage first (inside markDirty), then
+// schedule a debounced online push so the read state (red dot removed)
+// syncs to your other devices — batched so opening several articles in a
+// row only triggers one save.
 function markAsRead(id, row){
   if(!state.read.includes(id)){
     state.read.push(id);
-    markDirty();             // local write + pending counter; no network here
+    markDirty();             // local write + pending counter
+    scheduleReadSync();      // debounced online push (see below)
   }
   if(row) row.classList.add('read');
   updateCounts();
+}
+
+// Pushes read/state to GitHub a few seconds after the last article was
+// opened. Debounced so a burst of reads = a single API round-trip.
+let readSyncTimer = null;
+function scheduleReadSync(){
+  if (!getGithubConfig()) return;
+  clearTimeout(readSyncTimer);
+  readSyncTimer = setTimeout(() => {
+    if (pendingChanges > 0 && !manualSaveRunning) manualSave();
+  }, 4000); // 4s after you stop opening articles
 }
 
 // Tap-vs-scroll detection: on mobile, pressing a headline to start a
