@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:28:01.792Z",
+  "generatedAt": "2026-09-13T21:06:43.403Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -9,18 +9,54 @@
     "gameblog": "ok",
     "gamekult": "ok",
     "kotaku": "ok",
-    "pcgamer": "ok",
+    "pcgamer": "fail",
     "eurogamer": "ok",
     "polygon": "ok"
   },
   "articles": [
     {
-      "title": "Discussing 20 years of Company of Heroes with the team carrying its torch into the future",
-      "link": "https://www.pcgamer.com/games/rts/discussing-20-years-of-company-of-heroes-with-the-team-carrying-its-torch-into-the-future/",
-      "date": "2026-09-13T18:08:38.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XAgG5mMHfdYMaM9mjAc6fT-1280-80.jpg",
-      "summary": "\"I'm really pleased that we're here, able to support the games, and able to celebrate this 20th anniversary.\"",
+      "title": "2026’s Best Puzzle Game Is an Even Trippier Take On Portal",
+      "link": "https://www.polygon.com/he-who-watches-impressions/",
+      "date": "2026-09-13T21:00:14.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/he-who-watches-key-art.webp",
+      "summary": "He Who Watches is an excellent new game that keeps the spirit of Portal alive with mind-bending puzzles.",
+      "tags": []
+    },
+    {
+      "title": "The Legend of Zelda: Majora&#8217;s Mask&#8217;s Art Director Gets Blow Back For Using AI In Prototyping Test",
+      "link": "https://kotaku.com/the-legend-of-zelda-majoras-masks-art-director-gets-blow-back-for-using-ai-in-prototyping-test-2000734003",
+      "date": "2026-09-13T20:57:12.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2024/05/21092468b7c641fb4386d2f4f6f00223-1280x720.jpg",
+      "summary": "Takaya Imamura was surprised that he was 'getting slammed this hard' for sharing a prototype made with the help of AI",
+      "tags": []
+    },
+    {
+      "title": "Matchbox's Director Drove a Truck Off a 200-Foot Bridge: \"We Did It for Real!\"",
+      "link": "https://www.polygon.com/matchbox-movie-director-interview-sam-hargrave-preview/",
+      "date": "2026-09-13T20:00:14.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/hogrtktxwaexsmj.jpg",
+      "summary": "Sam Hargrave answers our seven biggest questions about Matchbox: The Movie",
+      "tags": []
+    },
+    {
+      "title": "The Greatest Video Game Franchises of the 20th Century, Ranked",
+      "link": "https://www.polygon.com/best-video-game-franchises-20th-century/",
+      "date": "2026-09-13T19:01:14.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/old-games-grouping.jpg",
+      "summary": "Without some key video game franchises livening up the 20th century, it wouldn't have been nearly as memorable.",
+      "tags": []
+    },
+    {
+      "title": "La Switch 2 peut-elle faire tourner Diablo 4 ? J'ai testé le jeu",
+      "link": "https://www.jeuxvideo.com/news/2103648/la-switch-2-peut-elle-faire-tourner-diablo-4-j-ai-teste-le-jeu.htm",
+      "date": "2026-09-13T18:30:14.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/178932/1789319175-3930-card.jpg",
+      "summary": "Cela devait bien finir par arriver : comme Diablo 3 sur Switch en son temps, Diablo 4 profite de la fin de publication de ses extensions pour débarquer sur Nintendo Switch 2. On a…",
       "tags": []
     },
     {
@@ -33,16 +69,7 @@
       "tags": []
     },
     {
-      "title": "Fallout dev Tim Cain says the games industry's volatility is 'always gonna be around': 'What's happening now isn't novel, it isn't new'",
-      "link": "https://www.pcgamer.com/gaming-industry/fallout-dev-tim-cain-says-the-games-industrys-volatility-is-always-gonna-be-around-whats-happening-now-isnt-novel-it-isnt-new/",
-      "date": "2026-09-13T17:42:45.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/8NaUUUYSKGJEUWdEkRLAoD-1280-80.jpg",
-      "summary": "\"Art and technology constantly changing makes the whole industry unstable.\"",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft: Forever Is An Alternate Universe Worth Exploring",
+      "title": "Hands-On With World Of Warcraft: Forever, An Alternate Universe Worth Exploring",
       "link": "https://kotaku.com/world-of-warcraft-forever-alternate-universe-worth-exploring-2000733865",
       "date": "2026-09-13T17:40:26.000Z",
       "sourceId": "kotaku",
@@ -60,12 +87,39 @@
       "tags": []
     },
     {
+      "title": "Ours Valheim : Comment battre cet ennemi et quelles ressources donne-t-il ?",
+      "link": "https://www.jeuxvideo.com/news/2103428/ours-valheim-comment-battre-cet-ennemi-et-quelles-ressources-donne-t-il.htm",
+      "date": "2026-09-13T17:15:14.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/178912/1789118612-9953-card.jpg",
+      "summary": "Les ours de Valheim 1.0 ne sont pas comme Winnie l'ourson ; vous risquez de finir rapidement dans votre lit sans votre équipement si vous les approchez sans être prêt. Découvrez…",
+      "tags": []
+    },
+    {
       "title": "10 Near-Perfect GameCube Games Nobody Played",
       "link": "https://www.polygon.com/most-underrated-nintendo-gamecube-games/",
       "date": "2026-09-13T17:00:14.000Z",
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/assets/4489221/gamecube-controller-photo_1280.jpg",
       "summary": "The GameCube hosted an assortment of unique and rewarding games that didn't get the response they deserved.",
+      "tags": []
+    },
+    {
+      "title": "Le DLSS 5 sur les vieux jeux PlayStation et Dreamcast : et si c'était ça, le rétrogaming du futur ?",
+      "link": "https://www.jeuxvideo.com/news/2102978/le-dlss-5-sur-les-vieux-jeux-playstation-et-dreamcast-et-si-c-etait-ca-le-retrogaming-du-futur.htm",
+      "date": "2026-09-13T16:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/178914/1789141671-5763-card.jpg",
+      "summary": "Le 8 septembre 2026, des moddeurs ont réussi à appliquer le DLSS 5 aux consoles PlayStation et Dreamcast émulées sur PC. En interceptant le flux vidéo d'outils comme DuckStation…",
+      "tags": []
+    },
+    {
+      "title": "À l'âge de 13 ans, ce jeune français imaginait son propre jeu vidéo sans savoir programmer : 40 ans plus tard, il réalise enfin son rêve",
+      "link": "https://www.jeuxvideo.com/news/2102933/a-l-age-de-13-ans-ce-jeune-francais-imaginait-son-propre-jeu-video-sans-savoir-programmer-40-ans-plus-tard-il-realise-enfin-son-reve.htm",
+      "date": "2026-09-13T16:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/178896/1788963449-5730-card.jpg",
+      "summary": "À l'âge de 13 ans, ce jeune français imaginait son propre jeu vidéo sans savoir programmer : 40 ans plus tard, il réalise enfin son rêve",
       "tags": []
     },
     {
@@ -78,30 +132,12 @@
       "tags": []
     },
     {
-      "title": "YouTuber runs onto the stage at Roblox Developers Conference shouting 'We deserve better,' gets tackled and ejected from show",
-      "link": "https://www.pcgamer.com/software/platforms/youtuber-runs-onto-the-stage-at-roblox-developers-conference-shouting-we-deserve-better-gets-tackled-and-ejected-from-show/",
-      "date": "2026-09-13T16:19:36.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/i8vYB5j3dqNTUo9uuovheN-1280-80.jpg",
-      "summary": "Mathieo shared the stunt online and explained his reasoning in a video.",
-      "tags": []
-    },
-    {
       "title": "Moss developer Polyarc share that they're shutting down just two months after releasing a VR-less port of the beloved mousey adventure games",
       "link": "https://www.rockpapershotgun.com/moss-developer-polyarc-share-that-theyre-shutting-down-just-two-months-after-releasing-a-vr-less-port-of-the-beloved-mousey-adventure-games",
       "date": "2026-09-13T16:16:16.000Z",
       "sourceId": "rps",
       "image": "https://assetsio.gnwcdn.com/moss_ptJgWIk.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Another sad one today, unfortunately. Back in July, Polyarc released Moss: The Forgotten Relic, a new version of the original two games combined together that ditched its VR…",
-      "tags": []
-    },
-    {
-      "title": "My favourite soundtrack of 2026 so far is tucked in one of this year's biggest sleeper hits",
-      "link": "https://www.pcgamer.com/games/puzzle/my-favourite-soundtrack-of-2026-so-far-is-tucked-in-one-of-this-years-biggest-sleeper-hits/",
-      "date": "2026-09-13T16:15:12.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ejBk7QT7RWdtk9YUuFi945-1280-80.jpg",
-      "summary": "Australian duo aksfx have created something truly special.",
       "tags": []
     },
     {
@@ -114,39 +150,12 @@
       "tags": []
     },
     {
-      "title": "I've got a soft spot for cozy games with flying in them and these are my 4 favorites",
-      "link": "https://www.pcgamer.com/games/ive-got-a-soft-spot-for-cozy-games-with-flying-in-them-and-these-are-my-4-favorites/",
-      "date": "2026-09-13T16:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/idww9xVcbDqLKH8LyiLX7R-1280-80.jpg",
-      "summary": "Let there be flight!",
-      "tags": []
-    },
-    {
-      "title": "After more than 400 hours of Valheim in early access, I love the journey from naked adventurer to godly Viking now more than ever",
-      "link": "https://www.pcgamer.com/games/survival-crafting/after-more-than-400-hours-of-valheim-in-early-access-i-love-the-journey-from-naked-adventurer-to-godly-viking-now-more-than-ever/",
-      "date": "2026-09-13T16:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/pNKVZuBS8Mn4tpdLuTYSyM-1280-80.jpg",
-      "summary": "I threw out the whole Viking and started over from the beginning. I'm still not sick of it.",
-      "tags": []
-    },
-    {
       "title": "Professor Layton studio Level-5's CEO admits using AI to make its digital showcase \"more spectacular\"",
       "link": "https://www.eurogamer.net/level-5-ceo-apologises-generative-ai-professor-layton-yo-kai-watch",
       "date": "2026-09-13T15:32:39.000Z",
       "sourceId": "eurogamer",
       "image": "https://assetsio.gnwcdn.com/HSAF3N1bIAAQilG.jpeg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Level-5 president and CEO Akihiro Hino has confirmed that generative AI was used in the studio's recent showcase.",
-      "tags": []
-    },
-    {
-      "title": "Inzoi's director says he is 'very much focused on our core goals' as he announces a multiplayer roleplaying mode designed to be like Ready Player One",
-      "link": "https://www.pcgamer.com/games/life-sim/inzois-director-says-he-is-very-much-focused-on-our-core-goals-as-he-announces-a-multiplayer-roleplaying-mode-designed-to-be-like-ready-player-one/",
-      "date": "2026-09-13T15:31:29.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/L5JwYEj93fkKCgg9eBp8CF-1280-80.jpg",
-      "summary": "\"The main goal of Canvastown is to get away from mundane daily life.\"",
       "tags": []
     },
     {
@@ -195,24 +204,6 @@
       "tags": []
     },
     {
-      "title": "Ashly Burch, voice of Horizon's Aloy and star of Mythic Quest, is currently obsessed with Slay the Spire 2 and thinks videogames have too many stoic characters: 'I want more sh*tty little b*tches'",
-      "link": "https://www.pcgamer.com/gaming-industry/ashly-burch-voice-of-horizons-aloy-and-star-of-mythic-quest-is-currently-obsessed-with-slay-the-spire-2-and-thinks-videogames-have-too-many-stoic-characters-i-want-more-sh-tty-little-b-tches/",
-      "date": "2026-09-13T15:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/YTmeUjWGRExzJCy43JgJ6K-1280-80.png",
-      "summary": "The actress behind Tiny Tina and Life is Strange's Chloe guides us through the games on her Steam Deck.",
-      "tags": []
-    },
-    {
-      "title": "Upcoming vampire RPG Nighthawks has been removed from Steam search and delisted in certain countries as Valve classifies it Adults Only: 'It's very bad news for us'",
-      "link": "https://www.pcgamer.com/games/rpg/upcoming-vampire-rpg-nighthawks-has-been-removed-from-steam-search-and-delisted-in-certain-countries-as-valve-classifies-it-adults-only-its-very-bad-news-for-us/",
-      "date": "2026-09-13T14:16:29.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/eYcmhUVpDyumsAivwRWQ5m-1280-80.jpg",
-      "summary": "The label \"immediately makes the game persona non grata in several important countries like Germany\".",
-      "tags": []
-    },
-    {
       "title": "Diablo 4 Annual Expansions Are Done As Blizzard Focuses On Seasonal Stories Leading Up To Diablo 5",
       "link": "https://kotaku.com/diablo-4-annual-expansions-are-done-as-blizzard-focuses-on-seasonal-stories-leading-up-to-diablo-5-2000733975",
       "date": "2026-09-13T14:15:41.000Z",
@@ -248,15 +239,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/echo-weaver-key-art.jpg",
       "summary": "Echo Weaver fuses a variety of genres to provide a unique platforming experience with time loops.",
-      "tags": []
-    },
-    {
-      "title": "As an OG Crazy Taxi lover, its new remake might just not be crazy enough",
-      "link": "https://www.pcgamer.com/games/racing/as-an-og-crazy-taxi-lover-its-new-remake-might-just-not-be-crazy-enough/",
-      "date": "2026-09-13T14:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/WyhHomXFRbVgC72H3ZXhvE-1280-80.png",
-      "summary": "Not ya ya ya ya ya, I fear.",
       "tags": []
     },
     {
@@ -307,26 +289,6 @@
       "tags": []
     },
     {
-      "title": "Marvel's Wolverine Set To End Sony's Historic 11-Year GOTY Run",
-      "link": "https://www.polygon.com/marvels-wolverine-sony-goty-run/",
-      "date": "2026-09-13T13:00:14.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/marvels-wolverin-2-1.jpg",
-      "summary": "Marvel's Wolverine on PS5 looks unlikely to nab a GOTY nomination at the 2026 Game Awards, the first time for a PlayStation exclusive since 2014.",
-      "tags": []
-    },
-    {
-      "title": "Vivienne Medrano reveals her plan for Helluva Boss / Hazbin Hotel crossovers",
-      "link": "https://www.polygon.com/vivziepop-interview-helluva-boss-hazbin-hotel-crossover/",
-      "date": "2026-09-13T12:00:14.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/hazboss-hotelluva-1.jpg",
-      "summary": "Vivziepop says Helluva Boss season 3 will feature at least one Hazbin Hotel Easter egg. The new season launches Oct. 14, with part one of two.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
       "title": "Test BRIGANDINE ABYSS : une formule qui nécessite un réel investissement pour se dévoiler pleinement",
       "link": "https://fr.ign.com/brigandine-abyss/92207/test-brigandine-abyss-une-formule-qui-necessite-un-reel-investissement-pour-se-devoiler-pleinement",
       "date": "2026-09-13T11:57:31.000Z",
@@ -354,15 +316,6 @@
       "tags": []
     },
     {
-      "title": "This remarkable mod transforms the most frightening horror game of the decade into Mirror's Edge",
-      "link": "https://www.pcgamer.com/games/horror/this-remarkable-mod-transforms-the-most-frightening-horror-game-of-the-decade-into-mirrors-edge/",
-      "date": "2026-09-13T11:32:51.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/PSnij8kdkbdFQSkm2CcvnF-1280-80.jpg",
-      "summary": "Have faith in Bunker's Edge.",
-      "tags": []
-    },
-    {
       "title": "Un remake complet et ambitieux du premier Portal est disponible",
       "link": "https://www.gamekult.com/actualite/un-remake-complet-et-ambitieux-du-premier-portal-est-disponible-3050871980.html",
       "date": "2026-09-13T11:11:00.000Z",
@@ -380,15 +333,6 @@
       "sourceId": "eurogamer",
       "image": "https://assetsio.gnwcdn.com/Screenshot-2026-09-13-at-11.57.18.png?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Blizzard has officially announced Diablo 5, confirming the next mainline entry in the series is expected to arrive in spring 2029.",
-      "tags": []
-    },
-    {
-      "title": "'Godzilla Minus Zero' Director Reveals How Steven Spielberg Inspired the Sci-Fi Sequel",
-      "link": "https://www.polygon.com/godzilla-minus-zero-director-interview/",
-      "date": "2026-09-13T11:00:14.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcdgomi_ec012.jpg",
-      "summary": "Takashi Yamazaki talks Godzilla Minus Zero for Polygon's 2026 Fall Preview",
       "tags": []
     },
     {
@@ -601,15 +545,6 @@
       "tags": []
     },
     {
-      "title": "Beneath a Steel Sky review (1994)",
-      "link": "https://www.pcgamer.com/games/adventure/beneath-a-steel-sky-review-1994/",
-      "date": "2026-09-13T06:17:36.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/DCNc8qRkx2hrqL7PuXrMgU-1280-80.png",
-      "summary": "RevisitingRevolution Software's dystopian adventure.",
-      "tags": []
-    },
-    {
       "title": "Recherche de bénévoles pour une vie gratuite en Patagonie, avec hébergement et repas offerts contre 30 heures de travail par semaine",
       "link": "https://www.gameblog.fr/trends/recherche-de-benevoles-pour-une-vie-gratuite-en-patagonie-avec-hebergement-et-repas-offerts-contre-30-heures-de-travail-par-semaine-722787?utm_source=RSS",
       "date": "2026-09-13T06:00:05.000Z",
@@ -657,255 +592,12 @@
       ]
     },
     {
-      "title": "Why is Blizzard still announcing games years ahead of release? 'We want to convey confidence in some of our biggest bets coming forward'",
-      "link": "https://www.pcgamer.com/games/rts/why-is-blizzard-still-announcing-games-years-ahead-of-release-we-want-to-convey-confidence-in-some-of-our-biggest-bets-coming-forward/",
-      "date": "2026-09-13T03:11:23.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/8rQWrR4SvwafPK2bPojPoW-1280-80.jpg",
-      "summary": "Maybe it's the fact it sounds like a year from the opening crawl of a sci-fi movie, but 2030 sure feels a long way off.",
-      "tags": []
-    },
-    {
-      "title": "Playing RTS with a controller? Total War: Warhammer 40,000 dev says it 'really does work' in their game: 'I think we've landed in a really solid spot'",
-      "link": "https://www.pcgamer.com/games/rts/playing-rts-with-a-controller-total-war-warhammer-40-000-dev-says-it-really-does-work-in-their-game-i-think-weve-landed-in-a-really-solid-spot/",
-      "date": "2026-09-13T01:31:18.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HmEiKiBL8axs54q2iUKwLC-1280-80.jpg",
-      "summary": "But how will we press \"J\" to make a unit about-face?",
-      "tags": []
-    },
-    {
       "title": "World Of Warcraft Is About To Remix Its Most Beloved Expansion",
       "link": "https://kotaku.com/world-of-warcraft-wrath-of-the-lich-king-remix-announce-2000733867",
       "date": "2026-09-13T01:05:43.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/09/lich-king-1280x720.jpg",
       "summary": "A cold, cold summer",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 gameplay details from BlizzCon: More classes than ever before, procedurally-generated dungeons, and Diablo 2-style loot",
-      "link": "https://www.pcgamer.com/games/rpg/diablo-5-gameplay-details-from-blizzcon-more-classes-than-ever-before-procedurally-generated-dungeons-and-diablo-2-style-loot/",
-      "date": "2026-09-12T23:07:01.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/BxDx4HEGoVJo5emDaPqqsC-1280-80.png",
-      "summary": "Blizzard has offered up a surprising amount of detail about the action RPG sequel, which won't be out until 2029.",
-      "tags": []
-    },
-    {
-      "title": "No more Diablo 4 expansions are planned, but there's 'a lot of room' for more storytelling in the lead-up to Diablo 5",
-      "link": "https://www.pcgamer.com/games/rpg/no-more-diablo-4-expansions-are-planned-but-theres-a-lot-of-room-for-more-storytelling-in-the-leadup-to-diablo-5/",
-      "date": "2026-09-12T21:56:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/KtefGg2DQbiBTgxejfpwUj-1280-80.png",
-      "summary": "The Diablo team is \"all focused on seasons and getting to Diablo 5,\" support for Diablo 4 will continue \"for a very long time,\" says Blizzard.",
-      "tags": []
-    },
-    {
-      "title": "Overwatch dévoile un premier aperçu fascinant à un nouveau héros Omnic prévu pour cette année",
-      "link": "https://fr.ign.com/overwatch/92204/overwatch-devoile-un-premier-apercu-fascinant-a-un-nouveau-heros-omnic-prevu-pour-cette-annee",
-      "date": "2026-09-12T20:40:08.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/o/overwatch-/overwatch-reveals-first-look-at-new-omnic-hero-coming-later_ry6g.jpg",
-      "summary": "« IL ME FAUT CET OMNIC SHERLOCK HOLMES MYSTÉRIEUX. »",
-      "tags": []
-    },
-    {
-      "title": "Une Blizzcon 2026 légendaire ! Ce qu'il ne fallait pas louper avec WoW Forever, Diablo 5, Starcraft...",
-      "link": "https://www.jeuxvideo.com/news/2103618/une-blizzcon-2026-legendaire-ce-qu-il-ne-fallait-pas-louper-avec-wow-forever-diablo-5-starcraft.htm",
-      "date": "2026-09-12T20:33:05.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/178925/1789245047-1420-card.jpg",
-      "summary": "La cérémonie d'ouverture de la BlizzCon s'est terminée il y a quelques heures. Pour son retour en physique, Blizzard a fait les choses en grand en présentant du nouveau contenu…",
-      "tags": []
-    },
-    {
-      "title": "Blizzard dévoile une nouvelle campagne Warcraft 3 à la BlizzCon 2026, disponible dès maintenant",
-      "link": "https://fr.ign.com/warcraft-3-reforged/92203/blizzard-devoile-une-nouvelle-campagne-warcraft-3-a-la-blizzcon-2026-disponible-des-maintenant",
-      "date": "2026-09-12T20:00:55.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/b/blizzard-s/blizzard-shadow-drops-new-campaign-for-warcraft-3-at-blizzco_wt6n.jpg",
-      "summary": "Zog zog.",
-      "tags": []
-    },
-    {
-      "title": "World of Warcraft Forever: le jeu qui combine le meilleur de Classic et de Midnight ?",
-      "link": "https://www.jeuxvideo.com/news/2103617/world-of-warcraft-forever-le-jeu-qui-combine-le-meilleur-de-classic-et-de-midnight.htm",
-      "date": "2026-09-12T19:53:38.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/178924/1789242151-6239-card.jpg",
-      "summary": "Blizzard vient d’officialiser lors de la cérémonie WoW Forever : une version modernisée de WoW Classic qui promet proposer une expérience à l’ancienne avec du contenu inédit. De…",
-      "tags": []
-    },
-    {
-      "title": "La grosse annonce de la BlizzCon 2026 est World of Warcraft Forever",
-      "link": "https://fr.ign.com/world-of-warcraft/92201/la-grosse-annonce-de-la-blizzcon-2026-est-world-of-warcraft-forever",
-      "date": "2026-09-12T19:49:26.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/b/blizzards-/blizzards-big-blizzcon-2026-opening-ceremony-mic-drop-is-wor_cdcz.jpg",
-      "summary": "C&#x27;est pour toujours.",
-      "tags": []
-    },
-    {
-      "title": "Après 6 ans de disette, c'est désormais clair : Heroes of The Storm n'est plus mort",
-      "link": "https://www.gamekult.com/actualite/apres-6-ans-de-disette-c-est-desormais-clair-heroes-of-the-storm-n-est-plus-mort-3050872033.html",
-      "date": "2026-09-12T19:25:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872033/apres-6-ans-de-disette-c-est-desormais-clair-heroes-of-the-storm-n-est-plus-mort-4454114a__800_800__475-0-1913-1440.jpg",
-      "summary": "Mine de rien, c'est peut-être l'annonce la plus concrète de cette Blizzcon 2026. C'est, à tout le moins, la plus immédiate, en tout cas : Heroes of The Storm accueillera dès ce…",
-      "tags": []
-    },
-    {
-      "title": "Everything We Saw At BlizzCon 2026&#8217;s Jam-Packed Opening Ceremony",
-      "link": "https://kotaku.com/everything-we-saw-at-blizzcon-2026s-opening-ceremony-2000733819",
-      "date": "2026-09-12T19:06:35.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/cosplay-1280x713.jpg",
-      "summary": "New sequels, surprise reveals, and much more",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 annoncé et je veux déjà y jouer : 1000 ans après D4, Diablo a gagné",
-      "link": "https://www.jeuxvideo.com/news/2103600/diablo-5-annonce-et-je-veux-deja-y-jouer-1000-ans-apres-d4-diablo-a-gagne.htm",
-      "date": "2026-09-12T19:04:36.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/178924/1789239666-6653-card.jpg",
-      "summary": "Alors que tout le monde s’attendait (moi y compris !) à une nouvelle extension de Diablo 4 pour faire revenir un Diablo systématiquement présent dans les jeux, Blizzard a surpris…",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft: Forever Announced As The Vanilla WoW Reboot We&#8217;ve Been Waiting For",
-      "link": "https://kotaku.com/world-of-warcraft-forever-classic-plus-revealed-2000733774",
-      "date": "2026-09-12T19:04:18.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/BlizzCon-2026-_-Day-1-Main-Stage-2-21-39-screenshot-1280x720.jpg",
-      "summary": "World of Warcraft: Forever revisits the first year of WoW , but with a serious twist",
-      "tags": []
-    },
-    {
-      "title": "Après un nouveau Starcraft pour 2030, découvrez maintenant Diablo V... pour 2029",
-      "link": "https://www.gamekult.com/actualite/apres-un-nouveau-starcraft-pour-2030-decouvrez-maintenant-diablo-v-pour-2029-3050872032.html",
-      "date": "2026-09-12T19:04:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872032/apres-un-nouveau-starcraft-pour-2030-decouvrez-maintenant-diablo-v-pour-2029-0de827f1__800_800__723-0-1780-1059.png",
-      "summary": "Il fallait s'attendre à une Blizzcon un peu spéciale, les rumeurs allant bon train depuis quelques mois à ce propos. Qui, en revanche, pouvait s'attendre à une succession…",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 - Teaser officiel",
-      "link": "https://fr.ign.com/diablo-5/92202/diablo-5-teaser-officiel",
-      "date": "2026-09-12T19:02:26.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/d/diablo-5-o/diablo-5-official-teaser-trailer_mxk1.jpg",
-      "summary": "Préparez-vous à la prochaine ère. Diablo 5 a été annoncé. Rendez-vous sur Diablo5.Blizzard.com pour vous inscrire et recevoir les prochaines mises à jour.",
-      "tags": []
-    },
-    {
-      "title": "The WoW 'Classic+' rumors were true: World of Warcraft: Forever promises to be another timeline's version of the MMO",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/the-wow-classic-rumors-were-true-world-of-warcraft-forever-promises-to-be-another-timelines-bizzarro-version-of-the-mmo/",
-      "date": "2026-09-12T18:58:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/F2Vr74L9EDyrQyczqYRoie-1280-80.png",
-      "summary": "It's out soon, too, with a beta starting this week.",
-      "tags": []
-    },
-    {
-      "title": "Overwatch's newest hero is a robo-vampire, and reworks are on the way for Roadhog and Sombra",
-      "link": "https://www.pcgamer.com/games/fps/overwatchs-newest-hero-is-a-robo-vampire-and-reworks-are-on-the-way-for-roadhog-and-sombra/",
-      "date": "2026-09-12T18:55:21.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/F4KjXnYKQrMwUaNZDRnVpW-1280-80.png",
-      "summary": "Triple threat.",
-      "tags": []
-    },
-    {
-      "title": "Blizzard just dropped a new Warcraft 3 campaign, the first in 23 years",
-      "link": "https://www.pcgamer.com/games/rts/blizzard-just-dropped-a-new-warcraft-3-campaign-the-first-in-23-years/",
-      "date": "2026-09-12T18:51:39.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/LxAwM7hR7oVupVPMBDBXsk-1280-80.png",
-      "summary": "The year of the surprise old game expansion.",
-      "tags": []
-    },
-    {
-      "title": "Warcraft 3: Reforged To Get A New Campaign Starring Arthas And Sylvanas, Out Today",
-      "link": "https://kotaku.com/warcraft-3-reforged-new-campaign-paid-dlc-free-overhaul-2000733793",
-      "date": "2026-09-12T18:51:10.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/BlizzCon-2026-_-Day-1-Main-Stage-2-16-17-screenshot-1280x720.jpg",
-      "summary": "Reforged reforged",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft&#8217;s Next Expansion, The Last Titan, Is Out Next Year",
-      "link": "https://kotaku.com/world-of-warcrafts-next-expansion-the-last-titan-is-out-next-year-2000733784",
-      "date": "2026-09-12T18:45:27.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/BlizzCon-2026-_-Day-1-Main-Stage-2-9-46-screenshot-1280x720.jpg",
-      "summary": "RIP to Wyrmrest Temple I guess",
-      "tags": []
-    },
-    {
-      "title": "StarCraft - La cinématique officielle d'annonce 'Dominion' | BlizzCon 2026",
-      "link": "https://fr.ign.com/starcraft-shooter/92199/starcraft-la-cinematique-officielle-dannonce-dominion-blizzcon-2026",
-      "date": "2026-09-12T18:40:13.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/s/starcraft-/starcraft-official-announcement-dominion-cinematic-trailer-b_28xr.jpg",
-      "summary": "Les fils et les filles du Dominion ont répondu à l&#x27;appel lorsque l&#x27;humanité avait le plus besoin d&#x27;eux. Leur courage a permis de tenir la ligne. Leur sacrifice nous…",
-      "tags": []
-    },
-    {
-      "title": "Hearthstone just got its first new class in four years: Warcraft's fire-breathing panda Monk",
-      "link": "https://www.pcgamer.com/games/card-games/hearthstone-just-got-its-first-new-class-in-four-years-warcrafts-fire-breathing-panda-monk/",
-      "date": "2026-09-12T18:40:05.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ibHHVfrYdc5RVgF5zN3MFU-1280-80.png",
-      "summary": "Have keg, will shuffle.",
-      "tags": []
-    },
-    {
-      "title": "StarCraft vivra à nouveau, mais sous la forme d'un shooter en monde ouvert",
-      "link": "https://www.gamekult.com/actualite/stacraft-vivra-a-nouveau-mais-sous-la-forme-d-un-shooter-en-monde-ouvert-3050872031.html",
-      "date": "2026-09-12T18:38:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872031/stacraft-vivra-a-nouveau-mais-sous-la-forme-d-un-shooter-en-monde-ouvert-11d6a43e__800_800__883-0-1944-1060.png",
-      "summary": "Cette Blizzcon 2026, c'est celle des renaissances. Enfin, des renaissances théoriques, concernant StarCraft, car il faudra pour le moment se contenter d'un trailer de 3 minutes et…",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 annoncé à la Blizzcon 2026",
-      "link": "https://fr.ign.com/diablo-iv/92197/diablo-5-annonce-a-la-blizzcon-2026",
-      "date": "2026-09-12T18:36:59.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/d/diablo-5-a/diablo-5-announced_62mr.jpg",
-      "summary": "Que devez-vous devenir lorsque le monde s&#x27;est déjà effondré ?",
-      "tags": []
-    },
-    {
-      "title": "Overwatch - Trailer du nouvel héros Doctrine | BlizzCon 2026",
-      "link": "https://fr.ign.com/overwatch/92200/overwatch-trailer-du-nouvel-heros-doctrine-blizzcon-2026",
-      "date": "2026-09-12T18:36:22.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/o/overwatch-/overwatch-official-new-hero-doctrine-trailer-blizzcon-2026_pyxc.jpg",
-      "summary": "Si Doomfist compte fabriquer un nouveau gantelet, il va avoir besoin de l&#x27;aide d&#x27;un très vieil ami. Rejoignez-le ainsi que ses alliés alors qu’ils s’efforcent de faire…",
-      "tags": []
-    },
-    {
-      "title": "Hearthstone To Get Its First New Class In Four Years Next Spring",
-      "link": "https://kotaku.com/hearthstone-first-new-class-four-years-next-spring-2000733782",
-      "date": "2026-09-12T18:33:23.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/BlizzCon-2026-_-Day-1-Main-Stage-2-1-1-screenshot-1280x720.jpg",
-      "summary": "And even sooner, we'll see the next expansion: Reign of the Black Empire",
-      "tags": []
-    },
-    {
-      "title": "Nouveau Starcraft : à quoi s'attendre pour cet open world shooter ?",
-      "link": "https://www.jeuxvideo.com/news/2103593/starcraft-a-quoi-s-attendre-pour-cet-open-world-shooter.htm",
-      "date": "2026-09-12T18:28:54.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/178924/1789237521-4158-card.jpg",
-      "summary": "Blizzard fait les choses en grand ! Pour marquer le coup de son retour en physique via la Blizzcon 2026, l’éditeur fait revenir d’entre les morts Starcraft. La célèbre licence de…",
       "tags": []
     }
   ]
