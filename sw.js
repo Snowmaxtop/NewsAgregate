@@ -13,11 +13,12 @@
 // JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
 // reads both and counts unread = articles not in read and not in hidden.
 
-const CACHE_NAME = 'dispatch-v4';
+const CACHE_NAME = 'dispatch-v5';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
   './index.html',
+  './releases.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -51,7 +52,7 @@ self.addEventListener('fetch', (event) => {
   if (url.hostname === 'api.github.com') return;
 
   const isNavigation = req.mode === 'navigate';
-  const isArticlesJson = url.pathname.endsWith('articles.json');
+  const isArticlesJson = url.pathname.endsWith('articles.json') || url.pathname.endsWith('releases.json') || url.pathname.endsWith('releases.js');
 
   if (isNavigation || isArticlesJson) {
     event.respondWith(
