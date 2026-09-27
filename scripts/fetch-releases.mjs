@@ -16,9 +16,14 @@ import { pathToFileURL } from 'url';
 export const MONTHS_BACK = 1;
 export const MONTHS_AHEAD = 6;
 
-// Minimum IGDB "hypes" (followers before release). 0 = no threshold
-// (v1). Raise it later to thin out low-profile releases.
-export const MIN_HYPES = 0;
+// A game is kept if EITHER:
+//  • it appears in IGDB's Steam "most wishlisted upcoming" popularity
+//    data (Steam's own wishlist counts are private; this is the public
+//    ranking IGDB imports), OR
+//  • it has at least MIN_HYPES IGDB followers (catches console-only games
+//    that Steam data can't see).
+// Raise MIN_HYPES to show fewer games per day, lower it to show more.
+export const MIN_HYPES = 5;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
 // episode 6, season 7, fork 12, pack 13, update 14) is dropped.
@@ -66,13 +71,14 @@ function steamUrlOf(game){
 
 // rows: raw release_dates rows (with expanded game). Returns the list of
 // { game-day } entries sorted by date, then hypes desc.
-export function buildReleases(rows){
+// wishlist: Map<gameId, score> from Steam popularity data (may be empty).
+export function buildReleases(rows, wishlist = new Map()){
   // 1) keep exact-day dates of relevant game types, above the hype bar
   const valid = rows.filter(r =>
     r && r.game && typeof r.date === 'number' &&
     (dateFormatOf(r) === 0 || dateFormatOf(r) === undefined) &&
     (gameTypeOf(r.game) === undefined || KEEP_GAME_TYPES.has(gameTypeOf(r.game))) &&
-    (r.game.hypes || 0) >= MIN_HYPES
+    ((r.game.hypes || 0) >= MIN_HYPES || wishlist.has(r.game.id))
   );
 
   // 2) per game, keep the preferred region's rows only
@@ -111,13 +117,15 @@ export function buildReleases(rows){
         summary: g.summary ? String(g.summary).slice(0, 600) : '',
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
         hypes: g.hypes || 0,
+        wishlist: wishlist.get(g.id) || 0,
         steam: steamUrlOf(g),
         igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
       });
     }
   }
 
-  out.sort((a, b) => a.date.localeCompare(b.date) || b.hypes - a.hypes || a.name.localeCompare(b.name));
+  // Within a day: Steam-wishlisted games first (by score), then IGDB hypes.
+  out.sort((a, b) => a.date.localeCompare(b.date) || b.wishlist - a.wishlist || b.hypes - a.hypes || a.name.localeCompare(b.name));
   return out;
 }
 
@@ -158,6 +166,42 @@ async function fetchAllRows(id, token, from, to){
   return rows;
 }
 
+async function igdb(endpoint, id, token, body){
+  const res = await fetch(`https://api.igdb.com/v4/${endpoint}`, {
+    method: 'POST',
+    headers: { 'Client-ID': id, 'Authorization': `Bearer ${token}`, 'Accept': 'application/json' },
+    body,
+  });
+  if (!res.ok) throw new Error(`IGDB ${endpoint}: HTTP ${res.status} ${await res.text()}`);
+  return res.json();
+}
+
+// Finds IGDB's Steam wishlist popularity type by name (so we don't depend
+// on a hard-coded id), then fetches its values for our games. Any failure
+// just returns an empty map: the hype threshold still applies.
+async function fetchWishlist(id, token, gameIds){
+  const out = new Map();
+  try {
+    const types = await igdb('popularity_types', id, token, 'fields id,name; limit 100;');
+    const wl = types.filter(t => /wishlist/i.test(t.name || ''));
+    console.log(`popularity types: ${types.map(t => `${t.id}=${t.name}`).join(', ')}`);
+    if (!wl.length){ console.log('No Steam wishlist popularity type found — using hypes only.'); return out; }
+    const typeIds = wl.map(t => t.id).join(',');
+    const ids = [...gameIds];
+    for (let i = 0; i < ids.length; i += 500){
+      await sleep(300);
+      const chunk = ids.slice(i, i + 500).join(',');
+      const rows = await igdb('popularity_primitives', id, token,
+        `fields game_id,value; where popularity_type = (${typeIds}) & game_id = (${chunk}); limit 500;`);
+      for (const r of rows) out.set(r.game_id, Math.max(out.get(r.game_id) || 0, Number(r.value) || 0));
+    }
+    console.log(`Steam wishlist data found for ${out.size} games.`);
+  } catch (e){
+    console.log('Wishlist lookup failed, using hypes only:', e.message);
+  }
+  return out;
+}
+
 async function main(){
   const id = process.env.TWITCH_CLIENT_ID;
   const secret = process.env.TWITCH_CLIENT_SECRET;
@@ -166,7 +210,8 @@ async function main(){
   const { from, to } = computeWindow();
   const token = await getToken(id, secret);
   const rows = await fetchAllRows(id, token, from, to);
-  const games = buildReleases(rows);
+  const wishlist = await fetchWishlist(id, token, new Set(rows.map(r => r.game && r.game.id).filter(Boolean)));
+  const games = buildReleases(rows, wishlist);
 
   const out = {
     generatedAt: new Date().toISOString(),
