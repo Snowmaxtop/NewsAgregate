@@ -87,8 +87,28 @@
       <div class="cal-foot">Données IGDB · MAJ ${data ? new Date(data.generatedAt).toLocaleDateString('fr-FR') : '—'}</div>`;
   }
 
-  // ---- Day popup -------------------------------------------------------
+  // ---- Day popup: drag slider ------------------------------------------
+  // Cards are stacked vertically in .rel-strip, moved with translateY. A
+  // vertical drag follows the finger; release past 18% of a card height
+  // (or a quick flick) moves to the neighbour. The viewport has
+  // touch-action:none so the page never scrolls instead.
   let overlay = null;
+  let strip = null, viewport = null;
+  let idx = 0, count = 0;
+
+  const GAP = 12;
+  function step(){ return strip.firstElementChild ? strip.firstElementChild.offsetHeight + GAP : viewport.clientHeight; }
+  function offset(){ return (viewport.clientHeight - (step() - GAP)) / 2; }  // centre the card, neighbours peek
+
+  function goTo(i, animate = true){
+    idx = Math.max(0, Math.min(count - 1, i));
+    strip.style.transition = animate ? 'transform 0.28s cubic-bezier(.2,.8,.2,1)' : 'none';
+    strip.style.transform = `translateY(${offset() - idx * step()}px)`;
+    overlay.querySelector('.rel-pos').textContent = count > 1 ? `${idx + 1} / ${count}` : '';
+    overlay.querySelectorAll('.rel-dot').forEach((d, k) => d.classList.toggle('on', k === idx));
+    [...strip.children].forEach((c, k) => c.classList.toggle('active', k === idx));
+  }
+
   function ensureOverlay(){
     if (overlay) return overlay;
     overlay = document.createElement('div');
@@ -100,35 +120,70 @@
           <div class="rel-pos"></div>
           <button class="rel-close" aria-label="Fermer">✕</button>
         </div>
-        <div class="rel-track"></div>
-        <div class="rel-arrows">
-          <button class="rel-arrow" data-dir="-1" aria-label="Précédent">‹</button>
-          <button class="rel-arrow" data-dir="1" aria-label="Suivant">›</button>
-        </div>
+        <div class="rel-viewport"><div class="rel-strip"></div></div>
+        <div class="rel-dots"></div>
       </div>`;
     document.body.appendChild(overlay);
+    viewport = overlay.querySelector('.rel-viewport');
+    strip = overlay.querySelector('.rel-strip');
 
-    const track = overlay.querySelector('.rel-track');
     overlay.addEventListener('click', (e) => {
-      if (e.target === overlay || e.target.closest('.rel-close')) closeDay();
-      const arrow = e.target.closest('.rel-arrow');
-      if (arrow) track.scrollBy({ left: track.clientWidth * Number(arrow.dataset.dir), behavior: 'smooth' });
+      if (e.target === overlay || e.target.closest('.rel-close')) return closeDay();
+      const dot = e.target.closest('.rel-dot');
+      if (dot) return goTo(Number(dot.dataset.i));
+      // Tapping the peeking neighbour card brings it to the centre.
+      const c = e.target.closest('.rel-card');
+      if (c && !c.classList.contains('active') && !e.target.closest('a')) goTo([...strip.children].indexOf(c));
     });
-    track.addEventListener('scroll', () => updatePos(), { passive: true });
+
+    let sx = 0, sy = 0, st = 0, d = 0, mode = null, pid = null;
+    viewport.addEventListener('pointerdown', (e) => {
+      if (count < 2) return;
+      sx = e.clientX; sy = e.clientY; st = performance.now(); d = 0; mode = null; pid = e.pointerId;
+    });
+    viewport.addEventListener('pointermove', (e) => {
+      if (e.pointerId !== pid) return;
+      const mx = e.clientX - sx, my = e.clientY - sy;
+      if (!mode){
+        if (Math.abs(mx) < 8 && Math.abs(my) < 8) return;
+        mode = Math.abs(my) > Math.abs(mx) ? 'drag' : 'ignore';
+        if (mode === 'drag') viewport.setPointerCapture(pid);
+      }
+      if (mode !== 'drag') return;
+      d = my;
+      // rubber-band at both ends
+      if ((idx === 0 && d > 0) || (idx === count - 1 && d < 0)) d *= 0.35;
+      strip.style.transition = 'none';
+      strip.style.transform = `translateY(${offset() - idx * step() + d}px)`;
+    });
+    const end = (e) => {
+      if (e.pointerId !== pid) return;
+      pid = null;
+      if (mode !== 'drag') return;
+      const fast = Math.abs(d) / Math.max(1, performance.now() - st) > 0.5;
+      const far = Math.abs(d) > step() * 0.18;
+      goTo(idx + ((far || fast) && Math.abs(d) > 10 ? (d < 0 ? 1 : -1) : 0));
+    };
+    viewport.addEventListener('pointerup', end);
+    viewport.addEventListener('pointercancel', end);
+    // A drag must not also count as a tap on a link/card.
+    viewport.addEventListener('click', (e) => { if (mode === 'drag' && Math.abs(d) > 10){ e.preventDefault(); e.stopPropagation(); } }, true);
+
+    let wheelLock = 0;
+    viewport.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (Date.now() < wheelLock || Math.abs(e.deltaY) < 8) return;
+      wheelLock = Date.now() + 350;
+      goTo(idx + (e.deltaY > 0 ? 1 : -1));
+    }, { passive: false });
+    window.addEventListener('resize', () => { if (overlay.classList.contains('show')) goTo(idx, false); });
     document.addEventListener('keydown', (e) => {
       if (!overlay.classList.contains('show')) return;
       if (e.key === 'Escape') closeDay();
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft')
-        track.scrollBy({ left: track.clientWidth * (e.key === 'ArrowRight' ? 1 : -1), behavior: 'smooth' });
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') goTo(idx + 1);
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') goTo(idx - 1);
     });
     return overlay;
-  }
-
-  function updatePos(){
-    const track = overlay.querySelector('.rel-track');
-    const n = track.children.length;
-    const i = Math.min(n, Math.round(track.scrollLeft / Math.max(1, track.clientWidth)) + 1);
-    overlay.querySelector('.rel-pos').textContent = n > 1 ? `${i} / ${n}` : '';
   }
 
   function card(g){
@@ -156,13 +211,15 @@
     const [y, m, d] = key.split('-').map(Number);
     const date = new Date(y, m - 1, d);
     overlay.querySelector('.rel-day').textContent = `${DAY_NAMES[date.getDay()]} ${d} ${MONTHS[m - 1].toLowerCase()}`;
-    const track = overlay.querySelector('.rel-track');
-    track.innerHTML = games.map(card).join('');
-    track.scrollLeft = 0;
-    overlay.querySelector('.rel-arrows').style.display = games.length > 1 ? '' : 'none';
+    count = games.length;
+    strip.innerHTML = games.map(card).join('');
+    overlay.querySelector('.rel-dots').innerHTML = count > 1 && count <= 20
+      ? games.map((_, k) => `<button class="rel-dot" data-i="${k}" aria-label="Jeu ${k + 1}"></button>`).join('')
+      : '';
+    overlay.classList.toggle('single', count === 1);
     overlay.classList.add('show');
     document.body.classList.add('rel-lock');
-    updatePos();
+    goTo(0, false);
   }
 
   function closeDay(){
