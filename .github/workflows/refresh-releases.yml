@@ -1,0 +1,38 @@
+name: Refresh Dispatch releases
+
+on:
+  schedule:
+    - cron: '17 4 * * *'     # once a day, ~06:17 Paris time
+  workflow_dispatch: {}       # manual run from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Build releases.json from IGDB
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: node scripts/fetch-releases.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add releases.json
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: refresh releases.json [skip ci]"
+          # The articles workflow pushes every 20 min: rebase onto it if needed.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
