@@ -27,7 +27,7 @@ export const MIN_HYPES = 25;
 
 // Steam data exists for almost every Steam game, so only the WISHLIST_TOP
 // best-scored games of the whole period count as "wishlisted".
-export const WISHLIST_TOP = 150;
+export const WISHLIST_TOP = 500;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
 // episode 6, season 7, fork 12, pack 13, update 14) is dropped.
@@ -85,6 +85,8 @@ export function buildReleases(rows, wishlistAll = new Map()){
     r && r.game && typeof r.date === 'number' &&
     (dateFormatOf(r) === 0 || dateFormatOf(r) === undefined) &&
     (gameTypeOf(r.game) === undefined || KEEP_GAME_TYPES.has(gameTypeOf(r.game))) &&
+    // must have a cover and a description (for now)
+    r.game.cover && r.game.cover.image_id && r.game.summary && String(r.game.summary).trim() &&
     ((r.game.hypes || 0) >= MIN_HYPES || wishlist.has(r.game.id))
   );
 
