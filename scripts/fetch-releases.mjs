@@ -26,7 +26,7 @@ export const MONTHS_AHEAD = 36;
 //  • it has at least MIN_HYPES IGDB followers (catches console-only games
 //    that aren't on Steam).
 export const MIN_HYPES = 25;
-export const WISHLIST_TOP = 1000;
+export const WISHLIST_TOP = 1500;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
 // episode 6, season 7, fork 12, pack 13, update 14) is dropped.
