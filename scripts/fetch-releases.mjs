@@ -14,7 +14,9 @@ import { pathToFileURL } from 'url';
 // Months covered: from the start of (current month - MONTHS_BACK) to the
 // end of (current month + MONTHS_AHEAD).
 export const MONTHS_BACK = 1;
-export const MONTHS_AHEAD = 6;
+// Far-future games rarely have an exact day, so a wide window stays cheap.
+// The calendar only extends as far as the latest game actually found.
+export const MONTHS_AHEAD = 36;
 
 // A game is kept if EITHER:
 //  • it appears in IGDB's Steam "most wishlisted upcoming" popularity
@@ -27,7 +29,7 @@ export const MIN_HYPES = 25;
 
 // Steam data exists for almost every Steam game, so only the WISHLIST_TOP
 // best-scored games of the whole period count as "wishlisted".
-export const WISHLIST_TOP = 500;
+export const WISHLIST_TOP = 1000;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
 // episode 6, season 7, fork 12, pack 13, update 14) is dropped.
