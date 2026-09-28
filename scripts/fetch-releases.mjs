@@ -115,13 +115,25 @@ export function buildReleases(rows, wishlistAll = new Map()){
       if (p) byDay.get(day).add(p);
     }
 
+    // 4) ONE entry per game, on its earliest day. Later days (other
+    //    platforms, standard vs early-access editions…) are listed in
+    //    `dates` so the popup can show them without duplicating the game.
+    const days = [...byDay.keys()].sort();
+    const allPlats = new Set();
+    for (const set of byDay.values()) for (const p of set) allPlats.add(p);
     const g = chosen[0].game;
-    for (const [day, plats] of byDay){
+    const companies = (role) => [...new Set((g.involved_companies || [])
+      .filter(c => c && c[role] && c.company && c.company.name)
+      .map(c => c.company.name))];
+    {
       out.push({
         id: g.id,
         name: g.name,
-        date: day,
-        platforms: [...plats].sort(),
+        date: days[0],
+        dates: days.length > 1 ? days.map(d => ({ date: d, platforms: [...byDay.get(d)].sort() })) : undefined,
+        platforms: [...allPlats].sort(),
+        developers: companies('developer'),
+        publishers: companies('publisher'),
         cover: g.cover && g.cover.image_id ? g.cover.image_id : null,
         summary: g.summary ? String(g.summary).slice(0, 600) : '',
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
@@ -154,6 +166,7 @@ async function fetchAllRows(id, token, from, to){
     'date', 'date_format', 'release_region', 'platform.name', 'platform.abbreviation',
     'game.id', 'game.name', 'game.slug', 'game.url', 'game.summary', 'game.hypes',
     'game.game_type', 'game.cover.image_id', 'game.genres.name',
+    'game.involved_companies.company.name', 'game.involved_companies.developer', 'game.involved_companies.publisher',
     'game.websites.url', 'game.websites.type',
     'game.external_games.uid', 'game.external_games.external_game_source',
   ].join(',');
