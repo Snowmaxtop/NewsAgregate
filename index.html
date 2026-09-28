@@ -698,6 +698,20 @@
   .like-sub{font-size:11px;color:var(--paper-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .like-heart{flex:0 0 auto;background:none;border:none;font-size:20px;color:var(--paper-dim);cursor:pointer;padding:6px;}
   .like-heart.on{color:var(--unread);}
+  .cal-title-btn{background:none;border:none;color:var(--paper);cursor:pointer;padding:4px 8px;border-radius:8px;}
+  .cal-title-btn:hover{background:var(--ink-2);}
+  .cal-caret{font-size:13px;color:var(--paper-dim);}
+  .pick-year{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:var(--paper);margin:14px 2px 8px;}
+  .pick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+  .pick-month{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px;border-radius:8px;background:var(--ink-2);border:1px solid var(--line-strong);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:12px;cursor:pointer;}
+  .pick-month span{font-size:10px;color:var(--gamer);min-height:12px;}
+  .pick-month.none{color:var(--paper-dim);}
+  .pick-month.none span{color:var(--paper-dim);}
+  .pick-month.cur{border-color:var(--gamer);background:rgba(76,134,255,0.15);}
+  .pick-month:disabled{opacity:0.2;cursor:default;}
+  .rel-rank{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;padding:1px 6px;border-radius:4px;background:rgba(255,209,102,0.14);color:var(--star);vertical-align:middle;white-space:nowrap;}
+  .rel-rank-row{text-align:center;margin-bottom:6px;}
+  .like-date .rel-rank{text-transform:none;margin-left:4px;}
   .rel-btn.steam{background:var(--gamer);border-color:var(--gamer);color:#fff;}
 </style>
 </head>

@@ -14,6 +14,7 @@
   let byId = new Map();     // IGDB id -> game (fresh data for liked snapshots)
   let view = 'cal';         // 'cal' | 'likes'
   let shown = [];           // games currently in the popup
+  let picking = false;      // month picker open
   let loadedAt = 0;
   let loading = null;
   let monthCursor = null;   // Date at the 1st of the displayed month (local)
@@ -66,7 +67,34 @@
       <button data-view="likes" class="${view === 'likes' ? 'on' : ''}">♥ Mes jeux <span class="count">${n}</span></button>
     </div>`;
   }
-  function draw(){ view === 'likes' ? drawLikes() : drawMonth(); }
+  function draw(){ view === 'likes' ? drawLikes() : (picking ? drawPicker() : drawMonth()); }
+  const rankBadge = (g) => g.wlRank ? `<span class="rel-rank" title="Position dans le top wishlists Steam">#${g.wlRank} wishlists</span>` : '';
+
+  // ---- Month picker: tap the month title to jump anywhere ---------------
+  function drawPicker(){
+    const b = monthBounds();
+    const counts = new Map();
+    for (const [k, games] of byDay) counts.set(k.slice(0, 7), (counts.get(k.slice(0, 7)) || 0) + games.length);
+    let html = '';
+    for (let y = b.min.getFullYear(); y <= b.max.getFullYear(); y++){
+      html += `<div class="pick-year">${y}</div><div class="pick-grid">`;
+      for (let m = 0; m < 12; m++){
+        const d = new Date(y, m, 1);
+        const inRange = d >= b.min && d <= b.max;
+        const n = counts.get(`${y}-${pad(m + 1)}`) || 0;
+        const cur = d.getTime() === monthCursor.getTime();
+        html += `<button class="pick-month ${cur ? 'cur' : ''} ${n ? '' : 'none'}" data-ym="${y}-${m}" ${inRange ? '' : 'disabled'}>
+          ${MONTHS[m].slice(0, 4)}${MONTHS[m].length > 4 ? '.' : ''}<span>${inRange ? n : ''}</span></button>`;
+      }
+      html += '</div>';
+    }
+    container.innerHTML = segHtml() + `
+      <div class="cal-head">
+        <span></span>
+        <button class="cal-title cal-title-btn" data-pick="close">Choisir un mois<span class="cal-sub">▲ fermer</span></button>
+        <span></span>
+      </div>${html}`;
+  }
 
   function monthBounds(){
     if (!data) return null;
@@ -116,7 +144,7 @@
     container.innerHTML = segHtml() + `
       <div class="cal-head">
         <button class="cal-nav" data-step="-1" ${canPrev ? '' : 'disabled'} aria-label="Mois précédent">‹</button>
-        <div class="cal-title">${MONTHS[m]} ${y}<span class="cal-sub">${monthCount} sortie${monthCount > 1 ? 's' : ''}</span></div>
+        <button class="cal-title cal-title-btn" data-pick="open">${MONTHS[m]} ${y} <span class="cal-caret">▾</span><span class="cal-sub">${monthCount} sortie${monthCount > 1 ? 's' : ''}</span></button>
         <button class="cal-nav" data-step="1" ${canNext ? '' : 'disabled'} aria-label="Mois suivant">›</button>
       </div>
       <div class="cal-grid cal-weekdays">${WEEKDAYS.map(w => `<div>${w}</div>`).join('')}</div>
@@ -136,7 +164,7 @@
       <div class="like-row" data-id="${g.id}">
         <div class="like-thumb">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_small')}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
         <div class="like-body">
-          <div class="like-date">${esc(shortDate(g.date))}</div>
+          <div class="like-date">${esc(shortDate(g.date))} ${rankBadge(g)}</div>
           <div class="like-name">${esc(g.name)}</div>
           <div class="like-sub">${esc([...(g.developers || []).slice(0, 1), (g.platforms || []).join(' · ')].filter(Boolean).join(' — '))}</div>
         </div>
@@ -294,6 +322,7 @@
         <div class="rel-meta">
           ${g.platforms.map(p => `<span class="rel-chip">${esc(p)}</span>`).join('')}
         </div>
+        ${g.wlRank ? `<div class="rel-rank-row">${rankBadge(g)}</div>` : ''}
         ${g.genres.length ? `<div class="rel-genres">${esc(g.genres.join(' · '))}</div>` : ''}
         ${g.summary ? `<p class="rel-summary">${esc(g.summary)}</p>` : ''}
         <div class="rel-links">${links}</div>
@@ -334,7 +363,7 @@
       container = el;
       container.addEventListener('click', (e) => {
         const seg = e.target.closest('.rel-seg button');
-        if (seg){ view = seg.dataset.view; draw(); return; }
+        if (seg){ view = seg.dataset.view; picking = false; draw(); return; }
         const heart = e.target.closest('.like-heart');
         if (heart){
           const g = likedList().find(x => String(x.id) === heart.dataset.like);
@@ -346,6 +375,14 @@
           const g = likedList().find(x => String(x.id) === likeRow.dataset.id);
           if (g) openGames([g], shortDate(g.date));
           return;
+        }
+        const pick = e.target.closest('[data-pick]');
+        if (pick){ picking = pick.dataset.pick === 'open'; draw(); return; }
+        const pm = e.target.closest('.pick-month');
+        if (pm && !pm.disabled){
+          const [py, pmo] = pm.dataset.ym.split('-').map(Number);
+          monthCursor = new Date(py, pmo, 1);
+          picking = false; draw(); return;
         }
         const nav = e.target.closest('.cal-nav');
         if (nav && !nav.disabled){
