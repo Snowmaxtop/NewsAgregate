@@ -71,8 +71,13 @@
   function monthBounds(){
     if (!data) return null;
     const [fy, fm] = data.from.split('-').map(Number);
-    const [ty, tm] = data.to.split('-').map(Number);
-    return { min: new Date(fy, fm - 1, 1), max: new Date(ty, tm - 1, 1) };
+    // Last month = month of the latest game (not the fetch window), so the
+    // arrows reach e.g. January 2028 only if a game is dated there.
+    const last = (data.games || []).reduce((mx, g) => g.date > mx ? g.date : mx, '');
+    const [ty, tm] = (last || data.to).split('-').map(Number);
+    const max = new Date(ty, tm - 1, 1);
+    const now = new Date(), cur = new Date(now.getFullYear(), now.getMonth(), 1);
+    return { min: new Date(fy, fm - 1, 1), max: max < cur ? cur : max };
   }
 
   function drawMonth(){
