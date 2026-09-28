@@ -80,7 +80,11 @@ function steamUrlOf(game){
 // wishlist: Map<gameId, score> from Steam popularity data (may be empty).
 export function buildReleases(rows, wishlistAll = new Map()){
   // Keep only the top WISHLIST_TOP Steam scores as a qualifying signal.
-  const wishlist = new Map([...wishlistAll].sort((a, b) => b[1] - a[1]).slice(0, WISHLIST_TOP));
+  const ranked = [...wishlistAll].sort((a, b) => b[1] - a[1]).slice(0, WISHLIST_TOP);
+  const wishlist = new Map(ranked);
+  // Position in the Steam wishlist ranking (1 = most wishlisted), among
+  // the games IGDB has Steam data for in our date window.
+  const wlRank = new Map(ranked.map(([id], i) => [id, i + 1]));
 
   // 1) keep exact-day dates of relevant game types, above the hype bar
   const valid = rows.filter(r =>
@@ -141,6 +145,7 @@ export function buildReleases(rows, wishlistAll = new Map()){
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
         hypes: g.hypes || 0,
         wishlist: wishlistAll.get(g.id) || 0,
+        wlRank: wlRank.get(g.id),
         steam: steamUrlOf(g),
         igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
       });
