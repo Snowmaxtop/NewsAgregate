@@ -23,7 +23,11 @@ export const MONTHS_AHEAD = 6;
 //  • it has at least MIN_HYPES IGDB followers (catches console-only games
 //    that Steam data can't see).
 // Raise MIN_HYPES to show fewer games per day, lower it to show more.
-export const MIN_HYPES = 5;
+export const MIN_HYPES = 25;
+
+// Steam data exists for almost every Steam game, so only the WISHLIST_TOP
+// best-scored games of the whole period count as "wishlisted".
+export const WISHLIST_TOP = 150;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
 // episode 6, season 7, fork 12, pack 13, update 14) is dropped.
@@ -72,7 +76,10 @@ function steamUrlOf(game){
 // rows: raw release_dates rows (with expanded game). Returns the list of
 // { game-day } entries sorted by date, then hypes desc.
 // wishlist: Map<gameId, score> from Steam popularity data (may be empty).
-export function buildReleases(rows, wishlist = new Map()){
+export function buildReleases(rows, wishlistAll = new Map()){
+  // Keep only the top WISHLIST_TOP Steam scores as a qualifying signal.
+  const wishlist = new Map([...wishlistAll].sort((a, b) => b[1] - a[1]).slice(0, WISHLIST_TOP));
+
   // 1) keep exact-day dates of relevant game types, above the hype bar
   const valid = rows.filter(r =>
     r && r.game && typeof r.date === 'number' &&
@@ -117,7 +124,7 @@ export function buildReleases(rows, wishlist = new Map()){
         summary: g.summary ? String(g.summary).slice(0, 600) : '',
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
         hypes: g.hypes || 0,
-        wishlist: wishlist.get(g.id) || 0,
+        wishlist: wishlistAll.get(g.id) || 0,
         steam: steamUrlOf(g),
         igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
       });
@@ -221,6 +228,11 @@ async function main(){
   };
   writeFileSync('releases.json', JSON.stringify(out));
   console.log(`releases.json: ${rows.length} IGDB rows → ${games.length} entries (${out.from} → ${out.to})`);
+  const counts = {};
+  for (const g of games) counts[g.date] = (counts[g.date] || 0) + 1;
+  const busiest = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  console.log(`Busiest days: ${busiest.map(([d, n]) => `${d}=${n}`).join(', ')}`);
+  console.log(`Top games: ${games.slice().sort((a, b) => b.wishlist - a.wishlist || b.hypes - a.hypes).slice(0, 10).map(g => `${g.name} (wl ${g.wishlist}, hypes ${g.hypes})`).join(' | ')}`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href){
