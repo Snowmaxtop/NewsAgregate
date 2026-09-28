@@ -675,6 +675,29 @@
   .rel-summary{font-size:13px;line-height:1.5;color:var(--paper);opacity:0.85;margin:0 0 14px;}
   .rel-links{display:flex;gap:8px;justify-content:center;}
   .rel-btn{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;padding:9px 16px;border-radius:6px;border:1px solid var(--line-strong);color:var(--paper);text-decoration:none;}
+  .rel-seg{display:flex;gap:6px;margin-bottom:14px;}
+  .rel-seg button{flex:1;padding:9px 10px;border-radius:20px;background:transparent;border:1px solid var(--line-strong);color:var(--paper-dim);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;cursor:pointer;}
+  .rel-seg button.on{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .rel-seg .count{opacity:0.6;margin-left:3px;}
+  .cal-like{position:absolute;bottom:2px;left:3px;z-index:1;font-size:11px;line-height:1;color:var(--unread);text-shadow:0 0 3px var(--ink);}
+  .rel-card{position:relative;}
+  .rel-like{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:50%;background:var(--ink);border:1px solid var(--line-strong);color:var(--paper-dim);font-size:19px;line-height:1;cursor:pointer;}
+  .rel-like.on{color:var(--unread);border-color:var(--unread);}
+  .rel-companies{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;font-size:11px;color:var(--paper-dim);margin-bottom:6px;}
+  .rel-companies b{color:var(--paper);font-weight:500;}
+  .rel-dates{text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--star);margin-bottom:6px;}
+  .rel-dates span{color:var(--paper-dim);}
+  .like-month{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--paper-dim);padding:14px 2px 6px;border-bottom:1px solid var(--line);}
+  .like-month.past{margin-top:10px;}
+  .like-row{display:flex;align-items:center;gap:12px;padding:10px 2px;border-bottom:1px solid var(--line);cursor:pointer;}
+  .like-thumb{flex:0 0 46px;height:62px;border-radius:5px;overflow:hidden;background:var(--ink-2);}
+  .like-thumb img{width:100%;height:100%;object-fit:cover;}
+  .like-body{flex:1;min-width:0;}
+  .like-date{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gamer);text-transform:capitalize;}
+  .like-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:var(--paper);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .like-sub{font-size:11px;color:var(--paper-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .like-heart{flex:0 0 auto;background:none;border:none;font-size:20px;color:var(--paper-dim);cursor:pointer;padding:6px;}
+  .like-heart.on{color:var(--unread);}
   .rel-btn.steam{background:var(--gamer);border-color:var(--gamer);color:#fff;}
 </style>
 </head>
@@ -878,7 +901,7 @@ const SOURCES = [
     feed:'https://www.polygon.com/rss/index.xml', home:'https://www.polygon.com/' },
 ];
 
-let state = { read: [], favorites: [], hidden: [] };
+let state = { read: [], favorites: [], hidden: [], likedGames: [] };
 let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
@@ -941,6 +964,11 @@ function enforceStateConsistency(){
   state.hidden = Array.from(new Set(state.hidden || [])).filter(link => !favLinks.has(link));
 
   state.read = Array.from(new Set(state.read || []));
+
+  // Liked games: dedupe by IGDB id (keep the latest snapshot).
+  const likedById = new Map();
+  (state.likedGames || []).forEach(g => { if (g && g.id != null) likedById.set(g.id, g); });
+  state.likedGames = Array.from(likedById.values());
 }
 
 function saveStateInstant(){
@@ -984,6 +1012,10 @@ function mergeLocalIntoState(){
       if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
     });
     state.favorites = Array.from(favByLink.values());
+
+    const likedById = new Map();
+    [...(state.likedGames || []), ...(local.likedGames || [])].forEach(g => { if (g && g.id != null) likedById.set(g.id, g); });
+    state.likedGames = Array.from(likedById.values());
   }
 
   enforceStateConsistency();
@@ -1113,6 +1145,7 @@ async function loadState(){
         state.read = content.read || [];
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
+        state.likedGames = content.likedGames || [];
       }
       githubConnected = true;
 
@@ -1138,6 +1171,7 @@ async function loadState(){
       state.read = parsed.read || [];
       state.favorites = parsed.favorites || [];
       state.hidden = parsed.hidden || [];
+      state.likedGames = parsed.likedGames || [];
     }
   } catch (e) { /* no saved state yet */ }
 }
@@ -1678,6 +1712,26 @@ function removeFavorite(id){
   if(idx !== -1) state.favorites.splice(idx, 1);
 }
 
+// --- Liked games (Sorties tab) -----------------------------------------
+// Stored as snapshots in state.likedGames so the "Mes jeux" recap still
+// works after a game leaves releases.json. Synced with the rest of the
+// state through the Save button (markDirty), like favorites.
+function isGameLiked(id){ return (state.likedGames || []).some(g => g.id === id); }
+function toggleGameLike(game){
+  if (!state.likedGames) state.likedGames = [];
+  const i = state.likedGames.findIndex(g => g.id === game.id);
+  if (i !== -1) state.likedGames.splice(i, 1);
+  else state.likedGames.push({
+    id: game.id, name: game.name, date: game.date, cover: game.cover || null,
+    platforms: game.platforms || [], developers: game.developers || [],
+    publishers: game.publishers || [], genres: game.genres || [],
+    summary: game.summary || '', steam: game.steam || null, igdb: game.igdb || null,
+    dates: game.dates,
+  });
+  markDirty();
+  return i === -1;
+}
+
 function toggleFavorite(id){
   if(isFav(id)) removeFavorite(id);
   else addFavorite(id);
@@ -2027,6 +2081,7 @@ document.getElementById('syncBtn').addEventListener('click', async () => {
         state.read = content.read || [];
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
+        state.likedGames = content.likedGames || [];
       }
     }
     enforceStateConsistency();   // dedupe + a favorite is never hidden
@@ -2227,6 +2282,7 @@ async function checkRemoteStateUpdate(){
         state.read = content.read || [];
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
+        state.likedGames = content.likedGames || [];
       }
       enforceStateConsistency();
       saveStateInstant();

@@ -1,6 +1,8 @@
 // Dispatch — "Sorties" tab: monthly release calendar + day slider popup.
 // Reads releases.json (built daily by scripts/fetch-releases.mjs).
 // Exposes a single global: renderReleases(container).
+// Likes use isGameLiked(id) / toggleGameLike(game) from index.html, which
+// store them in the synced state (dispatch-state.json).
 (function(){
   const MONTHS = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
   const WEEKDAYS = ['L','M','M','J','V','S','D'];
@@ -9,6 +11,9 @@
 
   let data = null;          // parsed releases.json
   let byDay = new Map();    // "YYYY-MM-DD" -> [games]
+  let byId = new Map();     // IGDB id -> game (fresh data for liked snapshots)
+  let view = 'cal';         // 'cal' | 'likes'
+  let shown = [];           // games currently in the popup
   let loadedAt = 0;
   let loading = null;
   let monthCursor = null;   // Date at the 1st of the displayed month (local)
@@ -22,7 +27,9 @@
   function index(json){
     data = json;
     byDay = new Map();
+    byId = new Map();
     for (const g of json.games || []){
+      byId.set(g.id, g);
       if (!byDay.has(g.date)) byDay.set(g.date, []);
       byDay.get(g.date).push(g);   // already sorted by hypes desc server-side
     }
@@ -37,6 +44,29 @@
       .finally(() => { loading = null; });
     return loading;
   }
+
+  const liked = (id) => typeof isGameLiked === 'function' && isGameLiked(id);
+  const shortDate = (ymd) => {
+    const [y, m, d] = ymd.split('-').map(Number);
+    return new Date(y, m - 1, d).toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+  };
+  // Games of a day, liked ones first (server order kept otherwise).
+  function dayGames(k){
+    const games = byDay.get(k) || [];
+    return [...games.filter(g => liked(g.id)), ...games.filter(g => !liked(g.id))];
+  }
+  function likedList(){
+    const snaps = (typeof state !== 'undefined' && state.likedGames) || [];
+    return snaps.map(s => byId.get(s.id) || s);   // fresh data wins (dates move)
+  }
+  function segHtml(){
+    const n = likedList().length;
+    return `<div class="rel-seg">
+      <button data-view="cal" class="${view === 'cal' ? 'on' : ''}">📅 Calendrier</button>
+      <button data-view="likes" class="${view === 'likes' ? 'on' : ''}">♥ Mes jeux <span class="count">${n}</span></button>
+    </div>`;
+  }
+  function draw(){ view === 'likes' ? drawLikes() : drawMonth(); }
 
   function monthBounds(){
     if (!data) return null;
@@ -62,8 +92,9 @@
     for (let i = 0; i < lead; i++) cells += '<div class="cal-cell empty"></div>';
     for (let d = 1; d <= days; d++){
       const k = keyOf(y, m, d);
-      const games = byDay.get(k) || [];
+      const games = dayGames(k);
       monthCount += games.length;
+      const hasLike = games.some(g => liked(g.id));
       const top = games.find(g => g.cover) || games[0];
       const img = top && top.cover
         ? `<img src="${coverUrl(top.cover, 'cover_small')}" alt="" loading="lazy" onerror="this.remove()">`
@@ -73,10 +104,11 @@
           <span class="cal-num">${d}</span>
           ${img}
           ${games.length > 1 ? `<span class="cal-more">+${games.length - 1}</span>` : ''}
+          ${hasLike ? '<span class="cal-like">♥</span>' : ''}
         </button>`;
     }
 
-    container.innerHTML = `
+    container.innerHTML = segHtml() + `
       <div class="cal-head">
         <button class="cal-nav" data-step="-1" ${canPrev ? '' : 'disabled'} aria-label="Mois précédent">‹</button>
         <div class="cal-title">${MONTHS[m]} ${y}<span class="cal-sub">${monthCount} sortie${monthCount > 1 ? 's' : ''}</span></div>
@@ -85,6 +117,41 @@
       <div class="cal-grid cal-weekdays">${WEEKDAYS.map(w => `<div>${w}</div>`).join('')}</div>
       <div class="cal-grid">${cells}</div>
       <div class="cal-foot">Données IGDB · MAJ ${data ? new Date(data.generatedAt).toLocaleDateString('fr-FR') : '—'}</div>`;
+  }
+
+  // ---- "Mes jeux": recap of liked games --------------------------------
+  function drawLikes(){
+    const now = new Date();
+    const today = keyOf(now.getFullYear(), now.getMonth(), now.getDate());
+    const list = likedList();
+    const upcoming = list.filter(g => g.date >= today).sort((a, b) => a.date.localeCompare(b.date));
+    const past = list.filter(g => g.date < today).sort((a, b) => b.date.localeCompare(a.date));
+
+    const row = (g) => `
+      <div class="like-row" data-id="${g.id}">
+        <div class="like-thumb">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_small')}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
+        <div class="like-body">
+          <div class="like-date">${esc(shortDate(g.date))}</div>
+          <div class="like-name">${esc(g.name)}</div>
+          <div class="like-sub">${esc([...(g.developers || []).slice(0, 1), (g.platforms || []).join(' · ')].filter(Boolean).join(' — '))}</div>
+        </div>
+        <button class="like-heart on" data-like="${g.id}" aria-label="Retirer des likes">♥</button>
+      </div>`;
+
+    const groups = (arr) => {
+      let html = '', cur = null;
+      for (const g of arr){
+        const [y, m] = g.date.split('-').map(Number);
+        const label = `${MONTHS[m - 1]} ${y}`;
+        if (label !== cur){ html += `<div class="like-month">${label}</div>`; cur = label; }
+        html += row(g);
+      }
+      return html;
+    };
+
+    container.innerHTML = segHtml() + (list.length
+      ? groups(upcoming) + (past.length ? `<div class="like-month past">Déjà sortis</div>${past.map(row).join('')}` : '')
+      : '<div class="empty">AUCUN JEU LIKÉ — touche ♡ dans le détail d\'un jour<span class="cursor"></span></div>');
   }
 
   // ---- Day popup: drag slider ------------------------------------------
@@ -102,6 +169,8 @@
 
   function goTo(i, animate = true){
     idx = Math.max(0, Math.min(count - 1, i));
+    viewport.scrollTop = 0;   // focus/scrollIntoView must never shift the slider
+    viewport.parentElement.scrollTop = 0;
     strip.style.transition = animate ? 'transform 0.28s cubic-bezier(.2,.8,.2,1)' : 'none';
     strip.style.transform = `translateY(${offset() - idx * step()}px)`;
     overlay.querySelector('.rel-pos').textContent = count > 1 ? `${idx + 1} / ${count}` : '';
@@ -129,6 +198,17 @@
 
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay || e.target.closest('.rel-close')) return closeDay();
+      const likeBtn = e.target.closest('.rel-like');
+      if (likeBtn){
+        const g = shown.find(x => String(x.id) === likeBtn.dataset.like);
+        if (g && typeof toggleGameLike === 'function'){
+          const on = toggleGameLike(g);
+          likeBtn.classList.toggle('on', on);
+          likeBtn.textContent = on ? '♥' : '♡';
+          draw();   // refresh calendar hearts / recap behind the popup
+        }
+        return;
+      }
       const dot = e.target.closest('.rel-dot');
       if (dot) return goTo(Number(dot.dataset.i));
       // Tapping the peeking neighbour card brings it to the centre.
@@ -191,10 +271,21 @@
       g.steam ? `<a class="rel-btn steam" href="${esc(g.steam)}" target="_blank" rel="noopener">Steam</a>` : '',
       g.igdb ? `<a class="rel-btn" href="${esc(g.igdb)}" target="_blank" rel="noopener">IGDB</a>` : '',
     ].join('');
+    const on = liked(g.id);
+    const companies = [
+      (g.developers || []).length ? `<span>Dév. <b>${esc(g.developers.join(', '))}</b></span>` : '',
+      (g.publishers || []).length ? `<span>Éd. <b>${esc(g.publishers.join(', '))}</b></span>` : '',
+    ].filter(Boolean).join('');
+    const dates = (g.dates || []).length > 1
+      ? `<div class="rel-dates">${g.dates.map(x => `${esc(shortDate(x.date))} <span>(${esc(x.platforms.join(', '))})</span>`).join(' · ')}</div>`
+      : '';
     return `
       <article class="rel-card">
+        <button class="rel-like ${on ? 'on' : ''}" data-like="${g.id}" aria-label="Liker">${on ? '♥' : '♡'}</button>
         <div class="rel-cover">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_big')}" alt="" loading="lazy" onerror="this.remove()">` : '<span>—</span>'}</div>
         <h3>${esc(g.name)}</h3>
+        ${companies ? `<div class="rel-companies">${companies}</div>` : ''}
+        ${dates}
         <div class="rel-meta">
           ${g.platforms.map(p => `<span class="rel-chip">${esc(p)}</span>`).join('')}
         </div>
@@ -205,12 +296,16 @@
   }
 
   function openDay(key){
-    const games = byDay.get(key) || [];
-    if (!games.length) return;
-    ensureOverlay();
     const [y, m, d] = key.split('-').map(Number);
     const date = new Date(y, m - 1, d);
-    overlay.querySelector('.rel-day').textContent = `${DAY_NAMES[date.getDay()]} ${d} ${MONTHS[m - 1].toLowerCase()}`;
+    openGames(dayGames(key), `${DAY_NAMES[date.getDay()]} ${d} ${MONTHS[m - 1].toLowerCase()}`);
+  }
+
+  function openGames(games, title){
+    if (!games.length) return;
+    ensureOverlay();
+    shown = games;
+    overlay.querySelector('.rel-day').textContent = title;
     count = games.length;
     strip.innerHTML = games.map(card).join('');
     overlay.querySelector('.rel-dots').innerHTML = count > 1 && count <= 20
@@ -233,6 +328,20 @@
     if (container !== el){
       container = el;
       container.addEventListener('click', (e) => {
+        const seg = e.target.closest('.rel-seg button');
+        if (seg){ view = seg.dataset.view; draw(); return; }
+        const heart = e.target.closest('.like-heart');
+        if (heart){
+          const g = likedList().find(x => String(x.id) === heart.dataset.like);
+          if (g && typeof toggleGameLike === 'function'){ toggleGameLike(g); drawLikes(); }
+          return;
+        }
+        const likeRow = e.target.closest('.like-row');
+        if (likeRow){
+          const g = likedList().find(x => String(x.id) === likeRow.dataset.id);
+          if (g) openGames([g], shortDate(g.date));
+          return;
+        }
         const nav = e.target.closest('.cal-nav');
         if (nav && !nav.disabled){
           monthCursor = new Date(monthCursor.getFullYear(), monthCursor.getMonth() + Number(nav.dataset.step), 1);
@@ -247,13 +356,13 @@
       const n = new Date();
       monthCursor = new Date(n.getFullYear(), n.getMonth(), 1);
     }
-    if (data) drawMonth();
+    if (data || view === 'likes') draw();
     else container.innerHTML = '<div class="empty">CHARGEMENT DU CALENDRIER<span class="cursor"></span></div>';
 
     load()
-      .then(() => { if (container.isConnected && !container.hidden) drawMonth(); })
+      .then(() => { if (container.isConnected && !container.hidden) draw(); })
       .catch(() => {
-        if (!data) container.innerHTML = '<div class="empty">CALENDRIER INDISPONIBLE — releases.json introuvable<span class="cursor"></span></div>';
+        if (!data && view === 'cal') container.innerHTML = '<div class="empty">CALENDRIER INDISPONIBLE — releases.json introuvable<span class="cursor"></span></div>';
       });
   };
 
