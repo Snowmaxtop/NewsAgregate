@@ -6,7 +6,8 @@
 //
 // Output shape (one entry per game per release day):
 //   { generatedAt, from, to, games: [{ id, name, date:"YYYY-MM-DD",
-//     platforms:[...], cover, summary, genres:[...], hypes, steam, igdb }] }
+//     platforms:[...], developers, publishers, cover, summary, genres:[...],
+//     hypes, wlRank (Steam most-wishlisted position), steam, igdb }] }
 import { writeFileSync } from 'fs';
 import { pathToFileURL } from 'url';
 
@@ -19,16 +20,12 @@ export const MONTHS_BACK = 1;
 export const MONTHS_AHEAD = 36;
 
 // A game is kept if EITHER:
-//  • it appears in IGDB's Steam "most wishlisted upcoming" popularity
-//    data (Steam's own wishlist counts are private; this is the public
-//    ranking IGDB imports), OR
+//  • it is in the top WISHLIST_TOP of Steam's "most wishlisted" ranking
+//    (read from the Steam store search, sorted by wishlists — the same
+//    ranking SteamDB shows), OR
 //  • it has at least MIN_HYPES IGDB followers (catches console-only games
-//    that Steam data can't see).
-// Raise MIN_HYPES to show fewer games per day, lower it to show more.
+//    that aren't on Steam).
 export const MIN_HYPES = 25;
-
-// Steam data exists for almost every Steam game, so only the WISHLIST_TOP
-// best-scored games of the whole period count as "wishlisted".
 export const WISHLIST_TOP = 1000;
 
 // IGDB game_type ids we keep. Everything else (DLC 1, bundle 3, mod 5,
@@ -63,6 +60,18 @@ const regionOf = (r) => numOf(r.release_region ?? r.region);
 const dateFormatOf = (r) => numOf(r.date_format ?? r.category);
 const gameTypeOf = (g) => numOf(g.game_type ?? g.category);
 
+export function steamAppIdOf(game){
+  for (const e of game.external_games || []){
+    const src = numOf(e.external_game_source ?? e.category);
+    if (src === 1 && e.uid && /^\d+$/.test(String(e.uid))) return Number(e.uid);
+  }
+  for (const w of game.websites || []){
+    const m = /store\.steampowered\.com\/app\/(\d+)/.exec(w.url || '');
+    if (m) return Number(m[1]);
+  }
+  return null;
+}
+
 function steamUrlOf(game){
   for (const w of game.websites || []){
     const t = numOf(w.type ?? w.category);
@@ -75,16 +84,14 @@ function steamUrlOf(game){
   return null;
 }
 
-// rows: raw release_dates rows (with expanded game). Returns the list of
-// { game-day } entries sorted by date, then hypes desc.
-// wishlist: Map<gameId, score> from Steam popularity data (may be empty).
-export function buildReleases(rows, wishlistAll = new Map()){
-  // Keep only the top WISHLIST_TOP Steam scores as a qualifying signal.
-  const ranked = [...wishlistAll].sort((a, b) => b[1] - a[1]).slice(0, WISHLIST_TOP);
-  const wishlist = new Map(ranked);
-  // Position in the Steam wishlist ranking (1 = most wishlisted), among
-  // the games IGDB has Steam data for in our date window.
-  const wlRank = new Map(ranked.map(([id], i) => [id, i + 1]));
+// rows: raw release_dates rows (with expanded game).
+// steamRank: Map<steamAppId, position in Steam's most-wishlisted list>.
+export function buildReleases(rows, steamRank = new Map()){
+  const rankOf = (g) => {
+    const app = steamAppIdOf(g);
+    const r = app != null ? steamRank.get(app) : undefined;
+    return r != null && r <= WISHLIST_TOP ? r : undefined;
+  };
 
   // 1) keep exact-day dates of relevant game types, above the hype bar
   const valid = rows.filter(r =>
@@ -93,7 +100,7 @@ export function buildReleases(rows, wishlistAll = new Map()){
     (gameTypeOf(r.game) === undefined || KEEP_GAME_TYPES.has(gameTypeOf(r.game))) &&
     // must have a cover and a description (for now)
     r.game.cover && r.game.cover.image_id && r.game.summary && String(r.game.summary).trim() &&
-    ((r.game.hypes || 0) >= MIN_HYPES || wishlist.has(r.game.id))
+    ((r.game.hypes || 0) >= MIN_HYPES || rankOf(r.game) !== undefined)
   );
 
   // 2) per game, keep the preferred region's rows only
@@ -144,16 +151,16 @@ export function buildReleases(rows, wishlistAll = new Map()){
         summary: g.summary ? String(g.summary).slice(0, 600) : '',
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
         hypes: g.hypes || 0,
-        wishlist: wishlistAll.get(g.id) || 0,
-        wlRank: wlRank.get(g.id),
+        wlRank: rankOf(g),
         steam: steamUrlOf(g),
         igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
       });
     }
   }
 
-  // Within a day: Steam-wishlisted games first (by score), then IGDB hypes.
-  out.sort((a, b) => a.date.localeCompare(b.date) || b.wishlist - a.wishlist || b.hypes - a.hypes || a.name.localeCompare(b.name));
+  // Within a day: best Steam wishlist rank first, then IGDB hypes.
+  const r = (g) => g.wlRank ?? Infinity;
+  out.sort((a, b) => a.date.localeCompare(b.date) || r(a) - r(b) || b.hypes - a.hypes || a.name.localeCompare(b.name));
   return out;
 }
 
@@ -195,40 +202,35 @@ async function fetchAllRows(id, token, from, to){
   return rows;
 }
 
-async function igdb(endpoint, id, token, body){
-  const res = await fetch(`https://api.igdb.com/v4/${endpoint}`, {
-    method: 'POST',
-    headers: { 'Client-ID': id, 'Authorization': `Bearer ${token}`, 'Accept': 'application/json' },
-    body,
-  });
-  if (!res.ok) throw new Error(`IGDB ${endpoint}: HTTP ${res.status} ${await res.text()}`);
-  return res.json();
+// Steam store search sorted by wishlists ("filter=popularwishlist"): the
+// public ranking SteamDB also displays. Returns the app ids in rank order.
+export function parseSteamSearch(html){
+  const ids = [];
+  for (const tag of html.match(/<a[^>]*search_result_row[^>]*>/g) || []){
+    const m = /data-ds-appid="(\d+)"/.exec(tag);   // single apps only (bundles list several ids)
+    if (m) ids.push(Number(m[1]));
+  }
+  return ids;
 }
 
-// Finds IGDB's Steam wishlist popularity type by name (so we don't depend
-// on a hard-coded id), then fetches its values for our games. Any failure
-// just returns an empty map: the hype threshold still applies.
-async function fetchWishlist(id, token, gameIds){
-  const out = new Map();
+async function fetchSteamRanking(limit){
+  const rank = new Map();
+  const PAGE = 50;
   try {
-    const types = await igdb('popularity_types', id, token, 'fields id,name; limit 100;');
-    const wl = types.filter(t => /wishlist/i.test(t.name || ''));
-    console.log(`popularity types: ${types.map(t => `${t.id}=${t.name}`).join(', ')}`);
-    if (!wl.length){ console.log('No Steam wishlist popularity type found — using hypes only.'); return out; }
-    const typeIds = wl.map(t => t.id).join(',');
-    const ids = [...gameIds];
-    for (let i = 0; i < ids.length; i += 500){
-      await sleep(300);
-      const chunk = ids.slice(i, i + 500).join(',');
-      const rows = await igdb('popularity_primitives', id, token,
-        `fields game_id,value; where popularity_type = (${typeIds}) & game_id = (${chunk}); limit 500;`);
-      for (const r of rows) out.set(r.game_id, Math.max(out.get(r.game_id) || 0, Number(r.value) || 0));
+    for (let start = 0; start < limit; start += PAGE){
+      const url = `https://store.steampowered.com/search/results/?filter=popularwishlist&infinite=1&json=1&cc=us&l=english&start=${start}&count=${PAGE}`;
+      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Dispatch release calendar)' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const ids = parseSteamSearch((await res.json()).results_html || '');
+      if (!ids.length) break;
+      for (const id of ids) if (!rank.has(id)) rank.set(id, rank.size + 1);
+      await sleep(1000); // be gentle with the Steam store
     }
-    console.log(`Steam wishlist data found for ${out.size} games.`);
+    console.log(`Steam wishlist ranking: ${rank.size} games read.`);
   } catch (e){
-    console.log('Wishlist lookup failed, using hypes only:', e.message);
+    console.log(`Steam wishlist ranking failed after ${rank.size} games (${e.message}) — hypes still apply.`);
   }
-  return out;
+  return rank;
 }
 
 async function main(){
@@ -239,8 +241,8 @@ async function main(){
   const { from, to } = computeWindow();
   const token = await getToken(id, secret);
   const rows = await fetchAllRows(id, token, from, to);
-  const wishlist = await fetchWishlist(id, token, new Set(rows.map(r => r.game && r.game.id).filter(Boolean)));
-  const games = buildReleases(rows, wishlist);
+  const steamRank = await fetchSteamRanking(WISHLIST_TOP);
+  const games = buildReleases(rows, steamRank);
 
   const out = {
     generatedAt: new Date().toISOString(),
@@ -254,7 +256,7 @@ async function main(){
   for (const g of games) counts[g.date] = (counts[g.date] || 0) + 1;
   const busiest = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 5);
   console.log(`Busiest days: ${busiest.map(([d, n]) => `${d}=${n}`).join(', ')}`);
-  console.log(`Top games: ${games.slice().sort((a, b) => b.wishlist - a.wishlist || b.hypes - a.hypes).slice(0, 10).map(g => `${g.name} (wl ${g.wishlist}, hypes ${g.hypes})`).join(' | ')}`);
+  console.log(`Top wishlisted: ${games.filter(g => g.wlRank).sort((a, b) => a.wlRank - b.wlRank).slice(0, 10).map(g => `#${g.wlRank} ${g.name}`).join(' | ')}`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href){
