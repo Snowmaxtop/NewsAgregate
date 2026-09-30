@@ -10,7 +10,13 @@ const SOURCES = [
   { id: 'ign',       feed: 'https://fr.ign.com/feed.xml' },
   { id: 'rps',       feed: 'https://www.rockpapershotgun.com/feed/' },
   { id: 'gamedev',   feed: 'https://www.gamedeveloper.com/rss.xml' },
-  { id: 'gibiz',     feed: 'https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss' },
+  // Several candidate URLs: the freshest working feed wins (the old .rss
+  // URL still answers but may no longer be updated).
+  { id: 'gibiz',     feed: [
+    'https://www.gamesindustry.biz/feed',
+    'https://www.gamesindustry.biz/?format=rss',
+    'https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss',
+  ] },
   { id: 'jv',        feed: 'https://www.jeuxvideo.com/rss/rss.xml' },
   { id: 'gameblog',  feed: 'https://www.gameblog.fr/rssmap/rss_all.xml' },
   { id: 'gamekult',  feed: 'https://www.gamekult.com/feed.xml' },
@@ -76,7 +82,7 @@ const TAG_RULES = [
     ],
   },
   {
-    tag: 'sortie',
+    tag: 'release',
     keywords: [
       'date de sortie', 'release date', 'now available', 'out now',
       'available now', 'est disponible', 'sort le', 'arrive le',
@@ -146,8 +152,29 @@ function extractSummary(item) {
   return text;
 }
 
+// Only http(s) links/images are kept: anything else (javascript:, data:,
+// malformed) is dropped here, and the app escapes what remains.
+const httpUrl = (u) => (/^https?:\/\//i.test(String(u || '').trim()) ? String(u).trim() : null);
+
 async function fetchFeed(source) {
-  const res = await fetch(source.feed, {
+  const urls = Array.isArray(source.feed) ? source.feed : [source.feed];
+  let best = null, lastErr = null;
+  for (const url of urls) {
+    try {
+      const items = await fetchOneFeed(source, url);
+      const newest = items.reduce((mx, a) => (a.date > mx ? a.date : mx), '');
+      if (!best || newest > best.newest) best = { url, items, newest };
+    } catch (e) {
+      lastErr = e;
+      console.log(`  · ${source.id} ${url}: ${e.message}`);
+    }
+  }
+  if (!best) throw lastErr || new Error('no feed');
+  return best;
+}
+
+async function fetchOneFeed(source, feedUrl) {
+  const res = await fetch(feedUrl, {
     headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DispatchBot/1.0; +https://github.com/)' },
     signal: AbortSignal.timeout(15000),
   });
@@ -167,7 +194,7 @@ async function fetchFeed(source) {
       const title = textOf(item.title).trim();
       let link = item.link;
       if (typeof link === 'object') link = link['@_href'] || link['#text'] || '';
-      link = String(link || '').trim();
+      link = httpUrl(link) || '';
       const dateStr = item.pubDate || item.updated || item.published || '';
       const date = dateStr ? new Date(dateStr) : new Date();
       const summary = extractSummary(item);
@@ -176,7 +203,7 @@ async function fetchFeed(source) {
         link,
         date: isNaN(date) ? new Date().toISOString() : date.toISOString(),
         sourceId: source.id,
-        image: extractImage(item),
+        image: httpUrl(extractImage(item)),
         summary,
         tags: detectTags(title, summary),
       };
@@ -188,14 +215,19 @@ async function main() {
   const sourceStatus = {};
   let allArticles = [];
 
+  const sourceHealth = {};
   for (const source of SOURCES) {
     try {
-      const items = await fetchFeed(source);
+      const { url, items, newest } = await fetchFeed(source);
       allArticles.push(...items);
-      sourceStatus[source.id] = 'ok';
-      console.log(`✓ ${source.id}: ${items.length} articles`);
+      const ageH = newest ? Math.round((Date.now() - new Date(newest)) / 3600000) : null;
+      // "stale" = the feed answers but nothing new for 2+ days
+      sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > 48 ? 'stale' : 'ok';
+      sourceHealth[source.id] = { status: sourceStatus[source.id], url, items: items.length, newest: newest || null };
+      console.log(`${sourceStatus[source.id] === 'ok' ? '✓' : '⚠'} ${source.id}: ${items.length} items, newest ${newest || 'none'} (${ageH ?? '?'} h ago) via ${url}`);
     } catch (e) {
       sourceStatus[source.id] = 'fail';
+      sourceHealth[source.id] = { status: 'fail', error: e.message };
       console.error(`✗ ${source.id}: ${e.message}`);
     }
   }
@@ -215,10 +247,15 @@ async function main() {
     .slice(0, 1000); // safety cap in case a feed misbehaves; retention above is the real limit
 
   console.log(`Pruned to last ${RETENTION_DAYS} days: ${beforeCount} → ${allArticles.length} articles`);
+  for (const id of Object.keys(sourceHealth)) {
+    sourceHealth[id].kept = allArticles.filter((a) => a.sourceId === id).length;
+    if (sourceHealth[id].kept === 0) console.log(`⚠ ${id}: 0 articles kept in the last ${RETENTION_DAYS} day(s)`);
+  }
 
   const output = {
     generatedAt: new Date().toISOString(),
     sourceStatus,
+    sourceHealth,
     articles: allArticles,
   };
 

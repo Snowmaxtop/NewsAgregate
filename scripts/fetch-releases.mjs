@@ -203,34 +203,54 @@ async function fetchAllRows(id, token, from, to){
 }
 
 // Steam store search sorted by wishlists ("filter=popularwishlist"): the
-// public ranking SteamDB also displays. Returns the app ids in rank order.
+// public ranking SteamDB also displays. One entry per single app, in order.
+const decode = (t) => String(t || '')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'")
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ')
+  .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+  .replace(/\s+/g, ' ').trim();
+
 export function parseSteamSearch(html){
-  const ids = [];
-  for (const tag of html.match(/<a[^>]*search_result_row[^>]*>/g) || []){
-    const m = /data-ds-appid="(\d+)"/.exec(tag);   // single apps only (bundles list several ids)
-    if (m) ids.push(Number(m[1]));
+  const out = [];
+  const chunks = html.split(/(?=<a[^>]*search_result_row)/);
+  for (const chunk of chunks){
+    const tag = (chunk.match(/^<a[^>]*search_result_row[^>]*>/) || [])[0];
+    if (!tag) continue;
+    const id = /data-ds-appid="(\d+)"/.exec(tag);   // single apps only (bundles list several ids)
+    if (!id) continue;
+    const title = /<span class="title">([\s\S]*?)<\/span>/.exec(chunk);
+    const released = /class="[^"]*search_released[^"]*">([\s\S]*?)<\/div>/.exec(chunk);
+    const img = /<img[^>]*\ssrc="(https:\/\/[^"]+)"/.exec(chunk);
+    out.push({
+      appid: Number(id[1]),
+      name: title ? decode(title[1]) : '',
+      released: released ? decode(released[1]) : '',
+      img: img ? img[1].replace(/&amp;/g, '&') : null,
+    });
   }
-  return ids;
+  return out;
 }
 
 async function fetchSteamRanking(limit){
-  const rank = new Map();
+  const list = [];
+  const seen = new Set();
   const PAGE = 50;
   try {
     for (let start = 0; start < limit; start += PAGE){
       const url = `https://store.steampowered.com/search/results/?filter=popularwishlist&infinite=1&json=1&cc=us&l=english&start=${start}&count=${PAGE}`;
       const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Dispatch release calendar)' } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const ids = parseSteamSearch((await res.json()).results_html || '');
-      if (!ids.length) break;
-      for (const id of ids) if (!rank.has(id)) rank.set(id, rank.size + 1);
+      const rows = parseSteamSearch((await res.json()).results_html || '');
+      if (!rows.length) break;
+      for (const r of rows) if (!seen.has(r.appid) && list.length < limit){ seen.add(r.appid); list.push({ rank: list.length + 1, ...r }); }
       await sleep(1000); // be gentle with the Steam store
     }
-    console.log(`Steam wishlist ranking: ${rank.size} games read.`);
+    console.log(`Steam wishlist ranking: ${list.length} games read.`);
   } catch (e){
-    console.log(`Steam wishlist ranking failed after ${rank.size} games (${e.message}) — hypes still apply.`);
+    console.log(`Steam wishlist ranking failed after ${list.length} games (${e.message}) — hypes still apply.`);
   }
-  return rank;
+  return list;
 }
 
 async function main(){
@@ -241,8 +261,27 @@ async function main(){
   const { from, to } = computeWindow();
   const token = await getToken(id, secret);
   const rows = await fetchAllRows(id, token, from, to);
-  const steamRank = await fetchSteamRanking(WISHLIST_TOP);
+  const steamList = await fetchSteamRanking(WISHLIST_TOP);
+  const steamRank = new Map(steamList.map(r => [r.appid, r.rank]));
   const games = buildReleases(rows, steamRank);
+
+  // wishlists.json: the full Steam top list, linked to calendar games when
+  // we have them (so the app can open the game card or its calendar day).
+  const byApp = new Map();
+  for (const r of rows){ const a = r.game && steamAppIdOf(r.game); if (a != null && !byApp.has(a)) byApp.set(a, r.game.id); }
+  const inCal = new Map(games.map(g => [g.id, g.date]));
+  if (steamList.length){
+    writeFileSync('wishlists.json', JSON.stringify({
+      generatedAt: new Date().toISOString(),
+      games: steamList.map(r => {
+        const igdbId = byApp.get(r.appid);
+        return { ...r, igdbId: inCal.has(igdbId) ? igdbId : undefined, date: inCal.get(igdbId) };
+      }),
+    }));
+    console.log(`wishlists.json: ${steamList.length} games (${steamList.filter(r => inCal.has(byApp.get(r.appid))).length} in the calendar)`);
+  } else {
+    console.log('wishlists.json not rewritten (Steam unavailable) — keeping the previous file.');
+  }
 
   const out = {
     generatedAt: new Date().toISOString(),
