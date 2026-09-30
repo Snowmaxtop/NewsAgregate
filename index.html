@@ -730,6 +730,25 @@
   .top-liked{color:var(--unread);}
   .top-when{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);}
   .top-cal{color:var(--gamer);}
+  .top-sort{align-self:flex-start;padding:7px 10px;border-radius:8px;border:1px solid var(--line-strong);background:var(--ink-2);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:12px;}
+  .top-rank{display:flex;flex-direction:column;gap:2px;flex:0 0 52px;}
+  .mo{font-size:10px;font-weight:600;line-height:1.2;}
+  .mo-up{color:var(--ok);}
+  .mo-down{color:var(--unread);}
+  .mo-new{color:var(--gamer);letter-spacing:0.06em;}
+  .rel-mo{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--paper-dim);}
+  .like-stats{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ok);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .trk{margin:4px 0 8px;display:flex;flex-direction:column;gap:6px;}
+  .trk-empty{font-size:11px;color:var(--paper-dim);text-align:center;}
+  .trk-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;}
+  .trk-cell{display:flex;flex-direction:column;align-items:center;padding:6px 2px;border-radius:6px;background:var(--ink);border:1px solid var(--line);min-width:0;}
+  .trk-cell b{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:var(--paper);font-variant-numeric:tabular-nums;}
+  .trk-cell span{font-size:9px;color:var(--paper-dim);text-align:center;line-height:1.2;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+  .spark{width:100%;height:44px;display:block;}
+  .spark-area{fill:rgba(76,217,123,0.12);}
+  .spark-line{fill:none;stroke:var(--ok);stroke-width:1.6;vector-effect:non-scaling-stroke;}
+  .spark-dot{fill:var(--ok);}
+  .spark-cap{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--paper-dim);text-align:center;}
   .rel-btn.steam{background:var(--gamer);border-color:var(--gamer);color:#fff;}
 </style>
 </head>
@@ -1766,6 +1785,7 @@ function toggleGameLike(game){
     platforms: game.platforms || [], developers: game.developers || [],
     publishers: game.publishers || [], genres: game.genres || [],
     summary: game.summary || '', steam: game.steam || null, igdb: game.igdb || null,
+    steamAppId: game.steamAppId || null,
     dates: game.dates,
   });
   markDirty();

@@ -158,7 +158,17 @@
   }
 
   // ---- Top wishlists: Steam's most-wishlisted list (wishlists.json) ------
-  let top = null, topLoading = null, topQuery = '', topFilter = 'all';
+  let top = null, topLoading = null, topQuery = '', topFilter = 'all', topSort = 'rank';
+  const fmt = (n) => Number(n).toLocaleString('en-GB');
+  // ▲ places gained (green) / ▼ lost (red) / NEW entry, for a period key.
+  function deltaBadge(g, key = 'd7'){
+    if (g.new7 && key !== 'd1') return '<span class="mo mo-new" title="Entered the top list in the last 7 days">NEW</span>';
+    const d = g[key];
+    if (d == null || d === 0) return '';
+    const span = key === 'd1' ? '24 h' : key === 'd30' ? '30 days' : '7 days';
+    return d > 0 ? `<span class="mo mo-up" title="Up ${d} places in ${span}">▲${fmt(d)}</span>`
+                 : `<span class="mo mo-down" title="Down ${-d} places in ${span}">▼${fmt(-d)}</span>`;
+  }
   function loadTop(){
     if (top) return Promise.resolve();
     if (topLoading) return topLoading;
@@ -168,26 +178,46 @@
       .finally(() => { topLoading = null; });
     return topLoading;
   }
+  const SORTS = {
+    rank: { label: 'Rank', key: 'd7' },
+    d7:   { label: 'Rising · 7 days', key: 'd7' },
+    d1:   { label: 'Rising · 24 h', key: 'd1' },
+    d30:  { label: 'Rising · 30 days', key: 'd30' },
+    new:  { label: 'New entries', key: 'd7' },
+  };
   function topRows(){
     const q = topQuery.trim().toLowerCase();
-    return (top.games || []).filter(g =>
+    let rows = (top.games || []).filter(g =>
       (topFilter === 'all' || (topFilter === 'cal' ? !!g.date : !g.date)) &&
       (!q || g.name.toLowerCase().includes(q)));
+    if (topSort === 'new') rows = rows.filter(g => g.new7);
+    else if (topSort !== 'rank') rows = rows.filter(g => g[topSort] > 0).sort((a, b) => b[topSort] - a[topSort] || a.rank - b.rank);
+    return rows;
+  }
+  // Why a momentum list is empty: not enough daily history yet.
+  function momentumMissing(){
+    if (topSort === 'rank') return '';
+    const k = topSort === 'new' ? 'd7' : topSort;
+    if (top.momentumSince && top.momentumSince[k]) return '';
+    const days = { d1: 1, d7: 7, d30: 30 }[k];
+    return `<div class="empty">NOT ENOUGH HISTORY YET — this view needs ${days} day${days > 1 ? 's' : ''} of daily Steam snapshots. It fills in automatically.<span class="cursor"></span></div>`;
   }
   function drawTopList(){
     const el = container.querySelector('#topList');
     if (!el) return;
-    const rows = topRows();
-    el.innerHTML = rows.length ? rows.map(g => `
+    const missing = momentumMissing();
+    const rows = missing ? [] : topRows();
+    const key = SORTS[topSort].key;
+    el.innerHTML = missing || (rows.length ? rows.map(g => `
       <a class="top-row" href="https://store.steampowered.com/app/${g.appid}" target="_blank" rel="noopener" data-igdb="${g.igdbId ?? ''}">
-        <span class="top-rank">#${g.rank}</span>
+        <span class="top-rank">#${g.rank}${deltaBadge(g, key)}</span>
         <span class="top-img">${g.img ? `<img src="${esc(g.img)}" alt="" loading="lazy" onerror="this.remove()">` : ''}</span>
         <span class="top-body">
           <span class="top-name">${esc(g.name)}${g.igdbId != null && liked(g.igdbId) ? ' <span class="top-liked">♥</span>' : ''}</span>
           <span class="top-when">${g.date ? `<span class="top-cal">📅 ${esc(shortDate(g.date))}</span>` : esc(g.released || 'No date')}</span>
         </span>
       </a>`).join('')
-      : '<div class="empty">NO MATCHING GAMES<span class="cursor"></span></div>';
+      : '<div class="empty">NO MATCHING GAMES<span class="cursor"></span></div>');
     const n = container.querySelector('#topCount');
     if (n) n.textContent = `${rows.length} of ${(top.games || []).length}`;
   }
@@ -203,15 +233,94 @@
       <div class="top-tools">
         <input type="search" id="topSearch" class="top-search" placeholder="Search a game…" value="${esc(topQuery)}" autocomplete="off">
         <div class="top-chips">${chip('all', 'All')}${chip('cal', 'In calendar')}${chip('undated', 'No exact date')}</div>
+        <select id="topSort" class="top-sort" aria-label="Sort">${Object.entries(SORTS).map(([id, s]) => `<option value="${id}" ${id === topSort ? 'selected' : ''}>${s.label}</option>`).join('')}</select>
         <div class="top-meta"><span id="topCount"></span> · Steam ranking, updated ${new Date(top.generatedAt).toLocaleDateString('en-GB')}</div>
       </div>
       <div id="topList" class="top-list"></div>`;
     container.querySelector('#topSearch').addEventListener('input', (e) => { topQuery = e.target.value; drawTopList(); });
+    container.querySelector('#topSort').addEventListener('change', (e) => { topSort = e.target.value; drawTopList(); });
     drawTopList();
+  }
+
+  // ---- After-launch tracker (tracker.json, hourly) ----------------------
+  let tracker = null, trackerLoadedAt = 0, trackerLoading = null;
+  function loadTracker(){
+    if (tracker && Date.now() - trackerLoadedAt < REFETCH_MS) return Promise.resolve();
+    if (trackerLoading) return trackerLoading;
+    trackerLoading = fetch('./tracker.json', { cache: 'no-store' })
+      .then(r => r.ok ? r.json() : null)
+      .then(j => { if (j) { tracker = j; trackerLoadedAt = Date.now(); } })
+      .catch(() => {})
+      .finally(() => { trackerLoading = null; });
+    return trackerLoading;
+  }
+  const appOf = (g) => g.steamAppId || (Number((/store\.steampowered\.com\/app\/(\d+)/.exec(g.steam || '') || [])[1]) || null);
+  const statsOf = (g) => { const a = appOf(g); return a && tracker && tracker.games ? tracker.games[a] : null; };
+
+  // Derived numbers: peak over the last 7 days, review %, reviews added in 7 days.
+  function summarize(t){
+    const days = Object.keys(t.days || {}).sort();
+    const last7 = days.slice(-7);
+    const peak7 = Math.max(0, ...last7.map(d => t.days[d].peak || 0));
+    const pct = t.reviews && t.reviews.total ? Math.round(100 * t.reviews.positive / t.reviews.total) : null;
+    // Reviews added since the stored day closest to 7 days ago (span = real gap).
+    const withRev = days.filter(d => t.days[d].reviews != null);
+    const ref = withRev.length > 1 ? withRev.slice(-8)[0] : null;
+    const newRev7 = t.reviews && ref ? t.reviews.total - t.days[ref].reviews : null;
+    const span = ref ? Math.round((new Date(withRev[withRev.length - 1]) - new Date(ref)) / 86400000) : 0;
+    return { peak7, pct, newRev7, span, days };
+  }
+  function sparkline(t){
+    const days = Object.keys(t.days || {}).sort().slice(-30);
+    const vals = days.map(d => t.days[d].peak || 0);
+    if (vals.filter(Boolean).length < 2) return '';
+    const W = 260, H = 44, max = Math.max(...vals) || 1;
+    const x = (i) => (i / (vals.length - 1)) * (W - 4) + 2;
+    const y = (v) => H - 3 - (v / max) * (H - 8);
+    const pts = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    const last = vals.length - 1;
+    return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="Daily peak players, last ${vals.length} days">
+      <polygon points="2,${H - 3} ${pts} ${x(last).toFixed(1)},${H - 3}" class="spark-area"/>
+      <polyline points="${pts}" class="spark-line"/>
+      <circle cx="${x(last).toFixed(1)}" cy="${y(vals[last]).toFixed(1)}" r="2.6" class="spark-dot"/>
+    </svg>
+    <div class="spark-cap">Daily peak players · last ${vals.length} days · max ${fmt(max)}</div>`;
+  }
+  function statsLine(g){
+    const t = statsOf(g);
+    if (!t) return '';
+    const s = summarize(t);
+    const bits = [];
+    if (t.now != null) bits.push(`👥 ${fmt(t.now)} now`);
+    if (s.peak7) bits.push(`peak ${fmt(s.peak7)}`);
+    if (s.pct != null) bits.push(`👍 ${s.pct}%`);
+    return bits.length ? `<div class="like-stats">${bits.join(' · ')}</div>` : '';
+  }
+  function statsBlock(g){
+    const today = new Date().toISOString().slice(0, 10);
+    if (!(g.date && g.date <= today)) return '';
+    const t = statsOf(g);
+    if (!t){
+      const why = !appOf(g) ? 'No Steam page — player and review data only exist for Steam games.'
+        : liked(g.id) ? 'Tracking starts at the next hourly run after you save.' : 'Like this game to track its players and reviews.';
+      return `<div class="trk trk-empty">${why}</div>`;
+    }
+    const s = summarize(t);
+    const cell = (v, l) => `<div class="trk-cell"><b>${v}</b><span>${l}</span></div>`;
+    return `<div class="trk">
+      <div class="trk-grid">
+        ${cell(t.now != null ? fmt(t.now) : '—', 'players now')}
+        ${cell(s.peak7 ? fmt(s.peak7) : '—', 'peak · 7 days')}
+        ${cell(s.pct != null ? s.pct + '%' : '—', esc(t.reviews ? t.reviews.desc || 'reviews' : 'reviews'))}
+        ${cell(t.reviews ? fmt(t.reviews.total) : '—', s.newRev7 != null && s.span > 0 ? `reviews · +${fmt(s.newRev7)} in ${s.span} d` : 'reviews')}
+      </div>
+      ${sparkline(t)}
+    </div>`;
   }
 
   // ---- "My games": recap of liked games --------------------------------
   function drawLikes(){
+    if (!tracker && !trackerLoading) loadTracker().then(() => { if (view === 'likes' && tracker) drawLikes(); });
     const now = new Date();
     const today = keyOf(now.getFullYear(), now.getMonth(), now.getDate());
     const list = likedList();
@@ -225,6 +334,7 @@
           <div class="like-date">${esc(shortDate(g.date))} ${rankBadge(g)}</div>
           <div class="like-name">${esc(g.name)}</div>
           <div class="like-sub">${esc([...(g.developers || []).slice(0, 1), (g.platforms || []).join(' · ')].filter(Boolean).join(' — '))}</div>
+          ${statsLine(g)}
         </div>
         <button class="like-heart on" data-like="${g.id}" aria-label="Unlike">♥</button>
       </div>`;
@@ -380,7 +490,8 @@
         <div class="rel-meta">
           ${g.platforms.map(p => `<span class="rel-chip">${esc(p)}</span>`).join('')}
         </div>
-        ${g.wlRank ? `<div class="rel-rank-row">${rankBadge(g)}</div>` : ''}
+        ${g.wlRank ? `<div class="rel-rank-row">${rankBadge(g)}${g.wl7 ? ` <span class="rel-mo">${deltaBadge({ d7: g.wl7 })} in 7 days</span>` : ''}</div>` : ''}
+        ${statsBlock(g)}
         ${g.genres.length ? `<div class="rel-genres">${esc(g.genres.join(' · '))}</div>` : ''}
         ${g.summary ? `<p class="rel-summary">${esc(g.summary)}</p>` : ''}
         <div class="rel-links">${links}</div>
@@ -395,6 +506,11 @@
 
   function openGames(games, title){
     if (!games.length) return;
+    if (!tracker) loadTracker().then(() => {
+      if (tracker && overlay && overlay.classList.contains('show') && shown === games){
+        strip.innerHTML = games.map(card).join(''); goTo(idx, false);
+      }
+    });
     ensureOverlay();
     shown = games;
     overlay.querySelector('.rel-day').textContent = title;
