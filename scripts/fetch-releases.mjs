@@ -8,7 +8,7 @@
 //   { generatedAt, from, to, games: [{ id, name, date:"YYYY-MM-DD",
 //     platforms:[...], developers, publishers, cover, summary, genres:[...],
 //     hypes, wlRank (Steam most-wishlisted position), steam, igdb }] }
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { pathToFileURL } from 'url';
 
 // ---- Tunables ---------------------------------------------------------
@@ -153,6 +153,7 @@ export function buildReleases(rows, steamRank = new Map()){
         hypes: g.hypes || 0,
         wlRank: rankOf(g),
         steam: steamUrlOf(g),
+        steamAppId: steamAppIdOf(g) ?? undefined,
         igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
       });
     }
@@ -253,6 +254,50 @@ async function fetchSteamRanking(limit){
   return list;
 }
 
+// ---- Wishlist momentum ------------------------------------------------
+// wishlist-history.json keeps one snapshot per day: the Steam top list as
+// an array of app ids in rank order (position + 1 = rank). ~12 KB a day.
+export const HISTORY_DAYS = 40;
+
+export function addDays(ymdStr, n){
+  const d = new Date(ymdStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+export function updateHistory(hist, day, appids){
+  const days = { ...(hist && hist.days) , [day]: appids };
+  const keys = Object.keys(days).sort().slice(-HISTORY_DAYS);
+  return { days: Object.fromEntries(keys.map(k => [k, days[k]])) };
+}
+
+// Snapshot from k days before `day` (tolerating up to 2 missing days).
+// Returns { date, rank: Map<appid, rank> } or null if there's none yet.
+export function snapshotBefore(hist, day, k){
+  const target = addDays(day, -k), floor = addDays(target, -2);
+  const key = Object.keys(hist.days || {}).filter(d => d <= target && d >= floor).sort().pop();
+  if (!key) return null;
+  return { date: key, rank: new Map(hist.days[key].map((id, i) => [id, i + 1])) };
+}
+
+// For each ranked app: dN = places gained over N days (positive = climbing),
+// null when it wasn't in the list back then; new7 = entered in the last 7 days.
+export function computeMomentum(hist, day, list){
+  const snaps = { d1: snapshotBefore(hist, day, 1), d7: snapshotBefore(hist, day, 7), d30: snapshotBefore(hist, day, 30) };
+  const out = new Map();
+  for (const r of list){
+    const m = {};
+    for (const [k, snap] of Object.entries(snaps)){
+      if (!snap) continue;
+      const prev = snap.rank.get(r.appid);
+      m[k] = prev ? prev - r.rank : null;
+    }
+    if (snaps.d7) m.new7 = !snaps.d7.rank.has(r.appid);
+    out.set(r.appid, m);
+  }
+  return { byApp: out, since: Object.fromEntries(Object.entries(snaps).map(([k, v]) => [k, v ? v.date : null])) };
+}
+
 async function main(){
   const id = process.env.TWITCH_CLIENT_ID;
   const secret = process.env.TWITCH_CLIENT_SECRET;
@@ -265,6 +310,22 @@ async function main(){
   const steamRank = new Map(steamList.map(r => [r.appid, r.rank]));
   const games = buildReleases(rows, steamRank);
 
+  // Daily rank history → momentum (only when Steam answered today).
+  const today = new Date().toISOString().slice(0, 10);
+  let momentum = { byApp: new Map(), since: {} };
+  if (steamList.length){
+    let hist = { days: {} };
+    try { if (existsSync('wishlist-history.json')) hist = JSON.parse(readFileSync('wishlist-history.json', 'utf8')); } catch (e) { console.log('wishlist-history.json unreadable, starting fresh'); }
+    momentum = computeMomentum(hist, today, steamList);
+    hist = updateHistory(hist, today, steamList.map(r => r.appid));
+    writeFileSync('wishlist-history.json', JSON.stringify(hist));
+    console.log(`Wishlist history: ${Object.keys(hist.days).length} day(s) stored; comparing with ${JSON.stringify(momentum.since)}`);
+    for (const g of games){
+      const m = g.steamAppId != null && momentum.byApp.get(g.steamAppId);
+      if (m && g.wlRank){ g.wl1 = m.d1; g.wl7 = m.d7; }
+    }
+  }
+
   // wishlists.json: the full Steam top list, linked to calendar games when
   // we have them (so the app can open the game card or its calendar day).
   const byApp = new Map();
@@ -273,9 +334,10 @@ async function main(){
   if (steamList.length){
     writeFileSync('wishlists.json', JSON.stringify({
       generatedAt: new Date().toISOString(),
+      momentumSince: momentum.since,
       games: steamList.map(r => {
         const igdbId = byApp.get(r.appid);
-        return { ...r, igdbId: inCal.has(igdbId) ? igdbId : undefined, date: inCal.get(igdbId) };
+        return { ...r, ...momentum.byApp.get(r.appid), igdbId: inCal.has(igdbId) ? igdbId : undefined, date: inCal.get(igdbId) };
       }),
     }));
     console.log(`wishlists.json: ${steamList.length} games (${steamList.filter(r => inCal.has(byApp.get(r.appid))).length} in the calendar)`);
@@ -295,6 +357,8 @@ async function main(){
   for (const g of games) counts[g.date] = (counts[g.date] || 0) + 1;
   const busiest = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 5);
   console.log(`Busiest days: ${busiest.map(([d, n]) => `${d}=${n}`).join(', ')}`);
+  const risers = steamList.map(r => ({ ...r, ...momentum.byApp.get(r.appid) })).filter(r => r.d7 > 0).sort((a, b) => b.d7 - a.d7).slice(0, 10);
+  if (risers.length) console.log(`Biggest 7-day risers: ${risers.map(r => `${r.name} ▲${r.d7} → #${r.rank}`).join(' | ')}`);
   console.log(`Top wishlisted: ${games.filter(g => g.wlRank).sort((a, b) => a.wlRank - b.wlRank).slice(0, 10).map(g => `#${g.wlRank} ${g.name}`).join(' | ')}`);
 }
 
