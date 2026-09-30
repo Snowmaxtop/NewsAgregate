@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T15:36:46.345Z",
+  "generatedAt": "2026-09-30T16:15:23.875Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -18,21 +18,21 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-09-30T14:07:21.000Z",
-      "kept": 34
+      "newest": "2026-09-30T16:00:33.000Z",
+      "kept": 37
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-09-30T15:30:00.000Z",
+      "newest": "2026-09-30T16:07:02.000Z",
       "kept": 16
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-09-30T15:36:43.351Z",
+      "newest": "2026-09-30T16:15:19.438Z",
       "kept": 22
     },
     "gibiz": {
@@ -46,36 +46,36 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-09-30T12:15:09.000Z",
+      "newest": "2026-09-30T14:00:05.000Z",
       "kept": 20
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-09-30T14:17:00.000Z",
+      "newest": "2026-09-30T15:32:34.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-09-30T15:15:00.000Z",
+      "newest": "2026-09-30T16:00:00.000Z",
       "kept": 15
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-09-30T15:30:05.000Z",
+      "newest": "2026-09-30T16:00:02.000Z",
       "kept": 20
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-09-30T15:21:13.000Z",
-      "kept": 39
+      "newest": "2026-09-30T15:58:32.000Z",
+      "kept": 38
     },
     "eurogamer": {
       "status": "ok",
@@ -88,96 +88,15 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-09-30T15:30:17.000Z",
+      "newest": "2026-09-30T16:03:57.000Z",
       "kept": 10
     }
   },
   "articles": [
     {
-      "title": "Game Conference MX (GCMX)",
-      "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "gamescom",
-      "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "SLICE",
-      "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Unreal Fest",
-      "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "GodotCon",
-      "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "NarraScope",
-      "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "BitSummit",
-      "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Tokyo Game Show (TGS)",
-      "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "PAX West",
-      "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-09-30T15:36:43.351Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
       "title": "gamescom latam",
       "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +105,7 @@
     {
       "title": "The Game Awards",
       "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,7 +114,7 @@
     {
       "title": "Games 4 Change Festival",
       "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -204,7 +123,7 @@
     {
       "title": "ChinaJoy",
       "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -213,7 +132,7 @@
     {
       "title": "Licensing Expo",
       "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -222,7 +141,7 @@
     {
       "title": "MDEV",
       "link": "https://www.gamedeveloper.comwww.mdevconf.com",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -231,7 +150,7 @@
     {
       "title": "Summer Game Fest",
       "link": "https://www.gamedeveloper.comprogram/summer-game-fest",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4fed14edbd323b21/6aac6d23867947be656e1d4c/summergamefest.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -240,7 +159,7 @@
     {
       "title": "London Games Festival",
       "link": "https://www.gamedeveloper.comgames.london",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltefb25f3b346da572/6aac6bebe3c5fa0f98d0b127/LGF-Logo-Colour_menu2026-4.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -249,7 +168,7 @@
     {
       "title": "PAX East",
       "link": "https://www.gamedeveloper.com/series/pax-east",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt89574081f4ed4675/6aac6a9da9348373f30ef511/DatelessEastLogo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -258,10 +177,226 @@
     {
       "title": "D.I.C.E. Summit",
       "link": "https://www.gamedeveloper.com/keyword/dice-summit",
-      "date": "2026-09-30T15:36:43.351Z",
+      "date": "2026-09-30T16:15:19.438Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt70a9c2320cf90280/6aac65756c4faf0726cd4bc9/dice-summit-logo-blue.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Game Conference MX (GCMX)",
+      "link": "https://www.gamedeveloper.com/events/untitled",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "gamescom",
+      "link": "https://www.gamedeveloper.com/events/gamescom",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "SLICE",
+      "link": "https://www.gamedeveloper.com/events/slice",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Unreal Fest",
+      "link": "https://www.gamedeveloper.com/events/unreal-fest",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "GodotCon",
+      "link": "https://www.gamedeveloper.comconference.godotengine.org",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "NarraScope",
+      "link": "https://www.gamedeveloper.comnarrascope.org",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "BitSummit",
+      "link": "https://www.gamedeveloper.combitsummit.org",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Tokyo Game Show (TGS)",
+      "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "PAX West",
+      "link": "https://www.gamedeveloper.comwest.paxsite.com",
+      "date": "2026-09-30T16:15:19.437Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "First-person RPG Queen's Domain pitches you against an island of gorgeous freaks with naught but a flying sword and infinite throwing daggers",
+      "link": "https://www.rockpapershotgun.com/first-person-rpg-queens-domain-pitches-you-against-an-island-of-gorgeous-freaks-with-naught-but-a-flying-sword-and-infinite-throwing-daggers",
+      "date": "2026-09-30T16:07:02.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/queens-domain.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Fantasy RPG Queen's Domain is frequently likened by certain other websites to From Software's King's Field games and The Elder Scrolls 3: Morrowind , so I'm going to put my nose…",
+      "tags": []
+    },
+    {
+      "title": "PlayStation Plus October 2026 Free Games Lineup Officially Revealed",
+      "link": "https://www.polygon.com/playstation-plus-october-2026-games-announced-ps4-ps5-free-essential/",
+      "date": "2026-09-30T16:03:57.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/hunt-showdown-1896-screenshot.jpg",
+      "summary": "Sony's free PlayStation Plus Essential games for October 2026 have been announced, and include three wildly different games.",
+      "tags": []
+    },
+    {
+      "title": "The Pokémon Center Opens Pre-Orders For Delta Reign, The Next Big TCG Set",
+      "link": "https://www.polygon.com/pokemon-center-delta-reign-preorder-tcg-error-15-17-drawing/",
+      "date": "2026-09-30T16:01:29.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/rayquaza_m07.png",
+      "summary": "TPC begins presale for the set releasing after the Pokémon 30th anniversary collection, Delta Reign, and it includes ETBs and Booster Bundles",
+      "tags": []
+    },
+    {
+      "title": "Control Resonant Hides Its Best Part 15 Hours Into the Game",
+      "link": "https://www.polygon.com/control-resonant-the-underpass-opinion/",
+      "date": "2026-09-30T16:01:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ctrl_r_launch_4k_media_05.png",
+      "summary": "Control Resonant's finest hours happen in a strange area that trades combat for surreal platforming.",
+      "tags": []
+    },
+    {
+      "title": "Avatar: Seven Havens Episode Titles Revealed (Exclusive)",
+      "link": "https://www.polygon.com/avatar-seven-havens-episode-titles-exclusive-reveal/",
+      "date": "2026-09-30T16:01:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/mv5bytqyotnjn2ytzme4yy00mgzhlwfjzmqtzdmzndrhymqwnjrlxkeyxkfqcgc-_v1_.jpg",
+      "summary": "Stay locked to this page as we team-up with Paramount to announce the episode titles for Avatar: Seven Havens all week long",
+      "tags": []
+    },
+    {
+      "title": "Elta Defy All Gods - screenshot éditeur",
+      "link": "https://fr.ign.com/elta-defy-all-gods/92596/elta-defy-all-gods-screenshot-editeur",
+      "date": "2026-09-30T16:00:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/ss-6d6ec7d58683e83f91f1ee2afcd16d7a8e1303841920x1080_ga2r.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Preview Elta Defy All Gods : une aventure à l’ancienne | Gamescom 26",
+      "link": "https://fr.ign.com/elta-defy-all-gods/92595/preview-elta-defy-all-gods-une-aventure-a-lancienne-gamescom-26",
+      "date": "2026-09-30T16:00:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/page-bg-raw_xbw2.jpg",
+      "summary": "Entre combats dynamiques, platforming et exploration, Elta: Defy All Gods retrouve avec plaisir la formule des action-aventure à l’ancienne.",
+      "tags": []
+    },
+    {
+      "title": "Directive 8020 Will Finally Add Online Multiplayer Just In Time For Spooky Season",
+      "link": "https://kotaku.com/directive-8020-will-finally-add-online-multiplayer-just-in-time-for-spooky-season-2000738639",
+      "date": "2026-09-30T16:00:02.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/05/faceinfestation_screenshot_d8020.jpg",
+      "summary": "While the game's Movie Night mode supports local co-op, Supermassive will add its online component this October",
+      "tags": []
+    },
+    {
+      "title": "'GTA 5' Modder Cancels Switch Port After Mocking Rockstar Backfires",
+      "link": "https://www.polygon.com/gta-5-nintendo-switch-mod-m0jso-project-canceled-taunt-rockstar/",
+      "date": "2026-09-30T16:00:02.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/2744438/3.1370973805.jpg",
+      "summary": "The GTA modder mistakenly thought Rockstar wouldn't go after someone in a third-world country over a Nintendo Switch project",
+      "tags": []
+    },
+    {
+      "title": "Preview : Elta : Defy All Gods est la fusion idéale entre Metroid Prime et Streets of Rage (si, si)",
+      "link": "https://www.gamekult.com/jeux/elta-defy-all-gods-3050889621/preview-3050871841.html",
+      "date": "2026-09-30T16:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/preview/30/3050871841/elta-defy-all-gods-99aa5483__800_800__626-86-1317-776.jpg",
+      "summary": "Annoncé à l'Opening Night Live de la Gamescom 2026, Elta : Defy All Gods ne nous avait pas spécialement tapé dans l'œil ; à vrai dire, nous nous sommes inscrits à la présentation…",
+      "tags": []
+    },
+    {
+      "title": "Thanks Logitech, your new AI-fueled game clipping software makes me look trash at Counter-Strike, but I'mma keep it installed",
+      "link": "https://www.pcgamer.com/software/ai/thanks-logitech-your-new-ai-fueled-game-clipping-software-makes-me-look-trash-at-counter-strike-but-imma-keep-it-installed/",
+      "date": "2026-09-30T15:58:32.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/upL4hKeyXzbpXXZJTed3SX-1920-80.jpg",
+      "summary": "It works pretty well as a little manual recorder and editor.",
+      "tags": []
+    },
+    {
+      "title": "Légendes Pokémon Z-A – Nintendo Switch 2 Edition + Mega Dimension : un bundle en version physique annoncé",
+      "link": "https://fr.ign.com/pokemon-legends-z-a/92709/legendes-pokemon-z-a-nintendo-switch-2-edition-mega-dimension-un-bundle-en-version-physique-annonce",
+      "date": "2026-09-30T15:48:18.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/p/pokemon-le/pokemon-legends-z-a-nintendo-switch-2-edition-mega-dimension_c4pq.jpg",
+      "summary": "Le jeu + son DLC dans une même boîte.",
+      "tags": []
+    },
+    {
+      "title": "Asha Sharma Says &#8216;Xbox Is Not For Sale&#8217; Amid Concerns Microsoft&#8217;s Gaming Business Is Being Streamlined For A Spin-Off",
+      "link": "https://kotaku.com/asha-sharma-says-xbox-is-not-for-sale-amid-concerns-microsofts-gaming-business-is-being-streamlined-for-a-spin-off-2000738651",
+      "date": "2026-09-30T15:43:04.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/08/asha-sharma-xbox-1280x723.jpg",
+      "summary": "Xbox is already looking very different than it did a year ago",
+      "tags": []
+    },
+    {
+      "title": "'Reacher' Meets 'The Terminator' in Prime Video's New Christmas Heist Movie",
+      "link": "https://www.polygon.com/the-man-bag-prime-video-teaser-trailer/",
+      "date": "2026-09-30T15:41:51.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/santa-arnold-schwarzenegger-stands-in-his-sleigh-in-the-man-with-the-bag.jpg",
+      "summary": "Arnold Schwarzenegger and Alan Ritchson will team up for a Prime Video Christmas heist movie",
+      "tags": []
+    },
+    {
+      "title": "PS Plus : les jeux gratuits d'octobre 2026 annoncés, vous risquez d'être déçus",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-jeux-gratuits-octobre-2026-annonce-724139?utm_source=RSS",
+      "date": "2026-09-30T15:32:34.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/698820_6870fc8f6155c.jpg",
+      "summary": "Réglé comme une horloge, PlayStation a dévoilé la liste des trois jeux gratuits offerts à tous les abonnés PS Plus en octobre 2026. Une sélection forte en ce mois chargé ?",
       "tags": []
     },
     {
@@ -298,6 +433,15 @@
       "sourceId": "eurogamer",
       "image": "https://assetsio.gnwcdn.com/deadlock-hidden-king.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Valve's new MOBA Deadlock - a sort of cross between Dota and Overwatch - might not be fully released yet, or even accessible by vast portions of the public,but that hasn't stopped…",
+      "tags": []
+    },
+    {
+      "title": "Les réalisateurs d’Avengers : Doomsday dévoilent la durée approximative du film et laissent entrevoir une « fin très surprenante »",
+      "link": "https://fr.ign.com/avengers-doomsday/92708/les-realisateurs-davengers-doomsday-devoilent-la-duree-approximative-du-film-et-laissent-entrevoir-u",
+      "date": "2026-09-30T15:22:51.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/a/avengers-d/avengers-doomsday-directors-reveal-approximate-runtime-tease_m7q9.jpg",
+      "summary": "« C’est un récit captivant et dynamique. »",
       "tags": []
     },
     {
@@ -393,15 +537,6 @@
       "tags": []
     },
     {
-      "title": "Sydney Sweeney’s The Housemaid Sets Official Streaming Date on HBO Max",
-      "link": "https://www.polygon.com/the-housemaid-movie-sydney-sweeney-amanda-seyfried-hbo-streaming-date/",
-      "date": "2026-09-30T14:35:36.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mcdhous_lg004.jpg",
-      "summary": "The Housemaid starring Sydney Sweeney and Amanda Seyfried just got an HBO Max streaming date for Oct. 9, 2026.",
-      "tags": []
-    },
-    {
       "title": "A Pikachu Pokémon Card Just Sold For An Inexplicable $8.4 Million, The Second-Highest Price Of All Time",
       "link": "https://kotaku.com/raincoat-pikachu-art-academy-psa-10-sale-fanatics-collect-pokemon-tcg-2000738605",
       "date": "2026-09-30T14:30:34.000Z",
@@ -426,15 +561,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/J3XzypGr7cQMAQUTepX7Le-1920-80.jpg",
       "summary": "Arc Raiders had a meteoric rise, but with that came struggles.",
-      "tags": []
-    },
-    {
-      "title": "Sony Officially Adds Requirement for Buying PS5 Pro",
-      "link": "https://www.polygon.com/sony-ps5-pro-requirement/",
-      "date": "2026-09-30T14:23:39.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2024/09/PS5-Pro-2.jpg",
-      "summary": "Gamers must enter a lottery to win a chance to purchase a PS5 Pro in Japan",
       "tags": []
     },
     {
@@ -492,15 +618,6 @@
       "tags": []
     },
     {
-      "title": "Danny Boyle Officially Updates Fans on 28 Years Later 3's Fate",
-      "link": "https://www.polygon.com/28-years-later-3-danny-boyle-update-cillian-murphy/",
-      "date": "2026-09-30T14:02:04.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/28-years-later-2.jpg",
-      "summary": "Danny Boyle promises a sequel to 28 Years Later: The Bone Temple is going to happen with Cillian Murphy",
-      "tags": []
-    },
-    {
       "title": "Communiqué de presse - Voilà tout ce qui est inclus dans l'édition complète de Total War : Shogun 2",
       "link": "https://www.gamekult.com/actualite/voila-tout-ce-qui-est-inclus-dans-l-edition-complete-de-total-war-shogun-2-3050872266.html",
       "date": "2026-09-30T14:02:00.000Z",
@@ -521,21 +638,21 @@
       "tags": []
     },
     {
-      "title": "Resident Evil Meets Little Nightmares in Terrifying New Horror Game",
-      "link": "https://www.polygon.com/end-of-abyss-review/",
-      "date": "2026-09-30T14:00:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/end-of-abyss-sewer-tunnel.png",
-      "summary": "End of Abyss captures the terror of Little Nightmares and bottles it up inside an atmospheric, though at times underwhelming, Metroidvania.",
-      "tags": []
-    },
-    {
       "title": "I&#8217;m Having A Great Time With This Musical Witch School Farm Sim Even If I&#8217;m Always Late To Class",
       "link": "https://kotaku.com/im-happily-attending-the-musical-magical-garden-school-where-no-one-is-mad-if-im-hours-late-to-class-2000738461",
       "date": "2026-09-30T14:00:13.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/09/glimmerwick2-1280x720.jpeg",
       "summary": "Songs of Glimmerwick combines the steady march of a day-by-day plot with the freedom and whimsy of farming sims",
+      "tags": []
+    },
+    {
+      "title": "Un nouveau fléau menace le jeu vidéo : les jeux sont plagiés avant même leur sortie... à cause de l'IA",
+      "link": "https://www.jeuxvideo.com/news/2106547/un-nouveau-fleau-menace-le-jeu-video-les-jeux-sont-plagies-avant-meme-leur-sortie-a-cause-de-l-ia.htm",
+      "date": "2026-09-30T14:00:05.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179076/1790757895-1875-card.jpg",
+      "summary": "Se faire copier après avoir rencontré le succès n'a rien de nouveau dans le jeu vidéo. Mais sur Steam, un phénomène beaucoup plus inquiétant prend de l'ampleur : certains…",
       "tags": []
     },
     {
@@ -593,15 +710,6 @@
       "tags": []
     },
     {
-      "title": "Crimson Desert's Charting the Unknown DLC Officially Delayed",
-      "link": "https://www.polygon.com/crimson-desert-enhanced-charting-the-unknown-expansion-delayed/",
-      "date": "2026-09-30T13:40:55.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/crimson-desert-charting-the-unknown-underwater-exploration.jpg",
-      "summary": "Pearl Abyss has delayed Crimson Desert's Charting the Unknown expansion two weeks before it was set to be released.",
-      "tags": []
-    },
-    {
       "title": "Grasshopper Manufacture Goes Indie Again After Split With NetEase As The Chinese Internet Giant Retreats From Japanese Game Development",
       "link": "https://kotaku.com/grasshopper-manufacture-goes-indie-again-after-split-with-netease-as-the-chinese-internet-giant-retreats-japanese-game-development-2000738619",
       "date": "2026-09-30T13:38:09.000Z",
@@ -617,15 +725,6 @@
       "sourceId": "rps",
       "image": "https://assetsio.gnwcdn.com/ck3-header-02.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "My very soul has been cleft into pieces on this day. January 3rd, 902 AD. First, my Christian faith fractured in twain. I stand in Rome, head of the Roman Rite and now the leader…",
-      "tags": []
-    },
-    {
-      "title": "Switch 2 players Can Claim a Free Copy of The Witcher 3 Thanks to a Loophole",
-      "link": "https://www.polygon.com/the-witcher-3-remastered-switch-2-loophole-explained/",
-      "date": "2026-09-30T13:27:06.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/the-witcher-3-songs-of-the-past-key-art-cropped.png",
-      "summary": "A glitch lets Switch 2 owners redeem a copy of The Witcher 3: Wild Hunt Remastered even if they don't own the original.",
       "tags": []
     },
     {
@@ -1102,15 +1201,6 @@
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/708612_6957806a5f602.webp",
       "summary": "Pour les abonnés d’Apple TV, le mois d’octobre 2026 sera l’occasion de découvrir Nocturne, nouvelle série événement de la plateforme dont la première bande-annonce est tombée.",
-      "tags": []
-    },
-    {
-      "title": "GUIDE Disney Dreamlight Valley : comment préparer un Ragoût de serpent et d’araignée pour terminer le défi 2 d'Oogie Boogie ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-disney-dreamlight-valley-defi-2-oogie-boogie-724107?utm_source=RSS",
-      "date": "2026-09-30T09:07:49.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/723201_6aacf3b987c17.png",
-      "summary": "Comment préparer un Ragoût de serpent et d’araignée afin de terminer la deuxième quête d’Oogie Boogie dans Disney Dreamlight Valley ? Voici la soluce complète du défi de la…",
       "tags": []
     },
     {
@@ -1615,15 +1705,6 @@
       "tags": []
     },
     {
-      "title": "Dressmaker, As Told By Steam Reviews: &#8216;I Am A Straight, White Man And This Is My Game Of The Year So Far&#8217;",
-      "link": "https://kotaku.com/dressmaker-as-told-by-steam-reviews-2000738374",
-      "date": "2026-09-29T20:00:43.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/dressmaker-1280x720.jpg",
-      "summary": "The dress-making game is one of the frontrunners for stealth indie hit of the year",
-      "tags": []
-    },
-    {
       "title": "Former Dying Light franchise lead joins Bloober Team horror imprint Broken Mirror Games",
       "link": "https://www.gamedeveloper.com/business/former-dying-light-franchise-lead-joins-bloober-team-horror-imprint-broken-mirror-games",
       "date": "2026-09-29T20:00:00.000Z",
@@ -1659,15 +1740,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/Efk6ecKv8ZzZW5QLWzLVA6-1920-80.jpg",
       "summary": "CD Projekt urges Witcher 3 Remastered owners to update their drivers",
-      "tags": []
-    },
-    {
-      "title": "15 Things The Legend Of Zelda: Ocarina Of Time Remake Is Changing From The Original On N64",
-      "link": "https://kotaku.com/15-changes-in-the-legend-of-zelda-ocarina-of-time-remake-2000738354",
-      "date": "2026-09-29T19:30:39.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/NS2_TheLegendofZeldaOcarina1-1280x720.jpg",
-      "summary": "Song of time",
       "tags": []
     },
     {
@@ -1905,15 +1977,6 @@
       "tags": []
     },
     {
-      "title": "Test Aniimo : bien plus qu’un simple monster game",
-      "link": "https://fr.ign.com/aniimo/92645/test-aniimo-bien-plus-quun-simple-monster-game",
-      "date": "2026-09-29T16:16:14.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/aniimo-key-art_gwsw.jpg",
-      "summary": "Aniimo réussit quand il laisse ses créatures prendre les commandes. Malgré quelques défauts, le voyage sur Idyll reste généreux, plaisant et suffisamment personnel pour se…",
-      "tags": []
-    },
-    {
       "title": "ANIIMO - introduction PS5",
       "link": "https://fr.ign.com/aniimo/92659/aniimo-introduction-ps5",
       "date": "2026-09-29T16:16:14.000Z",
@@ -1923,59 +1986,12 @@
       "tags": []
     },
     {
-      "title": "Set up your own ramen bar and explore a voxel cyberpunk city in the slice-of-lifey Nivalis Nights, out now",
-      "link": "https://www.rockpapershotgun.com/set-up-your-own-ramen-bar-and-explore-a-voxel-cyberpunk-city-in-the-slice-of-lifey-nivalis-nights-out-now",
-      "date": "2026-09-29T16:08:50.000Z",
-      "sourceId": "rps",
-      "image": "https://assetsio.gnwcdn.com/nivalis-opening-moments.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Has the pre-GTA 6 autumn exhaustion hit you yet? There's already been a lot of games this month, but this train stops for no one, especially with Rockstar's behemoth looming over…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "The Division 2 : Echoes of Central Park sort du bois, voilà le programme de votre excursion à New York",
-      "link": "https://www.gamekult.com/actualite/the-division-2-echoes-of-central-park-sort-du-bois-voila-le-programme-de-votre-excursion-a-new-york-3050872252.html",
-      "date": "2026-09-29T16:06:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872252/c66fe215__800_800__217-65-1109-956.jpg",
-      "summary": "Dévoilée pendant la Gamescom 2026, l'extension The Division 2 : Echoes of Central Park détaille son contenu. Endgame, nouvelle carte, compagnons d'armes : voilà le topo.",
-      "tags": []
-    },
-    {
-      "title": "God of War Laufey, les précommandes sont lancées : voici le prix de toutes les versions",
-      "link": "https://www.jeuxvideo.com/news/2106604/god-of-war-laufey-les-precommandes-sont-lancees-voici-le-prix-de-toutes-les-versions.htm",
-      "date": "2026-09-29T16:00:11.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179069/1790691411-7941-card.jpg",
-      "summary": "Les précommandes de God of War Laufey sont officiellement lancées. Entre l'édition Standard, la déclinaison Numérique Deluxe et l'option de mise à niveau, voici tout ce qu'il faut…",
-      "tags": []
-    },
-    {
-      "title": "Discord's new resource-light 'Game Mode' doesn't mention anything about reducing memory usage",
-      "link": "https://www.pcgamer.com/hardware/discords-new-resource-light-game-mode-doesnt-mention-anything-about-reducing-memory-usage/",
-      "date": "2026-09-29T15:57:46.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XnJ9Lq678VBAUso2zwfamS-1920-80.jpg",
-      "summary": "Doh!",
-      "tags": []
-    },
-    {
-      "title": "Shogun 2 Complete Edition is remaking all cinematics in traditional Japanese woodblock style",
-      "link": "https://www.pcgamer.com/games/strategy/shogun-2-complete-edition-is-remaking-all-cinematics-in-traditional-japanese-woodblock-style/",
-      "date": "2026-09-29T15:43:36.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/5sUa9sf2su6gLr2AwwS5AB-1920-80.png",
-      "summary": "Shogun 2 Complete Edition is remaking all cinematics in traditional Japanese woodblock style",
-      "tags": []
-    },
-    {
-      "title": "The Witcher 3 Remastered a déjà battu son précédent record de joueurs simultanés sur Steam",
-      "link": "https://fr.ign.com/the-witcher-3-wild-hunt-remastered/92654/the-witcher-3-remastered-a-deja-battu-son-precedent-record-de-joueurs-simultanes-sur-steam",
-      "date": "2026-09-29T15:40:27.000Z",
+      "title": "Test Aniimo : bien plus qu’un simple monster game",
+      "link": "https://fr.ign.com/aniimo/92645/test-aniimo-bien-plus-quun-simple-monster-game",
+      "date": "2026-09-29T16:16:14.000Z",
       "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-witche/the-witcher-3-remastered-has-already-broken-steam-concurrent_fth1.jpg",
-      "summary": "Un signe positif.",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/aniimo-key-art_gwsw.jpg",
+      "summary": "Aniimo réussit quand il laisse ses créatures prendre les commandes. Malgré quelques défauts, le voyage sur Idyll reste généreux, plaisant et suffisamment personnel pour se…",
       "tags": []
     }
   ]
