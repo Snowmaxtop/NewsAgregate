@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Build releases.json from IGDB
+      - name: Build releases.json + wishlists.json
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
@@ -31,6 +31,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add releases.json
+          if [ -f wishlists.json ]; then git add wishlists.json; fi
           git diff --staged --quiet && exit 0
           git commit -m "chore: refresh releases.json [skip ci]"
           # The articles workflow pushes every 20 min: rebase onto it if needed.
