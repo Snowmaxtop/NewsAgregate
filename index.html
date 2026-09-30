@@ -712,6 +712,24 @@
   .rel-rank{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;padding:1px 6px;border-radius:4px;background:rgba(255,209,102,0.14);color:var(--star);vertical-align:middle;white-space:nowrap;}
   .rel-rank-row{text-align:center;margin-bottom:6px;}
   .like-date .rel-rank{text-transform:none;margin-left:4px;}
+  .rel-seg button{padding:9px 6px;font-size:11px;white-space:nowrap;}
+  .top-tools{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+  .top-search{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line-strong);background:var(--ink-2);color:var(--paper);font-family:'IBM Plex Sans',sans-serif;font-size:16px;}
+  .top-search:focus{outline:none;border-color:var(--gamer);}
+  .top-chips{display:flex;gap:6px;flex-wrap:wrap;}
+  .top-chip{padding:6px 11px;border-radius:14px;border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;}
+  .top-chip.on{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .top-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--paper-dim);letter-spacing:0.06em;text-transform:uppercase;}
+  .top-list{display:flex;flex-direction:column;}
+  .top-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--paper);}
+  .top-rank{flex:0 0 46px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:var(--star);font-variant-numeric:tabular-nums;}
+  .top-img{flex:0 0 96px;height:36px;border-radius:4px;overflow:hidden;background:var(--ink-2);}
+  .top-img img{width:100%;height:100%;object-fit:cover;}
+  .top-body{flex:1;min-width:0;display:flex;flex-direction:column;}
+  .top-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top-liked{color:var(--unread);}
+  .top-when{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);}
+  .top-cal{color:var(--gamer);}
   .rel-btn.steam{background:var(--gamer);border-color:var(--gamer);color:#fff;}
 </style>
 </head>
@@ -736,36 +754,36 @@
   <div class="toolbar">
     <div class="search-row">
       <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" class="search-bar" placeholder="Filtrer par mot-clé…" autocomplete="off">
-      <button id="clearSearchBtn" class="clear-search" title="Effacer" style="display:none;">✕</button>
+      <input type="text" id="searchInput" class="search-bar" placeholder="Filter by keyword…" autocomplete="off">
+      <button id="clearSearchBtn" class="clear-search" title="Clear" style="display:none;">✕</button>
     </div>
 
     <div class="controls">
       <div class="filters" id="filters">
-        <button class="pill active" data-filter="all">Tout <span class="count" id="c-all">0</span></button>
-        <button class="pill" data-filter="favorites">★ Favoris <span class="count" id="c-fav">0</span></button>
-        <button class="pill" data-filter="releases">📅 Sorties</button>
+        <button class="pill active" data-filter="all">All <span class="count" id="c-all">0</span></button>
+        <button class="pill" data-filter="favorites">★ Favorites <span class="count" id="c-fav">0</span></button>
+        <button class="pill" data-filter="releases">📅 Releases</button>
       </div>
       <div class="actions">
         <div class="sites-wrap">
-          <button id="sitesBtn" class="action-btn" title="Aller directement sur un site">🌐</button>
+          <button id="sitesBtn" class="action-btn" title="Go to a site">🌐</button>
           <div id="sitesDropdown" class="sites-dropdown"></div>
         </div>
-        <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="action-btn mc-action" title="Nouveautés sur Metacritic">🎮</a>
-        <button id="markAllBtn" class="action-btn" title="Tout marquer comme lu">✓</button>
-        <button id="syncBtn" class="action-btn" title="Re-synchroniser et nettoyer les incohérences">🔄</button>
-        <button id="refreshBtn" class="action-btn" title="Actualiser">⟳</button>
+        <a href="https://www.metacritic.com/game/" target="_blank" rel="noopener" class="action-btn mc-action" title="New on Metacritic">🎮</a>
+        <button id="markAllBtn" class="action-btn" title="Mark all as read">✓</button>
+        <button id="syncBtn" class="action-btn" title="Re-sync and fix inconsistencies">🔄</button>
+        <button id="refreshBtn" class="action-btn" title="Refresh">⟳</button>
       </div>
     </div>
 
     <div class="filter-row">
       <div class="lang-filters" id="langFilters">
-        <button class="lang-pill active" data-lang="all">Toutes langues</button>
+        <button class="lang-pill active" data-lang="all">All languages</button>
         <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
         <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
       </div>
-      <select id="sourceSelect" class="source-select" title="Filtrer par source">
-        <option value="all">Toutes les sources</option>
+      <select id="sourceSelect" class="source-select" title="Filter by source">
+        <option value="all">All sources</option>
       </select>
     </div>
 
@@ -777,11 +795,11 @@
 
   <div class="releases" id="releases" hidden></div>
 
-  <footer>SOURCES — IGN FRANCE · ROCK PAPER SHOTGUN · GAME DEVELOPER · GAMESINDUSTRY.BIZ</footer>
+  <footer id="sourcesFooter">SOURCES</footer>
 </div>
 
-<button id="backToTop" class="back-to-top" title="Retour en haut" aria-label="Retour en haut">↑</button>
-<button id="saveBtn" class="save-btn" title="Envoyer les changements en ligne" aria-label="Sauvegarder">
+<button id="backToTop" class="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<button id="saveBtn" class="save-btn" title="Save changes online" aria-label="Save">
   <span class="save-icon">💾</span><span class="save-count" id="saveCount">0</span>
 </button>
 
@@ -820,75 +838,72 @@
 <script src="./releases.js"></script>
 <script>
 /* =========================================================================
-   DISPATCH — agrégateur de news jeu vidéo (PWA, GitHub Pages)
+   DISPATCH — video game news aggregator (PWA, GitHub Pages)
    =========================================================================
 
-   ARCHITECTURE GLOBALE
-   --------------------
-   ┌─ GitHub Actions (.github/workflows/refresh-articles.yml, cron ~20min)
-   │    exécute scripts/fetch-articles.mjs (Node 24, fast-xml-parser)
-   │    → fetch des 11 flux RSS côté serveur (aucun souci CORS)
-   │    → nettoie titres/résumés/images, purge > RETENTION_DAYS (1 jour)
-   │    → commit articles.json à la racine du repo
+   ARCHITECTURE
+   ------------
+   ┌─ GitHub Actions (.github/workflows/refresh-articles.yml, cron ~20 min)
+   │    runs scripts/fetch-articles.mjs (Node 24, fast-xml-parser)
+   │    → fetches the RSS feeds server-side (no CORS issues)
+   │    → cleans titles/summaries/images, drops items older than RETENTION_DAYS
+   │    → commits articles.json at the repo root
    │
-   ├─ Cette page (index.html) : lit ./articles.json (même origine).
-   │    AUCUN fetch RSS côté navigateur — pas de proxies, pas d'extension
-   │    (retirés lors de l'audit d'août 2026).
+   ├─ GitHub Actions (.github/workflows/refresh-releases.yml, daily)
+   │    runs scripts/fetch-releases.mjs (IGDB + Steam wishlist ranking)
+   │    → commits releases.json and wishlists.json (see releases.js)
    │
-   ├─ État perso (lu/favoris/masqués) : dispatch-state.json dans un repo
-   │    GitHub de l'utilisateur, lu/écrit via l'API REST GitHub (token
-   │    fine-grained "Contents: RW", stocké en localStorage par appareil).
-   │    localStorage sert de cache local synchrone + fusion au chargement
-   │    (mergeLocalIntoState) pour survivre aux syncs interrompues.
+   ├─ This page (index.html) reads ./articles.json (same origin).
+   │    NO RSS fetching in the browser: no proxies, no extension.
    │
-   └─ PWA : manifest.webmanifest + sw.js (cache "dispatch-v4").
-        sw.js recalcule aussi le badge d'icône en arrière-plan
-        (periodicSync) à partir d'articles.json + d'un blob read/hidden
-        que la page lui pousse via postMessage.
+   ├─ Personal state (read/favorites/hidden/liked games): dispatch-state.json
+   │    in the user's GitHub repo, read/written through the GitHub REST API
+   │    (fine-grained token "Contents: RW", kept in localStorage per device).
+   │    localStorage is a synchronous local cache, merged on load
+   │    (mergeLocalIntoState) so interrupted syncs don't lose anything.
+   │
+   └─ PWA: manifest.webmanifest + sw.js. sw.js also recomputes the icon
+        badge in the background (periodicSync) from articles.json + a
+        read/hidden blob the page sends it via postMessage.
 
-   STRUCTURE DE L'ÉTAT (state)
-   ---------------------------
-   state.read      : string[]  — liens des articles lus
-   state.hidden    : string[]  — liens masqués (poubelle)
-   state.favorites : object[]  — SNAPSHOTS complets {link,title,date,
-                     image,sourceId,summary}. INVARIANT : un favori
-                     survit à tout (purge du flux, lu, masqué) et
-                     l'onglet Favoris les affiche TOUS sans filtre hidden.
+   STATE
+   -----
+   state.read       : string[]  — links of read articles
+   state.hidden     : string[]  — links of deleted articles
+   state.favorites  : object[]  — full SNAPSHOTS {link,title,date,image,
+                      sourceId,summary}. INVARIANT: a favorite survives
+                      everything (feed purge, read, hidden) and the
+                      Favorites tab always shows all of them.
+   state.likedGames : object[]  — snapshots of liked games (Releases tab).
 
-   PIPELINE DE FILTRES (render)
-   ----------------------------
-   favoris ? snapshots : flux − hidden
-   → catégorie (gamer/industry) → langue (fr/en) → source (id) → recherche
-   Tous les filtres se combinent en ET.
+   FILTER PIPELINE (render)
+   ------------------------
+   favorites ? snapshots : feed − hidden
+   → language (fr/en) → source (id) → search. All filters combine (AND).
 
-   COMPORTEMENTS AUTOMATIQUES
-   --------------------------
-   - Lu au tap : pointerdown/up avec seuil 10px/500ms (tap ≠ scroll)
-   - Swipe bidirectionnel (tactile uniquement, jamais souris) :
-       → droite (≥110px) = SUPPRIMER (hideArticle : ajoute à hidden ET
-         retire des favoris), fond rouge 🗑, animation de sortie.
-       → gauche (≥110px) = BASCULER FAVORI (toggleFavorite), fond ambre ★,
-         la ligne revient en place.
-     Geste horizontal franc requis (dx>dy*1.3). Undo restaure hidden ET le
-     favori s'il en était un. Gestion unifiée tap/scroll/swipe (tracker
-     `gesture`).
-   - Lu au défilement : IntersectionObserver (≥50% vu) + sortie par le
-     haut (rect.bottom<=0) + balayage rAF de secours. Épargne les favoris.
-   - Purge read/hidden : côté APP au chargement (purgeStaleState) ET côté
-     SERVEUR à chaque run du workflow (fetch-articles.mjs réécrit
-     dispatch-state.json). Favoris jamais touchés.
-   - saveStateInstant() : écriture localStorage SYNCHRONE avant toute
-     navigation ; saveState() : sync GitHub async avec retry sur 409.
-   - Badge : updateCounts() → updateAppBadge() ; refresh périodique 5min
-     + visibilitychange/focus ; periodicSync côté SW quand l'app est
-     seulement en arrière-plan.
+   AUTOMATIC BEHAVIOUR
+   -------------------
+   - Read on tap: pointerdown/up with a 10px/500ms threshold (tap ≠ scroll)
+   - Two-way swipe (touch only, never mouse):
+       → right (≥110px) = DELETE (hideArticle: adds to hidden AND removes
+         from favorites), red 🗑 background, slide-out animation.
+       → left (≥110px) = TOGGLE FAVORITE, amber ★ background, row snaps back.
+     Needs a clearly horizontal gesture (dx > dy*1.3). Undo restores hidden
+     AND the favorite if there was one.
+   - Read on scroll: IntersectionObserver (≥50% seen) + exit through the
+     top (rect.bottom <= 0) + rAF safety sweep. Never touches favorites.
+   - read/hidden purge: in the APP on load (purgeStaleState) AND on the
+     SERVER on every workflow run. Favorites are never touched.
+   - saveStateInstant(): SYNCHRONOUS localStorage write before any
+     navigation; saveState(): async GitHub sync with retry on 409.
+   - Badge: updateCounts() → updateAppBadge(); refresh every 5 min
+     + visibilitychange/focus; periodicSync in the SW when backgrounded.
 
-   ÉLÉMENTS D'UI GÉNÉRÉS EN JS (absents du HTML statique)
-   ------------------------------------------------------
-   #undoToast (toast d'annulation), options de #sourceSelect.
+   UI BUILT IN JS (not in the static HTML)
+   ---------------------------------------
+   #undoToast, #sourceSelect options, #sourcesFooter, the Releases tab.
 
-   NOTE — markAllBtn marque TOUS les articles comme lus, indépendamment
-   des filtres actifs (comportement volontaire, simple et prévisible).
+   NOTE — markAllBtn marks ALL articles as read, whatever filters are on.
    ========================================================================= */
 const SOURCES = [
   { id:'ign',       name:'IGN France',       category:'gamer',    color:'gamer', lang:'fr',
@@ -968,9 +983,9 @@ function enforceStateConsistency(){
   // Dedupe favorites by link (keep the richest snapshot).
   const favByLink = new Map();
   (state.favorites || []).forEach(f => {
-    if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+    if (typeof f === 'string') f = { link: f, title: '(expired article)', date: null, image: null, sourceId: null };
     const ex = favByLink.get(f.link);
-    if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+    if (!ex || (ex.title === '(expired article)' && f.title !== '(expired article)')) favByLink.set(f.link, f);
   });
   state.favorites = Array.from(favByLink.values());
 
@@ -1021,9 +1036,9 @@ function mergeLocalIntoState(){
 
     const favByLink = new Map();
     [...(state.favorites || []), ...(local.favorites || [])].forEach(f => {
-      if (typeof f === 'string') f = { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+      if (typeof f === 'string') f = { link: f, title: '(expired article)', date: null, image: null, sourceId: null };
       const ex = favByLink.get(f.link);
-      if (!ex || (ex.title === '(article expiré)' && f.title !== '(article expiré)')) favByLink.set(f.link, f);
+      if (!ex || (ex.title === '(expired article)' && f.title !== '(expired article)')) favByLink.set(f.link, f);
     });
     state.favorites = Array.from(favByLink.values());
 
@@ -1116,12 +1131,12 @@ const articlesNoteEl = document.getElementById('articlesNote');
 function formatRelative(dateStr){
   const diffMs = Date.now() - new Date(dateStr).getTime();
   const mins = Math.round(diffMs / 60000);
-  if (mins < 1) return "à l'instant";
-  if (mins < 60) return `il y a ${mins} min`;
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins} min ago`;
   const hours = Math.round(mins / 60);
-  if (hours < 24) return `il y a ${hours} h`;
+  if (hours < 24) return `${hours} h ago`;
   const days = Math.round(hours / 24);
-  return `il y a ${days} j`;
+  return `${days} d ago`;
 }
 
 async function applyJsonData(data){
@@ -1135,7 +1150,7 @@ async function applyJsonData(data){
     .sort((a, b) => b.date - a.date);
 
   if (data.generatedAt) {
-    articlesNoteEl.textContent = `📰 actualisé ${formatRelative(data.generatedAt)}`;
+    articlesNoteEl.textContent = `📰 updated ${formatRelative(data.generatedAt)}`;
   }
 
   render();
@@ -1143,8 +1158,8 @@ async function applyJsonData(data){
 
 function updateClock(){
   const now = new Date();
-  clockEl.textContent = now.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) + ' / ' +
-    now.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+  clockEl.textContent = now.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}) + ' / ' +
+    now.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
 }
 updateClock();
 setInterval(updateClock, 30000);
@@ -1362,8 +1377,8 @@ function stripHtml(str){
 }
 
 function formatTime(date){
-  return date.toLocaleDateString(undefined,{month:'short',day:'2-digit'}) +
-    ' · ' + date.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+  return date.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}) +
+    ' · ' + date.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
 }
 
 function sameDay(d1, d2){
@@ -1375,15 +1390,15 @@ function dayLabel(date, absolute){
   // old, so "AUJOURD'HUI/HIER" would be misleading — always show the full
   // date (with year, since favorites can span across years).
   if (absolute) {
-    return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long', year:'numeric'}).toUpperCase();
+    return date.toLocaleDateString('en-GB', {weekday:'long', day:'2-digit', month:'long', year:'numeric'}).toUpperCase();
   }
   const now = new Date();
   const d0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const d1 = new Date(date.getFullYear(), date.getMonth(), date.getDate());
   const diffDays = Math.round((d0 - d1) / 86400000);
-  if(diffDays === 0) return "AUJOURD'HUI";
-  if(diffDays === 1) return 'HIER';
-  return date.toLocaleDateString('fr-FR', {weekday:'long', day:'2-digit', month:'long'}).toUpperCase();
+  if(diffDays === 0) return 'TODAY';
+  if(diffDays === 1) return 'YESTERDAY';
+  return date.toLocaleDateString('en-GB', {weekday:'long', day:'2-digit', month:'long'}).toUpperCase();
 }
 
 function updateCounts(){
@@ -1447,7 +1462,7 @@ function favoritesAsArticles(){
   return state.favorites.map(f => {
     const source = SOURCES.find(s => s.id === f.sourceId) || { name: 'Source inconnue', category: 'gamer', color: 'gamer', lang: 'fr' };
     return {
-      title: f.title || '(article expiré)',
+      title: f.title || '(expired article)',
       link: f.link,
       date: f.date ? new Date(f.date) : new Date(0),
       source,
@@ -1503,21 +1518,23 @@ function render(){
     const id = idFor(a);
     const isRead = state.read.includes(id);
     const isFav = isFavorited(id);
-    const hasThumb = !!a.image;
+    const img = safeUrl(a.image);
+    const href = safeUrl(a.link) || '#';
+    const hasThumb = !!img;
     return `
       <div class="row ${isRead ? 'read' : ''} ${hasThumb ? 'has-thumb' : ''}" data-id="${encodeURIComponent(id)}">
         <div class="dot-col"><span class="u"></span></div>
         <div class="time">${formatTime(a.date)}</div>
-        ${hasThumb ? `<div class="thumb"><img src="${a.image}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
+        ${hasThumb ? `<div class="thumb"><img src="${img}" loading="lazy" alt="" onerror="this.closest('.row').classList.remove('has-thumb'); this.closest('.thumb').remove();"></div>` : ''}
         <div>
           <span class="tag ${a.source.color}">${a.source.category}</span>
-          <a class="headline" href="${a.link}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+          <a class="headline" href="${href}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
           ${a.summary ? `<div class="summary">${escapeHtml(a.summary)}</div>` : ''}
           <div class="source-name">${a.source.name}</div>
         </div>
         <div class="row-actions">
-          <button class="star ${isFav ? 'on' : ''}" title="${isFav ? 'Retirer des favoris' : 'Mettre en favori'}">${isFav ? '★' : '☆'}</button>
-          <button class="bin" title="Supprimer">🗑</button>
+          <button class="star ${isFav ? 'on' : ''}" title="${isFav ? 'Remove from favorites' : 'Add to favorites'}">${isFav ? '★' : '☆'}</button>
+          <button class="bin" title="Delete">🗑</button>
         </div>
       </div>
     `;
@@ -1691,6 +1708,15 @@ function decodeEntities(str){
 // Safe for insertion into HTML: first decode any entities the feed sent,
 // then escape so the text can't inject markup. This is why titles like
 // "Sony's" render correctly instead of "Sony&#8217;s".
+// Feed URLs go into href/src attributes: only allow http(s) and escape
+// quotes/brackets so a malformed or hostile feed item can't inject markup
+// (this page holds a GitHub token in localStorage).
+function safeUrl(url){
+  const u = String(url || '').trim();
+  if (!/^https?:\/\//i.test(u)) return '';
+  return u.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function escapeHtml(str){
   const decoded = decodeEntities(str);
   const div = document.createElement('div');
@@ -1772,7 +1798,7 @@ function showUndoToast(){
     toast.className = 'undo-toast';
     document.body.appendChild(toast);
   }
-  toast.innerHTML = `Supprimé <button id="undoBtn" type="button">Annuler</button>`;
+  toast.innerHTML = `Deleted <button id="undoBtn" type="button">Undo</button>`;
   toast.classList.add('show');
   document.getElementById('undoBtn').onclick = () => {
     if(lastHiddenId){
@@ -1871,7 +1897,7 @@ function scheduleReadSync(){
 const TAP_MOVE_THRESHOLD = 10;    // px — below this, it's a tap
 const TAP_TIME_THRESHOLD = 500;   // ms
 const SWIPE_DIR_RATIO = 1.3;      // horizontal must exceed vertical by this factor to count as a swipe
-const SWIPE_TRIGGER = 110;        // px — how far right you must swipe to delete (deliberately "conséquent")
+const SWIPE_TRIGGER = 110;        // px — how far right you must swipe to delete (deliberately long)
 const SWIPE_MAX_VISUAL = 160;     // caps how far the row visually follows the finger
 
 let gesture = null;
@@ -2027,6 +2053,9 @@ document.getElementById('langFilters').addEventListener('click', (e) => {
 // Source filter: a native <select> (most reliable control on mobile).
 // Options are generated from SOURCES so adding a source automatically
 // appears here with no extra wiring.
+document.getElementById('sourcesFooter').textContent =
+  'SOURCES — ' + SOURCES.map(s => s.name.toUpperCase()).join(' · ');
+
 const sourceSelectEl = document.getElementById('sourceSelect');
 SOURCES.forEach(s => {
   const opt = document.createElement('option');
@@ -2133,10 +2162,10 @@ async function loadFeeds(){
         return;
       }
     }
-    feedEl.innerHTML = `<div class="empty">ARTICLES.JSON VIDE OU INTROUVABLE — VÉRIFIE LE WORKFLOW GITHUB ACTIONS<span class="cursor"></span></div>`;
+    feedEl.innerHTML = `<div class="empty">ARTICLES.JSON EMPTY OR MISSING — CHECK THE GITHUB ACTIONS WORKFLOW<span class="cursor"></span></div>`;
   }catch(e){
     console.warn('articles.json unavailable:', e.message);
-    feedEl.innerHTML = `<div class="empty">HORS-LIGNE ET AUCUNE DONNÉE EN CACHE<span class="cursor"></span></div>`;
+    feedEl.innerHTML = `<div class="empty">OFFLINE AND NO CACHED DATA<span class="cursor"></span></div>`;
   }
 }
 
@@ -2194,18 +2223,18 @@ document.getElementById('ghSaveBtn').addEventListener('click', async () => {
     const rawErr = syncNoteEl.title || 'Unknown error';
     let hint = '';
     if (rawErr.includes('404')) {
-      hint = '\n\nUn 404 signifie presque toujours l\'une de ces trois choses :\n' +
-        '• le token ne donne pas accès à CE repo précis (Repository access → Only select repositories → ce repo), ou n\'est pas en "Contents: Read and write"\n' +
-        '• le token a expiré\n' +
-        '• une faute de casse dans le nom d\'utilisateur ou du repo\n\n' +
-        `URL testée : api.github.com/repos/${owner}/${repo}/contents/dispatch-state.json\n\n` +
-        'Astuce : appuie sur 👁 pour révéler le token et vérifier qu\'il n\'a pas d\'espace ni de majuscule parasite.';
+      hint = '\n\nA 404 almost always means one of these:\n' +
+        '• the token has no access to THIS repo (Repository access → Only select repositories → this repo), or is not "Contents: Read and write"\n' +
+        '• the token has expired\n' +
+        '• a typo or wrong capitalisation in the username or repo name\n\n' +
+        `URL tested: api.github.com/repos/${owner}/${repo}/contents/dispatch-state.json\n\n` +
+        'Tip: tap 👁 to reveal the token and check it has no stray space.';
     } else if (rawErr.includes('403')) {
-      hint = '\n\nUn 403 = permissions insuffisantes : le token doit être en "Contents: Read and write".';
+      hint = '\n\nA 403 means missing permissions: the token needs "Contents: Read and write".';
     } else if (rawErr.includes('401')) {
-      hint = '\n\nUn 401 = token non reconnu (invalide ou expiré). Régénère un token.';
+      hint = '\n\nA 401 means the token was not recognised (invalid or expired). Generate a new one.';
     }
-    alert('Impossible de se connecter à GitHub.\n\nErreur : ' + rawErr + hint);
+    alert('Could not connect to GitHub.\n\nError: ' + rawErr + hint);
     return; // keep the modal open so the fields can be fixed
   }
 
@@ -2241,7 +2270,7 @@ function enrichLegacyFavorites(){
       changed = true;
       return match
         ? { link: f, title: match.title, date: match.date.toISOString(), image: match.image || null, sourceId: match.source.id }
-        : { link: f, title: '(article expiré)', date: null, image: null, sourceId: null };
+        : { link: f, title: '(expired article)', date: null, image: null, sourceId: null };
     }
     return f;
   });
@@ -2321,7 +2350,7 @@ function flashSyncedFromRemote(){
     t.className = 'undo-toast';
     document.body.appendChild(t);
   }
-  t.textContent = '🔄 Mis à jour depuis un autre appareil';
+  t.textContent = '🔄 Updated from another device';
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 }
