@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T00:18:20.155Z",
+  "generatedAt": "2026-10-01T06:07:52.228Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -18,8 +18,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-09-30T20:53:11.000Z",
-      "kept": 34
+      "newest": "2026-10-01T05:55:14.000Z",
+      "kept": 37
     },
     "rps": {
       "status": "ok",
@@ -32,7 +32,7 @@
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-01T00:18:17.384Z",
+      "newest": "2026-10-01T06:07:47.047Z",
       "kept": 21
     },
     "gibiz": {
@@ -47,35 +47,35 @@
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
       "newest": "2026-09-30T20:20:08.000Z",
-      "kept": 20
+      "kept": 18
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-09-30T15:32:34.000Z",
+      "newest": "2026-10-01T06:00:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-09-30T17:22:00.000Z",
-      "kept": 15
+      "newest": "2026-10-01T05:15:00.000Z",
+      "kept": 17
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-09-30T23:00:14.000Z",
+      "newest": "2026-10-01T01:00:37.000Z",
       "kept": 20
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-01T00:02:14.000Z",
-      "kept": 29
+      "newest": "2026-10-01T04:53:31.000Z",
+      "kept": 31
     },
     "eurogamer": {
       "status": "ok",
@@ -88,7 +88,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-09-30T23:00:15.000Z",
+      "newest": "2026-10-01T04:00:20.000Z",
       "kept": 10
     }
   },
@@ -96,7 +96,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -105,7 +105,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -114,7 +114,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -123,7 +123,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -132,7 +132,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -141,7 +141,7 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -150,7 +150,7 @@
     {
       "title": "BitSummit",
       "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -159,7 +159,7 @@
     {
       "title": "Tokyo Game Show (TGS)",
       "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -168,7 +168,7 @@
     {
       "title": "PAX West",
       "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -177,7 +177,7 @@
     {
       "title": "gamescom latam",
       "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +186,7 @@
     {
       "title": "The Game Awards",
       "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,7 +195,7 @@
     {
       "title": "Games 4 Change Festival",
       "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -204,7 +204,7 @@
     {
       "title": "ChinaJoy",
       "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -213,7 +213,7 @@
     {
       "title": "Licensing Expo",
       "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -222,7 +222,7 @@
     {
       "title": "MDEV",
       "link": "https://www.gamedeveloper.comwww.mdevconf.com",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -231,7 +231,7 @@
     {
       "title": "Summer Game Fest",
       "link": "https://www.gamedeveloper.comprogram/summer-game-fest",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4fed14edbd323b21/6aac6d23867947be656e1d4c/summergamefest.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -240,7 +240,7 @@
     {
       "title": "London Games Festival",
       "link": "https://www.gamedeveloper.comgames.london",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltefb25f3b346da572/6aac6bebe3c5fa0f98d0b127/LGF-Logo-Colour_menu2026-4.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -249,7 +249,7 @@
     {
       "title": "PAX East",
       "link": "https://www.gamedeveloper.com/series/pax-east",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt89574081f4ed4675/6aac6a9da9348373f30ef511/DatelessEastLogo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -258,10 +258,174 @@
     {
       "title": "D.I.C.E. Summit",
       "link": "https://www.gamedeveloper.com/keyword/dice-summit",
-      "date": "2026-10-01T00:18:17.384Z",
+      "date": "2026-10-01T06:07:47.047Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt70a9c2320cf90280/6aac65756c4faf0726cd4bc9/dice-summit-logo-blue.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "LEGO : toutes les nouveautés d'octobre 2026, avec d'énormes sets de licences cultes",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/lego-toutes-les-nouveautes-doctobre-2026-724143?utm_source=RSS",
+      "date": "2026-10-01T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/529657_65e0500d69637.jpg",
+      "summary": "Quelles sont les nouveautés LEGO en octobre 2026 ? Le géant aux briques colorées sort le grand jeu avec de très grandes licences venues de tout horizon.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Crimson Desert : Charting the Unknown - le DLC reporté de deux semaines",
+      "link": "https://fr.ign.com/crimson-desert/92724/crimson-desert-charting-the-unknown-le-dlc-reporte-de-deux-semaines",
+      "date": "2026-10-01T05:55:14.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/crimson-de/crimson-desert-charting-the-unknown-expansion-delayed-two-we_bhvb.jpg",
+      "summary": "Encore un peu de patience.",
+      "tags": []
+    },
+    {
+      "title": "L'Epic Games Store vous offre 2 nouveaux jeux gratuits, dont le remaster d'un jeu culte",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/epic-games-store-jeux-gratuits-buried-stars-system-shock-2-remaster-724131?utm_source=RSS",
+      "date": "2026-10-01T05:50:17.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/724131_6abd0a78a1960.jpg",
+      "summary": "Comme tous les jeudis, l’Epic Games Store vous propose une nouvelle salve de jeux gratuits à récupérer via sa boutique dédiée. Voici où, quand et comment les récupérer.",
+      "tags": []
+    },
+    {
+      "title": "« Xbox n'est pas à vendre » — Asha Sharma dément les rumeurs selon lesquelles Microsoft envisagerait de vendre sa branche gaming",
+      "link": "https://fr.ign.com/xbox-series-s/92721/xbox-nest-pas-a-vendre--asha-sharma-dement-les-rumeurs-selon-lesquelles-microsoft-envisagerait-de-ve",
+      "date": "2026-10-01T05:47:12.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/x/xbox-is-no/xbox-is-not-for-sale-asha-sharma-denies-reports-that-microso_xsq3.jpg",
+      "summary": "Ça parle gros sous.",
+      "tags": []
+    },
+    {
+      "title": "(EXCLU) Vous rêvez d'un Castlevania à la sauce roguelike ? Nous avons posé la question à Konami, voici leur réponse",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/castlevania-belmonts-curse-futur-roguelike-reponse-konami-interview-724157?utm_source=RSS",
+      "date": "2026-10-01T05:33:57.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/717332_6a25b490c7e8e.jpg",
+      "summary": "Après Castlevania Belmont’s Curse, Konami envisage-t-il de produire un épisode roguelike en collaboration avec Evil Empire ? Nous leur avons posé la question, voici la réponse.",
+      "tags": []
+    },
+    {
+      "title": "Découvrez les jeux PlayStation Plus du mois d'octobre 2026",
+      "link": "https://fr.ign.com/earth-defense-force-world-brothers-2/92718/decouvrez-les-jeux-playstation-plus-du-mois-doctobre-2026",
+      "date": "2026-10-01T05:32:58.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/p/playstatio/playstation-plus-monthly-games-for-october-2026-announced_w7r8.jpg",
+      "summary": "F1 25, Hunt et EDF (rien à voir avec l&#x27;électricité !)",
+      "tags": []
+    },
+    {
+      "title": "Après 270 millions de dollars de recettes, Mario Kart Tour, c'est finito",
+      "link": "https://www.gamekult.com/actualite/apres-270-millions-de-dollars-de-recettes-mario-kart-tour-c-est-finito-3050872269.html",
+      "date": "2026-10-01T05:15:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872269/apres-270-millions-de-dollars-de-recettes-mario-kart-tour-c-est-finito-dfb76706__800_800__295-0-1116-820.png",
+      "summary": "Mario Kart Tour n'est officiellement plus jouable depuis le 29 septembre, conformément à l'annonce faite par Nintendo cet été. Les serveurs du jeu sont désormais inaccessibles et…",
+      "tags": []
+    },
+    {
+      "title": "Et si le prochain jeu de Naughty Dog après Intergalactic était un nouvel Uncharted ?",
+      "link": "https://www.gamekult.com/actualite/et-si-le-prochain-jeu-de-naughty-dog-apres-intergalactic-etait-un-nouvel-uncharted-3050872280.html",
+      "date": "2026-10-01T05:05:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872280/et-si-le-prochain-jeu-de-naughty-dog-apres-intergalactic-etait-un-nouvel-uncharted-fe3ad520__800_800__201-495-1866-2160.jpg",
+      "summary": "Théorie populaire depuis des années chez les fans, le développement d'un nouvel Uncharted piloté par Shaun Escayg (Uncharted : The Lost Legacy) fait désormais l'objet d'un rapport…",
+      "tags": []
+    },
+    {
+      "title": "We're probably not getting a new Fallout game until well into the 2030s, but that's no reason to stop talking about them",
+      "link": "https://www.pcgamer.com/games/fallout/were-probably-not-getting-a-new-fallout-game-until-well-into-the-2030s-but-thats-no-reason-to-stop-talking-about-them/",
+      "date": "2026-10-01T04:53:31.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/TxPLTFNUbWPRLUQ6DhUZK9-1920-80.jpg",
+      "summary": "The bombs may fall for real before then.",
+      "tags": []
+    },
+    {
+      "title": "Agenda - Ace Combat 8, Gears of War E-Day, Aion 2, Castlevania Belmont's Curse, Phantom Blade Zero.... Les sorties JV du mois d'octobre 2026",
+      "link": "https://www.gamekult.com/actualite/ace-combat-8-gears-of-war-e-day-aion-2-castlevania-belmont-s-curse-phantom-blade-zero-les-sorties-jv-du-mois-d-octobre-2026-3050872270.html",
+      "date": "2026-10-01T04:30:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872270/ace-combat-8-gears-of-war-e-day-aion-2-castlevania-belmont-s-curse-phantom-blade-zero-les-sorties-jv-du-mois-d-octobre-2026-58b7b3e0__800_800__1787-0-2649-862.png",
+      "summary": "Après un mois de septembre d'une richesse folle, la saison du « vite, vite, il faut sortir notre jeu avant GTA 6 » se poursuit avec un bien joli mois d'octobre en perspective. Et…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Mortal Kombat Mythologies Sub-Zero : comment le pire jeu de la saga a enfanté tout son lore moderne",
+      "link": "https://www.gamekult.com/actualite/mortal-kombat-mythologies-sub-zero-comment-le-pire-jeu-de-la-saga-a-enfante-tout-son-lore-moderne-3050872260.html",
+      "date": "2026-10-01T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872260/mortal-kombat-mythologies-sub-zero-comment-le-pire-jeu-de-la-saga-a-enfante-tout-son-lore-moderne-71226772__800_800__422-0-1329-900.jpg",
+      "summary": "Mettre Mortal Kombat Mythologies : Sub-Zero dans le lecteur de sa PlayStation en octobre 1997 (il arrive sur N64 en décembre de la même année) relevait du calvaire pur et simple…",
+      "tags": []
+    },
+    {
+      "title": "60 Years After Her Peanuts Debut, Peppermint Patty Is Still the Best Friend Charlie Brown Ever Had",
+      "link": "https://www.polygon.com/peppermint-patty-best-friend-charlie-brown-peanuts/",
+      "date": "2026-10-01T04:00:20.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/peppermint-patty-charlie-brown-a-charlie-brown-valentine.jpg",
+      "summary": "Marcie, Patty, and Chuck could've been a dream team",
+      "tags": []
+    },
+    {
+      "title": "Can someone pinch me, I think I just found a decent gaming laptop deal for under AU$1,900",
+      "link": "https://www.pcgamer.com/hardware/gaming-laptops/can-someone-pinch-me-i-think-i-just-found-a-decent-gaming-laptop-deal-for-under-au-usd1-900/",
+      "date": "2026-10-01T03:47:53.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/TEA9TNTjFsX5SdzJe76gYP-1920-80.jpg",
+      "summary": "It's not top of the line, but it'll run games comfortably for years to come.",
+      "tags": []
+    },
+    {
+      "title": "6 Switch 2 Games Releasing in October 2026 You Officially Cannot Miss",
+      "link": "https://www.polygon.com/new-switch-2-games-releases-october-2026/",
+      "date": "2026-10-01T02:00:27.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/nintendoswitch2_nintendoswitchsportsresort_screenshot_18.png",
+      "summary": "Nintendo Switch 2 has a busy month ahead including Switch Sports Resort, Call of Duty, Resident Evil, Final Fantasy, and more.",
+      "tags": []
+    },
+    {
+      "title": "Lego's Sony PlayStation Set Officially Launches This Week",
+      "link": "https://www.polygon.com/lego-playstation-price-release-date-availability-october-2026/",
+      "date": "2026-10-01T01:14:55.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/72306_lifestyle_envr_01.jpeg",
+      "summary": "The Lego PlayStation set officially releases on Oct. 1 and includes Gran Turismo and Ape Escape Easter eggs.",
+      "tags": []
+    },
+    {
+      "title": "Giving Sonic A Gun In Fortnite Has Been A Huge Success, With Players Killing Dr. Eggman 14 Million Times",
+      "link": "https://kotaku.com/giving-sonic-a-gun-in-fortnite-has-been-a-huge-success-with-players-killing-dr-eggman-14-million-times-2000737447",
+      "date": "2026-10-01T01:00:37.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/09/sonicfortnite-1280x718.jpeg",
+      "summary": "Sega President Shuji Utsumi and Epic Games Japan Managing Director Takayuki Kawasaki discussed the challenges of featuring Sonic in Fortnite",
+      "tags": []
+    },
+    {
+      "title": "5 Xbox Games Releasing In October You Officially Can't Miss",
+      "link": "https://www.polygon.com/new-xbox-games-october-2026/",
+      "date": "2026-10-01T01:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/gears-of-war-2-promotional-artwork.jpg",
+      "summary": "Xbox owners are getting some bit games in October, including Gears of War: E-Day and Call of Duty: Modern Warfare 4.",
+      "tags": []
+    },
+    {
+      "title": "TIL what may or may not be the oldest board game in recorded history is also, perhaps inevitably, now a roguelike",
+      "link": "https://www.pcgamer.com/games/roguelike/til-what-may-or-may-not-be-the-oldest-board-game-in-recorded-history-is-also-perhaps-inevitably-now-a-roguelike/",
+      "date": "2026-10-01T00:16:35.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/TKtYjcinK3VjqyW2sSiykR-1920-80.jpg",
+      "summary": "Oh!Ware on Steam slaps a little Slay the Spire onto a 5000-year-old game.",
       "tags": []
     },
     {
@@ -445,30 +609,12 @@
       "tags": []
     },
     {
-      "title": "Magic’s KPop Demon Hunters Secret Lair Is a Total Letdown",
-      "link": "https://www.polygon.com/mtg-kpop-demon-hunters-secret-lair-letdown/",
-      "date": "2026-09-30T20:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/rumi-mad.jpg",
-      "summary": "I've got mixed feelings about the much-hyped KPop Demon Hunters Secret Lair, and you should too.",
-      "tags": []
-    },
-    {
       "title": "'Xbox is not for sale,' CEO Asha Sharma says",
       "link": "https://www.pcgamer.com/games/xbox-is-not-for-sale-ceo-asha-sharma-says/",
       "date": "2026-09-30T19:58:27.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/JegMFoHdKZzpeU4peYaSLV-1920-80.jpg",
       "summary": "'Xbox is not for sale,' CEO Asha Sharma says",
-      "tags": []
-    },
-    {
-      "title": "Where to find the mysterious dog's toy in Control Resonant",
-      "link": "https://www.polygon.com/control-resonant-mysterious-dog-toy-locations-where-to-find/",
-      "date": "2026-09-30T19:41:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mysterious-dog_cr.jpg",
-      "summary": "A mysterious dog needs your help getting their toy for the \"Every Dog Has Her Day\" quest in Control Resonant. Here's where you can find it.",
       "tags": []
     },
     {
@@ -487,15 +633,6 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6f16b1a97df7386f/6abd67387201c407f85a6e33/grasshoppermanufacturefeatured.jpg?width=720&quality=80&disable=upscale",
       "summary": "Suda51 strikes out on his own again.",
-      "tags": []
-    },
-    {
-      "title": "All Dylan's Sketchbook collectible locations in Control Resonant",
-      "link": "https://www.polygon.com/control-resonant-dylans-sketchbook-location-collectible-secret-where-to-find/",
-      "date": "2026-09-30T19:35:44.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/dylan-sketching_cr.jpg",
-      "summary": "Dylan's Sketchbook is full of Dylan's drawings of sets around Manhattan in Control Resonant. Here's where to find every sketch location.",
       "tags": []
     },
     {
@@ -541,15 +678,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/09/kingpin-1280x712.jpg",
       "summary": "The Daredevil costar has no time for unhinged gamer conspiracies",
-      "tags": []
-    },
-    {
-      "title": "8 Most Entertaining Sci-Fi Books of the 21st Century",
-      "link": "https://www.polygon.com/most-fun-sci-fi-books-21st-century/",
-      "date": "2026-09-30T19:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/project-hail-mary-ryan-gosling.jpg",
-      "summary": "Get some laughs with psychic cats, friendly aliens, and snarky cyborgs",
       "tags": []
     },
     {
@@ -796,21 +924,21 @@
       "tags": []
     },
     {
-      "title": "Preview Elta Defy All Gods : une aventure à l’ancienne | Gamescom 26",
-      "link": "https://fr.ign.com/elta-defy-all-gods/92595/preview-elta-defy-all-gods-une-aventure-a-lancienne-gamescom-26",
-      "date": "2026-09-30T16:00:33.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/page-bg-raw_xbw2.jpg",
-      "summary": "Entre combats dynamiques, platforming et exploration, Elta: Defy All Gods retrouve avec plaisir la formule des action-aventure à l’ancienne.",
-      "tags": []
-    },
-    {
       "title": "Elta Defy All Gods - screenshot éditeur",
       "link": "https://fr.ign.com/elta-defy-all-gods/92596/elta-defy-all-gods-screenshot-editeur",
       "date": "2026-09-30T16:00:33.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/ss-6d6ec7d58683e83f91f1ee2afcd16d7a8e1303841920x1080_ga2r.jpg",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Preview Elta Defy All Gods : une aventure à l’ancienne | Gamescom 26",
+      "link": "https://fr.ign.com/elta-defy-all-gods/92595/preview-elta-defy-all-gods-une-aventure-a-lancienne-gamescom-26",
+      "date": "2026-09-30T16:00:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/page-bg-raw_xbw2.jpg",
+      "summary": "Entre combats dynamiques, platforming et exploration, Elta: Defy All Gods retrouve avec plaisir la formule des action-aventure à l’ancienne.",
       "tags": []
     },
     {
@@ -1295,15 +1423,6 @@
       "tags": []
     },
     {
-      "title": "19-Year Veteran Of Xbox Weighs In On The Future Of Halo: &#8216;Hire Bungie, Halo Studios And Other Laid Off Folk Who Are Bursting With Talent&#8217;",
-      "link": "https://kotaku.com/19-year-veteran-of-xbox-weighs-in-on-the-future-of-halo-hire-bungie-halo-studios-and-other-laid-off-folk-who-are-bursting-with-talent-2000738607",
-      "date": "2026-09-30T12:48:57.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/03/halo3-1280x720.jpg",
-      "summary": "No one knows what Activision has planned for the franchise yet",
-      "tags": []
-    },
-    {
       "title": "No Law might be the open-world Deus Ex that Cyberpunk 2077 wasn't",
       "link": "https://www.pcgamer.com/games/rpg/no-law-might-be-the-open-world-deus-ex-that-cyberpunk-2077-wasnt/",
       "date": "2026-09-30T12:47:45.000Z",
@@ -1562,15 +1681,6 @@
       "tags": []
     },
     {
-      "title": "Ghost of Yotei : date et heure, voici quand vous pourrez jouer au DLC Échos de Sekigahara et au mode Hors-La-Loi sur PS5",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ghost-of-yotei-date-heure-lancement-dlc-echos-724109?utm_source=RSS",
-      "date": "2026-09-30T09:47:07.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/706351_69245473a3e67.webp",
-      "summary": "Ghost of Yotei va fêter son anniversaire avec la sortie du DLC Échos de Sekigahara et d'une Complete Edition, voici quand tout cela sera disponible, exclusivement sur PS5.",
-      "tags": []
-    },
-    {
       "title": "Star Fox : pour les amateurs de multijoueur, une mise à jour gratuite vient étoffer le mode Combat",
       "link": "https://www.gamekult.com/actualite/star-fox-pour-les-amateurs-de-multijoueur-une-mise-a-jour-gratuite-vient-etoffer-le-mode-combat-3050872262.html",
       "date": "2026-09-30T09:45:00.000Z",
@@ -1580,15 +1690,6 @@
       "tags": [
         "patch"
       ]
-    },
-    {
-      "title": "GTA 6 : la liste de toutes les activités confirmées avec de grandes premières pour la licence",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-liste-activites-confirmees-724116?utm_source=RSS",
-      "date": "2026-09-30T09:31:34.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bdbf4ab9b.jpg",
-      "summary": "GTA 6 proposera des dizaines d'activités à faire, et ça s'annonce déjà très varié. Voici la liste complète de toutes les activités confirmées dans GTA 6.",
-      "tags": []
     },
     {
       "title": "GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd",
@@ -1618,21 +1719,21 @@
       "tags": []
     },
     {
-      "title": "Apple TV dévoile sa prochaine série événement à venir en octobre 2026, ça sent le carton",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/apple-tv-nocturne-serie-evenement-trailer-724110?utm_source=RSS",
-      "date": "2026-09-30T09:15:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/708612_6957806a5f602.webp",
-      "summary": "Pour les abonnés d’Apple TV, le mois d’octobre 2026 sera l’occasion de découvrir Nocturne, nouvelle série événement de la plateforme dont la première bande-annonce est tombée.",
-      "tags": []
-    },
-    {
       "title": "Promu le lundi et licencié le mardi, la folle histoire de Josh Daniels chez Halo Studios",
       "link": "https://www.gamekult.com/actualite/promu-le-lundi-et-licencie-le-mardi-la-folle-histoire-de-josh-daniels-chez-halo-studios-3050872194.html",
       "date": "2026-09-30T09:00:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872194/il-devient-directeur-sur-halo-puis-se-fait-licencier-des-le-lendemain-par-xbox-da87d1f0__800_800__0-0-810-810.jpg",
       "summary": "Puisque Sony en prend pour son grade suite à plusieurs décisions dont vous avez probablement entendu parler, Microsoft a voulu rebondir comme une sorte de chevalier blanc…",
+      "tags": []
+    },
+    {
+      "title": "Diablo: Dawn of Hatred #1 - les premières images du comic",
+      "link": "https://fr.ign.com/gallery/92684/diablo-dawn-of-hatred-1-preview-gallery",
+      "date": "2026-09-30T08:46:15.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/d/diablo-daw/diablo-dawn-of-hatred-1-preview-gallery_g4k6.jpg",
+      "summary": "",
       "tags": []
     },
     {
@@ -1645,15 +1746,6 @@
       "tags": [
         "release"
       ]
-    },
-    {
-      "title": "Diablo: Dawn of Hatred #1 - les premières images du comic",
-      "link": "https://fr.ign.com/gallery/92684/diablo-dawn-of-hatred-1-preview-gallery",
-      "date": "2026-09-30T08:46:15.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/d/diablo-daw/diablo-dawn-of-hatred-1-preview-gallery_g4k6.jpg",
-      "summary": "",
-      "tags": []
     },
     {
       "title": "Chainsaw Man x Crocs",
@@ -1835,51 +1927,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872256/au-mexique-la-loi-s-attaque-au-mirage-de-la-possession-de-jeu-video-dematerialise-d078371f__800_800__312-0-1379-1067.jpg",
       "summary": "Dans le sillage des débats californiens et européens sur la mort programmée des jeux dématérialisés, le Mexique entre dans l'arène. Deux parlementaires portent une initiative…",
-      "tags": []
-    },
-    {
-      "title": "Nintendo avait confié le développement d'un jeu Zelda à Ubisoft pour un projet dingue",
-      "link": "https://www.jeuxvideo.com/news/2106514/nintendo-avait-confie-le-developpement-d-un-jeu-zelda-a-ubisoft-pour-un-projet-dingue.htm",
-      "date": "2026-09-30T05:05:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179067/1790674670-6413-card.jpg",
-      "summary": "Une enquête révèle qu'Ubisoft Milan a secrètement développé un spin-off inédit de The Legend of Zelda centré sur Ganondorf. Récit d'une collaboration historique brisée net par le…",
-      "tags": []
-    },
-    {
-      "title": "Vingt ans après le trophée Platine : Xbox \"invente\" les Succès Mythiques pour flatter les complétistes",
-      "link": "https://www.gamekult.com/actualite/vingt-ans-apres-le-trophee-platine-xbox-invente-les-succes-mythiques-pour-flatter-les-completistes-3050872255.html",
-      "date": "2026-09-30T05:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872255/vingt-ans-apres-le-trophee-platine-xbox-invente-les-succes-mythiques-pour-flatter-les-completistes-3677a118__800_800__334-0-1414-1080.jpg",
-      "summary": "Il aura fallu près de deux décennies d'attente pour que l'écosystème de Microsoft comble enfin son retard sur le fameux trophée Platine de Sony. Actuellement testés au sein du…",
-      "tags": []
-    },
-    {
-      "title": "Noté 94%, c'est le deuxième meilleur film du MCU : il ressort au cinéma 7 ans plus tard avec des scènes bonus",
-      "link": "https://www.jeuxvideo.com/news/2106400/note-94-c-est-le-deuxieme-meilleur-film-du-mcu-il-ressort-au-cinema-7-ans-plus-tard-avec-des-scenes-bonus.htm",
-      "date": "2026-09-30T04:55:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179061/1790606640-7017-card.jpg",
-      "summary": "Sept ans après avoir fait trembler le box-office mondial, le roi d'Hollywood revient réclamer sa couronne. Marvel propulse une version enrichie de son deuxième meilleur film dans…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Je considère toujours Bushido Blade comme le jeu de samurai ultime",
-      "link": "https://www.gamekult.com/actualite/je-considere-toujours-bushido-blade-comme-le-jeu-de-samurai-ultime-3050872231.html",
-      "date": "2026-09-30T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872231/je-considere-toujours-bushido-blade-comme-le-jeu-de-samurai-ultime-f9b195d1__800_800__217-0-1417-1200.jpg",
-      "summary": "À l'automne 1997, Squaresoft et le studio Light Weight lâchaient la bizarrerie Bushido Blade sur PlayStation aux États-Unis (le jeu arrivera en France en février 1998). Un…",
-      "tags": []
-    },
-    {
-      "title": "If you don't already have the best PC gamepad there's never been a better time to get it",
-      "link": "https://www.pcgamer.com/hardware/game-pads/if-you-dont-already-have-the-best-pc-gamepad-theres-never-been-a-better-time-to-get-it/",
-      "date": "2026-09-30T00:47:54.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/6tYRgsAwAyu37tYzmjxYKa-1920-80.jpg",
-      "summary": "The GameSir G7 Pro is at an all-time low.",
       "tags": []
     }
   ]
