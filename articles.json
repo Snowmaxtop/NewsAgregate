@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:42:43.663Z",
+  "generatedAt": "2026-10-04T09:13:51.762Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -19,20 +19,20 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-03T11:23:05.000Z",
-      "kept": 6
+      "kept": 5
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-10-03T11:00:00.000Z",
+      "newest": "2026-10-04T09:00:00.000Z",
       "kept": 2
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-04T02:42:39.759Z",
+      "newest": "2026-10-04T09:13:46.600Z",
       "kept": 18
     },
     "gibiz": {
@@ -46,21 +46,21 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-03T20:20:07.000Z",
-      "kept": 18
+      "newest": "2026-10-04T06:40:08.000Z",
+      "kept": 14
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-03T09:30:00.000Z",
+      "newest": "2026-10-04T09:00:00.000Z",
       "kept": 8
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-03T15:12:00.000Z",
+      "newest": "2026-10-04T09:06:00.000Z",
       "kept": 8
     },
     "kotaku": {
@@ -74,21 +74,21 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-04T01:56:59.000Z",
-      "kept": 16
+      "newest": "2026-10-04T03:14:41.000Z",
+      "kept": 17
     },
     "eurogamer": {
       "status": "ok",
       "url": "https://www.eurogamer.net/?format=rss",
       "items": 100,
-      "newest": "2026-10-03T17:25:03.000Z",
-      "kept": 7
+      "newest": "2026-10-04T09:01:54.000Z",
+      "kept": 6
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-04T01:00:16.000Z",
+      "newest": "2026-10-04T08:00:15.000Z",
       "kept": 10
     }
   },
@@ -96,7 +96,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -105,7 +105,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -114,7 +114,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -123,7 +123,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -132,7 +132,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -141,7 +141,7 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -150,7 +150,7 @@
     {
       "title": "BitSummit",
       "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -159,7 +159,7 @@
     {
       "title": "Tokyo Game Show (TGS)",
       "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -168,7 +168,7 @@
     {
       "title": "PAX West",
       "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -177,7 +177,7 @@
     {
       "title": "gamescom latam",
       "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +186,7 @@
     {
       "title": "The Game Awards",
       "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,7 +195,7 @@
     {
       "title": "Games 4 Change Festival",
       "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -204,7 +204,7 @@
     {
       "title": "ChinaJoy",
       "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -213,7 +213,7 @@
     {
       "title": "Licensing Expo",
       "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -222,7 +222,7 @@
     {
       "title": "MDEV",
       "link": "https://www.gamedeveloper.comwww.mdevconf.com",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -231,7 +231,7 @@
     {
       "title": "Summer Game Fest",
       "link": "https://www.gamedeveloper.comprogram/summer-game-fest",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4fed14edbd323b21/6aac6d23867947be656e1d4c/summergamefest.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -240,7 +240,7 @@
     {
       "title": "London Games Festival",
       "link": "https://www.gamedeveloper.comgames.london",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltefb25f3b346da572/6aac6bebe3c5fa0f98d0b127/LGF-Logo-Colour_menu2026-4.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -249,10 +249,192 @@
     {
       "title": "PAX East",
       "link": "https://www.gamedeveloper.com/series/pax-east",
-      "date": "2026-10-04T02:42:39.759Z",
+      "date": "2026-10-04T09:13:46.600Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt89574081f4ed4675/6aac6a9da9348373f30ef511/DatelessEastLogo.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Super Mario Bros. et Yoshi réduiraient le risque de burn-out en aidant à \"l'émerveillement de l'enfance\"",
+      "link": "https://www.gamekult.com/actualite/super-mario-bros-et-yoshi-reduiraient-le-risque-de-burn-out-en-aidant-a-l-emerveillement-de-l-enfance-3050872272.html",
+      "date": "2026-10-04T09:06:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872272/super-mario-bros-et-yoshi-reduiraient-le-risque-de-burn-out-en-aidant-a-l-emerveillement-de-l-enfance-306262a4__800_800__511-160-1329-978.jpg",
+      "summary": "Le jeu vidéo, c'est bon pour la santé et ce n'est même pas nous qui le disons, mais de vrais scientifiques qui ont bossé dur (probablement dans des labos avec des alambics et des…",
+      "tags": []
+    },
+    {
+      "title": "Nivalis Nights dares to ask what if Cyberpunk 2077 met Dave the Diver and Stardew Valley? And for now at least I'm loving the answer",
+      "link": "https://www.eurogamer.net/nivalis-nights-now-playing",
+      "date": "2026-10-04T09:01:54.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/nivalis-nights-header-brighter.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "As I throw open the windows on my first day in Nivalis, breathing in the city's neon-streaked air and watching the smog roil across the blackened sky, my government-mandated AI…",
+      "tags": []
+    },
+    {
+      "title": "The Sunday Papers",
+      "link": "https://www.rockpapershotgun.com/the-sunday-papers-830",
+      "date": "2026-10-04T09:00:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/the-sunday-papers-big.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Sundays are for having the first lie-in in a month. No trips to visit family, no waking in unfamiliar beds, and, best of all, no having to wait until the hosts are up before you…",
+      "tags": []
+    },
+    {
+      "title": "Cyberpunk 2077 : un nouveau goodies officiel que les fans vont adorer est maintenant disponible, voici où l'acheter",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2077-tarot-divinatoire-officiel-disponible-ou-acheter-724261?utm_source=RSS",
+      "date": "2026-10-04T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/428265_648addafb0320.jpg",
+      "summary": "En attendant Cyberpunk 2 et la suite d’Edgerunners, les fans de Cyberpunk 2077 peuvent maintenant s’offrir un jeu de tarot divinatoire officiel inspiré de l’univers du jeu.",
+      "tags": []
+    },
+    {
+      "title": "Fire Emblem Fortune's Weave : Nintendo continue de faire des cadeaux à ses abonnés",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/fire-emblem-cadeaux-724264?utm_source=RSS",
+      "date": "2026-10-04T08:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/story/723060_6aaa52a797661.png",
+      "summary": "Avis aux abonnés au Nintendo Switch Online. L’éditeur japonais n’a pas encore tout à fait fini de fêter le lancement de Fire Emblem Fortune’s Weave et continue de vous faire de…",
+      "tags": []
+    },
+    {
+      "title": "65 Years Ago, The Twilight Zone Aired Its Creepiest Episode",
+      "link": "https://www.polygon.com/twilight-zone-creepiest-episode-monster/",
+      "date": "2026-10-04T08:00:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/intro-1649249880.jpg",
+      "summary": "It's A Good Life\" throws more than one horror curveball during its taut runtime.",
+      "tags": []
+    },
+    {
+      "title": "5 Incredible Anime Arcs That Are 10/10, No Notes",
+      "link": "https://www.polygon.com/best-anime-arcs-that-are-perfect/",
+      "date": "2026-10-04T08:00:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/mob-psycho-scary-painting.webp",
+      "summary": "These anime storylines elevate these five series with thrilling character developments and satisfying resolutions.",
+      "tags": []
+    },
+    {
+      "title": "5 Mind-Bending Soviet Era Sci-Fi Movies You Can Watch on Streaming",
+      "link": "https://www.polygon.com/best-sci-fi-soviet-russian-streaming/",
+      "date": "2026-10-04T08:00:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/sputnik_astronaut-1.jpg",
+      "summary": "Soviet cinema pushed the bounds of science fiction. These five classics are all streaming for free or on Prime Video.",
+      "tags": []
+    },
+    {
+      "title": "Baldur's Gate 3 accueille 40 nouveautés gratuites sur PS5 et PS4, voici la liste des derniers mods approuvés par Larian",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/baldurs-gate-3-mods-octobre-724266?utm_source=RSS",
+      "date": "2026-10-04T08:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/456171_64f180eb6c05e.jpg",
+      "summary": "Cette semaine, les versions consoles de Baldur’s Gate 3 accueillent pas moins de 40 nouveautés gratuites grâce aux derniers mods validés par Larian Studios.",
+      "tags": []
+    },
+    {
+      "title": "« On ne va pas tout réussir d'un coup » Wardogs tempère les ardeurs des fans avant l'arrivée de la saison 2 très attendue",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/wardogs-avertissement-equilibrage-saison-2-724279?utm_source=RSS",
+      "date": "2026-10-04T07:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/723018_6aa91d5a154d0.jpg",
+      "summary": "À l'approche de sa très attendue saison 2, Wardogs avertit ses joueurs et tente de tempérer leurs espoirs à propos notamment de l'exercice délicat de l'équilibrage.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Ce bon vieux Monster Hunter World s'offre un vrai mod coop qui change la donne",
+      "link": "https://www.gamekult.com/actualite/ce-bon-vieux-monster-hunter-world-s-offre-un-vrai-mod-coop-qui-change-la-donne-3050872271.html",
+      "date": "2026-10-04T07:08:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872271/ce-bon-vieux-monster-hunter-world-s-offre-un-vrai-mod-coop-qui-change-la-donne-24344bed__800_800__734-413-1761-1440.jpg",
+      "summary": "Diriez-vous que Monster Hunter World est le meilleur opus de toute la franchise ? En tout cas, celui qui s'orne de la meilleure vente de toute l'histoire de Capcom est ce que l'on…",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 3 Remastered a déjà plus de 450  mods compatibles, en voici 15 à ne surtout pas rater",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-remastered-mods-compatibles-724268?utm_source=RSS",
+      "date": "2026-10-04T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/412848_63a0761277444.jpg",
+      "summary": "Disponible depuis le 29 septembre 2026, The Witcher 3 Remastered compte déjà des centaines de mods compatibles, dont ces 15 qu'on vous recommande pour améliorer l'expérience.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Super Ghouls'n Ghosts est le jeu le plus injuste de la Super Nintendo, et c'est précisément pour ça qu'on y revient",
+      "link": "https://www.gamekult.com/actualite/super-ghouls-n-ghosts-est-le-jeu-le-plus-injuste-de-la-super-nintendo-et-c-est-precisement-pour-ca-qu-on-y-revient-3050866071.html",
+      "date": "2026-10-04T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866071/il-y-a-34-ans-super-ghouls-n-ghosts-nous-a-appris-la-patience-et-la-perseverance-a02a56ad__800_800__51-0-1011-959.png",
+      "summary": "Quand la vie ne tient qu'à un fil de couture de caleçon, que les fantômes et les gargouilles débarquent de tous les côtés, et que le dernier espoir de survie tient dans le contenu…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : on a dû attendre 25 ans pour que Rockstar abandonne cette idée, c'est un changement majeur et un soulagement !",
+      "link": "https://www.jeuxvideo.com/news/2107227/gta-6-on-a-du-attendre-25-ans-pour-que-rockstar-abandonne-cette-idee-c-est-un-changement-majeur-et-un-soulagement.htm",
+      "date": "2026-10-04T06:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790945020-225-card.jpg",
+      "summary": "Après un quart de siècle à faire souffrir nos pouces et nos manettes, Rockstar Games revoit enfin sa formule. GTA 6 abandonne le martèlement historique du bouton de course pour…",
+      "tags": []
+    },
+    {
+      "title": "Netflix ajoute le dernier film d'une licence légendaire et multimilliardaire",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-jurassic-world-renaissance-dispo-724267?utm_source=RSS",
+      "date": "2026-10-04T06:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdadfc61962.jpg",
+      "summary": "Netflix ajoute aujourd'hui le dernier film d'une des licences les plus marquantes du cinéma de science-fiction. Une saga multi milliardaires qui a cumuler les cartons avec ses…",
+      "tags": []
+    },
+    {
+      "title": "Prime Gaming vous offre encore 2 jeux gratuits à garder, de belles pépites, dernière chance",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-jeux-gratuits-just-die-already-rappel-724259?utm_source=RSS",
+      "date": "2026-10-04T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/428644_6492b82474c6b.jpg",
+      "summary": "Comme chaque semaine, Prime Gaming va bientôt faire un petit nettoyage de ses jeux gratuits avec ici deux pépites à garder avant leur départ du service.",
+      "tags": []
+    },
+    {
+      "title": "Ce film qui parle de jeux vidéo est une véritable catastrophe noté 1/5 par les spectateurs",
+      "link": "https://www.jeuxvideo.com/news/2107305/ce-film-qui-parle-de-jeux-video-est-une-veritable-catastrophe-note-1-5-par-les-spectateurs.htm",
+      "date": "2026-10-04T04:55:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179096/1790955754-1840-card.jpg",
+      "summary": "Un nanar français des années 2000 est devenu mythique pour les mauvaises raisons. Et pour cause, quand le cinéma essaye de parler de gaming sans en maîtriser les règles, le…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Onimusha 2 : Samurai's Destiny, l'excellence de Capcom dans toute sa splendeur",
+      "link": "https://www.gamekult.com/actualite/onimusha-2-samurai-s-destiny-l-excellence-de-capcom-dans-toute-sa-splendeur-3050872212.html",
+      "date": "2026-10-04T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872212/memoire-onimusha-2-729fa421__800_800__1313-0-3474-2160.jpg",
+      "summary": "Alors que Onimusha : Way of the Sword vient de relancer la franchise avec maestria (déjà le million de ventes !), prenons un moment pour revenir sur l'excellent Onimusha 2…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 won't be letting up on the satire: 'If you are going to put all this effort into creating a version of today's world, it has to be more over the top, more insane, more in your face'",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-wont-be-letting-up-on-the-satire-if-you-are-going-to-put-all-this-effort-into-creating-a-version-of-todays-world-it-has-to-be-more-over-the-top-more-insane-more-in-your-face/",
+      "date": "2026-10-04T03:14:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/AV9xeCqDkbCQb7FV7dRQYf-1920-80.jpg",
+      "summary": "Lucia and Jason's appearance in a fashion magazine gives us a couple more titbits of GTA info.",
+      "tags": []
+    },
+    {
+      "title": "10 Erotic Thrillers to Watch After Verity",
+      "link": "https://www.polygon.com/best-erotic-thrillers-movies-like-verity/",
+      "date": "2026-10-04T03:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/basic-instinct.jpg",
+      "summary": "Loved Verity? These 10 erotic thrillers, from Rebecca to The Housemaid, trace the genre's history of obsession and desire.",
       "tags": []
     },
     {
@@ -379,42 +561,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/runescape-animated-show.jpg",
       "summary": "A RuneScape animated adaptation is on the way from Jagex, in partnership with MoistCr1TiKaL and Lyrical Media.",
-      "tags": []
-    },
-    {
-      "title": "Metroid Meets Dead Cells In October's Coolest New Action Game",
-      "link": "https://www.polygon.com/castlevania-belmonts-curse-release-date-metroidvania/",
-      "date": "2026-10-03T20:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/screenshot-2026-06-07-at-2-07-19-pm.png",
-      "summary": "October's most exciting new action game brings modern sensibilities to a beloved franchise that hasn't seen a proper entry in far too long.",
-      "tags": []
-    },
-    {
-      "title": "RuneScape 4 Officially Revealed by Jagex",
-      "link": "https://www.polygon.com/runescape-4-announcement-runefest-reveal-jagex/",
-      "date": "2026-10-03T20:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/runescape-4.jpg",
-      "summary": "Unveiled at RuneFest, RuneScape 4 is another MMO being developed in Unreal Engine, and it's in the works at Jagex.",
-      "tags": []
-    },
-    {
-      "title": "Amazon's New 8-Episode Action Spinoff Dethrones Reacher to Become No. 1 Streaming Series",
-      "link": "https://www.polygon.com/reacher-neagley-spinoff-prime-video-streaming-success-october-2026/",
-      "date": "2026-10-03T19:50:12.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/rspi_s1_ut_108_250520_mahsha_00228r_cropc_3000.jpg",
-      "summary": "Reacher spinoff Neagley is dominating the Prime Video streaming charts in the U.S. and worldwide.",
-      "tags": []
-    },
-    {
-      "title": "The 7 Best Games Like Hollow Knight: Silksong to Speed Up the Wait for Sea of Sorrows",
-      "link": "https://www.polygon.com/best-games-like-silksong-sea-sorrows-wait/",
-      "date": "2026-10-03T19:37:08.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/hollow-knight-silksong-sea-sorrow.png",
-      "summary": "From brutal boss fights to precise platforming challenges, here are 7 games like SiIlksong to play while you wait for new DLC.",
       "tags": []
     },
     {
@@ -816,197 +962,6 @@
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872235/rayman-legends-retold-ubisoft-devoile-l-edition-de-lancement-et-tacle-gta-6-au-passage-8952ca2a__800_800__465-0-1546-1080.png",
       "summary": "Ubisoft a certes décalé Rayman Legends Retold de deux mois au dernier moment, mais c'est pour la bonne cause : celle d'un lancement réussi et de fans comblés. En tout cas, c'est…",
       "tags": []
-    },
-    {
-      "title": "Si vous aimez Stardew Valley, ce jeu est sans doute fait pour vous, et il sort bientôt",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/stardew-valley-moonfrost-724246?utm_source=RSS",
-      "date": "2026-10-03T09:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724246_6abf9f90eb2f1.webp",
-      "summary": "Les alternatives à Stardew Valley se multiplient et les fans du genre vont bientôt pouvoir se laisser transporter dans un nouveau jeu qui a tout pour plaire.",
-      "tags": []
-    },
-    {
-      "title": "\"We felt that fans were getting a bit desensitised to the violence\" Gears of War: E-Day devs made a \"big investment\" in gore, and weirdly, it works",
-      "link": "https://www.eurogamer.net/we-felt-that-fans-were-getting-a-bit-desensitised-to-the-violence-gears-of-war-e-day-devs-made-a-big-investment-in-gore-and-weirdly-it-works",
-      "date": "2026-10-03T09:00:00.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/Eday-chainsaw.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Buoyed by some commendatory early reviews and fantastic initial player numbers , Gears of War: E-Day has found a solid audience a weekend before general release. And a large part…",
-      "tags": []
-    },
-    {
-      "title": "PS6 : Les rumeurs vont bon train sur sa puissance, plus rapide qu'une RTX 5080 ?",
-      "link": "https://www.jeuxvideo.com/news/2105855/ps6-les-rumeurs-vont-bon-train-sur-sa-puissance-plus-rapide-qu-une-rtx-5080.htm",
-      "date": "2026-10-03T08:30:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179018/1790177397-8551-card.jpg",
-      "summary": "Depuis quelques jours, la planète jeu vidéo s'enflamme autour de la future console de salon de Sony, la bien nommée PlayStation 6. La future console aurait 80 TFLOPS de puissance…",
-      "tags": []
-    },
-    {
-      "title": "15 ans après, Skyrim reçoit encore du nouveau contenu gratuit digne d'un DLC officiel, c'est énorme",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/skyrim-dlc-gratuit-king-murkmire-724250?utm_source=RSS",
-      "date": "2026-10-03T08:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/526171_65d5b21f42bd0.jpg",
-      "summary": "15 ans après sa sortie, Skyrim accueille encore une création gratuitequi n'a clairement pas à rougir d'un DLC officiel et qui promet une grande aventure.",
-      "tags": []
-    },
-    {
-      "title": "Paramount+ : toutes les nouveautés d'octobre 2026 avec le retour d'une meilleures séries d'animation",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/paramount-nouveautes-octobre-2026-724254?utm_source=RSS",
-      "date": "2026-10-03T08:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/411216_6388a235bedbb.jpg",
-      "summary": "Quelles sont les nouveautés de Paramount+ en octobre 2026 ? La plateforme américaine a dévoilé l’intégralité de son programme pour le mois, avec le retour de séries appréciées.",
-      "tags": []
-    },
-    {
-      "title": "Capcom annonce son intention de transformer le moteur RE en un moteur de jeu généré par l’IA — « Notre objectif est de créer un avenir où nous développerons des jeux en collaboration avec l’IA »",
-      "link": "https://fr.ign.com/resident-evil-9/92780/capcom-annonce-son-intention-de-transformer-le-moteur-re-en-un-moteur-de-jeu-genere-par-lia--notre-o",
-      "date": "2026-10-03T07:52:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/capcom-ann/capcom-announces-plans-to-transform-the-re-engine-into-an-ai_aazn.jpg",
-      "summary": "« Une condition indispensable pour rationaliser le développement futur. »",
-      "tags": []
-    },
-    {
-      "title": "« Je n'étais pas content » : Le seul film que Steven Spielberg regrette d'avoir réalisé est devenu un classique du cinéma d'aventure !",
-      "link": "https://www.jeuxvideo.com/news/2106349/je-n-etais-pas-content-le-seul-film-que-steven-spielberg-regrette-d-avoir-realise-est-devenu-un-classique-du-cinema-d-aventure.htm",
-      "date": "2026-10-03T07:40:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179060/1790596436-9315-card.jpg",
-      "summary": "Avec une filmographie aussi exhaustive que la sienne, Steven Spielberg a bien le droit d'avoir un regard critique sur quelques uns de ses projets. Mais les fans de cette franchise…",
-      "tags": []
-    },
-    {
-      "title": "The Witcher 3 Remastered offre du contenu gratuit à tout le monde, voici comment le récupérer",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-remastered-contenus-gratuits-twitch-724243?utm_source=RSS",
-      "date": "2026-10-03T07:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96e1d60e562.jpg",
-      "summary": "The Witcher 3 Remastered continue de régaler les joueurs avec de nouveaux contenus gratuits offerts, voici comment les récupérer pendant le temps imparti.",
-      "tags": []
-    },
-    {
-      "title": "Ace Combat 8 Wings of Theve : notre verdict !",
-      "link": "https://www.jeuxvideo.com/videos/2107064/ace-combat-8-wings-of-theve-notre-verdict.htm",
-      "date": "2026-10-03T07:17:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179087/1790865923-5379-card.jpg",
-      "summary": "Les aficionados d'avions de chasse et de dogfights attendent depuis sept longues années la suite de la saga militaire de Bandai Namco, et leur patience est enfin récompensée.",
-      "tags": []
-    },
-    {
-      "title": "Voici Cath Bowie, la streameuse Fortnite la plus âgée du monde, qui vante tous les bienfaits du jeu vidéo",
-      "link": "https://www.gamekult.com/actualite/voici-cath-bowie-la-streameuse-fortnite-la-plus-agee-du-monde-qui-vante-tous-les-bienfaits-du-jeu-video-3050872233.html",
-      "date": "2026-10-03T07:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872233/voici-cath-bowie-la-streameuse-fortnite-la-plus-agee-du-monde-qui-rentre-dans-le-guinness-des-records-d3003338__800_800__264-0-888-624.png",
-      "summary": "À 78 ans, elle vient tout juste de décrocher le record du monde de la streameuse Fortnite la plus âgée au monde : son petit nom, c'est Cath Bowie et elle nous vient d'Inverurie…",
-      "tags": []
-    },
-    {
-      "title": "What are we all playing this weekend?",
-      "link": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-402",
-      "date": "2026-10-03T07:00:00.000Z",
-      "sourceId": "rps",
-      "image": "https://assetsio.gnwcdn.com/weekend-bed.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "October, we meet again. You slip through my bedroom window as a cold draft on a crisp morning, both making my covers more welcome and the long walk to the kitchen for coffee that…",
-      "tags": []
-    },
-    {
-      "title": "TEST CONTROL Resonant : le nouveau Remedy est l’exemple parfait de la suite réussie",
-      "link": "https://www.gameblog.fr/jeu-video/ed/review/control-resonant-test-ps5-724280?utm_source=RSS",
-      "date": "2026-10-03T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/721275_6a85808cedbc3.jpg",
-      "summary": "Disponible depuis le 24 septembre, CONTROL Resonant est assurément l’un des jeux à ne surtout pas manquer en cette rentrée 2026. On vous explique pourquoi avec notre test.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - 37 ans après, Prince of Persia tient encore debout là où tant d'autres ont mal vieilli",
-      "link": "https://www.gamekult.com/actualite/37-ans-apres-prince-of-persia-tient-encore-debout-la-ou-tant-d-autres-ont-mal-vieilli-3050866062.html",
-      "date": "2026-10-03T07:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866062/36-ans-plus-tard-la-flamme-de-prince-of-persia-brule-encore-9c3e28c1__800_800__591-0-2751-2160.jpg",
-      "summary": "Malgré l'annulation du remake des Sables du Temps, la franchise Prince of Persia ne se porte pas si mal de nos jours. Prince of Persia : The Lost Crown n'aura peut-être pas de…",
-      "tags": []
-    },
-    {
-      "title": "What we've been playing - \"That's one of gaming's great cities, that is\"",
-      "link": "https://www.eurogamer.net/what-weve-been-playing-thats-one-of-gamings-great-cities-that-is",
-      "date": "2026-10-03T07:00:00.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/witcher-3-landscape-steam-promo-image.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Hello and welcome back to our regular feature where we write a little about the games we've been playing. This week, Bertie's witcher skills are a bit rusty; Dom goes through the…",
-      "tags": []
-    },
-    {
-      "title": "Que peut-on acheter pour le même prix que la collector de GTA 6 ?",
-      "link": "https://www.jeuxvideo.com/news/2106979/que-peut-on-acheter-pour-le-meme-prix-que-la-collector-de-gta-6.htm",
-      "date": "2026-10-03T06:40:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179086/1790857173-5378-card.jpg",
-      "summary": "Vous hésitez à vous prendre la collector de GTA 6 ? Voici ce que vous pouvez acheter pour le même prix.",
-      "tags": []
-    },
-    {
-      "title": "Netflix ajoute un film culte qui divise beaucoup, mais à voir absolument",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-sortie-effet-papillon-film-724248?utm_source=RSS",
-      "date": "2026-10-03T06:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf5acbcdb.jpg",
-      "summary": "Netflix ajoute un nouveau film culte à son catalogue et il ne laisse clairement pas indifférent. C'est un film qui divise,",
-      "tags": []
-    },
-    {
-      "title": "Tournez manette - The Witcher 3 Remastered sur Switch 2 : faut-il répondre à l'appel de la nouvelle partie ?",
-      "link": "https://www.gamekult.com/actualite/the-witcher-3-remastered-sur-switch-2-faut-il-repondre-a-l-appel-de-la-nouvelle-partie-3050872306.html",
-      "date": "2026-10-03T06:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872306/the-witcher-3-remastered-sur-switch-2-faut-il-repondre-a-l-appel-de-la-nouvelle-partie-090bf66b__800_800__436-0-1515-1080.jpg",
-      "summary": "Sept ans après un premier portage hybride quelque peu bancal (c'est le moins que l'on puisse dire), The Witcher 3 revient sur Switch 2 grâce à sa version Remastered, plus fluide…",
-      "tags": []
-    },
-    {
-      "title": "PS Plus : économisez 180€ en récupérant ces 4 jeux gratuits avant qu'ils ne redeviennent payants",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-jeux-gratuits-rappel-septembre-724238?utm_source=RSS",
-      "date": "2026-10-03T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/591795_66aa0ed7a0e92.jpg",
-      "summary": "Petite piqûre de rappel mensuelle à l’attention des abonnés PS Plus. Les trois jeux offerts en septembre sont sur le point d’être supprimés. Dernière chance pour économiser 180€.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon 30 ans chez McDonalds : quand les cartes exclusives seront disponibles en France ?",
-      "link": "https://www.jeuxvideo.com/news/2107288/pokemon-30-ans-chez-mcdonalds-quand-les-cartes-exclusives-seront-disponibles-en-france.htm",
-      "date": "2026-10-03T04:55:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790952774-5076-card.jpg",
-      "summary": "Cela fait maintenant 30 ans que Pokémon existe. Pour marquer le coup, toute une série de coffrets de cartes a été lancée, et sans surprise les stocks ont fondu comme neige au…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Forza Horizon 2 ou comment des artisans anglais ont sauvé la Xbox One du naufrage",
-      "link": "https://www.gamekult.com/actualite/forza-horizon-2-ou-comment-des-artisans-anglais-ont-sauve-la-xbox-one-du-naufrage-3050872305.html",
-      "date": "2026-10-03T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872305/forza-horizon-2-ou-comment-des-artisans-anglais-ont-sauve-la-xbox-one-du-naufrage-dd28a1c6__800_800__654-0-1734-1080.jpg",
-      "summary": "Souvenons-nous du champ de ruines qu'était l'écosystème Xbox en 2014. Après l'inénarrable Don Mattrick, le traumatisme du « TV, TV, TV », le forcing d'une caméra Kinect imposée…",
-      "tags": []
-    },
-    {
-      "title": "Test Gears of War : E-Day sur PC et Xbox Series",
-      "link": "https://www.jeuxvideo.com/test/2107315/gears-of-war-e-day-graphiquement-c-est-du-jamais-vu-sur-console-et-pour-le-reste.htm",
-      "date": "2026-10-03T04:00:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179096/1790958097-9916-card.jpg",
-      "summary": "Sept années après la sortie de Gears 5, la série lancée par Epic Games reprise par The Coalition revient avec une préquelle plutôt qu’une suite. Le destin de Kait Diaz garde ses…",
-      "tags": [
-        "release"
-      ]
     }
   ]
 }
