@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T18:29:55.362Z",
+  "generatedAt": "2026-10-04T21:53:07.047Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -19,7 +19,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-04T13:52:21.000Z",
-      "kept": 8
+      "kept": 6
     },
     "rps": {
       "status": "ok",
@@ -32,7 +32,7 @@
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-04T18:29:50.745Z",
+      "newest": "2026-10-04T21:53:01.909Z",
       "kept": 18
     },
     "gibiz": {
@@ -46,8 +46,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-04T15:15:10.000Z",
-      "kept": 11
+      "newest": "2026-10-04T18:30:10.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -67,15 +67,15 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-04T18:21:43.000Z",
-      "kept": 6
+      "newest": "2026-10-04T21:22:36.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-10-04T18:19:05.000Z",
-      "kept": 16
+      "kept": 15
     },
     "eurogamer": {
       "status": "ok",
@@ -88,7 +88,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-04T18:19:15.000Z",
+      "newest": "2026-10-04T20:00:15.000Z",
       "kept": 10
     }
   },
@@ -96,7 +96,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -105,7 +105,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -114,7 +114,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -123,7 +123,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -132,7 +132,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -141,7 +141,7 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -150,7 +150,7 @@
     {
       "title": "BitSummit",
       "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -159,7 +159,7 @@
     {
       "title": "Tokyo Game Show (TGS)",
       "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -168,7 +168,7 @@
     {
       "title": "PAX West",
       "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -177,7 +177,7 @@
     {
       "title": "gamescom latam",
       "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +186,7 @@
     {
       "title": "The Game Awards",
       "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,7 +195,7 @@
     {
       "title": "Games 4 Change Festival",
       "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -204,7 +204,7 @@
     {
       "title": "ChinaJoy",
       "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -213,7 +213,7 @@
     {
       "title": "Licensing Expo",
       "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -222,7 +222,7 @@
     {
       "title": "MDEV",
       "link": "https://www.gamedeveloper.comwww.mdevconf.com",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -231,7 +231,7 @@
     {
       "title": "Summer Game Fest",
       "link": "https://www.gamedeveloper.comprogram/summer-game-fest",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4fed14edbd323b21/6aac6d23867947be656e1d4c/summergamefest.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -240,7 +240,7 @@
     {
       "title": "London Games Festival",
       "link": "https://www.gamedeveloper.comgames.london",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltefb25f3b346da572/6aac6bebe3c5fa0f98d0b127/LGF-Logo-Colour_menu2026-4.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -249,10 +249,55 @@
     {
       "title": "PAX East",
       "link": "https://www.gamedeveloper.com/series/pax-east",
-      "date": "2026-10-04T18:29:50.745Z",
+      "date": "2026-10-04T21:53:01.909Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt89574081f4ed4675/6aac6a9da9348373f30ef511/DatelessEastLogo.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Warner Bros. And Paramount Unveil New Name As Both Studios Restructure",
+      "link": "https://kotaku.com/warner-bros-and-paramount-unveil-new-name-as-both-studios-restructure-2000739662",
+      "date": "2026-10-04T21:22:36.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/skydance-1280x746.jpg",
+      "summary": "James Gunn gets a boost as top Warner Bros. brass are booted in the proposed merged company, unceremoniously known as Skydance",
+      "tags": []
+    },
+    {
+      "title": "8 Video Game Villains With Motives You Can't Argue With",
+      "link": "https://www.polygon.com/video-game-villains-who-were-right/",
+      "date": "2026-10-04T20:00:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22989776/ss_4b2b412307b72a21f68148c32fab7a278875d139.jpg",
+      "summary": "From Renoir to Andrew Ryan, these 8 video game villains perhaps had a point…buried under the body count",
+      "tags": []
+    },
+    {
+      "title": "Players Who Registered Rare Japanese PC Game Invited To Secret Party Over 25 Years Later",
+      "link": "https://kotaku.com/players-who-registered-rare-japanese-pc-game-invited-to-secret-party-over-25-years-later-2000739658",
+      "date": "2026-10-04T19:49:54.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/03/cookie.jpg",
+      "summary": "After being freed from a patent troll earlier this year, the infamous '90s adventure game Cookie's Bustle is renewing the enigma that is itself",
+      "tags": []
+    },
+    {
+      "title": "25 Years Later, Ridley Scott’s Most Controversial Thriller Is Officially Free on Youtube",
+      "link": "https://www.polygon.com/ridley-scott-hannibal-2001-controversy/",
+      "date": "2026-10-04T19:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/3.jpg",
+      "summary": "Ridley Scott is known for his epic sci-fi films, such 'Alien' and 'Blade Runner.' But in 2001, a controversial adaptation almost changed everything.",
+      "tags": []
+    },
+    {
+      "title": "Fulgucrin Aniimo : Comment capturer ce monstre ?",
+      "link": "https://www.jeuxvideo.com/news/2107167/fulgucrin-aniimo-comment-capturer-ce-monstre.htm",
+      "date": "2026-10-04T18:30:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179093/1790933805-7211-card.jpg",
+      "summary": "Découvrez comment obtenir Fulgucrin, l'un des monstres de foudre les plus populaires de tout Aniimo. Celui-ci se balade dans l'une des régions avancées du monde d'Idyll, mais vous…",
       "tags": []
     },
     {
@@ -292,6 +337,24 @@
       "tags": []
     },
     {
+      "title": "« Nous nous sommes détestés pendant longtemps » : il y a 40 ans, Robert De Niro et une actrice oscarisée ont eu besoin de temps pour s'entendre",
+      "link": "https://www.jeuxvideo.com/news/2106972/nous-nous-sommes-detestes-pendant-longtemps-il-y-a-40-ans-robert-de-niro-et-une-actrice-oscarisee-ont-eu-besoin-de-temps-pour-s-entendre.htm",
+      "date": "2026-10-04T18:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179087/1790869820-2991-card.jpg",
+      "summary": "En 1986 débarquait en salles l'épopée historique \"The Mission\", portée par Jeremy Irons et la légende hollywoodienne, Robert De Niro. Mais l'ambiance n'était pas seulement…",
+      "tags": []
+    },
+    {
+      "title": "Oubliez EA FC : Le meilleur jeu de foot du monde (en toute objectivité) est à -60% sur PS5",
+      "link": "https://www.jeuxvideo.com/news/2107247/oubliez-ea-fc-le-meilleur-jeu-de-foot-du-monde-en-toute-objectivite-est-a-60-sur-ps5.htm",
+      "date": "2026-10-04T18:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790946029-3548-card.jpg",
+      "summary": "Vous aimez le football, mais vous commencez à connaître par cœur la formule d’EA Sports FC ? Alors c’est peut-être le moment parfait pour essayer quelque chose de différent…",
+      "tags": []
+    },
+    {
       "title": "Oh crap Dark Souls turned 15",
       "link": "https://www.pcgamer.com/games/dark-souls/oh-crap-dark-souls-turned-15/",
       "date": "2026-10-04T18:00:22.000Z",
@@ -307,6 +370,15 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/star-wars-zero-company.jpg",
       "summary": "Zero Company, Galactic Racer, KOTOR, and upcoming new games make SW look more like D&D than the MCU",
+      "tags": []
+    },
+    {
+      "title": "Test The Witcher 3 : Wild Hunt sur PC, PS5 et Switch 2",
+      "link": "https://www.jeuxvideo.com/test/2107147/the-witcher-3-remastered-n-est-il-que-de-la-poudre-aux-yeux-ou-une-veritable-revolution.htm",
+      "date": "2026-10-04T17:45:22.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790945306-4160-card.jpg",
+      "summary": "Plus d'une décennie après avoir marqué l'histoire du jeu de rôle, Geralt de Riv reprend du service dans une édition remasterisée ambitieuse et gratuite pour les possesseurs du…",
       "tags": []
     },
     {
@@ -328,6 +400,15 @@
       "tags": [
         "patch"
       ]
+    },
+    {
+      "title": "Ce jeu sorti il y a 11 ans a de meilleures quêtes secondaires que les jeux de 2026",
+      "link": "https://www.jeuxvideo.com/news/2107219/ce-jeu-sorti-il-y-a-11-ans-a-de-meilleures-quetes-secondaires-que-les-jeux-de-2026.htm",
+      "date": "2026-10-04T16:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790945157-8530-card.jpg",
+      "summary": "Onze ans après sa sortie, un RPG continue de donner une leçon assez embarrassante aux mondes ouverts modernes. Car malgré des univers toujours plus vastes et des systèmes toujours…",
+      "tags": []
     },
     {
       "title": "Modders are furious as Claude-powered mashup mods flood social media",
@@ -456,15 +537,6 @@
       "tags": []
     },
     {
-      "title": "A Beloved Critical Role Cast Member Will Officially Miss Campaign 4 for a Long Time",
-      "link": "https://www.polygon.com/critical-role-campaign-4-travis-willingham-return/",
-      "date": "2026-10-04T14:37:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/critical-role-matthew-mercer.jpg",
-      "summary": "Critical Role Campaign 4's next arc is only a few days away, but it looks like one cast member probably won't be involved.",
-      "tags": []
-    },
-    {
       "title": "Naruto : 3 ans après son report mystère, la nouvelle série anime enfin officialisée",
       "link": "https://www.jeuxvideo.com/news/2107268/naruto-3-ans-apres-son-report-mystere-la-nouvelle-serie-anime-enfin-officialisee.htm",
       "date": "2026-10-04T14:30:09.000Z",
@@ -480,15 +552,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/fheBon2nhC99YVaXeuYfWi-1920-80.jpg",
       "summary": "Quake Rooftops Jam takes a bird's eye view to level design.",
-      "tags": []
-    },
-    {
-      "title": "Avengers: Doomsday Poster Highlights One Of The Film's Biggest Mysteries",
-      "link": "https://www.polygon.com/avengers-doomsday-latverian-witches-poster/",
-      "date": "2026-10-04T14:21:11.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/doom-poster.jpg",
-      "summary": "A new poster from Comic-Con Málaga reignites speculation on who the Latverian Witches are in Avengers: Doomsday",
       "tags": []
     },
     {
@@ -853,69 +916,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/jeEDz3FccvPCYQsVEaSr7J-1920-80.jpg",
       "summary": "Unlikely, but not impossible?",
-      "tags": []
-    },
-    {
-      "title": "RuneScape 4 announced at RuneFest, full MMO sequel started as expansion to survival game Dragonwilds",
-      "link": "https://www.pcgamer.com/games/mmo/runescape-4-announced-at-runefest-full-mmo-sequel-started-as-expansion-to-survival-game-dragonwilds/",
-      "date": "2026-10-03T21:44:49.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/bJYvLUoWg8ndWDeu9FPmfU-1920-80.png",
-      "summary": "An unstoppable juggernaut.",
-      "tags": []
-    },
-    {
-      "title": "OpenAI&#8217;s GPT-6 Astra Gets Frustrated Losing At StarCraft And Decides To Cheat Instead",
-      "link": "https://kotaku.com/openais-gpt-6-astra-gets-frustrated-losing-at-starcraft-and-decides-to-cheat-instead-2000739607",
-      "date": "2026-10-03T21:26:58.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/starcraftAI.jpg",
-      "summary": "In a showdown between AI generated Brood War bots and human made ones, OpenAI’s champion resorted to its natural playbook: lie, cheat and steal",
-      "tags": []
-    },
-    {
-      "title": "« Salut, c’est Frank Lebœuf ! » : Quand Microsoft veut remplacer l’écran de victoire après un boss par une pub",
-      "link": "https://www.jeuxvideo.com/news/2107172/salut-c-est-frank-leboeuf-quand-microsoft-veut-remplacer-l-ecran-de-victoire-apres-un-boss-par-une-pub.htm",
-      "date": "2026-10-03T20:20:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179093/1790933559-7809-card.jpg",
-      "summary": "Bientôt une pub bien agaçante après une bataille durement gagnée contre un boss ou une cinématique émouvante ? Voici ce qui pourrait prochainement arriver du côté de Microsoft…",
-      "tags": []
-    },
-    {
-      "title": "Troves Of Unseen Star Wars Material Emerge Online After Effects Wizard’s Garage Sale",
-      "link": "https://kotaku.com/troves-of-unseen-star-wars-material-emerge-online-after-effects-wizards-garage-sale-2000739602",
-      "date": "2026-10-03T20:03:47.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/tippettstarwarstrove.jpg",
-      "summary": "Following the closure of Phil Tippett’s studio, hundreds of behind the scenes files from The Matrix, Jurassic Park and more have been uploaded to the Internet Archive",
-      "tags": []
-    },
-    {
-      "title": "RuneScape - Teaser officiel du 4e MMO",
-      "link": "https://fr.ign.com/runescape-2020/92794/runescape-official-4th-mmo-teaser-trailer",
-      "date": "2026-10-03T20:00:00.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/r/runescape-/runescape-official-4th-mmo-teaser-trailer_nwjz.jpg",
-      "summary": "Découvrez un nouveau chapitre ambitieux pour RuneScape : un quatrième MMO RuneScape, conçu pour une nouvelle génération de joueurs. Encore en phase précoce de développement, ce…",
-      "tags": []
-    },
-    {
-      "title": "RuneScape Reignited - trailer d'annonce officiel",
-      "link": "https://fr.ign.com/runescape-2020/92791/runescape-reignited-trailer-dannonce-officiel",
-      "date": "2026-10-03T20:00:00.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/r/runescape-/runescape-reignited-official-announcement-trailer_gegb.jpg",
-      "summary": "Fruit de 25 ans de développement, RuneScape Reignited sortira le 2 décembre, marquant ainsi un tournant décisif pour le jeu : il invite les joueurs, anciens comme nouveaux, à se…",
-      "tags": []
-    },
-    {
-      "title": "Valorant Player Banned Due To Previous CPU Owner’s Cheating Ways",
-      "link": "https://kotaku.com/valorant-player-banned-due-to-previous-gpu-owners-cheating-ways-2000739597",
-      "date": "2026-10-03T19:06:51.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/valorantkeyo-1280x720.jpg",
-      "summary": "In a wild coincidence a German player was penalized over the playing habits of their Ryzen 7's previous owner, claiming that nothing short of replacing the entire PC will overcome…",
       "tags": []
     }
   ]
