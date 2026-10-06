@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:09:33.749Z",
+  "generatedAt": "2026-10-06T09:02:26.721Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -18,21 +18,21 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-06T07:43:41.000Z",
-      "kept": 19
+      "newest": "2026-10-06T08:45:28.000Z",
+      "kept": 25
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
       "newest": "2026-10-05T16:37:44.000Z",
-      "kept": 8
+      "kept": 7
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-06T08:09:31.190Z",
+      "newest": "2026-10-06T09:02:20.544Z",
       "kept": 18
     },
     "gibiz": {
@@ -40,20 +40,20 @@
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-06T07:24:06.000Z",
-      "kept": 9
+      "kept": 8
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-06T05:05:07.000Z",
+      "newest": "2026-10-06T06:40:06.000Z",
       "kept": 17
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-06T07:52:35.000Z",
+      "newest": "2026-10-06T08:38:56.000Z",
       "kept": 13
     },
     "gamekult": {
@@ -81,103 +81,22 @@
       "status": "ok",
       "url": "https://www.eurogamer.net/?format=rss",
       "items": 100,
-      "newest": "2026-10-05T20:14:26.000Z",
-      "kept": 13
+      "newest": "2026-10-06T09:00:01.000Z",
+      "kept": 14
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-06T08:00:15.000Z",
+      "newest": "2026-10-06T09:00:15.000Z",
       "kept": 10
     }
   },
   "articles": [
     {
-      "title": "BitSummit",
-      "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Tokyo Game Show (TGS)",
-      "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "PAX West",
-      "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "gamescom latam",
-      "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "The Game Awards",
-      "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Games 4 Change Festival",
-      "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "ChinaJoy",
-      "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Licensing Expo",
-      "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "MDEV",
-      "link": "https://www.gamedeveloper.comwww.mdevconf.com",
-      "date": "2026-10-06T08:09:31.190Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
-      "summary": "",
-      "tags": []
-    },
-    {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +105,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,7 +114,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -204,7 +123,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -213,7 +132,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -222,10 +141,190 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-06T08:09:31.189Z",
+      "date": "2026-10-06T09:02:20.544Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "BitSummit",
+      "link": "https://www.gamedeveloper.combitsummit.org",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Tokyo Game Show (TGS)",
+      "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "PAX West",
+      "link": "https://www.gamedeveloper.comwest.paxsite.com",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "gamescom latam",
+      "link": "https://www.gamedeveloper.comlatam.gamescom.global",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "The Game Awards",
+      "link": "https://www.gamedeveloper.comthegameawards.com",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Games 4 Change Festival",
+      "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "ChinaJoy",
+      "link": "https://www.gamedeveloper.comen.chinajoy.net",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Licensing Expo",
+      "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "MDEV",
+      "link": "https://www.gamedeveloper.comwww.mdevconf.com",
+      "date": "2026-10-06T09:02:20.544Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0f6e6f2d0f183f09/6aac6edb1080593462c021b8/mdev.png?width=720&quality=80&disable=upscale",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "11 Most Essential White Cards Every Magic: The Gathering Player Should Know",
+      "link": "https://www.polygon.com/magic-gathering-mtg-best-white-cards/",
+      "date": "2026-10-06T09:00:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/solitude-elemental-mtg.jpg",
+      "summary": "10 quintessential white cards that capture the color’s history, philosophy, and most iconic mechanics.",
+      "tags": []
+    },
+    {
+      "title": "Tarae: The Unbound seems to get what makes a good ARPG, but crunchy combat aside, can it rise to the likes of Diablo and Path of Exile?",
+      "link": "https://www.eurogamer.net/tarae-the-unbound-preview",
+      "date": "2026-10-06T09:00:01.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/Tarae_Screenshot08.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Who doesn't love a good top-down ARPG; a solid dungeon-crawler with visceral action and real punchy combat that sticks in your teeth like toffee? Aside from Diablo and Path of…",
+      "tags": []
+    },
+    {
+      "title": "\"This is Call of Duty's definitive extraction shooter experience\" - Infinity Ward details the new DMZ mode in Modern Warfare 4",
+      "link": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-reveal",
+      "date": "2026-10-06T08:57:36.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/modern-warfare-4-dmz-screen-2-crop.jpeg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Call of Duty: Modern Warfare 4 studio Infinity Ward is betting big on DMZ - the game's extraction shooter mode - becoming another major pillar of the series. In a wide-ranging…",
+      "tags": []
+    },
+    {
+      "title": "Le patron d'Ubisoft affirme que Watch Dogs est « important » pour l'avenir de l'entreprise, mais ne vous attendez pas à de nouveaux opus dans l'immédiat",
+      "link": "https://fr.ign.com/watchdogs/92832/le-patron-dubisoft-affirme-que-watch-dogs-est-important-pour-lavenir-de-lentreprise-mais-ne-vous-att",
+      "date": "2026-10-06T08:45:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/u/ubisoft-bo/ubisoft-boss-says-watch-dogs-is-important-to-companys-future_8hrm.jpg",
+      "summary": "Sleeping dog.",
+      "tags": []
+    },
+    {
+      "title": "PS Plus : les jeux gratuits d'octobre 2026 sont disponibles et il y a du très bon, mais ça ne va pas plaire à tout le monde",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-jeux-gratuits-octobre-2026-disponibles-724380?utm_source=RSS",
+      "date": "2026-10-06T08:38:56.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/591795_66aa0f4dd9f29.jpg",
+      "summary": "Comme tous les mois, PlayStation renouvelle sa gamme de jeux gratuits proposés aux abonnés du PS Plus. Voici les nouvelles arrivées d’octobre 2026 pour tous les paliers.",
+      "tags": []
+    },
+    {
+      "title": "Xiaomi 18 Ultra : le géant photographique sacrifié par ses coûts ?",
+      "link": "https://fr.ign.com/xiaomi-18-pro/92839/xiaomi-18-ultra-le-geant-photographique-sacrifie-par-ses-couts",
+      "date": "2026-10-06T08:33:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/xiaomi-17-ultra_f76s.jpg",
+      "summary": "Pas de Xiaomi 18 Ultra pour tous ?",
+      "tags": []
+    },
+    {
+      "title": "« C'est juste ridicule » Les derniers Kingdom Hearts cachent une mauvaise surprise pour les joueurs PS5, certains fans n'ont même plus envie d'y jouer",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/kingdom-hearts-collection-trophee-platine-ps5-724372?utm_source=RSS",
+      "date": "2026-10-06T08:30:07.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/720167_6a6c5c72daaa5.jpg",
+      "summary": "La nouvelle collection Kingdom Hearts réserve une mauvaise surprise aux joueuses et joueurs PS5 qui collectionnent les trophées Platine. La compilation ne vous en donnera pas…",
+      "tags": []
+    },
+    {
+      "title": "Broken Horror Anthology - Trailer de gameplay officiel",
+      "link": "https://fr.ign.com/broken-horror-anthology/92837/broken-horror-anthology-trailer-de-gameplay-officiel",
+      "date": "2026-10-06T08:21:46.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/b/broken-hor/broken-horror-anthology-official-gameplay-trailer_u7aa.png",
+      "summary": "Ne manquez pas la bande-annonce de gameplay de Broken Horror Anthology, une compilation de jeux d’horreur à l’ambiance envoûtante développée par Shikami, EpicSUS, Basement Tapes…",
+      "tags": []
+    },
+    {
+      "title": "Les scènes des sources chaudes dans Final Fantasy 7 Revelation dévoilent de nouveaux skins de maillot de bain pour votre équipe",
+      "link": "https://fr.ign.com/final-fantasy-vii-remake-part-3/92835/les-scenes-des-sources-chaudes-dans-final-fantasy-7-revelation-devoilent-de-nouveaux-skins-de-maillo",
+      "date": "2026-10-06T08:17:23.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/f/final-fant/final-fantasy-7-revelation-hot-springs-scenes-reveal-new-bat_txf7.jpg",
+      "summary": "Chaud.",
+      "tags": []
+    },
+    {
+      "title": "« Un genre différent d'action-espionnage » Physint, le prochain jeu de Kojima façon Metal Gear, dévoile de nouveaux détails que les fans vont adorer",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/physint-details-kojima-histoire-casting-724373?utm_source=RSS",
+      "date": "2026-10-06T08:10:33.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_69dcb2b7f0ba6.jpg",
+      "summary": "Après une transition de PlayStation à Xbox, Physint, le prochain jeu de Kojima, partage de nouveaux détails croustillants pour cet héritier de la légendaire saga Metal Gear.",
+      "tags": []
+    },
+    {
+      "title": "Hideo Kojima affirme qu'il fera un caméo dans un \"gros\" film — mais lequel ?",
+      "link": "https://fr.ign.com/hideo-kojima-action-espionage-project/92830/hideo-kojima-affirme-quil-fera-un-cameo-dans-un-gros-film-mais-lequel",
+      "date": "2026-10-06T08:02:12.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/h/hideo-koji/hideo-kojima-says-youll-see-him-cameo-in-a-big-live-action-m_p3jk.jpg",
+      "summary": "Des pistes solides ?",
       "tags": []
     },
     {
@@ -330,6 +429,15 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050866099/avec-tactics-ogre-let-us-cling-together-yasumi-matsuno-refutait-le-manicheisme-ac109cdd__800_800__931-0-1885-954.jpg",
       "summary": "Quel meilleur moment pour parler de Tactics Ogre, premier du nom, alors même que sa suite spirituelle (FF Tactics) vient tout juste de bénéficier d'un petit coup de…",
+      "tags": []
+    },
+    {
+      "title": "On y a tous joué chez un copain : que sont devenues ces franchises cultes de la PlayStation 1 aujourd'hui disparues ?",
+      "link": "https://www.jeuxvideo.com/news/2107496/on-y-a-tous-joue-chez-un-copain-que-sont-devenues-ces-franchises-cultes-de-la-playstation-1-aujourd-hui-disparues.htm",
+      "date": "2026-10-06T06:40:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791209581-1263-card.jpg",
+      "summary": "La première PlayStation a été le théâtre d'une explosion créative sans précédent, façonnant l'enfance de millions de joueurs. Pourtant, entre choix stratégiques douteux et…",
       "tags": []
     },
     {
@@ -558,15 +666,6 @@
       "tags": []
     },
     {
-      "title": "Multi-Stage Boss Fights Are the Worst Video Game Mechanic of All Time",
-      "link": "https://www.polygon.com/multi-stage-boss-fights-worst-video-game-mechanic/",
-      "date": "2026-10-05T20:00:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/multi-stage-boss-fights-header.jpg",
-      "summary": "Boss fights with second stages and replenished health bars is the worst video game mechanic of all time. Here's why.",
-      "tags": []
-    },
-    {
       "title": "Someone Made A Fun Soccer Romhack For Ocarina Of Time And—God Damnit, It&#8217;s Vibe-Coded",
       "link": "https://kotaku.com/ocarina-of-time-romhack-soccerina-of-time-2000740026",
       "date": "2026-10-05T20:00:01.000Z",
@@ -756,6 +855,15 @@
       "tags": []
     },
     {
+      "title": "BrokenLore: MIKI-CHAN - Trailer d'annonce officiel",
+      "link": "https://fr.ign.com/brokenlore-miki-chan/92838/brokenlore-miki-chan-trailer-dannonce-officiel",
+      "date": "2026-10-05T17:10:54.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/b/brokenlore/brokenlore-miki-chan-official-announcement-trailer_7zqx.png",
+      "summary": "Découvrez la bande-annonce de BrokenLore : MIKI-CHAN, un jeu d’aventure d’horreur psychologique développé par Serafini Productions.",
+      "tags": []
+    },
+    {
       "title": "Invincible VS : du gameplay pour le maître du multivers Angstrom Levy",
       "link": "https://www.gamekult.com/actualite/invincible-vs-du-gameplay-pour-le-maitre-du-multivers-angstrom-levy-3050872318.html",
       "date": "2026-10-05T17:03:00.000Z",
@@ -896,7 +1004,7 @@
       "date": "2026-10-05T16:18:51.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/EpSFe2d38GFB5fEoqAYboF-1920-80.jpg",
-      "summary": "Times are tough, every little helps. Here are the best deals we've found over at Amazon, Best Buy, Newegg, Walmart and more.",
+      "summary": "Here are the best deals I'd recommended over at Amazon, Best Buy, Newegg, Walmart and more.",
       "tags": []
     },
     {
@@ -990,15 +1098,6 @@
       "tags": []
     },
     {
-      "title": "Les figurines Pop! Avengers : Doomsday de Funko proposent plusieurs versions du Docteur Doom",
-      "link": "https://fr.ign.com/avengers-doomsday/92815/les-figurines-pop-avengers-doomsday-de-funko-proposent-plusieurs-versions-du-docteur-doom",
-      "date": "2026-10-05T15:28:47.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/preview/f/funkos-ave/funkos-avengers-doomsday-pop-figures-include-multiple-versio_45s2.jpg",
-      "summary": "Quelque chose se prépare... pour votre collection de Funko.",
-      "tags": []
-    },
-    {
       "title": "Figurines Funko Avengers: Doomsday Pop! en images",
       "link": "https://fr.ign.com/funko-pop/92816/funkos-avengers-doomsday-pop-figures-image-gallery",
       "date": "2026-10-05T15:28:47.000Z",
@@ -1008,21 +1107,21 @@
       "tags": []
     },
     {
+      "title": "Les figurines Pop! Avengers : Doomsday de Funko proposent plusieurs versions du Docteur Doom",
+      "link": "https://fr.ign.com/avengers-doomsday/92815/les-figurines-pop-avengers-doomsday-de-funko-proposent-plusieurs-versions-du-docteur-doom",
+      "date": "2026-10-05T15:28:47.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/preview/f/funkos-ave/funkos-avengers-doomsday-pop-figures-include-multiple-versio_45s2.jpg",
+      "summary": "Quelque chose se prépare... pour votre collection de Funko.",
+      "tags": []
+    },
+    {
       "title": "PlayStation Plus : quels sont les 3 nouveaux jeux gratuits du mois d'octobre et faut-il y jouer ?",
       "link": "https://www.jeuxvideo.com/news/2107392/playstation-plus-quels-sont-les-3-nouveaux-jeux-gratuits-du-mois-d-octobre-et-faut-il-y-jouer.htm",
       "date": "2026-10-05T15:15:10.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179119/1791192452-8049-card.jpg",
       "summary": "Les trois jeux offerts aux abonnés PlayStation Plus pour ce mois d'octobre 2026 sont désormais disponibles. Entre sport automobile, extraction shooter horrifique et massacre…",
-      "tags": []
-    },
-    {
-      "title": "GUIDE Animal Crossing New Horizons : La liste complète des créatures marines d’octobre 2026",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-animal-crossing-new-horizons-guide-creatures-octobre-724349?utm_source=RSS",
-      "date": "2026-10-05T15:15:04.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_698c7d85ce945.jpg",
-      "summary": "Collectionnez toutes les créatures marines d'octobre avec notre guide Animal Crossing: New Horizons valable pour la version Nintendo Switch et la Nintendo Switch 2 Edition.",
       "tags": []
     },
     {
@@ -1169,26 +1268,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/Banjo.jpg",
       "summary": "AI-assisted projects provoking stark criticism",
-      "tags": []
-    },
-    {
-      "title": "The Witcher 3 Songs of the Past : comment bien se préparer pour le DLC et ce qu'il faut impérativement faire",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-songs-of-the-past-preparation-724337?utm_source=RSS",
-      "date": "2026-10-05T14:17:57.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724337_6ac3a48d054dc.png",
-      "summary": "En attendant la sortie de Songs of the Past l'an prochain, voici comment se préparer efficacement à l'ultime extension de The Witcher 3 avant que Geralt prenne définitivement sa…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "GUIDE Aniimo : qui prendre en photo pour l'évènement « Quel est cet Aniimo » du 2 octobre 2026 ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/aniimo-guide-soluce-qui-est-cet-aniimo-2-octobre-2026-724336?utm_source=RSS",
-      "date": "2026-10-05T14:04:57.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/soluces/724336_6ac3ad5c36561.png",
-      "summary": "Aniimo propose un nouvel évènement Qui est cet Aniimo du 2 au 8 octobre 2026, voici quelle créature prendre en photo et une solution rapide pour le faire.",
       "tags": []
     },
     {
@@ -1468,44 +1547,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872317/starcraft-ghost-refuse-de-mourir-et-nous-hante-encore-avec-de-nouvelles-videos-de-gameplay-f10edfb4__800_800__380-0-1288-900.jpg",
       "summary": "De nouveaux extraits de gameplay d'une version de développement de StarCraft Ghost viennent de faire surface. De quoi se souvenir de l'une des plus tristes annulations de jeu de…",
-      "tags": []
-    },
-    {
-      "title": "World of Warcraft Forever : pourquoi vous allez devoir payer pour réserver le nom de votre personnage ?",
-      "link": "https://www.jeuxvideo.com/news/2107278/world-of-warcraft-forever-pourquoi-vous-allez-devoir-payer-pour-reserver-le-nom-de-votre-personnage.htm",
-      "date": "2026-10-05T08:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179095/1790950115-5671-card.jpg",
-      "summary": "La sortie de World of Warcraft Forever approche à grands pas, avec parmi les grandes nouveautés, le fait de pouvoir choisir un nom composé. Seulement, pour choisir le nom que vous…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "\"We opted out of some things really early on\": How the small team making No Law plan to make it look as big as Cyberpunk 2077",
-      "link": "https://www.rockpapershotgun.com/we-opted-out-of-some-things-really-early-on-how-the-24-person-team-making-no-law-plan-to-make-it-look-as-big-as-cyberpunk-2077",
-      "date": "2026-10-05T08:30:00.000Z",
-      "sourceId": "rps",
-      "image": "https://assetsio.gnwcdn.com/No-Law-grimy-alley.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "If you've watched the trailers for No Law or the tech demo that developer Neon Giant showed off at Unreal Fest earlier this year, it would be easy to believe the game has a…",
-      "tags": []
-    },
-    {
-      "title": "Capcom aims to enhance its propriety RE Engine with AI to accelerate efficiency in QA, debugging, and data processing",
-      "link": "https://www.gamesindustry.biz/capcom-aims-to-enhance-its-propriety-re-engine-with-ai-to-accelerate-efficiency-in-qa-debugging-and-data-processing",
-      "date": "2026-10-05T08:29:51.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/resident-evil-requiem-trailer-reveals-bustling-city-location_89ud.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Capcom has announced a multi-phase project to adapt its proprietary RE Engine into an \"AI-generation engine\" to streamline development and optimise performance.",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders is getting a free trial to celebrate its biggest update yet",
-      "link": "https://www.eurogamer.net/arc-raiders-free-trial-frozen-trail",
-      "date": "2026-10-05T08:21:21.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/Arc-Raiders-deluxe-set.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Arc Raiders studio Embark is making the extraction shooter free to play for four days alongside the launch of the game's biggest update yet, Frozen Trail. The studio spent the…",
       "tags": []
     }
   ]
