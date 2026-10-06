@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T15:58:59.576Z",
+  "generatedAt": "2026-10-06T20:51:02.315Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -18,35 +18,35 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-06T15:54:11.000Z",
-      "kept": 30
+      "newest": "2026-10-06T17:26:12.000Z",
+      "kept": 34
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-10-06T15:30:00.000Z",
-      "kept": 10
+      "newest": "2026-10-06T20:32:09.000Z",
+      "kept": 15
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-06T15:58:54.432Z",
-      "kept": 18
+      "newest": "2026-10-06T20:50:58.746Z",
+      "kept": 15
     },
     "gibiz": {
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-06T14:00:00.000Z",
-      "kept": 9
+      "kept": 6
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-06T13:00:07.000Z",
+      "newest": "2026-10-06T18:30:08.000Z",
       "kept": 20
     },
     "gameblog": {
@@ -60,35 +60,35 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-06T15:15:00.000Z",
-      "kept": 13
+      "newest": "2026-10-06T17:05:00.000Z",
+      "kept": 15
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-06T15:00:47.000Z",
-      "kept": 17
+      "newest": "2026-10-06T20:45:17.000Z",
+      "kept": 20
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-06T15:25:23.000Z",
-      "kept": 32
+      "newest": "2026-10-06T19:48:42.000Z",
+      "kept": 35
     },
     "eurogamer": {
       "status": "ok",
       "url": "https://www.eurogamer.net/?format=rss",
       "items": 100,
-      "newest": "2026-10-06T15:43:55.000Z",
-      "kept": 13
+      "newest": "2026-10-06T16:05:07.000Z",
+      "kept": 10
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-06T15:34:09.000Z",
+      "newest": "2026-10-06T20:24:52.000Z",
       "kept": 10
     }
   },
@@ -96,7 +96,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -105,7 +105,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -114,7 +114,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -123,7 +123,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -132,7 +132,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -141,7 +141,7 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -150,7 +150,7 @@
     {
       "title": "BitSummit",
       "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -159,7 +159,7 @@
     {
       "title": "Tokyo Game Show (TGS)",
       "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -168,7 +168,7 @@
     {
       "title": "PAX West",
       "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -177,7 +177,7 @@
     {
       "title": "gamescom latam",
       "link": "https://www.gamedeveloper.comlatam.gamescom.global",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9475a9732abb60fa/6aac7b4d8cb60c4856955d03/black_gamescomlatam_alta.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -186,7 +186,7 @@
     {
       "title": "The Game Awards",
       "link": "https://www.gamedeveloper.comthegameawards.com",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7a6553fe2845109c/6aac7ad211966b1680382959/The_Game_Awards_Logo_2023.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -195,28 +195,603 @@
     {
       "title": "Games 4 Change Festival",
       "link": "https://www.gamedeveloper.comfestival.gamesforchange.org",
-      "date": "2026-10-06T15:58:54.432Z",
+      "date": "2026-10-06T20:50:58.746Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt19216618826c2250/6aac7980f2b8192d758ba470/G4C-logo_red.png?width=720&quality=80&disable=upscale",
       "summary": "",
       "tags": []
     },
     {
-      "title": "ChinaJoy",
-      "link": "https://www.gamedeveloper.comen.chinajoy.net",
-      "date": "2026-10-06T15:58:54.432Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt04b5e8f5f3e442aa/6aac6fded0c5eb354978a570/chinajoy.png?width=720&quality=80&disable=upscale",
-      "summary": "",
+      "title": "Let&#8217;s All Hear It For the Skydance Nepo Baby",
+      "link": "https://kotaku.com/lets-all-hear-it-for-the-skydance-nepo-baby-2000741069",
+      "date": "2026-10-06T20:45:17.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/david-ellisoon--1280x704.jpg",
+      "summary": "David Ellison's old Hollywood takeover is complete",
       "tags": []
     },
     {
-      "title": "Licensing Expo",
-      "link": "https://www.gamedeveloper.comwww.brandlicensingexpo.com",
-      "date": "2026-10-06T15:58:54.432Z",
+      "title": "You and I both know you're not sleeping well in this economy, so have a gander at Sheeps, a roguelite about counting sheep pouring out of a strange portal",
+      "link": "https://www.rockpapershotgun.com/you-and-i-both-know-youre-not-sleeping-well-in-this-economy-so-have-a-gander-at-sheeps-a-roguelite-about-counting-sheep-pouring-out-of-a-strange-portal",
+      "date": "2026-10-06T20:32:09.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/sheeps.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "I've never really been able to do that whole counting sheep thing to get to sleep. Just doesn't work for me. Instead, my brain prefers to latch onto something embarrassing I said…",
+      "tags": []
+    },
+    {
+      "title": "Amazon Prime Members Can Officially Claim 10 Games for Free in October",
+      "link": "https://www.polygon.com/amazon-gaming-luna-october-2026-doom-10-free-games/",
+      "date": "2026-10-06T20:24:52.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/11907745/doom_cacodemon_3840.jpg",
+      "summary": "Amazon Prime members can head over to Amazon Luna to claim 10 new free game codes, redeemable at storefronts like GOG and Epic Games Store.",
+      "tags": []
+    },
+    {
+      "title": "Sonic Adventure Devs Explain Why It Was The Hardest Game In The Series To Make",
+      "link": "https://kotaku.com/sonic-adventure-devs-explain-why-it-was-the-hardest-game-in-the-series-to-make-2000739177",
+      "date": "2026-10-06T20:18:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Sonic-Adventure-1280x677.jpg",
+      "summary": "Sonic Frontiers and Generations were also quite challenging to develop",
+      "tags": []
+    },
+    {
+      "title": "All 'Unsupervised Science' FBC testing facility locations in Control Resonant",
+      "link": "https://www.polygon.com/control-resonant-unsupervised-science-fbc-testing-facility-locations-puzzle/",
+      "date": "2026-10-06T20:12:13.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/soda-machine_cr.jpg",
+      "summary": "In this guide, we explain where to find every \"Unsupervised Science\" FBC testing facility, and how to solve their puzzles.",
+      "tags": []
+    },
+    {
+      "title": "The PC Gamer Mysteries, Case #1: \"A Slice of Death\": Why is there a dead golfer hidden in Golden Tee '99?",
+      "link": "https://www.pcgamer.com/games/sports/the-pc-gamer-mysteries-case-1-a-slice-of-death-why-is-there-a-dead-golfer-hidden-in-golden-tee-99/",
+      "date": "2026-10-06T19:48:42.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/v94JEphLrjY6VCutktWc8f-1920-80.jpg",
+      "summary": "This murder's gone decades without being solved... until now.",
+      "tags": []
+    },
+    {
+      "title": "Control Resonant Reminded Me Why Boss Fights Can Be Good, Actually",
+      "link": "https://kotaku.com/control-resonant-reminded-me-why-boss-fights-can-be-good-actually-2000741021",
+      "date": "2026-10-06T19:30:58.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/control-dancer-boss2-1280x720.jpg",
+      "summary": "And...one, two, three...one, two three...one, two, three, slam!",
+      "tags": []
+    },
+    {
+      "title": "Cancelled MMO spin-off Borderlands Online is playable once again, and the team behind the unofficial project thankfully didn't use any genAI to get it running",
+      "link": "https://www.rockpapershotgun.com/cancelled-mmo-spin-off-borderlands-online-is-playable-once-again-and-the-team-behind-the-unofficial-project-thankfully-didnt-use-any-genai-to-get-it-running",
+      "date": "2026-10-06T19:22:05.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/borderlands-online.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Where there's a will (and some talented, incredibly passionate modders), there is always a way in the world of video games. Today said will has manifested in the form of…",
+      "tags": []
+    },
+    {
+      "title": "Nintendo's New Zelda Switch 2 Hardware Officially Arrives This Month",
+      "link": "https://www.polygon.com/legend-of-zelda-ocarina-remake-new-nintendo-switch-2-hardware/",
+      "date": "2026-10-06T19:16:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_thelegendofzelda40thedition_hw_14.jpeg",
+      "summary": "The Legend of Zelda 40th Anniversary Edition Nintendo Switch 2 is coming on Oct. 29, and pre-orders for Nintendo's new hardware are mostly sold out.",
+      "tags": []
+    },
+    {
+      "title": "Something Is Killing the Children is Getting a Game",
+      "link": "https://www.polygon.com/something-is-killing-the-children-is-getting-a-game/",
+      "date": "2026-10-06T19:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/siktc-50-cover-a-copy.jpg",
+      "summary": "James Tynion IV's acclaimed horror comic franchise is getting a TCG from Tiny Onion.",
+      "tags": []
+    },
+    {
+      "title": "Snake’s Japanese Voice Actor Wants Another Metal Gear, But Won’t Do It Without Kojima",
+      "link": "https://kotaku.com/snakes-japanese-voice-actor-wants-another-metal-gear-but-wont-do-it-without-kojima-2000740120",
+      "date": "2026-10-06T19:00:01.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Solid-Snake-Metal-Gear-Solid-3-1280x720.jpg",
+      "summary": "After coming up with Snake's catchphrase and working with him for decades, Akio Otsuka's loyalty to Kojima leaves him conflicted about his most beloved role",
+      "tags": []
+    },
+    {
+      "title": "GameStop, other retailers to sell used PlayStation 5 Pro units for 66 percent over MSRP",
+      "link": "https://www.gamedeveloper.com/console/gamestop-other-retailers-to-sell-used-playstation-5-pro-units-for-66-percent-over-msrp",
+      "date": "2026-10-06T18:54:21.000Z",
       "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta7fd154fbd09dc14/6aac6f6f223abe7bacc993cc/LE.png?width=720&quality=80&disable=upscale",
-      "summary": "",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltaf4636cf2bec4c65/6ac545181ba7959435dbc244/ps5profeatured.jpg?width=720&quality=80&disable=upscale",
+      "summary": "The advanced PlayStation 5 console is already both highly sought-after and hard to find. Now retailers are pricing it well above MSRP.",
+      "tags": []
+    },
+    {
+      "title": "Best remastered builds in The Witcher 3 Wild Hunt",
+      "link": "https://www.polygon.com/witcher-3-wild-hunt-best-remastered-builds-cat-griffin/",
+      "date": "2026-10-06T18:45:43.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/witcher-3-rematered-builds-guide-1.jpg",
+      "summary": "Here's how to get the best sword- and magic-focused builds in The Witcher 3: Wild Hunt Remastered",
+      "tags": []
+    },
+    {
+      "title": "Hell Is Officially Breaking Loose For The Gaming Industry Thanks To AI",
+      "link": "https://www.polygon.com/ps5-jailbreak-emulator-minecraft-elden-ring-claude-opus-5-ai-games/",
+      "date": "2026-10-06T18:30:43.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/polygon-graphic-ps5-retrospective.jpg",
+      "summary": "Viral games like Minecraft inside Elden Ring, PS5 emulators, and recent jailbreaks do not bode well for Sony, Microsoft, or Nintendo",
+      "tags": []
+    },
+    {
+      "title": "Sorcelonde Aniimo : Comment obtenir ce monstre ?",
+      "link": "https://www.jeuxvideo.com/news/2107665/sorcelonde-aniimo-comment-obtenir-ce-monstre.htm",
+      "date": "2026-10-06T18:30:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179128/1791275628-2815-card.jpg",
+      "summary": "Décvouvrez comment obtenir Sorcelonde, l'un des monstres du bestiaire de Aniimo que vous allez peut-être vouloir mettre dans votre équipe pendant votre phase de découverte de la…",
+      "tags": []
+    },
+    {
+      "title": "Overwatch’s Latest Patch Kills One Of The Most Fun Team-Ups In The Game",
+      "link": "https://kotaku.com/overwatch-season-5-patch-notes-cassidy-jetpack-cat-2000741044",
+      "date": "2026-10-06T18:19:32.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/cassidy-1280x720.jpg",
+      "summary": "Sorry to the cats and cowboys in the room",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Xbox&#8217;s CEO Says The Brutal Reset Is Already Working: &#8216;After An All-Time Low, We&#8217;ve Started To Return To Growth&#8217;",
+      "link": "https://kotaku.com/xboxs-ceo-says-the-brutal-reset-is-already-working-after-an-all-time-low-weve-started-to-return-to-growth-2000741040",
+      "date": "2026-10-06T18:17:08.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/08/xbox.jpg",
+      "summary": "Asha Sharma reportedly pointed to green shoots during a company townhall",
+      "tags": []
+    },
+    {
+      "title": "30th Celebration Hype Sends 23-Year-Old Pokémon Card To Staggering $360,000 Record",
+      "link": "https://www.polygon.com/pokemon-aquapolis-lugia-360000-auction-record/",
+      "date": "2026-10-06T18:10:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/lugia-screenshot.jpg",
+      "summary": "A truly beautiful grail shatters its previous high.",
+      "tags": []
+    },
+    {
+      "title": "J'attends ce jeu d'horreur et de survie comme le messie, les deux premiers épisodes sont à -70%",
+      "link": "https://www.jeuxvideo.com/news/2107497/j-attends-ce-jeu-d-horreur-et-de-survie-comme-le-messie-les-deux-premiers-episodes-sont-a-70.htm",
+      "date": "2026-10-06T18:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791209194-3737-card.jpg",
+      "summary": "Pour mon cousin et moi, les jeux de survie d'Endnight Games font partie de ces pépites capables de nous tenir éveillés toute la nuit. Entre les soldes d'automne de Steam qui…",
+      "tags": []
+    },
+    {
+      "title": "Marvel Unlimited is Officially Shutting Down in 2026",
+      "link": "https://www.polygon.com/marvel-unlimited-shutting-down-webtoon-digital-comics-app/",
+      "date": "2026-10-06T18:06:47.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/spider-man-marvel-comics.jpg",
+      "summary": "Marvel's digital comics app Marvel Unlimited will shut down after 19 years as Webtoon takes over and launches the Marvel Comics app.",
+      "tags": []
+    },
+    {
+      "title": "At Fate's End is delayed to 2027",
+      "link": "https://www.pcgamer.com/games/action/at-fates-end-is-delayed-to-2027/",
+      "date": "2026-10-06T18:03:05.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/By5d5eACt2cKnagyLJ5AVH-1920-80.jpg",
+      "summary": "At Fate's End is delayed to 2027",
+      "tags": []
+    },
+    {
+      "title": "Arc Raiders And The Finals Set For Movie, TV Adaptations",
+      "link": "https://kotaku.com/arc-raiders-and-the-finals-set-for-movie-tv-adaptations-2000740142",
+      "date": "2026-10-06T18:00:22.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/The-Finals-1280x720.jpg",
+      "summary": "Both Embark Studios games are looking to expand their horizons in new mediums",
+      "tags": []
+    },
+    {
+      "title": "Gears of War: E-Day review — terrific shooting buoys a sluggish campaign",
+      "link": "https://www.pcgamer.com/games/third-person-shooter/gears-of-war-e-day-review/",
+      "date": "2026-10-06T17:59:46.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/ZkAd6Pu64tN54SNVBUpoeG-1920-80.png",
+      "summary": "Gears has never felt better to play, or more creatively stagnant.",
+      "tags": []
+    },
+    {
+      "title": "The Dungeons &#038; Dragons And Magic: The Gathering Teams Are Forming A Union",
+      "link": "https://kotaku.com/the-dungeons-and-dragons-and-magic-the-gathering-teams-are-forming-a-union-2000741031",
+      "date": "2026-10-06T17:44:33.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2024/11/8d3a2189c0c203cf4d6ba088ba154f87-1280x720.jpg",
+      "summary": "If successful, this unionization effort would bring almost every Wizards of the Coast IP under union representation",
+      "tags": []
+    },
+    {
+      "title": "Warship Game Steals Nonsensical Aircraft Design And Then Tries To Sell It In-Game For $700",
+      "link": "https://kotaku.com/modern-warships-artstorm-plagiarism-alex-brady-war-thunder-2000740997",
+      "date": "2026-10-06T17:30:58.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/brady-ship.jpg",
+      "summary": "'Your design was used as a reference without proper clearance,' says Artstorm about the replicated ekranoplan",
+      "tags": []
+    },
+    {
+      "title": "\"Your word is undeniable truth\": Can't be bothered to find evidence in Warhammer 40,000: Dark Heresy? It's fine, because no matter what, you're always right",
+      "link": "https://www.rockpapershotgun.com/your-word-is-undeniable-truth-cant-be-bothered-to-find-evidence-in-warhammer-40000-dark-heresy-its-fine-because-no-matter-what-youre-always-right",
+      "date": "2026-10-06T17:30:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/warhammer-40000-dark-heresy-evidence.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "If the promises that Owlcat are making of Warhammer 40,000: Dark Heresy aren't just PR fluff, it sounds like we might be in for a good bit of fun. In Dark Heresy, you are an…",
+      "tags": []
+    },
+    {
+      "title": "Take out some monsters and then turn them into take-out in the post-apocalyptic tycoon survival sim Midwest 90: Rapid City, out in early access next month",
+      "link": "https://www.rockpapershotgun.com/take-out-some-monsters-and-then-turn-them-into-take-out-in-the-post-apocalyptic-tycoon-survival-sim-midwest-90-rapid-city-out-in-early-access-next-month",
+      "date": "2026-10-06T17:30:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/midwest-90-rapid-ctiy.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Surely Midwest 90: Rapid City isn't the first simmy , Fallouty game where you turn mutated monsters into grub and serve it up to customers in your own diner, is it? None come to…",
+      "tags": []
+    },
+    {
+      "title": "Warhammer Survivors launches on November 10 and its demo is available now",
+      "link": "https://www.pcgamer.com/games/roguelike/warhammer-survivors-launches-on-november-10-and-its-demo-is-available-now/",
+      "date": "2026-10-06T17:26:55.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/9xs2BMSqoLdhhvhWRwC4pX-1920-80.png",
+      "summary": "Warhammer Survivors launches on November 10 and its demo is available now",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Fear Tall Grass - Trailer playtest officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/fear-tall-grass/92870/fear-tall-grass-trailer-playtest-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:26:12.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/f/fear-tall-/fear-tall-grass-official-playtest-trailer-out-of-bounds-show_88rd.png",
+      "summary": "Découvrez la bande-annonce du playtest de Fear Tall Grass, un RPG roguelite de collection de créatures développé par Forgotten Bastions. Les joueurs se retrouveront pourchassés…",
+      "tags": []
+    },
+    {
+      "title": "Blade and Madness - Trailer de gameplay officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/blade-and-madness/92869/blade-and-madness-trailer-de-gameplay-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:25:39.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/b/blade-and-/blade-and-madness-official-gameplay-trailer-out-of-bounds-sh_sejx.jpg",
+      "summary": "Découvrez le gameplay de Blade and Madness dans cette bande-annonce du prochain jeu de type roguelite et deckbuilder, où les tours se déroulent simultanément et où chaque choix…",
+      "tags": []
+    },
+    {
+      "title": "'Nier: Automata's 2B Officially Returns in Release Available Today",
+      "link": "https://www.polygon.com/dead-by-daylight-nier-automata-crossover-2b-a2-emil/",
+      "date": "2026-10-06T17:25:01.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/nier-automata-2b-profile.jpg",
+      "summary": "Dead by Daylight's next crossover brings Nier: Automata's 2B, A2, and Emil to the asymmetric multiplayer survival horror game",
+      "tags": []
+    },
+    {
+      "title": "Oniria - Trailer officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/oniria/92868/oniria-trailer-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:24:24.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/o/oniria-off/oniria-official-trailer-out-of-bounds-showcase-2026_fhbm.jpg",
+      "summary": "Découvrez Oniria sous un autre angle dans cette bande-annonce du prochain jeu d&#x27;horreur psychologique. Bienvenue à Oniria, un village oublié d&#x27;Espagne où les sombres…",
+      "tags": []
+    },
+    {
+      "title": "Precious Nightmare - Trailer d'annonce officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/precious-nightmare/92867/precious-nightmare-trailer-dannonce-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:23:45.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/p/precious-n/precious-nightmare-official-announcement-trailer-out-of-boun_jsre.png",
+      "summary": "Voici un aperçu de la bande-annonce de Precious Nightmare, une simulation narrative à la première personne développée par Happy Break Bones. Les joueurs incarneront Rosa alors…",
+      "tags": []
+    },
+    {
+      "title": "Pecado - Trailer d'annonce officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/pecado/92866/pecado-trailer-dannonce-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:23:08.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/p/pecado-off/pecado-official-announcement-trailer-out-of-bounds-showcase_crrs.png",
+      "summary": "Découvrez la bande-annonce de présentation de Pecado, un jeu d&#x27;horreur psychologique et de survie à la première personne développé par Solid Neon. Les joueurs exploreront un…",
+      "tags": []
+    },
+    {
+      "title": "Bingone - Trailer d'annonce officiel | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/bingone/92865/bingone-trailer-dannonce-officiel-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:22:19.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/b/bingone-of/bingone-official-announcement-trailer-out-of-bounds-showcase_6bzk.jpg",
+      "summary": "Voici la bande-annonce de Bingone, le prochain roguelike inspiré du bingo. Bingone est un jeu où vous construisez des combinaisons d’autocollants : vous repoussez les limites du…",
+      "tags": []
+    },
+    {
+      "title": "Haunted Cleaner - Trailer officiel de fenêtre de sortie | Out of Bounds Showcase 2026",
+      "link": "https://fr.ign.com/haunted-cleaner/92864/haunted-cleaner-trailer-officiel-de-fenetre-de-sortie-out-of-bounds-showcase-2026",
+      "date": "2026-10-06T17:21:57.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/h/haunted-cl/haunted-cleaner-official-release-window-trailer-out-of-bound_2qz2.jpg",
+      "summary": "Haunted Cleaner est un jeu narratif et de réflexion, à la fois relaxant et léger, qui consiste à ranger et à décorer les maisons des défunts. Incarnez un nettoyeur médium…",
+      "tags": []
+    },
+    {
+      "title": "‘Avengers: Endgame’s Most Iconic Battle Is Officially Coming to 'Marvel Rivals'",
+      "link": "https://www.polygon.com/marvel-rivals-avengers-endgame-final-battle-thanos/",
+      "date": "2026-10-06T17:21:35.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/marvel-rivals-thanos-screenshot.jpg",
+      "summary": "'Marvel Rivals' is getting the Path to Doomsday - Avengers: Endgame mode on Oct. 22, which pits 50 players against Thanos.",
+      "tags": []
+    },
+    {
+      "title": "At Fate's End: Trailer de gameplay officiel",
+      "link": "https://fr.ign.com/at-fates-end/92863/at-fates-end-trailer-de-gameplay-officiel",
+      "date": "2026-10-06T17:21:22.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/a/at-fates-e/at-fates-end-official-gameplay-trailer_pbzh.jpg",
+      "summary": "Découvrez des séquences de gameplay du prochain jeu metroidvania au style unique, At Fate&#x27;s End, dont la sortie sur PC est désormais prévue pour l&#x27;année prochaine.",
+      "tags": []
+    },
+    {
+      "title": "Gundam: Rogue Orbit - Trailer de gameplay officiel",
+      "link": "https://fr.ign.com/gundam-rogue-orbit/92862/gundam-rogue-orbit-trailer-de-gameplay-officiel",
+      "date": "2026-10-06T17:20:56.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/g/gundam-rog/gundam-rogue-orbit-official-gameplay-overview-trailer_nmg5.jpg",
+      "summary": "Découvrez en détail le gameplay, les options de personnalisation et les combats effrénés de Gundam: Rogue Orbit dans cette nouvelle bande-annonce du jeu d&#x27;action à venir…",
+      "tags": []
+    },
+    {
+      "title": "Warhammer Survivors - Trailer officiel de date de sortie",
+      "link": "https://fr.ign.com/warhammer-survivors/92861/warhammer-survivors-trailer-officiel-de-date-de-sortie",
+      "date": "2026-10-06T17:20:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/w/warhammer-/warhammer-survivors-official-release-date-trailer_ep5j.png",
+      "summary": "Découvrez la bande-annonce de lancement de Warhammer Survivors, un jeu de survie roguelite bourré d&#x27;action et de balles, développé par Auroch Digital. Les joueurs…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Excuse Me, Square Enix, Where The Hell Is Cid’s Chest Hair In Final Fantasy VII Revelation?",
+      "link": "https://kotaku.com/final-fantasy-7-revelation-hot-springs-bathing-suits-2000741026",
+      "date": "2026-10-06T17:15:50.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/ff7cidsponge-1280x720.jpg",
+      "summary": "You expect me to believe Cid has been smooth this whole time?",
+      "tags": []
+    },
+    {
+      "title": "Quel cheval choisir pour la course dans The Witcher 3 Remastered : Fleurs brisées ?",
+      "link": "https://www.jeuxvideo.com/news/2106974/quel-cheval-choisir-pour-la-course-dans-the-witcher-3-remastered-fleurs-brisees.htm",
+      "date": "2026-10-06T17:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179086/1790857448-4515-card.jpg",
+      "summary": "La course de chevaux de la quête « Fleurs brisées » dans The Witcher 3 Remastered peut s'avérer importante au premier abord. Choix de la monture, analyse de la piste et…",
+      "tags": []
+    },
+    {
+      "title": "Unlead Labs studio head says they were 'irresponsibly transparent' in preparing staff for layoffs",
+      "link": "https://www.gamedeveloper.com/business/unlead-labs-studio-head-says-they-were-irresponsibly-transparent-in-preparing-staff-for-layoffs",
+      "date": "2026-10-06T17:12:41.000Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt665fe3ba10bc9d06/6ac52d66b5dc8ce420e19cf3/stateofdecay3steam.jpg?width=720&quality=80&disable=upscale",
+      "summary": "Studio head Philip Holt says he was being incredibly candid with employees as layoffs loomed.",
+      "tags": []
+    },
+    {
+      "title": "France : le salaire des meilleurs joueurs pro de Rocket League dévoilé",
+      "link": "https://www.jeuxvideo.com/news/2107745/france-le-salaire-des-meilleurs-joueurs-pro-de-rocket-league-devoile.htm",
+      "date": "2026-10-06T17:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179128/1791280817-2892-card.jpg",
+      "summary": "L’esport français traverse une zone de turbulence inédite avec la divulgation des salaires astronomiques des meilleurs joueurs de Rocket League. Entre offres records, retards de…",
+      "tags": []
+    },
+    {
+      "title": "Communiqué de presse - Décollage réussi pour Aion 2 avec un pic de 400 000 joueurs au lancement sur Steam",
+      "link": "https://www.gamekult.com/actualite/decollage-reussi-pour-aion-2-avec-un-pic-de-400-000-joueurs-au-lancement-sur-steam-3050872344.html",
+      "date": "2026-10-06T17:05:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872344/decollage-reussi-pour-aion-2-avec-un-pic-de-400-000-joueurs-au-lancement-sur-steam-c254d33b__800_800__421-0-1501-1080.jpg",
+      "summary": "NC se félicite du démarrage de la version internationale d'Aion 2, qui a réalisé un pic de 400 000 joueurs simultanés le 5 octobre, jour de la sortie officielle sur Steam et…",
+      "tags": []
+    },
+    {
+      "title": "Strip Mahjong Game Producer Talks About Being &#8216;Hopelessly Devoted To Those Girls&#8217; And &#8216;Left Penniless&#8217; As Teen After Sequel Tops Japanese Steam Charts",
+      "link": "https://kotaku.com/strip-mahjong-game-producer-talks-about-being-hopelessly-devoted-to-those-girls-and-left-penniless-as-teen-after-sequel-tops-japanese-steam-charts-2000731076",
+      "date": "2026-10-06T17:00:09.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/09/mv_1920-1280x720.jpg",
+      "summary": "One producer shares how he sought to relive his childhood camaraderie and 'cross the line' with sexy mahjong",
+      "tags": []
+    },
+    {
+      "title": "I've added scams to GTA 5, but I might have scammed myself",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/ive-added-scams-to-gta-5-but-i-might-have-scammed-myself/",
+      "date": "2026-10-06T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/iHtDy34CrshYumQnUrPdqF-1920-80.jpg",
+      "summary": "At least I have a stylish new bag.",
+      "tags": []
+    },
+    {
+      "title": "This Razer gaming chair might be the only thing to save your buns this year and it's $80 off for Prime Day",
+      "link": "https://www.pcgamer.com/hardware/gaming-chairs/this-razer-gaming-chair-might-be-the-only-thing-to-save-your-buns-with-all-the-new-stuff-coming-out-this-year-and-its-cheaper-for-prime-day/",
+      "date": "2026-10-06T16:50:43.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/H6mxZiD95cmpSW6motCpD5-1920-80.jpg",
+      "summary": "The end of the year is packed with new games, but a long gaming session needs a suitable chair. Razer's Iskur V2 X is our candidate with Prime Day discounts.",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty a la solution pour mettre fin à la triche en ligne, mais à quel prix pour nos parties ?",
+      "link": "https://www.jeuxvideo.com/news/2107458/call-of-duty-a-la-solution-pour-mettre-fin-a-la-triche-en-ligne-mais-a-quel-prix-pour-nos-parties.htm",
+      "date": "2026-10-06T16:45:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179120/1791202845-3448-card.jpg",
+      "summary": "Activision a présenté à l’occasion de la sortie de Call Of Duty : Modern Warfare 4 une nouvelle technologie qui permettra d’éradiquer les tricheurs. Une révolution technique…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Amazon Is Experimenting With Turning Twitch Into QVC",
+      "link": "https://kotaku.com/amazon-is-experimenting-with-turning-twitch-into-qvc-2000740979",
+      "date": "2026-10-06T16:30:10.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/twitch-qvc-1280x720.jpg",
+      "summary": "Twitch has implemented a new Shopping category in the U.S.",
+      "tags": []
+    },
+    {
+      "title": "Jagex pull Runescape trailer and apologise for genAI use after complaints about six-fingered knights, pinning the blame on a \"trusted external partner\"",
+      "link": "https://www.rockpapershotgun.com/jagex-pull-runescape-trailer-and-apologise-for-genai-use-after-complaints-about-six-fingered-knights-pinning-the-blame-on-a-trusted-external-partner",
+      "date": "2026-10-06T16:30:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/RuneScape_ScXlYx6.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "I'm really tired of writing about genAI today. It's my first news shift with RPS, and within a few hours, I've written three stories that are solely about genAI use by modders…",
+      "tags": []
+    },
+    {
+      "title": "OD : si le jeu d'horreur de Kojima ne se montre pas, c'est pour garder le mystère",
+      "link": "https://www.gamekult.com/actualite/od-si-le-jeu-d-horreur-de-kojima-ne-se-montre-pas-c-est-pour-garder-le-mystere-3050872339.html",
+      "date": "2026-10-06T16:30:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872339/od-si-le-jeu-d-horreur-de-kojima-ne-se-montre-pas-c-est-pour-garder-le-mystere-f81f6aca__800_800__926-0-3086-2160.jpg",
+      "summary": "L'affaire Physint, qui a vu PlayStation abandonner le financement du projet de Hideo Kojima pour voir ce dernier rebondir chez Xbox, nous aurait presque fait oublier que le…",
+      "tags": []
+    },
+    {
+      "title": "Amazon isn't offering the best RX 9070 XT gaming PC deal right now, Newegg is",
+      "link": "https://www.pcgamer.com/hardware/gaming-pcs/amazon-isnt-offering-the-best-rx-9070-xt-gaming-pc-deal-right-now-newegg-is/",
+      "date": "2026-10-06T16:25:52.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/isfkeHmdFwjTAg96cDrQSC-1920-80.jpg",
+      "summary": "And it's under $1,800.",
+      "tags": []
+    },
+    {
+      "title": "Un acteur de Star Wars affirme qu'on lui a demandé de couper ses dreadlocks car elles seraient trop « réalistes » ; plutôt cocasse pour une franchise qui parle de « limaces géantes et d'épées de lumière »",
+      "link": "https://fr.ign.com/rogue-one-a-star-wars-story/92860/un-acteur-de-star-wars-affirme-quon-lui-a-demande-de-couper-ses-dreadlocks-car-elles-seraient-trop-r",
+      "date": "2026-10-06T16:23:08.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/star-wars-/star-wars-actor-says-he-was-told-to-cut-off-his-dreadlocks-a_qams.jpg",
+      "summary": "\"En plus, ils ne m&#x27;ont absolument rien payé\".",
+      "tags": []
+    },
+    {
+      "title": "Warhorse co-founder believes 'AI is not a get out of jail free card' and that execs have a 'simplified mental model' of what it means for games",
+      "link": "https://www.pcgamer.com/software/ai/warhorse-co-founder-believes-ai-is-not-a-get-out-of-jail-free-card-and-that-execs-have-a-simplified-mental-model-of-what-it-means-for-games/",
+      "date": "2026-10-06T16:21:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Z5dm3tHivwkvMfs8GBBsRJ-1920-80.jpg",
+      "summary": "Wish for both quantity and quality.",
+      "tags": []
+    },
+    {
+      "title": "Our best MMO gaming mouse is half price in the Prime Day sales, so prepare yourself for much World of Warcraft-ing",
+      "link": "https://www.pcgamer.com/hardware/gaming-mice/our-best-mmo-gaming-mouse-is-half-price-in-the-prime-day-sales-so-prepare-yourself-for-much-world-of-warcraft-ing/",
+      "date": "2026-10-06T16:20:14.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/qyCiSX9XGXBPrTDmsuaknB-1920-80.jpg",
+      "summary": "All of the buttons, all at once",
+      "tags": []
+    },
+    {
+      "title": "Star Wars: Galactic Racer Is Out Today And Amazon Prime Members Can Check It Out For Free",
+      "link": "https://kotaku.com/star-wars-galactic-racer-is-out-today-and-amazon-prime-members-can-check-it-out-for-free-2000740982",
+      "date": "2026-10-06T16:15:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/06/Star-Wars_-Galactic-Racer-Screenshot-13-1280x720.jpg",
+      "summary": "However, there are much better ways to enjoy one of the best games of 2026",
+      "tags": []
+    },
+    {
+      "title": "I've been looking for graphics card deals all day and this RX 9070 GRE at MSRP is the only thing saving me from total despair",
+      "link": "https://www.pcgamer.com/hardware/graphics-cards/ive-been-looking-for-graphics-card-deals-all-day-and-this-rx-9070-gre-at-msrp-is-the-only-thing-saving-me-from-total-despair/",
+      "date": "2026-10-06T16:14:17.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/GeP4acKtofbTocDHGkrNNa-1920-80.jpg",
+      "summary": "It's rough out there. The GRE is about as good as it gets.",
+      "tags": []
+    },
+    {
+      "title": "Someone's modded Diablo 2 for VR, and seeing the world through your character's eyes brings a whole new dimension to the series",
+      "link": "https://www.eurogamer.net/diablo-2-vr-mod",
+      "date": "2026-10-06T16:05:07.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/diablo-2-resurrected_G8Y7lNc.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Of all the games I thought I'd see converted to virtual reality, the Diablo games weren't among them, for some reason. But one industrious modder has set about changing that…",
+      "tags": []
+    },
+    {
+      "title": "Michael Bay en négociation pour réaliser le prochain film Transformers, Steven Spielberg serait de retour en tant que producteur créatif clé",
+      "link": "https://fr.ign.com/transformers-theater/92859/michael-bay-en-negociation-pour-realiser-le-prochain-film-transformers-steven-spielberg-serait-de-re",
+      "date": "2026-10-06T16:05:00.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/m/michael-ba/michael-bay-in-talks-to-direct-next-transformers-film-steven_332d.jpg",
+      "summary": "Bayhem.",
+      "tags": []
+    },
+    {
+      "title": "The PlayStation 5&#8217;s Operating System Can Now Be Emulated On PC",
+      "link": "https://kotaku.com/the-playstation-5s-operating-system-can-now-be-emulated-on-pc-2000740915",
+      "date": "2026-10-06T16:00:56.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2025/08/ps5-1280x720.jpg",
+      "summary": "We now have video evidence of the PS5's VSH being emulated on PC, which is a huge stride for the PlayStation 5's emulation scene",
+      "tags": []
+    },
+    {
+      "title": "Some staff at Eternal Strands and ex-Ubisoft devs Yellow Brick Games report they've been laid off",
+      "link": "https://www.rockpapershotgun.com/some-staff-at-eternal-strands-and-ex-ubisoft-devs-yellow-brick-games-report-theyve-been-laid-off",
+      "date": "2026-10-06T16:00:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/Eternal-Strands.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "According to various LinkedIn posts, Eternal Strands developers Yellow Brick Games have begun laying off staff to an as yet undisclosed degree (thanks to Chris Kerr on Bluesky for…",
+      "tags": []
+    },
+    {
+      "title": "Tournez manette - Faut-il relancer Ghost of Yotei pour l'extension Échos de Sekigahara ?",
+      "link": "https://www.gamekult.com/actualite/faut-il-relancer-ghost-of-yotei-pour-l-extension-echos-de-sekigahara-3050872328.html",
+      "date": "2026-10-06T16:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872328/ghost-of-yotei-dlc-5864bf1e__800_800__1156-260-2777-1881.jpg",
+      "summary": "Grand amateur d'extensions depuis inFamous 2, Sucker Punch n'a pas dérogé à ses habitudes avec Ghost of Yotei. Loin de se contenter du mode coopératif Légendes, le studio célèbre…",
+      "tags": []
+    },
+    {
+      "title": "With a 27% Prime Day discount, my favorite gaming headset is even more purr-fect",
+      "link": "https://www.pcgamer.com/hardware/gaming-headsets/with-a-27-percent-prime-day-discount-my-favorite-gaming-headset-is-even-more-purr-fect/",
+      "date": "2026-10-06T15:57:03.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/pDft6wXqGecvBPRHtLur8Y-1920-80.jpg",
+      "summary": "Pretty kitty.",
+      "tags": []
+    },
+    {
+      "title": "You can zip around WoW: Forever in this nifty map viewer",
+      "link": "https://www.pcgamer.com/games/world-of-warcraft/you-can-zip-around-wow-forever-in-this-nifty-map-viewer/",
+      "date": "2026-10-06T15:56:17.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/3yhvmXABMTiUYvTKkm3X27-1920-80.jpg",
+      "summary": "You can zip around WoW: Forever in this nifty map viewer",
       "tags": []
     },
     {
@@ -249,12 +824,12 @@
       "tags": []
     },
     {
-      "title": "New Warhammer Meets Vampire Survivors Game Sets November Release",
-      "link": "https://www.polygon.com/warhammer-survivors-release-date-announced/",
-      "date": "2026-10-06T15:34:09.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/warhammer-survivors-key-art-3840x2160-no-logo.jpg",
-      "summary": "Warhammer Survivors is a bullet-hell roguelike game like Vampire Survivors, and it will be released this November.",
+      "title": "Star Trek : Combien cela coûterait-il de construire l'USS Enterprise en vrai ?",
+      "link": "https://www.jeuxvideo.com/news/2107551/star-trek-combien-cela-couterait-il-de-construire-l-uss-enterprise-en-vrai.htm",
+      "date": "2026-10-06T15:35:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791213732-5415-card.jpg",
+      "summary": "Être fan de science-fiction, c'est parfois être en mesure de reconnaître des vaisseaux d'un simple coup d’œil. Du Faucon Millenium de Star Wars en passant par le Normandy de Mass…",
       "tags": []
     },
     {
@@ -267,15 +842,6 @@
       "tags": [
         "release"
       ]
-    },
-    {
-      "title": "New Xbox Hardware Leaks With Rumored Major Upgrades",
-      "link": "https://www.polygon.com/xbox-elite-controller-3-specs-features-leak-buttons-hall-effect/",
-      "date": "2026-10-06T15:25:44.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24000449/xbox_elite_wireless_controller_series_2_white_and_black_3840.jpg",
-      "summary": "The new Xbox hardware is expected to improve haptics, provide more swappable bits, and offer more customization options",
-      "tags": []
     },
     {
       "title": "\"Horrible day to be a Shion main\" - Overwatch fans aren't happy about five new China-exclusive skins not coming to the rest of the world",
@@ -296,30 +862,12 @@
       "tags": []
     },
     {
-      "title": "Transformers Franchise Officially Returns with Spielberg, Michael Bay",
-      "link": "https://www.polygon.com/new-transformers-movie-steven-spielberg-michael-bay/",
-      "date": "2026-10-06T15:23:11.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23041681/transformers_2007_hero.jpg",
-      "summary": "Paramount and Hasbro are making a new live-action Transformers movie with Steven Spielberg and director Michael Bay at the helm.",
-      "tags": []
-    },
-    {
-      "title": "Brandon Sanderson Gives Official Update on Stormlight Archive  TV Series",
-      "link": "https://www.polygon.com/apple-tv-stormlight-archive-series-brandon-sanderson-showrunner-search/",
-      "date": "2026-10-06T15:20:42.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24042839/Whelan_Stormlight_Shallan.jpg",
-      "summary": "Stormlight Archive author Brandon Sanderson is actively interviewing showrunners for Apple TV's adaptation",
-      "tags": []
-    },
-    {
-      "title": "New Doctor Who Animated Series Officially Reveals First Details",
-      "link": "https://www.polygon.com/dr-who-tardis-crew-animated-series-spinoff-release-date/",
-      "date": "2026-10-06T15:16:52.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/david-tenant-dr-who.jpg",
-      "summary": "BBC just revealed the first details for 'Doctor Who: TARDIS Crew,' an animated spinoff targeted at children.",
+      "title": "À 80 €, les jeux ne sont pas encore assez chers ! Le créateur de Kingdom Come Delivrance espère que GTA 6 va faire grimper les prix",
+      "link": "https://www.jeuxvideo.com/news/2107445/a-80-les-jeux-ne-sont-pas-encore-assez-chers-le-createur-de-kingdom-come-delivrance-espere-que-gta-6-va-faire-grimper-les-prix.htm",
+      "date": "2026-10-06T15:15:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179120/1791202010-9360-card.jpg",
+      "summary": "Payer 80 € pour un jeu vidéo commence à devenir une réalité pour les joueurs, mais l’industrie pourrait ne pas vouloir s’arrêter là. Pour le cofondateur du studio derrière Kingdom…",
       "tags": []
     },
     {
@@ -350,15 +898,6 @@
       "tags": []
     },
     {
-      "title": "The Best PS5 Amazon Prime Day Gaming Deals",
-      "link": "https://www.polygon.com/best-ps5-deals-amazon-prime-day-sale-october-2026/",
-      "date": "2026-10-06T15:10:56.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22014578/hhargreaves_201103_ecl1040_ps5_main_26381.jpg",
-      "summary": "If you're looking to pick up some physical PS5 games this Amazon Prime Day, here are some of the best deals you can find.",
-      "tags": []
-    },
-    {
       "title": "Co-dev case study: How Blackbird Interactive and Secret Mode helped Escape the Backrooms ride the Backrooms hype wave",
       "link": "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave",
       "date": "2026-10-06T15:06:28.000Z",
@@ -377,12 +916,12 @@
       "tags": []
     },
     {
-      "title": "Here&#8217;s What Valve Should Do With The $20 Billion It&#8217;s Making This Year",
+      "title": "Valve Will Make $20 Billion This Year Via Steam, And It Owes Developers Big-Time",
       "link": "https://kotaku.com/valve-steam-20-billion-dollars-reviews-30-percent-cut-gabe-newell-2000739297",
       "date": "2026-10-06T15:00:47.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/steam-money-1280x720.jpg",
-      "summary": "There are so many ways Steam could work better for the developers that generate the profit",
+      "summary": "There are so many ways Steam could work better for the people that generate the profit",
       "tags": []
     },
     {
@@ -449,6 +988,15 @@
       "tags": []
     },
     {
+      "title": "Elle vient d'avoir 91 ans, a remporté 1 Oscar et tourne toujours : cette légende absolue a marqué deux des films les plus cultes d'Hollywood",
+      "link": "https://www.jeuxvideo.com/news/2107377/elle-vient-d-avoir-91-ans-a-remporte-1-oscar-et-tourne-toujours-cette-legende-absolue-a-marque-deux-des-films-les-plus-cultes-d-hollywood.htm",
+      "date": "2026-10-06T14:30:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179119/1791194094-3102-card.jpg",
+      "summary": "Rares sont les actrices à avoir gravé leur nom d'une telle empreinte dans l'histoire du cinéma. C'est le cas de celle qui vient tout juste de fêter ses 91 ans et dont la voix a…",
+      "tags": []
+    },
+    {
       "title": "If 4K OLED gaming sounds like a good idea, you're going to love these Prime Day monitor deals from under $550",
       "link": "https://www.pcgamer.com/hardware/gaming-monitors/if-4k-oled-gaming-sounds-like-a-good-idea-youre-going-to-love-these-prime-day-monitor-deals-from-under-usd550/",
       "date": "2026-10-06T14:21:13.000Z",
@@ -476,30 +1024,12 @@
       "tags": []
     },
     {
-      "title": "Amazon Prime Has the Best Star Wars Game of the Year for Free",
-      "link": "https://www.polygon.com/star-wars-galactic-racer-amazon-gaming-luna/",
-      "date": "2026-10-06T14:12:29.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/star-wars_-galactic-racer-launch-screenshot-2.png",
-      "summary": "Amazon Prime members can play the campaign of Star Wars: Galactic Racer on Amazon Luna starting today.",
-      "tags": []
-    },
-    {
       "title": "GUIDE The Witcher 3 Remastered : comment débloquer la romance avec Yennefer et quels choix faire ?",
       "link": "https://www.gameblog.fr/jeu-video/ed/soluces/the-witcher-3-remastered-guide-romance-yennefer-724419?utm_source=RSS",
       "date": "2026-10-06T14:10:58.000Z",
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/soluces/724008_6aba80b64df6f.jpg",
       "summary": "The Witcher 3 propose deux romances principales, parmi lesquelles Yennefer, et voici un guide afin de la débloquer pour qui le souhaite.",
-      "tags": []
-    },
-    {
-      "title": "Ghostbusters Franchise Returns With a New Christmas Movie, Report Says",
-      "link": "https://www.polygon.com/ghostbusters-nightmare-on-34th-street/",
-      "date": "2026-10-06T14:08:52.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ghostbusters-1984-16-9.jpg",
-      "summary": "A new Ghostbusters movie subtitled 'Nightmare on 34th Street' is reportedly in the works at Sony.",
       "tags": []
     },
     {
@@ -541,6 +1071,15 @@
       "tags": []
     },
     {
+      "title": "The Witcher 3 Remastered : carton ou bide ? La version remasterisée est-elle un succès ? Le point sur les chiffres de la première semaine",
+      "link": "https://www.jeuxvideo.com/news/2107737/the-witcher-3-remastered-carton-ou-bide-la-version-remasterisee-est-elle-un-succes-le-point-sur-les-chiffres-de-la-premiere-semaine.htm",
+      "date": "2026-10-06T14:00:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179129/1791288930-8928-card.jpg",
+      "summary": "Sortie il y a tout juste une semaine, la version remasterisée de The Witcher 3 : Wild Hunt est un véritable succès qui remet le chef-d’œuvre de CD Projekt Red sous le feu des…",
+      "tags": []
+    },
+    {
       "title": "Star Wars Galactic Racer review: now this is frenetically fun podracing with a totally unforgiving streak",
       "link": "https://www.rockpapershotgun.com/star-wars-galactic-racer-review-now-this-is-frenetically-fun-podracing-with-a-totally-unforgiving-streak",
       "date": "2026-10-06T14:00:00.000Z",
@@ -568,15 +1107,6 @@
       "tags": []
     },
     {
-      "title": "Gundam Rogue Orbit gave me a sick whip sword, but held back the one thing I want most in a mech game",
-      "link": "https://www.pcgamer.com/games/action/gundam-rogue-orbit-gave-me-a-sick-whip-sword-but-held-back-the-one-thing-i-want-most-in-a-mech-game/",
-      "date": "2026-10-06T14:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VFVYP5FVWn9Ujk3XAvXft-1920-80.jpg",
-      "summary": "Let me put my own parts on my Gundam, dangit!",
-      "tags": []
-    },
-    {
       "title": "Warhammer Survivors is more than just a Vampire Survivors spin-off",
       "link": "https://www.pcgamer.com/games/roguelike/warhammer-survivors-is-more-than-just-a-vampire-survivors-spin-off/",
       "date": "2026-10-06T14:00:00.000Z",
@@ -586,12 +1116,12 @@
       "tags": []
     },
     {
-      "title": "Lego Is Officially Teaming up With Hello Kitty in 2027",
-      "link": "https://www.polygon.com/lego-sanrio-hello-kitty-and-friends-line-announced/",
-      "date": "2026-10-06T13:57:52.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/11565433/825471074.jpg.jpg",
-      "summary": "Hello Kitty is coming to Lego in 2027 thanks to a new collaboration between the Lego group and Sanrio",
+      "title": "Gundam Rogue Orbit gave me a sick whip sword, but held back the one thing I want most in a mech game",
+      "link": "https://www.pcgamer.com/games/action/gundam-rogue-orbit-gave-me-a-sick-whip-sword-but-held-back-the-one-thing-i-want-most-in-a-mech-game/",
+      "date": "2026-10-06T14:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/VFVYP5FVWn9Ujk3XAvXft-1920-80.jpg",
+      "summary": "Let me put my own parts on my Gundam, dangit!",
       "tags": []
     },
     {
@@ -691,15 +1221,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/7bX5rswNiA7sFqcB8MvYV8-1920-80.jpg",
       "summary": "Can't a little guy find some peace in the tunnels?",
-      "tags": []
-    },
-    {
-      "title": "Final Fantasy 14’s Most Unique Crossover Is Officially Returning This Week",
-      "link": "https://www.polygon.com/final-fantasy-14-fall-guys-crossover-event-dates-rewards/",
-      "date": "2026-10-06T13:16:30.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/emet-selch-final-fantasy-14.jpg",
-      "summary": "Square Enix is bringing back the Fall Guys collaboration party games to MMO Final Fantasy 14 for a limited time",
       "tags": []
     },
     {
@@ -1255,30 +1776,12 @@
       "tags": []
     },
     {
-      "title": "The Witcher 3 Remastered change-t-il vraiment tout ?",
-      "link": "https://www.jeuxvideo.com/videos/2107368/the-witcher-3-remastered-change-t-il-vraiment-tout.htm",
-      "date": "2026-10-06T07:50:39.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179127/1791272988-6964-card.jpg",
-      "summary": "The Witcher 3 Remastered est arrivé le 29 septembre dernier sur PC, PS5 et Xbox Series. Une attente d'un mois terminée après la folle annonce de la gamescom. Mais cette version…",
-      "tags": []
-    },
-    {
       "title": "Physint : Hideo Kojima partage de nouvelles informations sur son prochain jeu, le successeur spirituel de Metal Gear",
       "link": "https://fr.ign.com/hideo-kojima-action-espionage-project/92828/physint-hideo-kojima-partage-de-nouvelles-informations-sur-son-prochain-jeu-le-successeur-spirituel",
       "date": "2026-10-06T07:43:41.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/p/physint-up/physint-update-hideo-kojima-shares-new-info-on-his-upcoming_5nrv.jpg",
       "summary": "\"Je t&#x27;ai fait attendre, hein ?\"",
-      "tags": []
-    },
-    {
-      "title": "« L'un des appels les plus désastreux de ma vie » : Gillermo del Toro a voulu adapter ce jeu vidéo au cinéma, mais...",
-      "link": "https://www.jeuxvideo.com/news/2107555/l-un-des-appels-les-plus-desastreux-de-ma-vie-gillermo-del-toro-a-voulu-adapter-ce-jeu-video-au-cinema-mais.htm",
-      "date": "2026-10-06T07:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791214965-51-card.jpg",
-      "summary": "Considéré comme l'un des plus grands réalisateurs du cinéma fantastique, Guillermo del Toro a révélé avoir tenté de porter le jeu vidéo culte BioShock sur grand écran. Cependant…",
       "tags": []
     },
     {
@@ -1300,15 +1803,6 @@
       "tags": []
     },
     {
-      "title": "On y a tous joué chez un copain : que sont devenues ces franchises cultes de la PlayStation 1 aujourd'hui disparues ?",
-      "link": "https://www.jeuxvideo.com/news/2107496/on-y-a-tous-joue-chez-un-copain-que-sont-devenues-ces-franchises-cultes-de-la-playstation-1-aujourd-hui-disparues.htm",
-      "date": "2026-10-06T06:40:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791209581-1263-card.jpg",
-      "summary": "La première PlayStation a été le théâtre d'une explosion créative sans précédent, façonnant l'enfance de millions de joueurs. Pourtant, entre choix stratégiques douteux et…",
-      "tags": []
-    },
-    {
       "title": "\"Nous ne souhaitons cibler aucune personne, aucun événement ni aucun mouvement en particulier\" : GTA VI ne visera pas la satire d'une actualité réelle",
       "link": "https://www.gamekult.com/actualite/nous-ne-souhaitons-cibler-aucune-personne-aucun-evenement-ni-aucun-mouvement-en-particulier-gta-vi-ne-visera-pas-la-satire-d-une-actualite-reelle-3050872331.html",
       "date": "2026-10-06T06:14:00.000Z",
@@ -1324,42 +1818,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872326/vous-avez-achete-nba-2k25-il-y-a-deux-ans-vous-ne-pourrez-plus-vraiment-y-jouer-des-la-fin-de-cette-annee-3d6f8a16__800_800__719-0-2877-2160.jpg",
       "summary": "Sachez bien une chose : quand vous achetez un jeu NBA 2K à 80€ (voire bien plus, pour peu que vous ayez acheté moult VC), vous achetez en réalité une licence périssable deux ans…",
-      "tags": []
-    },
-    {
-      "title": "Vous vous plaignez du prix des jeux de 2026, pourtant, sur Super Nintendo, il existait un jeu vidéo vendu une fortune à sa sortie",
-      "link": "https://www.jeuxvideo.com/news/2107487/vous-vous-plaignez-du-prix-des-jeux-de-2026-pourtant-sur-super-nintendo-il-existait-un-jeu-video-vendu-une-fortune-a-sa-sortie.htm",
-      "date": "2026-10-06T05:05:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791208162-5256-card.jpg",
-      "summary": "Vous pestez contre les tarifs des blockbusters de 2026 à 70 ou 80 euros ? Un rappel du passé tempère immédiatement le débat. Il y a une trentaine d'années, sur Super Nintendo et…",
-      "tags": []
-    },
-    {
-      "title": "Resident Evil : le film dépasse les 250 millions de dollars au box-office alors qu'il ne reprend même pas les jeux vidéo de la saga",
-      "link": "https://www.jeuxvideo.com/news/2107494/resident-evil-le-film-depasse-les-250-millions-de-dollars-au-box-office-alors-qu-il-ne-reprend-meme-pas-les-jeux-video-de-la-saga.htm",
-      "date": "2026-10-06T04:55:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791209630-5516-card.jpg",
-      "summary": "En franchissant la barre des 250 millions de dollars au box-office mondial, le tout nouveau film Resident Evil réalisé par Zach Cregger crée la surprise générale. Sans adapter…",
-      "tags": []
-    },
-    {
-      "title": "The Legend of Zelda Ocarina of Time sur Switch 2 : vous voulez en voir plus ? Voici toutes les vidéos disponibles",
-      "link": "https://www.jeuxvideo.com/news/2107511/the-legend-of-zelda-ocarina-of-time-vous-voulez-en-voir-plus-voici-toutes-les-videos-disponibles.htm",
-      "date": "2026-10-06T04:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179121/1791214244-8473-card.jpg",
-      "summary": "Vous pensiez avoir tout vu ? Le site de Nintendo vous réserve une avalanche de séquences pour le remake très attendu de The Legend of Zelda : Ocarina of Time sur Switch 2.",
-      "tags": []
-    },
-    {
-      "title": "PS5 ou Nintendo Switch ? La science a tranché, voici la console qui fait le plus de bien à votre cerveau (et ça dépend de votre âge !)",
-      "link": "https://www.jeuxvideo.com/news/2106544/ps5-ou-nintendo-switch-la-science-a-tranche-voici-la-console-qui-fait-le-plus-de-bien-a-votre-cerveau-et-ca-depend-de-votre-age.htm",
-      "date": "2026-10-06T04:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179069/1790685229-9742-card.jpg",
-      "summary": "Une récente étude japonaise d'envergure a utilisé les pénuries de consoles liées au Covid-19 pour évaluer l'impact causal du jeu vidéo sur notre santé mentale. Les résultats…",
       "tags": []
     },
     {
@@ -1396,384 +1854,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/taLy7aU4f2Ysa6KoAMLRHN-1920-80.png",
       "summary": "No layoffs have been announced for The Coalition, but some Gears of War: E-Day developers are worried they'll be next, even if the game succeeds.",
-      "tags": []
-    },
-    {
-      "title": "Viral AI-Generated Comedian Steals Jokes And Is Rewarded With Millions Of Views",
-      "link": "https://kotaku.com/viral-ai-generated-comedian-steals-jokes-and-is-rewarded-with-millions-of-views-2000740077",
-      "date": "2026-10-05T22:33:59.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Ai-comedian-steal-jkokes-1280x720.jpg",
-      "summary": "Tiffany Sloan has over 375,000 followers on Instagram and also isn't a real person but a gen-AI nightmare",
-      "tags": []
-    },
-    {
-      "title": "Supermassive Lays Off 70 People Less Than Six Months After Releasing Its New Sci-Fi Horror Game",
-      "link": "https://kotaku.com/supermassive-lays-off-70-people-less-than-six-months-after-releasing-its-new-sci-fi-horror-game-2000740078",
-      "date": "2026-10-05T21:46:42.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Directive-8020-1280x720.jpg",
-      "summary": "Directive 8020 was met with mixed reviews on Steam",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 devs tried \"not to jump on the bandwagon\" of passing trends and instead created their \"own slanted, overblown versions\"",
-      "link": "https://www.eurogamer.net/gta-6-devs-bandwagon-trends-created-slanted-versions",
-      "date": "2026-10-05T20:14:26.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/jason-lucia-gta-6-romance-relationship.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Creating a timely satire can be tough when development takes half a decade or more - it's the reason South Park's stuck with its crude art style for literal decades, but the…",
-      "tags": []
-    },
-    {
-      "title": "Someone Made A Fun Soccer Romhack For Ocarina Of Time And—God Damnit, It Uses AI-Generated Code",
-      "link": "https://kotaku.com/ocarina-of-time-romhack-soccerina-of-time-2000740026",
-      "date": "2026-10-05T20:00:01.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/soccerina-1280x720.jpg",
-      "summary": "Goal Skulltulas",
-      "tags": []
-    },
-    {
-      "title": "Despite calling Grand Theft Auto 'a videogame franchise built around criminal activity,' Miami-Dade sheriff isn't mad about the NBA's 'Vice City' transformation",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/despite-calling-grand-theft-auto-a-videogame-franchise-built-around-criminal-activity-miami-dade-sheriff-isnt-mad-about-the-nbas-vice-city-transformation/",
-      "date": "2026-10-05T19:42:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/pqxkmyfvwZ8UJuzVqF73xR-1920-80.jpg",
-      "summary": "Sheriff Rosie Cordero-Stutz says her strong stance against the GTA 6 promotional collaboration was only about \"publicly owned facilities and infrastructure.\"",
-      "tags": []
-    },
-    {
-      "title": "Des hackers craquent la PS5, on vous explique pourquoi c'est dangereux...",
-      "link": "https://www.jeuxvideo.com/news/2107450/des-hackers-craquent-la-ps5-on-vous-explique-pourquoi-c-est-dangereux.htm",
-      "date": "2026-10-05T19:40:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179120/1791202022-3442-card.jpg",
-      "summary": "Alors qu'une nouvelle faille permet de déverrouiller la plupart des consoles PlayStation 5, le piratage facile reste un fantasme. Entre bannissement du PSN, perte de l'accès aux…",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders and The Finals are getting TV series and film adaptations",
-      "link": "https://www.gamesindustry.biz/arc-raiders-and-the-finals-are-getting-tv-series-and-film-adaptations",
-      "date": "2026-10-05T19:33:21.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Arc-Raiders_Media_54.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Embark Studios' Arc Raiders and The Finals are both being adapted for TV and film.",
-      "tags": []
-    },
-    {
-      "title": "Gears Of War: E-Day&#8217;s New Ballsack Enemy Keeps Kicking My Ass",
-      "link": "https://kotaku.com/gears-of-war-e-days-new-ballsack-enemy-keeps-kicking-my-ass-2000740022",
-      "date": "2026-10-05T19:30:34.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/gears-enemy-1280x720.jpg",
-      "summary": "Please, leave me alone you weird, ugly flesh balloons",
-      "tags": []
-    },
-    {
-      "title": "Got myself a Pip-Boy... sorry, I mean a 'Rad-Lad'",
-      "link": "https://www.pcgamer.com/games/fallout/got-myself-a-pip-boy-sorry-i-mean-a-rad-lad/",
-      "date": "2026-10-05T19:03:02.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/AfWp9TDSjySLwzWmXXeA7Y-1920-80.jpg",
-      "summary": "Got myself a Pip-Boy... sorry, I mean a 'Rad-Lad'",
-      "tags": []
-    },
-    {
-      "title": "Magic: The Gathering Is Adding God Packs And Removing What My Editor Calls &#8216;Junk&#8217; Foils From Boosters",
-      "link": "https://kotaku.com/magic-the-gathering-adding-god-packs-2000740004",
-      "date": "2026-10-05T19:00:58.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/nauctis-1280x717.jpg",
-      "summary": "And no more foil commons and uncommons in booster packs :(",
-      "tags": []
-    },
-    {
-      "title": "Halo Studios says \"it is absolutely our intent\" to release new Halo book, despite layoffs and a rumored lore reboot from Activision",
-      "link": "https://www.eurogamer.net/halo-studios-absolutely-our-intent-new-book-activision-reboot",
-      "date": "2026-10-05T18:54:20.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/halo-infinite-photo-1382120.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Halo Studios can't promise that the previously-announced Halo novel will land on shop shelves, but the company is \"determined\" to see the project cross the finish line regardless.",
-      "tags": []
-    },
-    {
-      "title": "Overwatch’s Latest China Exclusive Has Fans Ready To Crash Out: ‘I Still Don’t Know How People Defend Blizzard For This’",
-      "link": "https://kotaku.com/overwatch-china-exclusive-shion-kiriko-reaper-dmon-2000740030",
-      "date": "2026-10-05T18:40:09.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/overwatch-1280x720.jpg",
-      "summary": "Shion, Kiriko, Reaper, and more are the latest heroes to reap the benefits of Blizzard and NetEase’s partnership, but only in China",
-      "tags": []
-    },
-    {
-      "title": "Elfe Solidaire Aniimo : Comment l'obtenir pendant l'événement spécial ?",
-      "link": "https://www.jeuxvideo.com/news/2107430/elfe-solidaire-aniimo-comment-l-obtenir-pendant-l-evenement-special.htm",
-      "date": "2026-10-05T18:30:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179120/1791199003-2590-card.jpg",
-      "summary": "Découvrez comment obtenir Elfe Solidaire, l'un des monstres nés d'une collaboration entre Pawprint et le réseau social des marques de luxe, Douyin. Dans ce guide, nous verrons les…",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders and The Finals set for TV and film adaptations from Backrooms co-producer",
-      "link": "https://www.gamedeveloper.com/business/arc-raiders-and-the-finals-set-for-tv-and-film-adaptations-from-backrooms-co-producer",
-      "date": "2026-10-05T18:30:00.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltaf56080e8948be9a/6aabc4cce6ac84edd3172ca7/Arc_Header.png?width=720&quality=80&disable=upscale",
-      "summary": "The Sweden-based Embark Studios has secured adaptations for both of its multiplayer shooters, The Finals and ARC Raiders.",
-      "tags": []
-    },
-    {
-      "title": "Halloween: The Game Adding Michael&#8217;s Worst Mask As $10 DLC",
-      "link": "https://kotaku.com/halloween-the-game-adding-michaels-worst-mask-as-10-dlc-2000740005",
-      "date": "2026-10-05T18:00:21.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/VS-1989Teasermp4-015-1280x720.jpg",
-      "summary": "If you want a better-looking version of the famous killer, you'll also need to fork over another $10",
-      "tags": []
-    },
-    {
-      "title": "Metal Gear Solid: Master Collection Vol. 2 - images du State of Play de Février 2026",
-      "link": "https://fr.ign.com/metal-gear-solid-master-collection-vol-2-1/92824/metal-gear-solid-master-collection-vol-2-february-2026-state-of-play-trailer-screenshots",
-      "date": "2026-10-05T17:52:47.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/m/metal-gear/metal-gear-solid-master-collection-vol-2-february-2026-state_tjsu.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "L'acteur japonais de Solid Snake plaide pour un « nouveau jeu Metal Gear », mais « pas sans Kojima »",
-      "link": "https://fr.ign.com/metal-gear-solid-3-snake-eater-remake/92823/lacteur-japonais-de-solid-snake-plaide-pour-un-nouveau-jeu-metal-gear-mais-pas-sans-kojima",
-      "date": "2026-10-05T17:52:47.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/l/legendary-/legendary-japanese-solid-snake-actor-wants-new-metal-gear-ga_vwhx.jpg",
-      "summary": "Hideo !",
-      "tags": []
-    },
-    {
-      "title": "Ninja Theory begins laying off staff, according to employee posts",
-      "link": "https://www.gamesindustry.biz/ninja-theory-begins-laying-off-staff-according-to-employee-posts",
-      "date": "2026-10-05T17:44:03.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Hellblade_xmdlSuk.jpeg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Ninja Theory has begun laying off employees.",
-      "tags": []
-    },
-    {
-      "title": "Someone At Marvel Thinks We’re All Stupid",
-      "link": "https://kotaku.com/avengers-endgame-encore-doomsday-post-credits-scenes-2000740008",
-      "date": "2026-10-05T17:30:49.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/image-61.jpg",
-      "summary": "Avengers: Endgame ’s re-release wants you to believe this was always the plan",
-      "tags": []
-    },
-    {
-      "title": "La production de The Batman Part 2 est interrompue",
-      "link": "https://fr.ign.com/the-batman-2/92822/la-production-de-the-batman-part-2-est-interrompue",
-      "date": "2026-10-05T17:29:19.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-batman/the-batman-part-2-halts-production-as-matt-reeves-steps-away_dnzy.png",
-      "summary": "Matt Reeves se retirant pour des raisons personnelles.",
-      "tags": []
-    },
-    {
-      "title": "Free-to-play playtime is broadly flat as gacha RPGs drive PC growth, says Newzoo",
-      "link": "https://www.gamesindustry.biz/free-to-play-playtime-is-broadly-flat-as-gacha-rpgs-drive-pc-growth-says-newzoo",
-      "date": "2026-10-05T17:15:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/china-games.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "\"F2P is not dying,\" according to a Newzoo special focus report that challenges assumptions that free-to-play is in decline.",
-      "tags": []
-    },
-    {
-      "title": "BrokenLore: MIKI-CHAN - Trailer d'annonce officiel",
-      "link": "https://fr.ign.com/brokenlore-miki-chan/92838/brokenlore-miki-chan-trailer-dannonce-officiel",
-      "date": "2026-10-05T17:10:54.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/b/brokenlore/brokenlore-miki-chan-official-announcement-trailer_7zqx.png",
-      "summary": "Découvrez la bande-annonce de BrokenLore : MIKI-CHAN, un jeu d’aventure d’horreur psychologique développé par Serafini Productions.",
-      "tags": []
-    },
-    {
-      "title": "Invincible VS : du gameplay pour le maître du multivers Angstrom Levy",
-      "link": "https://www.gamekult.com/actualite/invincible-vs-du-gameplay-pour-le-maitre-du-multivers-angstrom-levy-3050872318.html",
-      "date": "2026-10-05T17:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872318/invincible-vs-le-maitre-du-multivers-angstrom-levy-e194ffda__800_800__807-0-2968-2160.jpg",
-      "summary": "Si Invincible VS s'est vite dégonflé comme une baudruche, le studio Quarter Up et l'éditeur Skybound Games ont bien l'intention d'achever sa première (et dernière ?) année de…",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders and The Finals are getting film and TV adaptations in collaboration with the Backrooms production company",
-      "link": "https://www.eurogamer.net/arc-raiders-the-finals-film-tv-show-backrooms",
-      "date": "2026-10-05T17:00:32.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/arc-raiders-spider.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Film and TV show adaptations of Arc Raiders and The Finals are in the works - and developer Embark Studios is collaborating with Chernin Entertainment to get the job done.",
-      "tags": []
-    },
-    {
-      "title": "Hideo Kojima Has ‘Mixed’ Feelings On DLSS 5 Because AI Can’t Understand Creators’ Intentions: ‘I Don’t Much Like That Idea’",
-      "link": "https://kotaku.com/hideo-kojima-has-mixed-feelings-on-dlss-5-because-ai-cant-understand-creators-intentions-i-dont-much-like-that-idea-2000739966",
-      "date": "2026-10-05T17:00:25.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/05/Screen-Shot-2026-05-27-at-9.38.21-AM.jpg",
-      "summary": "Kojima said he 'wouldn’t like' someone using AI to tamper with his own work after being sent images of DLSS 5 being used on Death Stranding 2",
-      "tags": []
-    },
-    {
-      "title": "I am cavorting with a gazelle's grace in Grand Theft Auto 5",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/i-am-cavorting-with-a-gazelles-grace-in-grand-theft-auto-5/",
-      "date": "2026-10-05T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/WrwfJAUArRp4FvSzeuRwcn-1920-80.jpg",
-      "summary": "More than usual, I mean.",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders et The Finals vont être adaptés en films et en séries",
-      "link": "https://fr.ign.com/arc-raiders/92818/arc-raiders-et-the-finals-vont-etre-adaptes-en-films-et-en-series",
-      "date": "2026-10-05T16:54:44.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/a/arc-raider/arc-raiders-and-the-finals-are-getting-adapted-into-films-an_c6rf.jpg",
-      "summary": "Expansion.",
-      "tags": []
-    },
-    {
-      "title": "The final showdown: Motion blur vs chromatic aberration",
-      "link": "https://www.pcgamer.com/hardware/the-final-showdown-motion-blur-vs-chromatic-aberration/",
-      "date": "2026-10-05T16:51:44.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HxzHpZNtJNJpycmkyEopYZ-1920-80.png",
-      "summary": "Only one can be crowned the worst graphical effect in games. You decide.",
-      "tags": []
-    },
-    {
-      "title": "MTG God Packs",
-      "link": "https://fr.ign.com/magic-the-gathering-5/92821/mtg-god-packs",
-      "date": "2026-10-05T16:47:13.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/m/mtg-god-pa/mtg-god-packs_8knx.png",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Les God Packs arrivent officiellement dans Magic: The Gathering",
-      "link": "https://fr.ign.com/magic-the-gathering-trading-card-game/92820/les-god-packs-arrivent-officiellement-dans-magic-the-gathering",
-      "date": "2026-10-05T16:47:13.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/god-packs-/god-packs-are-officially-coming-to-magic-the-gathering_gnvs.jpg",
-      "summary": "Bons dieux.",
-      "tags": []
-    },
-    {
-      "title": "Report: Ninja Theory lays off workers after failing to spin off from Xbox",
-      "link": "https://www.gamedeveloper.com/business/report-ninja-theory-lays-off-workers-after-failing-to-spin-off-from-xbox",
-      "date": "2026-10-05T16:45:00.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt08fd428b64a8edaf/6ac3cb061cfa733f1aa10aba/senuasteam.jpg?width=720&quality=80&disable=upscale",
-      "summary": "The developer of the Hellblade titles and the recently-announced Senua is reportedly cutting jobs after attempts to divest the studio from the parent company were unsuccessful.",
-      "tags": []
-    },
-    {
-      "title": "Developer gets a little too silly, recommends deadly psychoactive ingredient in its bad boy-themed cocktail",
-      "link": "https://www.pcgamer.com/games/adventure/developer-gets-a-little-too-silly-recommends-deadly-psychoactive-ingredient-in-its-bad-boy-themed-cocktail/",
-      "date": "2026-10-05T16:38:23.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/fKVVfHok4BP9CEeVQ5mh7n-1920-80.png",
-      "summary": "Maybe a little *too* bad, LaDS?",
-      "tags": []
-    },
-    {
-      "title": "Noematica is a lucid dreamer's \"n-dimensional\" take on The Sims that proudly boasts it will never ever gouge you for DLC",
-      "link": "https://www.rockpapershotgun.com/noematica-is-a-lucid-dreamers-n-dimensional-take-on-the-sims-that-proudly-boasts-it-will-never-ever-gouge-you-for-dlc",
-      "date": "2026-10-05T16:37:44.000Z",
-      "sourceId": "rps",
-      "image": "https://assetsio.gnwcdn.com/noematica.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Over the course of my illustrious tenure as RPS news mangler, I have seen many Simslikes. Tragically cancelled Simslikes from publishers better known for feats of tactical incest!…",
-      "tags": []
-    },
-    {
-      "title": "NBA 2K25 va être retiré de la vente après 2 ans seulement, et son mode histoire solo ne sera plus jouable",
-      "link": "https://fr.ign.com/nba-2k25/92817/nba-2k25-va-etre-retire-de-la-vente-apres-2-ans-seulement-et-son-mode-histoire-solo-ne-sera-plus-jou",
-      "date": "2026-10-05T16:32:14.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/n/nba-2k25-i/nba-2k25-is-getting-delisted-after-just-2-years-and-single-p_ympp.jpg",
-      "summary": "Fin du match.",
-      "tags": []
-    },
-    {
-      "title": "RuneScape Developer Jagex Takes Down Trailer To &#8216;Investigate Urgently&#8217; After Generative AI Accusations",
-      "link": "https://kotaku.com/runescape-developer-jagex-takes-down-trailer-gen-ai-2000739980",
-      "date": "2026-10-05T16:30:05.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/dragon-slayer-2-1280x719.jpg",
-      "summary": "'We don’t use GenAI to create our games, artwork or creative assets, and will not knowingly allow it to be used on our behalf'",
-      "tags": []
-    },
-    {
-      "title": "The upcoming D&D interpretation of World of Warcraft sounds great, but don't expect it to work like the MMO does",
-      "link": "https://www.eurogamer.net/dungeons-and-dragons-dnd-world-of-warcraft-wow-book",
-      "date": "2026-10-05T16:25:19.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/sylvanas-wow-d%26d-book.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "So many of the questions in a press briefing for the upcoming Dungeons & Dragons: World of Warcraft book revolved around whether the 52-year-old tabletop game would bend out of…",
-      "tags": []
-    },
-    {
-      "title": "My top gaming picks this Prime Day (live) - regular updates from a seasoned tech reviewer",
-      "link": "https://www.pcgamer.com/hardware/live/news/october-prime-day-2026-live-my-personal-deal-picks/",
-      "date": "2026-10-05T16:18:51.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/EpSFe2d38GFB5fEoqAYboF-1920-80.jpg",
-      "summary": "Here are the best deals I'd recommended over at Amazon, Best Buy, Newegg, Walmart and more.",
-      "tags": []
-    },
-    {
-      "title": "RuneScape dev apologises after RuneFest debut of an AI-generated six-fingered character: 'That's pretty hard to explain away'",
-      "link": "https://www.pcgamer.com/games/mmo/runescape-dev-apologises-after-runefest-debut-of-an-ai-generated-six-fingered-character-thats-pretty-hard-to-explain-away/",
-      "date": "2026-10-05T16:14:26.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/yBnTR36anZTSFgZyUHT4dM-1920-80.jpg",
-      "summary": "Uh oh, here we go again.",
-      "tags": []
-    },
-    {
-      "title": "Arc Raiders is looking for 'more ways to integrate real human performances' starting with Celeste's visual overhaul for Frozen Trail",
-      "link": "https://www.pcgamer.com/games/third-person-shooter/arc-raiders-is-looking-for-more-ways-to-integrate-real-human-performances-starting-with-celestes-visual-overhaul-for-frozen-trail/",
-      "date": "2026-10-05T16:02:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Ug4nVvwefGBmjJc3rujcHB-1920-80.png",
-      "summary": "Celeste's voice actor will now also be the face of the unofficial leader of Speranza.",
-      "tags": []
-    },
-    {
-      "title": "Sam Altman&#8217;s PR Team Desperately Tries To Shut Down Questions Over ChatGPT Encouraging Suicide",
-      "link": "https://kotaku.com/openai-chat-gpt-ai-llm-sam-altman-therapy-vanity-fair-interview-2000739974",
-      "date": "2026-10-05T16:00:32.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/altman-1280x720.jpg",
-      "summary": "In an interview with Vanity Fair , the OpenAI chief has no good answers",
-      "tags": []
-    },
-    {
-      "title": "Dungeons & Dragons: World of Warcraft is already a slam dunk, but it's how it captures the spirit of the MMO that makes it stand out",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/dungeons-and-dragons-world-of-warcraft-is-already-a-slam-dunk-but-its-how-it-captures-the-spirit-of-the-mmo-that-makes-it-stand-out/",
-      "date": "2026-10-05T16:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/FuEb4eEjTUMnZBeaCnGz4T-1920-80.jpg",
-      "summary": "The tabletop adaptation of Blizzard's MMO drops next month.",
-      "tags": []
-    },
-    {
-      "title": "Why it's still worth making immersive sims ft. Harvey Smith &amp; Ben Horne",
-      "link": "https://www.gamedeveloper.com/design/why-it-s-still-worth-making-immersive-sims-ft-harvey-smith-ben-horne",
-      "date": "2026-10-05T15:59:58.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf809fa9a4d29be70/6ac3c90b1d3e91653ff431b8/blackponyharveyben_(1).png?width=720&quality=80&disable=upscale",
-      "summary": "Celebrated game designer Harvey Smith and former Arkane Austin executive producer Ben Horne lay out their vision for Black Pony Immersive.",
       "tags": []
     }
   ]
