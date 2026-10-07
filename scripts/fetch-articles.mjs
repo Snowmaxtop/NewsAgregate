@@ -24,6 +24,11 @@ const SOURCES = [
   { id: 'pcgamer',   feed: 'https://www.pcgamer.com/feeds.xml' },
   { id: 'eurogamer', feed: 'https://www.eurogamer.net/?format=rss' },
   { id: 'polygon',   feed: 'https://www.polygon.com/rss/index.xml' },
+  // Industry analysis & mobile business. Game File posts every few days,
+  // so it keeps 7 days of items (retentionDays) instead of the default 1.
+  { id: 'gamefile',  feed: 'https://www.gamefile.news/feed', retentionDays: 7 },
+  { id: 'pgbiz',     feed: ['https://www.pocketgamer.biz/rss/', 'https://www.pocketgamer.biz/index.rss'], retentionDays: 2 },
+  { id: 'mgbiz',     feed: 'https://mobilegamer.biz/feed/', retentionDays: 2 },
 ];
 
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });
@@ -222,7 +227,9 @@ async function main() {
       allArticles.push(...items);
       const ageH = newest ? Math.round((Date.now() - new Date(newest)) / 3600000) : null;
       // "stale" = the feed answers but nothing new for 2+ days
-      sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > 48 ? 'stale' : 'ok';
+      // "stale" = nothing new for longer than this source's usual rhythm
+      const staleAfterH = Math.max(48, (source.retentionDays || 1) * 24);
+      sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > staleAfterH ? 'stale' : 'ok';
       sourceHealth[source.id] = { status: sourceStatus[source.id], url, items: items.length, newest: newest || null };
       console.log(`${sourceStatus[source.id] === 'ok' ? '✓' : '⚠'} ${source.id}: ${items.length} items, newest ${newest || 'none'} (${ageH ?? '?'} h ago) via ${url}`);
     } catch (e) {
@@ -235,21 +242,23 @@ async function main() {
   // 1 day: the user's reading model is "if I didn't read it today, it no
   // longer interests me". Favorites are unaffected — they live as full
   // snapshots in dispatch-state.json, independent of this file.
+  // Per-source override: SOURCES[].retentionDays (low-frequency newsletters).
   const RETENTION_DAYS = 1;
-  const cutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+  const retentionOf = new Map(SOURCES.map((s) => [s.id, s.retentionDays || RETENTION_DAYS]));
+  const keepAfter = (a) => Date.now() - retentionOf.get(a.sourceId) * 24 * 60 * 60 * 1000;
 
   const seen = new Set();
   const beforeCount = allArticles.length;
   allArticles = allArticles
     .filter((a) => (seen.has(a.link) ? false : (seen.add(a.link), true)))
-    .filter((a) => new Date(a.date).getTime() >= cutoff)
+    .filter((a) => new Date(a.date).getTime() >= keepAfter(a))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 1000); // safety cap in case a feed misbehaves; retention above is the real limit
 
-  console.log(`Pruned to last ${RETENTION_DAYS} days: ${beforeCount} → ${allArticles.length} articles`);
+  console.log(`Pruned by retention (default ${RETENTION_DAYS} day): ${beforeCount} → ${allArticles.length} articles`);
   for (const id of Object.keys(sourceHealth)) {
     sourceHealth[id].kept = allArticles.filter((a) => a.sourceId === id).length;
-    if (sourceHealth[id].kept === 0) console.log(`⚠ ${id}: 0 articles kept in the last ${RETENTION_DAYS} day(s)`);
+    if (sourceHealth[id].kept === 0) console.log(`⚠ ${id}: 0 articles kept in the last ${retentionOf.get(id)} day(s)`);
   }
 
   const output = {
