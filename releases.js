@@ -279,11 +279,14 @@
     const y = (v) => H - 3 - (v / max) * (H - 8);
     const pts = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
     const last = vals.length - 1;
-    return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="Daily peak players, last ${vals.length} days">
+    // data-pts feeds the hover/touch tooltip (date label + exact value).
+    const ptsData = esc(JSON.stringify(days.map((d, i) => [dDay(dayTime(d)), vals[i]])));
+    return `<div class="spark-wrap"><svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" data-pts="${ptsData}" aria-label="Daily peak players, last ${vals.length} days">
       <polygon points="2,${H - 3} ${pts} ${x(last).toFixed(1)},${H - 3}" class="spark-area"/>
       <polyline points="${pts}" class="spark-line"/>
       <circle cx="${x(last).toFixed(1)}" cy="${y(vals[last]).toFixed(1)}" r="2.6" class="spark-dot"/>
-    </svg>
+      <line class="spark-cross" x1="0" x2="0" y1="0" y2="${H}" visibility="hidden"/>
+    </svg><div class="perf-tip spark-tip" hidden></div></div>
     <div class="spark-cap">Daily peak players · last ${vals.length} days · max ${fmt(max)}</div>`;
   }
   function statsLine(g){
@@ -577,6 +580,34 @@
       const c = e.target.closest('.rel-card');
       if (c && !c.classList.contains('active') && !e.target.closest('a')) goTo([...strip.children].indexOf(c));
     });
+
+    // Green mini-chart on the card: hover (mouse) or touch/slide sideways
+    // shows the exact daily peak and its date.
+    const sparkShow = (e) => {
+      const svg = e.target.closest && e.target.closest('.spark');
+      if (!svg) return;
+      const pts = JSON.parse(svg.dataset.pts || '[]');
+      if (pts.length < 2) return;
+      const r = svg.getBoundingClientRect();
+      const i = Math.max(0, Math.min(pts.length - 1, Math.round(((e.clientX - r.left) / r.width) * (pts.length - 1))));
+      const vx = (i / (pts.length - 1)) * (260 - 4) + 2;      // same x scale as sparkline()
+      const cross = svg.querySelector('.spark-cross');
+      cross.setAttribute('x1', vx); cross.setAttribute('x2', vx); cross.setAttribute('visibility', 'visible');
+      const tip = svg.parentElement.querySelector('.spark-tip');
+      tip.textContent = `${pts[i][0]} · peak ${fmt(pts[i][1])} players`;
+      tip.hidden = false;
+      const px = (vx / 260) * r.width, tw = tip.offsetWidth;
+      tip.style.left = Math.min(Math.max(0, px - tw / 2), r.width - tw) + 'px';
+    };
+    const sparkHide = (e) => {
+      const svg = e.target.closest && e.target.closest('.spark');
+      if (!svg) return;
+      svg.querySelector('.spark-cross').setAttribute('visibility', 'hidden');
+      svg.parentElement.querySelector('.spark-tip').hidden = true;
+    };
+    viewport.addEventListener('pointermove', sparkShow);
+    viewport.addEventListener('pointerdown', sparkShow);
+    viewport.addEventListener('pointerout', sparkHide);
 
     let sx = 0, sy = 0, st = 0, d = 0, mode = null, pid = null;
     viewport.addEventListener('pointerdown', (e) => {

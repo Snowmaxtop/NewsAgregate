@@ -749,7 +749,10 @@
   .trk-cell{display:flex;flex-direction:column;align-items:center;padding:6px 2px;border-radius:6px;background:var(--ink);border:1px solid var(--line);min-width:0;}
   .trk-cell b{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:var(--paper);font-variant-numeric:tabular-nums;}
   .trk-cell span{font-size:9px;color:var(--paper-dim);text-align:center;line-height:1.2;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
-  .spark{width:100%;height:44px;display:block;}
+  .spark-wrap{position:relative;}
+  .spark{width:100%;height:44px;display:block;cursor:crosshair;touch-action:pan-y;}
+  .spark-cross{stroke:var(--paper-dim);stroke-width:1;stroke-dasharray:3 3;vector-effect:non-scaling-stroke;}
+  .spark-tip{top:-26px;}
   .spark-area{fill:rgba(76,217,123,0.12);}
   .spark-line{fill:none;stroke:var(--ok);stroke-width:1.6;vector-effect:non-scaling-stroke;}
   .spark-dot{fill:var(--ok);}
@@ -1569,6 +1572,7 @@ function render(){
     return;
   }
   feedEl.classList.toggle('in-favorites', currentFilter === 'favorites');
+  document.getElementById('searchInput').placeholder = currentFilter === 'favorites' ? 'Search your favorites…' : 'Filter by keyword…';
 
   let list;
   if(currentFilter === 'favorites'){
@@ -1583,7 +1587,12 @@ function render(){
   }
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
-  if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
+  // Search: titles + summaries, every word must match, accents/case ignored.
+  if(searchQuery){
+    const fold = (t) => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const words = fold(searchQuery).split(/\s+/).filter(Boolean);
+    list = list.filter(a => { const hay = fold(a.title + ' ' + (a.summary || '')); return words.every(w => hay.includes(w)); });
+  }
   list.sort((a,b) => b.date - a.date);
 
   if(list.length === 0){
@@ -1638,7 +1647,8 @@ function render(){
     });
 
     feedEl.innerHTML = groups.map(g => {
-      const collapsed = !expandedDays.has(g.key);
+      // While searching, every matching day is shown open.
+      const collapsed = !searchQuery && !expandedDays.has(g.key);
       const rows = collapsed ? '' : g.items.map(rowHtml).join('');
       return `
         <div class="day-group ${collapsed ? 'collapsed' : ''}">
