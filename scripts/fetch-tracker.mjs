@@ -4,19 +4,24 @@
 // released and has a Steam page, it records:
 //   • current players (Steam Web API, public, no key)
 //   • Steam review totals and score label (store appreviews endpoint)
-// and keeps a per-day history: the day's peak players and the review
-// total at the end of the day (new reviews per day ≈ a sales signal).
+// and keeps two dated histories:
+//   • hours: every hourly sample [ISO time, players] for the last 14 days
+//   • days:  per day (UTC) the peak players, review total and % positive,
+//            kept 365 days (new reviews per day ≈ a sales signal)
 //
 // Liked games come from dispatch-state.json (state.likedGames), so a like
 // is tracked after you press Save in the app and the next hourly run.
 //
 // Output: tracker.json
 //   { generatedAt, games: { "<appid>": { name, now, nowAt,
-//       reviews: { positive, total, desc }, days: { "YYYY-MM-DD": { peak, reviews } } } } }
+//       reviews: { positive, total, desc },
+//       hours: [["2026-10-07T21:23:00Z", 1234], ...],
+//       days: { "YYYY-MM-DD": { peak, reviews, pct } } } } }
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { pathToFileURL } from 'url';
 
-export const KEEP_DAYS = 120;
+export const KEEP_DAYS = 365;
+export const KEEP_HOURS_DAYS = 14;
 const UA = { 'User-Agent': 'Mozilla/5.0 (Dispatch after-launch tracker)' };
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -38,13 +43,21 @@ export function trackedGames(likedGames, today){
 
 // Merges one sample into a game's record (pure, unit-tested).
 export function applySample(rec, sample, today, nowIso){
-  const r = { name: sample.name, days: { ...(rec && rec.days) } };
+  const r = { name: sample.name, days: { ...(rec && rec.days) }, hours: [...((rec && rec.hours) || [])] };
   r.now = sample.players ?? (rec && rec.now) ?? null;
   r.nowAt = sample.players != null ? nowIso : (rec && rec.nowAt) || null;
   r.reviews = sample.reviews || (rec && rec.reviews) || null;
   const day = { ...(r.days[today] || {}) };
   if (sample.players != null) day.peak = Math.max(day.peak || 0, sample.players);
-  if (sample.reviews) day.reviews = sample.reviews.total;
+  if (sample.reviews){
+    day.reviews = sample.reviews.total;
+    if (sample.reviews.total) day.pct = Math.round(1000 * sample.reviews.positive / sample.reviews.total) / 10;
+  }
+  if (sample.players != null){
+    r.hours.push([nowIso.slice(0, 16) + ':00Z', sample.players]);
+    const floor = new Date(new Date(nowIso).getTime() - KEEP_HOURS_DAYS * 86400000).toISOString();
+    r.hours = r.hours.filter(([t]) => t >= floor);
+  }
   r.days[today] = day;
   const keys = Object.keys(r.days).sort().slice(-KEEP_DAYS);
   r.days = Object.fromEntries(keys.map(k => [k, r.days[k]]));

@@ -4,7 +4,7 @@
 // there is no CORS restriction to work around — this is the same kind of
 // request curl or a backend server would make.
 import { XMLParser } from 'fast-xml-parser';
-import { writeFileSync, readFileSync, existsSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
 
 const SOURCES = [
   { id: 'ign',       feed: 'https://fr.ign.com/feed.xml' },
@@ -216,6 +216,46 @@ async function fetchOneFeed(source, feedUrl) {
     .filter((a) => a.title && a.link);
 }
 
+// --- Archive -------------------------------------------------------------
+// Every article ever seen is kept in archive/YYYY-MM-DD.json (one file per
+// publication day, UTC) plus archive/index.json ({ days: { day: count } }).
+// A day file is only rewritten when a new link appears, so past days stop
+// changing. ~45 KB a day, ~17 MB a year. The app's Archive tab searches it.
+export function mergeIntoArchive(items, dir = 'archive') {
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  const indexPath = `${dir}/index.json`;
+  let index = { days: {} };
+  try { if (existsSync(indexPath)) index = JSON.parse(readFileSync(indexPath, 'utf8')); } catch (e) { /* rebuild */ }
+
+  const byDay = new Map();
+  for (const a of items) {
+    const day = String(a.date).slice(0, 10);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) continue;
+    if (!byDay.has(day)) byDay.set(day, []);
+    byDay.get(day).push({ title: a.title, link: a.link, date: a.date, sourceId: a.sourceId, summary: a.summary || '', image: a.image || null });
+  }
+
+  let added = 0;
+  for (const [day, list] of byDay) {
+    const path = `${dir}/${day}.json`;
+    let existing = [];
+    try { if (existsSync(path)) existing = JSON.parse(readFileSync(path, 'utf8')); } catch (e) { existing = []; }
+    const links = new Set(existing.map((a) => a.link));
+    const fresh = list.filter((a) => !links.has(a.link) && (links.add(a.link), true));
+    if (!fresh.length) continue;
+    const merged = [...existing, ...fresh].sort((x, y) => (x.date < y.date ? 1 : -1));
+    writeFileSync(path, JSON.stringify(merged));
+    index.days[day] = merged.length;
+    added += fresh.length;
+  }
+  if (added) {
+    index.updatedAt = new Date().toISOString();
+    index.days = Object.fromEntries(Object.entries(index.days).sort(([a], [b]) => (a < b ? 1 : -1)));
+    writeFileSync(indexPath, JSON.stringify(index));
+  }
+  return added;
+}
+
 async function main() {
   const sourceStatus = {};
   let allArticles = [];
@@ -226,7 +266,6 @@ async function main() {
       const { url, items, newest } = await fetchFeed(source);
       allArticles.push(...items);
       const ageH = newest ? Math.round((Date.now() - new Date(newest)) / 3600000) : null;
-      // "stale" = the feed answers but nothing new for 2+ days
       // "stale" = nothing new for longer than this source's usual rhythm
       const staleAfterH = Math.max(48, (source.retentionDays || 1) * 24);
       sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > staleAfterH ? 'stale' : 'ok';
@@ -246,6 +285,11 @@ async function main() {
   const RETENTION_DAYS = 1;
   const retentionOf = new Map(SOURCES.map((s) => [s.id, s.retentionDays || RETENTION_DAYS]));
   const keepAfter = (a) => Date.now() - retentionOf.get(a.sourceId) * 24 * 60 * 60 * 1000;
+
+  // Archive everything fetched (feeds often reach back several days), before
+  // the feed's own retention trims it.
+  const archived = mergeIntoArchive(allArticles);
+  console.log(`Archive: ${archived} new article(s) stored`);
 
   const seen = new Set();
   const beforeCount = allArticles.length;
