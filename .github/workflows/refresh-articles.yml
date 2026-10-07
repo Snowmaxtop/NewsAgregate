@@ -30,8 +30,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage both files; dispatch-state.json only changes when the
-          # server-side purge actually removed something.
+          # dispatch-state.json only changes when the server-side purge
+          # removed something; archive/ only when new articles appeared.
           git add articles.json dispatch-state.json
-          git diff --staged --quiet || git commit -m "chore: refresh articles.json + purge state [skip ci]"
+          if [ -d archive ]; then git add archive; fi
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: refresh articles.json + archive [skip ci]"
+          # Other workflows (releases, tracker) push too: rebase onto them if needed.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
