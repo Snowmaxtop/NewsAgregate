@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T19:30:00.549Z",
+  "generatedAt": "2026-10-07T19:42:51.197Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -11,7 +11,10 @@
     "kotaku": "ok",
     "pcgamer": "ok",
     "eurogamer": "ok",
-    "polygon": "ok"
+    "polygon": "ok",
+    "gamefile": "ok",
+    "pgbiz": "ok",
+    "mgbiz": "ok"
   },
   "sourceHealth": {
     "ign": {
@@ -32,15 +35,15 @@
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-07T19:29:55.403Z",
+      "newest": "2026-10-07T19:42:47.498Z",
       "kept": 14
     },
     "gibiz": {
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-10-07T19:15:58.000Z",
-      "kept": 8
+      "newest": "2026-10-07T19:41:33.000Z",
+      "kept": 9
     },
     "jv": {
       "status": "ok",
@@ -90,13 +93,34 @@
       "items": 10,
       "newest": "2026-10-07T19:10:14.000Z",
       "kept": 10
+    },
+    "gamefile": {
+      "status": "ok",
+      "url": "https://www.gamefile.news/feed",
+      "items": 20,
+      "newest": "2026-10-07T17:03:57.000Z",
+      "kept": 4
+    },
+    "pgbiz": {
+      "status": "ok",
+      "url": "https://www.pocketgamer.biz/rss/",
+      "items": 50,
+      "newest": "2026-10-07T14:45:00.000Z",
+      "kept": 21
+    },
+    "mgbiz": {
+      "status": "ok",
+      "url": "https://mobilegamer.biz/feed/",
+      "items": 10,
+      "newest": "2026-10-07T12:00:05.000Z",
+      "kept": 6
     }
   },
   "articles": [
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -105,7 +129,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -114,7 +138,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -123,7 +147,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -132,7 +156,7 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -141,7 +165,7 @@
     {
       "title": "NarraScope",
       "link": "https://www.gamedeveloper.comnarrascope.org",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf955c8f0c698aae4/6aac5a7115f072020a9f479f/Narrascope-logo-512.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -150,7 +174,7 @@
     {
       "title": "BitSummit",
       "link": "https://www.gamedeveloper.combitsummit.org",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4cf305a5b584973a/6aac5bbb9f1e217d33122dcd/BitSummit_official_LOGO_B_noBG_copyT.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -159,7 +183,7 @@
     {
       "title": "Tokyo Game Show (TGS)",
       "link": "https://www.gamedeveloper.com/events/tokyo-game-show-tgs-",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt56bad8ff8753403f/6aac51796faa21440ef1286e/tgs_logo.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -168,10 +192,19 @@
     {
       "title": "PAX West",
       "link": "https://www.gamedeveloper.comwest.paxsite.com",
-      "date": "2026-10-07T19:29:55.403Z",
+      "date": "2026-10-07T19:42:47.498Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf72370968244521b/6aac4d1e6faa21131af12864/pax-west-logo.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Zero Company developer Bit Reactor begins bringing furloughed staff back",
+      "link": "https://www.gamesindustry.biz/star-wars-zero-company-developer-bit-reactor-begins-bringing-furloughed-staff-back",
+      "date": "2026-10-07T19:41:33.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/star-wars-zero-company_OixT1yY.webp?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Star Wars Zero Company developer Bit Reactor has started bringing back staff it furloughed ahead of the game's launch.",
       "tags": []
     },
     {
@@ -363,6 +396,15 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt5996df1ec4106056/6a567703594667cf16e419c8/avatarlegendsfeatured.png?width=720&quality=80&disable=upscale",
       "summary": "From the convergence of Paramount and WB comes a newly-formed company that has tapped Kotick to sit on its board.",
+      "tags": []
+    },
+    {
+      "title": "Some furloughed Star Wars Zero Company developers are returning to work, studio says",
+      "link": "https://www.gamefile.news/p/star-wars-zero-company-furloughs-update",
+      "date": "2026-10-07T17:03:57.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!g1o8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff09be2b9-f83c-4310-80d8-95b83f8d4c54_1920x1080.jpeg",
+      "summary": "Bit Reactor breaks its silence with good news (for some)",
       "tags": []
     },
     {
@@ -714,12 +756,48 @@
       "tags": []
     },
     {
+      "title": "Google launches Playground for prompt-based game creation",
+      "link": "https://www.pocketgamer.biz/google-launches-playground-for-prompt-based-game-creation/",
+      "date": "2026-10-07T14:45:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141654/89999/google-playground_l660.jpg",
+      "summary": "Google has launched Playground, an experimental gaming platform that lets users create, play and share custom games using text prompts without coding experience. The browser-based…",
+      "tags": []
+    },
+    {
       "title": "Sonic en porcelaine d’Arita « Bleu infini » : un hommage à 7 000 dollars (et soumis à une loterie !)",
       "link": "https://fr.ign.com/sonic-the-hedgehog-1991-nintendo-switch/92889/sonic-en-porcelaine-darita-bleu-infini-un-hommage-a-7-000-dollars-et-soumis-a-une-loterie",
       "date": "2026-10-07T14:44:34.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/main-personnalise_up3t.jpg",
       "summary": "Une pièce rare, uniquement disponible sous tirage.",
+      "tags": []
+    },
+    {
+      "title": "The Turkish playbook: Investors talk work ethic, hybridcasual and AI",
+      "link": "https://www.pocketgamer.biz/the-turkish-playbook-investors-talk-work-ethic-ai-funding-and-hybridcasual/",
+      "date": "2026-10-07T14:44:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141655/89994/mobidictum-conference-2026-1_l660.jpg",
+      "summary": "While the mobile games market faces challenges and founders face challenges securing investment, T&uuml;rkiye's games market seems to be defying industry trends. Studios are…",
+      "tags": []
+    },
+    {
+      "title": "October’s Collabs Corner: PUBG Mobile and B.Duck, Pokémon in space, Talking Tom meets SmileyWorld, and more",
+      "link": "https://www.pocketgamer.biz/octobers-collabs-corner/",
+      "date": "2026-10-07T14:43:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141663/90002/collaborations-roundup-october-2026-image-1_l660.jpg",
+      "summary": "Among the updates, announcements and marketing drives for mobile games, this bustling industry sees a never-ending flow of crossovers and collaborations. Some partnerships see…",
+      "tags": []
+    },
+    {
+      "title": "Harvey Elliott named chair of Ukie as trade body targets next phase of UK growth",
+      "link": "https://www.pocketgamer.biz/harvey-elliott-named-chair-of-ukie-as-trade-body-targets-next-phase-of-uk-growth/",
+      "date": "2026-10-07T14:43:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141656/90000/harvey-elliott_l660.jpg",
+      "summary": "Playstack CEO Harvey Elliott has been voted in as the new chair of Ukie, as the UK games trade body prepares for the next phase of its five-year 'Supercharged' strategy. Elliott…",
       "tags": []
     },
     {
@@ -738,6 +816,51 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/4HdRmqGjDZuFxXPNviv56T-1920-80.jpg",
       "summary": "Still your best budget VR option.",
+      "tags": []
+    },
+    {
+      "title": "Fire Emblem Shadows makes $892,000 in first year, just 0.3% of Heroes’ initial success",
+      "link": "https://www.pocketgamer.biz/fire-emblem-shadows-makes-892000-in-first-year-just-03-of-heroes-initial-success/",
+      "date": "2026-10-07T14:42:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141652/89998/fire-emblem-shadows-book-four-an-island-apart-trailer_l660.jpg",
+      "summary": "Fire Emblem Shadows has generated $892,000 in its first year on iOS and Android. Launched on September 25th, 2025, the tile-based social deduction game marked Nintendo's first…",
+      "tags": []
+    },
+    {
+      "title": "Exir Games CEO Sahand Malaei on the challenges facing small game studios",
+      "link": "https://www.pocketgamer.biz/exir-games-ceo-sahand-malaei-on-the-challenges-facing-small-game-studios/",
+      "date": "2026-10-07T14:41:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141666/90003/malaeinew_l660.jpg",
+      "summary": "Pocket Gamer Connects Nordics will soon be underway, bringing together developers, publishers and industry leaders to discuss the games industry. Among the speakers is Sahand…",
+      "tags": []
+    },
+    {
+      "title": "San Diego County sues AppLovin over alleged child ad targeting",
+      "link": "https://www.pocketgamer.biz/san-diego-county-sues-applovin-over-alleged-child-ad-targeting-4195351/",
+      "date": "2026-10-07T14:41:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/133475/89997/applovin-reports-40-revenue-growth-in-q1-2025-to-reach-148bn_l660.jpg",
+      "summary": "San Diego County has sued AppLovin as it allegedly bypassed parental controls to serve children ads for adult dating services, alcohol, vaping and graphic sexual content. As…",
+      "tags": []
+    },
+    {
+      "title": "Mastercard and Tamatem partner on gaming payments across MENA and Africa",
+      "link": "https://www.pocketgamer.biz/mastercard-and-tamatem-partner-on-gaming-payments-across-mena-and-africa/",
+      "date": "2026-10-07T14:40:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141648/89993/mastercard-partners-with-tamatem_l660.jpg",
+      "summary": "Mastercard and MENA mobile games publisher Tamatem have partnered to enhance gaming payment experiences across the Middle East and Africa. Under the deal, Mastercard Gateway…",
+      "tags": []
+    },
+    {
+      "title": "SuperScale CEO Ivan Trancik on finding profit beyond mobile UA's biggest networks",
+      "link": "https://www.pocketgamer.biz/superscale-ceo-ivan-trancik-on-finding-profit-beyond-mobile-uas-biggest-networks/",
+      "date": "2026-10-07T14:39:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141650/89995/pgcspeakerivantrancik_l660.jpg",
+      "summary": "Pocket Gamer Connects Nordics is heading back to Helsinki on October 20th and 21st, bringing together more than 150 expert speakers from across the games industry. One of those…",
       "tags": []
     },
     {
@@ -1085,6 +1208,15 @@
       "tags": []
     },
     {
+      "title": "Google reveals Playground, its AI-powered game-making platform",
+      "link": "https://mobilegamer.biz/google-reveals-playground-its-ai-powered-game-making-platform/",
+      "date": "2026-10-07T12:00:05.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "Players can create and edit games with prompts and then play them on mobile or PC. Unity has partnered with Google to offer pro-level tools through its own Spark toolset.",
+      "tags": []
+    },
+    {
       "title": "Unity unveils a web-based AI game creation platform",
       "link": "https://www.gamesindustry.biz/unity-unveils-a-web-based-ai-game-creation-platform",
       "date": "2026-10-07T12:00:00.000Z",
@@ -1136,6 +1268,15 @@
       "sourceId": "rps",
       "image": "https://assetsio.gnwcdn.com/patience-is-a-virtue.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "The English language can be a way of communicating, and it can be a way of subjugating. Patience is a Virtue protagonist Louis knows this intimately. In this \"cozy-meets-creepy\"…",
+      "tags": []
+    },
+    {
+      "title": "Start networking right now! MeetToMatch is LIVE for PG Connects Nordics",
+      "link": "https://www.pocketgamer.biz/start-networking-right-now-meettomatch-is-live-for-pg-connects-nordics/",
+      "date": "2026-10-07T11:30:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141465/89970/pgc-nor26-article-image-simple-set-b1-1200x_l660.jpg",
+      "summary": "It's that time! Our meeting platform for PG Connects Nordics is now live ahead of the October 20th and 21st event dates - and it's time to hop in and get your networking started…",
       "tags": []
     },
     {
@@ -1217,6 +1358,15 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179128/1791278662-7661-card.jpg",
       "summary": "Sauver le monde, accomplir une prophétie et découvrir qu’on est l’Élu : le RPG nous a longtemps promis des destins extraordinaires. Mais certains jeux prennent aujourd’hui…",
+      "tags": []
+    },
+    {
+      "title": "Data digest: Monopoly Go tops ad spend chart, Türkiye market stats, investments and more",
+      "link": "https://mobilegamer.biz/data-digest-monopoly-go-tops-ad-spend-chart-turkiye-market-stats-investments-and-more/",
+      "date": "2026-10-07T10:30:47.000Z",
+      "sourceId": "mgbiz",
+      "image": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/10/1791209046820-1.jpeg?resize=667%2C834&#038;ssl=1",
+      "summary": "There’s also a milestone for Funfinity's Food Hunt, August's top performers according to Appfigures and more in this week's round up.",
       "tags": []
     },
     {
@@ -1603,6 +1753,15 @@
       "tags": []
     },
     {
+      "title": "Crossy Road Rush leads Apple Arcade’s November line-up",
+      "link": "https://mobilegamer.biz/crossy-road-rush-leads-apple-arcades-november-line-up/",
+      "date": "2026-10-06T22:09:11.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "The new Hipster Whale title will be joined by State of Play’s Kami 2+ and Food Stylist+ from Zeste.",
+      "tags": []
+    },
+    {
       "title": "ROTETRA is Tetris where the blocks fall from four different sides at once and lord almighty I don't have the brainspace to be good at it, but it sure is fun",
       "link": "https://www.rockpapershotgun.com/rotetra-is-tetris-where-the-blocks-fall-from-four-different-sides-at-once-and-lord-almighty-i-dont-have-the-brainspace-to-be-good-at-it-but-it-sure-is-fun",
       "date": "2026-10-06T21:53:26.000Z",
@@ -1690,6 +1849,159 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/v94JEphLrjY6VCutktWc8f-1920-80.jpg",
       "summary": "This murder's gone decades without being solved... until now.",
+      "tags": []
+    },
+    {
+      "title": "Paramount and Warner Bros. Discovery’s $111bn merger officially closes today",
+      "link": "https://www.pocketgamer.biz/paramount-and-warner-bros-discoverys-111bn-merger-officially-closes-today/",
+      "date": "2026-10-06T16:08:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/136838/89991/warner-bros-paramount_l660.jpg",
+      "summary": "Paramount and Warner Bros. Discovery have officially merged in a deal valued at $111 billion. After a bidding war between Netflix and Paramount began last year, Netflix ultimately…",
+      "tags": []
+    },
+    {
+      "title": "FIRY sells Exit Games stake for $55m in cash",
+      "link": "https://www.pocketgamer.biz/firy-sells-exit-games-stake-for-55m-in-cash/",
+      "date": "2026-10-06T14:38:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141635/89984/firy_l660.jpg",
+      "summary": "FIRY has sold its entire 10.5% stake in Exit Games for $55 million in cash, completing its exit from the Hamburg-based developer of Photon multiplayer networking technology. The…",
+      "tags": []
+    },
+    {
+      "title": "Minecraft Blast testing phase expands: developing for new and lapsed fans",
+      "link": "https://www.pocketgamer.biz/developing-minecraft-blast-for-new-and-lapsed-fans-we-want-to-talk-to-king/",
+      "date": "2026-10-06T14:37:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141637/89985/minecraft-blast-early-testing-interview-with-logo_l660.jpg",
+      "summary": "Building on the foundations of a globally recognised IP, Minecraft Blast combines one of the world's best-selling games brands with one of mobile's biggest studios. The…",
+      "tags": []
+    },
+    {
+      "title": "Marvel's Project COMET trailer appears to have leaked",
+      "link": "https://www.pocketgamer.biz/marvels-project-comet-trailer-appears-to-have-leaked/",
+      "date": "2026-10-06T14:36:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141645/89989/marvel-project-comet-trailer-leak-wolverine-and-spider-man_l660.jpg",
+      "summary": "Gameplay of upcoming Marvel mobile game Project COMET appears to have leaked online. The footage first appeared on Chinese video site Bilibili before expanding to YouTube and…",
+      "tags": []
+    },
+    {
+      "title": "The New Denpa Men to end service in December",
+      "link": "https://www.pocketgamer.biz/the-new-denpa-men-to-end-service-in-december/",
+      "date": "2026-10-06T14:35:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141644/89987/the-new-denpa-men_l660.jpg",
+      "summary": "The New Denpa Men will end service on December 7th 2026 as developers cite difficulty to continue providing a service that meets players' expectations. The announcement was made…",
+      "tags": []
+    },
+    {
+      "title": "South Australia launches $1m Digital Games Fund",
+      "link": "https://www.pocketgamer.biz/south-australia-launches-1m-digital-games-fund/",
+      "date": "2026-10-06T14:35:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141646/89990/south-australia-launches-1m-digital-games-fund_l660.jpg",
+      "summary": "South Australia is doubling its Digital Games Fund to $1 million, giving local game developers the largest pool of game development funding in the state's history. The South…",
+      "tags": []
+    },
+    {
+      "title": "Softgames outlines acquisition strategy for instant and mobile games",
+      "link": "https://www.pocketgamer.biz/softgames-outlines-acquisition-strategy-for-instant-and-mobile-games/",
+      "date": "2026-10-06T14:34:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141634/89983/softgames_l660.jpg",
+      "summary": "Softgames has outlined its acquisition strategy as it looks to become a home for instant and mobile casual games, following its purchase of Funday Games' back catalogue of instant…",
+      "tags": []
+    },
+    {
+      "title": "How Railroad Empire built a live game around a niche audience",
+      "link": "https://www.pocketgamer.biz/how-railroad-empire-built-a-live-game-around-a-niche-audience/",
+      "date": "2026-10-06T14:34:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141630/89981/tatianavinogradova-railroadempire_l660.jpg",
+      "summary": "Tatiana Vinogradova is a producer at Azur Games. Shortly after its release several years ago, the midcore strategy game Railroad Empire showed solid metrics: R1 was around 40%…",
+      "tags": []
+    },
+    {
+      "title": "AppLovin sued over allegedly serving adult ads in children’s games",
+      "link": "https://mobilegamer.biz/applovin-sued-over-allegedly-serving-adult-ads-in-childrens-games/",
+      "date": "2026-10-06T14:15:00.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "The lawsuit claims the adtech firm bypassed parental controls and used fingerprinting to track kids.",
+      "tags": []
+    },
+    {
+      "title": "Save up to £335 on PG Connects London 2027 before Super Early Bird ends this week",
+      "link": "https://www.pocketgamer.biz/save-up-to-335-on-pg-connects-london-2027-before-super-early-bird-ends-this-week/",
+      "date": "2026-10-06T13:30:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141003/89986/pgc-ldn-27-tickets-on-sale-now_l660.jpg",
+      "summary": "PG Connects London is always our biggest and most popular conference of the year.In 2026, we welcomed c.3,000 attendees from 1,600 companies spanning 60 countries, to engage with…",
+      "tags": []
+    },
+    {
+      "title": "How Nordic studios are using AI part three: Lore checks, a \"programmer's programmer\" and the parts writers keep for themselves",
+      "link": "https://www.pocketgamer.biz/nordic-ai-part-three-how-nordic-studios-are-using-ai-part-three-lore-checks-a-programmers-programmer-and-the-parts-writers-keep-for-themselves/",
+      "date": "2026-10-06T13:18:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141607/89958/nordicsaipart3_l660.jpg",
+      "summary": "For part three of our series on AI in the Nordic games industry (you can read part one here and part two here), we heard from four people who see AI from very different sides…",
+      "tags": []
+    },
+    {
+      "title": "Beyond attributed ROAS: A three-point audit for mobile game retargeting",
+      "link": "https://www.pocketgamer.biz/beyond-attributed-roas-a-3-point-audit-for-mobile-game-retargeting/",
+      "date": "2026-10-06T13:00:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141618/89969/bigabidpocketgamerleadizik2400x1200-1_l660.jpg",
+      "summary": "Izik Izhaki, the VP of performance at Bigabid, takes a deep dive into mobile games retargeting and what publishers need to know to ensure they're getting the greatest impact…",
+      "tags": []
+    },
+    {
+      "title": "Thatgamepublisher wants to sign mobile games playing in &#8220;meaningful emotional territory&#8221;",
+      "link": "https://mobilegamer.biz/thatgamepublisher-wants-to-sign-mobile-games-playing-in-meaningful-emotional-territory/",
+      "date": "2026-10-06T10:33:43.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "The Sky: Children of the Light studio's new label will fund and publish third party games on any platform, including mobile.",
+      "tags": []
+    },
+    {
+      "title": "Scopely&#8217;s Genshin Impact-like Marvel game, dubbed Project Comet, seems to have leaked",
+      "link": "https://mobilegamer.biz/scopelys-genshin-impact-like-marvel-game-dubbed-project-comet-seems-to-have-leaked/",
+      "date": "2026-10-06T10:23:29.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "The new action RPG is reportedly planned for mobile and PC with crossplay, but hasn't been confirmed by Scopely or Marvel.",
+      "tags": []
+    },
+    {
+      "title": "17 pro-union hours with the Gears of War: E-Day campaign",
+      "link": "https://www.gamefile.news/p/review-gears-of-war-eday",
+      "date": "2026-10-05T21:56:49.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!Udwy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9c95992-7aa7-48bc-bb40-7167e7cd5fc9_1000x563.png",
+      "summary": "Review: Satisfying Gears combat with an unexpected message and some new Dom lore",
+      "tags": []
+    },
+    {
+      "title": "9 1/2 lush hours with with Ghost of Yotei expansion Echoes of Sekigahara",
+      "link": "https://www.gamefile.news/p/review-ghost-of-yotei-echoes-of-sekigahara",
+      "date": "2026-10-02T19:46:55.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!n3Yj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f8a26a1-dd95-4920-abe8-f2ed25ad10e4_3840x2160.jpeg",
+      "summary": "Review: A strong addition with some beautiful breakthroughs involving bears, deer, trees and catching arrows.",
+      "tags": []
+    },
+    {
+      "title": "10 great hours of father-son bonding with Star Wars Galactic Racer",
+      "link": "https://www.gamefile.news/p/review-star-wars-galactic-racer",
+      "date": "2026-10-02T13:11:21.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!rYet!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facb366e4-9892-45a5-8728-b11bcf2447f8_3840x2160.jpeg",
+      "summary": "Review: An unexpected contender for Best Family Game Of The Year and my son's first roguelike",
       "tags": []
     }
   ]
