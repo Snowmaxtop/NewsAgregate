@@ -327,6 +327,13 @@
   }
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .industry-pill{
+    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
+    padding:6px 11px;border-radius:999px;
+    border:1px solid var(--industry);background:transparent;color:var(--industry);
+    cursor:pointer;transition:all .15s ease;
+  }
+  .industry-pill.active{background:var(--industry);color:var(--ink);font-weight:600;}
 
 
 
@@ -593,7 +600,7 @@
     .sites-dropdown{right:0;left:auto;max-width:calc(100vw - 48px);}
 
     .filter-row{gap:8px;}
-    .lang-pill{padding:8px 13px;}
+    .lang-pill, .industry-pill{padding:8px 13px;}
     .source-select{font-size:16px;max-width:100%;flex:1;} /* 16px avoids mobile zoom-on-focus */
 
     .row{grid-template-columns:30px 1fr;gap:10px;padding:13px 2px;}
@@ -800,6 +807,7 @@
         <button class="lang-pill active" data-lang="all">All languages</button>
         <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
         <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
+        <button class="industry-pill" id="industryBtn" aria-pressed="false" title="Show only industry & business sources">🏢 Industry</button>
       </div>
       <select id="sourceSelect" class="source-select" title="Filter by source">
         <option value="all">All sources</option>
@@ -932,7 +940,7 @@ const SOURCES = [
   { id:'gamedev',   name:'Game Developer',   category:'industry', color:'industry', lang:'en',
     feed:'https://www.gamedeveloper.com/rss.xml', home:'https://www.gamedeveloper.com/' },
   { id:'gibiz',     name:'GamesIndustry.biz', category:'industry', color:'industry', lang:'en',
-    feed:'https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss', home:'https://www.gamesindustry.biz/' },
+    feed:'https://www.gamesindustry.biz/feed', home:'https://www.gamesindustry.biz/' },
   { id:'jv',        name:'Jeuxvideo.com',    category:'gamer',    color:'gamer', lang:'fr',
     feed:'https://www.jeuxvideo.com/rss/rss.xml', home:'https://www.jeuxvideo.com/' },
   { id:'gameblog',  name:'Gameblog',         category:'gamer',    color:'gamer', lang:'fr',
@@ -947,12 +955,21 @@ const SOURCES = [
     feed:'https://www.eurogamer.net/?format=rss', home:'https://www.eurogamer.net/' },
   { id:'polygon',   name:'Polygon',          category:'gamer',    color:'gamer', lang:'en',
     feed:'https://www.polygon.com/rss/index.xml', home:'https://www.polygon.com/' },
+  // Industry analysis & mobile business (feeds fetched server-side; Game
+  // File posts every few days, so the server keeps it 7 days)
+  { id:'gamefile',  name:'Game File',        category:'industry', color:'industry', lang:'en',
+    feed:'https://www.gamefile.news/feed', home:'https://www.gamefile.news/' },
+  { id:'pgbiz',     name:'PocketGamer.biz',  category:'industry', color:'industry', lang:'en',
+    feed:'https://www.pocketgamer.biz/rss/', home:'https://www.pocketgamer.biz/' },
+  { id:'mgbiz',     name:'MobileGamer.biz',  category:'industry', color:'industry', lang:'en',
+    feed:'https://mobilegamer.biz/feed/', home:'https://mobilegamer.biz/' },
 ];
 
 let state = { read: [], favorites: [], hidden: [], likedGames: [] };
 let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
+let industryOnly = false;   // "🏢 Industry" toggle: only sources with category 'industry'
 let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
 let searchQuery = '';
 // Which favorite date-sections are EXPANDED (keys are Date.toDateString()).
@@ -1519,6 +1536,7 @@ function render(){
     // Favorited and hidden articles both leave this list.
     list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   }
+  if(industryOnly) list = list.filter(a => a.source.category === 'industry');
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
@@ -2058,6 +2076,13 @@ document.getElementById('filters').addEventListener('click', (e) => {
   document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentFilter = btn.dataset.filter;
+  render();
+});
+
+document.getElementById('industryBtn').addEventListener('click', (e) => {
+  industryOnly = !industryOnly;
+  e.currentTarget.classList.toggle('active', industryOnly);
+  e.currentTarget.setAttribute('aria-pressed', String(industryOnly));
   render();
 });
 
