@@ -13,7 +13,7 @@
 // JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
 // reads both and counts unread = articles not in read and not in hidden.
 
-const CACHE_NAME = 'dispatch-v8';
+const CACHE_NAME = 'dispatch-v9';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
@@ -52,7 +52,14 @@ self.addEventListener('fetch', (event) => {
   if (url.hostname === 'api.github.com') return;
 
   const isNavigation = req.mode === 'navigate';
-  const isArticlesJson = url.pathname.endsWith('articles.json') || url.pathname.endsWith('releases.json') || url.pathname.endsWith('releases.js') || url.pathname.endsWith('wishlists.json') || url.pathname.endsWith('tracker.json');
+  // Archive: index.json and the last two days still change → network-first.
+  // Older day files never change → cache-first (default branch below).
+  const arcDay = /\/archive\/(\d{4}-\d{2}-\d{2})\.json$/.exec(url.pathname);
+  const recentArchive = url.pathname.endsWith('/archive/index.json') ||
+    (arcDay && arcDay[1] >= new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10));
+  const isArticlesJson = url.pathname.endsWith('articles.json') || url.pathname.endsWith('releases.json') ||
+    url.pathname.endsWith('releases.js') || url.pathname.endsWith('archive.js') ||
+    url.pathname.endsWith('wishlists.json') || url.pathname.endsWith('tracker.json') || recentArchive;
 
   if (isNavigation || isArticlesJson) {
     event.respondWith(

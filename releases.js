@@ -315,7 +315,166 @@
         ${cell(t.reviews ? fmt(t.reviews.total) : '—', s.newRev7 != null && s.span > 0 ? `reviews · +${fmt(s.newRev7)} in ${s.span} d` : 'reviews')}
       </div>
       ${sparkline(t)}
+      <button class="perf-open" data-perf="${appOf(g)}">📈 Performance history</button>
     </div>`;
+  }
+
+  // ---- Performance sheet: dated charts + table for one tracked game ------
+  // Players: hourly samples (48 h / 14 days) or daily peaks (all days).
+  // Reviews: new reviews per day (difference between stored daily totals).
+  // One measure per chart, one axis each; crosshair + tooltip on hover/touch.
+  let perfEl = null, perfApp = null, perfRange = '14d';
+  const DAY_MS = 86400000;
+  const fmtCompact = (n) => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + 'M' : n >= 1e3 ? (n / 1e3).toFixed(n >= 1e4 ? 0 : 1) + 'k' : String(Math.round(n));
+  const niceMax = (v) => { if (v <= 0) return 1; const p = Math.pow(10, Math.floor(Math.log10(v))); const m = v / p; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 5 ? 5 : 10) * p; };
+  const dDay = (t) => new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  const dHour = (t) => new Date(t).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const dayTime = (d) => new Date(d + 'T12:00:00Z').getTime();
+
+  function playerSeries(t, rangeId){
+    if (rangeId === 'all'){
+      return Object.keys(t.days || {}).sort().filter(d => t.days[d].peak != null)
+        .map(d => ({ t: dayTime(d), v: t.days[d].peak, tip: `${dDay(dayTime(d))} · peak ${fmt(t.days[d].peak)} players` }));
+    }
+    const span = rangeId === '48h' ? 2 * DAY_MS : 14 * DAY_MS;
+    const floor = Date.now() - span;
+    return (t.hours || []).map(([iso, v]) => ({ t: Date.parse(iso), v }))
+      .filter(p => p.t >= floor)
+      .map(p => ({ ...p, tip: `${dHour(p.t)} · ${fmt(p.v)} players` }));
+  }
+  function reviewSeries(t){
+    const days = Object.keys(t.days || {}).sort().filter(d => t.days[d].reviews != null);
+    const out = [];
+    for (let i = 1; i < days.length; i++){
+      const d = days[i], prev = days[i - 1];
+      const gap = Math.round((dayTime(d) - dayTime(prev)) / DAY_MS);
+      const added = Math.max(0, t.days[d].reviews - t.days[prev].reviews);
+      const pct = t.days[d].pct != null ? ` · ${t.days[d].pct}% positive` : '';
+      out.push({ t: dayTime(d), v: added, tip: `${dDay(dayTime(d))} · +${fmt(added)} review${added === 1 ? '' : 's'}${gap > 1 ? ` (over ${gap} days)` : ''}${pct}` });
+    }
+    return out;
+  }
+
+  // Draws a single-series chart into `host` (line or bars) at its real width.
+  function mountChart(host, pts, kind, xFmt){
+    host.innerHTML = '';
+    if (pts.length < 2){
+      host.innerHTML = `<div class="perf-wait">Not enough data yet — this chart fills in as the hourly tracker runs.</div>`;
+      return;
+    }
+    const W = Math.max(260, host.clientWidth), H = 150, L = 38, R = 10, T = 10, B = 24;
+    const pw = W - L - R, ph = H - T - B;
+    const t0 = pts[0].t, t1 = pts[pts.length - 1].t;
+    const max = niceMax(Math.max(...pts.map(p => p.v)));
+    const bw = kind === 'bar' ? Math.max(2, Math.min(18, pw / pts.length - 2)) : 0;
+    const x = (t) => L + bw / 2 + (t1 === t0 ? pw / 2 : ((t - t0) / (t1 - t0)) * (pw - bw));
+    const y = (v) => T + ph - (v / max) * ph;
+    const ns = 'http://www.w3.org/2000/svg';
+    let svg = `<svg class="perf-svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img">`;
+    for (const f of [0, 0.5, 1]){
+      const gy = y(max * f);
+      svg += `<line x1="${L}" x2="${W - R}" y1="${gy}" y2="${gy}" class="perf-grid"/><text x="${L - 6}" y="${gy + 3}" class="perf-ylab">${fmtCompact(max * f)}</text>`;
+    }
+    const ticks = 4;
+    for (let i = 0; i < ticks; i++){
+      const tt = t0 + (i / (ticks - 1)) * (t1 - t0);
+      svg += `<text x="${x(tt)}" y="${H - 6}" class="perf-xlab" text-anchor="${i === 0 ? 'start' : i === ticks - 1 ? 'end' : 'middle'}">${xFmt(tt)}</text>`;
+    }
+    if (kind === 'bar'){
+      for (const p of pts){
+        const h = Math.max(p.v > 0 ? 1.5 : 0, T + ph - y(p.v));
+        svg += `<rect x="${x(p.t) - bw / 2}" y="${T + ph - h}" width="${bw}" height="${h}" rx="1.5" class="perf-bar"/>`;
+      }
+    } else {
+      const line = pts.map(p => `${x(p.t).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ');
+      svg += `<polygon points="${x(t0)},${T + ph} ${line} ${x(t1)},${T + ph}" class="perf-area"/><polyline points="${line}" class="perf-line"/>`;
+      const last = pts[pts.length - 1];
+      svg += `<circle cx="${x(last.t)}" cy="${y(last.v)}" r="3.5" class="perf-end"/>`;
+    }
+    svg += `<line class="perf-cross" x1="0" x2="0" y1="${T}" y2="${T + ph}" visibility="hidden"/><circle class="perf-dot" r="4" visibility="hidden"/>`;
+    svg += `<rect x="${L}" y="0" width="${pw}" height="${H}" fill="transparent" class="perf-hit"/></svg>`;
+    host.innerHTML = svg + '<div class="perf-tip" hidden></div>';
+
+    const svgEl = host.querySelector('svg'), tip = host.querySelector('.perf-tip');
+    const cross = svgEl.querySelector('.perf-cross'), dot = svgEl.querySelector('.perf-dot');
+    const show = (ev) => {
+      const r = svgEl.getBoundingClientRect();
+      const mx = ev.clientX - r.left;
+      let best = pts[0], bd = Infinity;
+      for (const p of pts){ const d = Math.abs(x(p.t) - mx); if (d < bd){ bd = d; best = p; } }
+      const px = x(best.t), py = y(best.v);
+      cross.setAttribute('x1', px); cross.setAttribute('x2', px); cross.setAttribute('visibility', 'visible');
+      dot.setAttribute('cx', px); dot.setAttribute('cy', py); dot.setAttribute('visibility', kind === 'bar' ? 'hidden' : 'visible');
+      tip.textContent = best.tip; tip.hidden = false;
+      const tw = tip.offsetWidth;
+      tip.style.left = Math.min(Math.max(0, px - tw / 2), W - tw) + 'px';
+    };
+    const hide = () => { cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); tip.hidden = true; };
+    svgEl.addEventListener('pointermove', show);
+    svgEl.addEventListener('pointerdown', show);
+    svgEl.addEventListener('pointerleave', hide);
+  }
+
+  function perfTable(t){
+    const days = Object.keys(t.days || {}).sort();
+    const rows = [];
+    for (let i = days.length - 1; i >= 0 && rows.length < 30; i--){
+      const d = days[i], cur = t.days[d], prev = i > 0 ? t.days[days[i - 1]] : null;
+      const added = prev && cur.reviews != null && prev.reviews != null ? `+${fmt(Math.max(0, cur.reviews - prev.reviews))}` : '—';
+      rows.push(`<tr><td>${new Date(dayTime(d)).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}</td><td>${cur.peak != null ? fmt(cur.peak) : '—'}</td><td>${added}</td><td>${cur.pct != null ? cur.pct + '%' : '—'}</td></tr>`);
+    }
+    return `<div class="perf-table-wrap"><table class="perf-table"><thead><tr><th>Day</th><th>Peak players</th><th>New reviews</th><th>Positive</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+  }
+
+  function drawPerf(){
+    const t = tracker && tracker.games && tracker.games[perfApp];
+    if (!t) return;
+    const s = summarize(t);
+    const chip = (id, label) => `<button class="perf-chip ${perfRange === id ? 'on' : ''}" data-range="${id}">${label}</button>`;
+    const since = Object.keys(t.days || {}).sort()[0];
+    perfEl.querySelector('.perf-title').textContent = t.name;
+    perfEl.querySelector('.perf-body').innerHTML = `
+      <div class="trk-grid">
+        <div class="trk-cell"><b>${t.now != null ? fmt(t.now) : '—'}</b><span>players now</span></div>
+        <div class="trk-cell"><b>${s.peak7 ? fmt(s.peak7) : '—'}</b><span>peak · 7 days</span></div>
+        <div class="trk-cell"><b>${s.pct != null ? s.pct + '%' : '—'}</b><span>${esc(t.reviews ? t.reviews.desc || 'reviews' : 'reviews')}</span></div>
+        <div class="trk-cell"><b>${t.reviews ? fmt(t.reviews.total) : '—'}</b><span>reviews</span></div>
+      </div>
+      <div class="perf-meta">Last sample ${t.nowAt ? dHour(Date.parse(t.nowAt)) : '—'}${since ? ` · tracked since ${dDay(dayTime(since))}` : ''}</div>
+      <h4 class="perf-h">Players on Steam</h4>
+      <div class="perf-chips">${chip('48h', '48 h')}${chip('14d', '14 days')}${chip('all', 'Daily peaks')}</div>
+      <div class="perf-chart" id="perfPlayers"></div>
+      <div class="perf-cap">${perfRange === 'all' ? 'Highest hourly sample of each day' : 'One sample per hour, shown in your local time'}</div>
+      <h4 class="perf-h">New reviews per day</h4>
+      <div class="perf-chart" id="perfReviews"></div>
+      <div class="perf-cap">Reviews added since the previous day · a common proxy for sales</div>
+      <h4 class="perf-h">Day by day</h4>
+      ${perfTable(t)}`;
+    const xFmt = perfRange === '48h' ? (tt) => new Date(tt).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : dDay;
+    mountChart(perfEl.querySelector('#perfPlayers'), playerSeries(t, perfRange), 'line', xFmt);
+    mountChart(perfEl.querySelector('#perfReviews'), reviewSeries(t), 'bar', dDay);
+  }
+
+  function openPerf(app){
+    if (!perfEl){
+      perfEl = document.createElement('div');
+      perfEl.className = 'perf-overlay';
+      perfEl.innerHTML = `<div class="perf-box" role="dialog" aria-modal="true">
+        <div class="rel-top"><div class="rel-day perf-title"></div><button class="rel-close perf-close" aria-label="Close">✕</button></div>
+        <div class="perf-body"></div></div>`;
+      document.body.appendChild(perfEl);
+      perfEl.addEventListener('click', (e) => {
+        if (e.target === perfEl || e.target.closest('.perf-close')){ perfEl.classList.remove('show'); return; }
+        const c = e.target.closest('.perf-chip');
+        if (c){ perfRange = c.dataset.range; drawPerf(); }
+      });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && perfEl.classList.contains('show')){ e.stopImmediatePropagation(); perfEl.classList.remove('show'); } }, true);
+      window.addEventListener('resize', () => { if (perfEl.classList.contains('show')) drawPerf(); });
+    }
+    perfApp = app;
+    perfEl.classList.add('show');
+    perfEl.querySelector('.perf-box').scrollTop = 0;
+    drawPerf();
   }
 
   // ---- "My games": recap of liked games --------------------------------
@@ -399,6 +558,8 @@
 
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay || e.target.closest('.rel-close')) return closeDay();
+      const perfBtn = e.target.closest('.perf-open');
+      if (perfBtn){ openPerf(perfBtn.dataset.perf); return; }
       const likeBtn = e.target.closest('.rel-like');
       if (likeBtn){
         const g = shown.find(x => String(x.id) === likeBtn.dataset.like);

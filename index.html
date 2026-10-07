@@ -327,13 +327,6 @@
   }
   .lang-pill:hover{border-color:var(--paper);color:var(--paper);}
   .lang-pill.active{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
-  .industry-pill{
-    font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
-    padding:6px 11px;border-radius:999px;
-    border:1px solid var(--industry);background:transparent;color:var(--industry);
-    cursor:pointer;transition:all .15s ease;
-  }
-  .industry-pill.active{background:var(--industry);color:var(--ink);font-weight:600;}
 
 
 
@@ -474,7 +467,7 @@
     padding-top:3px;
     white-space:nowrap;
   }
-  .row .tag{
+  .row .tag, .arc-row .tag{
     display:inline-block;
     font-family:'IBM Plex Mono', monospace;
     font-size:9.5px;
@@ -486,7 +479,7 @@
   }
   .tag.gamer{background:rgba(76,134,255,0.16);color:var(--gamer);}
   .tag.industry{background:rgba(232,169,59,0.16);color:var(--industry);}
-  .row .headline{
+  .row .headline, .arc-row .headline{
     font-family:'Space Grotesk', sans-serif;
     font-size:15.5px;
     line-height:1.35;
@@ -496,7 +489,7 @@
     font-weight:500;
   }
   .row.read .headline{color:var(--paper-dim);font-weight:400;}
-  .row .summary{
+  .row .summary, .arc-row .summary{
     font-family:'IBM Plex Sans', sans-serif;
     font-size:12.5px;
     line-height:1.4;
@@ -508,7 +501,7 @@
     overflow:hidden;
   }
   .row.read .summary{opacity:0.65;}
-  .row .source-name{
+  .row .source-name, .arc-row .source-name{
     font-family:'IBM Plex Mono', monospace;
     font-size:10px;
     color:var(--paper-dim);
@@ -593,21 +586,22 @@
 
     .toolbar{padding:10px;gap:9px;}
     .controls{gap:8px;}
-    .filters{gap:6px;}
+    .filters{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}
+    .filters .pill{text-align:center;}
     .pill{padding:9px 13px;font-size:11px;}
     .actions{gap:6px;margin-left:auto;}
     .action-btn{width:40px;height:40px;font-size:16px;}
     .sites-dropdown{right:0;left:auto;max-width:calc(100vw - 48px);}
 
     .filter-row{gap:8px;}
-    .lang-pill, .industry-pill{padding:8px 13px;}
+    .lang-pill{padding:8px 13px;}
     .source-select{font-size:16px;max-width:100%;flex:1;} /* 16px avoids mobile zoom-on-focus */
 
     .row{grid-template-columns:30px 1fr;gap:10px;padding:13px 2px;}
     .row.has-thumb{grid-template-columns:30px 56px 1fr;}
     .row.has-thumb .thumb{width:56px;height:56px;}
     .row .time{display:none;}
-    .row .headline{font-size:15px;line-height:1.4;}
+    .row .headline, .arc-row .headline{font-size:15px;line-height:1.4;}
     .row .dot-col .u{width:9px;height:9px;}
 
     /* Bigger touch targets on the row action icons without changing their visual size */
@@ -624,7 +618,7 @@
 
   @media (max-width:380px){
     .masthead h1{font-size:18px;}
-    .filters{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+    .filters{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}
     .pill{text-align:center;}
   }
   /* ===================== SORTIES (release calendar) ===================== */
@@ -632,6 +626,10 @@
   body.mode-releases .filter-row,
   body.mode-releases #markAllBtn,
   body.mode-releases .feed{display:none;}
+  body.mode-archive .toolbar .search-row,
+  body.mode-archive .toolbar .filter-row,
+  body.mode-archive #markAllBtn,
+  body.mode-archive .feed{display:none;}
   body.rel-lock{overflow:hidden;}
   .releases{padding:14px 0 30px;font-family:'IBM Plex Sans',sans-serif;color:var(--paper);}
   .cal-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;}
@@ -756,6 +754,47 @@
   .spark-line{fill:none;stroke:var(--ok);stroke-width:1.6;vector-effect:non-scaling-stroke;}
   .spark-dot{fill:var(--ok);}
   .spark-cap{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--paper-dim);text-align:center;}
+  .archive{padding:10px 0 30px;}
+  .arc-tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
+  .arc-filters{display:flex;gap:8px;flex-wrap:wrap;}
+  .arc-filters .source-select{flex:1;min-width:140px;}
+  .arc-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--paper-dim);letter-spacing:0.06em;text-transform:uppercase;}
+  .arc-row{display:grid;grid-template-columns:44px 1fr auto;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line);align-items:start;}
+  .arc-time{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);padding-top:2px;}
+  .arc-body{min-width:0;}
+  .arc-star{background:none;border:none;font-size:18px;color:var(--paper-dim);cursor:pointer;padding:2px 4px;}
+  .arc-star.on{color:var(--star);}
+  .arc-row mark{background:rgba(255,209,102,0.25);color:inherit;border-radius:2px;padding:0 1px;}
+  .arc-more{width:100%;margin:14px 0;padding:11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--ink-2);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:12px;cursor:pointer;}
+  .perf-open{align-self:center;padding:6px 12px;border-radius:14px;border:1px solid var(--line-strong);background:transparent;color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;}
+  .perf-overlay{position:fixed;inset:0;z-index:210;background:rgba(10,12,14,0.85);display:none;align-items:center;justify-content:center;padding:12px;}
+  .perf-overlay.show{display:flex;}
+  .perf-box{width:100%;max-width:560px;max-height:94vh;overflow-y:auto;background:var(--ink);border:1px solid var(--line-strong);border-radius:12px;}
+  .perf-body{padding:12px 14px 18px;display:flex;flex-direction:column;gap:8px;color:var(--paper);font-family:'IBM Plex Sans',sans-serif;}
+  .perf-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--paper-dim);text-align:center;}
+  .perf-h{margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;}
+  .perf-chips{display:flex;gap:6px;}
+  .perf-chip{padding:5px 11px;border-radius:14px;border:1px solid var(--line-strong);background:transparent;color:var(--paper-dim);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;}
+  .perf-chip.on{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600;}
+  .perf-chart{position:relative;width:100%;min-height:60px;}
+  .perf-svg{display:block;touch-action:pan-y;}
+  .perf-grid{stroke:var(--line);stroke-width:1;}
+  .perf-ylab{fill:var(--paper-dim);font-family:'IBM Plex Mono',monospace;font-size:9.5px;text-anchor:end;}
+  .perf-xlab{fill:var(--paper-dim);font-family:'IBM Plex Mono',monospace;font-size:9.5px;}
+  .perf-line{fill:none;stroke:var(--gamer);stroke-width:2;stroke-linejoin:round;}
+  .perf-area{fill:rgba(76,134,255,0.13);}
+  .perf-end{fill:var(--gamer);stroke:var(--ink);stroke-width:2;}
+  .perf-bar{fill:var(--industry);}
+  .perf-cross{stroke:var(--paper-dim);stroke-width:1;stroke-dasharray:3 3;}
+  .perf-dot{fill:var(--paper);stroke:var(--ink);stroke-width:2;}
+  .perf-tip{position:absolute;top:-4px;padding:4px 8px;border-radius:6px;background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;pointer-events:none;}
+  .perf-cap{font-size:10px;color:var(--paper-dim);}
+  .perf-wait{padding:18px 8px;text-align:center;font-size:12px;color:var(--paper-dim);border:1px dashed var(--line-strong);border-radius:8px;}
+  .perf-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;}
+  .perf-table{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:11px;font-variant-numeric:tabular-nums;}
+  .perf-table th,.perf-table td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;}
+  .perf-table th:first-child,.perf-table td:first-child{text-align:left;}
+  .perf-table th{color:var(--paper-dim);font-weight:500;background:var(--ink-2);}
   .rel-btn.steam{background:var(--gamer);border-color:var(--gamer);color:#fff;}
 </style>
 </head>
@@ -789,6 +828,7 @@
         <button class="pill active" data-filter="all">All <span class="count" id="c-all">0</span></button>
         <button class="pill" data-filter="favorites">★ Favorites <span class="count" id="c-fav">0</span></button>
         <button class="pill" data-filter="releases">📅 Releases</button>
+        <button class="pill" data-filter="archive">🔎 Archive</button>
       </div>
       <div class="actions">
         <div class="sites-wrap">
@@ -807,7 +847,6 @@
         <button class="lang-pill active" data-lang="all">All languages</button>
         <button class="lang-pill" data-lang="fr">🇫🇷 FR</button>
         <button class="lang-pill" data-lang="en">🇬🇧 EN</button>
-        <button class="industry-pill" id="industryBtn" aria-pressed="false" title="Show only industry & business sources">🏢 Industry</button>
       </div>
       <select id="sourceSelect" class="source-select" title="Filter by source">
         <option value="all">All sources</option>
@@ -821,6 +860,7 @@
   </div>
 
   <div class="releases" id="releases" hidden></div>
+  <div class="archive" id="archive" hidden></div>
 
   <footer id="sourcesFooter">SOURCES</footer>
 </div>
@@ -863,6 +903,7 @@
 </div>
 
 <script src="./releases.js"></script>
+<script src="./archive.js"></script>
 <script>
 /* =========================================================================
    DISPATCH — video game news aggregator (PWA, GitHub Pages)
@@ -969,7 +1010,6 @@ let state = { read: [], favorites: [], hidden: [], likedGames: [] };
 let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
-let industryOnly = false;   // "🏢 Industry" toggle: only sources with category 'industry'
 let currentSource = 'all';  // 'all' or a SOURCES[].id — set by the #sourceSelect dropdown
 let searchQuery = '';
 // Which favorite date-sections are EXPANDED (keys are Date.toDateString()).
@@ -1515,12 +1555,17 @@ function render(){
   // is emptied (not just hidden) so the scroll-read sweep can't see any
   // zero-size rows and mark them read.
   const inReleases = currentFilter === 'releases';
+  const inArchive = currentFilter === 'archive';
   document.body.classList.toggle('mode-releases', inReleases);
+  document.body.classList.toggle('mode-archive', inArchive);
   document.getElementById('releases').hidden = !inReleases;
-  if(inReleases){
+  document.getElementById('archive').hidden = !inArchive;
+  if (!inArchive) document.getElementById('archive').dataset.active = '0';
+  if(inReleases || inArchive){
     feedEl.innerHTML = '';
     observeRowsForScrollRead();
-    renderReleases(document.getElementById('releases'));
+    if (inReleases) renderReleases(document.getElementById('releases'));
+    else renderArchive(document.getElementById('archive'));
     return;
   }
   feedEl.classList.toggle('in-favorites', currentFilter === 'favorites');
@@ -1536,7 +1581,6 @@ function render(){
     // Favorited and hidden articles both leave this list.
     list = articles.filter(a => !state.hidden.includes(idFor(a)) && !isFavorited(idFor(a)));
   }
-  if(industryOnly) list = list.filter(a => a.source.category === 'industry');
   if(currentLang !== 'all') list = list.filter(a => a.source.lang === currentLang);
   if(currentSource !== 'all') list = list.filter(a => a.source.id === currentSource);
   if(searchQuery) list = list.filter(a => a.title.toLowerCase().includes(searchQuery));
@@ -1810,6 +1854,21 @@ function toggleGameLike(game){
   return i === -1;
 }
 
+// Favorite an article from a snapshot (Archive tab: the article may no
+// longer be in articles.json). Same invariant: a favorite is never hidden.
+function toggleFavoriteSnapshot(a){
+  const i = state.favorites.findIndex(f => f.link === a.link);
+  if (i !== -1) state.favorites.splice(i, 1);
+  else {
+    state.favorites.push({ link: a.link, title: a.title, date: a.date, image: a.image || null, sourceId: a.sourceId, summary: a.summary || '' });
+    const h = state.hidden.indexOf(a.link);
+    if (h !== -1) state.hidden.splice(h, 1);
+  }
+  markDirty();
+  updateCounts();
+  return i === -1;
+}
+
 function toggleFavorite(id){
   if(isFav(id)) removeFavorite(id);
   else addFavorite(id);
@@ -2076,13 +2135,6 @@ document.getElementById('filters').addEventListener('click', (e) => {
   document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentFilter = btn.dataset.filter;
-  render();
-});
-
-document.getElementById('industryBtn').addEventListener('click', (e) => {
-  industryOnly = !industryOnly;
-  e.currentTarget.classList.toggle('active', industryOnly);
-  e.currentTarget.setAttribute('aria-pressed', String(industryOnly));
   render();
 });
 
