@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T18:10:05.714Z",
+  "generatedAt": "2026-10-10T21:48:12.003Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -21,21 +21,21 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-10T17:00:31.000Z",
-      "kept": 14
+      "newest": "2026-10-10T20:51:52.000Z",
+      "kept": 15
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-10-10T17:53:51.000Z",
-      "kept": 4
+      "newest": "2026-10-10T20:24:35.000Z",
+      "kept": 5
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-10T18:10:01.462Z",
+      "newest": "2026-10-10T21:48:07.425Z",
       "kept": 5
     },
     "gibiz": {
@@ -49,8 +49,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-10T15:15:08.000Z",
-      "kept": 17
+      "newest": "2026-10-10T18:15:07.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -70,28 +70,28 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-10T17:22:44.000Z",
-      "kept": 8
+      "newest": "2026-10-10T21:30:15.000Z",
+      "kept": 9
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-10-10T16:55:26.000Z",
-      "kept": 14
+      "kept": 12
     },
     "eurogamer": {
       "status": "ok",
       "url": "https://www.eurogamer.net/?format=rss",
       "items": 100,
-      "newest": "2026-10-10T11:44:06.000Z",
+      "newest": "2026-10-10T19:42:21.000Z",
       "kept": 6
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-10T18:00:17.000Z",
+      "newest": "2026-10-10T21:06:47.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -120,7 +120,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-10T18:10:01.462Z",
+      "date": "2026-10-10T21:48:07.425Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -129,7 +129,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-10T18:10:01.462Z",
+      "date": "2026-10-10T21:48:07.425Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -138,7 +138,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-10T18:10:01.462Z",
+      "date": "2026-10-10T21:48:07.425Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -147,7 +147,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-10T18:10:01.462Z",
+      "date": "2026-10-10T21:48:07.425Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -156,10 +156,142 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-10T18:10:01.462Z",
+      "date": "2026-10-10T21:48:07.425Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "New Deadlock Hero&#8217;s Reload Animations Based On Famous Chess Matches",
+      "link": "https://kotaku.com/new-deadlock-heros-reload-animations-based-on-famous-chess-matches-2000743806",
+      "date": "2026-10-10T21:30:15.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/solomondeadlock.jpg",
+      "summary": "From within a closed beta, the board-wielding Solomon already has fans eager to crown him royalty",
+      "tags": []
+    },
+    {
+      "title": "Henry Cavill's New Sci-fi Streaming Series Sets Carrie Reboot Creator to Direct",
+      "link": "https://www.polygon.com/warhammer-40k-tv-series-henry-cavill-mike-flanagan/",
+      "date": "2026-10-10T21:06:47.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/sand-castle-exclusive-clip-from-the-netflix-iraq-war-drama-a_knz8.jpg",
+      "summary": "Prime Video's Warhammer 40K TV series led by Henry Cavill has Carrie reboot creator and veteran horror director Mike Flanagan on board to adapt.",
+      "tags": []
+    },
+    {
+      "title": "Le leaker de GTA 6 menace de publier une version du jeu avec le mode histoire complet",
+      "link": "https://fr.ign.com/grand-theft-auto-6/93004/le-leaker-de-gta-6-menace-de-publier-une-version-du-jeu-avec-le-mode-histoire-complet",
+      "date": "2026-10-10T20:51:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-leak/gta-6-leaker-threatens-to-release-build-with-full-story-mode_jye7.jpg",
+      "summary": "Il se sert même de Lucia pour faire grimper la valeur de sa cryptomonnaie.",
+      "tags": []
+    },
+    {
+      "title": "Star Trek: Starfleet Academy Returns For Its Final Season Early Next Year",
+      "link": "https://www.polygon.com/star-trek-starfleet-academy-season-2-release-window/",
+      "date": "2026-10-10T20:42:27.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/sfa_106_bp_1213_0506_rt_f.jpg",
+      "summary": "We got a release window for the second (and final) season of Star Trek: Starfleet Academy at New York Comic Con",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Ben Affleck’s &#8216;Ethical AI&#8217; Vehicle Failing To Impress Human Viewers",
+      "link": "https://kotaku.com/ben-afflecks-ethical-ai-vehicle-failing-to-impress-human-viewers-2000743803",
+      "date": "2026-10-10T20:30:39.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/animals-1280x720.jpg",
+      "summary": "As Affleck seeks to establish a seat for movie stars at AI's table, his use-case political thriller Animals isn't exactly persuasive",
+      "tags": []
+    },
+    {
+      "title": "Oh lord, now those GTA 6 leakers are saying if enough of you give them money they'll leak a playable build of the game",
+      "link": "https://www.rockpapershotgun.com/oh-lord-now-those-gta-6-leakers-are-saying-if-enough-of-you-give-them-money-theyll-leak-a-playable-build-of-the-game",
+      "date": "2026-10-10T20:24:35.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/gta-6-grand-theft-auto-6-main-characters-hot-2.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "You can wait another month and some change to play GTA 6 , right? I mean, everyone reading this who has a console, anyway, still no bloomin' sight of a PC release date. In any…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Jailbroken PS5s Can Now Emulate PS2 Games Using Physical Discs",
+      "link": "https://kotaku.com/jailbroken-ps5s-can-now-emulate-ps2-games-using-physical-discs-2000743781",
+      "date": "2026-10-10T19:51:08.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2021/03/x2ei28dajpf743gr8ifq-1280x720.jpg",
+      "summary": "Support for PlayStation 3 discs appears to be on the way too",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 leaker CyberLeek is now reportedly threatening to release a full, playable build of the game",
+      "link": "https://www.eurogamer.net/gta-6-leaker-cyberleek-threatens-playable-build-leak",
+      "date": "2026-10-10T19:42:21.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/gta-6_XFAse3R.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "A GTA 6 leaker has reportedly threatened to put out a complete, playable build of the game, start to finish.",
+      "tags": []
+    },
+    {
+      "title": "Developer Goes Into Debt Spending $1,000 A Day To Keep Steam Demo For AI-Fueled Driving Sim Going",
+      "link": "https://kotaku.com/ai-driven-driving-simulator-developers-go-into-debt-just-to-maintain-steam-demo-2000743791",
+      "date": "2026-10-10T19:18:35.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/teachmysisterhowtodrive-1280x868.jpg",
+      "summary": "Hoping to launch next year, Teach My Little Sister How To Drive is prematurely sending its creators into the red over exhaustive token use",
+      "tags": []
+    },
+    {
+      "title": "Strange Scaffold announces Gods With Badges, a tactics game where you decide when to switch off your bodycam",
+      "link": "https://www.eurogamer.net/gods-with-badges-strange-scaffold-narrative-tactics-police-game",
+      "date": "2026-10-10T19:09:19.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/ss_91d3a51c5554a4baf7061b1bb936617ead5bf95f.1920x1080.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Strange Scaffold, the studio behind I Am Your Beast and El Paso, Elsewhere, has announced Gods With Badges, a narrative tactics game about the power police hold over life and…",
+      "tags": []
+    },
+    {
+      "title": "10 Stephen King Movie Adaptations That Are Better Than The Books",
+      "link": "https://www.polygon.com/stephen-king-books-better-adaptations/",
+      "date": "2026-10-10T19:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/screen-shot-2018-03-20-at-3-37-34-pm-1.webp",
+      "summary": "Adaptations that take advantage of the medium to improve upon an already brilliant story.",
+      "tags": []
+    },
+    {
+      "title": "Russell Crowe’s New Crime Netflix Thriller Is Officially a Streaming Hit",
+      "link": "https://www.polygon.com/russell-crowe-unabomber-netflix-streaming-success-september-2026/",
+      "date": "2026-10-10T18:48:13.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/russel-crowe-unabomber.jpg",
+      "summary": "The new Netflix thriller Unabomber explores Ted Kaczynski’s radicalization and the FBI investigation into his bombing campaign.",
+      "tags": []
+    },
+    {
+      "title": "Matrix 5 : tout ce que l'on sait sur le prochain film de la saga",
+      "link": "https://www.jeuxvideo.com/news/2108406/matrix-5-tout-ce-que-l-on-sait-sur-le-prochain-film-de-la-saga.htm",
+      "date": "2026-10-10T18:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179155/1791548830-5999-card.jpg",
+      "summary": "Matrix 5 fait de nouveau parler de lui. En cause, une mise à jour sur sa fenêtre de sortie.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Mon oncle vient de m'avouer qu'il n'a plus jamais joué à son jeu préféré sur PSP car lorsque j'avais 6 ans, j'ai effacé sa sauvegarde",
+      "link": "https://www.jeuxvideo.com/news/2108290/mon-oncle-vient-de-m-avouer-qu-il-n-a-plus-jamais-joue-a-son-jeu-prefere-sur-psp-car-lorsque-j-avais-6-ans-j-ai-efface-sa-sauvegarde.htm",
+      "date": "2026-10-10T18:11:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179147/1791474805-4965-card.jpg",
+      "summary": "On a tous dans nos mémoires d'enfance ce fameux moment de solitude extrême où l'on comprend, une fraction de seconde trop tard, qu'on vient de faire une immense bêtise. La mienne…",
       "tags": []
     },
     {
@@ -196,6 +328,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/amandatheadventurer.jpg",
       "summary": "YouTube’s ‘Game Theorist’ and Hollywood’s horror house have signed a multi-project deal to turn more mascot menaces into big screen hits",
+      "tags": []
+    },
+    {
+      "title": "Romance Yennefer The Witcher 3 Remastered : Comment entamer une relation avec ce personnage ?",
+      "link": "https://www.jeuxvideo.com/news/2107736/romance-yennefer-the-witcher-3-remastered-comment-entamer-une-relation-avec-ce-personnage.htm",
+      "date": "2026-10-10T17:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179128/1791280474-9634-card.jpg",
+      "summary": "Séduire Yennefer de Venderberg dans The Witcher 3 Remastered demande de faire les bons choix aux moments clés du jeu. Suivez le guide étape par étape pour concrétiser cette…",
       "tags": []
     },
     {
@@ -280,6 +421,15 @@
       "tags": []
     },
     {
+      "title": "Cette série de jeux vidéo est passée de 16/20 sur PS2 à 8/20 sur PS3 : comment une telle catastrophe a-t-elle été possible ?",
+      "link": "https://www.jeuxvideo.com/news/2108262/cette-serie-de-jeux-video-est-passee-de-16-20-sur-ps2-a-8-20-sur-ps3-comment-une-telle-catastrophe-a-t-elle-ete-possible.htm",
+      "date": "2026-10-10T16:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179147/1791467761-7158-card.jpg",
+      "summary": "Portée par un créateur de légende et sublimée sur PS2, la franchise Genji devait être le fleuron de Sony à l'ère HD… mais tout ne s’est pas passé comme prévu.",
+      "tags": []
+    },
+    {
       "title": "7 Switch 2 Characters Nintendo Should Add to the Next Super Smash Bros.",
       "link": "https://www.polygon.com/switch-2-super-smash-bros-character-predictions/",
       "date": "2026-10-10T16:41:25.000Z",
@@ -289,7 +439,7 @@
       "tags": []
     },
     {
-      "title": "Skate Developers Full Circle Respond To Offline Mod, Would Prefer You Didn’t",
+      "title": "Skate Devs Forced To Respond To Offline Mods That Strip Out All The Paid Cosmetics: &#8216;We Are Not Against Creativity&#8217;",
       "link": "https://kotaku.com/skate-developers-full-circle-respond-to-offline-mod-would-prefer-you-didnt-2000743777",
       "date": "2026-10-10T16:30:50.000Z",
       "sourceId": "kotaku",
@@ -325,24 +475,6 @@
       "tags": []
     },
     {
-      "title": "WandaVision Creator Set To Develop New Stargate Series",
-      "link": "https://www.polygon.com/stargate-new-amazon-mgm-series-jac-schaeffer/",
-      "date": "2026-10-10T16:01:56.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/merc8196210c4d1db04614d6db9f3e4fstargate1020-1024x580-1.jpg",
-      "summary": "Amazon is having another go at creating a new Stargate series, this time bringing WandaVision's Jac Schaeffer onboard to develop it.",
-      "tags": []
-    },
-    {
-      "title": "Avatar: Seven Havens is a brilliant take-down of Korra's biggest haters",
-      "link": "https://www.polygon.com/avatar-seven-havens-korra-haters-are-wrong/",
-      "date": "2026-10-10T16:00:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/avatar-seven-havens-korra.png",
-      "summary": "Revenge is a dish best served 12 years later",
-      "tags": []
-    },
-    {
       "title": "Le jeu vidéo d'aujourd'hui engendrerait \"chez les enfants un complexe d'infériorité\"",
       "link": "https://www.gamekult.com/actualite/le-jeu-video-d-aujourd-hui-engendrerait-chez-les-enfants-un-complexe-d-inferiorite-3050872357.html",
       "date": "2026-10-10T15:49:00.000Z",
@@ -352,16 +484,7 @@
       "tags": []
     },
     {
-      "title": "I Have Discovered The Best Game Soundtrack of 2026 and It Is Super Woden: Rally Edge",
-      "link": "https://www.polygon.com/super-woden-rally-edge-game-music-best-2026/",
-      "date": "2026-10-10T15:31:42.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/superwodenrallyedge_artwork_nologo.jpg",
-      "summary": "Super Woden: Rally Edge evokes the grubby thrills of the arcade with its banging music.",
-      "tags": []
-    },
-    {
-      "title": "Avatar: Seven Havens&#8217; Glowing Reviews Say That The New Avatar: The Last Airbender Animated Series Is A Return To Form",
+      "title": "The New Avatar Animated Series That Fans Accused Of Looking &#8216;Cheap&#8217; Is Getting Rave Reviews",
       "link": "https://kotaku.com/avatar-seven-havens-glowing-reviews-say-that-the-new-avatar-the-last-airbender-animated-series-is-a-return-to-form-2000743771",
       "date": "2026-10-10T15:20:23.000Z",
       "sourceId": "kotaku",
@@ -377,17 +500,6 @@
       "image": "https://image.jeuxvideo.com/medias-lg/179154/1791540168-7595-card.jpg",
       "summary": "De l'annonce très récente de l'adaptation de la licence Cyberpunk au cinéma, l’univers sombre et fantastique d’Elden Ring aux affrontements futuristes d’Arc Raiders, voici un tour…",
       "tags": []
-    },
-    {
-      "title": "Grand Theft Ocarina Could Be Gaming's Barbenheimer",
-      "link": "https://www.polygon.com/switchboard-gta-6-zelda-grand-theft-ocarina-barbenheimer/",
-      "date": "2026-10-10T15:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/saturday-night-live-snl-gta-zelda-sketch.jpg",
-      "summary": "Nintendo's gamble on the November release date clash between GTA 6 and Zelda: Ocarina of Time for Switch 2 seems to be paying off",
-      "tags": [
-        "release"
-      ]
     },
     {
       "title": "Le nouveau fléau du jeu vidéo",
@@ -462,7 +574,7 @@
       "tags": []
     },
     {
-      "title": "New Cheat Codes For F-Zero GX&#8217;s Gold Parts Have Been Discovered After 23 Years",
+      "title": "New F-Zero Cheat Codes Have Been Discovered 23 Years Later",
       "link": "https://kotaku.com/new-cheat-codes-for-f-zero-gxs-gold-parts-have-been-discovered-after-23-years-2000743767",
       "date": "2026-10-10T13:42:06.000Z",
       "sourceId": "kotaku",
@@ -893,123 +1005,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/No8Ri3Mas5vWZ4zzXoY3fB-1920-80.jpg",
       "summary": "Remember Johnny Mnemonic? If you haven't seen it, it's time.",
-      "tags": []
-    },
-    {
-      "title": "We Might Be Cooked, As These Vibe-Coded Web Browser Ports Of Halo, The Simpsons: Hit And Run, And GTA: Vice City Seem To Work Perfectly",
-      "link": "https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300",
-      "date": "2026-10-09T21:45:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Vibecoded-Call-of-Duty-Black-Ops-web-browser-port-Kotaku-1280x720.jpg",
-      "summary": "Call of Duty: Black Ops , Halo: CE , Grand Theft Auto: Vice City , Skate 3 and many more titles have been decompiled and ported to web browsers overnight",
-      "tags": []
-    },
-    {
-      "title": "Comment les studios japonais se préparent-t-ils à la guerre contre l'IA ? Capcom, SEGA et Level 5 établissent tous des règles, mais...",
-      "link": "https://www.jeuxvideo.com/news/2108063/comment-les-studios-japonais-se-preparent-t-ils-a-la-guerre-contre-l-ia-capcom-sega-et-level-5-etablissent-tous-des-regles-mais.htm",
-      "date": "2026-10-09T20:20:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179139/1791386333-6780-card.jpg",
-      "summary": "Face à la déferlante de l'intelligence artificielle générative dans la création numérique, les grands studios de jeux vidéo japonais mettent en place des règles strictes. Alors…",
-      "tags": []
-    },
-    {
-      "title": "After modders removed Skate's live service bits, devs draw the line with tools that \"bypass our systems to unlock paid cosmetics\"",
-      "link": "https://www.eurogamer.net/skate-mods-live-service-ea-unlock-paid-cosmetics",
-      "date": "2026-10-09T20:17:03.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/Skate-screenshot-showing-a-boarder-doing-tricks-high-above-a-city.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "EA and Full Circle - the developer behind the new early access Skate game (skate.) - don't have a problem with modders and \"creativity from players,\" but they're drawing the line…",
-      "tags": []
-    },
-    {
-      "title": "Premier verdict sur Squadron 42 : 14 ans de développement pour devenir la nouvelle référence des jeux solo ? Les points positifs et négatifs d’après les joueurs",
-      "link": "https://www.jeuxvideo.com/news/2108539/premier-verdict-sur-squadron-42-14-ans-de-developpement-pour-devenir-la-nouvelle-reference-des-jeux-solo-les-points-positifs-et-negatifs-d-apres-les-joueurs.htm",
-      "date": "2026-10-09T19:58:16.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179157/1791572333-6182-card.png",
-      "summary": "Après 14 ans de développement et plus d'un milliard de dollars récoltés, Squadron 42 a enfin ouvert ses portes à de premiers joueurs lors d'un test privé à Manchester. Entre…",
-      "tags": []
-    },
-    {
-      "title": "Blogger Found Guilty Of Taunting State Senator With Shrek Dick Picks",
-      "link": "https://kotaku.com/blogger-found-guilty-of-taunting-state-senator-with-shrek-dick-picks-2000743289",
-      "date": "2026-10-09T19:56:24.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Shrek.jpg",
-      "summary": "Who's excited for Shrek 5 ?",
-      "tags": []
-    },
-    {
-      "title": "Don't worry, Valve: I've got your next Deadlock character concepts sorted",
-      "link": "https://www.pcgamer.com/games/moba/dont-worry-valve-ive-got-your-next-deadlock-character-concepts-sorted/",
-      "date": "2026-10-09T19:41:12.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/mASQpZYrbEUNuiCoJuNnAX-1920-80.jpg",
-      "summary": "The Cursed Apple is ready for Humpty Dumpty and the Loch Ness Monster's Precocious Preteen Child.",
-      "tags": []
-    },
-    {
-      "title": "\"Mec, sors un peu plus\" Imaginez être tellement dévoué à la création de jeux vidéo que vous pensez que Britney Spears est une arme de RPG",
-      "link": "https://www.jeuxvideo.com/news/2108044/mec-sors-un-peu-plus-imaginez-etre-tellement-devoue-a-la-creation-de-jeux-video-que-vous-pensez-que-britney-spears-est-une-arme-de-rpg.htm",
-      "date": "2026-10-09T19:40:12.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179138/1791381612-3937-card.jpg",
-      "summary": "À la charnière des années 1990 et 2000, Tim Cain a offert à l’industrie du jeu vidéo plusieurs créations marquantes qui restent encore aujourd’hui des références. Fallout…",
-      "tags": []
-    },
-    {
-      "title": "Will GTA 6 Ever Come To Switch 2? Nintendo Of America President Says Go Ask Rockstar",
-      "link": "https://kotaku.com/will-gta-6-ever-come-to-switch-2-nintendo-of-america-president-says-go-ask-rockstar-2000743283",
-      "date": "2026-10-09T19:09:44.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/01/gta-6-1280x719.jpg",
-      "summary": "Never say never, I guess?",
-      "tags": []
-    },
-    {
-      "title": "As Xbox and PlayStation sales reach new lows, analyst says the \"US hardware market has not been in a more precarious position since the early 80s\"",
-      "link": "https://www.eurogamer.net/xbox-playstation-sales-new-lows-hardware-market",
-      "date": "2026-10-09T18:51:26.000Z",
-      "sourceId": "eurogamer",
-      "image": "https://assetsio.gnwcdn.com/PS5-ram.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "PS5 and Xbox Series X/S consoles are more expensive than ever in most markets, thanks largely to memory components being gobbled up by AI data centres. Now, analyst Mat Piscatella…",
-      "tags": []
-    },
-    {
-      "title": "Flamirage Aniimo : Comment obtenir ce monstre ?",
-      "link": "https://www.jeuxvideo.com/news/2108421/flamirage-aniimo-comment-obtenir-ce-monstre.htm",
-      "date": "2026-10-09T18:30:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179155/1791551605-3342-card.jpg",
-      "summary": "Découvrez comment obtenir un nouveau monstre de type feu, présent dans le roster de base de Aniimo dans sa version 1.0. En plus de sa position sur la carte, nous verrons également…",
-      "tags": []
-    },
-    {
-      "title": "Leisure Suit Larry is about to take his final bow",
-      "link": "https://www.pcgamer.com/games/adventure/leisure-suit-larry-is-about-to-take-his-final-bow/",
-      "date": "2026-10-09T18:20:12.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Rbv3DNDF77zRkvNUsX3X5n-1920-80.jpg",
-      "summary": "The Wet Dreams games have been marked down dramatically ahead of their final removal from sale.",
-      "tags": []
-    },
-    {
-      "title": "Dragon Ball Super revient ce week-end, son générique d'ouverture rend fou les fans",
-      "link": "https://www.jeuxvideo.com/news/2108367/dragon-ball-super-revient-ce-week-end-son-generique-d-ouverture-rend-fou-les-fans.htm",
-      "date": "2026-10-09T18:15:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179154/1791539104-5618-card.jpg",
-      "summary": "Neuf ans après le début chaotique de sa première version, Dragon Ball Super prépare son grand retour avec un remake intitulé Beerus. Entre refonte visuelle spectaculaire, fuite…",
-      "tags": []
-    },
-    {
-      "title": "N'en déplaise à PlayStation, c'est bien la version physique de Wolverine qui le sauve, en Europe... et surtout en France !",
-      "link": "https://www.jeuxvideo.com/news/2108339/n-en-deplaise-a-playstation-c-est-bien-la-version-physique-de-wolverine-qui-le-sauve-en-europe-et-surtout-en-france.htm",
-      "date": "2026-10-09T18:10:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179154/1791537635-4630-card.jpg",
-      "summary": "Alors que Sony a officiellement programmé la fin de la production des disques de jeux pour début 2028, les chiffres de ventes européens de Marvel’s Wolverine viennent percuter de…",
       "tags": []
     },
     {
