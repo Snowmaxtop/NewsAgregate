@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T21:25:08.844Z",
+  "generatedAt": "2026-10-10T01:12:21.928Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -29,13 +29,13 @@
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
       "newest": "2026-10-09T17:15:00.000Z",
-      "kept": 9
+      "kept": 8
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-09T21:25:04.746Z",
+      "newest": "2026-10-10T01:12:16.490Z",
       "kept": 7
     },
     "gibiz": {
@@ -49,7 +49,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-09T18:30:10.000Z",
+      "newest": "2026-10-09T20:20:10.000Z",
       "kept": 19
     },
     "gameblog": {
@@ -70,15 +70,15 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-09T19:56:24.000Z",
+      "newest": "2026-10-09T21:45:14.000Z",
       "kept": 14
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-09T19:41:12.000Z",
-      "kept": 24
+      "newest": "2026-10-10T00:20:52.000Z",
+      "kept": 23
     },
     "eurogamer": {
       "status": "ok",
@@ -91,15 +91,15 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-09T21:20:19.000Z",
+      "newest": "2026-10-10T00:30:16.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-10-07T20:19:21.000Z",
-      "kept": 3
+      "newest": "2026-10-09T22:30:19.000Z",
+      "kept": 4
     },
     "pgbiz": {
       "status": "ok",
@@ -113,14 +113,14 @@
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-09T16:29:00.000Z",
-      "kept": 7
+      "kept": 6
     }
   },
   "articles": [
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-09T21:25:04.746Z",
+      "date": "2026-10-10T01:12:16.490Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -129,7 +129,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-09T21:25:04.746Z",
+      "date": "2026-10-10T01:12:16.490Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -138,7 +138,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-09T21:25:04.746Z",
+      "date": "2026-10-10T01:12:16.490Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -147,7 +147,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-09T21:25:04.746Z",
+      "date": "2026-10-10T01:12:16.490Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -156,37 +156,154 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-09T21:25:04.746Z",
+      "date": "2026-10-10T01:12:16.490Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
       "tags": []
     },
     {
-      "title": "Every Officially Confirmed Marvel Movie and TV Show Coming Through 2029",
-      "link": "https://www.polygon.com/marvel-mcu-movies-tv-releases-2026-upcoming-releases/",
-      "date": "2026-10-09T21:20:19.000Z",
+      "title": "MTG Officially Reveals 4 Epic New Marvel Commander Decks Coming in 2027",
+      "link": "https://www.polygon.com/magic-the-gathering-marvel-darkhold-destiny-commander-decks/",
+      "date": "2026-10-10T00:30:16.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22688595/LuciaPham_210623_ecl1087_Marvel.png",
-      "summary": "Marvel Studios full lineup of movies and TV shows coming in 2026 through 2029, as officially confirmed by Marvel.",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/moon-knight-battles-mindless-ones-in-art-from-darkhold-destiny.jpg",
+      "summary": "Head to Asgard or Doctor Strange’s wizarding school",
       "tags": []
     },
     {
-      "title": "10 New Movies to Watch This Weekend on Netflix, Prime Video and Disney (October 9-11)",
-      "link": "https://www.polygon.com/new-movies-streaming-this-weekend-netflix-october-9-11/",
-      "date": "2026-10-09T21:00:16.000Z",
+      "title": "It’s Officially the Dawn of a New Era for 'Magic the Gathering' Universes Beyond",
+      "link": "https://www.polygon.com/mtg-darkhold-destinies-spoilers-marvel-universes-beyond/",
+      "date": "2026-10-10T00:30:16.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/sadie-sink-bnd.jpg",
-      "summary": "In this week's streaming movie column, there are many options to choose from, including the year's biggest blockbuster and some fun horror movies.",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/magic-darkhold-destiny-1.jpg",
+      "summary": "Magic's head designers tell Polygon that their new Marvel crossover set, Darkhold Destiny, is their most ambitious and \"complex\" crossover yet",
       "tags": []
     },
     {
-      "title": "When is the point of no return in Fire Emblem Fortune's Weave",
-      "link": "https://www.polygon.com/fire-emblem-fortunes-weave-point-of-no-return-recruitment-cutoff/",
-      "date": "2026-10-09T20:37:14.000Z",
+      "title": "2026's OLED monitors can nearly recreate the sublime clarity of a '90s CRT, but Windows will have to change before we can achieve true nirvana",
+      "link": "https://www.pcgamer.com/hardware/gaming-monitors/2026s-oled-monitors-can-nearly-recreate-the-sublime-clarity-of-a-90s-crt-but-windows-will-have-to-change-before-we-can-achieve-true-nirvana/",
+      "date": "2026-10-10T00:20:52.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/AHRTYTZLDgBW6HQ7rRKHBL-1920-80.jpg",
+      "summary": "All you need is a ridiculously fast monitor and endless patience for tinkering to get a glimpse of how good retro games looked in motion back in the '90s.",
+      "tags": []
+    },
+    {
+      "title": "'Common Side Effects' Officially Break Their Silence on Season 2 Plans",
+      "link": "https://www.polygon.com/common-side-effects-season-2-release-date-creators-interview/",
+      "date": "2026-10-10T00:00:15.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fire-emblem-fortunes-weave-point-of-no-return.jpg",
-      "summary": "Fire Emblem Fortune's Weave's has two points of no return, one of which is the cutoff for recruiting new characters.",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/thumb_f49d7aef-c199-46a8-8880-0fd03ff54a1e.jpg",
+      "summary": "Polygon sat down with Joe Bennet and Steve Hely ahead of their big New York Comic Con announcement",
+      "tags": []
+    },
+    {
+      "title": "'Overcooked broke you apart and Stage Fright is there to put you back together'",
+      "link": "https://www.pcgamer.com/games/adventure/overcooked-broke-you-apart-and-stage-fright-is-there-to-put-you-back-together/",
+      "date": "2026-10-09T23:43:13.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zfk4j5M3dpoHuYLwTAqciY-1920-80.jpg",
+      "summary": "Developers of the stressful cooking game series talk to PC Gamer about their more 'positive' co-op adventure.",
+      "tags": []
+    },
+    {
+      "title": "5 Hilarious 'Calvin and Hobbes' Comic Strips About Hating School",
+      "link": "https://www.polygon.com/calvin-hobbes-vs-school-best-comic-stripes/",
+      "date": "2026-10-09T23:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/calvin-and-hobbes-10th-anniversary-cover.jpg",
+      "summary": "In Calvin and Hobbes, school was usually the enemy",
+      "tags": []
+    },
+    {
+      "title": "Square Enix's Forgotten Loot-Shooter Was Years Ahead of Its Time",
+      "link": "https://www.polygon.com/outridrers-retrospective-review-square-enix/",
+      "date": "2026-10-09T22:58:06.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/outriders_launch_8.jpg",
+      "summary": "Outriders, the 2021 loot-shooter published by Square Enix, set the standard for multiplayer shooter. Then everyone moved on.",
+      "tags": []
+    },
+    {
+      "title": "Marathon Is the Scariest Horror Game of 2026",
+      "link": "https://www.polygon.com/marathon-scariest-horror-game/",
+      "date": "2026-10-09T22:40:48.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/2025_dec_marathon_press_kit_compressed_001.jpg",
+      "summary": "Player ambushes, powerful NPC enemy robots, and the fear of losing loot makes Marathon terrifying.",
+      "tags": []
+    },
+    {
+      "title": "Xbox’s new streak experiment",
+      "link": "https://www.gamefile.news/p/xboxs-new-streak-experiment",
+      "date": "2026-10-09T22:30:19.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!ILlm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11737f64-2c41-4eb2-83c3-856965bb95af_2232x1244.png",
+      "summary": "I tested a surprise change to my console.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6's Nudity Sure Sounds Hopelessly Outdated",
+      "link": "https://www.polygon.com/gta-6-nudity-jason-lucia-sounds-hopelessly-outdated/",
+      "date": "2026-10-09T22:19:54.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/gta-6-fashion-jason.jpg",
+      "summary": "GTA 6's nude leaks suggest Rockstar isn't treating the crime game with the maturity and sense of realism that it promised",
+      "tags": []
+    },
+    {
+      "title": "Steven Spielberg's 145-Minute 2026 Sci-fi Thriller Now Officially Streaming",
+      "link": "https://www.polygon.com/steven-spielberg-disclosure-day-streaming-peacock-october-2026/",
+      "date": "2026-10-09T22:16:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/disclosure-day-emily-blunt.jpg",
+      "summary": "Disclosure Day, the Spielberg alien thriller with Emily Blunt and Josh O'Connor, is now officially streaming on Peacock.",
+      "tags": []
+    },
+    {
+      "title": "The 7 Best Racing Games Like Star Wars: Galactic Racer",
+      "link": "https://www.polygon.com/best-racing-games-like-star-wars-galactic-racer/",
+      "date": "2026-10-09T22:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/star-wars-galactic-racer-story-trailer-screenshot.jpg",
+      "summary": "Check out other classics of sci-fi racing like F-Zero and Wipeout, plus earlier games from the developers like Burnout and Need for Speed",
+      "tags": []
+    },
+    {
+      "title": "Netflix Quietly Dropped a Gorgeous 20-Episode WWI Drama That Should Go Down as a Modern Classic",
+      "link": "https://www.polygon.com/love-through-a-prism-netflix-anime-period-romance-recommendation/",
+      "date": "2026-10-09T22:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/love_through_a_prism_n_s1_e20_00_05_47_18.png",
+      "summary": "Netflix anime ‘Love Through a Prism’ begins as an art-school romance before becoming a heartbreaking drama set against World War I.",
+      "tags": []
+    },
+    {
+      "title": "Cyberpunk 2077 is being made into a movie, even though we've already got the perfect cyberpunk movie starring Keanu Reeves as a guy named Johnny",
+      "link": "https://www.pcgamer.com/movies-tv/cyberpunk-2077-is-being-made-into-a-movie-even-though-weve-already-got-the-perfect-cyberpunk-movie-starring-keanu-reeves-as-a-guy-named-johnny/",
+      "date": "2026-10-09T21:54:26.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/No8Ri3Mas5vWZ4zzXoY3fB-1920-80.jpg",
+      "summary": "Remember Johnny Mnemonic? If you haven't seen it, it's time.",
+      "tags": []
+    },
+    {
+      "title": "We Might Be Cooked, As These Vibe-Coded Web Browser Ports Of Halo, The Simpsons: Hit And Run, And GTA: Vice City Seem To Work Perfectly",
+      "link": "https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300",
+      "date": "2026-10-09T21:45:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Vibecoded-Call-of-Duty-Black-Ops-web-browser-port-Kotaku-1280x720.jpg",
+      "summary": "Call of Duty: Black Ops , Halo: CE , Grand Theft Auto: Vice City , Skate 3 and many more titles have been decompiled and ported to web browsers overnight",
+      "tags": []
+    },
+    {
+      "title": "Comment les studios japonais se préparent-t-ils à la guerre contre l'IA ? Capcom, SEGA et Level 5 établissent tous des règles, mais...",
+      "link": "https://www.jeuxvideo.com/news/2108063/comment-les-studios-japonais-se-preparent-t-ils-a-la-guerre-contre-l-ia-capcom-sega-et-level-5-etablissent-tous-des-regles-mais.htm",
+      "date": "2026-10-09T20:20:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179139/1791386333-6780-card.jpg",
+      "summary": "Face à la déferlante de l'intelligence artificielle générative dans la création numérique, les grands studios de jeux vidéo japonais mettent en place des règles strictes. Alors…",
       "tags": []
     },
     {
@@ -199,21 +316,12 @@
       "tags": []
     },
     {
-      "title": "Best gifts for each character in Fire Emblem: Fortune's Weave",
-      "link": "https://www.polygon.com/fire-emblem-fortunes-weave-best-gifts-each-character/",
-      "date": "2026-10-09T20:02:41.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fire-emblem-fortunes-weave-gifts.jpg",
-      "summary": "Our Fire Emblem Fortune's Weave gift guide lists the best gifts for every character",
-      "tags": []
-    },
-    {
-      "title": "8 new TV Shows to Watch This Weekend on Netflix, Prime Video, and HBO (October 9-11)",
-      "link": "https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-october-9-11/",
-      "date": "2026-10-09T20:00:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/carrie-white-prom.jpg",
-      "summary": "In this weekend's TV streaming column, there's plenty to choose from, including Stephen King's latest TV adaptation and the new entry Avatar series.",
+      "title": "Premier verdict sur Squadron 42 : 14 ans de développement pour devenir la nouvelle référence des jeux solo ? Les points positifs et négatifs d’après les joueurs",
+      "link": "https://www.jeuxvideo.com/news/2108539/premier-verdict-sur-squadron-42-14-ans-de-developpement-pour-devenir-la-nouvelle-reference-des-jeux-solo-les-points-positifs-et-negatifs-d-apres-les-joueurs.htm",
+      "date": "2026-10-09T19:58:16.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179157/1791572333-6182-card.png",
+      "summary": "Après 14 ans de développement et plus d'un milliard de dollars récoltés, Squadron 42 a enfin ouvert ses portes à de premiers joueurs lors d'un test privé à Manchester. Entre…",
       "tags": []
     },
     {
@@ -235,21 +343,12 @@
       "tags": []
     },
     {
-      "title": "Dungeons & Dragons Officially Reveals First Details on Star Wars Collaboration",
-      "link": "https://www.polygon.com/dungeons-and-dragons-star-wars-collaboration/",
-      "date": "2026-10-09T19:27:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/star-wars-dnd.jpg",
-      "summary": "Wizards of the Coast revealed the first details on the upcoming Star Wars expansion for Dungeons and Dragons.",
-      "tags": []
-    },
-    {
-      "title": "'Home to Roost' quest walkthrough in Arc Raiders",
-      "link": "https://www.polygon.com/arc-raiders-home-to-roost-quest-walkthrough-mantikor-locker-room-vehicle-weighing-logs-transmit-security-recordings/",
-      "date": "2026-10-09T19:14:06.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/arc-raiders-home-to-roost-header.jpg",
-      "summary": "A guide explaining how to complete the \"Home to Roost\" quest in Arc Raiders, including where to find the Mantikor locker room.",
+      "title": "\"Mec, sors un peu plus\" Imaginez être tellement dévoué à la création de jeux vidéo que vous pensez que Britney Spears est une arme de RPG",
+      "link": "https://www.jeuxvideo.com/news/2108044/mec-sors-un-peu-plus-imaginez-etre-tellement-devoue-a-la-creation-de-jeux-video-que-vous-pensez-que-britney-spears-est-une-arme-de-rpg.htm",
+      "date": "2026-10-09T19:40:12.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179138/1791381612-3937-card.jpg",
+      "summary": "À la charnière des années 1990 et 2000, Tim Cain a offert à l’industrie du jeu vidéo plusieurs créations marquantes qui restent encore aujourd’hui des références. Fallout…",
       "tags": []
     },
     {
@@ -262,30 +361,12 @@
       "tags": []
     },
     {
-      "title": "Gears of War: E-Day Officially Debunks 20-Year-Old Fan Theory",
-      "link": "https://www.polygon.com/gears-war-e-day-why-marcus-dom-jacked/",
-      "date": "2026-10-09T19:00:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/assets_2026_09_1790327787_gow_eday_dom_final.png",
-      "summary": "Gears of War fans have long perpetuated a theory about why Gears are so jacked. Gears of War: E-Day's team answers the question in a new interview.",
-      "tags": []
-    },
-    {
       "title": "As Xbox and PlayStation sales reach new lows, analyst says the \"US hardware market has not been in a more precarious position since the early 80s\"",
       "link": "https://www.eurogamer.net/xbox-playstation-sales-new-lows-hardware-market",
       "date": "2026-10-09T18:51:26.000Z",
       "sourceId": "eurogamer",
       "image": "https://assetsio.gnwcdn.com/PS5-ram.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "PS5 and Xbox Series X/S consoles are more expensive than ever in most markets, thanks largely to memory components being gobbled up by AI data centres. Now, analyst Mat Piscatella…",
-      "tags": []
-    },
-    {
-      "title": "Gears of War: E-Day's Strong Reviews Haven't Translated to Big Sales, Analyst Says",
-      "link": "https://www.polygon.com/gears-of-war-e-day-sales-game-pass-problem/",
-      "date": "2026-10-09T18:33:23.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gears-of-war-eday-review-header.jpg",
-      "summary": "Gears of War: E-Day's strong reviews haven't stopped questions about sales, as estimates point to heavy Game Pass use and fewer purchases.",
       "tags": []
     },
     {
@@ -304,15 +385,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/Rbv3DNDF77zRkvNUsX3X5n-1920-80.jpg",
       "summary": "The Wet Dreams games have been marked down dramatically ahead of their final removal from sale.",
-      "tags": []
-    },
-    {
-      "title": "Vikings Creator’s New Series Bloodaxe Sets 2027 Premiere Date",
-      "link": "https://www.polygon.com/bloodaxe-release-date-prime-video-january-2027/",
-      "date": "2026-10-09T18:16:53.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/bldx_s1_ut_250806_walber_00342r_cropc_f_3000.jpg",
-      "summary": "Bloodaxe, a new Norse saga from Vikings creator Michael Hirst, gets a January premiere date and a second-season renewal.",
       "tags": []
     },
     {
@@ -1500,15 +1572,6 @@
       "tags": []
     },
     {
-      "title": "L'un des meilleurs jeux Monster Hunter noté 18/20 sorti sur Nintendo Switch débarque sur Netflix, vous pourrez y jouer gratuitement bientôt",
-      "link": "https://www.jeuxvideo.com/news/2108211/l-un-des-meilleurs-jeux-monster-hunter-note-18-20-sorti-sur-nintendo-switch-debarque-sur-netflix-vous-pourrez-y-jouer-gratuitement-bientot.htm",
-      "date": "2026-10-09T07:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179146/1791463994-8598-card.jpg",
-      "summary": "Carton plein sur consoles et PC, l’excellent Monster Hunter Rise s’apprête à faire une arrivée inattendue sur nos smartphones. Une fuite sur les stores mobiles révèle un portage…",
-      "tags": []
-    },
-    {
       "title": "Steam propose 4 jeux gratuits dont un à garder à vie et 50 € de DLC en cadeau",
       "link": "https://www.gameblog.fr/jeu-video/ed/news/steam-jeux-gratuits-arc-raiders-dlc-cadeaux-724587?utm_source=RSS",
       "date": "2026-10-09T07:31:28.000Z",
@@ -1590,15 +1653,6 @@
       "tags": []
     },
     {
-      "title": "FIFA vs PES : comment le passage sur PS3 et Xbox 360 a brisé la plus grande légende de mon enfance ?",
-      "link": "https://www.jeuxvideo.com/news/2108132/fifa-vs-pes-comment-le-passage-sur-ps3-et-xbox-360-a-brise-la-plus-grande-legende-de-mon-enfance.htm",
-      "date": "2026-10-09T06:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179145/1791452176-4085-card.jpg",
-      "summary": "Dans les années 2000, les simulations de foot ont vécu un séisme. Alors que Pro Evolution Soccer (PES) régnait en maître absolu sur PS2, la transition vers la PS3 et la Xbox 360 a…",
-      "tags": []
-    },
-    {
       "title": "Outward 2 accompagnera finalement le froid de l'hiver, avec une sortie en février prochain",
       "link": "https://www.gamekult.com/actualite/outward-2-accompagnera-finalement-le-froid-de-l-hiver-avec-une-sortie-en-fevrier-prochain-3050872385.html",
       "date": "2026-10-09T05:32:00.000Z",
@@ -1608,75 +1662,12 @@
       "tags": []
     },
     {
-      "title": "En 2026, les joueurs jouent toujours à des veilleries et délaissent les nouveautés : de nouveaux chiffres le montrent",
-      "link": "https://www.jeuxvideo.com/news/2107927/en-2026-les-joueurs-jouent-toujours-a-des-veilleries-et-delaissent-les-nouveautes-de-nouveaux-chiffres-le-montrent.htm",
-      "date": "2026-10-09T05:05:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179147/1791466240-9767-card.jpg",
-      "summary": "En septembre 2026, la plateforme Steam a enregistré un chiffre d'affaires record, mais l'analyse des ventes révèle que près de 80 % des recettes restent accaparées par les…",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - Derrière les bonnets D, le chef-d'œuvre : pourquoi Dead or Alive était bien plus qu'un fantasme d'ados",
       "link": "https://www.gamekult.com/actualite/derriere-les-bonnets-d-le-chef-d-oeuvre-pourquoi-dead-or-alive-etait-bien-plus-qu-un-fantasme-d-ados-3050872330.html",
       "date": "2026-10-09T04:01:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872330/dead-or-alive-y-a-de-la-baston-en-plus-des-bonnets-d-97a15fa1__800_800__0-0-2400-2400.jpg",
       "summary": "En 1996, Tecmo a les poches percées et craint le gouffre du dépôt de bilan. Pour éviter la morgue, la direction colle un jeune loup caractériel nommé Tomonobu Itagaki sur les…",
-      "tags": []
-    },
-    {
-      "title": "Google's golden age of AI games?",
-      "link": "https://www.pcgamer.com/software/ai/googles-golden-age-of-ai-games/",
-      "date": "2026-10-09T00:39:39.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/LVdqycj7EnF5PUSFh2VHqb-1920-80.png",
-      "summary": "Google's golden age of AI games?",
-      "tags": []
-    },
-    {
-      "title": "You can now sign up to playtest the genre-bending Pony Island 2: Panda Circus, and while you're at it the original is free for a few days too",
-      "link": "https://www.rockpapershotgun.com/you-can-now-sign-up-to-playtest-the-genre-bending-pony-island-2-panda-circus-and-while-youre-at-it-the-original-is-free-for-a-few-days-too",
-      "date": "2026-10-08T21:56:00.000Z",
-      "sourceId": "rps",
-      "image": "https://assetsio.gnwcdn.com/pony-island-2-panda-circus.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "I love an everything seasoning video game. You know, the kind of game where it's five different genres at once, somehow, all of which builds into one cohesive vision? It's not an…",
-      "tags": []
-    },
-    {
-      "title": "Minecraft's new boss is the former chief product officer of Reddit",
-      "link": "https://www.pcgamer.com/gaming-industry/minecrafts-new-boss-is-the-former-chief-product-officer-of-reddit/",
-      "date": "2026-10-08T21:45:36.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/by4U96afFdZHPfSDERe9Q9-1920-80.jpg",
-      "summary": "Minecraft's new boss is the former chief product officer of Reddit",
-      "tags": []
-    },
-    {
-      "title": "Damn, This GTA 6 Screenshot Looks So Good People Don&#8217;t Believe It&#8217;s Real",
-      "link": "https://kotaku.com/damn-this-gta-6-screenshot-looks-so-good-people-dont-believe-its-real-2000742750",
-      "date": "2026-10-08T21:44:08.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/image-265-1280x720.jpg",
-      "summary": "But look closer and it's clear this isn't magic",
-      "tags": []
-    },
-    {
-      "title": "The System Shock TV show has been cancelled",
-      "link": "https://www.pcgamer.com/movies-tv/the-system-shock-tv-show-has-been-cancelled/",
-      "date": "2026-10-08T21:41:11.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/URELWbqreFBZHb2G8MKLBQ-1920-80.jpg",
-      "summary": "The System Shock TV show has been cancelled",
-      "tags": []
-    },
-    {
-      "title": "Why a 21-year-old coder finally ported the real P.T. to PC: 'That something so influential could eventually become unplayable never sat right with me'",
-      "link": "https://www.pcgamer.com/games/horror/why-a-21-year-old-coder-finally-ported-the-real-p-t-to-pc-that-something-so-influential-could-eventually-become-unplayable-never-sat-right-with-me/",
-      "date": "2026-10-08T21:32:33.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/4ZsunMSgqPrkP68xRdAM9i-1920-80.jpg",
-      "summary": "Not emulation or a remake, a native PC port of Kojima's horror classic has arrived.",
       "tags": []
     },
     {
@@ -1776,15 +1767,6 @@
       "sourceId": "mgbiz",
       "image": null,
       "summary": "The claim says Google's commissions of up to 30% were passed on to around 20m consumers.",
-      "tags": []
-    },
-    {
-      "title": "On the podcast: Google Playground, AppLovin’s court battles, Scopely’s next game and plenty more",
-      "link": "https://mobilegamer.biz/subscribe-to-the-mobilegamer-biz-podcast-now/",
-      "date": "2026-10-07T23:20:00.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "This week’s inside view of the mobile game business.",
       "tags": []
     },
     {
