@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T01:12:21.928Z",
+  "generatedAt": "2026-10-10T07:12:47.840Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -22,20 +22,20 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-09T17:23:22.000Z",
-      "kept": 30
+      "kept": 28
     },
     "rps": {
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-10-09T17:15:00.000Z",
-      "kept": 8
+      "newest": "2026-10-10T07:00:00.000Z",
+      "kept": 9
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-10T01:12:16.490Z",
+      "newest": "2026-10-10T07:12:39.801Z",
       "kept": 7
     },
     "gibiz": {
@@ -49,22 +49,22 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-09T20:20:10.000Z",
+      "newest": "2026-10-10T05:00:06.000Z",
       "kept": 19
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-09T11:48:47.000Z",
+      "newest": "2026-10-10T07:00:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-09T17:01:00.000Z",
-      "kept": 14
+      "newest": "2026-10-10T07:06:00.000Z",
+      "kept": 15
     },
     "kotaku": {
       "status": "ok",
@@ -84,14 +84,14 @@
       "status": "ok",
       "url": "https://www.eurogamer.net/?format=rss",
       "items": 100,
-      "newest": "2026-10-09T20:17:03.000Z",
-      "kept": 11
+      "newest": "2026-10-10T07:00:00.000Z",
+      "kept": 12
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-10T00:30:16.000Z",
+      "newest": "2026-10-10T03:13:52.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -120,7 +120,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-10T01:12:16.490Z",
+      "date": "2026-10-10T07:12:39.801Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -129,7 +129,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-10T01:12:16.490Z",
+      "date": "2026-10-10T07:12:39.801Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -138,7 +138,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-10T01:12:16.490Z",
+      "date": "2026-10-10T07:12:39.801Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -147,7 +147,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-10T01:12:16.490Z",
+      "date": "2026-10-10T07:12:39.801Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -156,10 +156,145 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-10T01:12:16.490Z",
+      "date": "2026-10-10T07:12:39.801Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Halo 1 dans un navigateur web avec du multi à 128 joueurs, oui, c'est possible",
+      "link": "https://www.gamekult.com/actualite/halo-1-dans-un-navigateur-web-avec-du-multi-a-128-joueurs-oui-c-est-possible-3050872324.html",
+      "date": "2026-10-10T07:06:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872324/halo-1-dans-un-navigateur-web-avec-du-multi-a-128-joueurs-oui-c-est-possible-289d9713__800_800__47-0-514-467.jpg",
+      "summary": "Peut-être que certains regrettent encore la grande époque des jeux flash : à ces nostalgiques s'adresse une nouvelle génération de titres directement jouables dans un navigateur…",
+      "tags": []
+    },
+    {
+      "title": "What are we all playing this weekend?",
+      "link": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-403",
+      "date": "2026-10-10T07:00:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/weekend-laundry.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "The descent into autumn continues: this week I slept with an extra blanket on the bed. I'm not into swapping the duvet out for the winter tog yet, I'll be holding off on that…",
+      "tags": []
+    },
+    {
+      "title": "Pokemon Ecarlate & Violet : un pokemon surpuissant que vous adorez débarque, attrapez-le vite !",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/pokemon-ecarlate-violet-raid-drattak-octobre-2026-724635?utm_source=RSS",
+      "date": "2026-10-10T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/417436_63f5fbf01ad59.jpg",
+      "summary": "Pokemon Écarlate & Violet vous proposent de capturer un Drattak surpuissant dans les raids de cette semaine. Voici tout ce qu’il faut savoir pour l’attraper facilement.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - 20 ans plus tard, God Hand reste le plus insolite des jeux de Capcom",
+      "link": "https://www.gamekult.com/actualite/20-ans-plus-tard-god-hand-reste-le-plus-insolite-des-jeux-de-capcom-101-3050866165.html",
+      "date": "2026-10-10T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866165/god-hand-il-y-a-19-ans-sortait-l-ultime-hallucination-de-clover-3250b0df__800_800__870-136-1590-855.png",
+      "summary": "Les lecteurs de Berserk connaissent « Les cinq de la main de dieu », ceux de Gamekult débattent encore aujourd'hui parfois du « 5 de la main de dieu » attribué à God Hand par…",
+      "tags": []
+    },
+    {
+      "title": "What we've been playing - \"It's pure video game popcorn movie stuff\"",
+      "link": "https://www.eurogamer.net/what-weve-been-playing-its-pure-video-game-popcorn-movie-stuff",
+      "date": "2026-10-10T07:00:00.000Z",
+      "sourceId": "eurogamer",
+      "image": "https://assetsio.gnwcdn.com/gears-of-war-e-day-june-2026-screen-4.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Hello and welcome back to our regular feature where we write a little about the games we've been playing. This week, Dom enjoys being back in Gears of War, which they should with…",
+      "tags": []
+    },
+    {
+      "title": "GUIDE AION 2 : comment gagner de l'XP rapidement pour atteindre le niveau maximum",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-aion-2-comment-gagner-xp-rapidement-niveau-max-724646?utm_source=RSS",
+      "date": "2026-10-10T06:52:47.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/724617_6ac8df5b147b1.jpg",
+      "summary": "Vous voulez savoir comment gagner rapidement de l’XP dans AION 2 ? Dans ce guide, on vous explique les moyens les plus rapides de monter en niveaux dans le titre de NC.",
+      "tags": []
+    },
+    {
+      "title": "Netflix renouvelle l'une de ses meilleures séries, c'est ce que les fans espéraient depuis le début",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-bridgerton-prequel-violet-724604?utm_source=RSS",
+      "date": "2026-10-10T06:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/597269_66bdb0ddcc064.jpg",
+      "summary": "Netflix annonce une nouvelle série dans l'univers des Chroniques de Bridgerton. Préparez-vous à découvrir les jeunes années de Violet et les prémisses de sa romance avec Edmund.",
+      "tags": []
+    },
+    {
+      "title": "Steam, Epic Games Store, PS5... Tous les jeux gratuits de la semaine, avec des pépites à garder à vie",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/steam-epic-games-store-ps5-xbox-jeux-gratuits-semaine-5-11-octobre-2026-724625?utm_source=RSS",
+      "date": "2026-10-10T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/724625_6ac8e3bc133e2.jpg",
+      "summary": "Vous cherchez votre prochaine aventure vidéoludique ? Voici la liste de tous les jeux jouables ou récupérables gratuitement sur PlayStation, Xbox et PC cette semaine.",
+      "tags": []
+    },
+    {
+      "title": "Tournez manette - Order of the Sinking Star : pourquoi il n'y aura pas de test (tout de suite)",
+      "link": "https://www.gamekult.com/actualite/order-of-the-sinking-star-pourquoi-il-n-y-aura-pas-de-test-tout-de-suite-3050872396.html",
+      "date": "2026-10-10T06:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872396/order-of-the-sinking-star-pourquoi-il-n-y-aura-pas-de-test-tout-de-suite-d6ada63c__800_800__1021-623-3166-2767.jpg",
+      "summary": "Est-ce que c’était trop ambitieux de ma part de penser pouvoir jouer à Order of the Sinking Star et en faire un test en bonne et due forme ? Peut-être un peu. Mes excuses à la…",
+      "tags": []
+    },
+    {
+      "title": "Les 5 jeux préférés de Laink !",
+      "link": "https://www.jeuxvideo.com/videos/chroniques/2107833/les-5-jeux-preferes-de-laink.htm",
+      "date": "2026-10-10T05:00:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179129/1791289030-1676-card.jpg",
+      "summary": "De passage au ZEvent, le célèbre streamer Laink s'est prêté au jeu de la confidence. Découvrez quels sont les 5 jeux vidéo qui ont le plus marqué sa vie de gamer.",
+      "tags": []
+    },
+    {
+      "title": "« Je ne sais pas comment ils comptent s'y prendre » : la saison 5 de Reacher est trop intense, même pour le créateur de la série",
+      "link": "https://www.jeuxvideo.com/news/2108150/je-ne-sais-pas-comment-ils-comptent-s-y-prendre-la-saison-5-de-reacher-est-trop-intense-meme-pour-le-createur-de-la-serie.htm",
+      "date": "2026-10-10T04:55:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179146/1791456163-7610-je-ne-sais-pas-comment-ils-vont-s-y-prendre-la-saison-5-de-reacher-est-bien-trop-intense-meme-pour-le-createur-de-la-serie.jpg",
+      "summary": "Lee Child, l'auteur de l'œuvre qui a inspiré la série Reacher, prévient les fans : la future saison de la série Prime Video adapte l’un des tomes les plus sombres et violents de…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Rejouer au premier Fallout aujourd'hui, c'est s'exposer à un enfer d'ergonomie",
+      "link": "https://www.gamekult.com/actualite/rejouer-au-premier-fallout-aujourd-hui-c-est-s-exposer-a-un-enfer-d-ergonomie-3050872358.html",
+      "date": "2026-10-10T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872358/rejouer-au-premier-fallout-c-est-s-exposer-a-un-enfer-d-ergonomie-613f59cc__800_800__406-0-1485-1080.jpg",
+      "summary": "La mythologie a fait son œuvre. Presque trente ans de rétrospectives larmoyantes ont fini par sacraliser le premier Fallout (sorti en octobre 1997) comme l'alpha et l'oméga du RPG…",
+      "tags": []
+    },
+    {
+      "title": "Pokémon Go Zorua Community Day event guide",
+      "link": "https://www.polygon.com/pokemon-go-zorua-community-day-event-shiny-zoroark-moveset/",
+      "date": "2026-10-10T03:13:52.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jlee_261009_1001_pogo_zorua_cd.jpg",
+      "summary": "Zorua Community Day takes place on Oct. 10. Here's how to find a shiny and make the most of the Community Day's bonuses.",
+      "tags": []
+    },
+    {
+      "title": "Scarlett Johansson's New Exorcist Movie Gets First Terrifying Trailer",
+      "link": "https://www.polygon.com/the-exorcist-martyrs-trailer-mike-flanagan/",
+      "date": "2026-10-10T01:55:09.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-exorcist-martyrs-steps.jpg",
+      "summary": "First The Exorcist: Martyrs trailer shows director Mike Flanagan's revival of the franchise with Scarlett Johansson and Chiwetel Ejiofor.",
+      "tags": []
+    },
+    {
+      "title": "Pokémon Winds and Waves' Water Starter Breaks a Series Curse",
+      "link": "https://www.polygon.com/pokemon-winds-waves-water-starter-series-curse/",
+      "date": "2026-10-10T01:20:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/poke-mon-presents-_-2-27-2026-23-35-screenshot.png",
+      "summary": "Nintendo and Game Freak's 10th Gen Pokémon starters are led by Browt, Pombon, and Gecqua, the breakout water starter of Winds and Waves",
       "tags": []
     },
     {
@@ -250,33 +385,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/gta-6-fashion-jason.jpg",
       "summary": "GTA 6's nude leaks suggest Rockstar isn't treating the crime game with the maturity and sense of realism that it promised",
-      "tags": []
-    },
-    {
-      "title": "Steven Spielberg's 145-Minute 2026 Sci-fi Thriller Now Officially Streaming",
-      "link": "https://www.polygon.com/steven-spielberg-disclosure-day-streaming-peacock-october-2026/",
-      "date": "2026-10-09T22:16:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/disclosure-day-emily-blunt.jpg",
-      "summary": "Disclosure Day, the Spielberg alien thriller with Emily Blunt and Josh O'Connor, is now officially streaming on Peacock.",
-      "tags": []
-    },
-    {
-      "title": "The 7 Best Racing Games Like Star Wars: Galactic Racer",
-      "link": "https://www.polygon.com/best-racing-games-like-star-wars-galactic-racer/",
-      "date": "2026-10-09T22:00:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/star-wars-galactic-racer-story-trailer-screenshot.jpg",
-      "summary": "Check out other classics of sci-fi racing like F-Zero and Wipeout, plus earlier games from the developers like Burnout and Need for Speed",
-      "tags": []
-    },
-    {
-      "title": "Netflix Quietly Dropped a Gorgeous 20-Episode WWI Drama That Should Go Down as a Modern Classic",
-      "link": "https://www.polygon.com/love-through-a-prism-netflix-anime-period-romance-recommendation/",
-      "date": "2026-10-09T22:00:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/love_through_a_prism_n_s1_e20_00_05_47_18.png",
-      "summary": "Netflix anime ‘Love Through a Prism’ begins as an art-school romance before becoming a heartbreaking drama set against World War I.",
       "tags": []
     },
     {
@@ -1482,30 +1590,12 @@
       "tags": []
     },
     {
-      "title": "Marvel fait son jeu Genshin Impact : mais est-ce que ce n'est pas déjà trop tard ?",
-      "link": "https://www.jeuxvideo.com/news/2108153/marvel-fait-son-jeu-genshin-impact-mais-est-ce-que-ce-n-est-pas-deja-trop-tard.htm",
-      "date": "2026-10-09T08:30:12.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179146/1791456213-634-card.jpg",
-      "summary": "Marvel préparerait \"Project Comet\", un Action-RPG free-to-play en monde ouvert conçu pour mobiles et PC qui fait de plus en plus parler de lui par le biais de fuites. Mais face à…",
-      "tags": []
-    },
-    {
       "title": "5 more seminars you'll want to catch at next month’s PG Connects Summit Montréal 2026",
       "link": "https://www.pocketgamer.biz/5-more-seminars-youll-want-to-catch-at-next-months-pg-connects-summit-montral-2026/",
       "date": "2026-10-09T08:30:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/140662/89992/pgc-mtl26-article-image-gen-1200x600l1200_l660.jpg",
       "summary": "Coming up this November 10th, PG Connects Summit Montr&eacute;al 2026 will bring mobile games to the Montr&eacute;al International Game Summit (MIGS). We've previously shared…",
-      "tags": []
-    },
-    {
-      "title": "ARC Raiders est gratuit sur PC, PS5 et Xbox pour une durée limitée : pourquoi vous devez absolument y jouer",
-      "link": "https://www.jeuxvideo.com/news/2108314/arc-raiders-est-gratuit-sur-pc-ps5-et-xbox-pour-une-duree-limitee-pourquoi-vous-devez-absolument-y-jouer.htm",
-      "date": "2026-10-09T08:22:25.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179153/1791533702-4360-card.jpg",
-      "summary": "Vous hésitiez encore à vous lancer dans ARC Raiders ? Le jeu de tir multijoueur d'Embark Studios vous offre une occasion en or de découvrir son univers sans débourser un centime…",
       "tags": []
     },
     {
@@ -1545,39 +1635,12 @@
       "tags": []
     },
     {
-      "title": "Control Resonant est plus beau que jamais avec les cartes graphiques NVIDIA, le jeu est gratuit avec cette offre exceptionnelle",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/control-resonant-gratuit-offre-nvidia-724306?utm_source=RSS",
-      "date": "2026-10-09T07:46:41.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724306_6ac364ec90a7a.jpg",
-      "summary": "Sorti le 24 septembre, CONTROL Resonant exploite sur PC le path tracing, le DLSS Ray Reconstruction et le DLSS 4.5 avec Génération Multi-Images dynamique. Jusqu'au 13 octobre, le…",
-      "tags": []
-    },
-    {
       "title": "Ubisoft announces shutdown of Rainbow Six Mobile seven months after global launch",
       "link": "https://www.gamesindustry.biz/ubisoft-announces-shutdown-of-rainbow-six-mobile-seven-months-after-global-launch",
       "date": "2026-10-09T07:44:35.000Z",
       "sourceId": "gibiz",
       "image": "https://assetsio.gnwcdn.com/copertina_HWJnsEe.png?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Rainbow Six Mobile is shutting down less than a year after its global launch. The free-to-play tactical shooter will remain available to play until January 15, 2027.",
-      "tags": []
-    },
-    {
-      "title": "Tomb Raider : avant Legacy of Atlantis, la licence sort un nouveau collector pour l'un de ses derniers jeux que vous devriez adorer",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/rise-of-the-tomb-raider-version-physique-collector-switch-2-precommandes-724589?utm_source=RSS",
-      "date": "2026-10-09T07:43:28.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/707643_693c1f935f12f.jpg",
-      "summary": "Avant l’arrivée de Legacy of Atlantis, Tomb Raider s’offre une nouvelle édition collector pour l’un des épisodes les plus appréciés de la franchise. Voici tout ce qu’il faut…",
-      "tags": []
-    },
-    {
-      "title": "Steam propose 4 jeux gratuits dont un à garder à vie et 50 € de DLC en cadeau",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/steam-jeux-gratuits-arc-raiders-dlc-cadeaux-724587?utm_source=RSS",
-      "date": "2026-10-09T07:31:28.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/706186_69200a5539c66.jpg",
-      "summary": "Steam fait le plein de jeux gratuits cette semaine avec trois jeux jouables gratuitement quelques jours et un que vous pouvez garder à vie. Sans compter deux gros DLC d’une valeur…",
       "tags": []
     },
     {
@@ -1614,60 +1677,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/gallery/s/screens-st/screens-street-fighter-v-champion-edition_j2yu.jpg",
       "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Apple TV accueille un nouveau film événement inspiré d'une marque culte de votre enfance",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/apple-tv-film-matchbox-dispo-724578?utm_source=RSS",
-      "date": "2026-10-09T07:23:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/694988_6826dae436172.png",
-      "summary": "Le programme plutôt léger d'Apple TV pour octobre 2026 accueille l'une de ses rares nouveautés cinéma, un film d'action événement désormais disponible.",
-      "tags": []
-    },
-    {
-      "title": "Resident Evil Requiem était initialement prévu pour être un jeu en ligne, selon son producteur",
-      "link": "https://fr.ign.com/resident-evil-9/92946/resident-evil-requiem-etait-initialement-prevu-pour-etre-un-jeu-en-ligne-selon-son-producteur",
-      "date": "2026-10-09T07:12:28.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/r/resident-e/resident-evil-requiem-was-originally-planned-as-an-online-ga_f59d.jpg",
-      "summary": "« Chaque jeu est un processus continu d&#x27;essais et d&#x27;erreurs. »",
-      "tags": []
-    },
-    {
-      "title": "Forza Horizon 6 arrive enfin sur PS5 en janvier, accompagné de sa première extension",
-      "link": "https://fr.ign.com/forza-horizon-6/92944/forza-horizon-6-arrive-enfin-sur-ps5-en-janvier-accompagne-de-sa-premiere-extension",
-      "date": "2026-10-09T06:55:46.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/f/forza-hori/forza-horizon-6-is-finally-coming-to-ps5-in-january-alongsid_zbst.png",
-      "summary": "Nouvelle bécane, mêmes roues.",
-      "tags": []
-    },
-    {
-      "title": "Après l'OVNI The Hundred Line, où en sont Kazutaka Kodaka et Too Kyo Games ?",
-      "link": "https://www.gamekult.com/actualite/apres-l-ovni-the-hundred-line-ou-en-sont-kazutaka-kodaka-et-too-kyo-games-3050872383.html",
-      "date": "2026-10-09T06:53:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872383/apres-l-ovni-the-hundred-line-ou-en-sont-kazutaka-kodaka-et-too-kyo-games-41a5c265__800_800__412-0-1491-1080.jpg",
-      "summary": "Kazutaka Kodaka, tête pensante créatrice de Danganronpa et de The Hundred Line : Last Defense Academy, a expliqué sa façon de concevoir des jeux lors d’une table ronde tenue en…",
-      "tags": []
-    },
-    {
-      "title": "Outward 2 accompagnera finalement le froid de l'hiver, avec une sortie en février prochain",
-      "link": "https://www.gamekult.com/actualite/outward-2-accompagnera-finalement-le-froid-de-l-hiver-avec-une-sortie-en-fevrier-prochain-3050872385.html",
-      "date": "2026-10-09T05:32:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872385/outward-2-accompagnera-finalement-le-froid-de-l-hiver-avec-une-sortie-en-fevrier-prochain-c69676fc__800_800__395-0-1474-1080.png",
-      "summary": "Originellement prévu pour une commercialisation (sous forme d'accès anticipé) en juillet dernier, Outward 2 a finalement été repoussé à la dernière minute par l'équipe de Nine…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Derrière les bonnets D, le chef-d'œuvre : pourquoi Dead or Alive était bien plus qu'un fantasme d'ados",
-      "link": "https://www.gamekult.com/actualite/derriere-les-bonnets-d-le-chef-d-oeuvre-pourquoi-dead-or-alive-etait-bien-plus-qu-un-fantasme-d-ados-3050872330.html",
-      "date": "2026-10-09T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872330/dead-or-alive-y-a-de-la-baston-en-plus-des-bonnets-d-97a15fa1__800_800__0-0-2400-2400.jpg",
-      "summary": "En 1996, Tecmo a les poches percées et craint le gouffre du dépôt de bilan. Pour éviter la morgue, la direction colle un jeune loup caractériel nommé Tomonobu Itagaki sur les…",
       "tags": []
     },
     {
