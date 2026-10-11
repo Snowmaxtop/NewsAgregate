@@ -66,7 +66,8 @@ async function main(){
   const articles = (read('articles.json', {}).articles) || [];
   const state = read('dispatch-state.json', {});
   const pushState = read('push-state.json', {});
-  const subs = (state.push && state.push.subscriptions) || [];
+  // Only real https push-service addresses are used (the sync file is public).
+  const subs = ((state.push && state.push.subscriptions) || []).filter(s => s && /^https:\/\//.test(s.endpoint || '') && s.keys && s.keys.p256dh && s.keys.auth);
   const publicKey = state.push && state.push.publicKey;
   const privateKey = process.env.VAPID_PRIVATE_KEY;
 

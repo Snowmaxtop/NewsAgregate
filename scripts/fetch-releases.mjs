@@ -72,16 +72,17 @@ export function steamAppIdOf(game){
   return null;
 }
 
-function steamUrlOf(game){
-  for (const w of game.websites || []){
-    const t = numOf(w.type ?? w.category);
-    if (t === 13 || /store\.steampowered\.com\/app\//.test(w.url || '')) return w.url;
-  }
-  for (const e of game.external_games || []){
-    const src = numOf(e.external_game_source ?? e.category);
-    if (src === 1 && e.uid) return `https://store.steampowered.com/app/${e.uid}`;
-  }
-  return null;
+// Store links are rebuilt from the numeric app id: IGDB website URLs are
+// crowd-edited, so they are never passed through as-is.
+export function steamUrlOf(game){
+  const app = steamAppIdOf(game);
+  return app ? `https://store.steampowered.com/app/${app}` : null;
+}
+
+// IGDB page: IGDB's own https URL, else built from a clean slug.
+export function igdbUrlOf(game){
+  if (/^https:\/\/www\.igdb\.com\/games\/[a-z0-9-]+$/i.test(game.url || '')) return game.url;
+  return /^[a-z0-9-]+$/i.test(game.slug || '') ? `https://www.igdb.com/games/${game.slug}` : null;
 }
 
 // rows: raw release_dates rows (with expanded game).
@@ -99,7 +100,7 @@ export function buildReleases(rows, steamRank = new Map()){
     (dateFormatOf(r) === 0 || dateFormatOf(r) === undefined) &&
     (gameTypeOf(r.game) === undefined || KEEP_GAME_TYPES.has(gameTypeOf(r.game))) &&
     // must have a cover and a description (for now)
-    r.game.cover && r.game.cover.image_id && r.game.summary && String(r.game.summary).trim() &&
+    r.game.cover && /^[a-z0-9]+$/i.test(r.game.cover.image_id || '') && r.game.summary && String(r.game.summary).trim() &&
     ((r.game.hypes || 0) >= MIN_HYPES || rankOf(r.game) !== undefined)
   );
 
@@ -147,14 +148,14 @@ export function buildReleases(rows, steamRank = new Map()){
         platforms: [...allPlats].sort(),
         developers: companies('developer'),
         publishers: companies('publisher'),
-        cover: g.cover && g.cover.image_id ? g.cover.image_id : null,
+        cover: g.cover.image_id,   // validated in the filter above
         summary: g.summary ? String(g.summary).slice(0, 600) : '',
         genres: (g.genres || []).map(x => x.name).filter(Boolean),
         hypes: g.hypes || 0,
         wlRank: rankOf(g),
         steam: steamUrlOf(g),
         steamAppId: steamAppIdOf(g) ?? undefined,
-        igdb: g.url || (g.slug ? `https://www.igdb.com/games/${g.slug}` : null),
+        igdb: igdbUrlOf(g),
       });
     }
   }

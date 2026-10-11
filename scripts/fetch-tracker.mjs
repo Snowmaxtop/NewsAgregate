@@ -22,6 +22,9 @@ import { pathToFileURL } from 'url';
 
 export const KEEP_DAYS = 365;
 export const KEEP_HOURS_DAYS = 14;
+// A game you unlike stops being sampled, but its history is kept this long
+// so liking it again picks up where it left off.
+export const KEEP_UNLIKED_DAYS = 90;
 const UA = { 'User-Agent': 'Mozilla/5.0 (Dispatch after-launch tracker)' };
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -37,6 +40,19 @@ export function trackedGames(likedGames, today){
   for (const g of likedGames || []){
     const app = appIdOf(g);
     if (app && g.date && g.date <= today) out.set(app, g.name);
+  }
+  return out;
+}
+
+// Records of games no longer liked: kept (not sampled) while their last
+// sample is recent enough (pure, unit-tested).
+export function keepUnliked(oldGames, sampled, today){
+  const floor = new Date(new Date(today + 'T00:00:00Z').getTime() - KEEP_UNLIKED_DAYS * 86400000).toISOString().slice(0, 10);
+  const out = {};
+  for (const [app, rec] of Object.entries(oldGames || {})){
+    if (sampled[app]) continue;
+    const last = Object.keys((rec && rec.days) || {}).sort().pop();
+    if (last && last >= floor) out[app] = rec;
   }
   return out;
 }
@@ -102,8 +118,9 @@ export async function main(){
     console.log(`✓ ${name} (${appid}): ${sample.players ?? 'n/a'} players, reviews ${rv}`);
     await sleep(500);
   }
-  writeFileSync('tracker.json', JSON.stringify({ generatedAt: nowIso, games }));
-  console.log(`tracker.json: ${Object.keys(games).length} released liked game(s) on Steam.`);
+  const kept = keepUnliked(tracker.games, games, today);
+  writeFileSync('tracker.json', JSON.stringify({ generatedAt: nowIso, games: { ...kept, ...games } }));
+  console.log(`tracker.json: ${Object.keys(games).length} released liked game(s) on Steam${Object.keys(kept).length ? `, history kept for ${Object.keys(kept).length} unliked` : ''}.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href){

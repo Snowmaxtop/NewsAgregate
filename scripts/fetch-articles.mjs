@@ -1,10 +1,11 @@
 // Fetches all Dispatch RSS feeds server-side (inside GitHub Actions) and
 // writes the combined, deduplicated result to articles.json in the repo
-// root. Because this runs on GitHub's servers rather than in a browser,
-// there is no CORS restriction to work around — this is the same kind of
-// request curl or a backend server would make.
+// root, plus the searchable archive/. Feeds are fetched in parallel.
+// The clean-up of dispatch-state.json is a separate step (purge-state.mjs)
+// so a save from the app during this run can't make the commit fail.
 import { XMLParser } from 'fast-xml-parser';
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
+import { pathToFileURL } from 'url';
 
 const SOURCES = [
   { id: 'ign',       feed: 'https://fr.ign.com/feed.xml' },
@@ -165,7 +166,7 @@ async function fetchFeed(source) {
   for (const url of urls) {
     try {
       const items = await fetchOneFeed(source, url);
-      const newest = items.reduce((mx, a) => (a.date > mx ? a.date : mx), '');
+      const newest = items.reduce((mx, a) => (a.date && a.date > mx ? a.date : mx), '');
       if (!best || newest > best.newest) best = { url, items, newest };
     } catch (e) {
       lastErr = e;
@@ -176,6 +177,8 @@ async function fetchFeed(source) {
   return best;
 }
 
+const MAX_FEED_BYTES = 5 * 1024 * 1024;   // a normal feed is 50–500 KB
+
 async function fetchOneFeed(source, feedUrl) {
   const res = await fetch(feedUrl, {
     headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DispatchBot/1.0; +https://github.com/)' },
@@ -183,6 +186,14 @@ async function fetchOneFeed(source, feedUrl) {
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const xml = await res.text();
+  if (xml.length > MAX_FEED_BYTES) throw new Error(`feed too large (${Math.round(xml.length / 1e6)} MB)`);
+  return parseFeed(source, xml);
+}
+
+// Pure: feed XML → articles (unit-tested). Items without a usable date get
+// `undated: true` and are dated by main() (first time seen), so they don't
+// look brand new on every run.
+export function parseFeed(source, xml) {
   const data = parser.parse(xml);
 
   let items = [];
@@ -198,13 +209,15 @@ async function fetchOneFeed(source, feedUrl) {
       let link = item.link;
       if (typeof link === 'object') link = link['@_href'] || link['#text'] || '';
       link = httpUrl(link) || '';
-      const dateStr = item.pubDate || item.updated || item.published || '';
-      const date = dateStr ? new Date(dateStr) : new Date();
+      const dateStr = textOf(item.pubDate || item.updated || item.published || item['dc:date'] || '');
+      const date = dateStr ? new Date(dateStr) : null;
       const summary = extractSummary(item);
+      const dated = date && !isNaN(date);
       return {
         title,
         link,
-        date: isNaN(date) ? new Date().toISOString() : date.toISOString(),
+        date: dated ? date.toISOString() : null,
+        ...(dated ? {} : { undated: true }),
         sourceId: source.id,
         image: httpUrl(extractImage(item)),
         summary,
@@ -212,6 +225,18 @@ async function fetchOneFeed(source, feedUrl) {
       };
     })
     .filter((a) => a.title && a.link);
+}
+
+// Undated items keep the date they were first seen (from the previous
+// articles.json), or now if they're new.
+export function fillMissingDates(items, previousArticles, nowIso = new Date().toISOString()) {
+  const seen = new Map((previousArticles || []).map((a) => [a.link, a.date]));
+  for (const a of items) {
+    if (!a.undated) continue;
+    a.date = seen.get(a.link) || nowIso;
+    delete a.undated;
+  }
+  return items;
 }
 
 // --- Archive -------------------------------------------------------------
@@ -254,27 +279,34 @@ export function mergeIntoArchive(items, dir = 'archive') {
   return added;
 }
 
-async function main() {
+export async function main() {
   const sourceStatus = {};
+  const sourceHealth = {};
   let allArticles = [];
 
-  const sourceHealth = {};
-  for (const source of SOURCES) {
-    try {
-      const { url, items, newest } = await fetchFeed(source);
-      allArticles.push(...items);
-      const ageH = newest ? Math.round((Date.now() - new Date(newest)) / 3600000) : null;
-      // "stale" = nothing new for longer than this source's usual rhythm
-      const staleAfterH = Math.max(48, (source.retentionDays || 1) * 24);
-      sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > staleAfterH ? 'stale' : 'ok';
-      sourceHealth[source.id] = { status: sourceStatus[source.id], url, items: items.length, newest: newest || null };
-      console.log(`${sourceStatus[source.id] === 'ok' ? '✓' : '⚠'} ${source.id}: ${items.length} items, newest ${newest || 'none'} (${ageH ?? '?'} h ago) via ${url}`);
-    } catch (e) {
+  // All feeds at once (each has its own 15 s timeout), logged in list order.
+  const results = await Promise.all(SOURCES.map((source) =>
+    fetchFeed(source).then((r) => ({ source, r }), (e) => ({ source, e }))));
+  for (const { source, r, e } of results) {
+    if (e) {
       sourceStatus[source.id] = 'fail';
       sourceHealth[source.id] = { status: 'fail', error: e.message };
       console.error(`✗ ${source.id}: ${e.message}`);
+      continue;
     }
+    const { url, items, newest } = r;
+    allArticles.push(...items);
+    const ageH = newest ? Math.round((Date.now() - new Date(newest)) / 3600000) : null;
+    // "stale" = nothing new for longer than this source's usual rhythm
+    const staleAfterH = Math.max(48, (source.retentionDays || 1) * 24);
+    sourceStatus[source.id] = items.length === 0 || ageH === null || ageH > staleAfterH ? 'stale' : 'ok';
+    sourceHealth[source.id] = { status: sourceStatus[source.id], url, items: items.length, newest: newest || null };
+    console.log(`${sourceStatus[source.id] === 'ok' ? '✓' : '⚠'} ${source.id}: ${items.length} items, newest ${newest || 'none'} (${ageH ?? '?'} h ago) via ${url}`);
   }
+
+  let previous = [];
+  try { if (existsSync('articles.json')) previous = JSON.parse(readFileSync('articles.json', 'utf8')).articles || []; } catch (e) { /* first run */ }
+  fillMissingDates(allArticles, previous);
 
   // 1 day: the user's reading model is "if I didn't read it today, it no
   // longer interests me". Favorites are unaffected — they live as full
@@ -303,52 +335,13 @@ async function main() {
     if (sourceHealth[id].kept === 0) console.log(`⚠ ${id}: 0 articles kept in the last ${retentionOf.get(id)} day(s)`);
   }
 
-  const output = {
-    generatedAt: new Date().toISOString(),
-    sourceStatus,
-    sourceHealth,
-    articles: allArticles,
-  };
-
-  writeFileSync('articles.json', JSON.stringify(output, null, 2));
+  writeFileSync('articles.json', JSON.stringify({ generatedAt: new Date().toISOString(), sourceStatus, sourceHealth, articles: allArticles }, null, 2));
   console.log(`\nWrote ${allArticles.length} articles to articles.json`);
-
-  // --- Server-side purge of dispatch-state.json -------------------------
-  // read[] and hidden[] only store links and grow forever. Here we trim
-  // them to just the links still present in the freshly-built feed, so the
-  // state file stays small even if the app is never opened. Favorites are
-  // NEVER touched (independent snapshots). We only rewrite the file if it
-  // exists and something actually changed, to avoid empty commits.
-  try {
-    if (existsSync('dispatch-state.json')) {
-      const state = JSON.parse(readFileSync('dispatch-state.json', 'utf8'));
-      const liveLinks = new Set(allArticles.map((a) => a.link));
-
-      const beforeRead = Array.isArray(state.read) ? state.read.length : 0;
-      const beforeHidden = Array.isArray(state.hidden) ? state.hidden.length : 0;
-
-      state.read = (state.read || []).filter((link) => liveLinks.has(link));
-      state.hidden = (state.hidden || []).filter((link) => liveLinks.has(link));
-      // state.favorites intentionally left as-is
-
-      const changed = state.read.length !== beforeRead || state.hidden.length !== beforeHidden;
-      if (changed) {
-        writeFileSync('dispatch-state.json', JSON.stringify(state, null, 2));
-        console.log(`State purge: read ${beforeRead}→${state.read.length}, hidden ${beforeHidden}→${state.hidden.length} (favorites kept: ${(state.favorites || []).length})`);
-      } else {
-        console.log('State purge: nothing to remove.');
-      }
-    } else {
-      console.log('dispatch-state.json not found — skipping state purge.');
-    }
-  } catch (e) {
-    // Never let a state-purge problem fail the whole run; articles.json is
-    // the critical output and it's already written.
-    console.error('State purge skipped due to error:', e.message);
-  }
 }
 
-main().catch((e) => {
-  console.error('Fatal error:', e);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => {
+    console.error('Fatal error:', e);
+    process.exit(1);
+  });
+}
