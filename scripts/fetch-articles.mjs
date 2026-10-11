@@ -28,6 +28,11 @@ const SOURCES = [
   { id: 'gamefile',  feed: 'https://www.gamefile.news/feed', retentionDays: 7 },
   { id: 'pgbiz',     feed: ['https://www.pocketgamer.biz/rss/', 'https://www.pocketgamer.biz/index.rss'], retentionDays: 2 },
   { id: 'mgbiz',     feed: 'https://mobilegamer.biz/feed/', retentionDays: 2 },
+  // Steam market analysis and marketing data. GameDiscoverCo posts about
+  // twice a week; How To Market A Game about once a month, so its posts stay
+  // in the feed 45 days (they are archived either way).
+  { id: 'gdco',      feed: 'https://newsletter.gamediscover.co/feed', retentionDays: 7 },
+  { id: 'htmag',     feed: 'https://howtomarketagame.com/feed/', retentionDays: 45 },
 ];
 
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });
