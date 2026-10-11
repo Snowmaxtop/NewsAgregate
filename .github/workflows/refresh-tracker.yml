@@ -8,9 +8,15 @@ on:
 permissions:
   contents: write
 
+# One run at a time: a slow run is never overlapped by the next one.
+concurrency:
+  group: dispatch-tracker
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

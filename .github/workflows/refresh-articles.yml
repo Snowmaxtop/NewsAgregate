@@ -8,9 +8,15 @@ on:
 permissions:
   contents: write
 
+# One run at a time: a slow run is never overlapped by the next one.
+concurrency:
+  group: dispatch-articles
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -20,25 +26,40 @@ jobs:
         with:
           node-version: '24'
 
+      # Exact versions from package-lock.json (integrity-checked), and no
+      # install scripts: a compromised package can't run code at install.
       - name: Install dependencies
-        run: npm install fast-xml-parser web-push
+        run: npm ci --ignore-scripts --no-audit --no-fund
 
-      - name: Fetch feeds and build articles.json (+ purge state)
+      - name: Fetch feeds and build articles.json + archive
         run: node scripts/fetch-articles.mjs
 
-      - name: Commit and push if changed
+      - name: Commit and push articles
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # dispatch-state.json only changes when the server-side purge
-          # removed something; archive/ only when new articles appeared.
-          git add articles.json dispatch-state.json
+          git add articles.json
           if [ -d archive ]; then git add archive; fi
           git diff --staged --quiet && exit 0
           git commit -m "chore: refresh articles.json + archive [skip ci]"
-          # Other workflows (releases, tracker) push too: rebase onto them if needed.
+          # Other workflows push too: rebase onto them (they never touch these files).
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+
+      # Separate step on a fresh copy: the app may save dispatch-state.json
+      # at any moment. If it does, this clean-up is skipped and retried on
+      # the next run; the articles above are already published.
+      - name: Purge old read/deleted links from the sync file
+        run: |
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          node scripts/purge-state.mjs
+          git add dispatch-state.json 2>/dev/null || true
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: purge old links from dispatch-state.json [skip ci]"
+          if ! git push; then
+            echo "The app saved the sync file meanwhile: purge skipped, next run retries."
+            git reset --hard "origin/${GITHUB_REF_NAME}"
+          fi
 
       - name: Push notification for new articles
         env:
