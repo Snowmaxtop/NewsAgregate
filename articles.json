@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:48:12.003Z",
+  "generatedAt": "2026-10-11T00:37:09.854Z",
   "sourceStatus": {
     "ign": "ok",
     "rps": "ok",
@@ -28,14 +28,14 @@
       "status": "ok",
       "url": "https://www.rockpapershotgun.com/feed/",
       "items": 100,
-      "newest": "2026-10-10T20:24:35.000Z",
-      "kept": 5
+      "newest": "2026-10-10T21:55:00.000Z",
+      "kept": 6
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-10T21:48:07.425Z",
+      "newest": "2026-10-11T00:37:04.587Z",
       "kept": 5
     },
     "gibiz": {
@@ -49,8 +49,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-10T18:15:07.000Z",
-      "kept": 15
+      "newest": "2026-10-10T20:20:07.000Z",
+      "kept": 16
     },
     "gameblog": {
       "status": "ok",
@@ -77,8 +77,8 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-10T16:55:26.000Z",
-      "kept": 12
+      "newest": "2026-10-10T23:32:29.000Z",
+      "kept": 11
     },
     "eurogamer": {
       "status": "ok",
@@ -91,7 +91,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-10T21:06:47.000Z",
+      "newest": "2026-10-10T23:45:16.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -120,7 +120,7 @@
     {
       "title": "Game Conference MX (GCMX)",
       "link": "https://www.gamedeveloper.com/events/untitled",
-      "date": "2026-10-10T21:48:07.425Z",
+      "date": "2026-10-11T00:37:04.587Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -129,7 +129,7 @@
     {
       "title": "gamescom",
       "link": "https://www.gamedeveloper.com/events/gamescom",
-      "date": "2026-10-10T21:48:07.425Z",
+      "date": "2026-10-11T00:37:04.587Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt632741073bc8a83e/6aac62d711966bcca3382946/gamescom_logo_rgb_2590x1878.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -138,7 +138,7 @@
     {
       "title": "SLICE",
       "link": "https://www.gamedeveloper.com/events/slice",
-      "date": "2026-10-10T21:48:07.425Z",
+      "date": "2026-10-11T00:37:04.587Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt84833237e7fdea71/6aac61fef2b8193cd78ba45c/og-image.jpg?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -147,7 +147,7 @@
     {
       "title": "Unreal Fest",
       "link": "https://www.gamedeveloper.com/events/unreal-fest",
-      "date": "2026-10-10T21:48:07.425Z",
+      "date": "2026-10-11T00:37:04.587Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8833f04a444571c9/6aac5e7243fcc7038a8c3483/UnrealFest_26_Chicago.webp?width=720&quality=80&disable=upscale",
       "summary": "",
@@ -156,10 +156,84 @@
     {
       "title": "GodotCon",
       "link": "https://www.gamedeveloper.comconference.godotengine.org",
-      "date": "2026-10-10T21:48:07.425Z",
+      "date": "2026-10-11T00:37:04.587Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd1eddde21b0d5d66/6aac5cf28cb60c1ee1955cf3/favicon-godot.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Blade Runner 2099's New York Comic Con Trailer Teases A New Replicant Conspiracy",
+      "link": "https://www.polygon.com/blade-runner-2099-new-york-comic-con/",
+      "date": "2026-10-10T23:45:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/blade-runner-2099-1.jpg",
+      "summary": "Blade Runner 2099 debuted a new trailer featuring Hunter Schafer and Michelle Yeoh at a New York Comic Con panel",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 leaker threatens to upload a build with 'full story mode'",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-leaker-threatens-to-upload-a-build-with-full-story-mode/",
+      "date": "2026-10-10T23:32:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/fKFHSxwg2x8dXuq8dUfMKh-1920-80.png",
+      "summary": "\"Take-Two gets one way out: physical disks and a public apology.\"",
+      "tags": []
+    },
+    {
+      "title": "2024's Most Inventive Slasher Movie Officially Sets Sequel Release Date",
+      "link": "https://www.polygon.com/in-a-violent-nature-2-horror-movie-release-date-shudder/",
+      "date": "2026-10-10T23:30:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/iavn-2-still.jpg",
+      "summary": "In A Violent Nature 2 was confirmed for a February 2027 theatrical release date by Shudder and IFC at New York Comic Con on Oct. 10.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Forget John Wick, the Ultimate Action Thriller of the Century Is Officially Streaming on Netflix",
+      "link": "https://www.polygon.com/the-equalizer-is-streaming-on-netflix/",
+      "date": "2026-10-10T23:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-equalizer-3.jpg",
+      "summary": "Denzel Washington is at his most terrifying in this brutally satisfying action thriller.",
+      "tags": []
+    },
+    {
+      "title": "Naruto To Get New Manga, Crossover Anime, And More Before The End Of The Decade",
+      "link": "https://www.polygon.com/naruto-roadmap-project-rasengan/",
+      "date": "2026-10-10T22:47:07.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/naruto-new-anime.jpg",
+      "summary": "At New York Comic Con, several new Naruto projects were announced as part of the Project Rasengan roadmap",
+      "tags": []
+    },
+    {
+      "title": "Squadron 42 has a Steam page",
+      "link": "https://www.pcgamer.com/games/fps/squadron-42-has-a-steam-page/",
+      "date": "2026-10-10T22:25:54.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Dnbw6BBDfDTWeGQ7qtaLae-1920-80.jpg",
+      "summary": "Star Citizen's singleplayer mode gets a new trailer and more signs of life.",
+      "tags": []
+    },
+    {
+      "title": "Warner Bros. 41-Year-Old Fantasy Classic Reboot is Officially Happening",
+      "link": "https://www.polygon.com/thundercats-movie-update/",
+      "date": "2026-10-10T22:12:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/action-sequence.png",
+      "summary": "The live-action reboot of Thundercats is still happening, according to director Adam Wingard (Godzilla vs. Kong, Onslaught) in a new update.",
+      "tags": []
+    },
+    {
+      "title": "Gargantuan cop immersive sim Militsioner now has an acrophobia-inducing demo, and yes, I did somehow manage to fail the tutorial",
+      "link": "https://www.rockpapershotgun.com/gargantuan-cop-immersive-sim-militsioner-now-has-an-acrophobia-inducing-demo-and-yes-i-did-somehow-manage-to-fail-the-tutorial",
+      "date": "2026-10-10T21:55:00.000Z",
+      "sourceId": "rps",
+      "image": "https://assetsio.gnwcdn.com/militsioner_EraHzTo.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Excitedly, I boot up the new demo for Militsioner , a game I've had a watchful eye on since its announcement. A phone rings, it's my lawyer. I don't know why I've been arrested…",
       "tags": []
     },
     {
@@ -219,6 +293,15 @@
       "tags": [
         "release"
       ]
+    },
+    {
+      "title": "Cyberpunk 2077 : j'ai réalisé beaucoup trop tard que Johnny Silverhand n'est pas du tout le vrai nom du rockerboy",
+      "link": "https://www.jeuxvideo.com/news/2108065/cyberpunk-2077-j-ai-realise-beaucoup-trop-tard-que-johnny-silverhand-n-est-pas-du-tout-le-vrai-nom-du-rockerboy.htm",
+      "date": "2026-10-10T20:20:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179138/1791383812-1891-card.jpg",
+      "summary": "Lors de la conception du jeu vidéo Cyberpunk 2077, les développeurs de CD Projekt RED ont trouvé un nom particulièrement badass pour le personnage incarné par l’acteur Keanu…",
+      "tags": []
     },
     {
       "title": "Jailbroken PS5s Can Now Emulate PS2 Games Using Physical Discs",
@@ -313,15 +396,6 @@
       "tags": []
     },
     {
-      "title": "Disney World and Disneyland Official Price Surge Concerns Attendees",
-      "link": "https://www.polygon.com/disney-world-disneyland-price-surge-october-2026/",
-      "date": "2026-10-10T17:34:51.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/disney-world-mickey.jpg",
-      "summary": "Disney hikes ticket prices at Disney World and Disneyland prices, but there are still ways for fans to find affordable prices.",
-      "tags": []
-    },
-    {
       "title": "MatPat And Blumhouse Productions Collaborating On Amanda The Adventurer Movie",
       "link": "https://kotaku.com/matpat-and-blumhouse-productions-collaborating-on-amanda-the-adventurer-movie-2000743782",
       "date": "2026-10-10T17:22:44.000Z",
@@ -358,15 +432,6 @@
       "tags": []
     },
     {
-      "title": "Black Clover is Officially Crunchyroll's Most-Liked Anime Of The Year",
-      "link": "https://www.polygon.com/black-clover-season-2-premiere-most-liked-crunchyroll/",
-      "date": "2026-10-10T17:01:28.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23130882/undefined___Imgur__1_.png",
-      "summary": "Black Clover Season 2's first episode set a 2026 record on Crunchyroll in the week since its release",
-      "tags": []
-    },
-    {
       "title": "Avatar Kuruk: Wave of Chaos - Premières images",
       "link": "https://fr.ign.com/avatar-seven-havens/93001/avatar-kuruk-wave-of-chaos-premieres-images",
       "date": "2026-10-10T17:00:31.000Z",
@@ -382,24 +447,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/n/new-avatar/new-avatar-show-in-development-as-seven-havens-renewed-for-s_sw4c.jpg",
       "summary": "La série suit un Avatar de la tribu de l’Eau, trois générations avant Aang.",
-      "tags": []
-    },
-    {
-      "title": "59 Years Later, Star Trek's Definitive Time-Travel Episode is Getting a Major Update",
-      "link": "https://www.polygon.com/star-trek-city-on-the-edge-of-forever/",
-      "date": "2026-10-10T17:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/collinsandkirk.jpg",
-      "summary": "“The City on the Edge of Forever” gave Kirk a tragic romance and created a time-travel formula Star Trek still follows today.",
-      "tags": []
-    },
-    {
-      "title": "7 Final Fantasy Games That Deserved Better",
-      "link": "https://www.polygon.com/ff-final-fantasy-games-underrated-overlooked/",
-      "date": "2026-10-10T16:57:49.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/final-fantasy-4-key-art.jpg",
-      "summary": "There've been more than 100 Final Fantasy games since the series got its start on the NES back in 1987. Here are a few under-the-radar treasures.",
       "tags": []
     },
     {
@@ -427,15 +474,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179147/1791467761-7158-card.jpg",
       "summary": "Portée par un créateur de légende et sublimée sur PS2, la franchise Genji devait être le fleuron de Sony à l'ère HD… mais tout ne s’est pas passé comme prévu.",
-      "tags": []
-    },
-    {
-      "title": "7 Switch 2 Characters Nintendo Should Add to the Next Super Smash Bros.",
-      "link": "https://www.polygon.com/switch-2-super-smash-bros-character-predictions/",
-      "date": "2026-10-10T16:41:25.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/11526335/smash_illo.jpg",
-      "summary": "Nintendo's strong first year of Switch 2 games brings a lot of potential for the next Super Smash Bros. game.",
       "tags": []
     },
     {
@@ -972,39 +1010,12 @@
       "tags": []
     },
     {
-      "title": "2026's OLED monitors can nearly recreate the sublime clarity of a '90s CRT, but Windows will have to change before we can achieve true nirvana",
-      "link": "https://www.pcgamer.com/hardware/gaming-monitors/2026s-oled-monitors-can-nearly-recreate-the-sublime-clarity-of-a-90s-crt-but-windows-will-have-to-change-before-we-can-achieve-true-nirvana/",
-      "date": "2026-10-10T00:20:52.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/AHRTYTZLDgBW6HQ7rRKHBL-1920-80.jpg",
-      "summary": "All you need is a ridiculously fast monitor and endless patience for tinkering to get a glimpse of how good retro games looked in motion back in the '90s.",
-      "tags": []
-    },
-    {
-      "title": "'Overcooked broke you apart and Stage Fright is there to put you back together'",
-      "link": "https://www.pcgamer.com/games/adventure/overcooked-broke-you-apart-and-stage-fright-is-there-to-put-you-back-together/",
-      "date": "2026-10-09T23:43:13.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/zfk4j5M3dpoHuYLwTAqciY-1920-80.jpg",
-      "summary": "Developers of the stressful cooking game series talk to PC Gamer about their more 'positive' co-op adventure.",
-      "tags": []
-    },
-    {
       "title": "Xbox’s new streak experiment",
       "link": "https://www.gamefile.news/p/xboxs-new-streak-experiment",
       "date": "2026-10-09T22:30:19.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!ILlm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11737f64-2c41-4eb2-83c3-856965bb95af_2232x1244.png",
       "summary": "I tested a surprise change to my console.",
-      "tags": []
-    },
-    {
-      "title": "Cyberpunk 2077 is being made into a movie, even though we've already got the perfect cyberpunk movie starring Keanu Reeves as a guy named Johnny",
-      "link": "https://www.pcgamer.com/movies-tv/cyberpunk-2077-is-being-made-into-a-movie-even-though-weve-already-got-the-perfect-cyberpunk-movie-starring-keanu-reeves-as-a-guy-named-johnny/",
-      "date": "2026-10-09T21:54:26.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/No8Ri3Mas5vWZ4zzXoY3fB-1920-80.jpg",
-      "summary": "Remember Johnny Mnemonic? If you haven't seen it, it's time.",
       "tags": []
     },
     {
