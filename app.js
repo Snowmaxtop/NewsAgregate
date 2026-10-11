@@ -304,6 +304,7 @@ function updateSyncNote(errorMsg){
 // server-side and commits articles.json, read here as a same-origin file.
 const articlesNoteEl = document.getElementById('articlesNote');
 let articlesGeneratedAt = null;
+let sourceHealth = {};   // articles.json → sourceHealth: per-feed result of the last run
 
 function formatRelative(dateStr){
   const diffMs = Date.now() - new Date(dateStr).getTime();
@@ -330,7 +331,9 @@ function applyJsonData(data){
     .filter(Boolean)
     .sort((a, b) => b.date - a.date);
   articlesGeneratedAt = data.generatedAt || null;
+  sourceHealth = data.sourceHealth || {};
   updateArticlesNote();
+  updateHealthDot();
   render();
 }
 
@@ -1242,6 +1245,31 @@ function showToast(text, ms = 2200){
 // --- ⋯ menu: sync status, occasional actions, links to every source -----
 const menuBtn = document.getElementById('menuBtn');
 const menuEl = document.getElementById('menu');
+// --- Source health ------------------------------------------------------
+// Each articles run records per feed: ok, stale (nothing new for longer than
+// the source's rhythm, at least 48 h) or fail (error). Shown in the ⋯ menu
+// next to each site, with a dot on the ⋯ button when a feed needs a look —
+// so a dead feed is noticed within a day.
+function healthOf(id){
+  const h = sourceHealth[id];
+  if (!h) return { cls: 'unknown', icon: '·', rank: 3, detail: 'Not checked yet: next articles update' };
+  if (h.status === 'fail') {
+    const err = /abort|timeout/i.test(h.error || '') ? 'timed out' : (h.error || 'unknown error');
+    return { cls: 'fail', icon: '✗', rank: 0, detail: `Not working: ${err}` };
+  }
+  const latest = h.newest ? `latest ${formatRelative(h.newest)}` : 'no dated posts';
+  if (h.status === 'stale') return { cls: 'stale', icon: '⚠\uFE0E', rank: 1, detail: h.items ? `Quiet: nothing new, ${latest}` : 'Quiet: the feed is empty' };
+  return { cls: 'ok', icon: '✓', rank: 2, detail: `${h.kept || 0} in feed, ${latest}` };
+}
+function updateHealthDot(){
+  const states = SOURCES.map(s => healthOf(s.id).cls);
+  const fail = states.filter(c => c === 'fail').length, stale = states.filter(c => c === 'stale').length;
+  menuBtn.classList.toggle('health-fail', fail > 0);
+  menuBtn.classList.toggle('health-stale', !fail && stale > 0);
+  menuBtn.title = fail ? `More · ${fail} feed${fail > 1 ? 's' : ''} not working`
+    : stale ? `More · ${stale} quiet feed${stale > 1 ? 's' : ''}` : 'More';
+}
+
 function renderMenu(){
   const [cls, label] = githubConnected ? ['connected', 'Synced with GitHub']
     : lastSyncError ? ['error', 'GitHub sync error'] : ['', 'Set up GitHub sync'];
@@ -1251,9 +1279,20 @@ function renderMenu(){
     <button class="menu-item" data-act="markall"><span class="mi-ico">✓</span>Mark all as read</button>
     <button class="menu-item" data-act="resync"><span class="mi-ico">⇅</span>Re-sync with GitHub</button>
     <div class="menu-sep"></div>
-    <div class="menu-head">Open a site</div>
-    ${SOURCES.map(s => `<a class="menu-item" href="${safeUrl(s.home)}" target="_blank" rel="noopener">${escapeHtml(s.name)}<span class="mi-ext">↗</span></a>`).join('')}
+    <div class="menu-head sites">Open a site${healthSummary()}</div>
+    ${SOURCES.map(s => ({ s, h: healthOf(s.id) }))
+      .sort((a, b) => Math.min(a.h.rank, 2) - Math.min(b.h.rank, 2))   // problems first, otherwise list order
+      .map(({ s, h }) => `<a class="menu-item site" href="${safeUrl(s.home)}" target="_blank" rel="noopener" title="${escapeHtml((sourceHealth[s.id] && sourceHealth[s.id].url) || '')}">
+        <span class="mi-ico h-${h.cls}">${h.icon}</span>
+        <span class="mi-text"><span>${escapeHtml(s.name)}</span><span class="mi-detail${h.cls === 'fail' ? ' h-fail' : ''}">${escapeHtml(h.detail)}</span></span>
+        <span class="mi-ext">↗</span></a>`).join('')}
     <a class="menu-item" href="https://www.metacritic.com/game/" target="_blank" rel="noopener">New on Metacritic<span class="mi-ext">↗</span></a>`;
+}
+// "✓ 13  ⚠ 1  ✗ 0" beside the heading (zero counts left out, ✓ always shown).
+function healthSummary(){
+  const n = { ok: 0, stale: 0, fail: 0 };
+  SOURCES.forEach(s => { const c = healthOf(s.id).cls; if (c in n) n[c]++; });
+  return `<span class="mi-sum"><span class="h-ok">✓ ${n.ok}</span>${n.stale ? `<span class="h-stale">⚠\uFE0E ${n.stale}</span>` : ''}${n.fail ? `<span class="h-fail">✗ ${n.fail}</span>` : ''}</span>`;
 }
 function closeMenu(){
   menuEl.classList.remove('show');
