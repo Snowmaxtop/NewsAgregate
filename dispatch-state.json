@@ -987,5 +987,18 @@
       "steamAppId": 3883570
     }
   ],
-  "push": null
+  "push": {
+    "publicKey": "BNQ_1pjrHlFrgezMq0ghXpsBKc_fm8VS3mcnP2Ldw_Z6wZ6K-POsq5z-Gj1tZVA0Qt29w5HHo37vO9SR5a4xQEY",
+    "subscriptions": [
+      {
+        "endpoint": "https://fcm.googleapis.com/fcm/send/ep1R2ca6g28:APA91bHykCkqTOLZ8OBeXBIaHhFj7cebDPWQMruWsromlRDru2yvBrNj14LUFtbiDS5QJtopMqFn98OibZZCt-HVrXExpabEuKI1VVsTx1x6zY1Qq_cmuPhwqDJyQVJBpzE02HR1iZib",
+        "keys": {
+          "p256dh": "BMUrPSyyZ1N5gs5aGAp0oas-PNjmy-Guk4bxxIBODLPoqb2KLFF9b8f2-K1XHN9BFa7JlERSaQykQ1Gp5ze-RRY",
+          "auth": "dWRf00Sb6V_W9EcyzZRByA"
+        },
+        "device": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome",
+        "added": "2026-10-11T06:47:01.729Z"
+      }
+    ]
+  }
 }
