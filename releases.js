@@ -24,7 +24,14 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const pad = (n) => String(n).padStart(2, '0');
   const keyOf = (y, m, d) => `${y}-${pad(m + 1)}-${pad(d)}`;
-  const coverUrl = (id, size) => `https://images.igdb.com/igdb/image/upload/t_${size}/${id}.jpg`;
+  // IGDB image ids are short alphanumeric strings; anything else is ignored.
+  const coverUrl = (id, size) => /^[a-z0-9]+$/i.test(String(id || '')) ? `https://images.igdb.com/igdb/image/upload/t_${size}/${id}.jpg` : '';
+  // IGDB and Steam data is partly crowd-edited: links are only used if they
+  // are https and point to the expected site (no javascript: or look-alikes).
+  const linkTo = (url, host) => {
+    try { const u = new URL(url); return u.protocol === 'https:' && (u.hostname === host || u.hostname.endsWith('.' + host)) ? u.href : ''; }
+    catch (e) { return ''; }
+  };
 
   function index(json){
     data = json;
@@ -40,7 +47,7 @@
   function load(){
     if (data && Date.now() - loadedAt < REFETCH_MS) return Promise.resolve();
     if (loading) return loading;
-    loading = fetch('./releases.json', { cache: 'no-store' })
+    loading = fetch('./releases.json', { cache: 'no-cache' })
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(json => { index(json); loadedAt = Date.now(); })
       .finally(() => { loading = null; });
@@ -74,7 +81,7 @@
     if (view === 'top') return drawTop();
     return picking ? drawPicker() : drawMonth();
   }
-  const rankBadge = (g) => g.wlRank ? `<span class="rel-rank" title="Position in Steam's most-wishlisted list">#${g.wlRank} wishlists</span>` : '';
+  const rankBadge = (g) => g.wlRank ? `<span class="rel-rank" title="Position in Steam's most-wishlisted list">#${Number(g.wlRank)} wishlists</span>` : '';
 
   // ---- Month picker: tap the month title to jump anywhere ---------------
   function drawPicker(){
@@ -135,8 +142,8 @@
       monthCount += games.length;
       const hasLike = games.some(g => liked(g.id));
       const top = games.find(g => g.cover) || games[0];
-      const img = top && top.cover
-        ? `<img src="${coverUrl(top.cover, 'cover_small')}" alt="" loading="lazy" onerror="this.remove()">`
+      const img = top && coverUrl(top.cover, 'cover_small')
+        ? `<img src="${coverUrl(top.cover, 'cover_small')}" alt="" loading="lazy">`
         : (top ? `<span class="cal-noimg">${esc(top.name.slice(0, 18))}</span>` : '');
       cells += `
         <button class="cal-cell ${games.length ? 'has' : ''} ${k === todayKey ? 'today' : ''}" data-day="${k}" ${games.length ? '' : 'disabled'}>
@@ -173,7 +180,7 @@
   function loadTop(){
     if (top) return Promise.resolve();
     if (topLoading) return topLoading;
-    topLoading = fetch('./wishlists.json', { cache: 'no-store' })
+    topLoading = fetch('./wishlists.json', { cache: 'no-cache' })
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(j => { top = j; })
       .finally(() => { topLoading = null; });
@@ -210,9 +217,9 @@
     const rows = missing ? [] : topRows();
     const key = SORTS[topSort].key;
     el.innerHTML = missing || (rows.length ? rows.map(g => `
-      <a class="top-row" href="https://store.steampowered.com/app/${g.appid}" target="_blank" rel="noopener" data-igdb="${g.igdbId ?? ''}">
-        <span class="top-rank">#${g.rank}${deltaBadge(g, key)}</span>
-        <span class="top-img">${g.img ? `<img src="${esc(g.img)}" alt="" loading="lazy" onerror="this.remove()">` : ''}</span>
+      <a class="top-row" href="https://store.steampowered.com/app/${Number(g.appid) || ''}" target="_blank" rel="noopener" data-igdb="${Number(g.igdbId) || ''}">
+        <span class="top-rank">#${Number(g.rank)}${deltaBadge(g, key)}</span>
+        <span class="top-img">${/^https:\/\//.test(g.img || '') ? `<img src="${esc(g.img)}" alt="" loading="lazy">` : ''}</span>
         <span class="top-body">
           <span class="top-name">${esc(g.name)}${g.igdbId != null && liked(g.igdbId) ? ' <span class="top-liked">♥</span>' : ''}</span>
           <span class="top-when">${g.date ? `<span class="top-cal">📅 ${esc(shortDate(g.date))}</span>` : esc(g.released || 'No date')}</span>
@@ -238,7 +245,8 @@
         <div class="top-meta"><span id="topCount"></span> · Steam ranking, updated ${new Date(top.generatedAt).toLocaleDateString('en-GB')}</div>
       </div>
       <div id="topList" class="top-list"></div>`;
-    container.querySelector('#topSearch').addEventListener('input', (e) => { topQuery = e.target.value; drawTopList(); });
+    let topTimer = null;   // redraw 150 ms after the last keystroke (up to 1,500 rows)
+    container.querySelector('#topSearch').addEventListener('input', (e) => { topQuery = e.target.value; clearTimeout(topTimer); topTimer = setTimeout(drawTopList, 150); });
     container.querySelector('#topSort').addEventListener('change', (e) => { topSort = e.target.value; drawTopList(); });
     drawTopList();
   }
@@ -248,7 +256,7 @@
   function loadTracker(){
     if (tracker && Date.now() - trackerLoadedAt < REFETCH_MS) return Promise.resolve();
     if (trackerLoading) return trackerLoading;
-    trackerLoading = fetch('./tracker.json', { cache: 'no-store' })
+    trackerLoading = fetch('./tracker.json', { cache: 'no-cache' })
       .then(r => r.ok ? r.json() : null)
       .then(j => { if (j) { tracker = j; trackerLoadedAt = Date.now(); } })
       .catch(() => {})
@@ -491,15 +499,15 @@
     const past = list.filter(g => g.date < today).sort((a, b) => b.date.localeCompare(a.date));
 
     const row = (g) => `
-      <div class="like-row" data-id="${g.id}">
-        <div class="like-thumb">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_small')}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
+      <div class="like-row" data-id="${Number(g.id)}">
+        <div class="like-thumb">${coverUrl(g.cover, 'cover_small') ? `<img src="${coverUrl(g.cover, 'cover_small')}" alt="" loading="lazy">` : ''}</div>
         <div class="like-body">
           <div class="like-date">${esc(shortDate(g.date))} ${rankBadge(g)}</div>
           <div class="like-name">${esc(g.name)}</div>
           <div class="like-sub">${esc([...(g.developers || []).slice(0, 1), (g.platforms || []).join(' · ')].filter(Boolean).join(' — '))}</div>
           ${statsLine(g)}
         </div>
-        <button class="like-heart on" data-like="${g.id}" aria-label="Unlike">♥</button>
+        <button class="like-heart on" data-like="${Number(g.id)}" aria-label="Unlike">♥</button>
       </div>`;
 
     const groups = (arr) => {
@@ -661,9 +669,10 @@
   }
 
   function card(g){
+    const steam = linkTo(g.steam, 'steampowered.com'), igdb = linkTo(g.igdb, 'igdb.com');
     const links = [
-      g.steam ? `<a class="rel-btn steam" href="${esc(g.steam)}" target="_blank" rel="noopener">Steam</a>` : '',
-      g.igdb ? `<a class="rel-btn" href="${esc(g.igdb)}" target="_blank" rel="noopener">IGDB</a>` : '',
+      steam ? `<a class="rel-btn steam" href="${esc(steam)}" target="_blank" rel="noopener">Steam</a>` : '',
+      igdb ? `<a class="rel-btn" href="${esc(igdb)}" target="_blank" rel="noopener">IGDB</a>` : '',
     ].join('');
     const on = liked(g.id);
     const companies = [
@@ -676,8 +685,8 @@
     const stats = statsBlock(g);
     return `
       <article class="rel-card${stats.includes('trk-grid') ? ' has-stats' : ''}">
-        <button class="rel-like ${on ? 'on' : ''}" data-like="${g.id}" aria-label="Like">${on ? '♥' : '♡'}</button>
-        <div class="rel-cover">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_big')}" alt="" loading="lazy" onerror="this.remove()">` : '<span>—</span>'}</div>
+        <button class="rel-like ${on ? 'on' : ''}" data-like="${Number(g.id)}" aria-label="Like">${on ? '♥' : '♡'}</button>
+        <div class="rel-cover">${coverUrl(g.cover, 'cover_big') ? `<img src="${coverUrl(g.cover, 'cover_big')}" alt="" loading="lazy">` : '<span>—</span>'}</div>
         <h3>${esc(g.name)}</h3>
         ${companies ? `<div class="rel-companies">${companies}</div>` : ''}
         ${dates}

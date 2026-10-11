@@ -1,0 +1,9 @@
+{
+  "name": "dispatch",
+  "private": true,
+  "description": "Dependencies of the GitHub Actions scripts (scripts/*.mjs). The web app itself has none.",
+  "dependencies": {
+    "fast-xml-parser": "5.11.2",
+    "web-push": "3.6.7"
+  }
+}

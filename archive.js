@@ -4,7 +4,7 @@
 // Day files are downloaded only for the selected period and kept in memory
 // for the session; the service worker caches past days.
 // Exposes a single global: renderArchive(container).
-// Uses from index.html: SOURCES, state, safeUrl, escapeHtml, toggleFavoriteSnapshot.
+// Uses from app.js: SOURCES, state, safeUrl, escapeHtml, decodeEntities, toggleFavoriteSnapshot.
 (function(){
   const PAGE = 100;            // results shown per "Show more"
   const RANGES = [
@@ -23,7 +23,6 @@
   // Accent- and case-insensitive matching ("réseau" finds "reseau").
   const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
   const srcOf = (id) => (typeof SOURCES !== 'undefined' && SOURCES.find(s => s.id === id)) || { name: id, category: '' };
-  const isFavLink = (link) => typeof state !== 'undefined' && (state.favorites || []).some(f => f.link === link);
 
   function daysInRange(){
     const all = Object.keys((index && index.days) || {}).sort().reverse();
@@ -74,15 +73,19 @@
     return out.sort((x, y) => (x.date < y.date ? 1 : -1));
   }
 
-  // Highlights the searched words inside already-escaped text.
+  // Highlights the searched words. Matching runs on the plain text and each
+  // piece is escaped afterwards, so a search like "amp" can't break "&amp;".
   function mark(text){
-    const safe = escapeHtml(text);
+    const plain = decodeEntities(text);
     const words = query.trim().split(/\s+/).filter(w => w.length > 1).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-    if (!words.length) return safe;
-    return safe.replace(new RegExp(`(${words.join('|')})`, 'gi'), '<mark>$1</mark>');
+    if (!words.length) return escapeHtml(plain);
+    return plain.split(new RegExp(`(${words.join('|')})`, 'gi'))
+      .map((part, i) => (i % 2 ? `<mark>${escapeHtml(part)}</mark>` : escapeHtml(part))).join('');
   }
 
   const dayLabel = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  // Group by the day in YOUR time zone (an article at 00:30 Paris belongs to that day).
+  const localDay = (iso) => { const d = new Date(iso); return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`; };
   const timeLabel = (iso) => new Date(iso).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   function drawResults(){
@@ -100,11 +103,12 @@
       return;
     }
     let html = '', cur = null;
+    const favs = new Set(((typeof state !== 'undefined' && state.favorites) || []).map(f => f.link));
     for (const a of list.slice(0, shown)){
-      const day = a.date.slice(0, 10);
+      const day = localDay(a.date);
       if (day !== cur){ html += `<div class="day-sep">${dayLabel(a.date)}</div>`; cur = day; }
       const s = srcOf(a.sourceId);
-      const fav = isFavLink(a.link);
+      const fav = favs.has(a.link);
       html += `
         <div class="arc-row">
           <div class="arc-time">${timeLabel(a.date)}</div>
@@ -183,7 +187,8 @@
         const star = e.target.closest('.arc-star');
         if (star && typeof toggleFavoriteSnapshot === 'function'){
           let a = null;
-          for (const list of dayCache.values()){ a = list.find(x => safeUrl(x.link) === star.dataset.link); if (a) break; }
+          // dataset gives the attribute back un-escaped: compare with the raw link.
+          for (const list of dayCache.values()){ a = list.find(x => String(x.link).trim() === star.dataset.link); if (a) break; }
           if (!a) return;
           const on = toggleFavoriteSnapshot(a);
           star.classList.toggle('on', on);

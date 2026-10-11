@@ -1,29 +1,31 @@
 // Dispatch service worker.
 //
 // Strategy:
-// - The page and articles.json are "network-first": always try the freshest
-//   version when online, fall back to cache offline.
-// - Other assets (fonts, icons, thumbnails) are "cache-first".
-// - Periodic background sync recomputes the unread badge even when the app
-//   is only backgrounded (no page actively rendering).
-//
-// Note: service workers cannot read localStorage. To recompute the unread
-// count in the background, the page stashes two things into Cache Storage
-// (which the SW *can* read): the latest articles.json response, and a small
-// JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
-// reads both and counts unread = articles not in read and not in hidden.
+// - Same-origin page, scripts and data files (articles.json, releases.json,
+//   recent archive days…) are "network-first": the freshest version when
+//   online, the cached copy offline.
+// - Other same-origin assets (icons, manifest, older archive days that never
+//   change) and Google Fonts are "cache-first".
+// - Third-party images (thumbnails, covers) are NOT stored here: the
+//   browser's normal HTTP cache handles them, and storing hundreds of opaque
+//   images in Cache Storage would grow without limit.
+// - Periodic background sync recomputes the unread badge while the app is
+//   closed, from the cached articles.json + the read/hidden/favorite lists
+//   the page last sent (service workers can't read localStorage).
 
-const CACHE_NAME = 'dispatch-v11';
+const CACHE_NAME = 'dispatch-v12';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
   './index.html',
+  './app.js',
   './releases.js',
   './archive.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
 ];
+const FONT_HOSTS = new Set(['fonts.googleapis.com', 'fonts.gstatic.com']);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -43,89 +45,76 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+const putInCache = (req, res) => caches.open(CACHE_NAME).then((cache) => cache.put(req, res)).catch(() => {});
+
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
-
   const url = new URL(req.url);
+  const sameOrigin = url.origin === self.location.origin;
 
-  // Never intercept GitHub API calls (authenticated, concurrency-sensitive).
-  if (url.hostname === 'api.github.com') return;
+  // Cross-origin: only Google Fonts are cached; everything else (GitHub
+  // API, thumbnails, covers) goes straight to the network as usual.
+  if (!sameOrigin) {
+    if (!FONT_HOSTS.has(url.hostname)) return;
+    event.respondWith(caches.match(req).then((cached) => cached || fetch(req).then((res) => {
+      if (res.ok || res.type === 'opaque') putInCache(req, res.clone());
+      return res;
+    })));
+    return;
+  }
 
-  const isNavigation = req.mode === 'navigate';
   // Archive: index.json and the last two days still change → network-first.
   // Older day files never change → cache-first (default branch below).
   const arcDay = /\/archive\/(\d{4}-\d{2}-\d{2})\.json$/.exec(url.pathname);
   const recentArchive = url.pathname.endsWith('/archive/index.json') ||
     (arcDay && arcDay[1] >= new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10));
-  const isArticlesJson = url.pathname.endsWith('articles.json') || url.pathname.endsWith('releases.json') ||
-    url.pathname.endsWith('releases.js') || url.pathname.endsWith('archive.js') ||
-    url.pathname.endsWith('wishlists.json') || url.pathname.endsWith('tracker.json') || recentArchive;
+  const isNavigation = req.mode === 'navigate';
+  const networkFirst = isNavigation || recentArchive ||
+    /\/(articles|releases|wishlists|tracker)\.json$/.test(url.pathname) ||
+    /\/(app|releases|archive)\.js$/.test(url.pathname);
 
-  if (isNavigation || isArticlesJson) {
+  if (networkFirst) {
     event.respondWith(
       fetch(req)
-        .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
-          return res;
-        })
-        .catch(() => caches.match(req).then((cached) => cached || caches.match('./index.html')))
+        .then((res) => { if (res.ok) putInCache(req, res.clone()); return res; })
+        .catch(() => caches.match(req).then((cached) =>
+          cached || (isNavigation ? caches.match('./index.html') : Response.error())))
     );
     return;
   }
 
   event.respondWith(
-    caches.match(req).then((cached) => {
-      if (cached) return cached;
-      return fetch(req)
-        .then((res) => {
-          if (res && (res.status === 200 || res.type === 'opaque')) {
-            const copy = res.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
-          }
-          return res;
-        })
-        .catch(() => cached);
-    })
+    caches.match(req).then((cached) => cached || fetch(req).then((res) => {
+      if (res.ok) putInCache(req, res.clone());
+      return res;
+    }))
   );
 });
 
-// --- Badge recomputation ------------------------------------------------
-
+// --- Badge recomputation (background) ------------------------------------
 async function readCachedJson(request){
   try {
-    const cache = await caches.open(CACHE_NAME);
-    const res = await cache.match(request);
-    if (!res) return null;
-    return await res.json();
+    const res = await (await caches.open(CACHE_NAME)).match(request);
+    return res ? await res.json() : null;
   } catch (e) { return null; }
 }
 
+// Unread = in the feed, not read, not deleted, not a favorite — the same
+// number as the "All" badge in the app.
 async function computeAndSetBadge(){
   try {
-    let articlesData = null;
+    let data = null;
     try {
-      const res = await fetch('./articles.json', { cache: 'no-store' });
-      if (res.ok) {
-        articlesData = await res.clone().json();
-        const cache = await caches.open(CACHE_NAME);
-        cache.put('./articles.json', res.clone());
-      }
+      const res = await fetch('./articles.json', { cache: 'no-cache' });
+      if (res.ok) { data = await res.clone().json(); putInCache('./articles.json', res); }
     } catch (e) { /* offline */ }
+    if (!data) data = await readCachedJson('./articles.json');
+    if (!data || !Array.isArray(data.articles)) return;
 
-    if (!articlesData) articlesData = await readCachedJson('./articles.json');
-    if (!articlesData || !Array.isArray(articlesData.articles)) return;
-
-    const stateBlob = await readCachedJson(STATE_CACHE_KEY) || { read: [], hidden: [] };
-    const readSet = new Set(stateBlob.read || []);
-    const hiddenSet = new Set(stateBlob.hidden || []);
-
-    const unread = articlesData.articles.filter((a) => {
-      const id = a.link;
-      return !readSet.has(id) && !hiddenSet.has(id);
-    }).length;
-
+    const blob = await readCachedJson(STATE_CACHE_KEY) || {};
+    const done = new Set([...(blob.read || []), ...(blob.hidden || []), ...(blob.favorites || [])]);
+    const unread = data.articles.filter((a) => !done.has(a.link)).length;
     if ('setAppBadge' in self.navigator) {
       if (unread > 0) await self.navigator.setAppBadge(unread);
       else await self.navigator.clearAppBadge();
@@ -134,25 +123,16 @@ async function computeAndSetBadge(){
 }
 
 self.addEventListener('periodicsync', (event) => {
-  if (event.tag === 'dispatch-badge-refresh') {
-    event.waitUntil(computeAndSetBadge());
-  }
+  if (event.tag === 'dispatch-badge-refresh') event.waitUntil(computeAndSetBadge());
 });
 
+// The open app sets the badge itself; it only sends the lists so the
+// background computation above stays in step with it.
 self.addEventListener('message', (event) => {
   const data = event.data || {};
-  if (data.type === 'dispatch-state-update') {
-    event.waitUntil((async () => {
-      try {
-        const cache = await caches.open(CACHE_NAME);
-        const body = JSON.stringify({ read: data.read || [], hidden: data.hidden || [] });
-        await cache.put(STATE_CACHE_KEY, new Response(body, { headers: { 'Content-Type': 'application/json' } }));
-      } catch (e) { /* ignore */ }
-      await computeAndSetBadge();
-    })());
-  } else if (data.type === 'dispatch-refresh-badge') {
-    event.waitUntil(computeAndSetBadge());
-  }
+  if (data.type !== 'dispatch-state-update') return;
+  const body = JSON.stringify({ read: data.read || [], hidden: data.hidden || [], favorites: data.favorites || [] });
+  event.waitUntil(putInCache(STATE_CACHE_KEY, new Response(body, { headers: { 'Content-Type': 'application/json' } })));
 });
 
 // --- Push notifications ------------------------------------------------
@@ -164,10 +144,9 @@ self.addEventListener('message', (event) => {
 self.addEventListener('push', (event) => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch (e) { data = { title: 'Dispatch', body: event.data ? event.data.text() : '' }; }
-  const title = data.title || 'Dispatch';
   event.waitUntil(Promise.all([
-    self.registration.showNotification(title, {
-      body: data.body || 'New articles to review',
+    self.registration.showNotification(String(data.title || 'Dispatch').slice(0, 120), {
+      body: String(data.body || 'New articles to review').slice(0, 240),
       icon: './icons/icon-192.png',
       badge: './icons/icon-maskable-192.png',
       tag: 'dispatch-new-articles',
@@ -175,14 +154,20 @@ self.addEventListener('push', (event) => {
       data: { url: data.url || './' },
     }),
     (async () => {
-      try { if ('setAppBadge' in self.navigator && data.count > 0) await self.navigator.setAppBadge(data.count); } catch (e) { /* unsupported */ }
+      try { if ('setAppBadge' in self.navigator && data.count > 0) await self.navigator.setAppBadge(Number(data.count)); } catch (e) { /* unsupported */ }
     })(),
   ]));
 });
 
+// Tapping the notification focuses Dispatch (or opens it). Only URLs inside
+// this app are ever opened, whatever the payload says.
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
-  const url = (event.notification.data && event.notification.data.url) || './';
+  let url = new URL('./', self.registration.scope).href;
+  try {
+    const wanted = new URL((event.notification.data && event.notification.data.url) || './', self.registration.scope);
+    if (wanted.href.startsWith(self.registration.scope)) url = wanted.href;
+  } catch (e) { /* keep the app root */ }
   event.waitUntil((async () => {
     const wins = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
     for (const w of wins) {
