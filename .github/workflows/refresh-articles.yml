@@ -21,7 +21,7 @@ jobs:
           node-version: '24'
 
       - name: Install dependencies
-        run: npm install fast-xml-parser
+        run: npm install fast-xml-parser web-push
 
       - name: Fetch feeds and build articles.json (+ purge state)
         run: node scripts/fetch-articles.mjs
@@ -37,5 +37,19 @@ jobs:
           git diff --staged --quiet && exit 0
           git commit -m "chore: refresh articles.json + archive [skip ci]"
           # Other workflows (releases, tracker) push too: rebase onto them if needed.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+
+      - name: Push notification for new articles
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          PUSH_DELAY_S: '60'   # let GitHub Pages publish the new articles.json first
+        run: node scripts/send-push.mjs
+
+      - name: Save notification state
+        run: |
+          if [ -f push-state.json ]; then git add push-state.json; fi
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: push-state [skip ci]"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
