@@ -1,4 +1,5 @@
-// Dispatch — "Sorties" tab: monthly release calendar + day slider popup.
+// Dispatch — Releases tab: monthly calendar + day slider popup, My games,
+// Top wishlists and the after-launch performance sheet.
 // Reads releases.json (built daily by scripts/fetch-releases.mjs).
 // Exposes a single global: renderReleases(container).
 // Likes use isGameLiked(id) / toggleGameLike(game) from index.html, which
@@ -32,7 +33,7 @@
     for (const g of json.games || []){
       byId.set(g.id, g);
       if (!byDay.has(g.date)) byDay.set(g.date, []);
-      byDay.get(g.date).push(g);   // already sorted by hypes desc server-side
+      byDay.get(g.date).push(g);   // server order: Steam wishlist rank, then hypes
     }
   }
 
@@ -63,9 +64,9 @@
   function segHtml(){
     const n = likedList().length;
     return `<div class="rel-seg">
-      <button data-view="cal" class="${view === 'cal' ? 'on' : ''}">📅 Calendar</button>
-      <button data-view="likes" class="${view === 'likes' ? 'on' : ''}">♥ My games <span class="count">${n}</span></button>
-      <button data-view="top" class="${view === 'top' ? 'on' : ''}">🏆 Top wishlists</button>
+      <button data-view="cal" class="${view === 'cal' ? 'on' : ''}">Calendar</button>
+      <button data-view="likes" class="${view === 'likes' ? 'on' : ''}">My games${n ? `<span class="count">${n}</span>` : ''}</button>
+      <button data-view="top" class="${view === 'top' ? 'on' : ''}">Top wishlists</button>
     </div>`;
   }
   function draw(){
@@ -154,7 +155,7 @@
       </div>
       <div class="cal-grid cal-weekdays">${WEEKDAYS.map(w => `<div>${w}</div>`).join('')}</div>
       <div class="cal-grid">${cells}</div>
-      <div class="cal-foot">IGDB data · updated ${data ? new Date(data.generatedAt).toLocaleDateString('en-GB') : '—'}</div>`;
+      <div class="cal-foot">IGDB data, updated ${data ? new Date(data.generatedAt).toLocaleDateString('en-GB') : '—'}</div>`;
   }
 
   // ---- Top wishlists: Steam's most-wishlisted list (wishlists.json) ------
@@ -200,7 +201,7 @@
     const k = topSort === 'new' ? 'd7' : topSort;
     if (top.momentumSince && top.momentumSince[k]) return '';
     const days = { d1: 1, d7: 7, d30: 30 }[k];
-    return `<div class="empty">NOT ENOUGH HISTORY YET — this view needs ${days} day${days > 1 ? 's' : ''} of daily Steam snapshots. It fills in automatically.<span class="cursor"></span></div>`;
+    return `<div class="empty">Not enough history yet. This view needs ${days} day${days > 1 ? 's' : ''} of daily Steam snapshots and fills in on its own.</div>`;
   }
   function drawTopList(){
     const el = container.querySelector('#topList');
@@ -217,15 +218,15 @@
           <span class="top-when">${g.date ? `<span class="top-cal">📅 ${esc(shortDate(g.date))}</span>` : esc(g.released || 'No date')}</span>
         </span>
       </a>`).join('')
-      : '<div class="empty">NO MATCHING GAMES<span class="cursor"></span></div>');
+      : '<div class="empty">No games match.</div>');
     const n = container.querySelector('#topCount');
     if (n) n.textContent = `${rows.length} of ${(top.games || []).length}`;
   }
   function drawTop(){
     if (!top){
-      container.innerHTML = segHtml() + '<div class="empty">LOADING TOP WISHLISTS<span class="cursor"></span></div>';
+      container.innerHTML = segHtml() + '<div class="empty">Loading the Steam top list<span class="cursor"></span></div>';
       loadTop().then(() => { if (view === 'top') drawTop(); })
-        .catch(() => { if (view === 'top') container.innerHTML = segHtml() + '<div class="empty">TOP WISHLISTS UNAVAILABLE — run the releases workflow to create wishlists.json<span class="cursor"></span></div>'; });
+        .catch(() => { if (view === 'top') container.innerHTML = segHtml() + '<div class="empty">Top wishlists not found. Run “Refresh Dispatch releases” in GitHub Actions.</div>'; });
       return;
     }
     const chip = (id, label) => `<button class="top-chip ${topFilter === id ? 'on' : ''}" data-topfilter="${id}">${label}</button>`;
@@ -514,7 +515,7 @@
 
     container.innerHTML = segHtml() + (list.length
       ? groups(upcoming) + (past.length ? `<div class="like-month past">Already released</div>${past.map(row).join('')}` : '')
-      : '<div class="empty">NO LIKED GAMES YET — TAP ♡ ON A GAME CARD<span class="cursor"></span></div>');
+      : '<div class="empty">No liked games yet. Tap ♡ on a game card to follow it here.</div>');
   }
 
   // ---- Day popup: drag slider ------------------------------------------
@@ -672,8 +673,9 @@
     const dates = (g.dates || []).length > 1
       ? `<div class="rel-dates">${g.dates.map(x => `${esc(shortDate(x.date))} <span>(${esc(x.platforms.join(', '))})</span>`).join(' · ')}</div>`
       : '';
+    const stats = statsBlock(g);
     return `
-      <article class="rel-card">
+      <article class="rel-card${stats.includes('trk-grid') ? ' has-stats' : ''}">
         <button class="rel-like ${on ? 'on' : ''}" data-like="${g.id}" aria-label="Like">${on ? '♥' : '♡'}</button>
         <div class="rel-cover">${g.cover ? `<img src="${coverUrl(g.cover, 'cover_big')}" alt="" loading="lazy" onerror="this.remove()">` : '<span>—</span>'}</div>
         <h3>${esc(g.name)}</h3>
@@ -683,7 +685,7 @@
           ${g.platforms.map(p => `<span class="rel-chip">${esc(p)}</span>`).join('')}
         </div>
         ${g.wlRank ? `<div class="rel-rank-row">${rankBadge(g)}${g.wl7 ? ` <span class="rel-mo">${deltaBadge({ d7: g.wl7 })} in 7 days</span>` : ''}</div>` : ''}
-        ${statsBlock(g)}
+        ${stats}
         ${g.genres.length ? `<div class="rel-genres">${esc(g.genres.join(' · '))}</div>` : ''}
         ${g.summary ? `<p class="rel-summary">${esc(g.summary)}</p>` : ''}
         <div class="rel-links">${links}</div>
@@ -772,12 +774,12 @@
       monthCursor = new Date(n.getFullYear(), n.getMonth(), 1);
     }
     if (data || view !== 'cal') draw();
-    else container.innerHTML = '<div class="empty">LOADING CALENDAR<span class="cursor"></span></div>';
+    else container.innerHTML = '<div class="empty">Loading calendar<span class="cursor"></span></div>';
 
     load()
       .then(() => { if (container.isConnected && !container.hidden) draw(); })
       .catch(() => {
-        if (!data && view === 'cal') container.innerHTML = '<div class="empty">CALENDAR UNAVAILABLE — releases.json not found<span class="cursor"></span></div>';
+        if (!data && view === 'cal') container.innerHTML = '<div class="empty">Calendar not found. Run “Refresh Dispatch releases” in GitHub Actions.</div>';
       });
   };
 

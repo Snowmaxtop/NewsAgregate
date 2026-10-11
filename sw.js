@@ -13,12 +13,13 @@
 // JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
 // reads both and counts unread = articles not in read and not in hidden.
 
-const CACHE_NAME = 'dispatch-v10';
+const CACHE_NAME = 'dispatch-v11';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
   './index.html',
   './releases.js',
+  './archive.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',

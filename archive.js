@@ -22,7 +22,7 @@
 
   // Accent- and case-insensitive matching ("réseau" finds "reseau").
   const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-  const srcOf = (id) => (typeof SOURCES !== 'undefined' && SOURCES.find(s => s.id === id)) || { name: id, category: '', color: '' };
+  const srcOf = (id) => (typeof SOURCES !== 'undefined' && SOURCES.find(s => s.id === id)) || { name: id, category: '' };
   const isFavLink = (link) => typeof state !== 'undefined' && (state.favorites || []).some(f => f.link === link);
 
   function daysInRange(){
@@ -82,7 +82,7 @@
     return safe.replace(new RegExp(`(${words.join('|')})`, 'gi'), '<mark>$1</mark>');
   }
 
-  const dayLabel = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase();
+  const dayLabel = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
   const timeLabel = (iso) => new Date(iso).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   function drawResults(){
@@ -96,23 +96,22 @@
       : `${total.toLocaleString('en-GB')} articles in this period`;
 
     if (!list.length){
-      el.innerHTML = `<div class="empty">${query.trim() ? `NO RESULTS FOR "${escapeHtml(query)}"` : 'NO ARTICLES IN THIS PERIOD'}<span class="cursor"></span></div>`;
+      el.innerHTML = `<div class="empty">${query.trim() ? `No results for “${escapeHtml(query)}”.` : 'No articles in this period.'}</div>`;
       return;
     }
     let html = '', cur = null;
     for (const a of list.slice(0, shown)){
       const day = a.date.slice(0, 10);
-      if (day !== cur){ html += `<div class="day-sep"><span>${dayLabel(a.date)}</span></div>`; cur = day; }
+      if (day !== cur){ html += `<div class="day-sep">${dayLabel(a.date)}</div>`; cur = day; }
       const s = srcOf(a.sourceId);
       const fav = isFavLink(a.link);
       html += `
         <div class="arc-row">
           <div class="arc-time">${timeLabel(a.date)}</div>
           <div class="arc-body">
-            <span class="tag ${s.color}">${escapeHtml(s.category)}</span>
             <a class="headline" href="${safeUrl(a.link) || '#'}" target="_blank" rel="noopener">${mark(a.title)}</a>
             ${a.summary ? `<div class="summary">${mark(a.summary)}</div>` : ''}
-            <div class="source-name">${escapeHtml(s.name)}</div>
+            <div class="meta"><span>${escapeHtml(s.name)}</span>${s.category === 'industry' ? '<span class="ind">Industry</span>' : ''}</div>
           </div>
           <button class="star arc-star ${fav ? 'on' : ''}" data-link="${safeUrl(a.link)}" title="${fav ? 'Remove from favorites' : 'Add to favorites'}">${fav ? '★' : '☆'}</button>
         </div>`;
@@ -127,13 +126,13 @@
     try {
       if (!index) await loadIndex();
     } catch (e){
-      el.innerHTML = '<div class="empty">ARCHIVE NOT FOUND — it is created by the next "Refresh Dispatch articles" run<span class="cursor"></span></div>';
+      el.innerHTML = '<div class="empty">Archive not found. It is created by the next “Refresh Dispatch articles” run.</div>';
       return;
     }
     const days = daysInRange();
     const missing = days.filter(d => !dayCache.has(d)).length;
     if (missing){
-      el.innerHTML = `<div class="empty">LOADING ${missing} DAY${missing > 1 ? 'S' : ''} OF ARCHIVE…<span class="cursor"></span></div>`;
+      el.innerHTML = `<div class="empty">Loading ${missing} day${missing > 1 ? 's' : ''} of archive<span class="cursor"></span></div>`;
       await loadDays(days, (done, n) => {
         if (token !== loadToken) return;
         const meta = container.querySelector('#arcMeta');
@@ -149,8 +148,9 @@
     container.innerHTML = `
       <div class="arc-tools">
         <div class="search-row arc-search-row">
-          <span class="search-icon">🔍</span>
-          <input type="search" id="arcQuery" class="search-bar" placeholder="Search titles and summaries…" value="${escapeHtml(query)}" autocomplete="off">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="arcQuery" class="search-bar" placeholder="Search past articles" value="${escapeHtml(query)}" autocomplete="off" enterkeyhint="search">
+          <button type="button" id="arcClear" class="clear-search" aria-label="Clear search" ${query ? '' : 'hidden'}>✕</button>
         </div>
         <div class="arc-filters">
           <select id="arcRange" class="source-select" aria-label="Period">${RANGES.map(r => `<option value="${r.id}" ${r.id === range ? 'selected' : ''}>${r.label}</option>`).join('')}</select>
@@ -160,9 +160,15 @@
       </div>
       <div id="arcResults"></div>`;
 
-    container.querySelector('#arcQuery').addEventListener('input', (e) => {
+    const input = container.querySelector('#arcQuery'), clear = container.querySelector('#arcClear');
+    input.addEventListener('input', (e) => {
       query = e.target.value; shown = PAGE;
+      clear.hidden = !query;
       clearTimeout(debounce); debounce = setTimeout(drawResults, 180);
+    });
+    clear.addEventListener('click', () => {
+      input.value = ''; query = ''; shown = PAGE; clear.hidden = true;
+      input.focus(); drawResults();
     });
     container.querySelector('#arcRange').addEventListener('change', (e) => { range = e.target.value; shown = PAGE; refreshData(); });
     container.querySelector('#arcSource').addEventListener('change', (e) => { source = e.target.value; shown = PAGE; drawResults(); });
