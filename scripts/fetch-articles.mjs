@@ -8,7 +8,6 @@ import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
 
 const SOURCES = [
   { id: 'ign',       feed: 'https://fr.ign.com/feed.xml' },
-  { id: 'rps',       feed: 'https://www.rockpapershotgun.com/feed/' },
   { id: 'gamedev',   feed: 'https://www.gamedeveloper.com/rss.xml' },
   // Several candidate URLs: the freshest working feed wins (the old .rss
   // URL still answers but may no longer be updated).
@@ -22,7 +21,6 @@ const SOURCES = [
   { id: 'gamekult',  feed: 'https://www.gamekult.com/feed.xml' },
   { id: 'kotaku',    feed: 'https://kotaku.com/feed' },
   { id: 'pcgamer',   feed: 'https://www.pcgamer.com/feeds.xml' },
-  { id: 'eurogamer', feed: 'https://www.eurogamer.net/?format=rss' },
   { id: 'polygon',   feed: 'https://www.polygon.com/rss/index.xml' },
   // Industry analysis & mobile business. Game File posts every few days,
   // so it keeps 7 days of items (retentionDays) instead of the default 1.
