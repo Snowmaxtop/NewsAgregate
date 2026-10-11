@@ -13,7 +13,7 @@
 //   closed, from the cached articles.json + the read/hidden/favorite lists
 //   the page last sent (service workers can't read localStorage).
 
-const CACHE_NAME = 'dispatch-v12';
+const CACHE_NAME = 'dispatch-v13';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
@@ -71,7 +71,7 @@ self.addEventListener('fetch', (event) => {
     (arcDay && arcDay[1] >= new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10));
   const isNavigation = req.mode === 'navigate';
   const networkFirst = isNavigation || recentArchive ||
-    /\/(articles|releases|wishlists|tracker)\.json$/.test(url.pathname) ||
+    /\/(articles|releases|wishlists|tracker|push-state)\.json$/.test(url.pathname) ||
     /\/(app|releases|archive)\.js$/.test(url.pathname);
 
   if (networkFirst) {

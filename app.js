@@ -92,6 +92,8 @@ const SOURCES = [
   { id:'gamefile',  name:'Game File',         category:'industry', home:'https://www.gamefile.news/' },
   { id:'pgbiz',     name:'PocketGamer.biz',   category:'industry', home:'https://www.pocketgamer.biz/' },
   { id:'mgbiz',     name:'MobileGamer.biz',   category:'industry', home:'https://mobilegamer.biz/' },
+  { id:'gdco',      name:'GameDiscoverCo',    category:'industry', home:'https://newsletter.gamediscover.co/' },
+  { id:'htmag',     name:'How To Market A Game', category:'industry', home:'https://howtomarketagame.com/' },
 ];
 
 let state = { read: [], favorites: [], hidden: [], likedGames: [], push: null };
@@ -192,7 +194,9 @@ function mergeStates(base, local, remote){
   const favKey = (f) => (typeof f === 'string' ? f : f && f.link);
   const subsOf = (s) => (s.push && s.push.subscriptions) || [];
   const subs = merge3(subsOf(base), subsOf(local), subsOf(remote), (x) => x && x.endpoint);
-  const publicKey = (remote.push && remote.push.publicKey) || (local.push && local.push.publicKey) || null;
+  // The notification key: GitHub's, unless this device replaced it (reset).
+  const baseKey = base.push && base.push.publicKey, localKey = local.push && local.push.publicKey;
+  const publicKey = localKey && localKey !== baseKey ? localKey : (remote.push && remote.push.publicKey) || localKey || null;
   return {
     read: merge3(base.read, local.read, remote.read, same),
     hidden: merge3(base.hidden, local.hidden, remote.hidden, same),
@@ -252,7 +256,7 @@ const httpError = (what, status, detail = '') => Object.assign(new Error(`GitHub
 // limit), which keeps the 30-second polling cheap.
 let remoteEtag = null;
 let etagSupported = true;
-async function githubGetFile(cfg, { conditional = false } = {}){
+async function githubGetFile(cfg, { conditional = false, peek = false } = {}){
   const headers = { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github+json' };
   const useEtag = conditional && etagSupported && remoteEtag;
   if (useEtag) headers['If-None-Match'] = remoteEtag;
@@ -267,7 +271,7 @@ async function githubGetFile(cfg, { conditional = false } = {}){
   if (res.status === 304) return { notModified: true };
   if (res.status === 404) return { content: null, sha: null };
   if (!res.ok) throw httpError('GET', res.status);
-  remoteEtag = res.headers.get('ETag') || null;
+  if (!peek) remoteEtag = res.headers.get('ETag') || null;   // peek: a look that adopts nothing
   const data = await res.json();
   return { content: JSON.parse(base64ToUtf8(data.content)), sha: data.sha };
 }
@@ -1376,40 +1380,90 @@ async function currentPushSubscription(){
   return reg.pushManager.getSubscription();
 }
 
+// Push now and wait for the result (keeps the Save counter right even if
+// another save was already running).
+async function saveNow(){
+  while (manualSaveRunning || saveInFlight) await new Promise(r => setTimeout(r, 150));
+  if (!pendingChanges) setPending(1);
+  await manualSave();
+  return lastSaveOk;
+}
+
+async function newPushKeys(){
+  const keys = await generateVapidKeys();
+  state.push = { publicKey: keys.publicKey, subscriptions: [] };
+  try { localStorage.setItem(PUSH_PRIV_KEY, keys.privateKey); } catch (e) {}
+}
+
+// Server side, as the last articles run recorded it in push-state.json:
+// devices it can see, missing secret, wrong key, refused sends, last reminder.
+const fmtWhen = (iso) => new Date(iso).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+async function loadPushServerStatus(){
+  const el = document.getElementById('pushServer');
+  const resetBtn = document.getElementById('pushResetBtn');
+  resetBtn.hidden = true;
+  let ps = null;
+  try { const res = await fetch('./push-state.json', { cache: 'no-cache' }); if (res.ok) ps = await res.json(); } catch (e) { /* offline */ }
+  const s = ps && ps.status;
+  let text;
+  if (!ps) text = 'Server: no check recorded yet. It runs with every articles update (every 20 min).';
+  else if (!s) text = 'Server: running. Its detailed status appears after the next articles update.';
+  else if (/^Last reminder /.test(s.text) && ps.lastSentAt) text = `Server: last reminder ${fmtWhen(ps.lastSentAt)}, ${s.text.replace(/^Last reminder /, '')}`;
+  else text = `Server: ${s.text}` + (s.code === 'ok' && ps.lastSentAt ? ` Last reminder ${fmtWhen(ps.lastSentAt)}.` : '');
+  if (s && s.code !== 'ok' && s.since) text += ` (Since ${fmtWhen(s.since)}.)`;
+  el.textContent = text;
+  el.classList.toggle('good', !!s && s.code === 'ok');
+  el.classList.toggle('bad', !!s && s.code !== 'ok');
+  el.hidden = false;
+  resetBtn.hidden = !(s && s.code === 'key-mismatch');
+}
+
 async function refreshPushUI(){
   const status = document.getElementById('pushStatus');
   const onBtn = document.getElementById('pushOnBtn'), offBtn = document.getElementById('pushOffBtn');
+  const testBtn = document.getElementById('pushTestBtn');
   const keyBox = document.getElementById('pushKeyBox');
   let priv = null; try { priv = localStorage.getItem(PUSH_PRIV_KEY); } catch (e) {}
   keyBox.hidden = !priv;
   if (priv) document.getElementById('pushPrivKey').value = priv;
   if (!('PushManager' in window) || !('Notification' in window)){
     status.textContent = 'This browser does not support push notifications. On Android, use Chrome with Dispatch installed on the home screen.';
-    onBtn.hidden = true; offBtn.hidden = true; return;
+    onBtn.hidden = true; offBtn.hidden = true; testBtn.hidden = true; return;
   }
+  testBtn.hidden = Notification.permission !== 'granted';
   const sub = await currentPushSubscription().catch(() => null);
-  const known = sub && ((state.push && state.push.subscriptions) || []).some(s => s.endpoint === sub.endpoint);
+  const subs = (state.push && state.push.subscriptions) || [];
+  const known = sub && subs.some(s => s.endpoint === sub.endpoint);
   if (sub && known){
-    status.textContent = `Notifications are on for this device ✓ (${(state.push.subscriptions || []).length} device${state.push.subscriptions.length > 1 ? 's' : ''} in total).`;
+    status.textContent = `This device is registered ✓ (${subs.length} device${subs.length > 1 ? 's' : ''} in total).`;
     onBtn.hidden = true; offBtn.hidden = false;
   } else {
     status.textContent = Notification.permission === 'denied'
       ? 'Notifications are blocked for Dispatch in your phone settings. Allow them there, then come back here.'
+      : sub ? 'This device has a subscription that is not in your sync file, so the server can\'t reach it. Tap "Turn on" to save it.'
       : 'Get a notification on this device when new articles arrive (at most once an hour, never between 23:00 and 07:00).';
     onBtn.hidden = false; offBtn.hidden = true;
   }
+  loadPushServerStatus();
 }
 
 async function enablePush(){
   const status = document.getElementById('pushStatus');
-  if (!getGithubConfig()){ status.textContent = 'Connect GitHub sync first: the subscription is stored in your sync file so the server can reach this device.'; return; }
+  const cfg = getGithubConfig();
+  if (!cfg){ status.textContent = 'Connect GitHub sync first: the subscription is stored in your sync file so the server can reach this device.'; return; }
   try {
     const perm = await Notification.requestPermission();
     if (perm !== 'granted'){ status.textContent = 'Permission not granted, so notifications stay off.'; return; }
-    if (!state.push || !state.push.publicKey){
-      const keys = await generateVapidKeys();
-      state.push = { publicKey: keys.publicKey, subscriptions: [] };
-      try { localStorage.setItem(PUSH_PRIV_KEY, keys.privateKey); } catch (e) {}
+    status.textContent = 'Turning on…';
+    // Use the key already on GitHub: its private half is the VAPID_PRIVATE_KEY
+    // secret. A new pair is made only when GitHub has none, so a stale copy
+    // on this device can never create a second, mismatched key.
+    const remote = await githubGetFile(cfg, { peek: true });
+    const rp = remote.content && remote.content.push;
+    if (rp && rp.publicKey) {
+      if (!state.push || state.push.publicKey !== rp.publicKey) state.push = { publicKey: rp.publicKey, subscriptions: rp.subscriptions || [] };
+    } else if (!state.push || !state.push.publicKey) {
+      await newPushKeys();
     }
     const reg = await navigator.serviceWorker.ready;
     let sub = await reg.pushManager.getSubscription();
@@ -1417,16 +1471,17 @@ async function enablePush(){
     if (sub && sub.options && sub.options.applicationServerKey && b64url(sub.options.applicationServerKey) !== state.push.publicKey){ await sub.unsubscribe(); sub = null; }
     if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64url(state.push.publicKey) });
     const json = sub.toJSON();
-    const subs = (state.push.subscriptions || []).filter(s => s.endpoint !== json.endpoint);
-    subs.push({ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() });
-    state.push.subscriptions = subs;
-    saveStateInstant();
-    await saveState();
-    status.textContent = 'Saved. Notifications start with the next articles run that finds something new.';
+    state.push.subscriptions = (state.push.subscriptions || []).filter(s => s.endpoint !== json.endpoint)
+      .concat({ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() });
+    markDirty();
+    const ok = await saveNow();
+    await refreshPushUI();
+    status.textContent = ok
+      ? 'Saved to GitHub ✓ The server picks this device up at the next articles update (within 20 min). Use "Show a test notification" to check this phone can display them.'
+      : 'Not saved to GitHub, so the server can\'t reach this device yet. Check the sync (⋯ menu), then tap "Turn on" again.';
   } catch (e) {
     status.textContent = 'Could not turn notifications on: ' + e.message;
   }
-  refreshPushUI();
 }
 
 async function disablePush(){
@@ -1435,11 +1490,48 @@ async function disablePush(){
     if (sub){
       if (state.push) state.push.subscriptions = (state.push.subscriptions || []).filter(s => s.endpoint !== sub.endpoint);
       await sub.unsubscribe();
-      saveStateInstant();
-      await saveState();
+      markDirty();
+      await saveNow();
     }
   } catch (e) { /* ignore */ }
   refreshPushUI();
+}
+
+// Only when the server reports that the secret doesn't match the saved key:
+// new key pair, this device subscribed again, other devices must turn on again.
+async function resetPushKeys(){
+  if (!confirm('Create new notification keys? You will then copy the new private key into the VAPID_PRIVATE_KEY secret on GitHub, and other devices must turn notifications on again.')) return;
+  const status = document.getElementById('pushStatus');
+  try {
+    const old = await currentPushSubscription();
+    if (old) await old.unsubscribe();
+    await newPushKeys();
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64url(state.push.publicKey) });
+    const json = sub.toJSON();
+    state.push.subscriptions = [{ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() }];
+    markDirty();
+    const ok = await saveNow();
+    await refreshPushUI();
+    status.textContent = ok
+      ? 'New keys saved ✓ Now copy the private key below into the VAPID_PRIVATE_KEY secret on GitHub (replace the old value).'
+      : 'New keys made but not saved to GitHub. Check the sync, then try again.';
+  } catch (e) {
+    status.textContent = 'Could not reset the keys: ' + e.message;
+  }
+}
+
+// Shows a notification straight from this phone: if it doesn't appear,
+// the phone (Chrome / Dispatch notification settings) is blocking them.
+async function showTestNotification(){
+  const status = document.getElementById('pushStatus');
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    await reg.showNotification('Dispatch test', { body: 'This device can show Dispatch notifications.', icon: './icons/icon-192.png', badge: './icons/icon-maskable-192.png', tag: 'dispatch-test' });
+    status.textContent = 'Test sent to this phone. Nothing appeared? Allow notifications for Chrome and for Dispatch in the phone settings.';
+  } catch (e) {
+    status.textContent = 'This phone could not show a notification: ' + e.message;
+  }
 }
 
 // Tapping the notification while the app is open: show the feed, refreshed.
@@ -1455,6 +1547,8 @@ if ('serviceWorker' in navigator) {
 
 document.getElementById('pushOnBtn').addEventListener('click', enablePush);
 document.getElementById('pushOffBtn').addEventListener('click', disablePush);
+document.getElementById('pushTestBtn').addEventListener('click', showTestNotification);
+document.getElementById('pushResetBtn').addEventListener('click', resetPushKeys);
 // The private key only needs to live in the GitHub secret: once it's there,
 // remove this device's copy so nothing on the phone can leak it.
 document.getElementById('pushForgetBtn').addEventListener('click', () => {

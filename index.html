@@ -34,6 +34,7 @@
     --float-b:calc(var(--tabbar-h) + var(--safe-b) + 14px);
   }
   *{box-sizing:border-box;}
+  [hidden]{display:none !important;}   /* class display rules must never un-hide */
   html,body{margin:0;padding:0;overflow-x:hidden;}
   body{
     background:var(--ink);color:var(--paper);
@@ -324,10 +325,14 @@
   .modal-danger:hover{color:var(--danger);border-color:var(--danger);}
   .modal-cancel:hover{border-color:var(--paper);}
   .push-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:4px 0 16px;}
+  .push-section .link-btn{margin:10px 0 0;}
   .push-section h3{margin:0 0 6px;font-family:'Space Grotesk', sans-serif;font-size:15px;color:var(--paper);}
   .push-key-row{display:flex;gap:6px;margin-bottom:10px;}
   .push-key-row input{flex:1;min-width:0;margin-top:0;font-size:11px;}
   .push-key-row button{padding:8px 12px;border-radius:8px;border:1px solid var(--line-strong);background:var(--ink);color:var(--paper);font-size:12px;cursor:pointer;}
+  .push-server{margin:0 0 14px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--ink);font-size:12.5px;line-height:1.5;color:var(--paper);}
+  .push-server.good{border-color:var(--accent);}
+  .push-server.bad{border-color:var(--danger);}
   .link-btn{display:block;margin:0 0 12px;padding:4px 0;background:none;border:none;color:var(--accent);font-size:12.5px;text-align:left;text-decoration:underline;cursor:pointer;}
 
   @media (max-width:380px){
@@ -619,6 +624,7 @@
     <div class="push-section">
       <h3>🔔 Notifications</h3>
       <p class="modal-note" id="pushStatus">Get a notification on this device when new articles arrive (at most once an hour, never between 23:00 and 07:00).</p>
+      <p class="push-server" id="pushServer" role="status" hidden></p>
       <div class="push-key" id="pushKeyBox" hidden>
         <p class="modal-hint"><b>One-time setup:</b> copy this private key and add it to your repo as a GitHub secret named <code>VAPID_PRIVATE_KEY</code> (Settings → Secrets and variables → Actions). It is only shown on this device.</p>
         <div class="push-key-row"><input type="text" id="pushPrivKey" readonly><button type="button" id="pushCopyBtn">Copy</button></div>
@@ -627,7 +633,9 @@
       <div class="modal-actions">
         <button type="button" id="pushOnBtn" class="modal-accent">Turn on for this device</button>
         <button type="button" id="pushOffBtn" class="modal-danger" hidden>Turn off for this device</button>
+        <button type="button" id="pushTestBtn" hidden>Show a test notification</button>
       </div>
+      <button type="button" id="pushResetBtn" class="link-btn" hidden>Reset notification keys</button>
     </div>
 
     <div class="modal-actions">
