@@ -563,6 +563,7 @@ function updateAppBadge(count){
 
   clearTimeout(badgeMsgTimer);
   badgeMsgTimer = setTimeout(() => {
+    syncReminderNotification(count);
     try {
       if (navigator.serviceWorker && navigator.serviceWorker.controller) {
         navigator.serviceWorker.controller.postMessage({
@@ -574,6 +575,29 @@ function updateAppBadge(count){
       }
     } catch (e) { /* SW not ready yet */ }
   }, 1500);
+}
+
+// Android can't put a number on a web app's icon (no Badging API there):
+// the icon bubble comes from the notification. So the reminder the server
+// sent is kept in step with "All": as you triage, its count goes down
+// (updated silently), and at zero it's removed — with the icon bubble.
+// Only an existing reminder is touched; none is ever created here.
+const REMINDER_TAG = 'dispatch-new-articles';
+const reminderTitle = (n) => `📰 ${n} article${n > 1 ? 's' : ''} waiting`;
+async function syncReminderNotification(count){
+  try {
+    if (typeof Notification === 'undefined' || Notification.permission !== 'granted' || !('serviceWorker' in navigator)) return;
+    const reg = await navigator.serviceWorker.getRegistration();
+    if (!reg || !reg.getNotifications) return;
+    const [n] = await reg.getNotifications({ tag: REMINDER_TAG });
+    if (!n) return;
+    if (count <= 0) { n.close(); return; }
+    if (n.data && n.data.count === count) return;
+    await reg.showNotification(reminderTitle(count), {
+      body: 'Tap to review them in Dispatch.', icon: './icons/icon-192.png', badge: './icons/badge-96.png',
+      tag: REMINDER_TAG, renotify: false, silent: true, data: { url: './', count },
+    });
+  } catch (e) { /* notifications unavailable: nothing to keep in step */ }
 }
 
 function isFavorited(id){
@@ -1527,7 +1551,7 @@ async function showTestNotification(){
   const status = document.getElementById('pushStatus');
   try {
     const reg = await navigator.serviceWorker.ready;
-    await reg.showNotification('Dispatch test', { body: 'This device can show Dispatch notifications.', icon: './icons/icon-192.png', badge: './icons/icon-maskable-192.png', tag: 'dispatch-test' });
+    await reg.showNotification('Dispatch test', { body: 'This device can show Dispatch notifications.', icon: './icons/icon-192.png', badge: './icons/badge-96.png', tag: 'dispatch-test' });
     status.textContent = 'Test sent to this phone. Nothing appeared? Allow notifications for Chrome and for Dispatch in the phone settings.';
   } catch (e) {
     status.textContent = 'This phone could not show a notification: ' + e.message;

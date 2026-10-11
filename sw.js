@@ -13,7 +13,7 @@
 //   closed, from the cached articles.json + the read/hidden/favorite lists
 //   the page last sent (service workers can't read localStorage).
 
-const CACHE_NAME = 'dispatch-v13';
+const CACHE_NAME = 'dispatch-v14';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
@@ -24,6 +24,7 @@ const APP_SHELL = [
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
+  './icons/badge-96.png',
 ];
 const FONT_HOSTS = new Set(['fonts.googleapis.com', 'fonts.gstatic.com']);
 
@@ -148,10 +149,12 @@ self.addEventListener('push', (event) => {
     self.registration.showNotification(String(data.title || 'Dispatch').slice(0, 120), {
       body: String(data.body || 'New articles to review').slice(0, 240),
       icon: './icons/icon-192.png',
-      badge: './icons/icon-maskable-192.png',
+      // Android draws the small (status bar) icon from its transparency
+      // only: a white glyph on transparent, never a full-colour square.
+      badge: './icons/badge-96.png',
       tag: 'dispatch-new-articles',
       renotify: true,
-      data: { url: data.url || './' },
+      data: { url: data.url || './', count: Number(data.count) || 0 },
     }),
     (async () => {
       try { if ('setAppBadge' in self.navigator && data.count > 0) await self.navigator.setAppBadge(Number(data.count)); } catch (e) { /* unsupported */ }
