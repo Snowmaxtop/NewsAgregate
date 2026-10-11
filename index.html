@@ -191,6 +191,11 @@
   }
   .modal-hint a{color:var(--gamer);}
   .modal-actions{display:flex;gap:8px;flex-wrap:wrap;}
+  .push-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0 14px;margin:6px 0 14px;}
+  .push-section h3{margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--paper);}
+  .push-key-row{display:flex;gap:6px;margin-bottom:10px;}
+  .push-key-row input{flex:1;min-width:0;font-family:'IBM Plex Mono',monospace;font-size:11px;}
+  .push-key-row button{padding:8px 12px;border-radius:6px;border:1px solid var(--line-strong);background:var(--ink-2);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;}
   .modal-actions button{
     font-family:'IBM Plex Mono', monospace;font-size:11px;letter-spacing:0.3px;
     text-transform:uppercase;padding:9px 14px;border-radius:6px;cursor:pointer;
@@ -887,7 +892,7 @@
     <label>Personal access token
       <span class="token-field">
         <input type="password" id="ghToken" placeholder="fine-grained token" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
-        <button type="button" id="ghTokenReveal" class="token-reveal" title="Afficher / masquer">👁</button>
+        <button type="button" id="ghTokenReveal" class="token-reveal" title="Show / hide">👁</button>
       </span>
     </label>
 
@@ -896,6 +901,19 @@
       scoped to only this one repo, with just "Contents: Read and write" permission — not a classic token with full account access.
       The token is stored only in this browser's local storage, never sent anywhere except directly to GitHub's API.
     </p>
+
+    <div class="push-section">
+      <h3>🔔 Notifications</h3>
+      <p class="modal-note" id="pushStatus">Get a notification on this device when new articles arrive (at most once an hour, never between 23:00 and 07:00).</p>
+      <div class="push-key" id="pushKeyBox" hidden>
+        <p class="modal-hint"><b>One-time setup:</b> copy this private key and add it to your repo as a GitHub secret named <code>VAPID_PRIVATE_KEY</code> (Settings → Secrets and variables → Actions). It is only shown on this device.</p>
+        <div class="push-key-row"><input type="text" id="pushPrivKey" readonly><button type="button" id="pushCopyBtn">Copy</button></div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="pushOnBtn" class="modal-primary">Turn on for this device</button>
+        <button type="button" id="pushOffBtn" class="modal-danger" hidden>Turn off for this device</button>
+      </div>
+    </div>
 
     <div class="modal-actions">
       <button id="ghSaveBtn" class="modal-primary">Save &amp; Connect</button>
@@ -1009,7 +1027,7 @@ const SOURCES = [
     feed:'https://mobilegamer.biz/feed/', home:'https://mobilegamer.biz/' },
 ];
 
-let state = { read: [], favorites: [], hidden: [], likedGames: [] };
+let state = { read: [], favorites: [], hidden: [], likedGames: [], push: null };
 let articles = [];
 let currentFilter = 'all';
 let currentLang = 'all';
@@ -1124,6 +1142,13 @@ function mergeLocalIntoState(){
     const likedById = new Map();
     [...(state.likedGames || []), ...(local.likedGames || [])].forEach(g => { if (g && g.id != null) likedById.set(g.id, g); });
     state.likedGames = Array.from(likedById.values());
+
+    // Push: keep the key, union device subscriptions by endpoint.
+    if (local.push) {
+      const subs = new Map();
+      [...((state.push && state.push.subscriptions) || []), ...(local.push.subscriptions || [])].forEach(s => { if (s && s.endpoint) subs.set(s.endpoint, s); });
+      state.push = { ...(local.push || {}), ...(state.push || {}), subscriptions: Array.from(subs.values()) };
+    }
   }
 
   enforceStateConsistency();
@@ -1254,6 +1279,7 @@ async function loadState(){
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
         state.likedGames = content.likedGames || [];
+        state.push = content.push || null;
       }
       githubConnected = true;
 
@@ -1280,6 +1306,7 @@ async function loadState(){
       state.favorites = parsed.favorites || [];
       state.hidden = parsed.hidden || [];
       state.likedGames = parsed.likedGames || [];
+      state.push = parsed.push || null;
     }
   } catch (e) { /* no saved state yet */ }
 }
@@ -2232,6 +2259,7 @@ document.getElementById('syncBtn').addEventListener('click', async () => {
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
         state.likedGames = content.likedGames || [];
+        state.push = content.push || null;
       }
     }
     enforceStateConsistency();   // dedupe + a favorite is never hidden
@@ -2292,7 +2320,118 @@ function openGithubModal(){
   document.getElementById('ghRepo').value = cfg?.repo || '';
   document.getElementById('ghToken').value = cfg?.token || '';
   ghModal.classList.add('show');
+  refreshPushUI();
 }
+
+// --- Push notifications ------------------------------------------------
+// The VAPID key pair is generated here with WebCrypto (no tools needed):
+// the PUBLIC key goes into the synced state (state.push.publicKey), the
+// PRIVATE key is shown once (kept in this device's localStorage) for the
+// user to store as the GitHub secret VAPID_PRIVATE_KEY. Each device that
+// turns notifications on adds its subscription to state.push.subscriptions;
+// scripts/send-push.mjs (articles workflow) sends to all of them.
+const PUSH_PRIV_KEY = 'dispatch-vapid-private';
+const b64url = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const fromB64url = (s) => { const b = atob(s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4)); return Uint8Array.from(b, c => c.charCodeAt(0)); };
+
+async function generateVapidKeys(){
+  const kp = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify']);
+  const pub = await crypto.subtle.exportKey('raw', kp.publicKey);       // 65 bytes, uncompressed
+  const jwk = await crypto.subtle.exportKey('jwk', kp.privateKey);      // d = 32-byte private scalar
+  return { publicKey: b64url(pub), privateKey: jwk.d };
+}
+
+async function currentPushSubscription(){
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) return null;
+  const reg = await navigator.serviceWorker.ready;
+  return reg.pushManager.getSubscription();
+}
+
+async function refreshPushUI(){
+  const status = document.getElementById('pushStatus');
+  const onBtn = document.getElementById('pushOnBtn'), offBtn = document.getElementById('pushOffBtn');
+  const keyBox = document.getElementById('pushKeyBox');
+  let priv = null; try { priv = localStorage.getItem(PUSH_PRIV_KEY); } catch (e) {}
+  keyBox.hidden = !priv;
+  if (priv) document.getElementById('pushPrivKey').value = priv;
+  if (!('PushManager' in window) || !('Notification' in window)){
+    status.textContent = 'This browser does not support push notifications. On Android, use Chrome with Dispatch installed on the home screen.';
+    onBtn.hidden = true; offBtn.hidden = true; return;
+  }
+  const sub = await currentPushSubscription().catch(() => null);
+  const known = sub && ((state.push && state.push.subscriptions) || []).some(s => s.endpoint === sub.endpoint);
+  if (sub && known){
+    status.textContent = `Notifications are on for this device ✓ (${(state.push.subscriptions || []).length} device${state.push.subscriptions.length > 1 ? 's' : ''} in total).`;
+    onBtn.hidden = true; offBtn.hidden = false;
+  } else {
+    status.textContent = Notification.permission === 'denied'
+      ? 'Notifications are blocked for Dispatch in your phone settings. Allow them there, then come back here.'
+      : 'Get a notification on this device when new articles arrive (at most once an hour, never between 23:00 and 07:00).';
+    onBtn.hidden = false; offBtn.hidden = true;
+  }
+}
+
+async function enablePush(){
+  const status = document.getElementById('pushStatus');
+  if (!getGithubConfig()){ status.textContent = 'Connect GitHub sync first: the subscription is stored in your sync file so the server can reach this device.'; return; }
+  try {
+    const perm = await Notification.requestPermission();
+    if (perm !== 'granted'){ status.textContent = 'Permission not granted, so notifications stay off.'; return; }
+    if (!state.push || !state.push.publicKey){
+      const keys = await generateVapidKeys();
+      state.push = { publicKey: keys.publicKey, subscriptions: [] };
+      try { localStorage.setItem(PUSH_PRIV_KEY, keys.privateKey); } catch (e) {}
+    }
+    const reg = await navigator.serviceWorker.ready;
+    let sub = await reg.pushManager.getSubscription();
+    // A subscription made with another key can't be reused.
+    if (sub && sub.options && sub.options.applicationServerKey && b64url(sub.options.applicationServerKey) !== state.push.publicKey){ await sub.unsubscribe(); sub = null; }
+    if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64url(state.push.publicKey) });
+    const json = sub.toJSON();
+    const subs = (state.push.subscriptions || []).filter(s => s.endpoint !== json.endpoint);
+    subs.push({ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() });
+    state.push.subscriptions = subs;
+    saveStateInstant();
+    await saveState();
+    status.textContent = 'Saved. Notifications start with the next articles run that finds something new.';
+  } catch (e) {
+    status.textContent = 'Could not turn notifications on: ' + e.message;
+  }
+  refreshPushUI();
+}
+
+async function disablePush(){
+  try {
+    const sub = await currentPushSubscription();
+    if (sub){
+      if (state.push) state.push.subscriptions = (state.push.subscriptions || []).filter(s => s.endpoint !== sub.endpoint);
+      await sub.unsubscribe();
+      saveStateInstant();
+      await saveState();
+    }
+  } catch (e) { /* ignore */ }
+  refreshPushUI();
+}
+
+// Tapping the notification while the app is open: show the feed, refreshed.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.addEventListener('message', (e) => {
+    if (e.data && e.data.type === 'dispatch-open-feed') {
+      const all = document.querySelector('.pill[data-filter="all"]');
+      if (all) all.click();
+      refreshArticlesQuietly();
+    }
+  });
+}
+
+document.getElementById('pushOnBtn').addEventListener('click', enablePush);
+document.getElementById('pushOffBtn').addEventListener('click', disablePush);
+document.getElementById('pushCopyBtn').addEventListener('click', async (e) => {
+  const input = document.getElementById('pushPrivKey');
+  try { await navigator.clipboard.writeText(input.value); e.target.textContent = 'Copied ✓'; }
+  catch (err) { input.select(); e.target.textContent = 'Select & copy'; }
+  setTimeout(() => { e.target.textContent = 'Copy'; }, 2000);
+});
 function closeGithubModal(){ ghModal.classList.remove('show'); }
 
 document.getElementById('ghSettingsBtn').addEventListener('click', openGithubModal);
@@ -2433,6 +2572,7 @@ async function checkRemoteStateUpdate(){
         state.favorites = content.favorites || [];
         state.hidden = content.hidden || [];
         state.likedGames = content.likedGames || [];
+        state.push = content.push || null;
       }
       enforceStateConsistency();
       saveStateInstant();

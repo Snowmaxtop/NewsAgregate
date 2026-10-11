@@ -13,7 +13,7 @@
 // JSON blob of the read/hidden link lists under STATE_CACHE_KEY. The SW
 // reads both and counts unread = articles not in read and not in hidden.
 
-const CACHE_NAME = 'dispatch-v9';
+const CACHE_NAME = 'dispatch-v10';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
@@ -152,4 +152,41 @@ self.addEventListener('message', (event) => {
   } else if (data.type === 'dispatch-refresh-badge') {
     event.waitUntil(computeAndSetBadge());
   }
+});
+
+// --- Push notifications ------------------------------------------------
+// Sent by scripts/send-push.mjs after an articles run finds new items.
+// Payload: { title, body, count, url }. One notification at a time (same
+// tag, replaced by the next one); the icon badge shows the count to review
+// where the launcher supports it (on Samsung, the notification itself
+// makes the icon bubble appear).
+self.addEventListener('push', (event) => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch (e) { data = { title: 'Dispatch', body: event.data ? event.data.text() : '' }; }
+  const title = data.title || 'Dispatch';
+  event.waitUntil(Promise.all([
+    self.registration.showNotification(title, {
+      body: data.body || 'New articles to review',
+      icon: './icons/icon-192.png',
+      badge: './icons/icon-maskable-192.png',
+      tag: 'dispatch-new-articles',
+      renotify: true,
+      data: { url: data.url || './' },
+    }),
+    (async () => {
+      try { if ('setAppBadge' in self.navigator && data.count > 0) await self.navigator.setAppBadge(data.count); } catch (e) { /* unsupported */ }
+    })(),
+  ]));
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const url = (event.notification.data && event.notification.data.url) || './';
+  event.waitUntil((async () => {
+    const wins = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    for (const w of wins) {
+      if ('focus' in w) { await w.focus(); w.postMessage({ type: 'dispatch-open-feed' }); return; }
+    }
+    await self.clients.openWindow(url);
+  })());
 });
