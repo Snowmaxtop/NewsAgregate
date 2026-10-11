@@ -1,0 +1,46 @@
+name: Test Dispatch notification
+
+# Manual only: Actions → "Test Dispatch notification" → Run workflow.
+# Sends a test notification to every registered device right away
+# (ignores the hourly limit and quiet hours) and records the result,
+# which the app shows in ⚙ → Notifications.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dispatch-articles   # shares push-state.json with the articles run
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Send a test notification
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: node scripts/send-push.mjs --test
+
+      - name: Save notification status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f push-state.json ]; then git add push-state.json; fi
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: push test result [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
