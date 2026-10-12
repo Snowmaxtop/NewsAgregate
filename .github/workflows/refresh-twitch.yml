@@ -1,0 +1,45 @@
+name: Refresh Dispatch Twitch
+
+on:
+  schedule:
+    - cron: '41 * * * *'     # every hour: a day's ranking is the average of its hourly samples
+  workflow_dispatch: {}       # manual run from the Actions tab
+
+permissions:
+  contents: write
+
+# One run at a time: a slow run is never overlapped by the next one.
+concurrency:
+  group: dispatch-twitch
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Sample Twitch viewers per category
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: node scripts/fetch-twitch.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add twitch.json
+          if [ -f twitch-history.json ]; then git add twitch-history.json; fi
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: refresh twitch.json [skip ci]"
+          # Other workflows push too: rebase onto them if needed.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
