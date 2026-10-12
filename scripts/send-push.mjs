@@ -20,6 +20,11 @@
 //
 // `node scripts/send-push.mjs --test` (workflow "Test Dispatch notification")
 // sends a test notification to every device now, whatever the rules.
+//
+// A device the push service refuses for good (404/410 expired, 401/403
+// subscribed with another key) goes into push-state.json → dead: it is not
+// tried again, and the app removes it from dispatch-state.json the next
+// time it opens (re-subscribing that device if it is the one opened).
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { createECDH } from 'crypto';
 import { pathToFileURL } from 'url';
@@ -91,11 +96,21 @@ export function setupProblem({ subs, publicKey, privateKey }){
   return null;
 }
 
+// Refusals that will never succeed for that subscription.
+export const isDead = (code) => [401, 403, 404, 410].includes(code);
+
 // Why a push service refused a device, in plain words.
 export function failureText(code){
-  if (code === 404 || code === 410) return 'subscription expired: turn notifications off and on again on that device';
-  if (code === 401 || code === 403) return 'refused: that device subscribed with another key; turn notifications off and on again on it';
+  if (code === 404 || code === 410) return 'subscription expired (removed when you next open Dispatch)';
+  if (code === 401 || code === 403) return 'subscribed with an older key (removed when you next open Dispatch; that device re-registers itself)';
   return `error ${code || 'network'}`;
+}
+
+// Dead endpoints still in the sync file (the app removes them; pure).
+export function deadList(previous, results, stateEndpoints){
+  const live = new Set(stateEndpoints);
+  const dead = new Set([...(previous || []), ...results.filter(r => !r.ok && isDead(r.code)).map(r => r.endpoint)]);
+  return [...dead].filter(e => live.has(e));
 }
 
 async function deliver(subs, payload, publicKey, privateKey){
@@ -106,10 +121,10 @@ async function deliver(subs, payload, publicKey, privateKey){
     const device = String(sub.device || 'device').slice(0, 40);
     try {
       await webpush.sendNotification({ endpoint: sub.endpoint, keys: sub.keys }, JSON.stringify(payload), { TTL: 6 * 3600, urgency: 'normal', topic: 'dispatch-new' });
-      results.push({ device, ok: true });
+      results.push({ device, ok: true, endpoint: sub.endpoint });
       console.log(`  ✓ ${device}`);
     } catch (e){
-      results.push({ device, ok: false, code: e.statusCode || null });
+      results.push({ device, ok: false, code: e.statusCode || null, endpoint: sub.endpoint });
       console.log(`  ✗ ${device}: ${failureText(e.statusCode)} (${e.statusCode || e.message})`);
     }
   }
@@ -128,18 +143,23 @@ export async function main({ test = false, now = new Date() } = {}){
   const articles = (read('articles.json', {}).articles) || [];
   const state = read('dispatch-state.json', {});
   const pushState = read('push-state.json', {});
-  const subs = validSubs(state);
+  const all = validSubs(state);
+  // Refused for good on an earlier run: skipped until the app removes them.
+  const known = deadList(pushState.dead, [], all.map(s => s.endpoint));
+  const subs = all.filter(s => !known.includes(s.endpoint));
   const publicKey = state.push && state.push.publicKey;
   const privateKey = (process.env.VAPID_PRIVATE_KEY || '').trim();
-  console.log(`Push: ${subs.length} device(s) in dispatch-state.json, secret ${privateKey ? 'present' : 'MISSING'}`);
+  console.log(`Push: ${subs.length} device(s) in dispatch-state.json${known.length ? ` (+${known.length} refused earlier, waiting for the app to remove them)` : ''}, secret ${privateKey ? 'present' : 'MISSING'}`);
 
-  let next = pushState, status;
-  const problem = setupProblem({ subs, publicKey, privateKey });
+  let next = pushState, status, results = [];
+  const problem = !subs.length && known.length
+    ? { code: 'failed', devices: 0, text: `No working device: ${known.length} old subscription${known.length > 1 ? 's' : ''} will be removed when you next open Dispatch, then turn notifications on in ⚙ if needed.` }
+    : setupProblem({ subs, publicKey, privateKey });
   if (problem) {
     status = problem;
     console.log(`Push: ${problem.text}`);
   } else if (test) {
-    const results = await deliver(subs, { title: 'Dispatch test notification', body: 'Notifications work on this device.', count: 0, url: './' }, publicKey, privateKey);
+    results = await deliver(subs, { title: 'Dispatch test notification', body: 'Notifications work on this device.', count: 0, url: './' }, publicKey, privateKey);
     status = statusFromResults(results, `Test at ${now.toISOString().slice(0, 16).replace('T', ' ')} UTC`);
     next = { ...pushState, lastTestAt: now.toISOString() };
   } else {
@@ -150,7 +170,7 @@ export async function main({ test = false, now = new Date() } = {}){
       // them so tapping the notification shows the new list.
       const wait = Number(process.env.PUSH_DELAY_S || 0);
       if (wait) await new Promise(r => setTimeout(r, wait * 1000));
-      const results = await deliver(subs, d.send, publicKey, privateKey);
+      results = await deliver(subs, d.send, publicKey, privateKey);
       status = statusFromResults(results, 'Last reminder');
       console.log(`Push: ${status.text}`);
       // Nothing delivered: keep the old state so the next run tries again.
@@ -165,10 +185,12 @@ export async function main({ test = false, now = new Date() } = {}){
     }
   }
 
-  // Write only when something changed (seen list, last send, status).
+  // Write only when something changed (seen list, last send, status, dead list).
   const prev = pushState.status || {};
   const changed = prev.code !== status.code || prev.text !== status.text;
+  const dead = deadList(known, results, all.map(s => s.endpoint));
   const out = { ...next, status: { ...status, since: changed ? now.toISOString() : prev.since || now.toISOString() } };
+  if (dead.length) out.dead = dead; else delete out.dead;
   if (JSON.stringify(out) !== JSON.stringify(pushState)) {
     writeFileSync('push-state.json', JSON.stringify(out));
     console.log('Push: push-state.json updated');
