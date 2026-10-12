@@ -168,7 +168,7 @@ export function buildReleases(rows, steamRank = new Map()){
 
 // ---- Network ----------------------------------------------------------
 
-async function getToken(id, secret){
+export async function getToken(id, secret){
   const url = `https://id.twitch.tv/oauth2/token?client_id=${encodeURIComponent(id)}&client_secret=${encodeURIComponent(secret)}&grant_type=client_credentials`;
   const res = await fetch(url, { method: 'POST' });
   if (!res.ok) throw new Error(`Twitch token: HTTP ${res.status} ${await res.text()}`);
