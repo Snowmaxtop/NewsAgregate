@@ -1535,11 +1535,13 @@ async function enablePush(){
     }
     const reg = await navigator.serviceWorker.ready;
     let sub = await reg.pushManager.getSubscription();
-    // A subscription made with another key can't be reused.
-    if (sub && sub.options && sub.options.applicationServerKey && b64url(sub.options.applicationServerKey) !== state.push.publicKey){ await sub.unsubscribe(); sub = null; }
+    // A subscription made with another key can't be reused, and its old
+    // address must leave the sync file too (the server would keep trying it).
+    let oldEndpoint = null;
+    if (sub && sub.options && sub.options.applicationServerKey && b64url(sub.options.applicationServerKey) !== state.push.publicKey){ oldEndpoint = sub.endpoint; await sub.unsubscribe(); sub = null; }
     if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64url(state.push.publicKey) });
     const json = sub.toJSON();
-    state.push.subscriptions = (state.push.subscriptions || []).filter(s => s.endpoint !== json.endpoint)
+    state.push.subscriptions = (state.push.subscriptions || []).filter(s => s.endpoint !== json.endpoint && s.endpoint !== oldEndpoint)
       .concat({ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() });
     markDirty();
     const ok = await saveNow();
@@ -1587,6 +1589,38 @@ async function resetPushKeys(){
   } catch (e) {
     status.textContent = 'Could not reset the keys: ' + e.message;
   }
+}
+
+// Devices the push services refused for good (expired, or subscribed with
+// an older key) are listed by the server in push-state.json → dead. At
+// startup the app removes them from the sync file; if one was THIS device,
+// it subscribes again with the current key (permission is already granted,
+// so there is no prompt). Runs only when something has to change.
+async function healPushSubscriptions(){
+  if (!getGithubConfig() || !state.push || !state.push.publicKey || !(state.push.subscriptions || []).length) return;
+  let ps = null;
+  try { const res = await fetch('./push-state.json', { cache: 'no-cache' }); if (res.ok) ps = await res.json(); } catch (e) { return; }
+  const dead = new Set((ps && Array.isArray(ps.dead) && ps.dead) || []);
+  const sub = await currentPushSubscription().catch(() => null);
+  const mine = sub && state.push.subscriptions.some(s => s.endpoint === sub.endpoint);
+  const wrongKey = sub && sub.options && sub.options.applicationServerKey && b64url(sub.options.applicationServerKey) !== state.push.publicKey;
+  const redo = mine && (dead.has(sub.endpoint) || wrongKey) && Notification.permission === 'granted';
+  const removed = state.push.subscriptions.filter(s => dead.has(s.endpoint) && !(redo && s.endpoint === sub.endpoint)).length;
+  if (!removed && !redo) return;
+  state.push.subscriptions = state.push.subscriptions.filter(s => !dead.has(s.endpoint) && !(redo && s.endpoint === sub.endpoint));
+  let renewed = false;
+  if (redo){
+    try {
+      await sub.unsubscribe();
+      const reg = await navigator.serviceWorker.ready;
+      const json = (await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: fromB64url(state.push.publicKey) })).toJSON();
+      state.push.subscriptions.push({ endpoint: json.endpoint, keys: json.keys, device: navigator.userAgent.slice(0, 80), added: new Date().toISOString() });
+      renewed = true;
+    } catch (e) { /* this device stays off; ⚙ shows "Turn on" */ }
+  }
+  markDirty();
+  const ok = await saveNow();
+  if (ok) showToast([renewed ? 'Notifications renewed on this device' : '', removed ? `${removed} old notification device${removed > 1 ? 's' : ''} removed` : ''].filter(Boolean).join(' · '), 3500);
 }
 
 // Shows a notification straight from this phone: if it doesn't appear,
@@ -1711,6 +1745,7 @@ document.getElementById('ghDisconnectBtn').addEventListener('click', () => {
   if (!(await loadFeeds())) updateCounts();   // keep the "no articles" message visible
   updateSaveButton();                         // unsaved changes from last session
   if (saveAfterBoot) { saveAfterBoot = false; manualSave(); }
+  healPushSubscriptions().catch(() => {});
 })();
 
 // Keep articles (and therefore the unread badge) fresh while the app is

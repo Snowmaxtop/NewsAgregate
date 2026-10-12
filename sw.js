@@ -13,7 +13,7 @@
 //   closed, from the cached articles.json + the read/hidden/favorite lists
 //   the page last sent (service workers can't read localStorage).
 
-const CACHE_NAME = 'dispatch-v18';
+const CACHE_NAME = 'dispatch-v19';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
