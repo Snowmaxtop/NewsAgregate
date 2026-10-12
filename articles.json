@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T01:43:12.421Z",
+  "generatedAt": "2026-10-12T08:25:13.659Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
-    "gibiz": "stale",
+    "gibiz": "ok",
     "jv": "ok",
     "gameblog": "ok",
     "gamekult": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-11T17:05:42.000Z",
-      "kept": 9
+      "newest": "2026-10-12T06:47:10.000Z",
+      "kept": 11
     },
     "gamedev": {
       "status": "ok",
@@ -32,32 +32,32 @@
       "kept": 2
     },
     "gibiz": {
-      "status": "stale",
+      "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-10-09T15:42:04.000Z",
-      "kept": 0
+      "newest": "2026-10-12T08:00:00.000Z",
+      "kept": 1
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-11T20:20:07.000Z",
-      "kept": 16
+      "newest": "2026-10-12T05:05:08.000Z",
+      "kept": 14
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-11T09:30:00.000Z",
-      "kept": 7
+      "newest": "2026-10-12T07:49:31.000Z",
+      "kept": 10
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-11T15:55:00.000Z",
-      "kept": 7
+      "newest": "2026-10-12T08:11:00.000Z",
+      "kept": 8
     },
     "kotaku": {
       "status": "ok",
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-12T01:12:23.000Z",
-      "kept": 13
+      "newest": "2026-10-12T02:57:30.000Z",
+      "kept": 15
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-12T01:29:05.000Z",
+      "newest": "2026-10-12T08:00:23.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -133,6 +133,224 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7697d90ec6ca4f72/6aac8434e6306a3cd258a667/GCMX2025_Logo_Vertical_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Avec 10 ans de retard, Squadron 42 (le solo de Star Citizen) ouvre sa page Steam et vise 2027",
+      "link": "https://www.gamekult.com/actualite/avec-10-ans-de-retard-squadron-42-le-solo-de-star-citizen-ouvre-sa-page-steam-et-vise-2027-3050872403.html",
+      "date": "2026-10-12T08:11:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872403/la-blague-squadron-42-09abe51c__800_800__1313-0-3000-1688.jpg",
+      "summary": "Cloud Imperium Games continue de promettre la campagne solo de Star Citizen. Miracle : Squadron 42 vient de s'offrir une page Steam officielle, a même ouvert ses listes de…",
+      "tags": []
+    },
+    {
+      "title": "33 Years Later, Tom Cruise's Near-Perfect Legal Thriller Is Officially on Streaming",
+      "link": "https://www.polygon.com/the-firm-tom-cruise-streaming-paramount-plus-october-2026/",
+      "date": "2026-10-12T08:00:23.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-firm-6.jpg",
+      "summary": "A dream job, a crooked law firm, and Tom Cruise in way over his head",
+      "tags": []
+    },
+    {
+      "title": "BAFTA awards over £270,000 to 112 recipients in UK and US to support career growth in games, film, and TV",
+      "link": "https://www.gamesindustry.biz/bafta-awards-over-270000-to-112-recipients-in-uk-and-us-to-support-career-growth-in-games-film-and-tv",
+      "date": "2026-10-12T08:00:00.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/EV2026_JH_001.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "BAFTA has awarded over &pound;270,000 in grants to 112 recipients in the UK and North America under its 2026 Prince William BAFTA Bursary and scholarship programmes.",
+      "tags": []
+    },
+    {
+      "title": "Après 3 ans d'attente, le nouvel anime de Naruto enfin annoncé et c'est une douche froide pour les fans",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/naruto-ninku-anime-724666?utm_source=RSS",
+      "date": "2026-10-12T07:49:31.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_69f9afb4593af.webp",
+      "summary": "Après des mois de teasing et, surtout, trois longues années d’attente, le nouvel anime de Naruto s’est annoncé et personne ne pouvait s’attendre à ça.",
+      "tags": []
+    },
+    {
+      "title": "« Ils ont passé des années à nous mentir » La PS5 peut bien être entièrement rétrocompatible et faire tourner les jeux PS2 en 4K contrairement à ce que Sony disait",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps5-retrocompatible-jeux-physiques-ps2-jailbreak-decouverte-724668?utm_source=RSS",
+      "date": "2026-10-12T07:41:58.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_66e14dcbf0142.jpg",
+      "summary": "PlayStation nous aurait-il menti pendant des années concernant les capacités de rétrocompatibilité de la PS5 ? C’est ce que semble indiquer une nouvelle découverte.",
+      "tags": []
+    },
+    {
+      "title": "« Des disques physiques et des excuses publiques » GTA 6 pourrait être jouable sur PC avant même sa sortie, les hackers demandent 30 millions en crypto en échange",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-build-jouable-menace-hackers-724658?utm_source=RSS",
+      "date": "2026-10-12T07:18:28.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bde17d855.jpg",
+      "summary": "Cyberleek, le groupe de hackers derrière les derniers leaks massifs autour de GTA 6, demande 30 millions en crypto pour sortir une build jouable du jeu.",
+      "tags": []
+    },
+    {
+      "title": "« Nous savons à quel point les fans les apprécient » Nintendo annonce une excellente nouvelle pour les fans de jeux physiques, alors que la polémique de PlayStation continue",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-amerique-physique-declaration-724661?utm_source=RSS",
+      "date": "2026-10-12T07:10:32.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_69d6069851235.jpg",
+      "summary": "Alors que PlayStation essuie ce qui restera sans doute la plus longue polémique de son histoire, Nintendo prend une position inverse, en faveur des jeux physiques.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Sorti en 2012, XCOM : Enemy Unknown reste un modèle du genre en matière de reboot",
+      "link": "https://www.gamekult.com/actualite/sorti-en-2012-xcom-enemy-unknown-reste-un-modele-du-genre-en-matiere-de-reboot-101-3050866196.html",
+      "date": "2026-10-12T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866196/xcom-enemy-unknown-comment-le-reboot-a-sauve-le-jeu-de-strategie-d-une-extinction-annoncee-3840d103__800_800__405-0-1484-1080.jpg",
+      "summary": "Sorti en 2012, XCOM : Enemy Unknown n’a pas seulement ravivé une licence mythique, il s’est imposé comme le standard ultime du reboot vidéoludique. 14 ans plus tard, il demeure la…",
+      "tags": []
+    },
+    {
+      "title": "Netflix : toutes les sorties de la semaine, avec des films cultes et la suite d'une série très attendue",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-nouveautes-films-series-semaine-12-18-octobre-2026-724659?utm_source=RSS",
+      "date": "2026-10-12T06:49:27.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf5acbcdb.jpg",
+      "summary": "Cette semaine, Netflix continue d’enrichir son catalogue avec une ribambelle de films cultes parfaits pour Halloween et la suite très attendue d'une de ses séries originales.",
+      "tags": []
+    },
+    {
+      "title": "La roadmap des DLC de Marvel Tokon révèle un premier aperçu de Thor (Jane Foster), Venom et Jubilé",
+      "link": "https://fr.ign.com/marvel-tokon-fighting-souls/93028/la-roadmap-des-dlc-de-marvel-tokon-revele-un-premier-apercu-de-thor-jane-foster-venom-et-jubile",
+      "date": "2026-10-12T06:47:10.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/m/marvel-tok/marvel-tokon-dlc-roadmap-reveals-first-look-at-jane-foster-t_gyge.jpg",
+      "summary": "Tout ce beau monde arrivera en 2027.",
+      "tags": []
+    },
+    {
+      "title": "Steam propose 3 jeux gratuits dont un à garder à vie et deux gros cadeaux d'une valeur de 50€, mais faites très vite",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/steam-jeux-gratutis-pony-island-octobre-2026-724657?utm_source=RSS",
+      "date": "2026-10-12T06:26:47.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/611843_66f25d7ca7b99.jpg",
+      "summary": "Steam propose encore plusieurs jeux gratuits, dont de vraies pépites, et deux beaux cadeaux d’une valeur totale de 50 €, mais la plupart de ces offres sont sur le point d’expirer…",
+      "tags": []
+    },
+    {
+      "title": "Mick Gordon, le compositeur de Doom (2016), dit les termes : « F##k l'IA »",
+      "link": "https://fr.ign.com/doom/93026/mick-gordon-le-compositeur-de-doom-2016-dit-les-termes-fk-lia",
+      "date": "2026-10-12T06:23:53.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/d/doom-2016-/doom-2016-composer-mick-gordon-says-fk-ai_ps84.jpg",
+      "summary": "Le maestro amateur de métal n&#x27;a manifestement pas l&#x27;intention d&#x27;intégrer l&#x27;IA générative à son processus de création.",
+      "tags": []
+    },
+    {
+      "title": "Pris en étau à cause de la crise de la mémoire, le marché du PC chute de 20 % sur un an",
+      "link": "https://www.gamekult.com/actualite/pris-en-etau-a-cause-de-la-crise-de-la-memoire-le-marche-du-pc-chute-de-20-sur-un-an-3050872402.html",
+      "date": "2026-10-12T05:35:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872402/pris-en-etau-a-cause-de-la-crise-de-la-memoire-le-marche-du-pc-chute-de-20-sur-un-an-161a27b2__800_800__799-0-3692-2895.jpg",
+      "summary": "Puisque nous sommes un média spécialisé dans le jeu vidéo, nous avons tendance à surtout parler de l'impact de la crise de la mémoire sur les consoles en tous genres. Mais…",
+      "tags": []
+    },
+    {
+      "title": "Un PDG californien de la tech arrêté, risque jusqu'à 20 ans de prison pour avoir transféré 300 millions de dollars de serveurs AI Nvidia en Chine",
+      "link": "https://www.gameblog.fr/trends/un-pdg-californien-de-la-tech-arrete-risque-jusqua-20-ans-de-prison-pour-avoir-transfere-300-millions-de-dollars-de-serveurs-ai-nvidia-en-chine-724663?utm_source=RSS",
+      "date": "2026-10-12T05:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/trends/724663_6acc8243438a6.jpg",
+      "summary": "300 millions de dollars de puces Nvidia détournées vers la Chine via la Malaisie : comment un entrepreneur californien a berné les contrôles américains pendant trois ans, jusqu'à…",
+      "tags": []
+    },
+    {
+      "title": "Test Diablo IV sur Switch 2",
+      "link": "https://www.jeuxvideo.com/test/2105861/diablo-iv-sur-switch-2-le-hack-n-slash-ultime-signe-un-portage-convaincant-pour-jouer-n-importe-ou.htm",
+      "date": "2026-10-12T05:05:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179018/1790178367-7153-card.jpg",
+      "summary": "3 ans après sa sortie, Diablo IV finit par arriver sur Nintendo Switch 2. Alors que Blizzard tourne la page de cet épisode suite à la sortie de sa dernière extension, Lord of…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "GTA 6 est encore plus trash que GTA 5 !",
+      "link": "https://www.jeuxvideo.com/videos/chroniques/2107844/gta-6-est-encore-plus-trash-que-gta-5.htm",
+      "date": "2026-10-12T05:00:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179129/1791289898-3655-card.jpg",
+      "summary": "Habitué à repousser les limites de la provocation, Rockstar Games pourrait bien franchir un nouveau cap avec son prochain mastodonte. On s''intéresse aux récents classements ESRB…",
+      "tags": []
+    },
+    {
+      "title": "« On a cru que c'était la fin » : un avion perd brutalement 8000 m d'altitude et fait demi-tour en plein Atlantique",
+      "link": "https://www.gameblog.fr/trends/on-a-cru-que-cetait-la-fin-un-avion-perd-brutalement-8000-m-daltitude-et-fait-demi-tour-en-plein-atlantique-724660?utm_source=RSS",
+      "date": "2026-10-12T05:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/trends/724660_6acc815e87754.jpg",
+      "summary": "Masques à oxygène, chute de 8 000 mètres en plein vol, panique à bord. Un passager raconte les minutes de terreur vécues au-dessus de l'Irlande, et ce que les pilotes ont vraiment…",
+      "tags": []
+    },
+    {
+      "title": "Même si elles sont déjà toutes millionnaires, ces stars n'ont pas résisté à participer à GTA 6",
+      "link": "https://www.jeuxvideo.com/news/2108535/meme-si-elles-sont-deja-toutes-millionnaires-ces-stars-n-ont-pas-resiste-a-participer-a-gta-6.htm",
+      "date": "2026-10-12T04:05:05.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179156/1791561420-2643-card.jpg",
+      "summary": "Alors que la facture globale de GTA 6 dépasse le milliard de dollars, Rockstar Games frappe, une énième fois, un grand coup en dévoilant ses premières radios ainsi qu'un casting…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - En attendant Ace Attorney 7, retour sur les origines de la série culte pour son 25e anniversaire",
+      "link": "https://www.gamekult.com/actualite/en-attendant-ace-attorney-7-retour-sur-les-origines-de-la-serie-culte-pour-son-25e-anniversaire-3050872307.html",
+      "date": "2026-10-12T04:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872307/memoire-ace-attorney-62348d09__800_800__416-0-1541-1124.png",
+      "summary": "En France, il a fallu attendre le 31 mars 2006 pour découvrir la franchise Ace Attorney grâce à l'arrivée des premières plaidoiries de Maître Wright sur Nintendo DS. C'était il y…",
+      "tags": []
+    },
+    {
+      "title": "66 Years Later, Alfred Hitchcock’s Most Perfect Thriller is Officially Streaming on Netflix",
+      "link": "https://www.polygon.com/alfred-hitchcock-psycho-on-netflix/",
+      "date": "2026-10-12T03:00:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24565949/11__844_.jpg",
+      "summary": "Alfred Hitchcock's 1960 thriller Psycho is currently on Netflix. It's worth watching even if you know the big twists",
+      "tags": []
+    },
+    {
+      "title": "Steam Week in Review: The curious case of Wonder Boy in Monster Land's dubious PC debut",
+      "link": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-the-curious-case-of-wonder-boy-in-monster-lands-dubious-pc-debut/",
+      "date": "2026-10-12T02:57:30.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/qWagYHzSXRvDqGfNjL4Ju5-1920-80.png",
+      "summary": "All the interesting Steam facts for the week ending October 11.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Galactic Racer's devs tested its roguelite progression system by turning it into a board game",
+      "link": "https://www.pcgamer.com/games/racing/star-wars-galactic-racers-devs-tested-its-roguelite-progression-system-by-turning-it-into-a-board-game/",
+      "date": "2026-10-12T02:15:46.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/K7roYa2aLEn3iBVZEPULoG-1920-80.jpg",
+      "summary": "\"You can't know if you can feel the system until you can play the system.\"",
+      "tags": []
+    },
+    {
+      "title": "5 Exciting Games Stuck In Development For More Than 10 Years",
+      "link": "https://www.polygon.com/games-development-hell-2026/",
+      "date": "2026-10-12T01:46:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/games-in-development-hell-beyond-good-and-evil-2-2.jpg",
+      "summary": "Some games have been trapped in development hell for over a decade. Here are 5 exciting games that have been stuck in development hell as of 2026.",
+      "tags": []
+    },
+    {
+      "title": "Steven Spielberg's Polarizing Fantasy Film Gets Official New Release",
+      "link": "https://www.polygon.com/steven-spielberg-hook-4k-anniversary-rerelease/",
+      "date": "2026-10-12T01:46:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/hook-1991-robin-willaims.jpg",
+      "summary": "Robin Williams' Hook is getting a major 4K release this fall, featuring an all-new hour-long documentary and never-before-seen footage from the set.",
       "tags": []
     },
     {
@@ -237,15 +455,6 @@
       "tags": []
     },
     {
-      "title": "3 Essential Remedy Games To Play After Control Resonant",
-      "link": "https://www.polygon.com/control-resonant-games-to-play/",
-      "date": "2026-10-11T21:00:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/control-resonant.jpg",
-      "summary": "After playing Control Resonant, try these games from Remedy Entertainment that expand the lore even more.",
-      "tags": []
-    },
-    {
       "title": "EA Producer Announces Wing Commander 3 Remaster At Portland Retro Gaming Expo",
       "link": "https://kotaku.com/ea-producer-announces-wing-commander-3-remaster-at-portland-retro-gaming-expo-2000744166",
       "date": "2026-10-11T20:52:57.000Z",
@@ -281,24 +490,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/08/Terraria-Calamity-mod-official-image-from-Calamity-website-1280x720.jpg",
       "summary": "The former Calamity mod team put out an 'Emergency PSA' post warning users not to fall for crypto scam and to promptly leave the server",
-      "tags": []
-    },
-    {
-      "title": "Robert De Niro's 123-Minute Gothic Thriller Is Officially Streaming on Netflix",
-      "link": "https://www.polygon.com/robert-de-niro-gothic-horror-streaming-netflix/",
-      "date": "2026-10-11T19:00:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdmash_tr006.jpg",
-      "summary": "A classic horror tale is told through a heightened, emotional lens.",
-      "tags": []
-    },
-    {
-      "title": "Disney Officially Confirms New 'Die Hard with Fairies' TV Series Adaptation",
-      "link": "https://www.polygon.com/artemis-fowl-tv-series-announced-disney-plus/",
-      "date": "2026-10-11T18:45:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/artemis-fowl.jpg",
-      "summary": "Artemis Fowl is returning to Disney Plus with a new animated series led by creator Eoin Colfer, Disney announced at New York Comic Con.",
       "tags": []
     },
     {
@@ -371,15 +562,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/d/dc-legend-/dc-legend-grant-morrison-criticizes-morally-and-legally-inco_4ep5.jpg",
       "summary": "Quant à la suite que pourrait prendre la saison 2, il a déclaré : « On verra bien. »",
-      "tags": []
-    },
-    {
-      "title": "9 Most Haunted Masks in The Legend of Zelda: Majora's Mask, Ranked",
-      "link": "https://www.polygon.com/zelda-majoras-masks-scariest-ranked/",
-      "date": "2026-10-11T17:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19584505/Screenshot__97_.png",
-      "summary": "The Legend of Zelda: Majora's Mask has 24 masks, and plenty come with a previous owner who isn’t coming back. These are the nine most haunted.",
       "tags": []
     },
     {
@@ -481,6 +663,15 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872380/dans-pokemon-rouge-bleu-le-perso-est-immobile-c-est-le-monde-autour-de-lui-qui-se-deplac-ea1e0a40__800_800__293-0-869-576.jpg",
       "summary": "En 1996, quand Pokémon Rouge/Vert sort sur la première GameBoy au Japon (chez nous, c'était en 1999 avec Pokémon Version Rouge / Version Bleue), GameFreak peut enfin souffler…",
+      "tags": []
+    },
+    {
+      "title": "Marvel Tokon Fighting Souls – Trailer officiel : Thor (Jane Foster) et liste des personnages DLC de l'année 1",
+      "link": "https://fr.ign.com/marvel-tokon-fighting-souls/93029/marvel-tokon-fighting-souls-official-thor-jane-foster-year-1-dlc-roster-trailer",
+      "date": "2026-10-11T13:09:11.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/m/marvel-tok/marvel-tokon-fighting-souls-official-thor-jane-foster-year-1_uzwe.jpg",
+      "summary": "Découvrez le trailer de présentation des prochains personnages DLC de Marvel Tokon Fighting Souls. Cyclope (version Phoenix) est le premier combattant à arriver, le 2 novembre…",
       "tags": []
     },
     {
@@ -634,132 +825,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179155/1791553479-8859-card.jpg",
       "summary": "À 50 ans tout juste, un joueur prouve qu'il n'est jamais trop tard pour régler ses comptes avec la Mega Drive. Trente-sept ans après ses premiers échecs sur The Revenge of Shinobi…",
-      "tags": []
-    },
-    {
-      "title": "Naruto est de retour en manga et anime avec Kishimoto aux manettes",
-      "link": "https://fr.ign.com/naruto-2/93005/naruto-est-de-retour-en-manga-et-anime-avec-kishimoto-aux-manettes",
-      "date": "2026-10-11T08:04:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/n/naruto-tea/naruto-teasers-reveal-new-shadow-rising-manga-and-anime-cros_9asu.jpg",
-      "summary": "Une retraite à la Miyazaki.",
-      "tags": []
-    },
-    {
-      "title": "« On y est presque » Toujours pas de BioShock 4, mais on a tout de même une excellente nouvelle pour la licence qui devrait bien revenir d’entre les morts",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/pas-de-bioshock-4-mais-bonne-nouvelle-film-netflix-declaration-724641?utm_source=RSS",
-      "date": "2026-10-11T08:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/405579_63088ff5df888.jpg",
-      "summary": "Dans l’attente d’en savoir plus sur BioShock 4, le réalisateur de l’adaptation à venir sur Netflix nous donne des nouvelles du projet, et elles sont plutôt prometteuses.",
-      "tags": []
-    },
-    {
-      "title": "Série Harry Potter : après avoir visionné l'intégralité de la première saison, le patron de HBO donne son avis (objectif)",
-      "link": "https://www.jeuxvideo.com/news/2108436/serie-harry-potter-apres-avoir-visionne-l-integralite-de-la-premiere-saison-le-patron-de-hbo-donne-son-avis-objectif.htm",
-      "date": "2026-10-11T07:40:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179155/1791551891-4861-card.jpg",
-      "summary": "Alors que la diffusion mondiale approche à grands pas sur Max, le grand patron de HBO, Casey Bloys, annonce avoir visionné l'intégralité de la première saison du reboot télévisuel…",
-      "tags": []
-    },
-    {
-      "title": "Pokemon et ARC Raider fusionnent dans ce nouveau jeu Steam à tester gratuitement",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/akimo-legends-pokemon-arc-raiders-jouable-gratuitement-724642?utm_source=RSS",
-      "date": "2026-10-11T07:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724642_6ac8f9d510e77.jpg",
-      "summary": "Mélange de Pokemon et ARC Raiders, Amiko LEgends veut imposer son style sur Steam et vous pouvez y jouer gratuitement",
-      "tags": []
-    },
-    {
-      "title": "L'un des nouveaux grands champions de l'esport est un Japonais de 11 ans",
-      "link": "https://www.gamekult.com/actualite/l-un-des-nouveaux-grands-champions-de-l-esport-est-un-japonais-de-11-ans-3050872359.html",
-      "date": "2026-10-11T07:07:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872359/l-un-des-nouveaux-grands-champions-de-l-esport-est-un-japonais-de-11-ans-6d55a162__800_800__113-35-858-781.jpg",
-      "summary": "Les Jeux Asiatiques, c'est un peu le grand challenger des Jeux olympiques : la compétition existe depuis 1951, elle a lieu tous les quatre ans, rassemble environ douze mille…",
-      "tags": []
-    },
-    {
-      "title": "11 ans après sa sortie, Bloodborne est enfin jouable nativement sur PC grâce à des fans",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/bloodborne-portage-pc-natif-fans-724632?utm_source=RSS",
-      "date": "2026-10-11T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/386872_61605373b9cd3.jpg",
-      "summary": "11 ans après la sortie du très populaire de Bloodborne et à force d'expérimentations et de tâtonnements, des fans l'ont enfin rendu jouable nativement sur PC.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Il y a 20 ans, Mortal Kombat : Armageddon commettait l'erreur de modifier son système de fatalités, et le public ne lui a jamais pardonné",
-      "link": "https://www.gamekult.com/actualite/il-y-a-20-ans-mortal-kombat-armageddon-commettait-l-erreur-de-modifier-son-systeme-de-fatalites-et-le-public-ne-lui-a-jamais-pardonne-101-3050866198.html",
-      "date": "2026-10-11T07:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866198/en-2006-l-excessif-mortal-kombat-armageddon-annoncait-le-crepuscule-de-midway-7e51b4b7__800_800__358-0-1438-1080.jpg",
-      "summary": "Le 11 octobre 2006, la franchise Mortal Kombat faisait déjà pleuvoir les fatalités depuis 14 ans. Alors que la génération PS2 entre dans la dernière ligne droite, les fans…",
-      "tags": []
-    },
-    {
-      "title": "Après 14 ans et 12 millions de blocs, un joueur de Minecraft a enfin atteint cet endroit légendaire du jeu",
-      "link": "https://www.jeuxvideo.com/news/2108174/apres-14-ans-et-12-millions-de-blocs-un-joueur-de-minecraft-a-enfin-atteint-cet-endroit-legendaire-du-jeu.htm",
-      "date": "2026-10-11T06:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179146/1791461984-6275-card.jpg",
-      "summary": "Plus de quatorze ans après avoir entamé son périple à travers les vastes étendues de Minecraft, un streamer est enfin parvenu à atteindre la contrée la plus légendaire du jeu. Son…",
-      "tags": []
-    },
-    {
-      "title": "LEGO : deux énormes sets de cette licence culte viennent de sortir et ils sont déjà iconiques",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/lego-pokemon-red-poke-ball-octobre-2026-724636?utm_source=RSS",
-      "date": "2026-10-11T06:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_69a94d0c298a2.jpg",
-      "summary": "De nouveaux sets LEGO Pokemon débarquent en octobre pour le plus grand plaisir des fans et des collectionneurs, d'autant que c'est absolument iconique.",
-      "tags": []
-    },
-    {
-      "title": "Prime Gaming vous offre encore quatre jeux gratuits à garder, que des titres cultes et des pépites, mais faites vite",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-jeux-gratuits-doom-rappel-724606?utm_source=RSS",
-      "date": "2026-10-11T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/463591_6502c296567a0.jpg",
-      "summary": "Comme chaque semaine, Prime Gaming va bientôt procéder à un nettoyage de ses jeux gratuits avec ici quatre titres à garder avant leur départ du service.",
-      "tags": []
-    },
-    {
-      "title": "Qui se souvient du PREMIER jeu FIFA ?",
-      "link": "https://www.jeuxvideo.com/videos/chroniques/2107842/qui-se-souvient-du-premier-jeu-fifa.htm",
-      "date": "2026-10-11T05:00:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179129/1791289626-7153-card.jpg",
-      "summary": "Avant de dominer le marché des simulations de football, la franchise mythique d'Electronic Arts a bien dû faire ses premiers pas sur le terrain. Retour sur les origines d'un…",
-      "tags": []
-    },
-    {
-      "title": "Stargate SG-1 : les fans veulent toujours qu'Amazon fasse une suite, la campagne #SaveStargate et les coulisses de la révolte",
-      "link": "https://www.jeuxvideo.com/news/2108477/stargate-sg-1-les-fans-veulent-toujours-qu-amazon-fasse-une-suite-la-campagne-savestargate-et-les-coulisses-de-la-revolte.htm",
-      "date": "2026-10-11T04:55:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179155/1791553721-7553-card.jpg",
-      "summary": "L’annulation surprise de la nouvelle série Stargate par Amazon MGM Studios a provoqué un véritable séisme chez les amateurs de science-fiction. Entre mobilisations de grande…",
-      "tags": []
-    },
-    {
-      "title": "Ni Goku, ni Broly : Akira Toriyama a révélé qui est le Super Saiyan Légendaire qui fait peur à Freezer !",
-      "link": "https://www.jeuxvideo.com/news/2108069/ni-goku-ni-broly-akira-toriyama-a-revele-qui-est-le-super-saiyan-legendaire-qui-fait-peur-a-freezer.htm",
-      "date": "2026-10-11T04:50:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179139/1791385124-8239-card.jpg",
-      "summary": "L’identité du Super Saiyan légendaire a longtemps fait couler beaucoup d’encre avant que le mangaka Akira Toriyama en personne ne décide de répondre à l’épineuse question : qui…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Project X Zone reste un tactical médiocre au service du fan, façon Avengers",
-      "link": "https://www.gamekult.com/actualite/project-x-zone-reste-un-tactical-mediocre-au-service-du-fan-facon-avengers-3050872390.html",
-      "date": "2026-10-11T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872390/project-x-zone-reste-un-tactical-mediocre-au-service-du-fan-facon-avengers-c206483c__800_800__684-0-1483-800.jpg",
-      "summary": "Tout part d'une idée de Namco Bandai, visiblement heureux de la réception de Namco x Capcom (sorti quelques années plus tôt) : pourquoi ne pas se faire plaisir avec un crossover…",
       "tags": []
     },
     {
