@@ -148,7 +148,7 @@
     background:rgba(20,24,28,0.97);border-top:1px solid var(--line);
     padding-bottom:var(--safe-b);
   }
-  .tabbar-inner{max-width:880px;margin:0 auto;height:var(--tabbar-h);display:grid;grid-template-columns:repeat(4,1fr);}
+  .tabbar-inner{max-width:880px;margin:0 auto;height:var(--tabbar-h);display:grid;grid-template-columns:repeat(5,1fr);}
   .tab{
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
     background:none;border:none;cursor:pointer;color:var(--paper-dim);
@@ -361,7 +361,8 @@
   }
   /* ===================== RELEASES (calendar, my games, top wishlists) ===================== */
   body.mode-releases .toolbar, body.mode-releases .feed,
-  body.mode-archive .toolbar, body.mode-archive .feed{display:none;}
+  body.mode-archive .toolbar, body.mode-archive .feed,
+  body.mode-twitch .toolbar, body.mode-twitch .feed{display:none;}
   body.rel-lock{overflow:hidden;}
   .releases{padding:6px 0 20px;color:var(--paper);}
   .rel-seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px;margin:4px 0 16px;background:var(--ink-2);border-radius:12px;}
@@ -480,6 +481,15 @@
   .mo-up{color:var(--accent);}
   .mo-down{color:var(--danger);}
   .mo-new{color:var(--paper);letter-spacing:0.06em;}
+  /* Twitch tab (twitch.js) — reuses the Top wishlists list styles */
+  .tw-seg{grid-template-columns:repeat(4,minmax(0,1fr));}
+  .tw-gap{flex:1;}
+  .tw-row{align-items:flex-start;}
+  .tw-img{flex:0 0 36px;height:48px;border-radius:4px;overflow:hidden;background:var(--ink-2);}
+  .tw-img img{width:100%;height:100%;object-fit:cover;}
+  .tw-stats{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--paper);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .tw-sub{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--paper-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .tw-foot{margin:14px 2px 0;font-size:11px;line-height:1.5;color:var(--paper-dim);}
 
   /* After-launch stats on the card */
   .trk{margin:4px 0 8px;display:flex;flex-direction:column;gap:6px;}
@@ -585,6 +595,7 @@
   </div>
 
   <div class="releases" id="releases" hidden></div>
+  <div class="twitch" id="twitch" hidden></div>
   <div class="archive" id="archive" hidden></div>
 </div>
 
@@ -601,6 +612,10 @@
     <button class="tab" data-filter="releases">
       <span class="tab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
       Releases
+    </button>
+    <button class="tab" data-filter="twitch">
+      <span class="tab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M10.5 8v5l4-2.5z M8 20.5h8"/></svg></span>
+      Twitch
     </button>
     <button class="tab" data-filter="archive">
       <span class="tab-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4.5" rx="1"/><path d="M5 8.5V19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5M10 12.5h4"/></svg></span>
@@ -664,6 +679,7 @@
 
 <script src="./releases.js"></script>
 <script src="./archive.js"></script>
+<script src="./twitch.js"></script>
 <script src="./app.js"></script>
 
 </body>

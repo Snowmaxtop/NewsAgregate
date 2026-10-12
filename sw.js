@@ -13,7 +13,7 @@
 //   closed, from the cached articles.json + the read/hidden/favorite lists
 //   the page last sent (service workers can't read localStorage).
 
-const CACHE_NAME = 'dispatch-v15';
+const CACHE_NAME = 'dispatch-v18';
 const STATE_CACHE_KEY = './__dispatch_state_cache';   // synthetic request key
 const APP_SHELL = [
   './',
@@ -21,6 +21,7 @@ const APP_SHELL = [
   './app.js',
   './releases.js',
   './archive.js',
+  './twitch.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -72,8 +73,8 @@ self.addEventListener('fetch', (event) => {
     (arcDay && arcDay[1] >= new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10));
   const isNavigation = req.mode === 'navigate';
   const networkFirst = isNavigation || recentArchive ||
-    /\/(articles|releases|wishlists|tracker|push-state)\.json$/.test(url.pathname) ||
-    /\/(app|releases|archive)\.js$/.test(url.pathname);
+    /\/(articles|releases|wishlists|tracker|push-state|twitch|twitch-history)\.json$/.test(url.pathname) ||
+    /\/(app|releases|archive|twitch)\.js$/.test(url.pathname);
 
   if (networkFirst) {
     event.respondWith(

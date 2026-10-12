@@ -1,4 +1,4 @@
-// Dispatch — main app script (loaded by index.html after releases.js and archive.js).
+// Dispatch — main app script (loaded by index.html after releases.js, archive.js and twitch.js).
 /* =========================================================================
    DISPATCH — video game news aggregator (PWA, GitHub Pages)
    =========================================================================
@@ -628,20 +628,25 @@ function render(){
   const sets = stateSets();
   updateCounts(sets);
 
-  // Releases / Archive tabs replace the article feed. The feed
+  // Releases / Twitch / Archive tabs replace the article feed. The feed
   // is emptied (not just hidden) so the scroll-read sweep can't see any
   // zero-size rows and mark them read.
   const inReleases = currentFilter === 'releases';
+  const inTwitch = currentFilter === 'twitch';
   const inArchive = currentFilter === 'archive';
   document.body.classList.toggle('mode-releases', inReleases);
+  document.body.classList.toggle('mode-twitch', inTwitch);
   document.body.classList.toggle('mode-archive', inArchive);
   document.getElementById('releases').hidden = !inReleases;
+  document.getElementById('twitch').hidden = !inTwitch;
   document.getElementById('archive').hidden = !inArchive;
   if (!inArchive) document.getElementById('archive').dataset.active = '0';
-  if(inReleases || inArchive){
+  if (!inTwitch) document.getElementById('twitch').dataset.active = '0';
+  if(inReleases || inTwitch || inArchive){
     feedEl.innerHTML = '';
     observeRowsForScrollRead();
     if (inReleases) renderReleases(document.getElementById('releases'));
+    else if (inTwitch) renderTwitch(document.getElementById('twitch'));
     else renderArchive(document.getElementById('archive'));
     return;
   }
