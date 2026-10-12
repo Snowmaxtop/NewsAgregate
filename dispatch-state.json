@@ -913,25 +913,6 @@
   ],
   "push": {
     "publicKey": "BNQ_1pjrHlFrgezMq0ghXpsBKc_fm8VS3mcnP2Ldw_Z6wZ6K-POsq5z-Gj1tZVA0Qt29w5HHo37vO9SR5a4xQEY",
-    "subscriptions": [
-      {
-        "endpoint": "https://fcm.googleapis.com/fcm/send/ep1R2ca6g28:APA91bHykCkqTOLZ8OBeXBIaHhFj7cebDPWQMruWsromlRDru2yvBrNj14LUFtbiDS5QJtopMqFn98OibZZCt-HVrXExpabEuKI1VVsTx1x6zY1Qq_cmuPhwqDJyQVJBpzE02HR1iZib",
-        "keys": {
-          "p256dh": "BMUrPSyyZ1N5gs5aGAp0oas-PNjmy-Guk4bxxIBODLPoqb2KLFF9b8f2-K1XHN9BFa7JlERSaQykQ1Gp5ze-RRY",
-          "auth": "dWRf00Sb6V_W9EcyzZRByA"
-        },
-        "device": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome",
-        "added": "2026-10-11T06:47:01.729Z"
-      },
-      {
-        "endpoint": "https://fcm.googleapis.com/fcm/send/dlKa0A_QkaQ:APA91bG__GmSNVFa2f2I9oo9HK26yXxxQgm9pOgHkloBnWJIsVZUodXHH5DmrQ3wAJbIGVpEKJKV790wUUG1G59q_S5eJ6qoGKQ4iGO4DV90NHswoAU6Mxhpa7uwyFYMcKyFJcQxE9kK",
-        "keys": {
-          "p256dh": "BFBA-k7V5NqDJbOMNTTs1lb4qj7zGxZUa9j7vqrylxlYvUmf0bCmrMQ_duQl1Z6DmZbwEQBF6GUj7LK6-gnxotk",
-          "auth": "f_RWLHnhJP4MAIoowICtzw"
-        },
-        "device": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome",
-        "added": "2026-10-11T06:47:03.325Z"
-      }
-    ]
+    "subscriptions": []
   }
 }
