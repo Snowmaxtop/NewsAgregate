@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T04:58:32.766Z",
+  "generatedAt": "2026-10-14T09:58:39.519Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-13T19:01:20.000Z",
-      "kept": 26
+      "newest": "2026-10-14T09:05:36.000Z",
+      "kept": 30
     },
     "gamedev": {
       "status": "ok",
@@ -35,28 +35,28 @@
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-10-13T19:00:00.000Z",
-      "kept": 3
+      "newest": "2026-10-14T08:55:05.000Z",
+      "kept": 5
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-13T20:20:10.000Z",
+      "newest": "2026-10-14T07:40:08.000Z",
       "kept": 20
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-13T14:21:24.000Z",
+      "newest": "2026-10-14T09:22:11.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-14T04:00:00.000Z",
+      "newest": "2026-10-14T09:41:00.000Z",
       "kept": 16
     },
     "kotaku": {
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-14T03:08:04.000Z",
-      "kept": 26
+      "newest": "2026-10-14T09:46:39.000Z",
+      "kept": 27
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-14T04:00:20.000Z",
+      "newest": "2026-10-14T09:48:30.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -91,15 +91,15 @@
       "status": "ok",
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
-      "newest": "2026-10-13T17:00:00.000Z",
-      "kept": 14
+      "newest": "2026-10-14T08:30:00.000Z",
+      "kept": 17
     },
     "mgbiz": {
       "status": "ok",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
-      "newest": "2026-10-13T18:24:05.000Z",
-      "kept": 6
+      "newest": "2026-10-14T09:41:05.000Z",
+      "kept": 5
     },
     "gdco": {
       "status": "ok",
@@ -133,6 +133,403 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt87129fff10b28f9e/6acd0f41af1349b92bc3bb90/GCMX2026_-_Logo_Horizontal_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 3 Remastered Switch 2 Patch Is Officially 'On the Way'",
+      "link": "https://www.polygon.com/the-witcher-3-remastered-nintendo-switch-2-patch-update/",
+      "date": "2026-10-14T09:48:30.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/witcher-3-endings-guide-geralt-1.jpg",
+      "summary": "CD Projekt Red just gave an important update to Switch 2 players waiting for their The Witcher Remastered patch.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "I just tricked DLSS into running on my AMD GPU in Cyberpunk 2077 and Alan Wake 2 and all it took was running a single script",
+      "link": "https://www.pcgamer.com/hardware/graphics-cards/i-just-tricked-dlss-into-running-on-my-amd-gpu-in-cyberpunk-2077-and-alan-wake-2-and-all-it-took-was-running-a-single-script/",
+      "date": "2026-10-14T09:46:39.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/RrKWBQLDZb3WHTmZP4Ha9a-1920-80.jpg",
+      "summary": "It's easy enough to install, so worth a try, I'd say.",
+      "tags": []
+    },
+    {
+      "title": "Data digest: Flow gets $46m, Spill lands $10.5m, Scopely Explore tops US growth charts, more",
+      "link": "https://mobilegamer.biz/data-digest-flow-gets-46m-spill-lands-10-5m-scopely-explore-tops-us-growth-charts-more/",
+      "date": "2026-10-14T09:41:05.000Z",
+      "sourceId": "mgbiz",
+      "image": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/10/featured_com.flow_.cannonball-2853362766.png?resize=636%2C334&#038;ssl=1",
+      "summary": "There's also more funding news, Q3 stats aplenty and in-app events data in this week's round-up.",
+      "tags": []
+    },
+    {
+      "title": "Ubisoft fermerait RedLynx (Trials) et limogerait 70 personnes à Singapour (Black Flag Resynced)",
+      "link": "https://www.gamekult.com/actualite/ubisoft-fermerait-redlynx-trials-et-limogerait-70-personnes-a-singapour-black-flag-resynced-3050872444.html",
+      "date": "2026-10-14T09:41:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872444/ubisoft-fermerait-redlynx-trials-et-limogerait-70-personnes-a-singapour-black-flag-resynced-c0a6b311__800_800__415-0-1492-1078.jpg",
+      "summary": "Chez Ubisoft, la valse macabre continue. Ce sont maintenant les studios RedLynx (Trials) et Ubisoft Singapour (Skull and Bones, Assassin's Creed Black Flag Resynced) qui…",
+      "tags": []
+    },
+    {
+      "title": "Netflix's One Piece Season 4 Could Be Coming Much Sooner than Expected",
+      "link": "https://www.polygon.com/netflixs-one-piece-season-4-release-2027/",
+      "date": "2026-10-14T09:29:36.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24884910/ONE_PIECE_n_S1_E2_00_49_34_22R.jpg",
+      "summary": "New information from the WGA website teases that season 4 of One Piece is confirmed and could be coming very soon.",
+      "tags": []
+    },
+    {
+      "title": "Steam's new Big Art Mode is a lovely visual upgrade for my living room setup",
+      "link": "https://www.pcgamer.com/software/platforms/steams-new-big-art-mode-is-a-lovely-visual-upgrade-for-my-living-room-setup/",
+      "date": "2026-10-14T09:23:14.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/7gKk6PqU6cBeUYDWiZntZF-1920-80.png",
+      "summary": "Big Art Mode is looking fiiiine.",
+      "tags": []
+    },
+    {
+      "title": "« Sans doute trop choquante » Il y a 25 ans, GTA changeait à jamais à cause du 11 septembre. Comment l'événement tragique a créé l'un des éléments les plus cultes de la saga ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-3-jaquette-iconique-anecdote-changement-11-septembre-2001-724782?utm_source=RSS",
+      "date": "2026-10-14T09:22:11.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bdf391d4a.jpg",
+      "summary": "Sorti en octobre 2001, GTA 3 a été le premier opus à illustrer le style légendaire de la jaquette de chaque jeu de la franchise depuis. Et c’est à la tragédie du 11 septembre…",
+      "tags": []
+    },
+    {
+      "title": "Richard \"Levelord\" Gray : l'un des pères de Duke Nukem 3D s'est éteint à l'âge de 68 ans",
+      "link": "https://www.gamekult.com/actualite/richard-levelord-gray-l-un-des-peres-de-duke-nukem-3d-s-est-eteint-a-l-age-de-68-ans-3050872439.html",
+      "date": "2026-10-14T09:20:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872439/richard-gray-le-legendaire-levelord-de-duke-nukem-3d-s-est-eteint-a-l-age-de-68-ans-28e53b19__800_800__365-0-1445-1080.jpg",
+      "summary": "Après la tragique disparition de Bobby Prince, le compositeur de légende de Wolfenstein, DOOM et Duke Nukem 3D, il y a quelques mois, Duke vient de perdre un autre de ses…",
+      "tags": []
+    },
+    {
+      "title": "Le SSD NVMe Gen5 pour le jeu en 2026 : utile ou arnaque ?",
+      "link": "https://fr.ign.com/ssd/93064/le-ssd-nvme-gen5-pour-le-jeu-en-2026-utile-ou-arnaque",
+      "date": "2026-10-14T09:05:36.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/ssd-nvme-samsung-evo-990-pro_9z82.jpg",
+      "summary": "Avec le prix actuel, la question mérite d&#x27;être posée ?",
+      "tags": []
+    },
+    {
+      "title": "« Trop hâte de ce nouveau départ ! » Wardogs dévoile le contenu de la Saison 2 à venir très bientôt, ça promet du très lourd",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/wardogs-annonce-contenu-saison-2-724776?utm_source=RSS",
+      "date": "2026-10-14T09:03:34.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/723018_6aa91d5a154d0.jpg",
+      "summary": "Wardogs va très bientôt entrer dans sa seconde saison, et son studio a dévoilé le contenu conséquent qui attend les joueurs sur le champ de bataille pour l'occasion.",
+      "tags": []
+    },
+    {
+      "title": "Ubisoft closing Trials developer RedLynx and cutting jobs in Singapore studio",
+      "link": "https://www.gamesindustry.biz/ubisoft-closing-trials-developer-redlynx-and-cutting-jobs-in-singapore-studio",
+      "date": "2026-10-14T08:55:05.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/Trials_2.jpg_CTbXk1t.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Ubisoft has proposed the closure of Finnish studio RedLynx, creator of the Trial franchise, and major job losses at Ubisoft Singapore, lead developer of the ill-fated Skull and…",
+      "tags": []
+    },
+    {
+      "title": "Avant la sortie du nouveau film, on revient sur le meilleur film d'animation Street Fighter jamais vu",
+      "link": "https://fr.ign.com/street-fighter-ii-the-animated-movie/93093/avant-la-sortie-du-nouveau-film-on-revient-sur-le-meilleur-film-danimation-street-fighter-jamais-vu",
+      "date": "2026-10-14T08:53:57.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/the-best-s/the-best-street-fighter-anime-youve-never-seen_4xt6.jpg",
+      "summary": "Le combat de Chun-Li contre Vega est entré dans l&#x27;Histoire.",
+      "tags": []
+    },
+    {
+      "title": "« Les gens détestaient le jeu » Après 16 ans, l'un des fondateurs de Rockstar se confie sur l'un de ses plus gros échecs",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/rockstar-max-payne-echec-724775?utm_source=RSS",
+      "date": "2026-10-14T08:40:07.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/598207_66c2feb13014b.jpg",
+      "summary": "16 ans après la sortie du jeu, le co-fondateur de Rockstar et ancien scénariste star du studio revient sur l’un de ses projets les plus controversés.",
+      "tags": []
+    },
+    {
+      "title": "NEXT WEEK! PG Connects Nordics",
+      "link": "https://www.pocketgamer.biz/next-week-pg-connects-nordics/",
+      "date": "2026-10-14T08:30:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141657/90001/pgc-nor26-article-image-simple-set-b2-1200x_l660.jpg",
+      "summary": "This time next week, the venue doors will be open for PG Connects Nordics and we'll be surrounded by the sound of business getting done all around us. Where will you be? The…",
+      "tags": []
+    },
+    {
+      "title": "Un leak de l'ESRB annonce l'arrivée de Peak sur PS5",
+      "link": "https://fr.ign.com/peak/93097/un-leak-de-lesrb-annonce-larrivee-de-peak-sur-ps5",
+      "date": "2026-10-14T08:26:07.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/p/peak-has-b/peak-has-been-leaked-for-ps5-by-the-esrb_9mcu.png",
+      "summary": "Une nouvelle montagne à gravir.",
+      "tags": []
+    },
+    {
+      "title": "« Apple TV place la barre très haut » Apple TV dévoile sa prochaine série événement, ça sent déjà le carton",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/apple-tv-12-12-12-serie-trailer-date-sortie-724777?utm_source=RSS",
+      "date": "2026-10-14T08:22:48.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/694988_6826dae436172.png",
+      "summary": "Apple TV vient tout juste de dévoiler la première bande-annonce de l’une de ses prochaines séries événement, 12 12 12, qui pourrait bien signer un nouveau carton pour la…",
+      "tags": []
+    },
+    {
+      "title": "Razer dévoile de nouveaux casques gaming Pokémon avec Nymphali, Dracaufeu et Lucario",
+      "link": "https://fr.ign.com/pokemon/93096/razer-devoile-de-nouveaux-casques-gaming-pokemon-avec-nymphali-dracaufeu-et-lucario",
+      "date": "2026-10-14T08:12:58.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/r/razer-reve/razer-reveals-new-pokemon-gaming-headsets-featuring-sylveon_trat.jpg",
+      "summary": "C&#x27;est hyper efficace !!",
+      "tags": []
+    },
+    {
+      "title": "Microsoft fonde Xbox Labs et avance masqué sur le terrain de l'IA dans la création",
+      "link": "https://www.gamekult.com/actualite/microsoft-fonde-xbox-labs-et-avance-masque-que-le-terrain-de-l-ia-dans-la-creation-3050872438.html",
+      "date": "2026-10-14T08:11:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872438/xbox-labs-quand-asha-sharma-avance-masquee-sur-le-terrain-de-l-intelligence-artificielle-23dbfaa3__800_800__361-0-1587-1228.jpg",
+      "summary": "Microsoft vient d'officialiser la création de Xbox Labs, une nouvelle division de recherche et développement. Derrière un discours axé sur la décompilation et l'avenir de la…",
+      "tags": []
+    },
+    {
+      "title": "The Elder Scrolls Oblivion Remastered s'offre une nouvelle mise à jour mais c'est encore exclusivement pour la Nintendo Switch 2, voici ce qui change",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-elder-scrolls-oblivion-remastered-maj-switch-2-724772?utm_source=RSS",
+      "date": "2026-10-14T08:06:28.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/696830_68493adaa8016.jpg",
+      "summary": "Le mois dernier, les joueurs recevaient Nintendo Switch 2 recevaient une mise à jour pour The Elder Scrolls Oblivion Remastered, et en voici une nouvelle uniquement pour eux.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "28 Years Ago, 'Buffy's Darkest Villain Got a Perfect Introduction",
+      "link": "https://www.polygon.com/buffy-the-vampire-slayer-season-3-episode-3-retrospective/",
+      "date": "2026-10-14T08:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/mv5bmtazowuymgqtngu1ms00ywrhlwjlmzgtymi3odmzmzc1nwiwxkeyxkfqcgc-_v1_.jpg",
+      "summary": "This early season 3 episode sets a certain character up as a deserving foil.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Miniclip’s mobile advertising platform AdSurge launches as standalone company",
+      "link": "https://www.pocketgamer.biz/exclusive-miniclips-mobile-advertising-platform-adsurge-launches-as-standalone-company/",
+      "date": "2026-10-14T08:00:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141705/90032/miniclip-adsurge-paul-bugryniec_l660.jpg",
+      "summary": "Games studio Miniclip has built an AI-powered mobile advertising platform called AdSurge, designed for third-party games publishers. The tool has launched today, offering an…",
+      "tags": []
+    },
+    {
+      "title": "Tebex's Adam Cavanagh on D2C and studio sustainability",
+      "link": "https://www.pocketgamer.biz/tebexs-adam-cavanagh-on-d2c-and-studio-sustainability/",
+      "date": "2026-10-14T07:57:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141724/90040/adam-cavanagh-speaker_l660.jpg",
+      "summary": "Pocket Gamer Connects Nordics in Helsinki is just around the corner, taking place October 20th and 21st and bringing together more than 150 expert speakers to discuss the games…",
+      "tags": []
+    },
+    {
+      "title": "L’Artbook officiel de Stranger Things : le cadeau incontournable pour Noël",
+      "link": "https://fr.ign.com/stranger-things/93099/lartbook-officiel-de-stranger-things-le-cadeau-incontournable-pour-noel",
+      "date": "2026-10-14T07:51:29.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/stranger-things-lhistoire-officielle-de-la-serie-legendaire_b6f3.jpg",
+      "summary": "Non, ce n’est pas fini pour les fans.",
+      "tags": []
+    },
+    {
+      "title": "« Je risque de décevoir des millions de personnes » Après le succès colossal de Stardew Valley et ses 40 millions de ventes, le créateur du jeu a peur de vous décevoir",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/stardew-valley-haunted-chocolatier-peur-724771?utm_source=RSS",
+      "date": "2026-10-14T07:46:26.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/627565_6728920a10039.jpg",
+      "summary": "Après le succès phénoménal de Stardew Valley et ses 40 millions de ventes, le développeur se confie sur la pression qu’il ressent alors qu’il conçoit son prochain jeu, Haunted…",
+      "tags": []
+    },
+    {
+      "title": "Xbox CEO reportedly warns firm will \"not survive\" if it only relies on existing franchises",
+      "link": "https://www.gamesindustry.biz/xbox-ceo-reportedly-warns-firm-will-not-survive-if-it-only-relies-on-existing-franchises",
+      "date": "2026-10-14T07:44:27.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/asha-sharma_wYeaPwM.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Xbox boss Asha Sharma has reportedly warned that the organisation will \"not survive\" if it relies on existing game franchises.",
+      "tags": []
+    },
+    {
+      "title": "Question : comptez-vous prendre des jours off ou manquer les cours pour la sortie de GTA 6 le mois prochain ?",
+      "link": "https://fr.ign.com/grand-theft-auto-6/93095/sondage-comptez-vous-prendre-des-jours-off-ou-manquer-les-cours-pour-la-sortie-de-gta-6-le-mois-proc",
+      "date": "2026-10-14T07:40:59.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/w/will-you-b/will-you-be-taking-time-off-work-or-school-for-gta-6s-releas_rkmw.jpg",
+      "summary": "Commencez à vous entraîner à faire semblant de tousser.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Steven Spielberg revient à l'une des plus grandes sagas d'action et d'aventure du cinéma : il a lancé une franchise valant plus de 5 milliards de dollars",
+      "link": "https://www.jeuxvideo.com/news/2108611/steven-spielberg-revient-a-l-une-des-plus-grandes-sagas-d-action-et-d-aventure-du-cinema-il-a-lance-une-franchise-valant-plus-de-5-milliards-de-dollars.htm",
+      "date": "2026-10-14T07:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179179/1791792078-578-steven-spielberg-de-retour-dans-l-une-des-plus-grandes-sagas-d-action-du-cinema-il-relance-une-franchise-a-plus-de-5-000-millions-de-dollars.jpg",
+      "summary": "Pour son huitième opus, la franchise Transformers souhaite ne rien laisser au hasard et tente de réunir son équipe originale, celle-là même qui avait façonné ses débuts, comptant…",
+      "tags": []
+    },
+    {
+      "title": "Le Nintendo Switch Online reçoit 3 nouveaux jeux gratuits, dont un auquel vous pourrez jouer pour la première fois en 24 ans",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-switch-online-jeux-gratuits-kururin-paradise-724773?utm_source=RSS",
+      "date": "2026-10-14T07:37:03.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/419487_6412f6f0599f6.jpg",
+      "summary": "Les Nintendo Switch 1 et 2 accueillent trois nouveaux jeux gratuits grâce au Nintendo Switch Online, dont l’un disponible pour la toute première fois en dehors du Japon.",
+      "tags": []
+    },
+    {
+      "title": "Disney+ lance sa nouvelle série évènement? la suite d'un très gros carton que vous avez adorés",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-plus-serie-visionquest-date-episodes-724764?utm_source=RSS",
+      "date": "2026-10-14T07:30:05.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/675662_67c9668bddfd0.jpg",
+      "summary": "Disney+ lance aujourd’hui sa nouvelle série évènement qui fait suite à un énorme succès de la plateforme. Voici quand sortiront tous les épisodes de VisionQuest.",
+      "tags": []
+    },
+    {
+      "title": "« Les gens étaient furieux » Après 16 ans, le co-créateur de Red Dead Redemption défend la fin controversée du jeu et la plus douloureuse de sa carrière",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/red-dead-redemption-retour-fin-dan-houser-724767?utm_source=RSS",
+      "date": "2026-10-14T07:19:30.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/433197_64b7b30ab511b.jpg",
+      "summary": "16 ans plus tard, l'influent Dan Houser est récemment revenu sur la fin tant iconique que controversée de Red Dead Redemption pour la défendre et partager son propre ressenti à…",
+      "tags": []
+    },
+    {
+      "title": "Xbox annonce Xbox Labs, une initiative visant à rendre jouables d'anciens jeux améliorés sur navigateurs web",
+      "link": "https://fr.ign.com/halo-combat-evolved/93094/xbox-annonce-xbox-labs-une-initiative-visant-a-rendre-jouables-danciens-jeux-ameliores-sur-navigateu",
+      "date": "2026-10-14T07:18:12.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/x/xbox-annou/xbox-announces-xbox-labs-aimed-in-part-at-getting-improved-o_kj6a.jpg",
+      "summary": "Si l&#x27;objectif de Xbox est d&#x27;atteindre un milliard de joueurs par jour, il faut bien proposer des jeux partout où les gens sont susceptibles de se trouver.",
+      "tags": []
+    },
+    {
+      "title": "Mario Kart 8 s'offre une nouvelle mise à jour surprise, voici tout ce qu'elle change",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/mario-kart-8-mise-a-jour-401-724768?utm_source=RSS",
+      "date": "2026-10-14T07:07:05.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/430003_64a6c12f99373.jpg",
+      "summary": "Nintendo a déployé par surprise une nouvelle mise à jour pour Mario Kart 8, aussi bien sur Nintendo Switch que sur sa successeure. On fait le point sur ce qui change.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Mémoire cash - Entre prouesse technique et difficulté punitive, Mickey Mania était tel un dessin animé sur nos 16 bits",
+      "link": "https://www.gamekult.com/actualite/entre-prouesse-technique-et-difficulte-punitive-mickey-mania-etait-tel-un-dessin-anime-sur-nos-16-bits-101-3050866228.html",
+      "date": "2026-10-14T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866228/mickey-mania-en-1994-disney-rendait-les-joueurs-fous-de-rage-cbf45879__800_800__1406-0-3208-1804.jpg",
+      "summary": "Sorti en octobre 1994 sur Super Nintendo et Mega Drive, Mickey Mania reste l’un des platformers les plus ambitieux (et étranges) de l’ère 16 bits. Derrière la magie Disney se…",
+      "tags": []
+    },
+    {
+      "title": "Playgama launches tools for AI agents to publish and improve games",
+      "link": "https://www.pocketgamer.biz/playgama-launches-tools-for-ai-agents-to-publish-and-improve-games/",
+      "date": "2026-10-14T07:00:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141722/90039/playgama_l660.jpg",
+      "summary": "Playgama has launched a suite of tools that lets AI agents publish games, analyse player behaviour and release updated builds with less manual work. The company's MCP handles game…",
+      "tags": []
+    },
+    {
+      "title": "PS Plus Extra : la première sortie du catalogue de novembre 2026 dévoilée à l'avance, ça va être une grosse perte",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-extra-gta-5-quittera-catalogue-novembre-2026-date-724769?utm_source=RSS",
+      "date": "2026-10-14T06:59:25.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/633648_673c593b34095.webp",
+      "summary": "À quelques encablures de l’annonce des prochaines arrivées du PS Plus Extra et Premium, on connaît déjà le nom de l’une des futures sorties du service, et ça va être une grosse…",
+      "tags": []
+    },
+    {
+      "title": "One Piece 1196 : le prochain chapitre a leaké, à quoi s'attendre ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/one-piece-1196-leak-724759?utm_source=RSS",
+      "date": "2026-10-14T06:15:14.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/711182_698c232f1f0af.jpg",
+      "summary": "Comme toutes les semaines où le manga est attendu dans le Weekly Shonen Jump, le chapitre 1196 de One Piece a leaké. Voici tout ce qu’on sait.",
+      "tags": []
+    },
+    {
+      "title": "« On ne survivra pas si on se raccroche seulement au passé » Xbox ne se contentera pas de Fallout et Call of Duty",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/xbox-asha-sharma-declaration-nouvelles-licences-avenir-724760?utm_source=RSS",
+      "date": "2026-10-14T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_69ddffcd90f82.jpg",
+      "summary": "Si Xbox ne cache pas sa volonté de miser sur ses plus grandes franchises à l’avenir, Asha Sharma ne compte toutefois pas tourner le dos aux nouvelles licences pour autant.",
+      "tags": []
+    },
+    {
+      "title": "Fallout 4 : près de 11 ans après sa sortie, une ville entière et de nouvelles quêtes viennent d'être ajoutés par un simple mod gratuit",
+      "link": "https://www.jeuxvideo.com/news/2108922/fallout-4-pres-de-11-ans-apres-sa-sortie-une-ville-entiere-et-de-nouvelles-quetes-viennent-d-etre-ajoutes-par-un-simple-mod-gratuit.htm",
+      "date": "2026-10-14T05:50:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179190/1791898638-280-card.jpg",
+      "summary": "Sorti il y a près de onze ans, Fallout 4 accueille un tout nouveau hub urbain massif et des quêtes scénarisées avec le mod Detour. Entièrement gratuit, ce contenu prouve que la…",
+      "tags": []
+    },
+    {
+      "title": "Au tour de Metaphor : ReFantazio d'avoir sa démo avec données de sauvegarde transférables sur Switch 2",
+      "link": "https://www.gamekult.com/actualite/au-tour-de-metaphor-refantazio-d-avoir-sa-demo-avec-donnees-de-sauvegarde-transferables-sur-switch-2-3050872434.html",
+      "date": "2026-10-14T05:32:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872434/au-tour-de-metaphor-refantazio-d-avoir-sa-demo-avec-donnees-de-sauvegarde-transferables-sur-switch-2-9127f37b__800_800__841-0-1920-1080.jpg",
+      "summary": "Atlus et le Studio Zero ont mis en ligne une démo correspondant au prologue de Metaphor : ReFantazio sur Nintendo Switch 2. Cette dernière permet donc de jouer les débuts du jeu…",
+      "tags": []
+    },
+    {
+      "title": "Les jeux Toy Story sur PS1 et N64 sont incontournables : aujourd'hui, Disney les ressort des cartons sur Switch 1 et 2",
+      "link": "https://www.jeuxvideo.com/news/2108797/les-jeux-toy-story-sur-ps1-et-n64-sont-incontournables-aujourd-hui-disney-les-ressort-des-cartons-sur-switch-1-et-2.htm",
+      "date": "2026-10-14T05:05:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179188/1791879312-2071-card.jpg",
+      "summary": "Digital Eclipse et Disney dépoussièrent les pépites Toy Story de la PS1 et de la N64 sur Switch 1 et 2 cet automne. Entre nostalgie 32 bits et remaster 4K, voici tout ce qu'il…",
+      "tags": []
+    },
+    {
+      "title": "\"Détruisez ce film épouvantable, par Toutatis\" Les créateurs d'Astérix et Obélix détestaient ce film, mais il est quand même sorti !",
+      "link": "https://www.jeuxvideo.com/news/2108467/detruisez-ce-film-epouvantable-par-toutatis-les-createurs-d-asterix-et-obelix-detestaient-ce-film-mais-il-est-quand-meme-sorti.htm",
+      "date": "2026-10-14T04:55:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179155/1791553231-7999-card.jpg",
+      "summary": "Que ce soit au cinéma ou à la télévision, toutes les adaptations d’Astérix et Obélix n’ont pas toujours été bonnes. Mais il y en a une qui était si mauvaise que même les créateurs…",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 : comment jouer à la campagne et au mode DMZ en avance ?",
+      "link": "https://www.jeuxvideo.com/news/2108940/call-of-duty-modern-warfare-4-comment-jouer-a-la-campagne-et-au-mode-dmz-en-avance.htm",
+      "date": "2026-10-14T04:30:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179190/1791903043-4539-card.jpg",
+      "summary": "Envie de fouler les terres de Hajin avant tout le monde ? L'accès anticipé au mode DMZ de Call of Duty: Modern Warfare 4 ouvre ses portes le 20 octobre 2026. Découvrez les…",
+      "tags": []
+    },
+    {
+      "title": "Pendant 30 ans, il y avait un vaisseau spatial caché dans Zelda : Ocarina of Time",
+      "link": "https://www.jeuxvideo.com/news/2108826/pendant-30-ans-il-y-avait-un-vaisseau-spatial-cache-dans-zelda-ocarina-of-time.htm",
+      "date": "2026-10-14T04:05:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179190/1791896664-2613-card.jpg",
+      "summary": "Pendant près de trente ans, un vaisseau de Star Fox 64 sommeillait secrètement dans la cartouche de Zelda: Ocarina of Time. Grâce à une faille d'une complexité inouïe, les joueurs…",
       "tags": []
     },
     {
@@ -307,15 +704,6 @@
       "tags": []
     },
     {
-      "title": "63 Years Later, the Best 'Peanuts' Sally Line Is Still an Iconic Comic Strip Quote",
-      "link": "https://www.polygon.com/sally-brown-best-quotes-peanuts/",
-      "date": "2026-10-13T20:00:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/sally-brown-a-charlie-brown-thanksgiving-1973.jpg",
-      "summary": "In Peanuts, it's Sally Brown vs. school",
-      "tags": []
-    },
-    {
       "title": "Game and watch - Street Fighter, le film : quart de cercle vers le bas du front",
       "link": "https://www.gamekult.com/actualite/street-fighter-le-film-quart-de-cercle-vers-le-bas-du-front-3050871919.html",
       "date": "2026-10-13T20:00:00.000Z",
@@ -379,15 +767,6 @@
       "tags": []
     },
     {
-      "title": "Dropout Announces New Scripted Series that Spoofs MTV",
-      "link": "https://www.polygon.com/dropout-mp3-new-series-announced-jeremy-culhane-paul-f-tompkins/",
-      "date": "2026-10-13T18:58:33.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dropout-mp3-trailer-screenshot.png",
-      "summary": "Dropout has announced a series, MP3. Starring Jeremy Culhane and Paul F. Tompkins, it will spoof music video countdown shows like TRL.",
-      "tags": []
-    },
-    {
       "title": "Steam games with CCU staying power: what defines them?",
       "link": "https://newsletter.gamediscover.co/p/steam-games-with-ccu-staying-power",
       "date": "2026-10-13T18:54:17.000Z",
@@ -403,15 +782,6 @@
       "sourceId": "mgbiz",
       "image": null,
       "summary": "The platform offers both user acquisition and ad monetisation and draws on data and expertise from Miniclip, Easybrain and Tencent.",
-      "tags": []
-    },
-    {
-      "title": "Netflix Releases Official First Trailer for Greta Gerwig's Narnia Movie",
-      "link": "https://www.polygon.com/narnia-the-magicians-nephew-trailer-greta-gerwig-netflix/",
-      "date": "2026-10-13T18:22:48.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/aaaaqd9uw16zckkd6g-pejy7ulkaanwb6nfueutbhlkfbjzr_gxezgyca-y9pfq1gr2-18crotjugmfmvfrgbv88ur3slkf-r4b-ivgmzupoymgrgnwe4zmndotqculoxeekj897uthdskdc6ncxqawecynyqqm.jpg",
-      "summary": "Narnia: The Magician's Nephew comes to Netflix (and IMAX) in 2027. The first trailer for director Greta Gerwig's adaptation of CS Lewis' book is here.",
       "tags": []
     },
     {
@@ -616,33 +986,6 @@
       "tags": []
     },
     {
-      "title": "How to complete An Unheard Farewell in Valor Mortis",
-      "link": "https://www.pcgamer.com/games/action/valor-mortis-an-unheard-farewell-walkthrough/",
-      "date": "2026-10-13T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/KnKggkKmKDdJsm8A5wgfQJ-1920-80.jpg",
-      "summary": "Find the missing scouts for the Adjutant Sous-Officier.",
-      "tags": []
-    },
-    {
-      "title": "How to complete The Emissary in Valor Mortis",
-      "link": "https://www.pcgamer.com/games/action/valor-mortis-the-emissary-walkthrough/",
-      "date": "2026-10-13T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/uzkASnQXzVtg263PAx9Qhm-1920-80.jpg",
-      "summary": "Find a way to get past the poison clouds.",
-      "tags": []
-    },
-    {
-      "title": "How to complete The Scarecrow in Valor Mortis",
-      "link": "https://www.pcgamer.com/games/action/valor-mortis-the-scarecrow-walkthrough/",
-      "date": "2026-10-13T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/kDHHHBcAjBNTtVWUKBggAL-1920-80.jpg",
-      "summary": "Track down the unfortunate man's missing possessions.",
-      "tags": []
-    },
-    {
       "title": "Can you beat General Lothaire in Valor Mortis?",
       "link": "https://www.pcgamer.com/games/action/valor-mortis-general-lothaire-boss/",
       "date": "2026-10-13T17:00:00.000Z",
@@ -661,12 +1004,39 @@
       "tags": []
     },
     {
+      "title": "How to complete The Scarecrow in Valor Mortis",
+      "link": "https://www.pcgamer.com/games/action/valor-mortis-the-scarecrow-walkthrough/",
+      "date": "2026-10-13T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/kDHHHBcAjBNTtVWUKBggAL-1920-80.jpg",
+      "summary": "Track down the unfortunate man's missing possessions.",
+      "tags": []
+    },
+    {
       "title": "I can summon jumbo jets and boats from the sky in GTA 5 now, and I'll do it in the middle of crowded intersections if I want to",
       "link": "https://www.pcgamer.com/games/grand-theft-auto/i-can-summon-jumbo-jets-and-boats-from-the-sky-in-gta-5-now-and-ill-do-it-in-the-middle-of-crowded-intersections-if-i-want-to/",
       "date": "2026-10-13T17:00:00.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/Sm6nPuacLUNhGugdKtPkqm-1920-80.jpg",
       "summary": "And I do want to.",
+      "tags": []
+    },
+    {
+      "title": "How to complete An Unheard Farewell in Valor Mortis",
+      "link": "https://www.pcgamer.com/games/action/valor-mortis-an-unheard-farewell-walkthrough/",
+      "date": "2026-10-13T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/KnKggkKmKDdJsm8A5wgfQJ-1920-80.jpg",
+      "summary": "Find the missing scouts for the Adjutant Sous-Officier.",
+      "tags": []
+    },
+    {
+      "title": "How to complete The Emissary in Valor Mortis",
+      "link": "https://www.pcgamer.com/games/action/valor-mortis-the-emissary-walkthrough/",
+      "date": "2026-10-13T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/uzkASnQXzVtg263PAx9Qhm-1920-80.jpg",
+      "summary": "Find a way to get past the poison clouds.",
       "tags": []
     },
     {
@@ -922,33 +1292,6 @@
       "tags": []
     },
     {
-      "title": "Vos jeux préférés risquent de changer à cause de l'Union Européenne !",
-      "link": "https://www.jeuxvideo.com/videos/chroniques/2108800/vos-jeux-preferes-risquent-de-changer-a-cause-de-l-union-europeenne.htm",
-      "date": "2026-10-13T14:27:31.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179188/1791879768-1485-card.jpg",
-      "summary": "Une nouvelle loi va peut-être bouleverser nos habitudes de jeu en ligne, en s'intéressant à la protection des joueurs mineurs.",
-      "tags": []
-    },
-    {
-      "title": "Qui est le plus gros geek puant de jeuxvideo.com ?",
-      "link": "https://www.jeuxvideo.com/videos/chroniques/2108792/qui-est-le-plus-gros-geek-puant-de-jeuxvideo-com.htm",
-      "date": "2026-10-13T14:26:28.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179188/1791879286-864-card.jpg",
-      "summary": "On est tous des geek ici. Mais quel est le geek ultime, le maître incontesté ?",
-      "tags": []
-    },
-    {
-      "title": "Si vous attendez GTA 6 sur PC, une très belle surprise pourrait avoir leaké",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-pc-premier-trimestre-2027-leak-724758?utm_source=RSS",
-      "date": "2026-10-13T14:21:24.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bdf391d4a.jpg",
-      "summary": "Selon un leak tout frais, la très attendue version PC de GTA 6 pourrait finalement réserver une belle surprise en arrivant bien plus tôt qu'escompté pour un jeu Rockstar.",
-      "tags": []
-    },
-    {
       "title": "Former PlayStation Head Reflects On His Time At The Company: &#8216;What Headquarters Says Isn’t Important. We’re PlayStation!&#8217;",
       "link": "https://kotaku.com/former-playstation-head-reflects-on-his-time-at-the-company-what-headquarters-says-isnt-important-were-playstation-2000745235",
       "date": "2026-10-13T14:20:14.000Z",
@@ -987,33 +1330,12 @@
       "tags": []
     },
     {
-      "title": "Pokemon Pokopia accueille une nouvelle mise à jour avec des nouveautés très attendues par les joueurs, voici ce qui change",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/pokemon-pokopia-mise-a-jour-2-0-0-octobre-2026-patch-notes-724757?utm_source=RSS",
-      "date": "2026-10-13T14:03:43.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_69bd54780d133.jpg",
-      "summary": "Une nouvelle mise à jour est disponible pour Pokemon Pokopia sur Nintendo Switch 2, qui entre officiellement dans sa version 2.0.0. Voici la liste de toutes les nouveautés.",
-      "tags": [
-        "patch",
-        "release"
-      ]
-    },
-    {
       "title": "CMF Speaker S et M : la filiale de Nothing présente ses premiers enceintes sans fil",
       "link": "https://fr.ign.com/cmf-speaker-sm/93066/cmf-speaker-s-et-m-la-filiale-de-nothing-presente-ses-premiers-enceintes-sans-fil",
       "date": "2026-10-13T14:01:03.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/cmf-speaker-s-m-group-render_k8z6.jpg",
       "summary": "Le son au format brique de lait.",
-      "tags": []
-    },
-    {
-      "title": "Refonte de l’application Xbox sur PC : ce qui change sur la plate-forme de jeux vidéo",
-      "link": "https://www.jeuxvideo.com/news/2108633/refonte-de-l-application-xbox-sur-pc-ce-qui-change-sur-la-plate-forme-de-jeux-video.htm",
-      "date": "2026-10-13T14:00:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179180/1791796020-8801-card.jpg",
-      "summary": "Longtemps critiquée pour sa lenteur et sa gourmandise en ressources, l'application Xbox sur PC prépare sa métamorphose. Sous le nom de code Garrison, Microsoft orchestre une…",
       "tags": []
     },
     {
@@ -1033,17 +1355,6 @@
       "image": "https://cdn.mos.cms.futurecdn.net/869mjkNH6axrLNPgTSgZLj-1920-80.jpg",
       "summary": "Which is quite the feat.",
       "tags": []
-    },
-    {
-      "title": "The Witcher 3 Remastered reçoit une nouvelle mise à jour pour PS5 et PS5 Pro, voici ce qu'elle change",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-remastered-hotfix-5-01b-ps5-724754?utm_source=RSS",
-      "date": "2026-10-13T13:56:58.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96e1d60e562.jpg",
-      "summary": "The Witcher 3 Remastered vient d'accueillir une nouvelle mise à jour qui ne cible cette fois que les plateformes PS5 et PS5 Pro, voici ce qu'elle change.",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Dan Houser a été surpris de voir « à quel point certaines personnes étaient en colère » face à la fin emblématique de Red Dead Redemption",
@@ -1091,15 +1402,6 @@
       "tags": []
     },
     {
-      "title": "« P*tain de m*rde » Phantom Blade Zero n'a pas seulement impressionné les joueurs PS5, PlayStation a aussi été soufflé dès la première présentation",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/phantom-blade-zero-impressionne-playstation-premiere-presentation-724752?utm_source=RSS",
-      "date": "2026-10-13T13:15:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/story/606824_66e03a2817f88.jpg",
-      "summary": "Très attendu par les joueurs PS5, Phantom Blade Zero a vu son destin changer dès la première présentation que S-Game en a fait aux équipes de PlayStation.",
-      "tags": []
-    },
-    {
       "title": "Sony va sortir une PS5 Midnight Black pour l'équivalent de 310 euros au Japon",
       "link": "https://www.gamekult.com/actualite/sony-va-sortir-une-ps5-midnight-black-pour-l-equivalent-de-310-euros-au-japon-3050872426.html",
       "date": "2026-10-13T13:15:00.000Z",
@@ -1124,24 +1426,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/rosebelmont-1280x720.jpg",
       "summary": "Paris is burning...down my fucking patience",
-      "tags": []
-    },
-    {
-      "title": "En attendant le nouveau film James Bond, un autre grand retour se prépare pour l'espion mythique",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/james-bond-bande-dessinee-retour-idw-724750?utm_source=RSS",
-      "date": "2026-10-13T13:09:59.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/429206_649bf91b027f0.jpg",
-      "summary": "James Bond n'a toujours pas de nouvel interprète pour un prochain film, mais il fera bientôt son grand retour sur un autre format qu'il n'avait plus fréquenté depuis un moment.",
-      "tags": []
-    },
-    {
-      "title": "Bande Annonce Squadron 42",
-      "link": "https://www.jeuxvideo.com/videos/2108912/bande-annonce-squadron-42.htm",
-      "date": "2026-10-13T13:00:51.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179190/1791896377-4864-card.jpg",
-      "summary": "Après 14 années de développent, l'ambitieux Squadron 42 refait enfin surface avec un trailer explosif. La campagne solo titanesque dérivée de Star Citizen semble enfin prête à…",
       "tags": []
     },
     {
@@ -1181,30 +1465,12 @@
       "tags": []
     },
     {
-      "title": "« L’un des plus grands titres du jeu vidéo moderne » 10 ans après sa sortie, ce jeu adoré de tous arrive sur iOS avec de belles promesses",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/no-mans-sky-date-sortie-mobile-ios-nouveautes-724747?utm_source=RSS",
-      "date": "2026-10-13T12:27:42.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/605172_66d96e1fb52af.webp",
-      "summary": "Dix ans après sa sortie, No Man’s Sky n’a pas encore dit son dernier mot et se prépare à partir à la conquête d’une nouvelle galaxie de joueurs sur une nouvelle plateforme.",
-      "tags": []
-    },
-    {
       "title": "Wishlist inflation is real, but you still need them",
       "link": "https://howtomarketagame.com/2026/10/13/wishlist-inflation-is-real-but-they-are-still-important/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wishlist-inflation-is-real-but-they-are-still-important",
       "date": "2026-10-13T12:18:03.000Z",
       "sourceId": "htmag",
       "image": "https://s.w.org/images/core/emoji/16.0.1/72x72/1f449.png",
       "summary": "This is a deep dive into the results of the Steam wishlist and sales data I have been collecting from readers. The survey is still active so if you would like to contribute…",
-      "tags": []
-    },
-    {
-      "title": "The Witcher 3 Remastered reçoit une tonne de nouvelles fonctionnalités gratuites pour faciliter la vie des joueurs",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-remastered-mod-menu-triche-724746?utm_source=RSS",
-      "date": "2026-10-13T12:17:49.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/721647_6a8e972db6087.jpg",
-      "summary": "En plus des fonctionnalités ajoutées à The Witcher 3 Remastered, il en a récemment reçu une tonne d'autres pour encore plus faciliter la vie des joueurs.",
       "tags": []
     },
     {
@@ -1223,15 +1489,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/laufey-disc-1280x720.jpg",
       "summary": "After Ragnarok 's special edition accidentally shipped without download codes, Sony seems to have taken inspiration",
-      "tags": []
-    },
-    {
-      "title": "Chasse aux Oeufs Aniimo : 5 astuces pour comprendre le mode coop",
-      "link": "https://www.jeuxvideo.com/news/2108825/chasse-aux-oeufs-aniimo-5-astuces-pour-comprendre-le-mode-coop.htm",
-      "date": "2026-10-13T11:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179188/1791884840-1822-card.jpg",
-      "summary": "Découvrez comment fonctionne le mode Chasse aux Oeufs de Aniimo, l'activité principale à réaliser en coopération avec 2 autres joueurs. Une fois débloqué, après avoir atteint le…",
       "tags": []
     },
     {
@@ -1298,17 +1555,6 @@
       "tags": []
     },
     {
-      "title": "Call of Duty Modern Warfare 4 sur PlayStation 5 est en promo juste avant sa sortie",
-      "link": "https://www.jeuxvideo.com/news/2108705/call-of-duty-modern-warfare-4-sur-playstation-5-est-en-promo-juste-avant-sa-sortie.htm",
-      "date": "2026-10-13T10:50:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179181/1791810887-4580-card.jpg",
-      "summary": "Call of Duty : Modern Warfare 4 s'offre une réduction de 25 % en précommande sur PS5, accompagnée de bonus exclusifs. Entre sa date de sortie et son virage tactique inspiré de…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
       "title": "Syndicalisme chez Double Fine : récit d'un naufrage social et d'une vague de licenciements",
       "link": "https://www.gamekult.com/actualite/syndicalisme-chez-double-fine-recit-d-un-naufrage-social-et-d-une-vague-de-licenciements-3050872424.html",
       "date": "2026-10-13T10:47:00.000Z",
@@ -1327,72 +1573,12 @@
       "tags": []
     },
     {
-      "title": "Battlefield 6 lance l’une de ses plus grosses mises à jour avec une tonne de nouveautés gratuites pour sa saison 5",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/battlefield-6-saison-5-vegas-dead-space-724742?utm_source=RSS",
-      "date": "2026-10-13T10:43:12.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724478_6ac6156e20e5a.jpg",
-      "summary": "Battlefield vient de lancer sa saison 5 avec une très grosse mise à jour et une pelletée de contenus gratuits, dont deux nouvelles cartes et 4 armes inédites.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Après 16 ans, ce jeu Nintendo DS oublié de tous va faire son grand retour sur Steam",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-ds-dementium-2-724736?utm_source=RSS",
-      "date": "2026-10-13T10:30:58.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724736_6ace0058a7418.jpg",
-      "summary": "16 ans après sa sortie originale sur Nintendo DS, l’un des jeux d’horreur les plus gores de la console portable va s’offrir une seconde chance sur PC.",
-      "tags": []
-    },
-    {
-      "title": "Prime Video met le paquet avec sa prochaine série évènement, ça promet d'être une claque",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-video-blade-runner-2099-25-novembre-2026-724732?utm_source=RSS",
-      "date": "2026-10-13T10:01:57.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/582808_668b9e9537aaf.png",
-      "summary": "Après une longue gestation, Prime Video a enfin dévoilé la date de sortie de ce qui est l'une de ses séries les plus attendues de 2026 dans un trailer spectaculaire.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Museum strings together 30 old Mac minis for replica of most successful supercomputer, builds something more powerful than the original",
-      "link": "https://www.pcgamer.com/hardware/museum-strings-together-30-old-mac-minis-for-replica-of-most-successful-supercomputer-builds-something-more-powerful-than-the-original/",
-      "date": "2026-10-13T09:46:31.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VE2CSa5Brp5dpdTjfkFzRG-1920-80.png",
-      "summary": "Happy birthday, Apple.",
-      "tags": []
-    },
-    {
       "title": "BAFTA awards over £270,000 to support 112 emerging creatives",
       "link": "https://www.pocketgamer.biz/bafta-awards-over-270000-to-support-112-emerging-creatives/",
       "date": "2026-10-13T09:43:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141717/90034/bafta-logo_l660.jpg",
       "summary": "BAFTA has awarded more than &pound;270,000 in grants to 112 emerging creatives across the UK and North America through its 2026 bursary and scholarship programmes. The funding is…",
-      "tags": []
-    },
-    {
-      "title": "The Operator : le génial thriller d'enquête de Bureau 81 est désormais disponible sur mobiles",
-      "link": "https://www.gamekult.com/actualite/the-operator-le-genial-thriller-d-enquete-de-bureau-81-est-desormais-disponible-sur-mobiles-3050872420.html",
-      "date": "2026-10-13T09:31:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872420/the-operator-bec419f0__800_800__84-0-1163-1080.jpg",
-      "summary": "Après avoir éprouvé les cellules grises des joueurs PC et Switch, The Operator exporte son interface de détective sur les plateformes mobiles. Le thriller interactif du studio…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "GTA 6 fera une grande première pour la licence avec cette fonctionnalité inédite",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/gta-6-nouvelle-fonctionnalite-ecouteurs-radio-724731?utm_source=RSS",
-      "date": "2026-10-13T09:27:35.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/723155_6aabe0718e6f8.jpg",
-      "summary": "GTA 6 débordera de nouveautés, dont cette nouvelle fonctionnalité qui permettra, pour la première fois dans la licence, de profiter des radios différemment.",
       "tags": []
     },
     {
@@ -1405,95 +1591,12 @@
       "tags": []
     },
     {
-      "title": "God of War Laufey annonce finalement une édition collector surprise sur PS5, voici où et quand la précommander",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/god-of-war-laufey-annonce-edition-collector-ps5-ou-quand-precommander-724733?utm_source=RSS",
-      "date": "2026-10-13T09:19:45.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a214dc2536b7.jpg",
-      "summary": "Sans crier gare, PlayStation et Santa Monica Studio viennent tout juste de lancer les précommandes d’une édition collector pour God of War Laufey. Voici toutes les infos.",
-      "tags": []
-    },
-    {
-      "title": "« Ça fait des années que je les attend » Skyrim s'offre l'équivalent de 3 DLC officiels ultra populaires sur PS5 et Xbox Series",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/skyrim-3-mods-kinggath-creations-ps5-xbox-series-724727?utm_source=RSS",
-      "date": "2026-10-13T09:07:51.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/526171_65d5b21f42bd0.jpg",
-      "summary": "Après des années d'attente, les versions PS5 et Xbox Series de Skyrim accueillent enfin l'équivalent de 3 DLC officiels largement plébiscités par la communauté.",
-      "tags": []
-    },
-    {
-      "title": "Resident Evil détrône Weapons et devient le film de Zach Cregger ayant généré le plus de recettes ; The Social Reckoning fait un flop",
-      "link": "https://fr.ign.com/other-mommy/93043/resident-evil-detrone-weapons-et-devient-le-film-de-zach-cregger-ayant-genere-le-plus-de-recettes-th",
-      "date": "2026-10-13T08:44:08.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/r/resident-e/resident-evil-overtakes-weapons-as-zach-creggers-highest-gro_g51w.jpg",
-      "summary": "Qui aurait pu prédire ? (Sans ironie cette fois).",
-      "tags": []
-    },
-    {
       "title": "PG Connects Nordics: The editorial team's can't-miss sessions",
       "link": "https://www.pocketgamer.biz/pg-connects-nordics-the-editorial-teams-cant-miss-sessions/",
       "date": "2026-10-13T08:30:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141707/90014/pgc-nor26-articleimage-seminarpicks-allinone-1200x600_l660.jpg",
       "summary": "Behind the scenes here, the editorial team has spent the past few weeks exploring the PGC Nordics schedule through interviews, op-eds and features with the speakers. Along the…",
-      "tags": []
-    },
-    {
-      "title": "\"Nous suivons ce que préfère le consommateur\" : Nintendo assure ne pas vouloir abandonner le support physique",
-      "link": "https://www.gamekult.com/actualite/nous-suivons-ce-que-prefere-le-consommateur-nintendo-assure-ne-pas-vouloir-abandonner-le-support-physique-3050872421.html",
-      "date": "2026-10-13T08:17:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872421/nous-suivons-ce-que-prefere-le-consommateur-nintendo-assure-ne-pas-vouloir-abandonner-le-support-physique-bff0d77e__800_800__277-0-997-720.jpg",
-      "summary": "Alors que Bill van Zyll, vice-président et directeur général de Nintendo pour l’Amérique latine s'est exprimé auprès du YouTubeur Coelho no Japão (relayés par Nintendo…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Dans l'espace, personne ne vous entendra fêter les 18 ans de Dead Space",
-      "link": "https://www.gamekult.com/actualite/dans-l-espace-personne-ne-vous-entendra-feter-les-18-ans-de-dead-space-101-3050866221.html",
-      "date": "2026-10-13T07:30:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866221/il-y-a-17-ans-dead-space-naissait-sous-une-mauvaise-etoile-7488ee1d__800_800__174-116-1138-1080.jpg",
-      "summary": "Né le 13 octobre 2008 en Amérique du Nord, Dead Space aurait pu être le nouveau messie du survival horror dans une dimension plus clémente. Mais les coûts de production élevés et…",
-      "tags": []
-    },
-    {
-      "title": "Test Castlevania : Belmont’s Curse - Une nouvelle renaissance ?",
-      "link": "https://fr.ign.com/castlevania-belmonts-curse/93025/test-castlevania-belmonts-curse-une-nouvelle-renaissance",
-      "date": "2026-10-13T07:00:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/1245609-castlevania-belmont-s-curse_qj1k.jpg",
-      "summary": "Mérite-Il ses lettres de noblesse ? Castlevania a encore sa place parmi les grands du Metroidvania, et Belmont’s Curse ne semble pas avoir besoin d’être un nouveau pionnier pour…",
-      "tags": []
-    },
-    {
-      "title": "Test : Castlevania : Belmont&#039;s Curse, le plus beau cadeau possible pour les 40 ans de la franchise ?",
-      "link": "https://www.gamekult.com/jeux/castlevania-belmont-s-curse-3050889133/test.html",
-      "date": "2026-10-13T07:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/review/30/3050872341/castlevania-belmont-s-curse-e439dc51__800_800__354-0-1435-1080.jpg",
-      "summary": "« Gna gna gna, c'est pas comme avant, alors c'est de la daube. » Voilà le ressenti qui a l'air de prédominer sur les réseaux sociaux depuis que la démo publique de Castlevania…",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : l’immersion inédite de Pape San à Paris pour le lancement du jeu",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93059/call-of-duty-modern-warfare-4-limmersion-inedite-de-pape-san-a-paris-pour-le-lancement-du-jeu",
-      "date": "2026-10-13T05:38:55.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/mw4-cam-011-branded-1779973423633_vpev.jpg",
-      "summary": "Séoul s’invite à Paris.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "\"Fait en une demi-heure\" : Yuji Horii (Dragon Quest) signe son premier jeu généré par IA",
-      "link": "https://www.gamekult.com/actualite/fait-en-une-demi-heure-yuji-horii-dragon-quest-signe-son-premier-jeu-genere-par-ia-3050872417.html",
-      "date": "2026-10-13T05:35:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872417/fait-en-une-demi-heure-yuji-horii-dragon-quest-signe-son-premier-jeu-genere-par-ia-4761ac27__800_800__0-0-1079-1080.jpg",
-      "summary": "Yuji Horii, 72 ans, légende du jeu vidéo, père de la saga Dragon Quest et collaborateur de Chrono Trigger, a publié sur X son dernier jeu. Mais attention, rien à voir avec Dragon…",
       "tags": []
     },
     {
@@ -1557,33 +1660,6 @@
       "sourceId": "mgbiz",
       "image": null,
       "summary": "Hello Games says it's the full game rather than a cut-down port, though multiplayer and planetary settlements won't be included.",
-      "tags": []
-    },
-    {
-      "title": "The soft launch games you need to know about from Supercell, EA, Moon Active, Zynga, more",
-      "link": "https://mobilegamer.biz/the-soft-launch-games-you-need-to-know-about/",
-      "date": "2026-10-12T09:00:00.000Z",
-      "sourceId": "mgbiz",
-      "image": "https://i0.wp.com/mobilegamer.biz/wp-content/uploads/2026/10/family-tales.jpg?resize=500%2C177&#038;ssl=1",
-      "summary": "Take a peek at the games in testing from the mobile games industry’s top publishers.",
-      "tags": []
-    },
-    {
-      "title": "Fingersoft to close Lego Hill Climb Adventures, but no staff will be let go",
-      "link": "https://mobilegamer.biz/fingersoft-to-close-lego-hill-climb-adventures-but-no-staff-will-be-let-go/",
-      "date": "2026-10-12T08:51:39.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "The studio says the game didn't perform well enough to sustain a long-term free-to-play model.",
-      "tags": []
-    },
-    {
-      "title": "MIGS Early Bird ends this week",
-      "link": "https://www.pocketgamer.biz/migs-early-bird-ends-this-week/",
-      "date": "2026-10-12T08:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/140662/89972/pgc-mtl26-article-image-gen-1200x600l1200_l660.jpg",
-      "summary": "The Montr&eacute;al International Game Summit (MIGS) returns next month - on November 10th and 11th - with more speakers and opportunities to grow your business and career. It's…",
       "tags": []
     },
     {
