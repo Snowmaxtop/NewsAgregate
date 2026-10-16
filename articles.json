@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T00:00:11.921Z",
+  "generatedAt": "2026-10-16T04:14:08.418Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -43,7 +43,7 @@
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
       "newest": "2026-10-15T19:40:09.000Z",
-      "kept": 18
+      "kept": 17
     },
     "gameblog": {
       "status": "ok",
@@ -56,7 +56,7 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-15T20:00:00.000Z",
+      "newest": "2026-10-16T04:00:00.000Z",
       "kept": 21
     },
     "kotaku": {
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-15T21:09:54.000Z",
-      "kept": 28
+      "newest": "2026-10-16T00:08:45.000Z",
+      "kept": 30
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-15T21:12:33.000Z",
+      "newest": "2026-10-16T04:00:23.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -125,6 +125,64 @@
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt87129fff10b28f9e/6acd0f41af1349b92bc3bb90/GCMX2026_-_Logo_Horizontal_-_Oscuro.png?width=720&quality=80&disable=upscale",
       "summary": "",
       "tags": []
+    },
+    {
+      "title": "34 Years Later, the Best-Ever 'Far Side' Quote Will Still Leave You Speechless",
+      "link": "https://www.polygon.com/best-far-side-quote-ever/",
+      "date": "2026-10-16T04:00:23.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/screen-shot-2026-10-15-at-1-27-56-pm.jpg",
+      "summary": "Gary Larson's comic strip The Far Side was known for its visual humor, but this is the best-ever quote from the series",
+      "tags": []
+    },
+    {
+      "title": "Preview : Eternal Anima : le JRPG de Marvelous parviendra-t-il à justifier son casting 5 étoiles ?",
+      "link": "https://www.gamekult.com/jeux/eternal-anima-3050889660/preview-3050872409.html",
+      "date": "2026-10-16T04:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/preview/30/3050872409/eternal-anima-le-jrpg-de-marvelous-parviendra-t-il-a-justifier-son-casting-5-etoiles-57295cb9__800_800__421-0-1500-1080.png",
+      "summary": "Réunir Kazushige Nojima, Katsuhisa Higuchi et Keisuke Makino sous une même bannière, c’est convoquer trois pans de l’âge d’or du JRPG, et tous les amateurs avisés avec. Eternal…",
+      "tags": []
+    },
+    {
+      "title": "53 Years Later, The Greatest Closing Line In Sci-Fi History Is Still The Best Book Quote Of The 1970s",
+      "link": "https://www.polygon.com/best-scifi-book-closing-line/",
+      "date": "2026-10-16T02:21:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/resident-evil-1.jpg",
+      "summary": "Roadside Picnic ends with one of science fiction’s most beautiful lines, a simple wish for happiness that still resonates more than 50 years later.",
+      "tags": []
+    },
+    {
+      "title": "The Batman Part 2 to Resume Filming With New Director",
+      "link": "https://www.polygon.com/the-batman-part-2-steven-soderbergh-production-update/",
+      "date": "2026-10-16T01:36:53.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23277204/rev_1_TBM_63105r_High_Res_JPEG.jpeg",
+      "summary": "Steven Soderbergh is stepping in to help complete The Batman Part 2, starring Robert Pattinson, as questions remain about the DC sequel's release date",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "US lawmaker calls videogame purchases rentals disguised as sales: 'When you pay for a game, you should own it'",
+      "link": "https://www.pcgamer.com/gaming-industry/us-lawmaker-calls-videogame-purchases-rentals-disguised-as-sales-when-you-pay-for-a-game-you-should-own-it/",
+      "date": "2026-10-16T00:08:45.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/5b4WMs9ucymCPvbCjSEF8-1920-80.jpg",
+      "summary": "Representative Ritchie Torres will introduce a bill aimed at protecting videogame ownership, including for online games that are decommissioned.",
+      "tags": []
+    },
+    {
+      "title": "Steam achievements are getting a huge overhaul, with separate sets for DLC and season passes, and an easy way to compare with friends",
+      "link": "https://www.pcgamer.com/software/platforms/steam-achievements-are-getting-a-huge-overhaul-with-separate-sets-for-dlc-and-season-passes-and-an-easy-way-to-compare-with-friends/",
+      "date": "2026-10-15T23:58:30.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/aDSd3fesSdXXhP9JGLAMAS-1920-80.png",
+      "summary": "It's in beta now, but will likely release widely in about a month.",
+      "tags": [
+        "patch"
+      ]
     },
     {
       "title": "The New Street Fighter Movie Gets Savaged By Critics, But Not Everyone Hates It",
@@ -353,33 +411,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/c/cd-projekt/cd-projekt-has-officially-begun-work-on-project-hadar-but-it_16pf.jpg",
       "summary": "Ta-da !",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 Officially Passes a Major Production Milestone",
-      "link": "https://www.polygon.com/diablo-5-blizzard-rpg-cinematic-shooting-begins/",
-      "date": "2026-10-15T17:56:34.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/diablo.jpeg",
-      "summary": "Blizzard is hard at work on Diablo 5 as shooting begins for the game despite being slated for release in 2029",
-      "tags": []
-    },
-    {
-      "title": "'Obsession 'Director’s Next Film Is 'Even Better' Than Last, Says Seth Rogen",
-      "link": "https://www.polygon.com/obsession-director-curry-barker-next-film-anything-but-ghosts/",
-      "date": "2026-10-15T17:48:46.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/obsession-inde-navarrette.jpg",
-      "summary": "Seth Rogen has already seen Curry Barker's next film, 'Anything But Ghosts,' and he says it's excellent.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon Center Trolls Fans With Worst 30th Anniversary TCG Drop Yet",
-      "link": "https://www.polygon.com/pokemon-center-drop-today-what-is-30th-anniversary-tcg-tins-error/",
-      "date": "2026-10-15T17:42:46.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/16191800/Screen_Shot_2019_04_25_at_3.18.21_PM.png",
-      "summary": "Pokémon fans were hoping for the UPC from the 30th Anniversary TCG set, or maybe some more Delta Reign ETBs from TPC",
       "tags": []
     },
     {
@@ -985,6 +1016,15 @@
       "tags": []
     },
     {
+      "title": "Asus ROG Xbox Ally X20 review",
+      "link": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
+      "date": "2026-10-15T13:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/q2KGqXCKzUfQnh7GN4Uzm3-1920-80.jpg",
+      "summary": "How much are an OLED screen, TMR sticks, and a fresh aesthetic worth to you?",
+      "tags": []
+    },
+    {
       "title": "A co-op survival game where trolls aren't just there to be killed? 'We don't talk about them as enemies, but rather as neighbors'",
       "link": "https://www.pcgamer.com/games/survival-crafting/a-co-op-survival-game-where-trolls-arent-just-there-to-be-killed-we-dont-talk-about-them-as-enemies-but-rather-as-neighbors/",
       "date": "2026-10-15T13:00:00.000Z",
@@ -1000,15 +1040,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/ix9CtVVraJHE4czdR72sn3-1920-80.jpg",
       "summary": "All that glitters might actually be gold.",
-      "tags": []
-    },
-    {
-      "title": "Asus ROG Xbox Ally X20 review",
-      "link": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
-      "date": "2026-10-15T13:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/q2KGqXCKzUfQnh7GN4Uzm3-1920-80.jpg",
-      "summary": "How much are an OLED screen, TMR sticks, and a fresh aesthetic worth to you?",
       "tags": []
     },
     {
@@ -1599,24 +1630,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179156/1791555162-8212-aviez-vous-remarque-ce-petit-garcon-dans-batman-begins-plus-tard-il-a-incarne-le-personnage-le-plus-deteste-de-l-histoire-des-series.jpg",
       "summary": "Avant de devenir le souverain des Sept Couronnes dans Game of Thrones, ce comédien traînait sa bouille d’enfant innocent dans les ruelles sombres de Gotham City, et personne…",
-      "tags": []
-    },
-    {
-      "title": "Pokémon Or sur Game Boy tenait sur une cartouche de 1 Mo et proposait une fonctionnalité encore rare dans les jeux de 2026",
-      "link": "https://www.jeuxvideo.com/news/2109036/pokemon-or-sur-game-boy-tenait-sur-une-cartouche-de-1-mo-et-proposait-une-fonctionnalite-encore-rare-dans-les-jeux-de-2026.htm",
-      "date": "2026-10-15T04:05:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179198/1791977127-1554-card.jpg",
-      "summary": "Qui aurait cru qu'un des plus grands twists de l'histoire du jeu vidéo tiendrait sur une cartouche d'à peine un mégaoctet ? Derrière le monde massif de Pokémon Or se cache le…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Le procès qui a changé le jeu vidéo : retour sur l'affaire Night Trap au Congrès américain",
-      "link": "https://www.gamekult.com/actualite/le-proces-qui-a-change-le-jeu-video-retour-sur-l-affaire-night-trap-au-congres-americain-3050872418.html",
-      "date": "2026-10-15T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872418/night-trap-le-coupable-ideal-d-un-congres-americain-en-panique-morale-e6fb563b__800_800__0-295-1706-2002.jpg",
-      "summary": "Le 9 décembre 1993, le Sénat américain instruit le procès du jeu vidéo. Sur le banc des accusés, aux côtés de Mortal Kombat et de Lethal Enforcers, on trouve un film interactif de…",
       "tags": []
     },
     {
