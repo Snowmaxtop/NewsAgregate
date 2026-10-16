@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:54:43.325Z",
+  "generatedAt": "2026-10-16T20:23:22.213Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-16T17:00:34.000Z",
-      "kept": 39
+      "kept": 37
     },
     "gamedev": {
       "status": "ok",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-16T15:23:10.000Z",
+      "newest": "2026-10-16T18:10:10.000Z",
       "kept": 15
     },
     "gameblog": {
@@ -57,14 +57,14 @@
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
       "newest": "2026-10-16T15:25:00.000Z",
-      "kept": 18
+      "kept": 17
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-16T17:30:19.000Z",
-      "kept": 18
+      "newest": "2026-10-16T20:00:33.000Z",
+      "kept": 20
     },
     "pcgamer": {
       "status": "fail",
@@ -75,7 +75,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-16T17:35:53.000Z",
+      "newest": "2026-10-16T20:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -103,7 +103,7 @@
       "status": "ok",
       "url": "https://newsletter.gamediscover.co/feed",
       "items": 20,
-      "newest": "2026-10-13T18:54:17.000Z",
+      "newest": "2026-10-16T19:07:18.000Z",
       "kept": 2
     },
     "htmag": {
@@ -116,11 +116,110 @@
   },
   "articles": [
     {
-      "title": "Street Fighter’s Best Live-Action Movie Yet Is Now Free on Streaming",
+      "title": "How Should Video Game Ownership Work In An All-Digital Future?",
+      "link": "https://kotaku.com/how-should-video-game-ownership-work-in-an-all-digital-future-2000746817",
+      "date": "2026-10-16T20:00:33.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/GettyImages-2295116957-1-1280x853.jpg",
+      "summary": "Legislative pressure could force companies to change how digital game licenses work",
+      "tags": []
+    },
+    {
+      "title": "8 New TV Shows to Watch This Weekend on Netflix, Disney, and Hulu (October 16-18)",
+      "link": "https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-october-16-18/",
+      "date": "2026-10-16T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/nup_207980_01941_rf.JPG",
+      "summary": "In this weekend's TV column, we highlight major releases, among them, the end of an era for Marvel streaming and a prequel to a horror icon.",
+      "tags": []
+    },
+    {
+      "title": "Castlevania&#8216;s Most Iconic Song Should Chain Whip Me To Death, Not Put Me In A Thousand Year Sleep",
+      "link": "https://kotaku.com/the-belmonts-curse-soundtrack-needs-a-little-more-blood-and-tears-2000746787",
+      "date": "2026-10-16T19:30:48.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/07/Belmont-1280x716.jpg",
+      "summary": "The Belmont's Curse version of \"Bloody Tars\" is more restrained than it should be",
+      "tags": []
+    },
+    {
+      "title": "What other devices do PC game fans play on?",
+      "link": "https://newsletter.gamediscover.co/p/what-other-devices-do-pc-game-fans",
+      "date": "2026-10-16T19:07:18.000Z",
+      "sourceId": "gdco",
+      "image": "https://substackcdn.com/image/fetch/$s_!Vih0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81350f9-a727-4c39-ae0b-20c080b2752f_800x449.jpeg",
+      "summary": "The myth of the monolithic 'PC gamer', debunked. Also: news & this week on Steam!",
+      "tags": []
+    },
+    {
+      "title": "Ready Or Not: The Kotaku Review",
+      "link": "https://kotaku.com/ready-or-not-the-kotaku-review-2000710149",
+      "date": "2026-10-16T19:00:20.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/07/image-15-1280x718.jpg",
+      "summary": "It's useless to moralize: the sick thrill is the point",
+      "tags": []
+    },
+    {
+      "title": "Every DC Studios Movie and TV Show in Coming Through 2028 (and Beyond)",
+      "link": "https://www.polygon.com/dc-movies-tv-shows-dcu-release-calendar-james-gunn/",
+      "date": "2026-10-16T18:52:16.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22688599/LuciaPham_210623_ecl1087_DC.png",
+      "summary": "Warner Bros. new DCU has a 10-year plan under James Gunn. Here's what next for DC movies and TV shows after Superman and Supergirl.",
+      "tags": []
+    },
+    {
+      "title": "How to get the DLC weapons in Fire Emblem Fortune's Weave",
+      "link": "https://www.polygon.com/fire-emblem-fortunes-weave-dlc-weapons-how-to-get/",
+      "date": "2026-10-16T18:47:07.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fortunes-weave-classic-fire-emblem.jpg",
+      "summary": "Fire Emblem Fortune's Weave's DLC weapons are powerful, if fragile, additions to your armory. Here's how to get Fortune's Weave's DLC weapons",
+      "tags": []
+    },
+    {
+      "title": "Anime Gambling Horror Game Ditches Free Steam Demo So It Doesn&#8217;t Get Ripped Off By AI",
+      "link": "https://kotaku.com/anime-gambling-horror-game-ditches-free-steam-demo-over-fears-of-getting-ripped-off-by-ai-2000746794",
+      "date": "2026-10-16T18:30:00.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/something-fun-1280x720.jpg",
+      "summary": "Drunken Goddess Reflux will have a closed beta instead",
+      "tags": []
+    },
+    {
+      "title": "Ce joueur de Red Dead Redemption 2 a dessiné sa propre carte du jeu, et elle fait passer le travail de Rockstar pour un brouillon",
+      "link": "https://www.jeuxvideo.com/news/2108537/ce-joueur-de-red-dead-redemption-2-a-dessine-sa-propre-carte-du-jeu-et-elle-fait-passer-le-travail-de-rockstar-pour-un-brouillon.htm",
+      "date": "2026-10-16T18:10:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179156/1791561875-7885-card.jpg",
+      "summary": "Huit ans après la sortie du titre de Rockstar, la communauté réinvente encore le jeu et son univers. C’est le cas de ce joueur sur Reddit qui a totalement refait à la main la…",
+      "tags": []
+    },
+    {
+      "title": "New RPG From Final Fantasy, Persona Vets Borrows From The Past To Ask How We Can Save The Future",
+      "link": "https://kotaku.com/new-rpg-from-final-fantasy-persona-vets-borrows-from-the-past-to-ask-how-we-can-save-the-future-2000746405",
+      "date": "2026-10-16T18:00:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Eternal-Anima-1280x693.jpg",
+      "summary": "Eternal Anima finds surprising strategic depth in letting you foresee your opponent's next move",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Recaptures What Made GTA’s Best DLC So Great",
+      "link": "https://www.polygon.com/gta-6-ballad-of-gay-tony/",
+      "date": "2026-10-16T18:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_10.jpg",
+      "summary": "Vice City's lavish clubs, high-speed getaways, and over-the-top heists recall GTA's most extravagant era.",
+      "tags": []
+    },
+    {
+      "title": "Street Fighter’s Best Live-Action Movie Yet Is Free on Streaming",
       "link": "https://www.polygon.com/street-fighter-1994-streaming-free-tubi-pluto-tv/",
       "date": "2026-10-16T17:35:53.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/16-street-fighter.jpg",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8580365/usf2hero.jpg",
       "summary": "The original 1994 Street Fighter movie is streaming for free on Tubi and Pluto TV.",
       "tags": []
     },
@@ -167,6 +266,24 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/critical-role-imodna.jpg",
       "summary": "A single kiss changed everything in Critical Role's Campaign 3.",
+      "tags": []
+    },
+    {
+      "title": "Modern Warfare 4 : bien qu'efficace, la campagne solo m’a déçu. Call of Duty est devenu trop sage",
+      "link": "https://www.jeuxvideo.com/news/2109505/modern-warfare-4-bien-qu-efficace-la-campagne-solo-m-a-decu-call-of-duty-est-devenu-trop-sage.htm",
+      "date": "2026-10-16T17:00:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792160854-4730-card.jpg",
+      "summary": "La campagne de Modern Warfare 4 est dispo dès maintenant en accès anticipé, et de mon côté, je l’ai déjà terminée ! Même si j’ai passé un bon moment, je suis assez déçu. Je vous…",
+      "tags": []
+    },
+    {
+      "title": "Crimson Desert : le studio reconnait s'être planté et fait un mea culpa",
+      "link": "https://www.jeuxvideo.com/news/2109228/crimson-desert-le-studio-reconnait-s-etre-plante-et-fait-un-mea-culpa.htm",
+      "date": "2026-10-16T16:45:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179207/1792070495-6844-card.jpg",
+      "summary": "Entre critiques mitigées et succès commercial, Crimson Desert a connu des débuts compliqués. Pearl Abyss est depuis revenu sur les difficultés du test pour la presse.",
       "tags": []
     },
     {
@@ -233,6 +350,17 @@
       "tags": []
     },
     {
+      "title": "Test Planet Zoo 2 sur PC, PS5 et Xbox Series",
+      "link": "https://www.jeuxvideo.com/test/2109385/planet-zoo-2-le-meilleur-jeu-de-gestion-de-tous-les-temps-plus-grand-plus-beau-plus-sauvage.htm",
+      "date": "2026-10-16T16:02:48.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792139830-5634-card.jpg",
+      "summary": "Disponible sur PC, PS5 et Xbox Series, Planet Zoo 2 entend bien conserver sa couronne de roi incontesté de la simulation animalière. Plus qu'une refonte radicale, Frontier…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
       "title": "&#8216;Father Of PlayStation&#8217; Ken Kutaragi Blames A &#8216;Mentality Issue&#8217; For The Backlash To Killing Discs",
       "link": "https://kotaku.com/father-of-playstation-ken-kutaragi-blames-a-mentality-issue-for-the-backlash-to-killing-discs-2000746753",
       "date": "2026-10-16T16:00:45.000Z",
@@ -248,24 +376,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/indie-games-week-app-store.jpg",
       "summary": "Carson Oliver, the new head of Apple's App Store, tells Polygon where Apple is at in its long quest to embrace gaming.",
-      "tags": []
-    },
-    {
-      "title": "'GeoGuessr' Just Changed Genres With A Must-Play Upgrade",
-      "link": "https://www.polygon.com/geoguessr-horrorguessr-google-maps-free-internet-game/",
-      "date": "2026-10-16T15:50:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/geo-1.JPG",
-      "summary": "The popular free browser game is officially a horror experience with items and boss battles now",
-      "tags": []
-    },
-    {
-      "title": "The 7 Best Games to Play if You Loved Fire Emblem: Fortune’s Weave",
-      "link": "https://www.polygon.com/fire-emblem-fortunes-weave-best-games-replacements/",
-      "date": "2026-10-16T15:42:07.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fire-emblem-fortunes-weave-dietrich.jpg",
-      "summary": "If Fire Emblem: Fortune's Weave has got you craving more tactical RPGs, here are a few of our favorites",
       "tags": []
     },
     {
@@ -285,17 +395,6 @@
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872496/peak-le-jeu-d-escalade-continue-son-ascension-sur-consoles-avec-une-edition-physique-sur-playstation-5-02ade2bf__800_800__463-103-1440-1080.jpg",
       "summary": "Comptant parmi les phénomènes viraux de l'année 2025 sur Steam, Peak a trouvé le chemin des consoles. Le jeu d'escalade coopératif sera même disponible pas plus tard que le 22…",
       "tags": []
-    },
-    {
-      "title": "The Blood of Dawnwalker Is Getting Huge Changes Next Week",
-      "link": "https://www.polygon.com/blood-of-dawnwalker-rpg-patch1-1-announced-new-difficulty-mode-features-fixes/",
-      "date": "2026-10-16T15:24:53.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the_blood_of_dawnwalker_launch_screenshot_-3.png",
-      "summary": "Vampire RPG The Blood of Dawnwalker is getting its biggest patch ever next week, bringing over 1000 fixes including a new difficulty mode",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Baldur's Gate 4 est déjà dans la panade. Après les refus des studios de le développer, les ayants-droits forcés de reprendre les choses en mains",
@@ -324,15 +423,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179207/1792065654-789-card.png",
       "summary": "La politique de remboursement de Steam, véritable filet de sécurité pour nous autres joueurs, est devenue la hantise des petits créateurs. Aujourd'hui, un studio indépendant a…",
-      "tags": []
-    },
-    {
-      "title": "'Pokémon TCG Pocket' Announces Big Update to Address Player Concerns",
-      "link": "https://www.polygon.com/pokemon-tcg-pocket-fewer-set-releases/",
-      "date": "2026-10-16T15:13:05.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/pokemon-tcg-pocket-ruler-of-the-skies-rayquaza.png",
-      "summary": "After concerns over set fatigue, 'Pokémon TCG Pocket' will be slowing down its release cadence.",
       "tags": []
     },
     {
@@ -1193,96 +1283,6 @@
       "tags": []
     },
     {
-      "title": "Whoa, This Minecraft Mod Turns The Game Into A Deltarune-Style Turn-Based RPG",
-      "link": "https://kotaku.com/whoa-this-minecraft-mod-turns-the-game-into-a-deltarune-style-turn-based-rpg-2000746024",
-      "date": "2026-10-15T20:30:45.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/soulbound-1280x721.jpg",
-      "summary": "And it’s not one of those AI-generated mods that just slaps two games together and calls it a day",
-      "tags": []
-    },
-    {
-      "title": "Combattre des boss d'Elden Ring avec une pioche de Minecraft (Mod Eldencraft)",
-      "link": "https://fr.ign.com/elden-ring/93187/fighting-elden-ring-bosses-with-a-minecraft-pickaxe-eldencraft-mod",
-      "date": "2026-10-15T20:00:00.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/f/fighting-e/fighting-elden-ring-bosses-with-a-minecraft-pickaxe-eldencra_2uvn.jpg",
-      "summary": "Découvrez le gameplay d&#x27;Eldencraft, un mod généré par IA créé par SocketByte. En fait, EldenCraft fait tourner Minecraft Java Edition au sein d&#x27;Elden Ring. Les deux jeux…",
-      "tags": []
-    },
-    {
-      "title": "Zero Parades Director's Cut : une sortie surprise sur PC et des arrivées précisées sur PS5 et Switch 2",
-      "link": "https://www.gamekult.com/actualite/zero-parades-director-s-cut-une-sortie-surprise-sur-pc-et-des-arrivees-precisees-sur-ps5-et-switch-2-3050872482.html",
-      "date": "2026-10-15T20:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872482/zero-parades-director-s-cut-sortie-surprise-sur-pc-et-arrivees-annoncees-sur-ps5-et-switch-2-21d8c63a__800_800__0-0-1124-1125.jpg",
-      "summary": "Les créateurs de Disco Elysium reviennent avec une version augmentée de leur RPG d'espionnage Zero Parades, rebaptisée Director's Cut. Et, surprise, cette nouvelle version est…",
-      "tags": []
-    },
-    {
-      "title": "Did Street Fighter Actor And WWE Wrestler Cody Rhodes Accidentally Let Slip He’s In The X-Men Reboot?",
-      "link": "https://kotaku.com/street-fighter-cody-rhodes-guile-x-men-mcu-reboot-cast-2000746434",
-      "date": "2026-10-15T19:50:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/guile-1280x720.jpg",
-      "summary": "The MCU is bringing mutants back into the fold in 2028",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : Tout ce qu'il faut savoir sur l'histoire avant de se lancer dans le solo",
-      "link": "https://www.jeuxvideo.com/news/2109205/call-of-duty-modern-warfare-4-tout-ce-qu-il-faut-savoir-sur-l-histoire-avant-de-se-lancer-dans-le-solo.htm",
-      "date": "2026-10-15T19:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179206/1792062607-3763-card.jpg",
-      "summary": "Le lancement de Call of Duty: Modern Warfare 4 approche à grands pas. Avec une sortie fixée au 23 octobre 2026 (et dès le 16 octobre en accès anticipé pour les précommandes), ce…",
-      "tags": []
-    },
-    {
-      "title": "Modern Warfare 4 Testers Vote To Authorize Union Strike As Contract Negotiations Stall: &#8216;It Is Time To Stop Playing Games&#8217;",
-      "link": "https://kotaku.com/modern-warfare-4-testers-vote-to-authorize-union-strike-as-contract-negotiations-stall-it-is-time-to-stop-playing-games-2000746427",
-      "date": "2026-10-15T19:30:54.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/MW4-1280x720.jpg",
-      "summary": "The union has spent over two years trying to negotiate its first contract",
-      "tags": []
-    },
-    {
-      "title": "Diamant Enshrouded 1.0 : Où en trouver des filons pour en miner ?",
-      "link": "https://www.jeuxvideo.com/news/2109190/diamant-enshrouded-1-0-ou-en-trouver-des-filons-pour-en-miner.htm",
-      "date": "2026-10-15T18:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179206/1792058349-7969-card.jpg",
-      "summary": "Explorer le dernier biome d'Enshrouded, le Berceau des cendres demande aussi de trouver de nouvelles ressources précieuses. Les filons de diamants sont très rares et vous en aurez…",
-      "tags": []
-    },
-    {
-      "title": "Après l'avoir annulée, Amazon relance cette série de SF culte et adorée par les geeks de plus de 40 ans",
-      "link": "https://www.jeuxvideo.com/news/2108880/apres-l-avoir-annulee-amazon-relance-cette-serie-de-sf-culte-et-adoree-par-les-geeks-de-plus-de-40-ans.htm",
-      "date": "2026-10-15T18:15:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179189/1791892633-2821-card.jpg",
-      "summary": "À peine quatre mois après l'annulation surprise d'une suite conçue par les auteurs originels, Amazon MGM Studios rouvre le dossier d’une des sagas de science-fiction les plus…",
-      "tags": []
-    },
-    {
-      "title": "Noté 92%, un des meilleurs jeux de tous les temps est à -40% sur Steam",
-      "link": "https://www.jeuxvideo.com/news/2109159/note-92-un-des-meilleurs-jeux-de-tous-les-temps-est-a-40-sur-steam.htm",
-      "date": "2026-10-15T18:10:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179201/1792014134-5250-card.jpg",
-      "summary": "Avec une moyenne de 92 % sur Metacritic, ce jeu indépendant bénéficie d'une réduction de 40 % sur la plateforme Steam. Ce titre d'exploration s'impose comme une expérience…",
-      "tags": []
-    },
-    {
-      "title": "CD Projekt a officiellement commencé à travailler sur son projet Hadar, mais il n'est pas encore en préproduction",
-      "link": "https://fr.ign.com/codename-hadar/93182/cd-projekt-a-officiellement-commence-a-travailler-sur-son-projet-hadar-mais-il-nest-pas-encore-en-pr",
-      "date": "2026-10-15T17:58:15.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/cd-projekt/cd-projekt-has-officially-begun-work-on-project-hadar-but-it_16pf.jpg",
-      "summary": "Ta-da !",
-      "tags": []
-    },
-    {
       "title": "Why community is becoming a growth engine for mobile games",
       "link": "https://www.pocketgamer.biz/why-community-is-becoming-a-growth-engine-for-mobile-games/",
       "date": "2026-10-15T12:00:00.000Z",
@@ -1433,15 +1433,6 @@
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!ILlm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11737f64-2c41-4eb2-83c3-856965bb95af_2232x1244.png",
       "summary": "I tested a surprise change to my console.",
-      "tags": []
-    },
-    {
-      "title": "How Dressmaker became ‘ready to wear’ for hundreds of thousands of players!",
-      "link": "https://newsletter.gamediscover.co/p/how-dressmaker-became-ready-to-wear",
-      "date": "2026-10-09T19:24:10.000Z",
-      "sourceId": "gdco",
-      "image": "https://substackcdn.com/image/fetch/$s_!GnJc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04a88af8-f8ef-429d-b8fd-726198cd8c3e_800x450.jpeg",
-      "summary": "Also: a whole bunch of game discovery news & this week's Steam biggies.",
       "tags": []
     },
     {
