@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:27:45.027Z",
+  "generatedAt": "2026-10-17T18:47:14.546Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -8,7 +8,7 @@
     "gameblog": "ok",
     "gamekult": "ok",
     "kotaku": "ok",
-    "pcgamer": "fail",
+    "pcgamer": "ok",
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-17T11:37:52.000Z",
-      "kept": 8
+      "kept": 5
     },
     "gamedev": {
       "status": "stale",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-17T14:00:10.000Z",
-      "kept": 15
+      "newest": "2026-10-17T15:15:10.000Z",
+      "kept": 12
     },
     "gameblog": {
       "status": "ok",
@@ -63,19 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-17T15:38:40.000Z",
-      "kept": 16
+      "newest": "2026-10-17T17:29:52.000Z",
+      "kept": 11
     },
     "pcgamer": {
-      "status": "fail",
-      "error": "feed too large (5 MB)",
-      "kept": 0
+      "status": "ok",
+      "url": "https://www.pcgamer.com/feeds.xml",
+      "items": 50,
+      "newest": "2026-10-17T18:34:02.000Z",
+      "kept": 13
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-17T16:01:19.000Z",
+      "newest": "2026-10-17T18:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -116,6 +118,60 @@
   },
   "articles": [
     {
+      "title": "'I am overwhelmed and overstimulated': The actor behind Star Wars: Galactic Racer’s Biddy Blas is scribbing doon all your enthusiasm",
+      "link": "https://www.pcgamer.com/games/racing/i-am-overwhelmed-and-overstimulated-the-actor-behind-star-wars-galactic-racers-biddy-blas-is-scribbing-doon-all-your-enthusiasm/",
+      "date": "2026-10-17T18:34:02.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dh6TAMjUaWdDijWxXyscPS-1920-80.png",
+      "summary": "Ding dong pookie.",
+      "tags": []
+    },
+    {
+      "title": "The Zelda: Ocarina of Time Remake Sounds Meaningfully Better Than the Original",
+      "link": "https://www.polygon.com/switchboard-zelda-ocarina-of-time-previews/",
+      "date": "2026-10-17T18:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_thelegendofzeldaocarinaoftime_scrn_15.png",
+      "summary": "Previews indicate Nintendo cares as much about the 2026 Switch 2 revival as it does about physical media",
+      "tags": []
+    },
+    {
+      "title": "To help America, I used Crusader Kings 3 to figure out how to remove a doddering, senile lunatic from power",
+      "link": "https://www.pcgamer.com/games/strategy/to-help-america-i-used-crusader-kings-3-to-figure-out-how-to-remove-a-doddering-senile-lunatic-from-power/",
+      "date": "2026-10-17T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dRJxTNLTaF2ERKMoC78YUE-1920-80.jpg",
+      "summary": "Any resemblance to actual persons or actual events is purely coincidental.",
+      "tags": []
+    },
+    {
+      "title": "Debra Wilson Also Confused On Why Games Keep Using Her Likeness",
+      "link": "https://kotaku.com/debra-wilson-also-confused-on-why-games-keep-using-her-likeness-2000747061",
+      "date": "2026-10-17T17:29:52.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/callistowolverinedebrawilson.jpg",
+      "summary": "In an interview with Joseph Shepherd, the prolific Wolverine and Wolfenstein voice actor addresses the amusing trend, but says she prefers to play characters that don’t resemble…",
+      "tags": []
+    },
+    {
+      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
+      "link": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
+      "date": "2026-10-17T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/oAiKA6L8jtMZNQAjY3ZR7g-1920-80.png",
+      "summary": "What's up, Barrens Chat.",
+      "tags": []
+    },
+    {
+      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
+      "link": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
+      "date": "2026-10-17T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/xsmWYCrhjkzkM43jx4h8y9-1920-80.jpg",
+      "summary": "\"Wizards is not neutral on the question of unionization.\"",
+      "tags": []
+    },
+    {
       "title": "The 8 Best Castlevania Games, Ranked",
       "link": "https://www.polygon.com/best-castlevania-games-ranked/",
       "date": "2026-10-17T16:01:19.000Z",
@@ -143,12 +199,30 @@
       "tags": []
     },
     {
+      "title": "This game about grinding mute lumps of shapeless flesh has made me realise I've been hornswoggled by capitalism",
+      "link": "https://www.pcgamer.com/games/horror/this-game-about-grinding-mute-lumps-of-shapeless-flesh-has-made-me-realise-ive-been-hornswoggled-by-capitalism/",
+      "date": "2026-10-17T16:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Bi4tVxxTs4dYhqr3NMUAH8-1920-80.jpg",
+      "summary": "Flesh grinders of the world, unite.",
+      "tags": []
+    },
+    {
       "title": "True Detective Season 5 to feature the best starring duo since Matthew McConaughey and Woody Harrelson",
       "link": "https://www.polygon.com/true-detective-season-5-casting/",
       "date": "2026-10-17T15:48:31.000Z",
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/tcdtrde_ec005.jpg",
       "summary": "Nicolas Cage and Antonio Banderas will star in the next season of True Detective, which enters production next year",
+      "tags": []
+    },
+    {
+      "title": "Ghostwire: Tokyo joins GOG Preservation Program, which means you don't have to deal with Bethesda.NET anymore",
+      "link": "https://www.pcgamer.com/games/action/ghostwire-tokyo-joins-gog-preservation-program-which-means-you-dont-have-to-deal-with-bethesda-net-anymore/",
+      "date": "2026-10-17T15:45:38.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/53Kr6rdeGD9g3dh5KZW2fY-1920-80.jpg",
+      "summary": "…if you get it on GOG, anyway.",
       "tags": []
     },
     {
@@ -167,6 +241,15 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/marvel-s-wolverine-demon-mask.png",
       "summary": "Representative Ritchie Torres will introduce the Power to the Players Act bill, which essentially grants players ownership of their digital games.",
+      "tags": []
+    },
+    {
+      "title": "Ce jeu pourrait me faire acheter la Switch 2... C'est un tour de force !",
+      "link": "https://www.jeuxvideo.com/news/2109207/ce-jeu-pourrait-me-faire-acheter-la-switch-2-c-est-un-tour-de-force.htm",
+      "date": "2026-10-17T15:15:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179206/1792064050-4646-card.jpg",
+      "summary": "La Nintendo Switch 2 est une excellente console, mais elle n'est pas faite pour moi. C'est du moins ce que je pensais avant de découvrir un jeu vidéo d'horreur coopératif qui…",
       "tags": []
     },
     {
@@ -208,6 +291,15 @@
       "tags": []
     },
     {
+      "title": "\"Il est gros et peut à peine se battre\" Charlize Theron démonte cette star hollywoodienne !",
+      "link": "https://www.jeuxvideo.com/news/2109152/il-est-gros-et-peut-a-peine-se-battre-charlize-theron-demonte-cette-star-hollywoodienne.htm",
+      "date": "2026-10-17T14:30:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179199/1791990323-7849-card.jpg",
+      "summary": "Charlize Theron s'est attaquée sans détour à un action-man controversé des années 90 lors d'un entretien télévisé. L'actrice a vivement critiqué non seulement la condition…",
+      "tags": []
+    },
+    {
       "title": "Company Behind GTA-Like Samson Goes Bankrupt Six Months After Release",
       "link": "https://kotaku.com/samson-developer-and-publisher-liquid-swords-goes-bankrupt-6-months-after-release-2000747049",
       "date": "2026-10-17T14:01:23.000Z",
@@ -235,21 +327,21 @@
       "tags": []
     },
     {
+      "title": "The Blood of Dawnwalker's first major update will add directional animal petting and a new story mode that's easier than the previous story mode",
+      "link": "https://www.pcgamer.com/games/rpg/the-blood-of-dawnwalkers-first-major-update-will-add-directional-animal-petting-and-a-new-story-mode-thats-easier-than-the-previous-story-mode/",
+      "date": "2026-10-17T13:53:20.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/C9qhLHdxoAGzgbprjbaodf-1920-80.png",
+      "summary": "\"What happens when you merge a directional combat system with an ability to pet dogs and cats?\"",
+      "tags": []
+    },
+    {
       "title": "Alimentée par l'IA Gemini, la démo de ce jeu a déjà endetté sérieusement ses développeurs",
       "link": "https://www.gamekult.com/actualite/alimentee-par-l-ia-gemini-la-demo-de-ce-jeu-a-deja-endette-serieusement-ses-developpeurs-3050872445.html",
       "date": "2026-10-17T13:50:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872445/alimente-par-l-ia-gemini-ce-jeu-meme-pas-sorti-a-deja-endette-serieusement-ses-developpeurs-64ebdef6__800_800__331-0-1412-1080.jpg",
       "summary": "Peut-être avez-vous déjà entendu parler de Teach My Little Sister How To Drive, ou peut-être y avez-vous même déjà joué : on y incarne littéralement un grand frère chargé…",
-      "tags": []
-    },
-    {
-      "title": "The Best Transformers Movie That No One Watched Finds New Life on Streaming",
-      "link": "https://www.polygon.com/best-transformers-movie-now-streaming-netflix/",
-      "date": "2026-10-17T13:35:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25406662/Transformers_One___Optimus_Prime.jpg",
-      "summary": "Transformers One is now on Netflix and in the streaming services top 10 charts, a well-deserved return for the underrated origin story.",
       "tags": []
     },
     {
@@ -268,6 +360,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/cod-1280x731.jpg",
       "summary": "A return to form if not to Call of Duty 's heyday",
+      "tags": []
+    },
+    {
+      "title": "Developer cancels public demo of its upcoming horror drinking game, fearing it will be instantly cloned by AI vibe coders: 'We sincerely apologise for the short notice'",
+      "link": "https://www.pcgamer.com/gaming-industry/game-development/developer-cancels-public-demo-of-its-upcoming-horror-drinking-game-fearing-it-will-be-instantly-cloned-by-ai-vibe-coders-we-sincerely-apologise-for-the-short-notice/",
+      "date": "2026-10-17T12:04:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/msJXstdyWiXzapZKKu9fWL-1920-80.jpg",
+      "summary": "Alliance Arts will instead host \"closed sessions\" for Drunken Goddess Reflux.",
       "tags": []
     },
     {
@@ -304,6 +405,15 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872436/god-of-war-quand-santa-monica-recuperait-la-camera-virtuelle-d-avatar-de-james-cameron-524d7e4a__800_800__0-0-1194-1194.png",
       "summary": "Vous en conviendrez : entre la technologie utilisée pour le cinéma et celle pour le jeu vidéo, il n'y a pas qu'un tout petit pas, et d'une pointure de nourrisson dans bien des…",
+      "tags": []
+    },
+    {
+      "title": "Funcom is laying off yet more developers as it pivots to supporting Dune: Awakening and Conan Exiles",
+      "link": "https://www.pcgamer.com/gaming-industry/funcom-is-laying-off-yet-more-developers-as-it-pivots-to-supporting-dune-awakening-and-conan-exiles/",
+      "date": "2026-10-17T10:32:05.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/irSvo2gYDFsSuExgb6RG5X-1920-80.jpg",
+      "summary": "CEO Rui Casais to depart the company at the end of the year.",
       "tags": []
     },
     {
@@ -480,12 +590,30 @@
       "tags": []
     },
     {
+      "title": "Tech founder criticized for vibe coding game about shooting 'zombies' in San Francisco's poorest neighborhood",
+      "link": "https://www.pcgamer.com/software/ai/tech-founder-vibe-codes-game-about-shooting-zombies-in-san-franciscos-poorest-neighborhood/",
+      "date": "2026-10-16T23:53:11.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/p9AmuwXbiHB432WuTdwcNi-1920-80.webp",
+      "summary": "City residents and leaders denounced the free web game, which was taken down.",
+      "tags": []
+    },
+    {
       "title": "Want early access to the biggest new video games? This year’s offers changed a bit.",
       "link": "https://www.gamefile.news/p/aaa-early-access-offers-2026",
       "date": "2026-10-16T22:26:52.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!-Rhx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5a14fb4-5d31-4543-8216-7246ba1ab3ba_1500x844.png",
       "summary": "In 2026, Take Two, Microsoft, Activision and others have tweaked how they let players play their mega-releases early.",
+      "tags": []
+    },
+    {
+      "title": "The Cyberpunk 2077 movie won't be 'a film adaptation of the game,' CD Projekt chief says",
+      "link": "https://www.pcgamer.com/movies-tv/the-cyberpunk-2077-movie-wont-be-a-film-adaptation-of-the-game-cd-projekt-chief-says/",
+      "date": "2026-10-16T22:02:23.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/RrKWBQLDZb3WHTmZP4Ha9a-1920-80.jpg",
+      "summary": "The game is great, but CD Projekt wants to tell a new story.",
       "tags": []
     },
     {
@@ -534,12 +662,30 @@
       "tags": []
     },
     {
+      "title": "I haven't wanted to 100% a game in a long time, but…",
+      "link": "https://www.pcgamer.com/games/sim/i-havent-wanted-to-100-percent-a-game-in-a-long-time-but/",
+      "date": "2026-10-16T20:07:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/uxbqKcfdStUrdjecNzfTwa-1920-80.jpg",
+      "summary": "I've only played a bit of offroad driving sim Over the Hill, but I'm already hooked. Or should I say: winched.",
+      "tags": []
+    },
+    {
       "title": "How Should Video Game Ownership Work In An All-Digital Future?",
       "link": "https://kotaku.com/how-should-video-game-ownership-work-in-an-all-digital-future-2000746817",
       "date": "2026-10-16T20:00:33.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/GettyImages-2295116957-1-1280x853.jpg",
       "summary": "Legislative pressure could force companies to change how digital game licenses work",
+      "tags": []
+    },
+    {
+      "title": "'We f**ked up': 1 day into Wardogs Season 2, the Blue team bribery bonus is being dropped",
+      "link": "https://www.pcgamer.com/games/fps/we-f-ked-up-1-day-into-wardogs-season-2-the-blue-team-bribery-bonus-is-being-dropped/",
+      "date": "2026-10-16T19:42:52.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/k5RibPxese5kZiSt4xZbiV-1920-80.jpg",
+      "summary": "Bulkhead's effort to make life better for the Blues worked a little too well.",
       "tags": []
     },
     {
@@ -585,132 +731,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/07/image-15-1280x718.jpg",
       "summary": "It's useless to moralize: the sick thrill is the point",
-      "tags": []
-    },
-    {
-      "title": "Banshee Enshrouded 1.0 : Où trouver et comment battre cet ennemi ?",
-      "link": "https://www.jeuxvideo.com/news/2109413/banshee-enshrouded-1-0-ou-trouver-et-comment-battre-cet-ennemi.htm",
-      "date": "2026-10-16T18:30:14.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792141108-4442-card.jpg",
-      "summary": "L'un des ennemis les plus pénibles d'Enshrouded est la Banshee, un monstre déchu capable de voler et de lancer des projectiles en restant hors de portée. Découvrez comment les…",
-      "tags": []
-    },
-    {
-      "title": "Anime Gambling Horror Game Ditches Free Steam Demo So It Doesn&#8217;t Get Ripped Off By AI",
-      "link": "https://kotaku.com/anime-gambling-horror-game-ditches-free-steam-demo-over-fears-of-getting-ripped-off-by-ai-2000746794",
-      "date": "2026-10-16T18:30:00.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/something-fun-1280x720.jpg",
-      "summary": "Drunken Goddess Reflux will have a closed beta instead",
-      "tags": []
-    },
-    {
-      "title": "Boruto, le fils de Naruto et son histoire, sont-ils vraiment canon ? Voici la réponse !",
-      "link": "https://www.jeuxvideo.com/news/2109553/boruto-le-fils-de-naruto-et-son-histoire-sont-ils-vraiment-canon-voici-la-reponse.htm",
-      "date": "2026-10-16T18:15:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179217/1792167793-1117-card.jpg",
-      "summary": "Entre déclarations d'auteur sorties de leur contexte, virage technologique clivant et annonce surprise d'un nouveau manga centré sur Naruto, la légitimité de Boruto agite la…",
-      "tags": []
-    },
-    {
-      "title": "Ce joueur de Red Dead Redemption 2 a dessiné sa propre carte du jeu, et elle fait passer le travail de Rockstar pour un brouillon",
-      "link": "https://www.jeuxvideo.com/news/2108537/ce-joueur-de-red-dead-redemption-2-a-dessine-sa-propre-carte-du-jeu-et-elle-fait-passer-le-travail-de-rockstar-pour-un-brouillon.htm",
-      "date": "2026-10-16T18:10:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179156/1791561875-7885-card.jpg",
-      "summary": "Huit ans après la sortie du titre de Rockstar, la communauté réinvente encore le jeu et son univers. C’est le cas de ce joueur sur Reddit qui a totalement refait à la main la…",
-      "tags": []
-    },
-    {
-      "title": "New RPG From Final Fantasy, Persona Vets Borrows From The Past To Ask How We Can Save The Future",
-      "link": "https://kotaku.com/new-rpg-from-final-fantasy-persona-vets-borrows-from-the-past-to-ask-how-we-can-save-the-future-2000746405",
-      "date": "2026-10-16T18:00:46.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Eternal-Anima-1280x693.jpg",
-      "summary": "Eternal Anima finds surprising strategic depth in letting you foresee your opponent's next move",
-      "tags": []
-    },
-    {
-      "title": "The Street Fighter Movie: The Kotaku Review",
-      "link": "https://kotaku.com/street-fighter-2026-movie-review-guile-ken-ryu-chun-li-2000746803",
-      "date": "2026-10-16T17:30:19.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/sfreviewryu-1280x720.jpg",
-      "summary": "The fighting game movie oscillates between two extremes at a rate not even Daigo could parry",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : Trailer officiel de la campagne",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93200/call-of-duty-modern-warfare-4-trailer-officiel-de-la-campagne",
-      "date": "2026-10-16T17:00:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/mw4-tgs-campaign-02-branded_dcum.png",
-      "summary": "Le 23 octobre sur PC et consoles.",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : que vaut l’énième retour du Captain Price ? Nos impressions sur la Campagne",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93199/call-of-duty-modern-warfare-4-que-vaut-lenieme-retour-du-captain-price-nos-impressions-sur-la-campag",
-      "date": "2026-10-16T17:00:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/mw4-kal-stranded-03_5yt6.png",
-      "summary": "Un épisode qui veut jouer sur plusieurs tableaux.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon TCG Pocket Is Finally Fixing One Of Its Most Frustrating Features",
-      "link": "https://kotaku.com/pokemon-tcg-pocket-mobile-dena-trading-immersive-cards-series-c-2000746788",
-      "date": "2026-10-16T17:00:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/series-c-1280x720.jpg",
-      "summary": "Alongside slowing its release cadence, trading and immersive cards are also getting improvements",
-      "tags": []
-    },
-    {
-      "title": "Modern Warfare 4 : bien qu'efficace, la campagne solo m’a déçu. Call of Duty est devenu trop sage",
-      "link": "https://www.jeuxvideo.com/news/2109505/modern-warfare-4-bien-qu-efficace-la-campagne-solo-m-a-decu-call-of-duty-est-devenu-trop-sage.htm",
-      "date": "2026-10-16T17:00:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792160854-4730-card.jpg",
-      "summary": "La campagne de Modern Warfare 4 est dispo dès maintenant en accès anticipé, et de mon côté, je l’ai déjà terminée ! Même si j’ai passé un bon moment, je suis assez déçu. Je vous…",
-      "tags": []
-    },
-    {
-      "title": "Crimson Desert : le studio reconnait s'être planté et fait un mea culpa",
-      "link": "https://www.jeuxvideo.com/news/2109228/crimson-desert-le-studio-reconnait-s-etre-plante-et-fait-un-mea-culpa.htm",
-      "date": "2026-10-16T16:45:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179207/1792070495-6844-card.jpg",
-      "summary": "Entre critiques mitigées et succès commercial, Crimson Desert a connu des débuts compliqués. Pearl Abyss est depuis revenu sur les difficultés du test pour la presse.",
-      "tags": []
-    },
-    {
-      "title": "The Prophecy Was True: A Shrek 2 Remaster Is Coming, For Some Reason",
-      "link": "https://kotaku.com/shrek-2-remaster-announcement-trailer-screenshots-2000746791",
-      "date": "2026-10-16T16:44:16.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/shrek2-1280x720.jpg",
-      "summary": "Sure, whatever",
-      "tags": []
-    },
-    {
-      "title": "Un leak montre des images d'un jeu Assassin's Creed annulé se déroulant en Chine sous la dynastie Qin",
-      "link": "https://fr.ign.com/assassins-creed-codename-jade/93224/un-leak-montre-des-images-dun-jeu-assassins-creed-annule-se-deroulant-en-chine-sous-la-dynastie-qin",
-      "date": "2026-10-16T16:41:16.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/a/apparent-l/apparent-leaked-footage-shows-canceled-assassins-creed-game_2ert.jpg",
-      "summary": "C&#x27;est malheureux.",
-      "tags": []
-    },
-    {
-      "title": "Naruto Fans Are Trying Very Hard To Pretend That Boruto Is No Longer Canon",
-      "link": "https://kotaku.com/naruto-fans-are-trying-very-hard-to-pretend-that-boruto-is-no-longer-canon-2000746755",
-      "date": "2026-10-16T16:30:59.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Boruto-Naruto-The-Movie-Official-poster-1280x720.jpg",
-      "summary": "Dis-believe it!",
       "tags": []
     },
     {
