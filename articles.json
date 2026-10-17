@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-17T13:11:17.877Z",
+  "generatedAt": "2026-10-17T16:27:45.027Z",
   "sourceStatus": {
     "ign": "ok",
-    "gamedev": "ok",
+    "gamedev": "stale",
     "gibiz": "ok",
     "jv": "ok",
     "gameblog": "ok",
@@ -22,10 +22,10 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-17T11:37:52.000Z",
-      "kept": 18
+      "kept": 8
     },
     "gamedev": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-10-15T14:00:00.000Z",
@@ -36,14 +36,14 @@
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-16T15:18:57.000Z",
-      "kept": 2
+      "kept": 0
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-17T08:30:11.000Z",
-      "kept": 16
+      "newest": "2026-10-17T14:00:10.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -56,15 +56,15 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-17T11:27:00.000Z",
+      "newest": "2026-10-17T16:00:00.000Z",
       "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-17T12:09:26.000Z",
-      "kept": 20
+      "newest": "2026-10-17T15:38:40.000Z",
+      "kept": 16
     },
     "pcgamer": {
       "status": "fail",
@@ -75,7 +75,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-17T13:00:19.000Z",
+      "newest": "2026-10-17T16:01:19.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -116,21 +116,149 @@
   },
   "articles": [
     {
-      "title": "The 8 Best Vampire Books Not Written by Anne Rice",
-      "link": "https://www.polygon.com/8-best-vampire-books/",
-      "date": "2026-10-17T13:00:19.000Z",
+      "title": "The 8 Best Castlevania Games, Ranked",
+      "link": "https://www.polygon.com/best-castlevania-games-ranked/",
+      "date": "2026-10-17T16:01:19.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23451445/uTdN2qhe8S8k89SGHGnpmB.jpg",
-      "summary": "Sink your teeth into apocalyptic tales and twisted romance",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/castlevania-dracula-adaptations-bram-stoker.jpg",
+      "summary": "The finest Castlevania games of all time come from multiple decades. Together, they built a franchise that is better than ever.",
       "tags": []
     },
     {
-      "title": "Netflix’s 'Dealies' Will Be a More Comedy-Focused Joe Bennet Series",
-      "link": "https://www.polygon.com/joe-bennet-netflix-dealies-workplace-comedy/",
-      "date": "2026-10-17T12:30:18.000Z",
+      "title": "D&D’s Arcana Unleashed Officially Fixes One of the Game’s Most Frustrating Problems",
+      "link": "https://www.polygon.com/dnd-arcana-unleashed-evolving-magic-items/",
+      "date": "2026-10-17T16:01:19.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/dealies-tv-series-netflix.jpg",
-      "summary": "Joe Bennet shares new details about Dealies, his upcoming Netflix series about a big-box store, a struggling antique shop, and workplace weirdness.",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/341927.png",
+      "summary": "One of the most eye-catching new systems in Arcana Unleashed outlines how to let magic items grow with your players.",
+      "tags": []
+    },
+    {
+      "title": "Si GTA est en monde ouvert, c'est parce que Rockstar avait la flemme de faire un menu de missions",
+      "link": "https://www.gamekult.com/actualite/si-gta-est-en-monde-ouvert-c-est-parce-que-rockstar-avait-la-flemme-de-faire-un-menu-de-missions-3050872446.html",
+      "date": "2026-10-17T16:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872446/si-gta-est-en-monde-ouvert-c-est-parce-que-rockstar-avait-la-flemme-de-faire-un-menu-de-missions-383d5721__800_800__113-0-881-768.jpg",
+      "summary": "Il fut un temps où Rockstar ne s'appelait pas Rockstar mais DMA Design, et où Grand Theft Auto n'était pas encore GTA, mais un jeu d'action linéaire. Lors d'un panel à la Scottish…",
+      "tags": []
+    },
+    {
+      "title": "True Detective Season 5 to feature the best starring duo since Matthew McConaughey and Woody Harrelson",
+      "link": "https://www.polygon.com/true-detective-season-5-casting/",
+      "date": "2026-10-17T15:48:31.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/tcdtrde_ec005.jpg",
+      "summary": "Nicolas Cage and Antonio Banderas will star in the next season of True Detective, which enters production next year",
+      "tags": []
+    },
+    {
+      "title": "Smash Bros. Player Barred From Austin Competition Following Bed Bug Concern",
+      "link": "https://kotaku.com/smash-bros-player-barred-from-austin-competition-following-bed-bug-concern-2000747055",
+      "date": "2026-10-17T15:38:40.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/parasitequeen-1280x868.jpg",
+      "summary": "Announcing a hiatus, Melee pro Jason ‘Mew2King’ Zimmerman says he regrets posting the now viral photos and would have stepped back if he believed the community was at risk",
+      "tags": []
+    },
+    {
+      "title": "US Representative Introduces Plan To Preserve Digital Game Ownership",
+      "link": "https://www.polygon.com/power-to-the-players-act-ritchie-torres/",
+      "date": "2026-10-17T15:30:47.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/marvel-s-wolverine-demon-mask.png",
+      "summary": "Representative Ritchie Torres will introduce the Power to the Players Act bill, which essentially grants players ownership of their digital games.",
+      "tags": []
+    },
+    {
+      "title": "22 Years Ago, One Perfect Twist Changed TV's Greatest Sci-Fi Series Forever",
+      "link": "https://www.polygon.com/lost-walkabout-locke-twist-22-anniversary/",
+      "date": "2026-10-17T15:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/tcdlost_ec093-1.jpg",
+      "summary": "Twenty-two years later, Lost’s “Walkabout” remains a perfect TV twist that transformed John Locke and established the Island’s mystical power.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Zero Company Finally Makes Starting A New Campaign Worth It",
+      "link": "https://www.polygon.com/star-wars-zero-company-second-patch-reaction/",
+      "date": "2026-10-17T14:54:09.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/felshi-main_a15c4c25.jpeg",
+      "summary": "There has never been a better time to play Star Wars Zero Company following the release of Patch 1.2 on PC, PlayStation 5, and Xbox Series X",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Analogue Brings Back Its Perfect SNES And Sega Genesis Replacements",
+      "link": "https://www.polygon.com/analogue-super-nt-mega-sg-return/",
+      "date": "2026-10-17T14:34:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/super-nt-analogue.jpg",
+      "summary": "Analogue's Super Nt and Mega Sg models are back with significant improvements, making these consoles the best way to enjoy retro games.",
+      "tags": []
+    },
+    {
+      "title": "2026 Has Been a Surprisingly Excellent Year for Shooters",
+      "link": "https://www.polygon.com/2026-year-in-shooters/",
+      "date": "2026-10-17T14:30:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/wardogs-interview-respect-time.jpg",
+      "summary": "Developers big and small have made 2026 one of the best years for shooting games in recent memory.",
+      "tags": []
+    },
+    {
+      "title": "Company Behind GTA-Like Samson Goes Bankrupt Six Months After Release",
+      "link": "https://kotaku.com/samson-developer-and-publisher-liquid-swords-goes-bankrupt-6-months-after-release-2000747049",
+      "date": "2026-10-17T14:01:23.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/04/Game-Page-Featured_Samson-A-Tyndalston-Story-Inits-1280x720.jpg",
+      "summary": "The Stockholm District Court issued the bankruptcy order against the studio on Monday, following reports that Liquid Swords' developers have gone unpaid for the past two months",
+      "tags": []
+    },
+    {
+      "title": "Whalefall Isn't Really About a Whale, Says Josh Brolin",
+      "link": "https://www.polygon.com/whalefall-interview-josh-brolin-austin-abrams-brian-duffield-daniel-krause/",
+      "date": "2026-10-17T14:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/whalefall.jpg",
+      "summary": "Josh Brolin, Austin Abrams, director Brian Duffield, and screenwriter Daniel Krause talk to Polygon about the new release from 20th Century Studios",
+      "tags": []
+    },
+    {
+      "title": "Pourquoi GTA 4 sur PS3 a-t-il un filtre jaune pipi ?",
+      "link": "https://www.jeuxvideo.com/news/2109411/pourquoi-gta-4-sur-ps3-a-t-il-un-filtre-jaune-pipi.htm",
+      "date": "2026-10-17T14:00:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179215/1792154976-4046-card.png",
+      "summary": "Sorti en 2008, GTA IV a marqué une génération, mais les joueurs PS3 s'en souviennent pour un détail visuel précis : une teinte jaunâtre omniprésente. Décryptage technique de ce…",
+      "tags": []
+    },
+    {
+      "title": "Alimentée par l'IA Gemini, la démo de ce jeu a déjà endetté sérieusement ses développeurs",
+      "link": "https://www.gamekult.com/actualite/alimentee-par-l-ia-gemini-la-demo-de-ce-jeu-a-deja-endette-serieusement-ses-developpeurs-3050872445.html",
+      "date": "2026-10-17T13:50:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872445/alimente-par-l-ia-gemini-ce-jeu-meme-pas-sorti-a-deja-endette-serieusement-ses-developpeurs-64ebdef6__800_800__331-0-1412-1080.jpg",
+      "summary": "Peut-être avez-vous déjà entendu parler de Teach My Little Sister How To Drive, ou peut-être y avez-vous même déjà joué : on y incarne littéralement un grand frère chargé…",
+      "tags": []
+    },
+    {
+      "title": "The Best Transformers Movie That No One Watched Finds New Life on Streaming",
+      "link": "https://www.polygon.com/best-transformers-movie-now-streaming-netflix/",
+      "date": "2026-10-17T13:35:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25406662/Transformers_One___Optimus_Prime.jpg",
+      "summary": "Transformers One is now on Netflix and in the streaming services top 10 charts, a well-deserved return for the underrated origin story.",
+      "tags": []
+    },
+    {
+      "title": "Nintendo confirme qu’ils continuent le format physique, enfin… pour le moment et tant que les joueurs en achèteront",
+      "link": "https://www.jeuxvideo.com/news/2109417/nintendo-confirme-qu-ils-continuent-le-format-physique-enfin-pour-le-moment-et-tant-que-les-joueurs-en-acheteront.htm",
+      "date": "2026-10-17T12:50:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792144915-1869-card.jpg",
+      "summary": "Alors que Sony prépare la fin définitive des disques sur PlayStation, Nintendo confirme le maintien des cartouches sur Switch 2. Une stratégie rassurante guidée par la demande des…",
       "tags": []
     },
     {
@@ -143,12 +271,12 @@
       "tags": []
     },
     {
-      "title": "Grand Theft Auto 4 Was Rockstar at Its Best: Unpredictable",
-      "link": "https://www.polygon.com/grand-theft-auto-4-was-rockstar-at-its-best-unpredictable/",
-      "date": "2026-10-17T12:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/gta-4-2.jpg",
-      "summary": "GTA 4 is one of the best GTA games, as it's the only one where Rockstar took its satire and storytelling seriously",
+      "title": "Événement Halloween Pokopia : Comment finir cet event à 100% ?",
+      "link": "https://www.jeuxvideo.com/news/2109562/evenement-halloween-pokopia-comment-finir-cet-event-a-100.htm",
+      "date": "2026-10-17T11:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179223/1792232081-4549-card.jpg",
+      "summary": "Un nouvel événement s'est installé dans le monde de Pokémon Pokopia, pile pour célébrer Halloween. Dans ce guide, nous verrons comment récupérer tous ses objets et comment…",
       "tags": []
     },
     {
@@ -170,30 +298,12 @@
       "tags": []
     },
     {
-      "title": "New Street Fighter Movie Ends on the Strangest Song Choice Possible",
-      "link": "https://www.polygon.com/street-fighter-movie-2026-ending-its-raining-men/",
-      "date": "2026-10-17T11:30:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/sf_fp_199k.jpeg",
-      "summary": "Street Fighter director Kitao Sakurai explains the film's baffling send-off that uses The Weather Girls' \"It's Raining Men.\"",
-      "tags": []
-    },
-    {
       "title": "God of War : quand Santa Monica récupérait la caméra virtuelle d'Avatar de James Cameron",
       "link": "https://www.gamekult.com/actualite/god-of-war-quand-santa-monica-recuperait-la-camera-virtuelle-d-avatar-de-james-cameron-3050872436.html",
       "date": "2026-10-17T11:27:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872436/god-of-war-quand-santa-monica-recuperait-la-camera-virtuelle-d-avatar-de-james-cameron-524d7e4a__800_800__0-0-1194-1194.png",
       "summary": "Vous en conviendrez : entre la technologie utilisée pour le cinéma et celle pour le jeu vidéo, il n'y a pas qu'un tout petit pas, et d'une pointure de nourrisson dans bien des…",
-      "tags": []
-    },
-    {
-      "title": "Stephen King Meets 'The Backrooms' in Syfy's Underrated 6-Part Anthology Series",
-      "link": "https://www.polygon.com/horror-anthology-creepypasta-halloween-countdown/",
-      "date": "2026-10-17T10:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/image-w1280-2.jpg",
-      "summary": "A creepy contortionist clown isn't the only monster in this strange story.",
       "tags": []
     },
     {
@@ -214,15 +324,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872432/bien-avant-od-il-y-avait-p-t-le-silent-hill-de-hideo-kojima-revient-d-entre-les-morts-sur-pc-4dd04c9d__800_800__57-0-957-900.jpg",
       "summary": "Hideo Kojima et l'horreur, c'est une histoire d'amour qui dure depuis plus de dix ans, mais qui avait débuté dans les pleurs et la déception. En 2014, le créateur japonais sortait…",
-      "tags": []
-    },
-    {
-      "title": "37 Years Ago, 'Garfield' Suddenly Changed Genres With a Mind-Blowing Comic Strip",
-      "link": "https://www.polygon.com/garfield-alone/",
-      "date": "2026-10-17T09:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25174329/O_f2840_0210_comp_v005_2000x1081_thumbnail.jpg",
-      "summary": "This Garfield Halloween special might never have actually ended",
       "tags": []
     },
     {
@@ -278,17 +379,6 @@
       "image": "https://cdn-uploads.gameblog.fr/img/news/724890_6ad218712b9b0.jpg",
       "summary": "Tout en restant relativement fidèle à son modèle, le remake de Zelda Ocarina of Time proposera malgré tout son lot de changements pour les fans. En voici la preuve par 15.",
       "tags": []
-    },
-    {
-      "title": "26 Years Ago, 'Buffy the Vampire Slayer' Officially Launched Its Most Controversial Couple",
-      "link": "https://www.polygon.com/buffy-the-vampire-slayer-season-5-episode-4-retrospective/",
-      "date": "2026-10-17T08:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/buffy-1.jpg",
-      "summary": "26 years ago, Buffy aired an episode that set up season five and launched one of the series' most important dynamics",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Xbox Game Pass : voici toutes les nouveautés confirmées pour novembre 2026, avec le retour de licences appréciées",
@@ -378,33 +468,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179179/1791792935-1166-card.jpg",
       "summary": "Alors que HBO prépare un remake de Harry Potter, une ancienne star de la saga évoque son départ inattendu en raison d’un affrontement avec la production.",
-      "tags": []
-    },
-    {
-      "title": "Event Habitat Dex and Pokédex list in Pokémon Pokopia",
-      "link": "https://www.polygon.com/pokemon-pokopia-event-habitat-dex-pokedex-list-requirements-unlock/",
-      "date": "2026-10-17T04:01:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/obs64_2026-04-28_14-23-15.jpg",
-      "summary": "Here are all the limited-time event habitats and Pokémon in Pokémon Pokopia and what you need to make them.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon Pokopia event schedule",
-      "link": "https://www.polygon.com/pokemon-pokopia-event-schedule-holiday-dates/",
-      "date": "2026-10-17T04:01:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/obs64_2026-03-31_14-18-22.jpg",
-      "summary": "Our guide lists all the known limited-time events for Pokémon Pokopia, so you can find these event items and Pokémon.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon Pokopia 'Pumpkaboo's Sweet Surprises' event guide",
-      "link": "https://www.polygon.com/pokemon-pokopia-pumpkaboos-sweet-surprises-gourgeist-habitats-items/",
-      "date": "2026-10-17T04:01:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/pokopia_guide_pumpkaboo_lead.jpg",
-      "summary": "In this guide, you find all the information to complete Pokémon Pokopia's \"Pumpkaboo's Sweet Surprises\" Halloween event.",
       "tags": []
     },
     {
@@ -648,228 +711,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/Boruto-Naruto-The-Movie-Official-poster-1280x720.jpg",
       "summary": "Dis-believe it!",
-      "tags": []
-    },
-    {
-      "title": "« On a merdé » — Le boss de Wardogs reconnait que ses plans pour la saison 2 ne se sont pas passés comme prévu",
-      "link": "https://fr.ign.com/wardogs/93223/on-a-merde--le-boss-de-wardogs-reconnait-que-ses-plans-pour-la-saison-2-ne-se-sont-pas-passes-comme",
-      "date": "2026-10-16T16:22:20.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/w/we-fed-up-/we-fed-up-wardogs-boss-admits-season-2-hasnt-gone-particular_te9k.png",
-      "summary": "On s&#x27;est fait avoir comme des bleus.",
-      "tags": []
-    },
-    {
-      "title": "Test Planet Zoo 2 sur PC, PS5 et Xbox Series",
-      "link": "https://www.jeuxvideo.com/test/2109385/planet-zoo-2-le-meilleur-jeu-de-gestion-de-tous-les-temps-plus-grand-plus-beau-plus-sauvage.htm",
-      "date": "2026-10-16T16:02:48.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792139830-5634-card.jpg",
-      "summary": "Disponible sur PC, PS5 et Xbox Series, Planet Zoo 2 entend bien conserver sa couronne de roi incontesté de la simulation animalière. Plus qu'une refonte radicale, Frontier…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "&#8216;Father Of PlayStation&#8217; Ken Kutaragi Blames A &#8216;Mentality Issue&#8217; For The Backlash To Killing Discs",
-      "link": "https://kotaku.com/father-of-playstation-ken-kutaragi-blames-a-mentality-issue-for-the-backlash-to-killing-discs-2000746753",
-      "date": "2026-10-16T16:00:45.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/GettyImages-51330963-e1792157827612-1280x719.jpg",
-      "summary": "The Sony veteran doesn't sound very sentimental about the end of physical media on the platform he spearheaded",
-      "tags": []
-    },
-    {
-      "title": "2026 Has Already Seen More Games Added To Steam Than All Of 2025, And It&#8217;s About To Get So Much Worse",
-      "link": "https://kotaku.com/steam-valve-slop-ai-genai-vibe-coding-pc-game-releases-2000746749",
-      "date": "2026-10-16T15:30:25.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/steamslop-1280x720.jpg",
-      "summary": "24,000 titles are expected by the end of the year, but this could be nothing compared to 2027",
-      "tags": []
-    },
-    {
-      "title": "Peak : le jeu d'escalade continue son ascension sur consoles avec une édition physique sur PlayStation 5",
-      "link": "https://www.gamekult.com/actualite/peak-le-jeu-d-escalade-continue-son-ascension-sur-consoles-avec-une-edition-physique-sur-playstation-5-3050872496.html",
-      "date": "2026-10-16T15:25:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872496/peak-le-jeu-d-escalade-continue-son-ascension-sur-consoles-avec-une-edition-physique-sur-playstation-5-02ade2bf__800_800__463-103-1440-1080.jpg",
-      "summary": "Comptant parmi les phénomènes viraux de l'année 2025 sur Steam, Peak a trouvé le chemin des consoles. Le jeu d'escalade coopératif sera même disponible pas plus tard que le 22…",
-      "tags": []
-    },
-    {
-      "title": "Baldur's Gate 4 est déjà dans la panade. Après les refus des studios de le développer, les ayants-droits forcés de reprendre les choses en mains",
-      "link": "https://www.jeuxvideo.com/news/2109500/baldur-s-gate-4-est-deja-dans-la-panade-apres-les-refus-des-studios-de-le-developper-les-ayants-droits-forces-de-reprendre-les-choses-en-mains.htm",
-      "date": "2026-10-16T15:23:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792164186-6000-card.jpg",
-      "summary": "Couronné d'un plébiscite critique et commercial historique, la licence Baldur's Gate se heurte désormais à un mur industriel pour le moins imprévu. Entre le départ fracassant de…",
-      "tags": []
-    },
-    {
-      "title": "A hardware market freeze could transform the industry forever | Opinion",
-      "link": "https://www.gamesindustry.biz/a-hardware-market-freeze-could-transform-the-industry-forever-opinion",
-      "date": "2026-10-16T15:18:57.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/julian-hochgesang-jtPSdmlEOjk-unsplash.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Right about now is the moment when the console business should be getting one hell of a second wind. Six years deep into a hardware generation, with probably the most anticipated…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Si vous finissez ce jeu Steam en moins de 2 heures, il est gratuit",
-      "link": "https://www.jeuxvideo.com/news/2109217/si-vous-finissez-ce-jeu-steam-en-moins-de-2-heures-il-est-gratuit.htm",
-      "date": "2026-10-16T15:15:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179207/1792065654-789-card.png",
-      "summary": "La politique de remboursement de Steam, véritable filet de sécurité pour nous autres joueurs, est devenue la hantise des petits créateurs. Aujourd'hui, un studio indépendant a…",
-      "tags": []
-    },
-    {
-      "title": "Voix d’Étoiles 2026 : du 21 au 24 octobre à Port Leucate, ce qu’il faut savoir avant d’y aller",
-      "link": "https://fr.ign.com/voix-detoiles-2026/93221/voix-detoiles-2026-du-21-au-24-octobre-a-port-leucate-ce-quil-faut-savoir-avant-dy-aller",
-      "date": "2026-10-16T15:09:05.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/vde-2026-site-officiel-bandeau-2000-x-714-1_j7yj.jpg",
-      "summary": "Vingt ans d’émotions vocales.",
-      "tags": []
-    },
-    {
-      "title": "Veteran Players Manage To Kill New RuneScape In Just Two Weeks",
-      "link": "https://kotaku.com/runescape-announces-then-quickly-cancels-its-reignited-project-due-to-player-feedback-2000746746",
-      "date": "2026-10-16T15:00:19.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/runescape-1-1280x720.jpg",
-      "summary": "RuneScape Reignited was set to launch in early December",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty : Un pop-up Modern Warfare 4 va ouvrir ce week-end à Paris",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93222/call-of-duty-un-pop-up-modern-warfare-4-va-ouvrir-ce-week-end-a-paris",
-      "date": "2026-10-16T14:58:28.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/socialrama-callofduty-modernwarfaire-papesan_mr5a.jpg",
-      "summary": "Les 17 et 18 octobre seulement.",
-      "tags": []
-    },
-    {
-      "title": "Silent Hill And Metal Gear Publisher Konami Does &#8216;Not Believe The Market Will Shift Significantly&#8217; Because Of AI",
-      "link": "https://kotaku.com/silent-hill-and-metal-gear-publisher-konami-does-not-believe-the-market-will-shift-significantly-because-of-ai-2000746506",
-      "date": "2026-10-16T14:30:23.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Snake-Eater-Delta-Solid-Snake-Gun-1280x720.jpg",
-      "summary": "The idea-making process of developers 'cannot be replaced easily,' the company insists in new financial report",
-      "tags": []
-    },
-    {
-      "title": "Netflix : vous ne verrez plus Cendrillon de la même manière, ses soeurs revoient l'histoire dans un film d'animation par les créateurs de KPop Demon Hunters",
-      "link": "https://www.jeuxvideo.com/news/2109480/netflix-vous-ne-verrez-plus-cendrillon-de-la-meme-maniere-ses-soeurs-revoient-l-histoire-dans-un-film-d-animation-par-les-createurs-de-kpop-demon-hunters.htm",
-      "date": "2026-10-16T14:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792159026-8851-card.jpg",
-      "summary": "Oubliez la pantoufle de verre immaculée et les marâtres tyranniques. Avec la première bande-annonce de Sœurs de sort, Netflix dynamite le conte de Cendrillon pour placer ses…",
-      "tags": []
-    },
-    {
-      "title": "How Star Wars: Galactic Racer kept the core team small and sustainable through \"distributed development\"",
-      "link": "https://www.gamesindustry.biz/how-star-wars-galactic-racer-kept-the-core-team-small-and-sustainable-through-distributed-development",
-      "date": "2026-10-16T14:30:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Star-Wars_-Galactic-Racer-Launch-Screenshot-2.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Matt Webster, CEO of Fuse Games, is \"thrilled\" with the critical reception to Star Wars: Galactic Racer, which is currently sitting on a Metacritic score of 88 for the PS5…",
-      "tags": []
-    },
-    {
-      "title": "Prison of Husks : le souls-like hanté par l'esprit de la PS1 tient sa date de sortie",
-      "link": "https://www.gamekult.com/actualite/prison-of-husks-le-souls-like-hante-par-l-esprit-de-la-ps1-tient-sa-date-de-sortie-3050872493.html",
-      "date": "2026-10-16T14:30:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872493/prison-of-husks-le-souls-like-hante-par-l-esprit-de-la-ps1-tient-sa-date-de-sortie-b129ee12__800_800__277-0-984-706.png",
-      "summary": "Surveillé depuis quelque temps par les amateurs de souls-like et de direction artistique typée PS1/PS2, Prison of Husks touche au but. L'équipe de Glass Head Dolls, soutenue par…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "The Legend of Zelda: Ocarina of Time - les images du remake",
-      "link": "https://fr.ign.com/the-legend-of-zelda-ocarina-of-time-1/93220/the-legend-of-zelda-ocarina-of-time-preview-screenshots",
-      "date": "2026-10-16T14:28:15.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/t/the-legend/the-legend-of-zelda-ocarina-of-time-preview-screenshots_bxwp.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Voici les premières images de Dark Link dans le remake de Zelda Ocarina of Time",
-      "link": "https://fr.ign.com/the-legend-of-zelda-ocarina-of-time-1/93219/voici-les-premieres-images-de-dark-link-dans-le-remake-de-zelda-ocarina-of-time",
-      "date": "2026-10-16T14:28:15.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/h/heres-our-/heres-our-first-look-at-dark-link-in-the-legend-of-zelda-oca_apr7.jpg",
-      "summary": "Match miroir.",
-      "tags": []
-    },
-    {
-      "title": "Pour le \"papa de PlayStation\" la polémique sur la fin des disques est due à un biais \"psychologique\"",
-      "link": "https://fr.ign.com/playstation-5/93216/pour-le-papa-de-playstation-la-polemique-sur-la-fin-des-disques-est-due-a-un-biais-psychologique",
-      "date": "2026-10-16T14:08:12.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-father/the-father-of-playstation-says-killing-discs-backlash-is-a-m_ugu6.jpg",
-      "summary": "De quoi faire avancer le débat.",
-      "tags": []
-    },
-    {
-      "title": "More Surprise Zelda: Ocarina Of Time Remake Footage Reveals One Of The Coolest Moments From The Original",
-      "link": "https://kotaku.com/more-surprise-zelda-ocarina-of-time-remake-footage-reveals-one-of-the-coolest-moments-from-the-original-2000746734",
-      "date": "2026-10-16T14:00:21.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/dark-link.jpg",
-      "summary": "Dark Link was one of the top 10 highlights of the N64 classic",
-      "tags": []
-    },
-    {
-      "title": "C'est confirmé par CD Projekt : le film Cyberpunk 2077 ne suivra pas le récit du jeu",
-      "link": "https://fr.ign.com/cyberpunk-2077/93215/cest-confirme-par-cd-projekt-le-film-cyberpunk-2077-ne-suivra-pas-le-recit-du-jeu",
-      "date": "2026-10-16T13:47:53.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-live-a/the-live-action-cyberpunk-2077-movie-wont-retrace-the-games_dmyy.jpg",
-      "summary": "V/20.",
-      "tags": []
-    },
-    {
-      "title": "Deux nouvelles statuettes PVC de Zelda et Link apportent un vent sauvage à l'IGN Store Europe",
-      "link": "https://fr.ign.com/the-legend-of-zelda-ocarina-of-time-2026-switch-2/93212/deux-nouvelles-statuettes-pvc-de-zelda-et-link-apportent-un-vent-sauvage-a-lign-store-europe",
-      "date": "2026-10-16T13:45:17.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/blob_2nvn.jpg",
-      "summary": "C&#x27;est trop dangereux d&#x27;y aller seul, prenez ces figurines.",
-      "tags": []
-    },
-    {
-      "title": "Statuette Zelda First4Figures en PVC sur l'IGN Store Europe",
-      "link": "https://fr.ign.com/ign-store-europe/93218/statuette-zelda-first4figures-en-pvc-sur-lign-store-europe",
-      "date": "2026-10-16T13:43:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/totk-zelda-st-02_ezn4.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Statuette Link First4Figures en PVC sur l'IGN Store Europe",
-      "link": "https://fr.ign.com/ign-store-europe/93214/statuette-link-first4figures-en-pvc-sur-lign-store-europe",
-      "date": "2026-10-16T13:43:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/totk-link-00_9f35.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Everything You Need To Know About Street Fighter’s Post-Credits Scene",
-      "link": "https://kotaku.com/street-fighter-post-credits-scene-how-many-when-sagat-2000746739",
-      "date": "2026-10-16T13:30:38.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/12/Street-Fighter.jpg",
-      "summary": "Kitao Sakurai’s fighting game adaptation sets up a sequel with a familiar face",
       "tags": []
     },
     {
