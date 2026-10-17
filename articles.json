@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T01:11:08.007Z",
+  "generatedAt": "2026-10-17T05:37:46.075Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-16T17:00:34.000Z",
-      "kept": 37
+      "kept": 35
     },
     "gamedev": {
       "status": "ok",
@@ -43,7 +43,7 @@
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
       "newest": "2026-10-16T20:20:10.000Z",
-      "kept": 20
+      "kept": 17
     },
     "gameblog": {
       "status": "ok",
@@ -56,8 +56,8 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-16T15:25:00.000Z",
-      "kept": 17
+      "newest": "2026-10-17T04:01:00.000Z",
+      "kept": 15
     },
     "kotaku": {
       "status": "ok",
@@ -75,7 +75,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-17T00:43:17.000Z",
+      "newest": "2026-10-17T04:01:19.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -115,6 +115,60 @@
     }
   },
   "articles": [
+    {
+      "title": "Event Habitat Dex and Pokédex list in Pokémon Pokopia",
+      "link": "https://www.polygon.com/pokemon-pokopia-event-habitat-dex-pokedex-list-requirements-unlock/",
+      "date": "2026-10-17T04:01:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/obs64_2026-04-28_14-23-15.jpg",
+      "summary": "Here are all the limited-time event habitats and Pokémon in Pokémon Pokopia and what you need to make them.",
+      "tags": []
+    },
+    {
+      "title": "Pokémon Pokopia event schedule",
+      "link": "https://www.polygon.com/pokemon-pokopia-event-schedule-holiday-dates/",
+      "date": "2026-10-17T04:01:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/obs64_2026-03-31_14-18-22.jpg",
+      "summary": "Our guide lists all the known limited-time events for Pokémon Pokopia, so you can find these event items and Pokémon.",
+      "tags": []
+    },
+    {
+      "title": "Pokémon Pokopia 'Pumpkaboo's Sweet Surprises' event guide",
+      "link": "https://www.polygon.com/pokemon-pokopia-pumpkaboos-sweet-surprises-gourgeist-habitats-items/",
+      "date": "2026-10-17T04:01:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/pokopia_guide_pumpkaboo_lead.jpg",
+      "summary": "In this guide, you find all the information to complete Pokémon Pokopia's \"Pumpkaboo's Sweet Surprises\" Halloween event.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Visceral Games : comment l'obsession du jeu-service a poussé EA à tuer le studio de Dead Space",
+      "link": "https://www.gamekult.com/actualite/visceral-games-comment-l-obsession-du-jeu-service-a-pousse-ea-a-tuer-le-studio-de-dead-space-3050872459.html",
+      "date": "2026-10-17T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872459/visceral-games-omelie-pour-le-studio-sacrifie-par-electronic-arts-sur-l-autel-du-jeu-service-19836541__800_800__0-0-1079-1080.jpg",
+      "summary": "Le 17 octobre 2017, Electronic Arts fermait Visceral Games, le studio de Dead Space, et lui retirait le jeu Star Wars en solo qu'il développait sous la direction d'Amy Hennig, la…",
+      "tags": []
+    },
+    {
+      "title": "10 Perfect Detective Thrillers That Get More Intense With Every Episode",
+      "link": "https://www.polygon.com/best-mystery-tv-shows-worth-solving/",
+      "date": "2026-10-17T04:00:23.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-killing-feature-1.jpg",
+      "summary": "These gripping mysteries explore the darkest corners of human nature, where each clue revels in the unexpected.",
+      "tags": []
+    },
+    {
+      "title": "Beloved Fantasy Novel Series Redwall Sets Return After 16 Years",
+      "link": "https://www.polygon.com/redwall-fantasy-book-series-2027-release-orphans-of-mossflower/",
+      "date": "2026-10-17T01:52:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22294407/REDWALL_Visual_Development_Art.jpg",
+      "summary": "Redwall series announces final book, Orphans of Mossflower, 15 years after the author's death and sets a 2027 release",
+      "tags": []
+    },
     {
       "title": "Rockstar Officially Comments on GTA 6's Approach to Trump & COVID-19",
       "link": "https://www.polygon.com/gta-6-trump-rockstar-games/",
@@ -224,15 +278,6 @@
       "tags": []
     },
     {
-      "title": "8 New TV Shows to Watch This Weekend on Netflix, Disney, and Hulu (October 16-18)",
-      "link": "https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-october-16-18/",
-      "date": "2026-10-16T20:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/nup_207980_01941_rf.JPG",
-      "summary": "In this weekend's TV column, we highlight major releases, among them, the end of an era for Marvel streaming and a prequel to a horror icon.",
-      "tags": []
-    },
-    {
       "title": "GTA 6 : vous avez remarqué un downgrade ? Et si tout était voulu par Rockstar…",
       "link": "https://www.jeuxvideo.com/news/2109481/gta-6-vous-avez-remarque-un-downgrade-et-si-tout-etait-voulu-par-rockstar.htm",
       "date": "2026-10-16T19:40:07.000Z",
@@ -278,24 +323,6 @@
       "tags": []
     },
     {
-      "title": "Every DC Studios Movie and TV Show in Coming Through 2028 (and Beyond)",
-      "link": "https://www.polygon.com/dc-movies-tv-shows-dcu-release-calendar-james-gunn/",
-      "date": "2026-10-16T18:52:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22688599/LuciaPham_210623_ecl1087_DC.png",
-      "summary": "Warner Bros. new DCU has a 10-year plan under James Gunn. Here's what next for DC movies and TV shows after Superman and Supergirl.",
-      "tags": []
-    },
-    {
-      "title": "How to get the DLC weapons in Fire Emblem Fortune's Weave",
-      "link": "https://www.polygon.com/fire-emblem-fortunes-weave-dlc-weapons-how-to-get/",
-      "date": "2026-10-16T18:47:07.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fortunes-weave-classic-fire-emblem.jpg",
-      "summary": "Fire Emblem Fortune's Weave's DLC weapons are powerful, if fragile, additions to your armory. Here's how to get Fortune's Weave's DLC weapons",
-      "tags": []
-    },
-    {
       "title": "Banshee Enshrouded 1.0 : Où trouver et comment battre cet ennemi ?",
       "link": "https://www.jeuxvideo.com/news/2109413/banshee-enshrouded-1-0-ou-trouver-et-comment-battre-cet-ennemi.htm",
       "date": "2026-10-16T18:30:14.000Z",
@@ -338,24 +365,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/Eternal-Anima-1280x693.jpg",
       "summary": "Eternal Anima finds surprising strategic depth in letting you foresee your opponent's next move",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Recaptures What Made GTA’s Best DLC So Great",
-      "link": "https://www.polygon.com/gta-6-ballad-of-gay-tony/",
-      "date": "2026-10-16T18:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_10.jpg",
-      "summary": "Vice City's lavish clubs, high-speed getaways, and over-the-top heists recall GTA's most extravagant era.",
-      "tags": []
-    },
-    {
-      "title": "Street Fighter’s Best Live-Action Movie Yet Is Free on Streaming",
-      "link": "https://www.polygon.com/street-fighter-1994-streaming-free-tubi-pluto-tv/",
-      "date": "2026-10-16T17:35:53.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8580365/usf2hero.jpg",
-      "summary": "The original 1994 Street Fighter movie is streaming for free on Tubi and Pluto TV.",
       "tags": []
     },
     {
@@ -1258,80 +1267,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872486/apres-le-reussi-drova-deck13-et-le-studio-just2d-mettent-sa-suite-drova-ii-torn-lands-sur-les-rails-b39e3ac7__800_800__1004-0-4113-3112.jpg",
       "summary": "Drova, premier du nom, fait partie des titres qui font de Deck13 un des éditeurs les plus excitants du moment, notamment pour filer un coup de main à des studios indés…",
-      "tags": []
-    },
-    {
-      "title": "Après des mois de teasing, le RPG Forge of The Fae fixe sa date pour mars prochain",
-      "link": "https://www.gamekult.com/actualite/apres-des-mois-de-teasing-le-rpg-forge-of-the-fae-fixe-sa-date-pour-mars-prochain-3050872485.html",
-      "date": "2026-10-16T05:27:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872485/apres-des-mois-de-teasing-le-rpg-forge-of-the-fae-fixe-sa-date-pour-mars-prochain-e41124b0__800_800__447-0-1703-1257.png",
-      "summary": "Deck13 Spotlight (qui s'occupe de l'édition) a annoncé à mars 2027 la sortie de Forge of the Fae, le RPG narratif au tour par tour et en pixel art du studio Datadyne. Le jeu sera…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Le lancement de GTA 6 : un risque inédit de ralentissement de la productivité mondiale ?",
-      "link": "https://www.jeuxvideo.com/news/2108276/le-lancement-de-gta-6-un-risque-inedit-de-ralentissement-de-la-productivite-mondiale.htm",
-      "date": "2026-10-16T05:05:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179147/1791470572-6915-card.jpg",
-      "summary": "Grand Theft Auto VI est clairement le jeu le plus attendu de tous les temps. Trop sans doute… Les personnes à vouloir poser des congés pour jouer sont nombreuses, si bien que ça…",
-      "tags": []
-    },
-    {
-      "title": "On sait enfin pourquoi ce film de Christopher Nolan est incompréhensible, et ça partait pourtant d'une bonne intention…",
-      "link": "https://www.jeuxvideo.com/news/2108525/on-sait-enfin-pourquoi-ce-film-de-christopher-nolan-est-incomprehensible-et-ca-partait-pourtant-d-une-bonne-intention.htm",
-      "date": "2026-10-16T04:55:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179156/1791558679-403-card.jpg",
-      "summary": "Considéré comme un des grands noms du cinéma du 21e siècle, Christopher Nolan est surtout connu pour ses récits alambiqués. C’est le cas pour le film Tenet. Mais si beaucoup se…",
-      "tags": []
-    },
-    {
-      "title": "inZOi : « bientôt » la sortie d'accès anticipé, un DLC gratuit en décembre pour patienter",
-      "link": "https://www.gamekult.com/actualite/inzoi-bientot-la-sortie-d-acces-anticipe-un-dlc-gratuit-en-decembre-pour-patienter-3050872475.html",
-      "date": "2026-10-16T04:42:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872475/540ecfa8__800_800__2142-411-3615-1883.jpg",
-      "summary": "Après avoir retapé le comportement de ses Zois, le simulateur de vie inZOI se rappelle à nous lors du Galaxies Showcase de ce soir et promet de sortir d'accès anticipé dans pas…",
-      "tags": []
-    },
-    {
-      "title": "La plus grande étude d'Oxford sur la santé mentale des gamers détruit une idée reçue",
-      "link": "https://www.jeuxvideo.com/news/2106471/la-plus-grande-etude-d-oxford-sur-la-sante-mentale-des-gamers-detruit-une-idee-recue.htm",
-      "date": "2026-10-16T04:05:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179067/1790666324-5722-card.jpg",
-      "summary": "Selon la plus vaste étude jamais menée par l'Université d'Oxford, le temps passé manette en main n'a pas d'impact significatif sur notre bien-être psychologique. C'est bel et bien…",
-      "tags": []
-    },
-    {
-      "title": "Preview Eternal Anima : quand l’anticipation devient la clé du JRPG",
-      "link": "https://fr.ign.com/eternal-anima/93057/preview-eternal-anima-quand-lanticipation-devient-la-cle-du-jrpg",
-      "date": "2026-10-16T04:00:36.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/maxresdefault_qsg8.jpg",
-      "summary": "Avec Eternal Anima, Marvelous entend renouer avec l’âge d’or du JRPG, porté par une équipe de vétérans du genre. Entre nostalgie et système de combat au tour par tour profond…",
-      "tags": []
-    },
-    {
-      "title": "Eternal Anima - screenshot éditeur",
-      "link": "https://fr.ign.com/eternal-anima/93061/eternal-anima-screenshot-editeur",
-      "date": "2026-10-16T04:00:36.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/copy-of-abilities-cust_11u9.png",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Preview : Eternal Anima : le JRPG de Marvelous parviendra-t-il à justifier son casting 5 étoiles ?",
-      "link": "https://www.gamekult.com/jeux/eternal-anima-3050889660/preview-3050872409.html",
-      "date": "2026-10-16T04:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/preview/30/3050872409/eternal-anima-le-jrpg-de-marvelous-parviendra-t-il-a-justifier-son-casting-5-etoiles-57295cb9__800_800__421-0-1500-1080.png",
-      "summary": "Réunir Kazushige Nojima, Katsuhisa Higuchi et Keisuke Makino sous une même bannière, c’est convoquer trois pans de l’âge d’or du JRPG, et tous les amateurs avisés avec. Eternal…",
       "tags": []
     },
     {
