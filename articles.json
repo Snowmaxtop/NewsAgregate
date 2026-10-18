@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:38:14.951Z",
+  "generatedAt": "2026-10-18T21:51:12.852Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-18T16:45:09.000Z",
-      "kept": 11
+      "newest": "2026-10-18T18:15:10.000Z",
+      "kept": 12
     },
     "gameblog": {
       "status": "ok",
@@ -63,7 +63,7 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-18T16:14:24.000Z",
+      "newest": "2026-10-18T20:51:52.000Z",
       "kept": 4
     },
     "pcgamer": {
@@ -77,7 +77,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-18T19:00:18.000Z",
+      "newest": "2026-10-18T20:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,35 @@
   },
   "articles": [
     {
+      "title": "Video Game Decomp Hub Closes Due To AI: &#8216;The Community Aspect Of Decompilation Has Been Broken&#8217;",
+      "link": "https://kotaku.com/video-game-decomp-hub-closes-due-to-ai-the-community-aspect-of-decompilation-has-been-broken-2000747302",
+      "date": "2026-10-18T20:51:52.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/neuroman2.jpg",
+      "summary": "An integral step towards mods, ports and patches, the popular decomp.dev decided the platform has been rendered obsolete by 'drive-by contributions'",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "New Steam Game is Basically Kiki’s Delivery Service in Video Game Form",
+      "link": "https://www.polygon.com/the-witchs-bakery-recommendation-steam-switch-ps5-xbox/",
+      "date": "2026-10-18T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-witch-s-bakery-trailer-screen.jpg",
+      "summary": "The Witch's Bakery is a new cozy game where play as a witch healing people's emotions through the power of magic bread.",
+      "tags": []
+    },
+    {
+      "title": "The Most Compelling Lovecraft Video Game Is About Hundreds Of Adorable Penguins",
+      "link": "https://kotaku.com/the-most-compelling-lovecraft-video-game-is-about-hundreds-of-adorable-penguins-2000747293",
+      "date": "2026-10-18T19:49:55.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/penguincolonysc.jpg",
+      "summary": "Penguin Colony tears down colonial overtones of H.P. Lovecraft's works by removing the player from any anthropological sensibilities, exhuming the genre instead of excusing it",
+      "tags": []
+    },
+    {
       "title": "CBS's Definitive '80s Action Thriller Series Is Officially Free to Watch on Streaming",
       "link": "https://www.polygon.com/airwolf-coolest-helicopter-80s-tv/",
       "date": "2026-10-18T19:00:18.000Z",
@@ -142,6 +171,24 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/yLUJefzpgZfJpEoPzUUMXU-1920-80.jpg",
       "summary": "Claude, finish drafting my single-use ray gun which can only vaporize $999 million worth of stuff and/or 49 people.",
+      "tags": []
+    },
+    {
+      "title": "« Je préférerais bouffer des barbelés » : Quentin Tarantino refuse catégoriquement de voir ce chef-d’œuvre culte depuis plus de 40 ans",
+      "link": "https://www.jeuxvideo.com/news/2109428/je-prefererais-bouffer-des-barbeles-quentin-tarantino-refuse-categoriquement-de-voir-ce-chef-d-oeuvre-culte-depuis-plus-de-40-ans.htm",
+      "date": "2026-10-18T18:15:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792143140-3044-je-prefererais-bouffer-des-barbeles-quentin-tarantino-refuse-categoriquement-de-voir-ce-chef-d-oeuvre-culte-depuis-plus-de-40-ans.jpg",
+      "summary": "Quentin Tarantino est une véritable encyclopédie vivante du septième art. Pourtant, il refuse obstinément de poser les yeux sur un chef-d’œuvre culte des années 1980. Voici lequel…",
+      "tags": []
+    },
+    {
+      "title": "En 1998, en pleine folie Pokémon, la Nintendo 64 a fait parler des milliers d'enfants à une IA Pikachu",
+      "link": "https://www.jeuxvideo.com/news/2109496/en-1998-en-pleine-folie-pokemon-la-nintendo-64-a-fait-parler-des-milliers-d-enfants-a-une-ia-pikachu.htm",
+      "date": "2026-10-18T18:10:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792162151-6943-card.jpg",
+      "summary": "En 1998, en pleine folie Pokémon, Nintendo et le studio Ambrella ont lancé Hey You, Pikachu ! sur Nintendo 64. Fourni avec un microphone dédié branché sur la console, le jeu…",
       "tags": []
     },
     {
@@ -231,7 +278,7 @@
       "date": "2026-10-18T16:14:24.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/astrobotflower.jpg",
-      "summary": "The speculated price tags on the next generation of consoles already has fans sweating as the AI-driven crunch shows no end in sight",
+      "summary": "The speculated price tags on the next generation of consoles already have fans sweating as the AI-driven crunch shows no end in sight",
       "tags": []
     },
     {
@@ -322,15 +369,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/BDvidK6magBf2nfHxuXNgZ-1920-80.png",
       "summary": "The former game director of both Marathon and Valorant guides us through the games on his PC.",
-      "tags": []
-    },
-    {
-      "title": "A Remaster Of The Best Shrek Game Ever Just Leaked",
-      "link": "https://www.polygon.com/shrek-2-remastered-leak/",
-      "date": "2026-10-18T14:57:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22417036/Shrek_2_Movie_Review.jpg",
-      "summary": "Move over Shrek 5, I can't wait to replay the Shrek 2 game when its leaked remaster launches",
       "tags": []
     },
     {
@@ -576,33 +614,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/VCqXuCa5LDSdzrMj4RK2xA-1920-80.jpg",
       "summary": "I'm one of a dozen crusty nerds.",
-      "tags": []
-    },
-    {
-      "title": "The Mortuary Assistant Film Director Jeremiah Kipp Passes Away",
-      "link": "https://kotaku.com/the-mortuary-assistant-film-director-jeremiah-kipp-passes-away-2000747075",
-      "date": "2026-10-17T21:10:34.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/mortuaryassistantmovie.jpg",
-      "summary": "The underground horror community is mourning a charitable filmmaker, who sharpened his fangs on numerous indie scares",
-      "tags": []
-    },
-    {
-      "title": "Epic Games code à 100% avec de l'IA son nouveau launcher car \"la programmation c'est trop dur\"",
-      "link": "https://www.jeuxvideo.com/news/2109314/epic-games-code-a-100-avec-de-l-ia-son-nouveau-launcher-car-la-programmation-c-est-trop-dur.htm",
-      "date": "2026-10-17T20:20:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179208/1792075688-4869-card.jpg",
-      "summary": "Une guerre d'optimisation et d'annonces vient de s'engager entre Epic Games et Valve. Entre l'arrivée d'une version de test du nouveau launcher d'Epic conçue avec de l'IA et une…",
-      "tags": []
-    },
-    {
-      "title": "Car Park Capital Is The World’s Most Evil Simulator (Complimentary)",
-      "link": "https://kotaku.com/car-park-capital-is-the-worlds-most-evil-simulator-complimentary-2000747068",
-      "date": "2026-10-17T19:55:46.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/carparkcapital-1280x771.jpg",
-      "summary": "Step into Robert Moses’ shoes as you dismantle civilization and ensure these little computer people never witness a 15-minute city in their lifetime",
       "tags": []
     },
     {
