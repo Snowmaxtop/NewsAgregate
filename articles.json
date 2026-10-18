@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T21:51:12.852Z",
+  "generatedAt": "2026-10-18T23:50:57.287Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-18T18:15:10.000Z",
-      "kept": 12
+      "newest": "2026-10-18T20:20:08.000Z",
+      "kept": 13
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-18T20:51:52.000Z",
-      "kept": 4
+      "newest": "2026-10-18T22:24:42.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-18T18:48:42.000Z",
+      "newest": "2026-10-18T22:36:22.000Z",
       "kept": 10
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-18T20:00:18.000Z",
+      "newest": "2026-10-18T23:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,42 @@
   },
   "articles": [
     {
+      "title": "Adam Scott's Criminally Overlooked 2026 Thriller Is Finally on Streaming",
+      "link": "https://www.polygon.com/hokum-streaming-on-hulu/",
+      "date": "2026-10-18T23:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdhoku_ec011.jpg",
+      "summary": "What not to do on your trip to rural Ireland",
+      "tags": []
+    },
+    {
+      "title": "23 devs teamed up to make a free game of 'innovative yet questionable volume sliders,' and it feels like browser-based WarioWare",
+      "link": "https://www.pcgamer.com/games/23-devs-teamed-up-to-make-a-free-game-of-innovative-yet-questionable-volume-sliders-and-it-feels-like-browser-based-warioware/",
+      "date": "2026-10-18T22:36:22.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/59UYYjUSJrXbZ3fRaMdMgd-1920-80.jpg",
+      "summary": "Here for a good time and a loud time.",
+      "tags": []
+    },
+    {
+      "title": "MrBeast Joins Shark Tank, Invests Quarter Million In AI-Powered &#8216;Ball 2&#8217;",
+      "link": "https://kotaku.com/mrbeast-joins-shark-tank-invests-quarter-million-in-ai-powered-ball-2-2000747308",
+      "date": "2026-10-18T22:24:42.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/ball2-1280x790.jpg",
+      "summary": "Mr. Wonderful inversely appeared uninterested in the foam orb, not seeing how it could distinguish itself among other, more popular balls",
+      "tags": []
+    },
+    {
+      "title": "63 Years Later, the Stellar Action Comic Strip Most America Never Heard of Deserves Another Shot",
+      "link": "https://www.polygon.com/modesty-blaise-retrospective/",
+      "date": "2026-10-18T22:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/modesty-blaise-willie-garvin-mister-sun-1985.jpg",
+      "summary": "One of the best spy capers of the 20th century was exclusive to UK newspapers",
+      "tags": []
+    },
+    {
       "title": "Video Game Decomp Hub Closes Due To AI: &#8216;The Community Aspect Of Decompilation Has Been Broken&#8217;",
       "link": "https://kotaku.com/video-game-decomp-hub-closes-due-to-ai-the-community-aspect-of-decompilation-has-been-broken-2000747302",
       "date": "2026-10-18T20:51:52.000Z",
@@ -127,6 +163,15 @@
       "tags": [
         "patch"
       ]
+    },
+    {
+      "title": "Le meilleur joueur de Super Mario Bros au monde a battu son propre record. Plus de 40 ans après la sortie du jeu, on est à 0,2 seconde de la perfection",
+      "link": "https://www.jeuxvideo.com/news/2108964/le-meilleur-joueur-de-super-mario-bros-au-monde-a-battu-son-propre-record-plus-de-40-ans-apres-la-sortie-du-jeu-on-est-a-0-2-seconde-de-la-perfection.htm",
+      "date": "2026-10-18T20:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179191/1791906757-1232-card.jpg",
+      "summary": "Un nouveau record sur le mythique jeu Super Mario Bros est tombé et c’est un événement majeur. La performance vient du meilleur joueur du jeu depuis cinq ans. Ce nouveau chrono…",
+      "tags": []
     },
     {
       "title": "New Steam Game is Basically Kiki’s Delivery Service in Video Game Form",
@@ -327,15 +372,6 @@
       "tags": []
     },
     {
-      "title": "Deathstroke Actor Reveals Scrapped Batman Film Would've Featured Batgirl And A Shocking Death",
-      "link": "https://www.polygon.com/ben-affleck-batman-movie-plot-details/",
-      "date": "2026-10-18T15:30:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/3864238/batman_v_superman.0.jpg",
-      "summary": "Deathstroke actor Joe Manganiello gave us our best overview of Ben Affleck's scrapped Batman movie yet",
-      "tags": []
-    },
-    {
       "title": "WoW Forever : malgré les protestations, les développeurs ne veulent pas revenir en arrière concernant le partage des mobs",
       "link": "https://www.jeuxvideo.com/news/2109507/wow-forever-malgre-les-protestations-les-developpeurs-ne-veulent-pas-revenir-en-arriere-concernant-le-partage-des-mobs.htm",
       "date": "2026-10-18T15:15:11.000Z",
@@ -351,15 +387,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/A-screenshot-of-NoGlyphs-Needle-In-A-Haystack-on-Steam-1280x720.jpg",
       "summary": "The developers of the Needle In A Haystack Simulator clone accused another clone of being a 'byte-for-byte identical' rip-off of their work",
-      "tags": []
-    },
-    {
-      "title": "D&D's New Arcana Unleashed Feats Are Breaking the Game, but There's an Easy Fix",
-      "link": "https://www.polygon.com/dnd-arcana-unleashed-adept-feats-broken-fix-dungeons-dragons/",
-      "date": "2026-10-18T15:00:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/341922.png",
-      "summary": "The Adept feats from D&D Arcana Unleashed let every class cast the most powerful spells, potentially breaking the game, but there is an easy fix.",
       "tags": []
     },
     {
@@ -605,15 +632,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872398/memoire-wwf-wrestlemania-the-arcade-game-c9c54a30__800_800__869-477-2441-2048.jpg",
       "summary": "Si quelqu'un m'arrêtait dans la rue pour me demander quels sont les trois premiers catcheurs qui me viennent en tête, ma réponse serait probablement de l'ordre de « Euh, euh, The…",
-      "tags": []
-    },
-    {
-      "title": "Metal band Genitorturers claims a Vampire: The Masquerade - Bloodlines remake is coming, getting a dozen crusty nerds way too worked up",
-      "link": "https://www.pcgamer.com/games/rpg/metal-band-genitorturers-allegedly-claims-a-vampire-the-masquerade-bloodlines-remake-is-coming-getting-a-dozen-crusty-nerds-way-too-worked-up/",
-      "date": "2026-10-17T21:52:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VCqXuCa5LDSdzrMj4RK2xA-1920-80.jpg",
-      "summary": "I'm one of a dozen crusty nerds.",
       "tags": []
     },
     {
