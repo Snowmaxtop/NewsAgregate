@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:24:40.943Z",
+  "generatedAt": "2026-10-18T19:38:14.951Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-18T14:30:11.000Z",
+      "newest": "2026-10-18T16:45:09.000Z",
       "kept": 11
     },
     "gameblog": {
@@ -64,20 +64,20 @@
       "url": "https://kotaku.com/feed",
       "items": 20,
       "newest": "2026-10-18T16:14:24.000Z",
-      "kept": 5
+      "kept": 4
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-18T17:18:53.000Z",
-      "kept": 11
+      "newest": "2026-10-18T18:48:42.000Z",
+      "kept": 10
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-18T17:00:18.000Z",
+      "newest": "2026-10-18T19:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,42 @@
     }
   },
   "articles": [
+    {
+      "title": "CBS's Definitive '80s Action Thriller Series Is Officially Free to Watch on Streaming",
+      "link": "https://www.polygon.com/airwolf-coolest-helicopter-80s-tv/",
+      "date": "2026-10-18T19:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mv5bnjlimmjkmditymm5ms00mgjlltlmmtctzme2nda1mgzimwq1xkeyxkfqcgc-_v1_.jpg",
+      "summary": "With the coolest helicopter ever, Airwolf delivered Cold War intrigue, spectacular aerial action, and unforgettable '80s television escapism.",
+      "tags": []
+    },
+    {
+      "title": "Dark Souls 2 dataminer shows off massive prototype coliseum level from early development",
+      "link": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-dataminer-shows-off-massive-prototype-coliseum-level-from-early-development/",
+      "date": "2026-10-18T18:48:42.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zaWM99pyEfhLiBr3FV5MsP-1920-80.png",
+      "summary": "Bigger than the ones in Elden Ring, for what it's worth.",
+      "tags": []
+    },
+    {
+      "title": "Leaked AI safety bill from Anthropic only requires government intervention if 50+ injuries or $1 billion are at risk",
+      "link": "https://www.pcgamer.com/software/ai/leaked-ai-safety-bill-from-anthropic-only-lets-government-act-if-50-deaths-or-usd1-billion-are-on-the-line/",
+      "date": "2026-10-18T18:44:11.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/yLUJefzpgZfJpEoPzUUMXU-1920-80.jpg",
+      "summary": "Claude, finish drafting my single-use ray gun which can only vaporize $999 million worth of stuff and/or 49 people.",
+      "tags": []
+    },
+    {
+      "title": "36 Years Later, Robert De Niro's Greatest Gangster Movie Quote Is Still One of a Kind",
+      "link": "https://www.polygon.com/robert-de-niro-best-gangster-movie-quote-goodfellas/",
+      "date": "2026-10-18T18:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/goodfellas-3.jpg",
+      "summary": "Robert De Niro's iconic gangster quote from Goodfellas reveals the deadly truth about mob loyalty and betrayal.",
+      "tags": []
+    },
     {
       "title": "The Outlast Trials' initial playtests went poorly: Designer says 6-year development took 'a f**king long time' and 'a s**t-ton of prototypes'",
       "link": "https://www.pcgamer.com/games/horror/the-outlast-trials-initial-playtests-went-poorly-designer-says-6-year-development-took-a-f-king-long-time-and-a-s-t-ton-of-prototypes/",
@@ -169,6 +205,15 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/drunken-goddess-reflex-drinking-game.jpg",
       "summary": "Drunken Goddess Reflux will no longer be at the Steam Next Fest, as developers opt for a closed playtest instead.",
+      "tags": []
+    },
+    {
+      "title": "Twitch est-elle encore une plateforme de jeux vidéo ? Les audiences françaises racontent une autre histoire",
+      "link": "https://www.jeuxvideo.com/news/2108998/twitch-est-elle-encore-une-plateforme-de-jeux-video-les-audiences-francaises-racontent-une-autre-histoire.htm",
+      "date": "2026-10-18T16:45:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179197/1791968107-9081-card.jpg",
+      "summary": "Longtemps associée aux parties de jeux vidéo diffusées en direct, Twitch voit les habitudes de ses spectateurs évoluer. Entre compétitions esportives, discussions et émissions de…",
       "tags": []
     },
     {
@@ -244,7 +289,16 @@
       "tags": []
     },
     {
-      "title": "Devs Behind Needle In A Haystack Clone Complain Their Clone Has Been Cloned By Vibe-Coder",
+      "title": "WoW Forever : malgré les protestations, les développeurs ne veulent pas revenir en arrière concernant le partage des mobs",
+      "link": "https://www.jeuxvideo.com/news/2109507/wow-forever-malgre-les-protestations-les-developpeurs-ne-veulent-pas-revenir-en-arriere-concernant-le-partage-des-mobs.htm",
+      "date": "2026-10-18T15:15:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792162842-3649-card.jpg",
+      "summary": "Si l'annonce de WoW Forever a forcément ravi de nombreux joueurs déjà accro à Classic, cette nouvelle mouture risque de décontenancer la \"partie Retail\" de la communauté, habituée…",
+      "tags": []
+    },
+    {
+      "title": "Gaming&#8217;s Vibe-Coded Apocalypse Even Has Devs Who Rip Off Viral Steam Hits Complaining",
       "link": "https://kotaku.com/devs-behind-needle-in-a-haystack-clone-complain-their-clone-has-been-cloned-by-vibe-coder-2000747284",
       "date": "2026-10-18T15:12:35.000Z",
       "sourceId": "kotaku",
@@ -280,30 +334,12 @@
       "tags": []
     },
     {
-      "title": "Forza Horizon Is No Longer the King of Video Game Road Trips",
-      "link": "https://www.polygon.com/american-truck-simulator-road-trip-forza-horizon/",
-      "date": "2026-10-18T14:30:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ats-road-trip-mustang.jpg",
-      "summary": "SCS Software's American Truck Simulator: Road Trip DLC adds cars and tourist destinations in a game-changing update",
-      "tags": []
-    },
-    {
       "title": "Voici la transformation de Goku et Végéta la moins connue de Dragon Ball : seuls les vrais fans s'en souviennent",
       "link": "https://www.jeuxvideo.com/news/2109503/voici-la-transformation-de-goku-et-vegeta-la-moins-connue-de-dragon-ball-seuls-les-vrais-fans-s-en-souviennent.htm",
       "date": "2026-10-18T14:30:11.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179216/1792160619-8666-card.jpg",
       "summary": "Avec le nombre incommensurable de transformations que possèdent Goku et Végéta au fil des différents mangas, animés et jeux vidéo, il est presque normal de ne pas se souvenir de…",
-      "tags": []
-    },
-    {
-      "title": "11 Years Later, Dragon Ball Super: Beerus Finally Nails Akira Toriyama's Original Vision",
-      "link": "https://www.polygon.com/dragon-ball-super-beerus-finally-respects-toriyamas-vision/",
-      "date": "2026-10-18T14:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dragon-ball-super-beerus.jpg",
-      "summary": "I doubted the need for another Beerus arc, but Dragon Ball Super's new take is admittedly winning me over.",
       "tags": []
     },
     {
@@ -567,60 +603,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/carparkcapital-1280x771.jpg",
       "summary": "Step into Robert Moses’ shoes as you dismantle civilization and ensure these little computer people never witness a 15-minute city in their lifetime",
-      "tags": []
-    },
-    {
-      "title": "Qualcomm wins $2 legal decision against fellow tech giant Arm, and that's not a typo",
-      "link": "https://www.pcgamer.com/gaming-industry/qualcomm-wins-usd2-legal-decision-against-fellow-tech-giant-arm-and-thats-not-a-typo/",
-      "date": "2026-10-17T19:30:53.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/dWCr2RhPTciT8TceHkwqcY-1920-80.jpg",
-      "summary": "It's not just the principle of the thing: There could be more money up for grabs.",
-      "tags": []
-    },
-    {
-      "title": "'I am overwhelmed and overstimulated': The actor behind Star Wars: Galactic Racer’s Biddy Blas is scribbing doon all your enthusiasm",
-      "link": "https://www.pcgamer.com/games/racing/i-am-overwhelmed-and-overstimulated-the-actor-behind-star-wars-galactic-racers-biddy-blas-is-scribbing-doon-all-your-enthusiasm/",
-      "date": "2026-10-17T18:34:02.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/dh6TAMjUaWdDijWxXyscPS-1920-80.png",
-      "summary": "Ding dong pookie.",
-      "tags": []
-    },
-    {
-      "title": "Le plus gros flop de « Star Wars » s’offre enfin une suite après 8 ans… mais pas comme vous l’imaginiez",
-      "link": "https://www.jeuxvideo.com/news/2109430/le-plus-gros-flop-de-star-wars-s-offre-enfin-une-suite-apres-8-ans-mais-pas-comme-vous-l-imaginiez.htm",
-      "date": "2026-10-17T18:15:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792143142-3879-le-plus-gros-flop-de-star-wars-s-offre-enfin-une-suite-apres-8-ans-mais-pas-comme-vous-l-imaginiez.jpg",
-      "summary": "« Solo: A Star Wars Story » reste à ce jour le plus grand revers commercial de toute la franchise. À l’époque, l’idée d’une suite pourtant teasée à la fin du film avait vite été…",
-      "tags": []
-    },
-    {
-      "title": "Le créateur de Dragon Quest vient de créer un jeu vidéo entièrement avec l'IA : il est jouable gratuitement",
-      "link": "https://www.jeuxvideo.com/news/2109448/le-createur-de-dragon-quest-vient-de-creer-un-jeu-video-entierement-avec-l-ia-il-est-jouable-gratuitement.htm",
-      "date": "2026-10-17T18:10:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179215/1792145169-114-card.jpg",
-      "summary": "À 72 ans, le légendaire concepteur japonais Yuji Horii a créé un jeu d'enquête complet en seulement trente minutes grâce à l'intelligence artificielle. Disponible gratuitement…",
-      "tags": []
-    },
-    {
-      "title": "To help America, I used Crusader Kings 3 to figure out how to remove a doddering, senile lunatic from power",
-      "link": "https://www.pcgamer.com/games/strategy/to-help-america-i-used-crusader-kings-3-to-figure-out-how-to-remove-a-doddering-senile-lunatic-from-power/",
-      "date": "2026-10-17T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/dRJxTNLTaF2ERKMoC78YUE-1920-80.jpg",
-      "summary": "Any resemblance to actual persons or actual events is purely coincidental.",
-      "tags": []
-    },
-    {
-      "title": "Debra Wilson Also Confused On Why Games Keep Using Her Likeness",
-      "link": "https://kotaku.com/debra-wilson-also-confused-on-why-games-keep-using-her-likeness-2000747061",
-      "date": "2026-10-17T17:29:52.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/callistowolverinedebrawilson.jpg",
-      "summary": "In an interview with Joseph Shepherd, the prolific Wolverine and Wolfenstein voice actor addresses the amusing trend, but says she prefers to play characters that don’t resemble…",
       "tags": []
     },
     {
