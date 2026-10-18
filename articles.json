@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T05:58:03.434Z",
+  "generatedAt": "2026-10-18T10:33:12.534Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-17T11:37:52.000Z",
-      "kept": 5
+      "newest": "2026-10-18T08:42:18.000Z",
+      "kept": 3
     },
     "gamedev": {
       "status": "stale",
@@ -42,21 +42,21 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-17T20:20:10.000Z",
+      "newest": "2026-10-18T07:40:06.000Z",
       "kept": 13
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-17T09:30:00.000Z",
-      "kept": 8
+      "newest": "2026-10-18T09:30:00.000Z",
+      "kept": 7
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-18T04:00:00.000Z",
+      "newest": "2026-10-18T09:26:00.000Z",
       "kept": 7
     },
     "kotaku": {
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-17T21:52:34.000Z",
+      "newest": "2026-10-18T09:50:29.000Z",
       "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-18T04:00:23.000Z",
+      "newest": "2026-10-18T10:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-16T10:37:00.000Z",
-      "kept": 6
+      "kept": 1
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-16T09:29:27.000Z",
-      "kept": 1
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -117,6 +117,179 @@
     }
   },
   "articles": [
+    {
+      "title": "Before Dark Souls, FromSoftware’s Forgotten PS1 Horror Game Was a Haunting Exercise in Empathy",
+      "link": "https://www.polygon.com/fromsoftware-echo-night-ps1/",
+      "date": "2026-10-18T10:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/echo-night.jpg",
+      "summary": "FromSoft’s Echo Night asks players to bring peace to the dead.",
+      "tags": []
+    },
+    {
+      "title": "Liquid Swords, developer of open-city crime sim Samson, has gone bankrupt following staff claims that they haven't been paid in two months",
+      "link": "https://www.pcgamer.com/gaming-industry/liquid-swords-developer-of-open-city-crime-sim-samson-has-gone-bankrupt-following-staff-claims-that-they-havent-been-paid-in-two-months/",
+      "date": "2026-10-18T09:50:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/c3XaG7583gHQj3hZfsQNXm-1920-80.jpg",
+      "summary": "The administrator is currently seeking a buyer for the studio and its assets.",
+      "tags": []
+    },
+    {
+      "title": "« Ça a l'air incroyable » Donjons & Dragons vous présente sa prochaine grosse surprise issue d'une licence légendaire de la science-fiction",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/donjons-dragons-star-wars-extension-724807?utm_source=RSS",
+      "date": "2026-10-18T09:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/414151_63be79f11ff8d.jpg",
+      "summary": "L'emblématique jeu de rôle Donjons & Dragons a dévoilé plus en détail sa prochaine grosse surprise en lien avec une licence légendaire de la science-fiction.",
+      "tags": []
+    },
+    {
+      "title": "En Espagne, les magasins Game abandonnent les étiquettes de prix sur les jeux vidéo d'occasion, qui abîment les jaquettes",
+      "link": "https://www.gamekult.com/actualite/en-espagne-les-magasins-game-abandonnent-les-etiquettes-de-prix-sur-les-jeux-video-d-occasion-qui-abiment-les-jaquettes-3050872449.html",
+      "date": "2026-10-18T09:26:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872449/en-espagne-les-magasins-game-abandonnent-les-etiquettes-de-prix-sur-les-jeux-video-d-occasion-qui-abiment-les-jaquettes-c38fe283__800_800__0-0-554-554.jpg",
+      "summary": "Ce n'est pas parce que le jeu vidéo physique est en mauvaise posture qu'il faut lâcher prise : au contraire, c'est le moment de le chérir comme jamais et d'ailleurs, la survie des…",
+      "tags": []
+    },
+    {
+      "title": "The 10 Best Horror Books of All Time According to Goodreads, Ranked",
+      "link": "https://www.polygon.com/10-best-horror-books-ranked-goodreads/",
+      "date": "2026-10-18T09:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/carrie-white-prom.jpg",
+      "summary": "Pick up one of these tales of demons, vampires, or monsters for spooky season",
+      "tags": []
+    },
+    {
+      "title": "« Ça aurait été dingue » 7 ans après sa sortie, un mode roguelike supprimé de Resident Evil 2 Remake a été découvert",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/resident-evil-2-remake-mode-roguelike-ghost-survivors-decouvert-724903?utm_source=RSS",
+      "date": "2026-10-18T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/422929_643e90c0496e4.jpg",
+      "summary": "Avant Resident Evil Requiem, le remake de Resident Evil 2 a bien failli avoir son propre mode roguelike, comme le révèlent des données récemment repérées dans les fichiers du jeu.",
+      "tags": []
+    },
+    {
+      "title": "Les teasing des films DCEU qui se concrétiseront jamais",
+      "link": "https://fr.ign.com/zack-snyders-justice-league/73625/les-teasing-des-films-dceu-qui-se-concretiseront-jamais",
+      "date": "2026-10-18T08:42:18.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/d/dceu-movie/dceu-movie-teases-that-were-never-paid-off_8c1p.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "11 ans après sa sortie, Fallout 4 reçoit encore l'équivalent gratuit d'un énorme DLC officiel, c'est impressionnant",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/fallout-4-mod-dlc-detour-724850?utm_source=RSS",
+      "date": "2026-10-18T08:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/705585_69143b10a4919.jpg",
+      "summary": "11 ans après sa sortie, Fallout 4 continue d'offrir aux joueurs des expériences dignes de DLC officiels, mais accessibles gratuitement, comme celui-ci qui nous intéresse ici.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Roi des cours de récré, Tony Hawk's Pro Skater a porté la culture skate auprès du grand public",
+      "link": "https://www.gamekult.com/actualite/roi-des-cours-de-recre-tony-hawk-s-pro-skater-a-porte-la-culture-skate-aupres-du-grand-public-101-3050866272.html",
+      "date": "2026-10-18T08:05:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866272/tony-hawk-s-pro-skater-quand-le-skate-a-fait-un-9000-dans-le-jeu-video-e3329633__800_800__525-28-1859-1364.jpg",
+      "summary": "Sorti en octobre 1999 en Europe, Tony Hawk's Pro Skater (retitré Tony Hawk’s Skateboarding dans sa version européenne) a propulsé le skate, la musique punk et la coolitude dans…",
+      "tags": []
+    },
+    {
+      "title": "Stephen King and Stanley Kubrick's Near-Perfect Psychological Thriller Is Officially Back on Streaming",
+      "link": "https://www.polygon.com/stephen-king-the-shining-on-hbo-max/",
+      "date": "2026-10-18T08:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/10/image-1.png",
+      "summary": "Stephen King's novels have inspired many movies. One of the best is also one he deeply dislikes.",
+      "tags": []
+    },
+    {
+      "title": "Apple TV : toutes les sorties confirmées de novembre 2026, avec un film événement et des séries attendues",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/apple-tv-sorties-confirmees-novembre-2026-724901?utm_source=RSS",
+      "date": "2026-10-18T08:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/694988_6826dae436172.png",
+      "summary": "Comme chaque mois, Apple TV proposera quelques nouveautés originales en novembre 2026. Voici toutes les séries et films confirmés pour le mois prochain sur la plateforme de SVOD.",
+      "tags": []
+    },
+    {
+      "title": "\"Absolument aucun désir\" Cet acteur de la trilogie Le Seigneur des Anneaux ne veut surtout pas reprendre son rôle dans les prochains films",
+      "link": "https://www.jeuxvideo.com/news/2108971/absolument-aucun-desir-cet-acteur-de-la-trilogie-le-seigneur-des-anneaux-ne-veut-surtout-pas-reprendre-son-role-dans-les-prochains-films.htm",
+      "date": "2026-10-18T07:40:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179191/1791907008-1198-card.jpg",
+      "summary": "De nouveaux films inspirés de l'univers établi par J. R. R. Tolkien sont en préparation, et beaucoup d'acteurs phares de la trilogie originale seraient ravis de repartir à…",
+      "tags": []
+    },
+    {
+      "title": "Si jamais : l'eau gazeuse est chimiquement parfaite pour les joueurs de jeux vidéo",
+      "link": "https://www.gamekult.com/actualite/si-jamais-l-eau-gazeuse-est-chimiquement-parfaite-pour-les-joueurs-de-jeux-video-3050872447.html",
+      "date": "2026-10-18T07:12:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872447/si-jamais-l-eau-gazeuse-est-chimiquement-parfaite-pour-les-joueurs-de-jeux-video-e5a17bd2__800_800__272-0-1173-900.jpg",
+      "summary": "Allez, on arrête la Red Bull : il se trouve que l'eau gazeuse est une excellente alternative pour maintenir la concentration quand on joue longtemps. Dans une récente étude…",
+      "tags": []
+    },
+    {
+      "title": "Un mois avant la sortie de GTA 6 sur consoles, GTA 5 met une nouvelle claque graphique gratuite sur PC, c'est bluffant",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-5-mod-aura-v-claque-graphique-724756?utm_source=RSS",
+      "date": "2026-10-18T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/401111_628369b15128a.jpg",
+      "summary": "En attendant GTA 6 le mois prochain, son illustre aîné montre encore qu'il peut asséner une bluffante claque graphique avec ce mod gratuit qui le transforme radicalement.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "L'un des meilleurs jeux de 2026 boycotte Microsoft et sa Xbox : pourquoi une telle décision",
+      "link": "https://www.jeuxvideo.com/news/2109486/l-un-des-meilleurs-jeux-de-2026-boycotte-microsoft-et-sa-xbox-pourquoi-une-telle-decision.htm",
+      "date": "2026-10-18T06:40:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792163058-263-card.jpg",
+      "summary": "L'un des plus grands succès de 2026 refuse de sortir sur Xbox. Face aux interrogations des joueurs, le studio House House sort du silence et assume une décision éthique radicale…",
+      "tags": []
+    },
+    {
+      "title": "Prime Gaming vous offre encore 3 jeux gratuits dont un chef d'œuvre de son genre, mais faites vite",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-jeux-gratuits-rappel-19-10-2026-doom-eternal-724902?utm_source=RSS",
+      "date": "2026-10-18T06:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/428644_6492b82474c6b.jpg",
+      "summary": "Vous avez encore quelques jours pour récupérer 3 jeux gratuits offerts par Prime Gaming avant leur départ du service, dont une référence absolue dans son genre.",
+      "tags": []
+    },
+    {
+      "title": "60 Years Ago, the Best Charlie Brown Quote Was So Perfect It Made It Into the Movie",
+      "link": "https://www.polygon.com/peanuts-best-charlie-brown-quote-ever/",
+      "date": "2026-10-18T06:28:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/charlie-brown-emotional-gut-punch-in-peanuts-comic.avif",
+      "summary": "Charlie Brown's bleak outlook on life was perfectly summed up in this 1966 Peanuts comic strip by Charles Schulz",
+      "tags": []
+    },
+    {
+      "title": "Disney+ : toutes les sorties confirmées de novembre 2026 avec le retour d'une série ultra populaire",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-sorties-confirmees-novembre-2026-percy-jackson-724893?utm_source=RSS",
+      "date": "2026-10-18T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/675662_67c9668bddfd0.jpg",
+      "summary": "En attendant une liste complète et officielle, voici les sorties films et séries confirmées pour novembre 2026 sur Disney+, avec en tête d'affiche le retour d'une série très…",
+      "tags": []
+    },
+    {
+      "title": "Blade Runner 2099 : tout ce que l'on sait de la nouvelle série de science-fiction de Prime Video",
+      "link": "https://www.jeuxvideo.com/news/2109018/blade-runner-2099-tout-ce-que-l-on-sait-de-la-nouvelle-serie-de-science-fiction-de-prime-video.htm",
+      "date": "2026-10-18T04:55:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179217/1792165168-2677-card.jpg",
+      "summary": "La science-fiction doit toujours aller plus loin temporellement pour explorer de nouvelles thématiques et surtout, s’éloigner de la réalité, qui commence à la rattraper doucement…",
+      "tags": []
+    },
     {
       "title": "Every Major Game Releasing in November That Isn’t GTA 6",
       "link": "https://www.polygon.com/november-2026-game-releases/",
@@ -199,30 +372,12 @@
       "tags": []
     },
     {
-      "title": "Pokémon Go Minior Shower schedule",
-      "link": "https://www.polygon.com/pokemon-go-minior-shower-schedule-how-to-find-shiny/",
-      "date": "2026-10-17T21:01:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jlee_261012_1001_pogo_minior.jpg",
-      "summary": "Here's when the next Minior Shower is in Pokémon Go. This is when you'll be able to find the meteor Pokémon, Minior.",
-      "tags": []
-    },
-    {
       "title": "Epic Games code à 100% avec de l'IA son nouveau launcher car \"la programmation c'est trop dur\"",
       "link": "https://www.jeuxvideo.com/news/2109314/epic-games-code-a-100-avec-de-l-ia-son-nouveau-launcher-car-la-programmation-c-est-trop-dur.htm",
       "date": "2026-10-17T20:20:10.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179208/1792075688-4869-card.jpg",
       "summary": "Une guerre d'optimisation et d'annonces vient de s'engager entre Epic Games et Valve. Entre l'arrivée d'une version de test du nouveau launcher d'Epic conçue avec de l'IA et une…",
-      "tags": []
-    },
-    {
-      "title": "5 Years Later, One Game’s Blood Sacrifice Mechanic Still Haunts Me",
-      "link": "https://www.polygon.com/inscryption-retrospective-blood-sacrifice/",
-      "date": "2026-10-17T20:00:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23110148/inscryption_board.jpg",
-      "summary": "Five years on, Inscryption’s blood sacrifice mechanic, from one squirrel to a pair of pliers, still shows how little convincing it takes.",
       "tags": []
     },
     {
@@ -241,15 +396,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/dWCr2RhPTciT8TceHkwqcY-1920-80.jpg",
       "summary": "It's not just the principle of the thing: There could be more money up for grabs.",
-      "tags": []
-    },
-    {
-      "title": "Tim Burton's 77-Minute Stop-Motion Masterpiece Is Officially Back on Streaming",
-      "link": "https://www.polygon.com/forget-wildwood-tim-burton-corpse-bride/",
-      "date": "2026-10-17T19:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/2-7.jpg",
-      "summary": "Wildwood is great, but if you're after something even better to watch, check out Tim Burton and Laika's 2005 animated masterpiece.",
       "tags": []
     },
     {
@@ -277,15 +423,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179215/1792145169-114-card.jpg",
       "summary": "À 72 ans, le légendaire concepteur japonais Yuji Horii a créé un jeu d'enquête complet en seulement trente minutes grâce à l'intelligence artificielle. Disponible gratuitement…",
-      "tags": []
-    },
-    {
-      "title": "The Zelda: Ocarina of Time Remake Sounds Meaningfully Better Than the Original",
-      "link": "https://www.polygon.com/switchboard-zelda-ocarina-of-time-previews/",
-      "date": "2026-10-17T18:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_thelegendofzeldaocarinaoftime_scrn_15.png",
-      "summary": "Previews indicate Nintendo cares as much about the 2026 Switch 2 revival as it does about physical media",
       "tags": []
     },
     {
@@ -496,170 +633,6 @@
       "tags": []
     },
     {
-      "title": "Funcom is laying off yet more developers as it pivots to supporting Dune: Awakening and Conan Exiles",
-      "link": "https://www.pcgamer.com/gaming-industry/funcom-is-laying-off-yet-more-developers-as-it-pivots-to-supporting-dune-awakening-and-conan-exiles/",
-      "date": "2026-10-17T10:32:05.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/irSvo2gYDFsSuExgb6RG5X-1920-80.jpg",
-      "summary": "CEO Rui Casais to depart the company at the end of the year.",
-      "tags": []
-    },
-    {
-      "title": "Après Clair Obscur Expedition 33, le prochain JRPG à la française annonce une mauvaise nouvelle à ses fans",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/edge-of-memories-jrpg-francais-apres-clair-obscur-expedition-33-report-date-sortie-724896?utm_source=RSS",
-      "date": "2026-10-17T09:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/672435_67beeaba3ed9a.jpg",
-      "summary": "Edge of Memories, le nouveau JRPG à la française de Midgar Studio et Nacon, a annoncé le report de sa date de sortie pour pouvoir esquiver les nouveautés de novembre 2026.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Bien avant OD, il y avait P.T. : le Silent Hill de Hideo Kojima revient d'entre les morts sur PC",
-      "link": "https://www.gamekult.com/actualite/bien-avant-od-il-y-avait-p-t-le-silent-hill-de-hideo-kojima-revient-d-entre-les-morts-sur-pc-3050872432.html",
-      "date": "2026-10-17T09:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872432/bien-avant-od-il-y-avait-p-t-le-silent-hill-de-hideo-kojima-revient-d-entre-les-morts-sur-pc-4dd04c9d__800_800__57-0-957-900.jpg",
-      "summary": "Hideo Kojima et l'horreur, c'est une histoire d'amour qui dure depuis plus de dix ans, mais qui avait débuté dans les pleurs et la déception. En 2014, le créateur japonais sortait…",
-      "tags": []
-    },
-    {
-      "title": "Pour les 25 ans de FFX, Square Enix annonce une belle nouveauté pour les collectionneurs",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ffx-cartes-jcc-724895?utm_source=RSS",
-      "date": "2026-10-17T09:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/404119_62d7f7ef0573f.jpg",
-      "summary": "Pour continuer les célébrations du 25e anniversaire de FFX, Square Enix annonce une belle nouveauté pour les collectionneurs. Voici comment l'acheter en France.",
-      "tags": []
-    },
-    {
-      "title": "Le joueur de Super Smash Bros. Mew2King a été exclu d’un tournoi après que des piqûres d’insectes ont suscité des inquiétudes pour sa santé",
-      "link": "https://fr.ign.com/super-smash-bros-melee/93228/le-joueur-de-super-smash-bros-mew2king-a-ete-exclu-dun-tournoi-apres-que-des-piqures-dinsectes-ont-s",
-      "date": "2026-10-17T08:48:57.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/s/super-smas/super-smash-bros-player-mew2king-banned-from-tournament-afte_bp18.jpg",
-      "summary": "« J’en avais genre une centaine sur le corps il y a deux mois. Genre, sur tout le corps. »",
-      "tags": []
-    },
-    {
-      "title": "Brevet de génération d'images de Sony PlayStation",
-      "link": "https://fr.ign.com/playstation-6/93226/sony-playstation-frame-generation-patent",
-      "date": "2026-10-17T08:34:42.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/s/sony-plays/sony-playstation-frame-generation-patent_1ebf.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "La PlayStation 6 aura probablement sa propre version de la génération d'image, selon un nouveau brevet",
-      "link": "https://fr.ign.com/playstation-6/93225/la-playstation-6-aura-probablement-sa-propre-version-de-la-generation-dimage-selon-un-nouveau-brevet",
-      "date": "2026-10-17T08:34:42.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/p/playstatio/playstation-6-will-likely-have-sonys-own-take-on-frame-gener_2dn5.jpg",
-      "summary": "Hallucinant.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : Xbox est inexistant, on dirait que le jeu ne sort que sur PS5…",
-      "link": "https://www.jeuxvideo.com/news/2109497/gta-6-xbox-est-inexistant-on-dirait-que-le-jeu-ne-sort-que-sur-ps5.htm",
-      "date": "2026-10-17T08:30:11.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792158987-9705-card.jpg",
-      "summary": "Sans crier gare, Rockstar Games a partagé des séquences encore jamais vues de Grand Theft Auto 6, accompagnées d’un extrait de la bande-originale signé par le groupe français…",
-      "tags": []
-    },
-    {
-      "title": "Zelda Ocarina of Time : 15 changements du remake Nintendo Switch 2 par rapport à la version originale",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/zelda-ocarina-of-time-remake-changements-724890?utm_source=RSS",
-      "date": "2026-10-17T08:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724890_6ad218712b9b0.jpg",
-      "summary": "Tout en restant relativement fidèle à son modèle, le remake de Zelda Ocarina of Time proposera malgré tout son lot de changements pour les fans. En voici la preuve par 15.",
-      "tags": []
-    },
-    {
-      "title": "Xbox Game Pass : voici toutes les nouveautés confirmées pour novembre 2026, avec le retour de licences appréciées",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/xbox-game-pass-confirmes-novembre-724889?utm_source=RSS",
-      "date": "2026-10-17T08:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724889_6ad21b68e3a5f.jpg",
-      "summary": "Quelles seront les nouveautés du Xbox Game Pass en novembre 2026 ? On vous dresse la liste des 5 jeux déjà confirmés pour le service avec le retour de licences appréciées.",
-      "tags": []
-    },
-    {
-      "title": "Tout ce que l'on sait de la nouvelle série X-Files qui sera diffusée sur Disney+",
-      "link": "https://www.jeuxvideo.com/news/2109239/tout-ce-que-l-on-sait-de-la-nouvelle-serie-x-files-qui-sera-diffusee-sur-disney.htm",
-      "date": "2026-10-17T07:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179207/1792069517-9944-card.jpg",
-      "summary": "Huit ans après son dernier départ, The X-Files rouvre officially ses dossiers classés secrets. Confié à Ryan Coogler, ce reboot d'envergure débarquera sur Disney+ pour réinventer…",
-      "tags": []
-    },
-    {
-      "title": "Prime Video : toutes les sorties confirmées de novembre 2026, avec deux séries événements issues de franchises adorées",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-video-sorties-series-films-confirmees-novembre-2026-724881?utm_source=RSS",
-      "date": "2026-10-17T07:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_69eb5e6fb4b15.jpg",
-      "summary": "À l’approche du mois de novembre 2026, voici un premier aperçu de toutes les nouveautés à venir sur Prime Video, avec deux séries événements extrêmement attendues.",
-      "tags": []
-    },
-    {
-      "title": "PlayStation : en 2000, Sony connectait la PS1 à internet, se cassant les dents au passage",
-      "link": "https://www.gamekult.com/actualite/playstation-en-2000-sony-connectait-la-ps1-a-internet-se-cassant-les-dents-au-passage-3050872360.html",
-      "date": "2026-10-17T07:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872360/playstation-en-2000-sony-connectait-la-ps1-a-internet-se-cassant-les-dents-au-passage-0af11e05__800_800__428-0-1509-1080.jpg",
-      "summary": "Pour certains constructeurs, la démocratisation d'internet sur consoles de salon s'est faite dans la douleur. Certes, Microsoft est sans doute le premier à avoir correctement…",
-      "tags": []
-    },
-    {
-      "title": "GUIDE The Witcher 3 Remastered : les meilleurs builds et compétences au début du jeu",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/the-witcher-3-remastered-builds-competences-debut-guide-724886?utm_source=RSS",
-      "date": "2026-10-17T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/399783_62593f35ed8c0.jpg",
-      "summary": "Si vous cherchez les meilleurs builds et compétences pour bien débuter une partie dans The Witcher 3 Remastered, voici un guide complet en ce sens.",
-      "tags": []
-    },
-    {
-      "title": "Tesla copie Rocket League et vient de créer une voiture qui défie la gravité",
-      "link": "https://www.jeuxvideo.com/news/2109483/tesla-copie-rocket-league-et-vient-de-creer-une-voiture-qui-defie-la-gravite.htm",
-      "date": "2026-10-17T06:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792155935-6040-card.jpg",
-      "summary": "Tesla vient littéralement de transformer le jeu vidéo Rocket League en réalité. Lors d’une démonstration spectaculaire au Texas, la marque a présenté sa toute nouvelle Roadster…",
-      "tags": []
-    },
-    {
-      "title": "PS Plus Extra : les sorties de décembre 2026 dévoilées à l'avance ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-extra-sorties-potentielles-decembre-724848?utm_source=RSS",
-      "date": "2026-10-17T06:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/562235_6644d814dd0d2.jpg",
-      "summary": "Alors que les jeux du PS Plus Extra et Premium d’octobre 2026 ont fraîchement été annoncés, place aux jeux qui pourraient quitter le service en décembre 2026, oui déjà.",
-      "tags": []
-    },
-    {
-      "title": "Tournez manette - Avec Dragon's Dogma 2 : Dark Arisen, Capcom perfectionne sa formule et distille à nouveau le vrai souffle d'aventure",
-      "link": "https://www.gamekult.com/actualite/avec-dragon-s-dogma-2-dark-arisen-capcom-perfectionne-sa-formule-et-distille-a-nouveau-le-vrai-souffle-d-aventure-3050872461.html",
-      "date": "2026-10-17T06:02:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872461/avec-dragon-s-dogma-2-dark-arisen-capcom-perfectionne-sa-formule-a-son-paroxysme-44721559__800_800__789-0-1868-1080.jpg",
-      "summary": "Après un jeu de base particulièrement réussi, l'extension Dark Arisen avait évidemment pour objectif de rendre le titre encore plus attractif, surtout auprès des joueurs un peu…",
-      "tags": []
-    },
-    {
-      "title": "Netflix : toutes les sorties confirmées pour novembre 2026, avec un film attendu et la fin d'une série",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-sorties-confirmees-novembre-2026-724888?utm_source=RSS",
-      "date": "2026-10-17T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf5acbcdb.jpg",
-      "summary": "Le mois d’octobre n’est peut-être pas encore terminé, mais l’heure est venue de se pencher sur toutes les nouveautés Netflix confirmées pour novembre 2026.",
-      "tags": []
-    },
-    {
       "title": "Want early access to the biggest new video games? This year’s offers changed a bit.",
       "link": "https://www.gamefile.news/p/aaa-early-access-offers-2026",
       "date": "2026-10-16T22:26:52.000Z",
@@ -684,60 +657,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141759/90063/smashfestflowgames_l660.jpg",
       "summary": "Turkish mobile games developer Flow Games has confirmed it has raised $49 million to date from Tencent, Makers Fund, Arcadia Gaming Partners, and Ludus Ventures. The…",
-      "tags": []
-    },
-    {
-      "title": "Supercell brings Clash Royale to tabletop with new Kickstarter board game",
-      "link": "https://www.pocketgamer.biz/supercell-brings-clash-royale-to-tabletop-with-new-kickstarter-board-game/",
-      "date": "2026-10-16T09:50:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141757/90061/clashroyaleboardgame_l660.jpg",
-      "summary": "Supercell is bringing Clash Royale to the tabletop with Clash Royale: The Grand Arena, a board game developed with Maestro Media, set to launch on Kickstarter on October 20, 2026…",
-      "tags": []
-    },
-    {
-      "title": "War Robots surpasses $50m in Steam lifetime revenue",
-      "link": "https://www.pocketgamer.biz/war-robots-surpasses-50m-in-steam-lifetime-revenue/",
-      "date": "2026-10-16T09:33:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141756/90060/warrobotskeyart_l660.jpg",
-      "summary": "My.Games' War Robots has surpassed $50 million in lifetime revenue on Steam, more than eight years after the free-to-play shooter launched on the platform. The title originally…",
-      "tags": []
-    },
-    {
-      "title": "New game digest: Titanium Court, No Man&#8217;s Sky, Sifu, Vampire Crawlers and many more",
-      "link": "https://mobilegamer.biz/new-game-digest-titanium-court-no-mans-sky-sifu-vampire-crawlers-and-many-more/",
-      "date": "2026-10-16T09:29:27.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "There's also new games from Nuverse, Atari, Raw Fury, Noodlecake, Konami and more.",
-      "tags": []
-    },
-    {
-      "title": "East Side Games secures $2.8m in Canadian credit and a $4m loan",
-      "link": "https://www.pocketgamer.biz/east-side-games-secures-28m-in-canadian-credit-and-a-4m-loan/",
-      "date": "2026-10-16T09:03:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141755/90059/eastsidegamesgroupinceastsidegamesgroupannouncesfourt1_l660.jpg",
-      "summary": "East Side Games Group has secured access to CAD $4 million ($2.8m) in credit from the National Bank of Canada. The company also secured access to a further US$4m through Export…",
-      "tags": []
-    },
-    {
-      "title": "Xbox launches Labs group to explore new gaming technology",
-      "link": "https://www.pocketgamer.biz/xbox-launches-labs-group-to-explore-new-gaming-technology/",
-      "date": "2026-10-16T08:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141758/90062/xbox-labs_l660.jpg",
-      "summary": "Xbox has established Xbox Labs, a new group of game makers, engineers and scientists tasked with exploring new technologies and finding ways to make games easier to access and…",
-      "tags": []
-    },
-    {
-      "title": "New release roundup: Vampire Crawlers, Sifu, 9 Kings, and more",
-      "link": "https://www.pocketgamer.biz/new-release-roundup-vampire-crawlers-sifu-9-kings-and-more/",
-      "date": "2026-10-16T08:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141754/90058/new-mobile-games-october-3-2026_l660.jpg",
-      "summary": "While the deals and the stats of the gaming world are important, nothing would happen without the research, funding and, of course, development that goes into making a great game…",
       "tags": []
     },
     {
