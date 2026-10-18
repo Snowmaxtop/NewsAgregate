@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:33:12.534Z",
+  "generatedAt": "2026-10-18T14:08:15.221Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -11,7 +11,7 @@
     "pcgamer": "ok",
     "polygon": "ok",
     "gamefile": "ok",
-    "pgbiz": "ok",
+    "pgbiz": "stale",
     "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-18T08:42:18.000Z",
-      "kept": 3
+      "newest": "2026-10-18T11:11:05.000Z",
+      "kept": 2
     },
     "gamedev": {
       "status": "stale",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-18T07:40:06.000Z",
-      "kept": 13
+      "newest": "2026-10-18T10:50:06.000Z",
+      "kept": 12
     },
     "gameblog": {
       "status": "ok",
@@ -56,7 +56,7 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-18T09:26:00.000Z",
+      "newest": "2026-10-18T13:10:00.000Z",
       "kept": 7
     },
     "kotaku": {
@@ -64,20 +64,20 @@
       "url": "https://kotaku.com/feed",
       "items": 20,
       "newest": "2026-10-17T21:10:34.000Z",
-      "kept": 6
+      "kept": 4
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-18T09:50:29.000Z",
+      "newest": "2026-10-18T12:41:50.000Z",
       "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-18T10:00:18.000Z",
+      "newest": "2026-10-18T14:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -88,11 +88,11 @@
       "kept": 4
     },
     "pgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-16T10:37:00.000Z",
-      "kept": 1
+      "kept": 0
     },
     "mgbiz": {
       "status": "stale",
@@ -117,6 +117,96 @@
     }
   },
   "articles": [
+    {
+      "title": "11 Years Later, Dragon Ball Super: Beerus Finally Nails Akira Toriyama's Original Vision",
+      "link": "https://www.polygon.com/dragon-ball-super-beerus-finally-respects-toriyamas-vision/",
+      "date": "2026-10-18T14:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dragon-ball-super-beerus.jpg",
+      "summary": "I doubted the need for another Beerus arc, but Dragon Ball Super's new take is admittedly winning me over.",
+      "tags": []
+    },
+    {
+      "title": "Game and watch - Un fan-film Resident Evil 7 avec une star de The Walking Dead ? Absolument",
+      "link": "https://www.gamekult.com/actualite/un-fan-film-resident-evil-7-avec-une-star-de-the-walking-dead-absolument-3050872457.html",
+      "date": "2026-10-18T13:10:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872457/un-fan-film-resident-evil-7-avec-une-star-de-the-walking-dead-absolument-09b4e796__800_800__291-0-954-666.png",
+      "summary": "Pour la première fois depuis longtemps (depuis toujours ?), Resident Evil brille au cinéma, et pas qu'au box-office : la critique et le public applaudissent le long-métrage de…",
+      "tags": []
+    },
+    {
+      "title": "Jessica Rothe Officially Confirms Return Plans for Hit Time-Loop Thriller Trilogy",
+      "link": "https://www.polygon.com/happy-death-day-3-jessica-rothe-scream-queen/",
+      "date": "2026-10-18T13:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdhade_ec037.jpg",
+      "summary": "Happy Death Day star Jessica Rothe gives an update on a third movie and talks about being a scream queen",
+      "tags": []
+    },
+    {
+      "title": "Clive Barker says he's 'genuinely astonished' by Hellraiser: Revival: 'I'm proud as f**k at the end result'",
+      "link": "https://www.pcgamer.com/games/horror/clive-barker-says-hes-genuinely-astonished-by-hellraiser-revival-im-proud-as-f-k-at-the-end-result/",
+      "date": "2026-10-18T12:41:50.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/anyCrirHNBqZ4XwjD7nYXe-1920-80.jpg",
+      "summary": "\"I think what was achieved in the game is a wake-up call\".",
+      "tags": []
+    },
+    {
+      "title": "America's Dominance in The Game Awards Is Officially Over",
+      "link": "https://www.polygon.com/the-game-awards-goty-jury-usa/",
+      "date": "2026-10-18T12:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ambrosia_06.jpg",
+      "summary": "The TGA jury that decides GOTY has fewer U.S. outlets on it than ever, which may have an impact",
+      "tags": []
+    },
+    {
+      "title": "\"J'ai été contraint de sortir le jeu\" : Glen Schofield revient sur le développement chaotique de The Callisto Protocol",
+      "link": "https://www.gamekult.com/actualite/j-ai-ete-contraint-de-sortir-le-jeu-glen-schofield-revient-sur-le-developpement-chaotique-de-the-callisto-protocol-3050872455.html",
+      "date": "2026-10-18T11:24:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872455/j-ai-ete-contraint-de-sortir-le-jeu-glen-schofield-revient-sur-le-developpement-chaotique-de-the-callisto-protocol-c9605412__800_800__890-111-1720-940.jpg",
+      "summary": "Considéré comme l'une des déceptions majeures de 2022, The Callisto Protocol fut un échec commercial et critique, de même que le dernier clou du cercueil de Striking Distance. Le…",
+      "tags": []
+    },
+    {
+      "title": "Outlast designer says that one playtester was so upset by the horror series they 'ran out of the studio to go cry outside' and didn't return",
+      "link": "https://www.pcgamer.com/games/horror/outlast-designer-says-that-one-playtester-was-so-upset-by-the-horror-series-they-ran-out-of-the-studio-to-go-cry-outside-and-didnt-return/",
+      "date": "2026-10-18T11:18:11.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/3FajdGNGZwTo5gEnsspkbC-1920-80.jpg",
+      "summary": "\"We always make sure that people are fully aware of the kind of content we create,\" says director Philippe Morin.",
+      "tags": []
+    },
+    {
+      "title": "Test de Fire Emblem : Fortune’s Weave - une stratégie qui ne manque pas d’ambition",
+      "link": "https://fr.ign.com/fire-emblem-fortunes-weave/92922/test-de-fire-emblem-fortunes-weave-une-strategie-qui-ne-manque-pas-dambition",
+      "date": "2026-10-18T11:11:05.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/photo/default/fire-emblem-fortunes-weave-nintendo-direct-6-9-2026-2-29-scr_s8wd.jpg",
+      "summary": "Une stratégie qui ne manque pas d’ambition, mais qui en a peut être eu trop. Une offre gargantuesque qui frustrera certains aficionados de la licence en s&#x27;éloignant de sa…",
+      "tags": []
+    },
+    {
+      "title": "13 Years Ago, Rockstar Suffered a Leak Worse Than GTA 6",
+      "link": "https://www.polygon.com/gta-5-leak-gta-6-reddit-vine-reactions-ban-sony-rockstar-response/",
+      "date": "2026-10-18T11:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/2744438/3.1370973805.jpg",
+      "summary": "Before unauthorized clips of GTA 6 scandalized fans, GTA 5 made video game leak history for Rockstar and Sony",
+      "tags": []
+    },
+    {
+      "title": "The Elder Scrolls 6 inaccessible aux joueurs PlayStation ? Cette enquête relance le débat... et on comprend pourquoi",
+      "link": "https://www.jeuxvideo.com/news/2109258/the-elder-scrolls-6-inaccessible-aux-joueurs-playstation-cette-enquete-relance-le-debat-et-on-comprend-pourquoi.htm",
+      "date": "2026-10-18T10:50:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179207/1792074557-8837-card.jpg",
+      "summary": "Asha Sharma, la boss de Xbox, avait annoncé la nouvelle lors du Xbox Games Showcase 2025 : les exclusivités reviennent sur la machine américaine ! D’abord avec Gears of War E-Day…",
+      "tags": []
+    },
     {
       "title": "Before Dark Souls, FromSoftware’s Forgotten PS1 Horror Game Was a Haunting Exercise in Empathy",
       "link": "https://www.polygon.com/fromsoftware-echo-night-ps1/",
@@ -178,6 +268,15 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/gallery/d/dceu-movie/dceu-movie-teases-that-were-never-paid-off_8c1p.jpg",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : Rockstar pousse la relation de Jason et Lucia à l’extrême, mais il y a quelque chose qui cloche",
+      "link": "https://www.jeuxvideo.com/news/2109526/gta-6-rockstar-pousse-la-relation-de-jason-et-lucia-a-l-extreme-mais-il-y-a-quelque-chose-qui-cloche.htm",
+      "date": "2026-10-18T08:30:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179216/1792163529-6982-card.jpg",
+      "summary": "La campagne marketing qui bat son plein, les installations qui font la promotion du jeu, les musiques qui constituent la bande-originale diffusées par-ci par-là… Pas de doute…",
       "tags": []
     },
     {
@@ -315,42 +414,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdterm_ec077_h.JPG",
       "summary": "James Cameron's genre-redefining sci-fi thriller The Terminator is currently free to stream on YouTube",
-      "tags": []
-    },
-    {
-      "title": "GTA: San Andreas’ Bigfoot myth is a classic urban legend",
-      "link": "https://www.polygon.com/gta-san-andreas-bigfoot-myth/",
-      "date": "2026-10-18T01:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22947291/GTA_Trilogy___Definitive_Edition___San_Andreas___Screen_3.jpg",
-      "summary": "The myth of the Bigfoot in GTA San Andreas might have been debunked, but it will live forever as the symbol of an exciting time in gaming.",
-      "tags": []
-    },
-    {
-      "title": "Game of Thrones Prequel The Mad King Officially Returns in 2027",
-      "link": "https://www.polygon.com/game-of-thrones-the-mad-king-prequel-2027-return/",
-      "date": "2026-10-18T00:44:23.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23981811/madking2.jpg",
-      "summary": "George R.R. Martin has confirmed Game of Thrones: The Mad King will get a new London production in 2027 following its sold-out theatrical run.",
-      "tags": []
-    },
-    {
-      "title": "44 Years Later, Steven Spielberg's Scariest Movie of All Time Is Officially Back on Streaming",
-      "link": "https://www.polygon.com/poltergeist-tobe-hooper-steven-spielberg-on-hbo-max/",
-      "date": "2026-10-18T00:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdpolt_ec006.jpg",
-      "summary": "The supernatural horror film Poltergeist is on HBO Max, though there's still a debate as to who directed it",
-      "tags": []
-    },
-    {
-      "title": "8 Most Disappointing Switch Games, Ranked",
-      "link": "https://www.polygon.com/most-disappointing-switch-games-ranked/",
-      "date": "2026-10-17T23:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7312765/NintendoSwitch_hardware.0.jpg",
-      "summary": "From Princess Peach to 1-2-Switch, eight Switch games that missed the mark, ranked by the gap between what we expected and what we got.",
       "tags": []
     },
     {
@@ -534,105 +597,6 @@
       "tags": []
     },
     {
-      "title": "Company Behind GTA-Like Samson Goes Bankrupt Six Months After Release",
-      "link": "https://kotaku.com/samson-developer-and-publisher-liquid-swords-goes-bankrupt-6-months-after-release-2000747049",
-      "date": "2026-10-17T14:01:23.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/04/Game-Page-Featured_Samson-A-Tyndalston-Story-Inits-1280x720.jpg",
-      "summary": "The Stockholm District Court issued the bankruptcy order against the studio on Monday, following reports that Liquid Swords' developers have gone unpaid for the past two months",
-      "tags": []
-    },
-    {
-      "title": "Pourquoi GTA 4 sur PS3 a-t-il un filtre jaune pipi ?",
-      "link": "https://www.jeuxvideo.com/news/2109411/pourquoi-gta-4-sur-ps3-a-t-il-un-filtre-jaune-pipi.htm",
-      "date": "2026-10-17T14:00:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179215/1792154976-4046-card.png",
-      "summary": "Sorti en 2008, GTA IV a marqué une génération, mais les joueurs PS3 s'en souviennent pour un détail visuel précis : une teinte jaunâtre omniprésente. Décryptage technique de ce…",
-      "tags": []
-    },
-    {
-      "title": "The Blood of Dawnwalker's first major update will add directional animal petting and a new story mode that's easier than the previous story mode",
-      "link": "https://www.pcgamer.com/games/rpg/the-blood-of-dawnwalkers-first-major-update-will-add-directional-animal-petting-and-a-new-story-mode-thats-easier-than-the-previous-story-mode/",
-      "date": "2026-10-17T13:53:20.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/C9qhLHdxoAGzgbprjbaodf-1920-80.png",
-      "summary": "\"What happens when you merge a directional combat system with an ability to pet dogs and cats?\"",
-      "tags": []
-    },
-    {
-      "title": "Alimentée par l'IA Gemini, la démo de ce jeu a déjà endetté sérieusement ses développeurs",
-      "link": "https://www.gamekult.com/actualite/alimentee-par-l-ia-gemini-la-demo-de-ce-jeu-a-deja-endette-serieusement-ses-developpeurs-3050872445.html",
-      "date": "2026-10-17T13:50:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872445/alimente-par-l-ia-gemini-ce-jeu-meme-pas-sorti-a-deja-endette-serieusement-ses-developpeurs-64ebdef6__800_800__331-0-1412-1080.jpg",
-      "summary": "Peut-être avez-vous déjà entendu parler de Teach My Little Sister How To Drive, ou peut-être y avez-vous même déjà joué : on y incarne littéralement un grand frère chargé…",
-      "tags": []
-    },
-    {
-      "title": "Nintendo confirme qu’ils continuent le format physique, enfin… pour le moment et tant que les joueurs en achèteront",
-      "link": "https://www.jeuxvideo.com/news/2109417/nintendo-confirme-qu-ils-continuent-le-format-physique-enfin-pour-le-moment-et-tant-que-les-joueurs-en-acheteront.htm",
-      "date": "2026-10-17T12:50:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179214/1792144915-1869-card.jpg",
-      "summary": "Alors que Sony prépare la fin définitive des disques sur PlayStation, Nintendo confirme le maintien des cartouches sur Switch 2. Une stratégie rassurante guidée par la demande des…",
-      "tags": []
-    },
-    {
-      "title": "Modern Warfare 4 Campaign Reviews Make It Sound Like It&#8217;s Surprisingly Good",
-      "link": "https://kotaku.com/modern-warfare-4-campaign-reviews-make-it-sound-like-its-surprisingly-good-2000746857",
-      "date": "2026-10-17T12:09:26.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/cod-1280x731.jpg",
-      "summary": "A return to form if not to Call of Duty 's heyday",
-      "tags": []
-    },
-    {
-      "title": "Developer cancels public demo of its upcoming horror drinking game, fearing it will be instantly cloned by AI vibe coders: 'We sincerely apologise for the short notice'",
-      "link": "https://www.pcgamer.com/gaming-industry/game-development/developer-cancels-public-demo-of-its-upcoming-horror-drinking-game-fearing-it-will-be-instantly-cloned-by-ai-vibe-coders-we-sincerely-apologise-for-the-short-notice/",
-      "date": "2026-10-17T12:04:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/msJXstdyWiXzapZKKu9fWL-1920-80.jpg",
-      "summary": "Alliance Arts will instead host \"closed sessions\" for Drunken Goddess Reflux.",
-      "tags": []
-    },
-    {
-      "title": "Événement Halloween Pokopia : Comment finir cet event à 100% ?",
-      "link": "https://www.jeuxvideo.com/news/2109562/evenement-halloween-pokopia-comment-finir-cet-event-a-100.htm",
-      "date": "2026-10-17T11:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179223/1792232081-4549-card.jpg",
-      "summary": "Un nouvel événement s'est installé dans le monde de Pokémon Pokopia, pile pour célébrer Halloween. Dans ce guide, nous verrons comment récupérer tous ses objets et comment…",
-      "tags": []
-    },
-    {
-      "title": "Ghost of Yōtei Complete Edition Screenshots",
-      "link": "https://fr.ign.com/ghost-of-yotei-complete-edition/93230/ghost-of-yotei-complete-edition-screenshots",
-      "date": "2026-10-17T11:37:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/g/ghost-of-y/ghost-of-yotei-complete-edition-screenshots_uw21.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Les ventes de Ghost of Yotei se trainent derrière celles de Tsushima mais restent fortes, selon une analyse",
-      "link": "https://fr.ign.com/ghost-of-yotei/93229/les-ventes-de-ghost-of-yotei-se-trainent-derriere-celles-de-tsushima-mais-restent-fortes-selon-une-a",
-      "date": "2026-10-17T11:37:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/ghost-of-y/ghost-of-yotei-sales-lag-behind-tsushima-but-are-still-stron_kn63.jpg",
-      "summary": "La voie de la Popularité.",
-      "tags": []
-    },
-    {
-      "title": "God of War : quand Santa Monica récupérait la caméra virtuelle d'Avatar de James Cameron",
-      "link": "https://www.gamekult.com/actualite/god-of-war-quand-santa-monica-recuperait-la-camera-virtuelle-d-avatar-de-james-cameron-3050872436.html",
-      "date": "2026-10-17T11:27:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872436/god-of-war-quand-santa-monica-recuperait-la-camera-virtuelle-d-avatar-de-james-cameron-524d7e4a__800_800__0-0-1194-1194.png",
-      "summary": "Vous en conviendrez : entre la technologie utilisée pour le cinéma et celle pour le jeu vidéo, il n'y a pas qu'un tout petit pas, et d'une pointure de nourrisson dans bien des…",
-      "tags": []
-    },
-    {
       "title": "Want early access to the biggest new video games? This year’s offers changed a bit.",
       "link": "https://www.gamefile.news/p/aaa-early-access-offers-2026",
       "date": "2026-10-16T22:26:52.000Z",
@@ -648,15 +612,6 @@
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/fetch/$s_!Vih0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81350f9-a727-4c39-ae0b-20c080b2752f_800x449.jpeg",
       "summary": "The myth of the monolithic 'PC gamer', debunked. Also: news & this week on Steam!",
-      "tags": []
-    },
-    {
-      "title": "Flow Games confirms $49m in total funding from Tencent and VC investors",
-      "link": "https://www.pocketgamer.biz/flow-games-confirms-49m-in-total-funding-from-tencent-and-vc-investors/",
-      "date": "2026-10-16T10:37:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141759/90063/smashfestflowgames_l660.jpg",
-      "summary": "Turkish mobile games developer Flow Games has confirmed it has raised $49 million to date from Tencent, Makers Fund, Arcadia Gaming Partners, and Ludus Ventures. The…",
       "tags": []
     },
     {
