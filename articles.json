@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T20:49:37.845Z",
+  "generatedAt": "2026-10-20T00:03:31.124Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,15 +21,15 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-19T17:57:26.000Z",
-      "kept": 26
+      "newest": "2026-10-19T22:00:33.000Z",
+      "kept": 29
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-19T17:08:14.000Z",
-      "kept": 1
+      "newest": "2026-10-19T20:57:38.000Z",
+      "kept": 2
     },
     "gibiz": {
       "status": "ok",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-19T18:15:18.000Z",
+      "newest": "2026-10-19T20:20:07.000Z",
       "kept": 19
     },
     "gameblog": {
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-19T20:38:36.000Z",
-      "kept": 14
+      "newest": "2026-10-19T23:00:42.000Z",
+      "kept": 17
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-19T20:44:12.000Z",
-      "kept": 12
+      "newest": "2026-10-19T23:33:09.000Z",
+      "kept": 14
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-19T20:33:08.000Z",
+      "newest": "2026-10-19T23:12:52.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,170 @@
   },
   "articles": [
     {
+      "title": "Moonlighter studio won't host a public playtest of its next game due to rampant AI-led cloning: 'We know we're not the only developers feeling this way'",
+      "link": "https://www.pcgamer.com/gaming-industry/moonlighter-studio-wont-host-a-public-playtest-of-its-next-game-due-to-rampant-ai-led-cloning-we-know-were-not-the-only-developers-feeling-this-way/",
+      "date": "2026-10-19T23:33:09.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/YEp5Fzsbkhez5s74zCMPj6-1920-80.png",
+      "summary": "ReVamp will get a limited Discord playtest.",
+      "tags": []
+    },
+    {
+      "title": "'Red Dead Redemption' 2 Mod Is 'Shadow of Mordor' Meets the Wild West",
+      "link": "https://www.polygon.com/red-dead-redemption-2-nemesis-system-mod-shadow-of-mordor/",
+      "date": "2026-10-19T23:12:52.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13329523/RDR2_Screenshot_215.jpg",
+      "summary": "The enRAGE mod brings a Nemesis system to Red Dead Redemption 2, adding personal grudges, rival factions and evolving gang wars.",
+      "tags": []
+    },
+    {
+      "title": "8 Classic PlayStation Adventure Games that are Barely Playable Today",
+      "link": "https://www.polygon.com/classic-playstation-adventure-games-unplayable-today/",
+      "date": "2026-10-19T23:01:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/alexander-tsang-0mh975pyn9c-unsplash.jpg",
+      "summary": "From Tomb Raider to Silent Hill, eight classic PlayStation games whose tank controls, cameras, or lost code make them hard to play today",
+      "tags": []
+    },
+    {
+      "title": "A Star Wars Battlefront 3 Made By Bungie Would Probably Be Great But Also A Waste",
+      "link": "https://kotaku.com/a-star-wars-battlefront-3-made-by-bungie-would-probably-be-great-but-also-a-waste-2000747640",
+      "date": "2026-10-19T23:00:42.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/battlefront-1280x640.jpg",
+      "summary": "DICE is the other rumored contender for the sequel Lucasfilm is shopping around",
+      "tags": []
+    },
+    {
+      "title": "Card Collector Who Spent Over Two Years Building $100,000 Collection Gets Terrible News From PSA",
+      "link": "https://kotaku.com/card-collector-who-spent-over-two-years-building-100000-collection-gets-terrible-news-from-psa-2000747625",
+      "date": "2026-10-19T22:30:05.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/market-capc-1280x719.jpg",
+      "summary": "YouTuber Sky-B will have to haggle with insurance agents over the fair market value of a stolen order",
+      "tags": []
+    },
+    {
+      "title": "Modern Warfare 4 Is Legitimately a Top-5 Call of Duty Campaign",
+      "link": "https://www.polygon.com/mw4-modern-warfare-4-call-duty-campaign-review/",
+      "date": "2026-10-19T22:15:56.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/modern-warfare-4-campaign-review-header.jpg",
+      "summary": "The Modern Warfare 4 campaign is one of the series' best, taking place during a Korean conflict while also following Captain Price on the run.",
+      "tags": []
+    },
+    {
+      "title": "One Of Japan&#8217;s Premier Visual Novel Writers Enters Palliative Care For Throat Cancer",
+      "link": "https://kotaku.com/one-of-japans-premier-visual-novel-writers-enters-palliative-care-for-throat-cancer-2000747620",
+      "date": "2026-10-19T22:00:36.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/airjunmaeda-1280x721.jpg",
+      "summary": "Jun Maeda is the guy who made you bawl your eyes out playing Clannad and Air",
+      "tags": []
+    },
+    {
+      "title": "Test Stupid Never Dies : le roguelite explosif façon action-RPG",
+      "link": "https://fr.ign.com/stupid-never-dies/93019/test-stupid-never-dies-le-roguelite-explosif-facon-action-rpg",
+      "date": "2026-10-19T22:00:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/davy_6qs5.png",
+      "summary": "Avec cette toute nouvelle licence, GPTRACK50 démontre qu&#x27;il est toujours possible de proposer une approche différente du roguelite sans en abandonner les fondamentaux. Une…",
+      "tags": []
+    },
+    {
+      "title": "Stupid Never Dies Is Easily the Worst Game of 2026",
+      "link": "https://www.polygon.com/stupid-never-dies-review/",
+      "date": "2026-10-19T22:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/stupid-never-dies-golem-fight.png",
+      "summary": "Stupid Never Dies stumbles through its 30-hour runtime thanks to sluggish action and a rotten story.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Zero Company adds new difficulty options that can bring it closer to XCOM",
+      "link": "https://www.pcgamer.com/games/strategy/star-wars-zero-company-adds-new-difficulty-options-that-can-bring-it-closer-to-xcom/",
+      "date": "2026-10-19T21:47:17.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/waGEAhFBqbTxX45V2c2qB8-1920-80.jpg",
+      "summary": "Turning up the heat a little.",
+      "tags": []
+    },
+    {
+      "title": "Lucasfilm wants to do more Star Wars games like Zero Company and Galactic Racer: 'We’ve tried to be more flexible about who we’re willing to take pitches from'",
+      "link": "https://www.pcgamer.com/gaming-industry/lucasfilm-wants-to-do-more-star-wars-games-like-zero-company-and-galactic-racer-weve-tried-to-be-more-flexible-about-who-were-willing-to-take-pitches-from/",
+      "date": "2026-10-19T21:46:23.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/K7roYa2aLEn3iBVZEPULoG-1920-80.jpg",
+      "summary": "Not every Star Wars game has to be a big-budget blockbuster to be successful.",
+      "tags": []
+    },
+    {
+      "title": "Street Fighter Officially Sets a New Franchise Box Office Record",
+      "link": "https://www.polygon.com/street-fighter-movie-2026-box-office-success/",
+      "date": "2026-10-19T21:31:57.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/street-fighter-movie-akuma.jpg",
+      "summary": "Capcom's new Street Fighter (2026) movie opens to $31 million domestically, setting a new box office record for the fighting game franchise.",
+      "tags": []
+    },
+    {
+      "title": "Voice Of Goku Responds To AI Stealing Her Voice: &#8216;I can’t Forgive Them&#8230;It Makes Me Really Angry, It’s No Different Than Theft&#8217;",
+      "link": "https://kotaku.com/voice-of-goku-responds-to-ai-stealing-her-voice-i-cant-forgive-them-it-makes-me-really-angry-its-no-different-than-theft-2000747356",
+      "date": "2026-10-19T21:30:50.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Dragon-Ball-Z-Goku-1280x853.jpg",
+      "summary": "A union representing gaming and anime voice actors has issued guidance on the issue after many high-profile voice actors spoke out against generative AI",
+      "tags": []
+    },
+    {
+      "title": "So What Are We Supposed To Take Away From You Can See Everything?",
+      "link": "https://kotaku.com/you-can-see-everything-nathan-fielder-elizabeth-holmes-review-2000747609",
+      "date": "2026-10-19T21:00:42.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/ycse3-1280x720.jpg",
+      "summary": "‘Real eyes realize real lies’ - Nathan Fielder",
+      "tags": []
+    },
+    {
+      "title": "RocketWerkz' C# framework 'BRUTAL' is now available to all developers",
+      "link": "https://www.gamedeveloper.com/programming/rocketwerkz-c-framework-brutal-is-now-available-for-all-developers",
+      "date": "2026-10-19T20:57:38.000Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd9d6b41adac275a5/6ad684157e69bdd4a4538981/brutalksafeatured.jpg?width=720&quality=80&disable=upscale",
+      "summary": "Developers who want to complete control over their game's code have a new framework to lean on.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "New Pokémon Release Finally Lets You Play As Team Rocket",
+      "link": "https://www.polygon.com/new-pokemon-game-team-rocket-evolved-what-is-trailer-release/",
+      "date": "2026-10-19T20:53:22.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/rocket.png",
+      "summary": "Pokémon fans can show Jessie, James, and Meowth how it's done in a new release where you play as the RPG series' villain",
+      "tags": []
+    },
+    {
+      "title": "images de Ratatan sur Switch 2",
+      "link": "https://fr.ign.com/ratatan/93268/images-de-ratatan-sur-switch-2",
+      "date": "2026-10-19T20:49:03.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-1514_mgev.jpg",
+      "summary": "images de Ratatan sur Switch 2",
+      "tags": []
+    },
+    {
+      "title": "Test de Ratatan : le rythme est là, la finition moins",
+      "link": "https://fr.ign.com/ratatan/93232/test-de-ratatan-le-rythme-est-la-la-finition-moins",
+      "date": "2026-10-19T20:49:03.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/n/new-game-f/new-game-from-patapon-creators-funds-its-kickstarter-in-unde_576r.jpg",
+      "summary": "Le rythme est là, la finition moins Une expérience agréable pour les fans du genre, qui ne comblera sans doute pas le plus grand public.",
+      "tags": []
+    },
+    {
       "title": "Xbox biz guy deletes his X account less than 24 hours after saying game devs who don't embrace AI 'should not be in the business of being a business'",
       "link": "https://www.pcgamer.com/software/ai/xbox-biz-guy-deletes-his-x-account-less-than-24-hours-after-saying-game-devs-who-dont-embrace-ai-should-not-be-in-the-business-of-being-a-business/",
       "date": "2026-10-19T20:44:12.000Z",
@@ -145,12 +309,30 @@
       "tags": []
     },
     {
+      "title": "Graphiquement, Call of Duty Modern Warfare 4 est magnifique : voici les plus beaux moments de la campagne",
+      "link": "https://www.jeuxvideo.com/news/2109686/graphiquement-call-of-duty-modern-warfare-4-est-magnifique-voici-les-plus-beaux-moments-de-la-campagne.htm",
+      "date": "2026-10-19T20:20:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179242/1792418682-7862-card.jpg",
+      "summary": "Disponible en accès anticipé aux joueurs ayant précommandé le jeu, la campagne solo de Call of Duty Modern Warfare 4 suscite un enthousiasme massif pour la qualité de sa…",
+      "tags": []
+    },
+    {
       "title": "D&D’s Dark Sun Creator Reveals Why the Controversial Setting Is ‘Not Political’",
       "link": "https://www.polygon.com/dnd-dungeons-dragons-dark-sun-creator-original-setting-political-interview-dragon-kings/",
       "date": "2026-10-19T20:00:16.000Z",
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dark-sun-illustration-warrior.jpg",
       "summary": "Tim Brown talks about the conception of Dark Sun, the controversies surrounding this D&D setting, and his upcoming \"spiritual successor\" Dragon Kings.",
+      "tags": []
+    },
+    {
+      "title": "PGW 2026 Playground Edition : Monster Hunter, Call of Duty : Modern Warfare 4... quels titres seront présents ?",
+      "link": "https://www.jeuxvideo.com/news/2109740/pgw-2026-playground-edition-monster-hunter-call-of-duty-modern-warfare-4-quels-titres-seront-presents.htm",
+      "date": "2026-10-19T19:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179242/1792416287-8878-card.jpg",
+      "summary": "La Paris Games Week 2026 fait peau neuve avec son concept de Playground Edition. Entre exclusivités manette en main, compétitions acharnées et conférences de pointe, ce 15e…",
       "tags": []
     },
     {
@@ -181,15 +363,6 @@
       "tags": []
     },
     {
-      "title": "DC Studios Reveals First Details on New TV Series",
-      "link": "https://www.polygon.com/mister-miracle-first-details-confirmed/",
-      "date": "2026-10-19T18:39:55.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mister-miracle-promo-image.jpg",
-      "summary": "DC Studios' 'Mister Miracle' show just got a new teaser image alongside confirmation of the show's cast.",
-      "tags": []
-    },
-    {
       "title": "Penguin Colony Developers Talk The BDS Talk And Walk The Walk By Banning The Game For Sale In Israel",
       "link": "https://kotaku.com/penguin-colony-developers-talk-the-bds-talk-and-walk-the-walk-by-banning-the-game-for-sale-in-israel-2000747581",
       "date": "2026-10-19T18:30:12.000Z",
@@ -217,48 +390,12 @@
       "tags": []
     },
     {
-      "title": "The 10 Best Steam Next Fest Demos to Play Right Now",
-      "link": "https://www.polygon.com/steam-next-fest-demos-best-october-2026/",
-      "date": "2026-10-19T18:00:56.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dumpster-gang-raccoon-group.jpg",
-      "summary": "Steam Next Fest is back again, and it features tons of free demos for some promising upcoming games.",
-      "tags": []
-    },
-    {
       "title": "Cyberpunk: Edgerunners 2 : Hideo Kojima va reprendre le rôle qu'il avait dans le jeu Cyberpunk 2077",
       "link": "https://fr.ign.com/cyberpunk-2077/93267/cyberpunk-edgerunners-2-hideo-kojima-va-reprendre-le-role-quil-avait-dans-le-jeu",
       "date": "2026-10-19T17:57:26.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/c/cyberpunk-/cyberpunk-edgerunners-2-casts-hideo-kojima-to-reprise-game-r_a9gw.jpg",
       "summary": "Il est de retour.",
-      "tags": []
-    },
-    {
-      "title": "Sounds Like GTA 6 Will Be Full of Details Like Red Dead's Infamous Horse Balls",
-      "link": "https://www.polygon.com/gta-6-rdr2-horse-balls-confirmed-rockstar/",
-      "date": "2026-10-19T17:54:41.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/vintage_vice_city_pack_exclusive_looks_01-1.jpg",
-      "summary": "After a decade of silence, Rockstar finally acknowledges a controversial RDR2 feature that could reappear in GTA 6 with some major upgrades",
-      "tags": []
-    },
-    {
-      "title": "How to make goo in Enshrouded",
-      "link": "https://www.polygon.com/enshrouded-goo-crafting-recipe-how-to-make/",
-      "date": "2026-10-19T17:50:54.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/enshrouded-how-to-make-goo-1.jpg",
-      "summary": "Here's how to unlock the goo crafting recipe in Enshrouded.",
-      "tags": []
-    },
-    {
-      "title": "Resident Evil 7 Dev Reveals the Game’s Last of Us Inspiration and Troubled Development",
-      "link": "https://www.polygon.com/resident-evil-7-capcom-development-last-of-us/",
-      "date": "2026-10-19T17:46:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7611491/resident_evil_7b.jpg",
-      "summary": "Resident Evil 7: Biohazard's development included more Leon, The Last of Us, and plenty of issues reveals dev",
       "tags": []
     },
     {
@@ -295,15 +432,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/oafp8zDNSqeYVLhg6QzTXD-1920-80.jpg",
       "summary": "Your driver is nearby.",
-      "tags": []
-    },
-    {
-      "title": "Star Trek Actor Breaks Silence on Starfleet Academy's Cancellation",
-      "link": "https://www.polygon.com/star-trek-starfleet-academy-robert-picardo-why-show-canceled/",
-      "date": "2026-10-19T16:51:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/star-trek-starfleet-academy-picardo-the-doctor.jpg",
-      "summary": "'Star Trek: Starfleet Academy' actor Robert Picardo says he thinks the show was canceled due to political backlash against diversity and inclusion.",
       "tags": []
     },
     {
@@ -572,21 +700,21 @@
       "tags": []
     },
     {
-      "title": "Test Logitech G PRO X3 LIGHTSPEED : le casque gaming haut de gamme, prêt à l’action",
-      "link": "https://fr.ign.com/logitech-g-pro-x3-lightspeed/93258/test-logitech-g-pro-x3-lightspeed-le-casque-gaming-haut-de-gamme-pret-a-laction",
-      "date": "2026-10-19T13:57:57.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0344_sf6b.jpg",
-      "summary": "Après plusieurs semaines d’utilisation, le G PRO X3 LIGHTSPEED devient ma nouvelle référence personnelle parmi les casques gaming déjà passés entre mes mains. Sa principale force…",
-      "tags": []
-    },
-    {
       "title": "Logitech lance son nouveau casque esport : le G PRO X3 LIGHTSPEED",
       "link": "https://fr.ign.com/logitech-g-pro-x3-lightspeed/93260/logitech-lance-son-nouveau-casque-esport-le-g-pro-x3-lightspeed",
       "date": "2026-10-19T13:57:57.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/trailer/l/logitech-l/logitech-lance-son-nouveau-casque-esport-le-g-pro-x3-lightsp_nfet.jpg",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Test Logitech G PRO X3 LIGHTSPEED : le casque gaming haut de gamme, prêt à l’action",
+      "link": "https://fr.ign.com/logitech-g-pro-x3-lightspeed/93258/test-logitech-g-pro-x3-lightspeed-le-casque-gaming-haut-de-gamme-pret-a-laction",
+      "date": "2026-10-19T13:57:57.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0344_sf6b.jpg",
+      "summary": "Après plusieurs semaines d’utilisation, le G PRO X3 LIGHTSPEED devient ma nouvelle référence personnelle parmi les casques gaming déjà passés entre mes mains. Sa principale force…",
       "tags": []
     },
     {
@@ -890,24 +1018,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179197/1791967415-371-card.jpg",
       "summary": "On n'y croyait plus ! On a pu avoir un aperçu de la version solo de Star Citizen, et c'est bluffant !",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 sur PC dès le début 2027 ?",
-      "link": "https://www.jeuxvideo.com/videos/chroniques/2108993/gta-6-sur-pc-des-le-debut-2027.htm",
-      "date": "2026-10-19T11:56:25.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179197/1791967060-2866-card.jpg",
-      "summary": "On a une bonne nouvelle pour les joueurs PC : GTA 6 pourrait arriver bien plus tôt qu'on ne le croyait.",
-      "tags": []
-    },
-    {
-      "title": "37 ans après, il s'est vengé !",
-      "link": "https://www.jeuxvideo.com/videos/chroniques/2108991/37-ans-apres-il-s-est-venge.htm",
-      "date": "2026-10-19T11:53:02.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179197/1791966527-954-card.jpg",
-      "summary": "Certains traumatismes d'enfance prennent du temps à cicatriser. Mais après 347 ans, ce joueur vient enfin de prendre sa revanche contre ses tortionnaires.",
       "tags": []
     },
     {
@@ -1220,21 +1330,21 @@
       "tags": []
     },
     {
-      "title": "Street Fighter domine le box-office avec 51 millions de dollars de recettes pour son premier week-end, malgré des critiques mitigées",
-      "link": "https://fr.ign.com/street-fighter-2026/93240/street-fighter-domine-le-box-office-avec-51-millions-de-dollars-de-recettes-pour-son-premier-week-en",
-      "date": "2026-10-19T06:41:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/s/street-fig/street-fighter-tops-the-box-office-with-51-million-opening-w_u9qj.jpg",
-      "summary": "En embuscade.",
-      "tags": []
-    },
-    {
       "title": "Street Fighter - images du film",
       "link": "https://fr.ign.com/street-fighter-2026/93241/street-fighter-images",
       "date": "2026-10-19T06:41:52.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/gallery/s/street-fig/street-fighter-images_f53v.jpg",
       "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Street Fighter domine le box-office avec 51 millions de dollars de recettes pour son premier week-end, malgré des critiques mitigées",
+      "link": "https://fr.ign.com/street-fighter-2026/93240/street-fighter-domine-le-box-office-avec-51-millions-de-dollars-de-recettes-pour-son-premier-week-en",
+      "date": "2026-10-19T06:41:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/street-fig/street-fighter-tops-the-box-office-with-51-million-opening-w_u9qj.jpg",
+      "summary": "En embuscade.",
       "tags": []
     },
     {
@@ -1272,35 +1382,6 @@
       "image": "https://cdn.mos.cms.futurecdn.net/FrgMgQ2p7MyoQneDwiatAg-1920-80.png",
       "summary": "All the interesting Steam facts for the week ending October 18.",
       "tags": []
-    },
-    {
-      "title": "23 devs teamed up to make a free game of 'innovative yet questionable volume sliders,' and it feels like browser-based WarioWare",
-      "link": "https://www.pcgamer.com/games/23-devs-teamed-up-to-make-a-free-game-of-innovative-yet-questionable-volume-sliders-and-it-feels-like-browser-based-warioware/",
-      "date": "2026-10-18T22:36:22.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/59UYYjUSJrXbZ3fRaMdMgd-1920-80.jpg",
-      "summary": "Here for a good time and a loud time.",
-      "tags": []
-    },
-    {
-      "title": "MrBeast Joins Shark Tank, Invests Quarter Million In AI-Powered &#8216;Ball 2&#8217;",
-      "link": "https://kotaku.com/mrbeast-joins-shark-tank-invests-quarter-million-in-ai-powered-ball-2-2000747308",
-      "date": "2026-10-18T22:24:42.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/ball2-1280x790.jpg",
-      "summary": "Mr. Wonderful inversely appeared uninterested in the foam orb, not seeing how it could distinguish itself among other, more popular balls",
-      "tags": []
-    },
-    {
-      "title": "Video Game Decomp Hub Closes Due To AI: &#8216;The Community Aspect Of Decompilation Has Been Broken&#8217;",
-      "link": "https://kotaku.com/video-game-decomp-hub-closes-due-to-ai-the-community-aspect-of-decompilation-has-been-broken-2000747302",
-      "date": "2026-10-18T20:51:52.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/neuroman2.jpg",
-      "summary": "An integral step towards mods, ports and patches, the popular decomp.dev decided the platform has been rendered obsolete by 'drive-by contributions'",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Want early access to the biggest new video games? This year’s offers changed a bit.",
