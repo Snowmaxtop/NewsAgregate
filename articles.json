@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:29:26.433Z",
+  "generatedAt": "2026-10-21T05:14:56.921Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -56,8 +56,8 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-20T17:23:00.000Z",
-      "kept": 12
+      "newest": "2026-10-21T04:01:00.000Z",
+      "kept": 11
     },
     "kotaku": {
       "status": "ok",
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-20T23:04:54.000Z",
-      "kept": 26
+      "newest": "2026-10-21T02:08:18.000Z",
+      "kept": 27
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-20T23:05:59.000Z",
+      "newest": "2026-10-21T03:00:19.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,69 @@
     }
   },
   "articles": [
+    {
+      "title": "Mémoire cash - Vanquish : petit hommage au parfait anti-Gears of War",
+      "link": "https://www.gamekult.com/actualite/vanquish-petit-hommage-au-parfait-anti-gears-of-war-3050872499.html",
+      "date": "2026-10-21T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872499/vanquish-petit-hommage-au-parfait-anti-gears-of-war-b9f330e2__800_800__437-0-1516-1080.jpg",
+      "summary": "Le 6 octobre 2026, Gears of War : E-Day a remis Marcus Fenix bien à l'abri derrière ses murets avec ses grosses pétoires. Une expérience qui m'a donné envie de ressortir Vanquish…",
+      "tags": []
+    },
+    {
+      "title": "Marvel Officially Made the Saddest Death in MCU History More Tragic With Just 1 Sentence",
+      "link": "https://www.polygon.com/visionquest-episode-3-explained-friday-avengers-endgame-tony-stark-death/",
+      "date": "2026-10-21T03:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdaven_ec256-1.jpg",
+      "summary": "In VisionQuest episode three, F.R.I.D.A.Y. reveals that she tried to save Tony in Avengers: Endgame",
+      "tags": []
+    },
+    {
+      "title": "Phineas Horton? Disney Just Officially Made a Forgotten Marvel Legend Into MCU Canon",
+      "link": "https://www.polygon.com/visionquest-original-human-torch-phineas-horton-explainer/",
+      "date": "2026-10-21T02:45:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19696105/Screen_Shot_2020_02_04_at_4.55.59_PM.png",
+      "summary": "In the fourth episode of VisionQuest, Dr. Phineas Horton is mentioned. Horton is a key figure in the earliest days of Marvel Comics",
+      "tags": []
+    },
+    {
+      "title": "'VisionQuest' Episode 4 Ending Explained: Who Is Jocasta?",
+      "link": "https://www.polygon.com/visionquest-jocasta-explained-marvel-comics/",
+      "date": "2026-10-21T02:31:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/vision-paul-betany-sits-in-front-of-a-bank-of-tvs-that-say-sorry-we-are-experiencing-technical-difficulties-in-visionquest.jpg",
+      "summary": "VisionQuest episode 4 introduces Jocasta, a deadly new synthezoid with a surprising connection to Ultron. Here’s how the show changes her Marvel Comic",
+      "tags": []
+    },
+    {
+      "title": "In this age of pervasive slop maybe we should be grateful for Shrek 2 Remastered",
+      "link": "https://www.pcgamer.com/games/action/in-this-age-of-pervasive-slop-maybe-we-should-be-grateful-for-shrek-2-remastered/",
+      "date": "2026-10-21T02:08:18.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/3HW8nLc9jo2YSnSxonNNV6-1920-80.jpg",
+      "summary": "Or maybe not.",
+      "tags": []
+    },
+    {
+      "title": "Forget ‘Carrie,’ Mike Flanagan’s Best Netflix Miniseries Is a Masterpiece From Start to Finish",
+      "link": "https://www.polygon.com/midnight-mass-vs-carrie-mike-mike-flanagan/",
+      "date": "2026-10-21T01:30:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/carrie-white-prom.jpg",
+      "summary": "Explore Mike Flanagan's Midnight Mass, a profound horror story about faith, fear, and human choice.",
+      "tags": []
+    },
+    {
+      "title": "Red Rising Is Officially Returning In 2027",
+      "link": "https://www.polygon.com/red-rising-digital-edition-2027-release/",
+      "date": "2026-10-21T01:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/redrising.jpg",
+      "summary": "A digital adaptation of Pierce Brown's beloved sci-fi saga is on its way.",
+      "tags": []
+    },
     {
       "title": "Shrek 2 Remastered Officially Announced With Must-See GTA 6-inspired Trailer",
       "link": "https://www.polygon.com/shrek-2-remastered-release-date-trailer-online-co-op/",
@@ -289,30 +352,12 @@
       "tags": []
     },
     {
-      "title": "Fallout 4: FEVer Dreams Gets Official Surprise Release",
-      "link": "https://www.polygon.com/fallout-4-fever-dreams-what-is-bethesda-rpg-release/",
-      "date": "2026-10-20T19:16:02.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/fallout-4-mod-screenshot.png",
-      "summary": "The trippy new RPG adventure is presented by Bethesda, and a good way to pass the time before Fallout 5 or Obsidian Entertainment's projects release.",
-      "tags": []
-    },
-    {
       "title": "Xbox Reportedly Plans To Release New Gaming Handheld In 2027 Despite Ongoing Turf Battles With Windows",
       "link": "https://kotaku.com/xbox-reportedly-wants-to-release-a-gaming-handheld-in-2027-despite-ongoing-turf-battles-with-windows-2000748034",
       "date": "2026-10-20T19:15:04.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/xbox-ally-1280x724.jpg",
       "summary": "The device could seemingly be a successor to the Xbox Ally X",
-      "tags": []
-    },
-    {
-      "title": "A New DC Green Lantern Has Officially Been Unveiled",
-      "link": "https://www.polygon.com/green-lantern-doomed-cosmos-elseworlds-series-announced-dc-comics/",
-      "date": "2026-10-20T19:03:36.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/green-lantern-doomed-cosmos-1-main-hotz.jpg",
-      "summary": "DC Comics has announced Green Lantern: Doomed Cosmos, a new Elseworlds series where the Lanterns look a lot like Warhammer 40K space marines.",
       "tags": []
     },
     {
@@ -370,17 +415,6 @@
       "tags": []
     },
     {
-      "title": "New Cheaper PS5 Officially Available for Pre-Order Now",
-      "link": "https://www.polygon.com/ps5-midnight-edition-preorders-open-now-japan/",
-      "date": "2026-10-20T18:31:44.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ps5-midnight-black.jpg",
-      "summary": "Sony's new PlayStation 5 Digital Edition Midnight Black for Japan is now available for pre-order and costs much less than other PS5 models.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
       "title": "Should your game discovery plans change due to AI & decompilation?",
       "link": "https://newsletter.gamediscover.co/p/should-your-game-discovery-plans",
       "date": "2026-10-20T18:30:11.000Z",
@@ -417,30 +451,12 @@
       "tags": []
     },
     {
-      "title": "Marvel Rivals Officially Brings Avengers: Endgame's Final Fight to Life",
-      "link": "https://www.polygon.com/marvel-rivals-50-player-pve-avengers-endgame/",
-      "date": "2026-10-20T18:13:03.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/marvel-rivals-thanos-screenshot.jpg",
-      "summary": "NetEase Games released the first footage of 'Marvel Rivals’ chaotic new PvE mode where 50 players fight Thanos.",
-      "tags": []
-    },
-    {
       "title": "Un cadre de XBOX affirme que tout le monde utilise l'IA, lui crée des jeux avec... puis suprime son compte...",
       "link": "https://www.jeuxvideo.com/news/2109870/un-cadre-de-xbox-affirme-que-tout-le-monde-utilise-l-ia-lui-cree-des-jeux-avec-puis-suprime-son-compte.htm",
       "date": "2026-10-20T18:10:07.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179249/1792489939-9587-card.jpg",
       "summary": "En affirmant que l'intelligence artificielle est déjà omniprésente dans l'ensemble des studios, un responsable stratégique de Microsoft a déclenché une vive polémique. Après avoir…",
-      "tags": []
-    },
-    {
-      "title": "Magic: The Gathering Star Trek Shakes Up Commander With 2 Bold New Mechanics",
-      "link": "https://www.polygon.com/magic-star-trek-commander-mechanics/",
-      "date": "2026-10-20T18:01:07.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/worf-holds-at-bat-leth-in-art-from-magic-the-gathering-star-trek.jpg",
-      "summary": "Magic: The Gathering’s Star Trek Commander decks introduce Battlefront and Seek Out, two new mechanics built around attacking and drawing cards.",
       "tags": []
     },
     {
@@ -1543,24 +1559,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/aDmtDjSv4HJBnYeMAxpqad-1920-80.jpg",
       "summary": "From the Springlands to Veilwater Basin, these are my favorite places to build.",
-      "tags": []
-    },
-    {
-      "title": "Netflix : la division jeu vidéo une nouvelle fois frappée par une vague de licenciements",
-      "link": "https://www.gamekult.com/actualite/netflix-la-division-jeu-video-une-nouvelle-fois-frappee-par-une-vague-de-licenciements-3050872517.html",
-      "date": "2026-10-20T05:02:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872517/netflix-la-division-jeu-video-une-nouvelle-fois-frappee-par-une-vague-de-licenciements-3571b6f1__800_800__406-0-1485-1080.jpg",
-      "summary": "Le géant du streaming vidéo a procédé à une vaste réduction de ses effectifs mondiaux le 14 octobre. Le pôle Netflix Games paie un lourd tribut avec près d'une soixantaine de…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Costume Quest : et si le RPG de Double Fine était le meilleur jeu pour Halloween ?",
-      "link": "https://www.gamekult.com/actualite/costume-quest-et-si-le-rpg-de-double-fine-etait-le-meilleur-jeu-pour-halloween-3050872495.html",
-      "date": "2026-10-20T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872495/costume-quest-et-si-le-rpg-de-double-fine-etait-le-meilleur-jeu-pour-halloween-f1ed5014__800_800__0-150-1824-1974.jpg",
-      "summary": "Nous revoilà en octobre 2010. Pendant que les blockbusters se tirent la bourre à l'approche de Noël (Vanquish, Fable III, Rock Band 3, Assassin's Creed: Brotherhood...), Double…",
       "tags": []
     },
     {
