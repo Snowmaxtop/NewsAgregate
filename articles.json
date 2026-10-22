@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T20:22:07.783Z",
+  "generatedAt": "2026-10-22T23:33:36.300Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -28,8 +28,8 @@
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-22T14:37:37.000Z",
-      "kept": 1
+      "newest": "2026-10-22T20:33:50.000Z",
+      "kept": 2
     },
     "gibiz": {
       "status": "ok",
@@ -61,29 +61,29 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-22T19:36:14.000Z",
-      "kept": 20
+      "newest": "2026-10-22T20:41:01.000Z",
+      "kept": 17
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-22T20:16:39.000Z",
-      "kept": 35
+      "newest": "2026-10-22T22:29:10.000Z",
+      "kept": 36
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-22T20:12:31.000Z",
+      "newest": "2026-10-22T23:00:19.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-10-21T20:12:27.000Z",
-      "kept": 3
+      "newest": "2026-10-22T21:40:32.000Z",
+      "kept": 4
     },
     "pgbiz": {
       "status": "ok",
@@ -115,6 +115,105 @@
     }
   },
   "articles": [
+    {
+      "title": "8 Cyberpunk 2077 Replay Ideas to Make Night City Feel Brand New",
+      "link": "https://www.polygon.com/cyberpunk-2077-replay-ideas/",
+      "date": "2026-10-22T23:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22172943/lelfskpwy4slftl3qdeb__1_.png",
+      "summary": "From a dual-revolver cowboy to a netrunner who never fires a gun, these eight Cyberpunk 2077 replay ideas make Night City feel new again",
+      "tags": []
+    },
+    {
+      "title": "My GOTY is $7 and has 253 Steam reviews",
+      "link": "https://www.pcgamer.com/games/racing/my-goty-is-usd7-and-has-253-steam-reviews/",
+      "date": "2026-10-22T22:29:10.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Vo86zsDQwNRKRhdfHbVscG-1920-80.jpg",
+      "summary": "Stuntboost is a racing game for FPS movement sickos.",
+      "tags": []
+    },
+    {
+      "title": "A new Fallout 4 mod adds an entire town, but more importantly, it lets you join a gang",
+      "link": "https://www.pcgamer.com/games/fallout/a-new-fallout-4-mod-adds-an-entire-town-but-more-importantly-it-lets-you-join-a-gang/",
+      "date": "2026-10-22T22:22:04.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/rKPhj32cokdeEyPpNizGJT-1920-80.jpg",
+      "summary": "They're not the Tunnel Snakes, but they're trying.",
+      "tags": []
+    },
+    {
+      "title": "'Mass Effect Universe' Leak Promised What Fans Have Waited Decades For",
+      "link": "https://www.polygon.com/mass-effect-universe-new-characters-male-quarian-asari-krogan-aliens/",
+      "date": "2026-10-22T22:19:07.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/asari.JPG",
+      "summary": "BioWare's canceled Mass Effect Universe game would have paid off a long-standing fan request, and fans are mourning the game's death.",
+      "tags": []
+    },
+    {
+      "title": "Peak developer can explain the game’s console price",
+      "link": "https://www.gamefile.news/p/peak-console-price-bucks",
+      "date": "2026-10-22T21:40:32.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!1U3q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc05ad124-5276-42c6-8c71-8dddb7380b9e_1920x1080.jpeg",
+      "summary": "Kaman: $10 is not $8, though $12 would also have been $10",
+      "tags": []
+    },
+    {
+      "title": "Epic announces game jam where you have to use AI, then walks back the requirement",
+      "link": "https://www.pcgamer.com/software/ai/epic-announces-game-jam-where-you-have-to-use-ai/",
+      "date": "2026-10-22T21:39:30.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/kcoLy3wUGtqe8Xvfo3fa5U-1920-80.jpg",
+      "summary": "The Unreal Engine and Fortnite company has extended the public a many-fingered invitation.",
+      "tags": []
+    },
+    {
+      "title": "Canadian politician calls on government to help BioWare employees buy the studio and run it themselves",
+      "link": "https://www.pcgamer.com/games/mass-effect/canadian-politician-calls-on-government-to-help-bioware-employees-buy-the-studio-and-run-it-themselves/",
+      "date": "2026-10-22T21:26:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/YVKeg3ZHUnns3N5BAXnxzm-1920-80.jpg",
+      "summary": "Avi Lewis, leader of one of Canada's top opposition parties, is not a fan of private equity.",
+      "tags": []
+    },
+    {
+      "title": "Half-Life 3 Rumors Reignite After Valve Employee Lets Codename Slip",
+      "link": "https://www.polygon.com/valve-half-life-3-hlx/",
+      "date": "2026-10-22T21:16:28.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ss_81bed1c464921e89ff0a04d4e6be8bb9c27a4f7d-1920x1080.jpg",
+      "summary": "A Valve employee just casually mentioned Half-Life 3's rumored codename HLX in public, reigniting rumors that the shooter is returning.",
+      "tags": []
+    },
+    {
+      "title": "'Clayface' Officially Sets Up Another Iconic Batman Villain in the DC Universe",
+      "link": "https://www.polygon.com/clayface-joker-easter-eggs/",
+      "date": "2026-10-22T21:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/clayface-movie-screenshot.webp",
+      "summary": "Clayface is filled with some very noticible Easter eggs about the Joker",
+      "tags": []
+    },
+    {
+      "title": "Sony Continues Its March Towards An All-Digital Future As It Reportedly Kills Off Its Last 4K UHD Player",
+      "link": "https://kotaku.com/sony-continues-its-march-towards-an-all-digital-future-as-it-reportedly-kills-off-its-last-4k-uhd-player-2000748873",
+      "date": "2026-10-22T20:41:01.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/sony-4kuhd-1-1280x720.jpg",
+      "summary": "It's part of a larger push by the PlayStation maker to move away from making home electronics, like TVs",
+      "tags": []
+    },
+    {
+      "title": "Opinion: Why words matter when we prioritize 'core teams' in game development",
+      "link": "https://www.gamedeveloper.com/production/opinion-why-prioritizing-success-of-core-teams-risks-devaluing-other-devs",
+      "date": "2026-10-22T20:33:50.000Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdb8a31d37f5406d0/6ada5e4716268baa793646d9/biddyblasfeatured.jpg?width=720&quality=80&disable=upscale",
+      "summary": "How we describe game development will inevitably shape our processes.",
+      "tags": []
+    },
     {
       "title": "Half-Life 3 re-re-re-confirmed: A Valve dev just said 'HLX' out loud",
       "link": "https://www.pcgamer.com/games/fps/half-life-3-re-re-re-confirmed-a-valve-dev-just-said-hlx-out-loud/",
@@ -165,7 +264,7 @@
       "tags": []
     },
     {
-      "title": "Breaking Down The Leaked Mass Effect 5 Trailer",
+      "title": "Mass Effect 5&#8217;s Leaked Trailer: 9 Things We Noticed",
       "link": "https://kotaku.com/mass-effect-5-universe-leak-trailer-breakdown-liara-bioware-2000748896",
       "date": "2026-10-22T19:36:14.000Z",
       "sourceId": "kotaku",
@@ -210,7 +309,7 @@
       "tags": []
     },
     {
-      "title": "Valve Employee Seemingly Slips Up And Says Rumored Half-Life 3 Codename On Stage",
+      "title": "Valve Employee Accidentally Mentions Half-Life 3 Codename For The First Time Ever",
       "link": "https://kotaku.com/valve-employee-seemingly-slips-up-and-says-rumored-half-life-3-codename-on-stage-2000748885",
       "date": "2026-10-22T19:04:14.000Z",
       "sourceId": "kotaku",
@@ -234,24 +333,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/klara-and-the-sun.jpg",
       "summary": "Klara and the Sun is based on Kazuo Ishiguro's novel. Director Taika Waititi strips away its compelling ideas with jokes.",
-      "tags": []
-    },
-    {
-      "title": "Lego Confirms Incredible Daft Punk Set for Official Release",
-      "link": "https://www.polygon.com/lego-daft-punk-ideas-set-movie/",
-      "date": "2026-10-22T18:55:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-lego-group-daft-punk_hero-still-5_16x9.jpg",
-      "summary": "Lego and Daft Punk are teaming up to make a fan-favorite Lego Ideas set real, as part of a larger partnership.",
-      "tags": []
-    },
-    {
-      "title": "You Can Try World of Warcraft: Forever for Free, but There’s a Catch",
-      "link": "https://www.polygon.com/world-of-warcraft-forever-free-stress-test/",
-      "date": "2026-10-22T18:46:09.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/wow-forever-crop.jpeg",
-      "summary": "You don't need a WoW subscription to try World of Warcraft: Forever for free. Check the stress test schedule and prepare for crowded servers.",
       "tags": []
     },
     {
@@ -288,24 +369,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/zbuCBKBrtXuEzbQkqCSz8S-1920-80.jpg",
       "summary": "Just because we saw this coming doesn't mean it hurts less.",
-      "tags": []
-    },
-    {
-      "title": "Forgotten Pokémon Card Collection Goes for $2 Million",
-      "link": "https://www.polygon.com/pokemon-card-forgotten-collection-millionaire-auction/",
-      "date": "2026-10-22T17:55:55.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/fainted-pokemon-go-pikachu-glitch.avif",
-      "summary": "A British retiree sold their forgotten Pokémon card collection for roughly $2 million at auction.",
-      "tags": []
-    },
-    {
-      "title": "Blood of Dawnwalker’s Massive Update Is Finally Here and the Full List of Changes Is Wild",
-      "link": "https://www.polygon.com/blood-of-dawnwalker-update-1-1-released-patch-notes/",
-      "date": "2026-10-22T17:43:33.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-blood-of-dawnwalker-forge-it-anew-quest-1.jpg",
-      "summary": "Blood of Dawnwalker's long-awaited update 1.1 is finally out, bringing huge changes to the vampire RPG",
       "tags": []
     },
     {
@@ -553,7 +616,7 @@
       "tags": []
     },
     {
-      "title": "Retired Decorator Becomes Multi-Millionaire After Selling Forgotten Pokémon Card Collection",
+      "title": "Dad Sells Forgotten Pokémon Card Collection From The Attic For $2 Million",
       "link": "https://kotaku.com/pokemon-tcg-auction-skyridge-master-set-base-aquapolis-millionaire-2000748794",
       "date": "2026-10-22T15:00:39.000Z",
       "sourceId": "kotaku",
@@ -847,21 +910,21 @@
       ]
     },
     {
-      "title": "Report explores how Roblox can maintain older players as it becomes most-played game by total hours in H1 2026",
-      "link": "https://www.gamesindustry.biz/report-explores-how-roblox-can-maintain-older-players-as-it-becomes-most-played-game-by-total-hours-in-h1-2026",
-      "date": "2026-10-22T11:00:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Sonic-Speed-Simulator.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Roblox generated 4.05 billion hours of playtime across PC and console in H1 2026, making it the most-played game by total hours.",
-      "tags": []
-    },
-    {
       "title": "How Pantaloon is curating an \"evolving library of bold and bizarre games\" with its new subscription service",
       "link": "https://www.gamesindustry.biz/how-pantaloon-is-curating-an-evolving-library-of-bold-and-bizarre-games-with-its-new-subscription-service",
       "date": "2026-10-22T11:00:00.000Z",
       "sourceId": "gibiz",
       "image": "https://assetsio.gnwcdn.com/CurtainsLogo.png?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Over recent years, more and more companies have moved away from the traditional publishing model and set their sights on indie curation.",
+      "tags": []
+    },
+    {
+      "title": "Report explores how Roblox can maintain older players as it becomes most-played game by total hours in H1 2026",
+      "link": "https://www.gamesindustry.biz/report-explores-how-roblox-can-maintain-older-players-as-it-becomes-most-played-game-by-total-hours-in-h1-2026",
+      "date": "2026-10-22T11:00:00.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/Sonic-Speed-Simulator.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Roblox generated 4.05 billion hours of playtime across PC and console in H1 2026, making it the most-played game by total hours.",
       "tags": []
     },
     {
@@ -1292,75 +1355,12 @@
       "tags": []
     },
     {
-      "title": "GTA 6&#8216;s First TV Ad Cuts The Spicy Shower Scenes",
-      "link": "https://kotaku.com/gta-6s-first-tv-ad-cuts-the-spicy-shower-scenes-2000748474",
-      "date": "2026-10-21T23:30:00.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0007_Brightness_Contrast-7-1280x720.jpg",
-      "summary": "But, we get a few extra milliseconds of new footage, so that's something",
-      "tags": []
-    },
-    {
-      "title": "BioWare&#8217;s Closure Reportedly Won&#8217;t Affect The Mass Effect TV Show",
-      "link": "https://kotaku.com/mass-effect-amazon-tv-show-bioware-shut-down-ea-2000748491",
-      "date": "2026-10-21T23:27:49.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2024/03/ab7be0140108d75dfb05d247751184ee-1280x720.jpg",
-      "summary": "Amazon Prime is developing a show apparently set after the original trilogy",
-      "tags": []
-    },
-    {
       "title": "On the podcast: Apple app review woes, EA job cuts, Supercell, Monopoly Go and more",
       "link": "https://mobilegamer.biz/subscribe-to-the-mobilegamer-biz-podcast-now/",
       "date": "2026-10-21T23:20:00.000Z",
       "sourceId": "mgbiz",
       "image": null,
       "summary": "This week’s inside view of the mobile game business.",
-      "tags": []
-    },
-    {
-      "title": "SonicFox Reminds Everyone They&#8217;re Based, Backing Out Of A Gaming Convention Over An AI-Generated Promo",
-      "link": "https://kotaku.com/sonicfox-reminds-everyone-theyre-based-backing-out-of-a-gaming-convention-over-an-ai-generated-promo-2000748466",
-      "date": "2026-10-21T23:00:51.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2018/12/epcreyfmhu5sx0h73hsu.jpg",
-      "summary": "Ninjutsu Entertainment posted a video asking SonicFox to reconsider their decision",
-      "tags": []
-    },
-    {
-      "title": "The Future Of The Sims Just Got Even Messier",
-      "link": "https://kotaku.com/the-future-of-the-sims-just-got-even-messier-2000748398",
-      "date": "2026-10-21T22:30:47.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2023/06/4d4684549a9167f42319bc92cc17f41e-1280x720.jpg",
-      "summary": "Maxis is shifting its focus to something called Project Evergreen",
-      "tags": []
-    },
-    {
-      "title": "Machinarium AI tribute cops a flogging from studio: 'This looks disgusting and has nothing to do with us or our craft'",
-      "link": "https://www.pcgamer.com/gaming-industry/machinarium-ai-tribute-cops-a-flogging-from-studio-this-looks-disgusting-and-has-nothing-to-do-with-us-or-our-craft/",
-      "date": "2026-10-21T22:26:41.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QovyvgnTDavqyf4mSEdhu6-1920-80.jpg",
-      "summary": "Three cheers for the slop intolerant.",
-      "tags": []
-    },
-    {
-      "title": "CD Projekt boss pays tribute to BioWare for helping bring The Witcher to life 20 years ago: 'BioWare has been a massive part of CDPR history'",
-      "link": "https://www.pcgamer.com/gaming-industry/cd-projekt-boss-pays-tribute-to-bioware-for-helping-bring-the-witcher-to-life-20-years-ago-bioware-has-been-a-massive-part-of-cdpr-history/",
-      "date": "2026-10-21T21:43:06.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/dDWXVeXZKJVY5ViFMpjQX-1920-80.jpg",
-      "summary": "BioWare let CD Projekt use the Aurora Engine for its breakout RPG, and then helped them show it off at E3.",
-      "tags": []
-    },
-    {
-      "title": "Modern Warfare 4 players declare 'broken' on DMZ perk that lets you self-revive after full death",
-      "link": "https://www.pcgamer.com/games/call-of-duty/modern-warfare-4-players-declare-broken-on-dmz-perk-that-lets-you-self-revive-after-full-death/",
-      "date": "2026-10-21T21:36:47.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VNjGhQEhtfgu6qq3TAsP8E-1920-80.jpg",
-      "summary": "Some hate that you can't know an enemy's truly dead in DMZ.",
       "tags": []
     },
     {
