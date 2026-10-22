@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T06:08:45.052Z",
+  "generatedAt": "2026-10-22T11:58:36.491Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-21T18:48:40.000Z",
-      "kept": 26
+      "newest": "2026-10-22T11:17:02.000Z",
+      "kept": 36
     },
     "gamedev": {
       "status": "ok",
@@ -35,29 +35,29 @@
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-10-21T17:55:20.000Z",
+      "newest": "2026-10-22T11:00:00.000Z",
       "kept": 8
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-21T20:20:08.000Z",
+      "newest": "2026-10-22T08:30:11.000Z",
       "kept": 17
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-22T06:00:00.000Z",
+      "newest": "2026-10-22T10:20:54.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-22T05:32:00.000Z",
-      "kept": 18
+      "newest": "2026-10-22T11:02:00.000Z",
+      "kept": 16
     },
     "kotaku": {
       "status": "ok",
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-22T01:14:40.000Z",
-      "kept": 25
+      "newest": "2026-10-22T11:10:00.000Z",
+      "kept": 27
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-22T04:01:17.000Z",
+      "newest": "2026-10-22T11:49:20.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -91,15 +91,15 @@
       "status": "ok",
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
-      "newest": "2026-10-21T16:28:00.000Z",
-      "kept": 16
+      "newest": "2026-10-22T11:18:00.000Z",
+      "kept": 17
     },
     "mgbiz": {
       "status": "ok",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
-      "newest": "2026-10-21T23:20:00.000Z",
-      "kept": 6
+      "newest": "2026-10-22T10:47:27.000Z",
+      "kept": 7
     },
     "gdco": {
       "status": "ok",
@@ -118,21 +118,617 @@
   },
   "articles": [
     {
-      "title": "Steam vous donne encore des contenus gratuits pour des jeux appréciés, mais faites vite",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/steam-dlc-jeux-gratuits-hex-reverse-725139?utm_source=RSS",
-      "date": "2026-10-22T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/713923_69ca1d7836b5b.jpg",
-      "summary": "Steam vous offre du contenu gratuit pour Squad et Gear.Club Unlimited 3 pendant encore quelques jours. Vous pouvez aussi découvrir un jeu gratuit jusqu'à début novembre.",
+      "title": "Star Wars Battlefront 3 Is Real, EA Officially Confirms",
+      "link": "https://www.polygon.com/ea-layoffs-star-wars-battlefront-3-is-alive/",
+      "date": "2026-10-22T11:49:20.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8347517/battlefront_2_mp.jpg",
+      "summary": "Amid gut-wrenching EA layoffs, the video game publisher has confirmed one bit of good news: Star Wars Battlefront isn't dead.",
       "tags": []
     },
     {
-      "title": "L'Epic Games Store vous offre 2 nouveaux gratuits à garder, des pépites parfaites pour la saison",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/epic-games-store-jeux-gratuits-home-sker-ritual-725138?utm_source=RSS",
-      "date": "2026-10-22T05:45:11.000Z",
+      "title": "Mass Effect Is Not Dead Yet as the Amazon Series Is Still Going Forward",
+      "link": "https://www.polygon.com/mass-effect-tv-show-amazon-bioware-closure-october-2026/",
+      "date": "2026-10-22T11:35:20.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/wrex-mass-effect.jpg",
+      "summary": "Mass Effect 5 might not be happening, but at least the series will continue in another way.",
+      "tags": []
+    },
+    {
+      "title": "Entries for The Big Indie Pitch at Montréal close this week",
+      "link": "https://www.pocketgamer.biz/entries-for-the-big-indie-pitch-at-montral-close-this-week/",
+      "date": "2026-10-22T11:18:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/140960/90020/bip-mobile-pc-console_l660.jpg",
+      "summary": "Taking place within MIGS26, the Big Indie Pitch sponsored by Xsolla at PG Connects Summit Montr&eacute;al delivers a unique quick-fire format that gives each developer five…",
+      "tags": []
+    },
+    {
+      "title": "EA Sports College Football 27 - Dynasty en images et GIFs",
+      "link": "https://fr.ign.com/ea-sports-college-football-27/93376/ea-sports-college-football-27-dynasty-screenshots-and-gifs",
+      "date": "2026-10-22T11:17:02.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/e/ea-sports-/ea-sports-college-football-27-dynasty-screenshots-and-gifs_qv3w.gif",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "EA Sports confirme qu’il développe un jeu de football américain en monde ouvert",
+      "link": "https://fr.ign.com/madden-nfl-27/93375/ea-sports-confirme-quil-developpe-un-jeu-de-football-americain-en-monde-ouvert",
+      "date": "2026-10-22T11:17:02.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/ea-sports-/ea-sports-confirms-its-developing-an-open-world-football-gam_sqq6.jpg",
+      "summary": "Avec un terrain qui n&#x27;en finit pas à la Captain Tsubasa ?",
+      "tags": []
+    },
+    {
+      "title": "NACON unbox la REVO X MAX",
+      "link": "https://fr.ign.com/nacon-revo-x-max/93374/nacon-unbox-la-revo-x-max",
+      "date": "2026-10-22T11:12:44.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/n/nacon-unbo/nacon-unbox-la-revo-x-max_cz9v.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Test NACON REVO X MAX : la reine de son segment",
+      "link": "https://fr.ign.com/nacon-revo-x-max/93347/test-nacon-revo-x-max-la-reine-de-son-segment",
+      "date": "2026-10-22T11:12:44.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0337_c3dc.jpg",
+      "summary": "Pour moins de 70 €, elle envoie un message clair à la concurrence dès lors que le sans-fil n&#x27;est pas une priorité pour vous.",
+      "tags": []
+    },
+    {
+      "title": "NACON présente ses nouvelles manettes, de la gamme REVO X",
+      "link": "https://fr.ign.com/nacon-revo-x-max/93344/nacon-presente-ses-nouvelles-manettes-de-la-gamme-revo-x",
+      "date": "2026-10-22T11:12:44.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/trailer/n/nacon-pres/nacon-presente-ses-nouvelles-manettes-de-la-gamme-revo-x_uj2s.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "How to clear a compound in Modern Warfare 4 DMZ",
+      "link": "https://www.pcgamer.com/games/call-of-duty/dmz-clear-a-compound-no-one-left/",
+      "date": "2026-10-22T11:10:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/puRh9PgaH6xDQExD4HsSbM-1920-80.jpg",
+      "summary": "Complete the No One Left order.",
+      "tags": []
+    },
+    {
+      "title": "The Apothecary Diaries : The False Imperial Brother s'offre un lancement pour le mois de mars 2027",
+      "link": "https://www.gamekult.com/actualite/the-apothecary-diaries-the-false-imperial-brother-s-offre-un-lancement-pour-le-mois-de-mars-2027-3050872555.html",
+      "date": "2026-10-22T11:02:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872555/the-apothecary-diaries-the-false-imperial-brother-s-offre-un-lancement-pour-le-mois-de-mars-2027-510202d4__800_800__410-0-1489-1080.jpg",
+      "summary": "Koei Tecmo et Gust, en collaboration avec TOHO, ont finalement donné une date pour la sortie de The Apothecary Diaries: The False Imperial Brother, l'adaptation vidéoludique des…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "The Nintendo Switch 2’s Open-World Era Is Officially Here, and It Rules",
+      "link": "https://www.polygon.com/nintendo-switch-2-open-world-era/",
+      "date": "2026-10-22T11:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/nintendo-switch-sports-resort-prop-plane-wuhu-island.png",
+      "summary": "Nintendo Switch Sports Resort's excellent open-world modes continues an emerging Switch 2 trend started with Mario Kart World.",
+      "tags": []
+    },
+    {
+      "title": "How Pantaloon is curating an \"evolving library of bold and bizarre games\" with its new subscription service",
+      "link": "https://www.gamesindustry.biz/how-pantaloon-is-curating-an-evolving-library-of-bold-and-bizarre-games-with-its-new-subscription-service",
+      "date": "2026-10-22T11:00:00.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/CurtainsLogo.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Over recent years, more and more companies have moved away from the traditional publishing model and set their sights on indie curation.",
+      "tags": []
+    },
+    {
+      "title": "Report explores how Roblox can maintain older players as it becomes most-played game by total hours in H1 2026",
+      "link": "https://www.gamesindustry.biz/report-explores-how-roblox-can-maintain-older-players-as-it-becomes-most-played-game-by-total-hours-in-h1-2026",
+      "date": "2026-10-22T11:00:00.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/Sonic-Speed-Simulator.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Roblox generated 4.05 billion hours of playtime across PC and console in H1 2026, making it the most-played game by total hours.",
+      "tags": []
+    },
+    {
+      "title": "The iconic Windows fish screensaver was inspired by a dentist's office, which makes a lot of sense when you think about it",
+      "link": "https://www.pcgamer.com/hardware/the-iconic-windows-fish-screensaver-was-inspired-by-a-dentists-office-which-makes-a-lot-of-sense-when-you-think-about-it/",
+      "date": "2026-10-22T10:58:33.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/qwdLL2AC6gWQTMZNmursuM-1920-80.png",
+      "summary": "Top ten screensaver?",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect's Amazon series is reportedly continuing after BioWare shutdown, which'll make an uncomfortable gravestone for the studio's work",
+      "link": "https://www.pcgamer.com/movies-tv/mass-effects-amazon-series-is-reportedly-continuing-after-bioware-shutdown-whichll-make-an-uncomfortable-gravestone-for-the-studios-work/",
+      "date": "2026-10-22T10:52:44.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/ncQwyMwrdc34veGSVsc8DP-1920-80.jpg",
+      "summary": "Here lies BioWare's sci-fi opera, you can tell because we put 'Mass Effect' on the gravestone.",
+      "tags": []
+    },
+    {
+      "title": "Chris Pratt réaffirme que Star-Lord reviendra dans le MCU et que c'est en discussion en ce moment",
+      "link": "https://fr.ign.com/guardians-of-the-galaxy-vol-3/93373/chris-pratt-reaffirme-que-star-lord-reviendra-dans-le-mcu-et-que-cest-en-discussion-en-ce-moment",
+      "date": "2026-10-22T10:52:29.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/chris-prat/chris-pratt-reaffirms-star-lord-will-return-in-the-mcu-and-p_2sqd.jpg",
+      "summary": "La galaxie ne va pas se garder toute seule.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars: The Old Republic lead writer calls out BioWare for snubbing the MMO",
+      "link": "https://www.pcgamer.com/games/mmo/star-wars-the-old-republic-lead-writer-calls-out-bioware-for-snubbing-the-mmo/",
+      "date": "2026-10-22T10:51:53.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/VhX9aPj2cv9pvwxxepKE6C-1920-80.jpg",
+      "summary": "The long-running MMO didn't get a mention when BioWare announced it was closing.",
+      "tags": []
+    },
+    {
+      "title": "Supercell hit by cyberattack, but says no player data was affected",
+      "link": "https://mobilegamer.biz/supercell-hit-by-cyberattack-but-says-no-player-data-was-affected/",
+      "date": "2026-10-22T10:47:27.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "The Clash of Clans developer says it was the target of multiple attacks last week and has notified police and regulators.",
+      "tags": []
+    },
+    {
+      "title": "Capcom (Resident Evil, Pragmata) alerte d'un risque de phishing après une fuite de données de 11 millions de comptes client",
+      "link": "https://fr.ign.com/resident-evil-9/93372/capcom-resident-evil-pragmata-alerte-dun-risque-de-phishing-apres-une-fuite-de-donnees-de-11-million",
+      "date": "2026-10-22T10:38:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/r/resident-e/resident-evil-developer-capcom-issues-phishing-warning-after_13jp.jpg",
+      "summary": "Les mots de passe de 196 comptes ont été modifiés.",
+      "tags": []
+    },
+    {
+      "title": "Capcom signale le piratage de son service Capcom ID, il n'y aurait pas de données sensibles dérobées",
+      "link": "https://www.gamekult.com/actualite/capcom-signale-le-piratage-de-son-service-capcom-id-il-n-y-aurait-pas-de-donnees-sensibles-derobees-3050872561.html",
+      "date": "2026-10-22T10:33:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872561/capcom-signale-le-piratage-de-son-service-capcom-id-il-n-y-aurait-pas-de-donnees-sensibles-derobees-cc4e52ce__800_800__398-0-1479-1080.jpg",
+      "summary": "D'après Capcom, une attaque pirate a ciblé le service Capcom ID en début de semaine et extrait quantité d'adresses mails et autres informations sur vos comptes. Pas de panique…",
+      "tags": []
+    },
+    {
+      "title": "How to get electronic sensors in Modern Warfare 4 DMZ",
+      "link": "https://www.pcgamer.com/games/call-of-duty/dmz-electronic-sensors-location/",
+      "date": "2026-10-22T10:26:58.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dQxXi738t9kDCNLUpeZcAe-1920-80.jpg",
+      "summary": "One of two materials you'll need to expand your stash.",
+      "tags": []
+    },
+    {
+      "title": "Side acquires art studio Roboto Entertainment to expand presence in China",
+      "link": "https://www.pocketgamer.biz/side-acquires-art-studio-roboto-entertainment-to-expand-presence-in-china/",
+      "date": "2026-10-22T10:24:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141822/90092/side-andrea-cordella_l660.jpg",
+      "summary": "Games services provider Side has acquired games art studio Roboto Entertainment, founded by industry veteran Andrea Cordella. The move marks an extension of Side's footprint in…",
+      "tags": []
+    },
+    {
+      "title": "« J'ai hâte que vous découvriez leur talent » Life is Strange : le co-créateur de la licence s'est rendu sur le tournage de la série Prime Video, il partage son émotion",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/life-is-strange-prime-video-michel-koch-tournage-725196?utm_source=RSS",
+      "date": "2026-10-22T10:20:54.000Z",
       "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/682928_67dd82a28f8b8.jpg",
-      "summary": "L'Epic Games Store renouvelle aujourd'hui ses offres de jeux gratuits en proposant deux nouveaux titres à récupérer et parfaits pour fêter Halloween.",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6ad9e1597f2fd.jpg",
+      "summary": "La série Prime Video Life is Strange a reçu une visite émouvante sur son plateau de tournage. Michel Koch, l'un des co-créateurs de la licence, est passé voir l'équipe et a…",
+      "tags": []
+    },
+    {
+      "title": "Toutes les armes de Call of Duty: Modern Warfare 4",
+      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93371/toutes-les-armes-de-call-of-duty-modern-warfare-4",
+      "date": "2026-10-22T10:20:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/a/all-guns-a/all-guns-and-weapons-in-call-of-duty-modern-warfare-4_25ye.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Le mode DMZ de Call of Duty : Modern Warfare 4 est peut-être l’alternative attendue à Warzone - premiers retours",
+      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93369/le-mode-dmz-de-call-of-duty-modern-warfare-4-est-peut-etre-lalternative-attendue-a-warzone-premiers",
+      "date": "2026-10-22T10:20:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/photo/default/cod-blops6-1792159108805_wd5s.jpg",
+      "summary": "L’art de bien s’extraire.",
+      "tags": []
+    },
+    {
+      "title": "Voilà que XBOX va vous facturer l'heure de jeu sur le Xbox Cloud Gaming (sur des jeux que vous possédez déjà)",
+      "link": "https://www.gamekult.com/actualite/voila-que-xbox-va-vous-facturer-l-heure-de-jeu-sur-le-xbox-cloud-gaming-sur-des-jeux-que-vous-possedez-deja-3050872553.html",
+      "date": "2026-10-22T10:16:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872553/voila-que-xbox-va-vous-facturer-l-heure-de-jeu-sur-le-xbox-cloud-gaming-sur-des-jeux-que-vous-possedez-deja-295fe9fc__800_800__256-0-1756-1500.jpg",
+      "summary": "Le mois dernier, Microsoft avait pu annoncer une possibilité d'utiliser le XBOX Cloud Gaming sans la nécessité de s'abonner au Game Pass. Voilà que cette possibilité est désormais…",
+      "tags": []
+    },
+    {
+      "title": "Clash Royale tabletop game surpasses $100,000 on Kickstarter after reaching target in one hour",
+      "link": "https://www.pocketgamer.biz/clash-royale-tabletop-game-surpasses-100000-on-kickstarter-after-reaching-target-in-one-hour/",
+      "date": "2026-10-22T10:14:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141823/90091/supercell-table-top-game_l660.jpg",
+      "summary": "Supercell and Maestro Media's Clash Royale: The Grand Arena reached its Kickstarter funding goal in just one hour after launching the campaign on October 20th, 2026. The tabletop…",
+      "tags": []
+    },
+    {
+      "title": "Street Fighter n'aurait jamais été un film sombre et réaliste à la Batman Begins, précise le réalisateur, le studio le voulait absurde et rigolo",
+      "link": "https://fr.ign.com/street-fighter-2026/93367/street-fighter-naurait-jamais-ete-un-film-sombre-et-realiste-a-la-batman-begins-precise-le-realisate",
+      "date": "2026-10-22T10:07:43.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/street-fig/street-fighter-was-never-going-to-be-a-dark-grounded-batman_s9d2.jpg",
+      "summary": "Perfect.",
+      "tags": []
+    },
+    {
+      "title": "The Blood of Dawnwalker reçoit enfin son énorme mise à jour attendue avec plus de 1 000 changements et nouveautés",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-blood-of-dawnwalker-maj-1-1-dispo-725198?utm_source=RSS",
+      "date": "2026-10-22T10:07:04.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/soluces/723682_6ab515156a098.jpg",
+      "summary": "Après une annonce il y a quelques jours, The Blood of Dawnwalker reçoit officiellement sa dernière énorme mise à jour en date avec plus de 1 000 ajouts promis.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Best Black Friday controller deals",
+      "link": "https://www.pcgamer.com/hardware/controllers/black-friday-controller-deals/",
+      "date": "2026-10-22T10:04:38.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/SHB4vmy4M9VU5rbKmWiXW5-1920-80.jpg",
+      "summary": "With the Black Friday sales rolling around again, peripherals like controllers could have some of the best deals.",
+      "tags": []
+    },
+    {
+      "title": "Anime's Most Devastating Horror Story Is a Tragedy About Being Human",
+      "link": "https://www.polygon.com/devilman-crybaby-horror-anime-halloween-countdown/",
+      "date": "2026-10-22T10:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/devilman-crybaby-2-1.jpg",
+      "summary": "Devilman Crybaby is a brutal anime that transforms the end of the world into a nightmare about what makes us human.",
+      "tags": []
+    },
+    {
+      "title": "Phantom Blade Zero Will Get a Physical Release, But There's a Catch",
+      "link": "https://www.polygon.com/phantom-blade-zero-physical-release-disc/",
+      "date": "2026-10-22T09:43:37.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/phantom-blade-1.jpg",
+      "summary": "Phantom Blade Zero will have a physical edition, but it will not be available on launch day.",
+      "tags": []
+    },
+    {
+      "title": "« Ça ne se vendra jamais » Pour l'ex-boss de Blizzard, Xbox foncerait droit dans le mur en lançant la Xbox Helix à 1800$",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/xbox-helix-prix-1800-dollars-reaction-mike-ybarra-blizzard-725197?utm_source=RSS",
+      "date": "2026-10-22T09:41:28.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/725197_6ad9d947e8514.jpg",
+      "summary": "Après les dernières rumeurs au sujet du prix potentiel de lancement de la Xbox Helix, l’ancien boss de Blizzard a pris la parole et il a déjà un avis bien tranché sur la question.",
+      "tags": []
+    },
+    {
+      "title": "Après avoir tué l'un des plus grands studios du RPG, EA confirme un jeu en monde ouvert unique en son genre, mais qui ne plaira qu'aux américains",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ea-project-gridiron-open-world-football-americain-725191?utm_source=RSS",
+      "date": "2026-10-22T09:35:38.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/406471_63230d51def20.jpg",
+      "summary": "Après le choc de la fermeture de BioWare, EA fait un communiqué sur son propre avenir annonçant par la même occasion un nouvel open world dans l'univers du football américain.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Battlefront 3 :  de multiples sources confirment le développement chez DICE et Respawn",
+      "link": "https://www.gamekult.com/actualite/star-wars-battlefront-3-de-multiples-sources-confirment-le-developpement-chez-dice-et-respawn-3050872554.html",
+      "date": "2026-10-22T09:32:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872554/37bd86fa__800_800__545-0-1626-1080.jpg",
+      "summary": "Dans un contexte délétère chez Electronic Arts, avec 400 licenciements et la fermeture du mythique studio BioWare, le magazine Variety affirme que Star Wars Battlefront 3 est en…",
+      "tags": []
+    },
+    {
+      "title": "Fortnite returns to the App Store in Australia today",
+      "link": "https://www.pocketgamer.biz/fortnite-returns-to-the-app-store-in-australia-today/",
+      "date": "2026-10-22T09:25:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/138573/90090/fortnite-night-king_l660.jpg",
+      "summary": "Fortnite returns to the App Store in Australia today after a federal court told Apple to open up iOS. The court determined Apple has violated competition law and will require the…",
+      "tags": []
+    },
+    {
+      "title": "Football Manager 27 sera jouable gratuitement avant sa sortie, voici quand et comment en profiter",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/football-manager-27-jouable-gratuitement-725185?utm_source=RSS",
+      "date": "2026-10-22T09:20:34.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/724186_6abe2d7fe16fa.jpg",
+      "summary": "Football Manager 27 sera jouable gratuitement pendant 5 jours avant sa sortie, on vous explique quand vous pourrez en profiter et tout ce qui sera disponible.",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Battlefront 3 serait bien une réalité, mais ce n'est pas l'énorme changement que certains espéraient",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/star-wars-battlefront-3-dice-respawn-electronic-arts-725186?utm_source=RSS",
+      "date": "2026-10-22T09:15:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/695542_68343f0d359ae.png",
+      "summary": "Star Wars Battlefront 3 a fraîchement refait parler de lui pour bien confirmer son existence, mais en contredisant les précédentes rumeurs le concernant.",
+      "tags": []
+    },
+    {
+      "title": "Xbox reveals pricing for cloud gaming limits, starting at $3.99 for 10 hours",
+      "link": "https://www.gamesindustry.biz/xbox-reveals-pricing-for-cloud-gaming-limits-starting-at-399-for-10-hours",
+      "date": "2026-10-22T09:14:16.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/0f37b2f3-e65e-4701-a999-2b82f5ec2517.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Xbox has revealed the pricing for the cloud gaming limits on Game Pass, announced last month .",
+      "tags": []
+    },
+    {
+      "title": "« Je pense qu’on n’y arrivera pas du vivant du projet » Après 18 ans, Beyond Good & Evil 2 n’a toujours pas dépassé la pré-production et semble plus en danger que jamais",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/beyond-good-and-evil-2-rapport-developpement-pre-production-danger-725192?utm_source=RSS",
+      "date": "2026-10-22T09:09:22.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/411162_638779b66d89e.jpg",
+      "summary": "Après deux décennies de développement, le projet Beyond Good & Evil 2 patine sévèrement chez Ubisoft, qui pourrait bientôt être amené à prendre une décision radicale.",
+      "tags": []
+    },
+    {
+      "title": "Fermeture de BioWare, annulation d'un projet Les Sims, 400 licenciements... la semaine noire d'Electronic Arts",
+      "link": "https://www.gamekult.com/actualite/fermeture-de-bioware-annulation-d-un-projet-les-sims-400-licenciements-la-semaine-noire-d-electronic-arts-3050872552.html",
+      "date": "2026-10-22T09:03:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872552/fermeture-de-bioware-annulation-d-un-projet-les-sims-400-licenciements-la-semaine-noire-d-electronic-arts-9d8b2fcb__800_800__426-0-1507-1080.jpg",
+      "summary": "Si la fermeture de BioWare (Dragon Age, Mass Effect) est sans doute la grande information à retenir cette semaine, ce n'est pas la seule conséquence de la réorganisation…",
+      "tags": []
+    },
+    {
+      "title": "Mika Games raises $10m to fund mobile game studios",
+      "link": "https://www.pocketgamer.biz/mika-games-raises-10m-to-fund-mobile-game-studios/",
+      "date": "2026-10-22T09:01:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/141817/90089/mika-games-raises-10m-to-fund-mobile-game-studios_l660.jpg",
+      "summary": "Cyprus-based investment company Mika Games has raised $10 million in fresh funding to help mobile games studios develop their titles and test paid marketing campaigns before they…",
+      "tags": []
+    },
+    {
+      "title": "« J'ai hâte d'être une sirène » Disney Dreamlight Valley vous dit tout sur son prochain DLC qui a l'air absolument magique",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-dreamlight-valley-dlc-keepsake-sea-showcase-725180?utm_source=RSS",
+      "date": "2026-10-22T08:52:59.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6ad9be069e958.jpg",
+      "summary": "Gameloft tenait son nouveau showcase Disney Dreamlight Valley pas plus tard que ce 21 octobre 2026, un rendez-vous annuel qui a mis en lumière le prochain DLC, The Keepsake Sea.",
+      "tags": []
+    },
+    {
+      "title": "Cooler Master HAF II 500 review",
+      "link": "https://www.pcgamer.com/hardware/pc-cases/cooler-master-haf-ii-500-review/",
+      "date": "2026-10-22T08:48:50.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zCDhvBjY4FquBpnBsv2KwJ-1920-80.jpg",
+      "summary": "Three mighty fans make for a mighty amount of airflow.",
+      "tags": []
+    },
+    {
+      "title": "Fortnite is returning to the Australian App Store tomorrow",
+      "link": "https://mobilegamer.biz/fortnite-is-returning-to-the-australian-app-store-tomorrow/",
+      "date": "2026-10-22T08:36:32.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "Epic said the Australian Federal Court had told Apple to open up iOS after finding they violated competition law, calling it \"great news for developers worldwide and iOS users in…",
+      "tags": []
+    },
+    {
+      "title": "Oui, la PS5 est bien bridée, ces joueurs viennent de le démontrer",
+      "link": "https://www.jeuxvideo.com/news/2110211/oui-la-ps5-est-bien-bridee-ces-joueurs-viennent-de-le-demontrer.htm",
+      "date": "2026-10-22T08:30:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179258/1792576644-7938-card.jpg",
+      "summary": "Alors que Sony s’apprête à mettre fin au jeu physique, des joueurs découvrent plusieurs secrets que cachait la PS5. Comme le fait de pouvoir faire tourner nativement des jeux PS2…",
+      "tags": []
+    },
+    {
+      "title": "Les fans de Gran Turismo vont se l'arracher, la manette collector est dispo",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gran-turismo-manette-ps5-725179?utm_source=RSS",
+      "date": "2026-10-22T08:18:12.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/407062_63330f41d1f52.png",
+      "summary": "PlayStation gâte les fans de Gran Turismo pour célébrer dignement les 30 ans de la licence. Voici comment précommander la manette collector à l'effigie de la la franchise.",
+      "tags": []
+    },
+    {
+      "title": "Battlefield rassure ses fans au milieu de l'hécatombe chez Electronic Arts",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/battlefield-suite-franchise-restructuration-electronic-arts-725181?utm_source=RSS",
+      "date": "2026-10-22T08:13:25.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/good_deal/705879_691af7f7e5568.jpg",
+      "summary": "Au milieu de sa récente restructuration massive, Electronic Arts a dévoilé ses plans pour l'avenir qui incluent notamment Battlefield, qui ne devrait donc pas connaître le sort de…",
+      "tags": []
+    },
+    {
+      "title": "DON'T NOD au bord du gouffre : 85 emplois menacés et une procédure de sauvegarde d'urgence",
+      "link": "https://www.gamekult.com/actualite/don-t-nod-au-bord-du-gouffre-85-emplois-menaces-et-une-procedure-de-sauvegarde-d-urgence-3050872551.html",
+      "date": "2026-10-22T08:11:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872551/don-t-nod-place-en-procedure-de-sauvegarde-face-a-des-resultats-financiers-alarmants-7fdc8f2e__800_800__384-0-1464-1080.jpg",
+      "summary": "Le studio français Don't Nod a annoncé ce mardi 20 octobre 2026 l'ouverture d'une procédure de sauvegarde par le Tribunal des activités économiques de Paris. Cette décision fait…",
+      "tags": []
+    },
+    {
+      "title": "Burger Shot, la chaîne de fast food de GTA 6, va voir le jour dans la réalité, au sein de la salle des Miami Heat",
+      "link": "https://fr.ign.com/grand-theft-auto-6/93366/burger-shot-la-chaine-de-fast-food-de-gta-6-va-voir-le-jour-dans-la-realite-au-sein-de-la-salle-des",
+      "date": "2026-10-22T08:10:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/g/gta-6s-fas/gta-6s-fast-food-restaurant-burger-shot-is-coming-to-real-li_2bhb.jpg",
+      "summary": "On va finir par aller à Miami le 19 novembre au lieu de jouer au jeu...",
+      "tags": []
+    },
+    {
+      "title": "Fortnite returns to iOS in Australia after court rules Apple violated competition law",
+      "link": "https://www.gamesindustry.biz/fortnite-returns-to-ios-in-australia-after-court-rules-apple-violated-competition-law",
+      "date": "2026-10-22T08:08:08.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/fortnite_b160YFv.webp?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Fortnite has returned to iOS in Australia after a court decision ruled that Apple must open iOS to third-party app stores after finding it violated competition law.",
+      "tags": []
+    },
+    {
+      "title": "EA suspend le développement d’un jeu Les Sims multijoueur sur mobile au profit d’une suite présumée des Sims 4",
+      "link": "https://fr.ign.com/tba-the-sims-5/93365/ea-suspend-le-developpement-dun-jeu-les-sims-multijoueur-sur-mobile-au-profit-dune-suite-presumee-de",
+      "date": "2026-10-22T08:02:45.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/ea-halts-d/ea-halts-development-on-mobile-multiplayer-sims-game-in-favo_wy11.jpg",
+      "summary": "Une nouvelle orientation.",
+      "tags": []
+    },
+    {
+      "title": "‘Avatar: Seven Havens’ Producer Drops a Huge Clue About Korra and the Cataclysm",
+      "link": "https://www.polygon.com/avatar-seven-havens-korra-and-the-cataclysm/",
+      "date": "2026-10-22T08:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/korra-and-kuvira.jpg",
+      "summary": "One comment from Avatar: Seven Havens executive producer Sehaj Sethi provides a major hint at what ultimately led to the Cataclysm.",
+      "tags": []
+    },
+    {
+      "title": "SNES mini, PlayStation Classic... Pourquoi ces consoles “mini” ont mal passé l’épreuve du temps ?",
+      "link": "https://www.jeuxvideo.com/news/2110285/snes-mini-playstation-classic-pourquoi-ces-consoles-mini-ont-mal-passe-l-epreuve-du-temps.htm",
+      "date": "2026-10-22T08:00:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179260/1792599959-5405-card.png",
+      "summary": "Boulot, rétro, dodo ? Vous avez sûrement connu cette situation : dans les secondes, minutes, heures qui suivent votre première session de jeu sur une console mini, le…",
+      "tags": []
+    },
+    {
+      "title": "La fenêtre de sortie de Dragon Ball Xenoverse 3 se précise après le retour des joueurs",
+      "link": "https://fr.ign.com/dragon-ball-xenoverse-3/93363/la-fenetre-de-sortie-de-dragon-ball-xenoverse-3-se-precise-apres-le-retour-des-joueurs",
+      "date": "2026-10-22T07:59:14.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/d/dragon-bal/dragon-ball-xenoverse-3-narrows-release-window-following-pla_8eks.jpg",
+      "summary": "Entre 6 et 12 mois...",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "« Nous créions quelque chose de spécial » Un ancien dev de Mass Effect 5 raconte comment le RPG devait s'inspirer de Cyberpunk 2077 et Baldur's Gate 3",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/mass-effect-5-declaration-bioware-inspirations-cyberpunk-2077-baldurs-gate-3-725183?utm_source=RSS",
+      "date": "2026-10-22T07:58:42.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/453938_64ecb25c22749.jpg",
+      "summary": "Tout juste annulé par Electronic Arts, il apparaît que Mass Effect 5 était bien parti pour repousser les limites du RPG après Baldur’s Gate 3 et Cyberpunk 2077.",
+      "tags": []
+    },
+    {
+      "title": "« Nous travaillions sur un jeu formidable » — D’anciens scénaristes de Mass Effect 5 s’expriment après la fermeture de BioWare par EA",
+      "link": "https://fr.ign.com/mass-effect-legendary-edition/93358/nous-travaillions-sur-un-jeu-formidable--danciens-scenaristes-de-mass-effect-5-sexpriment-apres-la-f",
+      "date": "2026-10-22T07:54:54.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/w/we-were-wo/we-were-working-on-a-great-game-former-mass-effect-5-writers_r9b7.jpg",
+      "summary": "« La collaboration la plus stimulante et la plus intense que j’aie jamais vécue. »",
+      "tags": []
+    },
+    {
+      "title": "Les fans de Star Wars : The Old Republic rendent hommage à BioWare",
+      "link": "https://fr.ign.com/star-wars-the-old-republic-game/93359/les-fans-de-star-wars-the-old-republic-rendent-hommage-a-bioware",
+      "date": "2026-10-22T07:51:46.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/star-wars-/star-wars-the-old-republic-fans-pay-their-respects-to-biowar_w5sr.jpg",
+      "summary": "SWTOR continue de vivre.",
+      "tags": []
+    },
+    {
+      "title": "Internet réagit à l’annulation de Mass Effect 5 et à la disparition de BioWare",
+      "link": "https://fr.ign.com/mass-effect-next-chapter/93361/internet-reagit-a-lannulation-de-mass-effect-5-et-a-la-disparition-de-bioware",
+      "date": "2026-10-22T07:50:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/the-intern/the-internet-reacts-to-the-cancellation-of-mass-effect-5-and_zen7.jpg",
+      "summary": "« Ne laissez pas l’héritage de Mass Effect et de Dragon Age s’éteindre dans ces derniers soubresauts sanglants. »",
+      "tags": []
+    },
+    {
+      "title": "Star Wars: The Old Republic - Shadow of Revan Gallery",
+      "link": "https://fr.ign.com/star-wars-the-old-republic-game/93360/star-wars-the-old-republic-shadow-of-revan-gallery",
+      "date": "2026-10-22T07:50:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/s/star-wars-/star-wars-the-old-republic-shadow-of-revan-gallery_ndua.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Enfin ! La meilleure série de SF moderne a lancé le tournage de sa prochaine saison. Ce qu'on sait déjà sur la suite de Pluribus",
+      "link": "https://www.jeuxvideo.com/news/2110223/enfin-la-meilleure-serie-de-sf-moderne-a-lance-le-tournage-de-sa-prochaine-saison-ce-qu-on-sait-deja-sur-la-suite-de-pluribus.htm",
+      "date": "2026-10-22T07:40:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792587311-5704-card.jpg",
+      "summary": "C'est la nouvelle que tout les fans attendaient. Dix mois après un final mémorable qui laissait l'humanité sous la coupe d'une conscience collective extraterrestre et Carol Sturka…",
+      "tags": []
+    },
+    {
+      "title": "Les joueurs d'Elden Ring surpris de voir une nouvelle mise à jour arriver 4 ans et demi après la sortie du GOTY 2022",
+      "link": "https://www.jeuxvideo.com/news/2110290/les-joueurs-d-elden-ring-surpris-de-voir-une-nouvelle-mise-a-jour-arriver-4-ans-et-demi-apres-la-sortie-du-goty-2022.htm",
+      "date": "2026-10-22T07:30:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179260/1792597369-4822-card.jpg",
+      "summary": "Après un été marqué par le lancement de sa Tarnished Edition sur Nintendo Switch 2, le chef-d'œuvre de FromSoftware s'était fait plus discret. Mais le studio japonais prouve qu'il…",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Cyberpunk 2077 déploie son énorme mise à jour 2 ans après avoir dit que c'était fini. Voici la liste des nouveautés et tout ce qu'elle change",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2077-maj-2-5-dispo-notes-725168?utm_source=RSS",
+      "date": "2026-10-22T07:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/464326_6503f69486ca8.jpg",
+      "summary": "Deux jours après son annonce, l'énorme mise à jour 2.5 de Cyberpunk 2077 est disponible pour accompagner la sortie de Edgerunners 2, et voici tout ce qu'elle apporte de nouveau à…",
+      "tags": [
+        "patch",
+        "release"
+      ]
+    },
+    {
+      "title": "La série télévisée Mass Effect reste en développement chez Prime Video malgré la fermeture de BioWare",
+      "link": "https://fr.ign.com/mass-effect-the-series/93356/la-serie-televisee-mass-effect-reste-en-developpement-chez-prime-video-malgre-la-fermeture-de-biowar",
+      "date": "2026-10-22T07:29:48.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/m/mass-effec/mass-effect-tv-series-remains-active-at-prime-video-despite_yjjk.jpg",
+      "summary": "La série d’Amazon est en développement depuis 2024.",
+      "tags": []
+    },
+    {
+      "title": "« N'arrêtez jamais d'y croire » Plus de 10 ans après sa fin, Disney+ va officiellement faire revenir une série cultissime et adorée de toute une génération",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-plus-serie-glee-reboot-officiel-725170?utm_source=RSS",
+      "date": "2026-10-22T07:25:14.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/675662_67c961e5ac1de.jpg",
+      "summary": "Après plusieurs mois de teasing de la part de Ryan Murphy, la série Glee va officiellement avoir son reboot sur Disney+. On sait déjà qu'une des actrices principales va reprendre…",
+      "tags": []
+    },
+    {
+      "title": "EA confirme que DICE et Respawn collaborent sur un nouveau projet, alors que les rumeurs évoquent Star Wars: Battlefront 3",
+      "link": "https://fr.ign.com/star-wars-battlefront/93345/ea-confirme-que-dice-et-respawn-collaborent-sur-un-nouveau-projet-alors-que-les-rumeurs-evoquent-sta",
+      "date": "2026-10-22T07:16:40.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/ea-confirm/ea-confirms-dice-and-respawn-are-collaborating-on-a-new-proj_fkc5.jpg",
+      "summary": "On sent un trouble dans la force.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Vertigineux, philosophique et inachevé : retour sur le culte Xenogears",
+      "link": "https://www.gamekult.com/actualite/vertigineux-philosophique-et-inacheve-retour-sur-le-culte-xenogears-101-3050866358.html",
+      "date": "2026-10-22T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866358/xenogears-abf3a511__800_800__516-0-1595-1080.jpg",
+      "summary": "Sorti en octobre 1998 sur PlayStation (en version US), Xenogears est une sublime anomalie. Un jeu démesuré, tragiquement ambitieux, né d’une époque où Square croyait encore que le…",
       "tags": []
     },
     {
@@ -145,15 +741,35 @@
       "tags": []
     },
     {
-      "title": "La sortie de GTA 6 pourrait coûter 1 milliard de dollars aux Etats-Unis et provoquer un énorme chaos dans tout le pays",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-1-milliard-chaos-economie-americaine-725141?utm_source=RSS",
-      "date": "2026-10-22T05:27:15.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/723155_6aabe0718e6f8.jpg",
-      "summary": "On se doute que la sortie de GTA 6 va provoquer un véritable séisme, mais elle pourrait aussi coûter 1 milliard et un véritable chaos pour l'économie américaine.",
+      "title": "Le dernier patch de StarCraft 2 massivement rejeté par les joueurs, même pros : ils téléchargent un mod non officiel pour y remédier",
+      "link": "https://www.jeuxvideo.com/news/2110271/le-dernier-patch-de-starcraft-2-massivement-rejete-par-les-joueurs-meme-pros-ils-telechargent-un-mod-non-officiel-pour-y-remedier.htm",
+      "date": "2026-10-22T05:05:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792593245-9686-card.jpg",
+      "summary": "Face à une mise à jour de Blizzard rejetée par l'intégralité des joueurs professionnels, la communauté a tout simplement décidé de snober la version officielle du jeu. À la place…",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Terrible erreur de Netflix : la plateforme va supprimer le film Warcraft quelques jours après la sortie de WoW Forever",
+      "link": "https://www.jeuxvideo.com/news/2110255/terrible-erreur-de-netflix-la-plateforme-va-supprimer-le-film-warcraft-quelques-jours-apres-la-sortie-de-wow-forever.htm",
+      "date": "2026-10-22T04:55:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792591206-5916-card.jpg",
+      "summary": "Netflix va supprimer le film Warcraft de son catalogue juste après la sortie de WoW Forever : un timing bien curieux…",
       "tags": [
         "release"
       ]
+    },
+    {
+      "title": "Plus que quelques jours pour jouer à GTA 5 via le PS Plus avant sa disparition confirmée des abonnements Extra et Premium",
+      "link": "https://www.jeuxvideo.com/news/2109534/plus-que-quelques-jours-pour-jouer-a-gta-5-via-le-ps-plus-avant-sa-disparition-confirmee-des-abonnements-extra-et-premium.htm",
+      "date": "2026-10-22T04:05:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179217/1792165428-4092-card.jpg",
+      "summary": "Disponible depuis plusieurs mois pour les abonnés PlayStation Plus Extra et Premium, Grand Theft Auto V quittera définitivement le catalogue le 17 novembre 2026. Une date butoir…",
+      "tags": []
     },
     {
       "title": "All party members in Final Fantasy Resonance",
@@ -192,24 +808,6 @@
       "tags": []
     },
     {
-      "title": "Where to find and use Adamantite in Final Fantasy Resonance",
-      "link": "https://www.polygon.com/final-fantasy-resonance-adamantite-use-locations-weapons/",
-      "date": "2026-10-22T04:01:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jlee_261014_1001_ffr_shard.jpg",
-      "summary": "Here's where to find Adamantite in Final Fantasy Resonance, which makes some powerful weapons and armor, if you bring it to the right person.",
-      "tags": []
-    },
-    {
-      "title": "How to get Sephiroth's Vision in Final Fantasy Resonance",
-      "link": "https://www.polygon.com/final-fantasy-resonance-sephiroth-vision-where-to-find-boss-fight/",
-      "date": "2026-10-22T04:01:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/obs64_2026-10-13_11-41-15-copy.jpg",
-      "summary": "If you want the Sephiroth's Vision in Final Fantasy Resonance, you'll need to take on the One-Winged Angel himself. Here's how to beat him.",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - À genoux, prosternez-vous, soyez ravis devant Aladdin sur Mega Drive",
       "link": "https://www.gamekult.com/actualite/a-genoux-prosternez-vous-soyez-ravis-devant-aladdin-sur-mega-drive-3050872437.html",
       "date": "2026-10-22T04:00:00.000Z",
@@ -234,15 +832,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/WqTtWUVFSZDsa3PBmb4qG8-1920-80.jpg",
       "summary": "Put a name to the nightmare.",
-      "tags": []
-    },
-    {
-      "title": "Preview : Wo Long 2 : Wings of Ember, déjà le souls-like à suivre en 2027 ? Nous avons revu le blockbuster de Koei Tecmo",
-      "link": "https://www.gamekult.com/jeux/wo-long-2-wings-of-ember-3050889460/preview-3050872473.html",
-      "date": "2026-10-22T01:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/preview/30/3050872473/wo-long-2-wings-of-ember-deja-le-souls-like-a-suivre-en-2027-nous-avons-revu-le-blockbuster-de-koei-tecmo-b453910b__800_800__67-0-1148-1080.jpg",
-      "summary": "Après les excellentes performances commerciales de Nioh 3 en début d'année, Wo Long 2 : Wings of Ember cristallise maintenant les espoirs de Koei Tecmo et le dispositif marketing…",
       "tags": []
     },
     {
@@ -291,15 +880,6 @@
       "tags": []
     },
     {
-      "title": "The 10 best alchemy cards in Magic: The Gathering, ranked",
-      "link": "https://www.polygon.com/best-alchemy-cards-magic-gathering-mgt/",
-      "date": "2026-10-21T22:59:28.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/best-alchemy-cards-in-mtg-arena.jpg",
-      "summary": "Alchemy produced some of Magic’s wildest digital-only cards",
-      "tags": []
-    },
-    {
       "title": "The Future Of The Sims Just Got Even Messier",
       "link": "https://kotaku.com/the-future-of-the-sims-just-got-even-messier-2000748398",
       "date": "2026-10-21T22:30:47.000Z",
@@ -315,15 +895,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/QovyvgnTDavqyf4mSEdhu6-1920-80.jpg",
       "summary": "Three cheers for the slop intolerant.",
-      "tags": []
-    },
-    {
-      "title": "Baldur’s Gate 3 Returns With New Official Sequel Series",
-      "link": "https://www.polygon.com/baldurs-gate-3-sequel-series-hbo-streaming/",
-      "date": "2026-10-21T22:09:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25237368/astarion1.png",
-      "summary": "HBO is developing Baldur's Gate with Last of Us and Chernobyl creator Craig Mazin. The D&D fantasy series picks up where Baldur's Gate 3 left off.",
       "tags": []
     },
     {
@@ -363,32 +934,12 @@
       "tags": []
     },
     {
-      "title": "Demon Slayer: Infinity Castle 2 Rumored Release Date Discovered",
-      "link": "https://www.polygon.com/demon-slayer-infinity-castle-2-movie-release-date-2027/",
-      "date": "2026-10-21T21:08:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/demon-slayer-infinity-castle-still-2-c-copyright_-c-koyoharu-gotoge-_-shueisha-aniplex-ufotable.jpg",
-      "summary": "Demon Slayer: Kimetsu No Yaiba: Infinity Castle 2's 2027 release date may have been exposed by anime fans after leak.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
       "title": "Stick Run Creator Manuel Otto Dies At Age 30 After Twitch Livestream Incident",
       "link": "https://kotaku.com/stick-run-team-confirms-creators-death-following-apparent-suicide-attempt-during-twitch-livestream-2000748450",
       "date": "2026-10-21T21:00:42.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/image-12-1280x722.jpg",
       "summary": "Otto first published Stick Run to Facebook when he was just 14",
-      "tags": []
-    },
-    {
-      "title": "HBO Poison Ivy Show Reportedly Coming From 'The Penguin' Producer",
-      "link": "https://www.polygon.com/hbo-dc-poison-ivy-tv-series-penguin-batman-dcu/",
-      "date": "2026-10-21T20:45:10.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/poison-ivy.jpg",
-      "summary": "A Poison Ivy TV series is reportedly in the works from The Penguin's showrunner. It would be separate from Matt Reeves' The Batman continuity.",
       "tags": []
     },
     {
@@ -479,15 +1030,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/05/xbox-controller-1280x732.jpg",
       "summary": "Players will soon be able to pay for streaming without a Game Pass subscription",
-      "tags": []
-    },
-    {
-      "title": "« C’est absolument déchirant » Mass Effect 5 : c'est officiellement terminé pour BioWare, la nouvelle que tout le monde redoutait est tombée",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/mass-effect-5-annule-bioware-ferme-par-electronic-arts-725146?utm_source=RSS",
-      "date": "2026-10-21T19:09:58.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/427351_64807fc05cbe4.jpg",
-      "summary": "Nouveau coup de tonnerre dans l’industrie. Après plus de 30 ans de bons et loyaux services, BioWare ferme officiellement ses portes et annonce l’annulation de Mass Effect 5.",
       "tags": []
     },
     {
@@ -924,24 +1466,6 @@
       "tags": []
     },
     {
-      "title": "Suite à sa performance dans Batman, cette star du cinéma a été élue pire acteur de l'année. Depuis, il galère a trouver du travail",
-      "link": "https://www.jeuxvideo.com/news/2110006/suite-a-sa-performance-dans-batman-cette-star-du-cinema-a-ete-elue-pire-acteur-de-l-annee-depuis-il-galere-a-trouver-du-travail.htm",
-      "date": "2026-10-21T14:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179257/1792570388-4667-card.jpg",
-      "summary": "Nommé aux Oscars pour The Social Network, cet acteur pensait toucher le pactole en incarnant le grand antagoniste dans ce film DC Comics. Mais sa prestation excentrique lui a valu…",
-      "tags": []
-    },
-    {
-      "title": "GUIDE Call of Duty Modern Warfare 4 : quels accessoires équiper pour avoir le meilleur  build ISO Nightshade ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/call-of-duty-modern-warfare-4-meilleur-build-iso-nightshade-725124?utm_source=RSS",
-      "date": "2026-10-21T14:25:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/story/716697_6a183b96e0ede.jpg",
-      "summary": "Attribuez la meilleure classe à l'ISO Nightshade, la mitraillette de base dans Call of Duty Modern Warfare 4. On vous donne la liste des accessoires à utiliser absolument.",
-      "tags": []
-    },
-    {
       "title": "Wargaming cofounder&#8217;s Mika Games raises $10m to back studios beyond soft launch",
       "link": "https://mobilegamer.biz/wargaming-cofounders-mika-games-raises-10m-to-back-studios-beyond-soft-launch/",
       "date": "2026-10-21T14:05:48.000Z",
@@ -978,32 +1502,12 @@
       "tags": []
     },
     {
-      "title": "La nouvelle mise à jour de Cyberpunk 2077 fait le lien avec la série Netflix et répond à une théorie des fans",
-      "link": "https://www.jeuxvideo.com/news/2110206/la-nouvelle-mise-a-jour-de-cyberpunk-2077-fait-le-lien-avec-la-serie-netflix-et-repond-a-une-theorie-des-fans.htm",
-      "date": "2026-10-21T14:00:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179258/1792576368-3959-card.jpg",
-      "summary": "CD Projekt Red prépare le terrain pour la mise à jour 2.5 de Cyberpunk 2077. En s'articulant autour de la saison 2 de la série animée Edgerunners, cette mise à jour confirme l'une…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
       "title": "How to run an indie game studio: Part 4, Setting (and hitting) quarterly rocks",
       "link": "https://www.gamesindustry.biz/how-to-run-an-indie-game-studio-part-4-setting-and-hitting-quarterly-rocks",
       "date": "2026-10-21T14:00:00.000Z",
       "sourceId": "gibiz",
       "image": "https://assetsio.gnwcdn.com/firm-framework.png?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Previously in this series, we've defined your studio purpose , set clear goals for the future , and looked at how to catch and solve the problems that get in the way . This week…",
-      "tags": []
-    },
-    {
-      "title": "On a testé Dragon Ball Xenoverse 3, un nouvel épisode qui pourrait tout changer pour les combats",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/dragon-ball-xenoverse-3-preview-pve-soul-725113?utm_source=RSS",
-      "date": "2026-10-21T14:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6ad8aaf9b5e78.jpg",
-      "summary": "L’appel du combat sonnera l’an prochain pour les fans de Dragon Ball. Après 10 ans, Bandai Namco et Dimps refont équipe pour faire de nous le héros de l’aventure. Alors que Dragon…",
       "tags": []
     },
     {
@@ -1025,30 +1529,12 @@
       "tags": []
     },
     {
-      "title": "GUIDE Call of Duty Modern Warfare 4 : la tier list des meilleures armes du jeu",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/call-of-duty-modern-warfare-4-tier-list-armes-725126?utm_source=RSS",
-      "date": "2026-10-21T13:34:53.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/soluces/725126_6ad8b05e4fb78.jpg",
-      "summary": "Quelles sont les meilleurs armes du moment sur Call of Duty Modern Warfare 4 ? Voici notre tier list des armes actuellement disponibles sur le dernier titre de la franchise FPS…",
-      "tags": []
-    },
-    {
       "title": "Tsugai : que se passe-t-il après le cliffhanger du dernier épisode, faut-il lire le manga ?",
       "link": "https://fr.ign.com/tsugai-tv/93333/tsugai-que-se-passe-t-il-apres-le-cliffhanger-du-dernier-episode-faut-il-lire-le-manga",
       "date": "2026-10-21T13:24:28.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/anime-tsugai-daemons-of-the-shadow-realm-2026-casting_tab5.png",
       "summary": "A quand la saison 2 ?",
-      "tags": []
-    },
-    {
-      "title": "GUIDE Call of Duty Modern Warfare 4 : où trouver les plaques d'identité dans le chapitre 13 pour le trophée/succès « Jamais oublié » ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-call-of-duty-modern-warfare-4-ou-trouver-plaques-identite-chapitre-13-725133?utm_source=RSS",
-      "date": "2026-10-21T13:22:31.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a85af2a2b4d1.webp",
-      "summary": "Vous faites la chasse aux trophées/succès et cherchez à mettre la main sur les plaques d’identité du chapitre 13 de Call of Duty Modern Warfare 4 ? Voici où les trouver.",
       "tags": []
     },
     {
@@ -1070,15 +1556,6 @@
       "tags": []
     },
     {
-      "title": "Je ne connais RIEN à Warhammer mais je suis heureux de rejouer à un jeu de stratégie grâce à Dawn of War IV !",
-      "link": "https://www.jeuxvideo.com/news/2109807/je-ne-connais-rien-a-warhammer-mais-je-suis-heureux-de-rejouer-a-un-jeu-de-strategie-grace-a-dawn-of-war-iv.htm",
-      "date": "2026-10-21T13:00:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179252/1792518067-3002-card.jpg",
-      "summary": "Les jeux de stratégie en temps réel me manquent ! Après avoir saigné les Starcraft, Age of Empires et autres Command and Conquer, j'ai FAIM. Et s'il faut me rabattre sur Warhammer…",
-      "tags": []
-    },
-    {
       "title": "Le Loremaster de Cyberpunk 2077 chez CD Projekt confirme l’année dans laquelle se déroule Edgerunners 2, suscitant ainsi les spéculations des fans quant aux fins canoniques",
       "link": "https://fr.ign.com/cyberpunk-2077/93332/le-loremaster-de-cyberpunk-2077-chez-cd-projekt-confirme-lannee-dans-laquelle-se-deroule-edgerunners",
       "date": "2026-10-21T12:52:55.000Z",
@@ -1097,30 +1574,12 @@
       "tags": []
     },
     {
-      "title": "GUIDE Call of Duty Modern Warfare 4 : où trouver les 4 objets de contrebande à récupérer dans le chapitre 3 ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-call-of-duty-modern-warfare-4-ou-trouver-objets-contrebande-chapitre-3-725119?utm_source=RSS",
-      "date": "2026-10-21T12:35:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/soluces/725119_6ad8aea8a6846.jpg",
-      "summary": "Vous faites la chasse aux collectibles et cherchez à obtenir tous les objets de contrebande dans le chapitre 3 de Call of Duty Modern Warfare 4 ? Voici où les trouver.",
-      "tags": []
-    },
-    {
       "title": "October’s Collabs Corner: Pokémon goes clubbing, Love and Deepspace meets Blade Runner 2049, Monopoly Go at McDonald’s, and more",
       "link": "https://www.pocketgamer.biz/octobers-collabs-corner/",
       "date": "2026-10-21T12:35:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141810/90002/collaborations-roundup-october-2026-image-2_l660.jpg",
       "summary": "Among the updates, announcements and marketing drives for mobile games, this bustling industry sees a never-ending flow of crossovers and collaborations. Some partnerships see…",
-      "tags": []
-    },
-    {
-      "title": "Diablo 5 est déjà officiellement passé à une phase cruciale de son développement, Blizzard mise tout sur cette suite ambitieuse",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/diablo-5-debut-tournage-cinematiques-725112?utm_source=RSS",
-      "date": "2026-10-21T12:26:59.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/723413_6ab2474c902fc.jpg",
-      "summary": "Annoncé il y a tout juste un mois, Diablo 5 passe déjà la vitesse supérieure alors que Blizzard mise tout sur cette suite ambitieuse de sa célèbre franchise hack'n slash.",
       "tags": []
     },
     {
@@ -1142,24 +1601,6 @@
       "tags": []
     },
     {
-      "title": "Indiscretions chez Microsoft : le prix de leur prochaine console serait déjà connu, et il ne va pas vous plaire",
-      "link": "https://www.jeuxvideo.com/news/2110179/indiscretions-chez-microsoft-le-prix-de-leur-prochaine-console-serait-deja-connu-et-il-ne-va-pas-vous-plaire.htm",
-      "date": "2026-10-21T12:00:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179257/1792572692-5862-card.jpg",
-      "summary": "Une tempête se prépare dans le monde du jeu vidéo suite à une fuite massive d'informations venant des hautes sphères de Microsoft. La future génération de consoles pourrait…",
-      "tags": []
-    },
-    {
-      "title": "On a rejoué à Warhammer 40,000 Dawn of War 4 : un retour en force de la licence culte et l’un des meilleurs STR de l’année ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/dawn-of-war-4-preview-campagne-escarmouche-725103?utm_source=RSS",
-      "date": "2026-10-21T12:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/story/700801_68a5602f8fa8c.jpg",
-      "summary": "22 ans après un premier épisode légendaire et un fleuron du STR des années 2000, et malgré un troisième épisode qui avait grandement divisé en 2017, le grand retour de la…",
-      "tags": []
-    },
-    {
       "title": "I've played 2 of Dawn of War 4's campaigns, and they're everything I hoped they'd be",
       "link": "https://www.pcgamer.com/games/rts/ive-played-2-of-dawn-of-war-4s-campaigns-and-theyre-everything-i-hoped-theyd-be/",
       "date": "2026-10-21T12:00:00.000Z",
@@ -1178,104 +1619,12 @@
       "tags": []
     },
     {
-      "title": "Les fonctionnalités du DLC Charting the Unknown de Crimson Desert ont été dévoilées, notamment la construction navale, les relations amoureuses et l’aménagement de logements",
-      "link": "https://fr.ign.com/crimson-desert/93329/les-fonctionnalites-du-dlc-charting-the-unknown-de-crimson-desert-ont-ete-devoilees-notamment-la-con",
-      "date": "2026-10-21T11:42:06.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/crimson-de/crimson-desert-charting-the-unknown-dlc-features-revealed-in_8avw.jpg",
-      "summary": "Le plein d&#x27;amour.",
-      "tags": []
-    },
-    {
-      "title": "Indies and original IP blew up in 2026",
-      "link": "https://www.gamesindustry.biz/indies-and-original-ip-blew-up-in-2026",
-      "date": "2026-10-21T11:39:48.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Sensor-Tower-header.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Research by Sensor Tower – done at the request of GamesIndustry.biz – shows that indies and original IP made up a much higher proportion of the biggest PC and console games of…",
-      "tags": []
-    },
-    {
       "title": "Monopoly Go earned Hasbro $41m in Q3, taking its nine-month total to $127m",
       "link": "https://mobilegamer.biz/monopoly-go-earned-hasbro-41m-in-q3-taking-its-nine-month-total-to-127m/",
       "date": "2026-10-21T11:17:18.000Z",
       "sourceId": "mgbiz",
       "image": null,
       "summary": "Revenue from Scopely's hit is level with 2025 as the game moves through Looney Tunes, KPop Demon Hunters and Ghostbusters crossovers.",
-      "tags": []
-    },
-    {
-      "title": "80% of Samsung's data center memory is already sold for 2027, meaning yet another double-digit price increase for RAM expected and more likely to come",
-      "link": "https://www.pcgamer.com/hardware/memory/80-percent-of-samsungs-data-center-memory-is-already-sold-for-2027-meaning-yet-another-double-digit-price-increase-for-ram-expected-and-more-likely-to-come/",
-      "date": "2026-10-21T11:14:24.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/LanFmJykroZiecWNLtRCh3-1920-80.png",
-      "summary": "Next year isn't looking so hot for sensibly priced hardware upgrades either…",
-      "tags": []
-    },
-    {
-      "title": "110 million votes later Nurse Harrow has finally made it into Deadlock, with special thanks to a particularly dedicated player who 'cast exactly 1,000 votes for her'",
-      "link": "https://www.pcgamer.com/games/moba/110-million-votes-later-nurse-harrow-has-finally-made-it-into-deadlock-with-special-thanks-to-a-particularly-dedicated-player-who-cast-exactly-1-000-votes-for-her/",
-      "date": "2026-10-21T11:14:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/MhL8YnvDkUDeEtfbuvDbq3-1920-80.png",
-      "summary": "Nurse Harrow voters did, however, prove themselves to be of the most skilled players.",
-      "tags": []
-    },
-    {
-      "title": "Mode Boss Rush, New Game+ repensé : Saros frappe un grand coup avec la mise à jour Zenith",
-      "link": "https://www.gamekult.com/actualite/mode-boss-rush-new-game-repense-saros-frappe-un-grand-coup-avec-la-mise-a-jour-zenith-3050872534.html",
-      "date": "2026-10-21T11:07:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872534/saros-housemarque-deploie-zenith-une-mise-a-jour-gratuite-axee-sur-l-accessibilite-et-la-rejouabilite-a6a7d816__800_800__447-0-1526-1080.jpg",
-      "summary": "Le joli bébé de Housemarque, Saros, vient de s'offrir une cure de jouvence avec Zenith, une mise à jour gratuite bien dodue. Conscient de l'intransigeance de son système de…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "JV redevient jeuxvideo.com : le grand retour aux sources (et tout ce qui change)",
-      "link": "https://www.jeuxvideo.com/news/2110160/jv-redevient-jeuxvideo-com-le-grand-retour-aux-sources-et-tout-ce-qui-change.htm",
-      "date": "2026-10-21T10:59:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179258/1792575166-8245-card.jpg",
-      "summary": "Depuis 1997, nous vous accompagnons dans l'univers du jeu vidéo. De l’époque des cartouches qui marchaient une fois sur deux jusqu’aux consoles actuelles, plusieurs générations de…",
-      "tags": []
-    },
-    {
-      "title": "Games like Call of Duty and EA Sports FC most at risk of losing players during GTA 6 launch, according to new data",
-      "link": "https://www.gamesindustry.biz/games-like-call-of-duty-and-ea-sports-fc-most-at-risk-of-losing-players-during-gta-6-launch-according-to-new-data",
-      "date": "2026-10-21T10:53:35.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/gta-6_S2BF1hr.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "New data shows that competitive shooters and sports games are most at risk of losing players to Grand Theft Auto 6 during its launch next month.",
-      "tags": []
-    },
-    {
-      "title": "Déjà minoritaires dans le jeu vidéo, les femmes pourraient être les premières victimes de l'essor de l'IA dans les studios",
-      "link": "https://www.jeuxvideo.com/news/2109591/deja-minoritaires-dans-le-jeu-video-les-femmes-pourraient-etre-les-premieres-victimes-de-l-essor-de-l-ia-dans-les-studios.htm",
-      "date": "2026-10-21T10:50:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179240/1792403268-9111-card.jpg",
-      "summary": "Alors que l'intelligence artificielle bouleverse les méthodes de production des jeux vidéo, une partie des professionnels pourrait en payer le prix fort. Et dans une industrie où…",
-      "tags": []
-    },
-    {
-      "title": "La marque de bière fictive vue dans GTA 6 pourrait bien devenir réelle",
-      "link": "https://fr.ign.com/grand-theft-auto-6/93328/la-marque-de-biere-fictive-vue-dans-gta-6-pourrait-bien-devenir-reelle",
-      "date": "2026-10-21T10:43:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/i/it-looks-l/it-looks-like-gta-6s-beer-brands-are-about-to-become-real_1ccv.jpg",
-      "summary": "Avec modération.",
-      "tags": []
-    },
-    {
-      "title": "'We expect mass attacks to start within 15 minutes of the release': Web admins braced for emergency PHP updates to plug leaked high-severity holes",
-      "link": "https://www.pcgamer.com/software/security/we-expect-mass-attacks-to-start-within-15-minutes-of-the-release-web-admins-braced-for-emergency-php-updates-to-plug-leaked-high-severity-holes/",
-      "date": "2026-10-21T10:39:05.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/kNCDGE87fMuTymbxurAHYN-1920-80.jpg",
-      "summary": "Batten down the virtual hatches.",
       "tags": []
     },
     {
@@ -1288,71 +1637,12 @@
       "tags": []
     },
     {
-      "title": "Don't Nod (Life is Strange) fait le bilan et ça s'annonce mal pour la suite",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/dont-nod-procedure-sauvegarde-licenciement-725101?utm_source=RSS",
-      "date": "2026-10-21T10:27:31.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6ad88c3b7cebd.jpg",
-      "summary": "Don't Nod, le studio principalement connu pour les premiers Life is Strange, lance un plan de sauvegarde pour tenter de sauver sa branche française au risque de licencier de…",
-      "tags": []
-    },
-    {
       "title": "Umamusume's LA concerts cancelled over US visa issues",
       "link": "https://www.pocketgamer.biz/umamusumes-la-concerts-cancelled-over-us-visa-issues/",
       "date": "2026-10-21T10:25:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/134289/90085/uma-musume-global-launch-trailer_l660.jpg",
       "summary": "Cygames has cancelled its Umamusume: Pretty Derby 7th Event: The Stage concerts in Los Angeles after failing to secure US visas for the voice actresses due to perform at the…",
-      "tags": []
-    },
-    {
-      "title": "Sony publie une nouvelle mise à jour du firmware de la PS5 alors que la course au jailbreak s’intensifie à l’approche de la sortie de GTA 6",
-      "link": "https://fr.ign.com/grand-theft-auto-6/93327/sony-publie-une-nouvelle-mise-a-jour-du-firmware-de-la-ps5-alors-que-la-course-au-jailbreak-sintensi",
-      "date": "2026-10-21T10:18:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/s/sony-issue/sony-issues-new-ps5-firmware-update-as-jailbreak-race-heats_9hu5.jpg",
-      "summary": "Mesure de protection ?",
-      "tags": [
-        "patch",
-        "release"
-      ]
-    },
-    {
-      "title": "Star Wars Battlefront 3 : les rumeurs s'emballent autour de DICE, Respawn et Bungie",
-      "link": "https://www.gamekult.com/actualite/star-wars-battlefront-3-les-rumeurs-s-emballent-autour-de-dice-respawn-et-bungie-3050872532.html",
-      "date": "2026-10-21T10:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872532/star-wars-battlefront-3-les-rumeurs-s-emballent-autour-de-dice-respawn-et-bungie-b11805b0__800_800__399-0-1478-1080.jpg",
-      "summary": "L'hypothèse d'un troisième épisode pour la saga Star Wars Battlefront refait surface avec insistance. Plusieurs bruits de couloir contradictoires désignent tour à tour DICE…",
-      "tags": []
-    },
-    {
-      "title": "La PS5 accueille déjà une nouvelle mise à jour, qu'apporte-t-elle de nouveau ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps5-mise-a-jour-systeme-26-07-14-20-00-patch-notes-725104?utm_source=RSS",
-      "date": "2026-10-21T10:00:47.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/463703_6502f8e5ad71a.jpg",
-      "summary": "Sans crier gare, PlayStation vient tout juste de déployer une nouvelle mise à jour à télécharger dès maintenant sur PS5. Voici tous les changements qu’elle apporte.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Chinese repair centre has received 7 melted 12+4-pin Nvidia GPUs in just the past two days alone",
-      "link": "https://www.pcgamer.com/hardware/graphics-cards/chinese-repair-centre-has-received-7-melted-12-4-pin-nvidia-gpus-in-just-the-past-two-days-alone/",
-      "date": "2026-10-21T10:00:07.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/a9PnCDMGTLXJaMnyvDyntF-1920-80.jpg",
-      "summary": "This is not getting better, is it?",
-      "tags": []
-    },
-    {
-      "title": "Here's another gizmo to prevent your graphics card from melting - wouldn't it be nice if 12+4-pin connectors weren't a cause for concern at all?",
-      "link": "https://www.pcgamer.com/hardware/graphics-cards/heres-another-gizmo-to-prevent-your-graphics-card-from-melting-wouldnt-it-be-nice-if-12-4-pin-connectors-werent-a-cause-for-concern-at-all/",
-      "date": "2026-10-21T09:59:41.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/SxnsCF6pwibC6d87uZFUBk-1920-80.jpg",
-      "summary": "I'm thankful for accessories like this, but I wish it wasn't my problem to sort in the first place.",
       "tags": []
     },
     {
@@ -1365,15 +1655,6 @@
       "tags": []
     },
     {
-      "title": "Vous attendez encore Beyond Good & Evil 2 ? Continuez : la production n'est pas lancée",
-      "link": "https://www.gamekult.com/actualite/vous-attendez-encore-beyond-good-evil-2-continuez-le-developpement-n-est-pas-lance-3050872538.html",
-      "date": "2026-10-21T09:38:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872538/ccbc8283__800_800__72-0-1153-1080.jpg",
-      "summary": "Gautoz d'Origami est allé chercher des informations sur le développement interminable de Beyond Good & Evil 2, et les nouvelles ne sont pas bonnes : le blockbuster d'Ubisoft…",
-      "tags": []
-    },
-    {
       "title": "Norway social media ban to target Roblox, Snapchat and TikTok",
       "link": "https://www.pocketgamer.biz/norway-social-media-ban-to-target-roblox-snapchat-and-tiktok/",
       "date": "2026-10-21T09:15:00.000Z",
@@ -1383,138 +1664,12 @@
       "tags": []
     },
     {
-      "title": "Le jeu d'horreur JIAOHUN mise sur le folklore chinois et une esthétique VHS",
-      "link": "https://www.gamekult.com/actualite/le-jeu-d-horreur-jiaohun-mise-sur-le-folklore-chinois-et-une-esthetique-vhs-3050872529.html",
-      "date": "2026-10-21T08:59:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872529/le-jeu-d-horreur-jiaohun-mise-sur-le-folklore-chinois-et-une-esthetique-vhs-b5ee9a0a__800_800__461-0-1540-1080.jpg",
-      "summary": "Le studio de Shanghai 12AM BLACKOUT vient de lancer la première bande-annonce de JIAOHUN, une expérience d'horreur psychologique en vue subjective. Attendu pour 2027 sur PC et…",
-      "tags": []
-    },
-    {
-      "title": "Vivrato: 97% of studio leaders use AI in some form during development in EU and North America",
-      "link": "https://www.gamesindustry.biz/vivrato-97-of-studio-leaders-use-ai-in-some-form-during-development-in-eu-and-north-america",
-      "date": "2026-10-21T08:40:54.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/fotis-fotopoulos-DuHKoV44prg-unsplash-(1).jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "97% of studio leaders have used AI in some form during development, with 94% having used AI in at least one of the nine production stages.",
-      "tags": []
-    },
-    {
-      "title": "Fight Night, la franchise de simulation de boxe très appréciée d’EA mais en sommeil depuis longtemps, fait son grand retour",
-      "link": "https://fr.ign.com/fight-night-champion/93326/fight-night-la-franchise-de-simulation-de-boxe-tres-appreciee-dea-mais-en-sommeil-depuis-longtemps-f",
-      "date": "2026-10-21T08:34:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/f/fight-nigh/fight-night-eas-beloved-but-long-dormant-boxing-sim-franchis_vtvp.jpg",
-      "summary": "Que quelqu’un appelle Joe Tessitore !",
-      "tags": []
-    },
-    {
-      "title": "Cet Assassin's Creed en Chine se dévoile en vidéos et il était très prometteur. Dommage...",
-      "link": "https://www.jeuxvideo.com/news/2109625/cet-assassin-s-creed-en-chine-se-devoile-en-videos-et-il-etait-tres-prometteur-dommage.htm",
-      "date": "2026-10-21T08:30:52.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179249/1792489987-1032-card.jpg",
-      "summary": "Des images de gameplay viennent de révéler l'existence de cet ancien projet Assassin's Creed se déroulant durant la Chine impériale. Développé en secret par Ubisoft et Tencent, le…",
-      "tags": []
-    },
-    {
       "title": "The Beyond Games Transmedia Summit returns to PG Connect London 2027",
       "link": "https://www.pocketgamer.biz/the-beyond-games-transmedia-summit-returns-to-pg-connect-london-2027/",
       "date": "2026-10-21T08:30:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141699/90013/bgts-ldn27-pgbizarticle-generic-pic1-1200x_l660.jpg",
       "summary": "PG Connects London is always our biggest and most popular conference of the year. In 2026, we welcomed c. 3,000 attendees from 1,600 companies across 60 countries. Returning to…",
-      "tags": []
-    },
-    {
-      "title": "Xbox Helix : la console portable en 2027, la console de salon en 2028 ?",
-      "link": "https://www.gamekult.com/actualite/xbox-helix-la-console-portable-en-2027-la-console-de-salon-en-2028-3050872535.html",
-      "date": "2026-10-21T08:26:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872535/xbox-helix-la-console-portable-en-2027-la-console-de-salon-en-2028-e9409ab7__800_800__431-0-1512-1080.jpg",
-      "summary": "Hier, le magazine économique Fortune a publié un nouveau portrait d'Asha Sharma, PDG de Xbox, qui est bourré d'informations exclusives grâce aux sources du média. Aujourd'hui…",
-      "tags": []
-    },
-    {
-      "title": "Xbox Game Pass : bientôt l'abonnement à la carte ?",
-      "link": "https://www.gamekult.com/actualite/xbox-game-pass-bientot-l-abonnement-a-la-carte-3050872536.html",
-      "date": "2026-10-21T08:14:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872536/xbox-game-pass-bientot-l-abonnement-a-la-carte-164a9ceb__800_800__795-0-1876-1080.jpg",
-      "summary": "Dans un nouveau portrait de la PDG d'Xbox Asha Sharma, le magazine économique Fortune affirme que le Xbox Game Pass va bientôt être complètement rénové pour proposer des formules…",
-      "tags": []
-    },
-    {
-      "title": "KPop Demon Hunters 2 sortira en salles aux Etats-Unis après l’énorme succès du premier volet en streaming",
-      "link": "https://fr.ign.com/k-pop-demon-hunters/93324/kpop-demon-hunters-2-sortira-en-salles-apres-lenorme-succes-du-premier-volet-en-streaming",
-      "date": "2026-10-21T08:05:18.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/k/kpop-demon/kpop-demon-hunters-2-gets-a-theatrical-release-after-first-m_uwyf.jpg",
-      "summary": "That&#x27;s how it&#x27;s done, done, done.",
-      "tags": []
-    },
-    {
-      "title": "Demystifying unions: What games leaders need to know",
-      "link": "https://www.gamesindustry.biz/demystifying-unions-what-games-leaders-need-to-know",
-      "date": "2026-10-21T08:00:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/IWGB_members_with_banner.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "If you run a video games company, working with unions is rapidly becoming an inevitability rather than a possibility.",
-      "tags": []
-    },
-    {
-      "title": "L'arlésienne Spine montre son gameplay Gun-fu : en gros, c'est John Wick, avec une waifu",
-      "link": "https://www.gamekult.com/actualite/l-arlesienne-spine-montre-son-gameplay-gun-fu-en-gros-c-est-john-wick-avec-une-waifu-3050872526.html",
-      "date": "2026-10-21T07:51:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872526/l-arlesienne-spine-montre-son-gameplay-gun-fu-en-gros-c-est-john-wick-avec-une-waifu-251bc8db__800_800__274-0-1353-1080.jpg",
-      "summary": "Après des années de développement chaotique et un changement de cap radical, Spine refait surface. Le jeu d'action de Nekki a montré un peu de son gameplay Gun-fu (pour Gun +…",
-      "tags": []
-    },
-    {
-      "title": "La prochaine console Xbox pourrait coûter jusqu’à 1 800 dollars, selon certaines rumeurs ; une nouvelle console portable devrait sortir l’année prochaine, avant la Helix",
-      "link": "https://fr.ign.com/xbox-next-generation/93321/la-prochaine-console-xbox-pourrait-couter-jusqua-1-800-dollars-selon-certaines-rumeurs-une-nouvelle",
-      "date": "2026-10-21T07:46:18.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/x/xboxs-next/xboxs-next-console-may-reportedly-cost-as-much-as-1800-new-h_vwzk.jpg",
-      "summary": "C’est une stratégie audacieuse, Cotton.",
-      "tags": []
-    },
-    {
-      "title": "Les fans de GTA 6 pensent que Rockstar Games tourne actuellement à Miami un trailer live action d'envergure",
-      "link": "https://fr.ign.com/grand-theft-auto-6/93323/les-fans-de-gta-6-pensent-que-rockstar-games-tourne-actuellement-a-miami-un-trailer-live-action-denv",
-      "date": "2026-10-21T07:37:00.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-fans/gta-6-fans-think-rockstar-games-is-shooting-an-elaborate-and_1r5a.png",
-      "summary": "Vroum vroum.",
-      "tags": []
-    },
-    {
-      "title": "Asus ROG Xbox Ally X20 – Images de la console",
-      "link": "https://fr.ign.com/asus-rog-xbox-ally-x20/93322/asus-rog-xbox-ally-x20-images-de-la-console",
-      "date": "2026-10-21T07:23:51.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/a/asus-rog-x/asus-rog-xbox-ally-x20-hands-on-photos_fbyg.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "AMD FSR 4.1 arrive enfin sur la Xbox Series X, rivalisant avec le QSSR de la PS5",
-      "link": "https://fr.ign.com/amd-radeon-rx-6950-xt/93320/amd-fsr-41-arrive-enfin-sur-la-xbox-series-x-rivalisant-avec-le-qssr-de-la-ps5",
-      "date": "2026-10-21T07:23:51.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/a/amd-fsr-41/amd-fsr-41-is-finally-coming-to-xbox-series-x-rivaling-ps5s_yy5t.jpg",
-      "summary": "Une meilleure mise à l’échelle pour tous.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Ninja Gaiden Black : l'authentique expression du masochisme",
-      "link": "https://www.gamekult.com/actualite/ninja-gaiden-black-l-authentique-expression-du-masochisme-101-3050866321.html",
-      "date": "2026-10-21T07:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866321/20-ans-apres-ninja-gaiden-black-est-toujours-le-meilleur-jeu-d-action-du-monde-7828ed84__800_800__3-717-2488-3202.jpg",
-      "summary": "C'est par le plus triste des hasards que nous célébrons l'anniversaire de la sortie européenne de Ninja Gaiden Black quelques jours seulement après avoir appris le décès de son…",
       "tags": []
     },
     {
@@ -1569,51 +1724,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141730/90046/mad-hooks-hazim-al-hanbali_l660.jpg",
       "summary": "The MENA region has seen impressive growth in recent years, with MENA-3 (Saudi Arabia, UAE and Egypt) in particular projected to reach $3 billion in player spending by 2030. Amid…",
-      "tags": []
-    },
-    {
-      "title": "Griffin Gaming Partners and Entertainment 360 launch game adaptation venture HITpoint Entertainment",
-      "link": "https://www.pocketgamer.biz/griffin-gaming-partners-and-entertainment-360-launch-game-adaptation-venture/",
-      "date": "2026-10-20T11:53:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/137270/90076/griffin-gaming-partners-logo_l660.jpg",
-      "summary": "Griffin Gaming Partners and Entertainment 360 have launched HITpoint Entertainment, a new venture focused on bringing video game characters, worlds and stories to film and…",
-      "tags": []
-    },
-    {
-      "title": "Dragon City, FarmVille 3, Golf Rival: Zynga’s Halloween plans for 16 live games",
-      "link": "https://www.pocketgamer.biz/dragon-city-farmville-3-golf-rival-zyngas-halloween-plans-for-16-live-games/",
-      "date": "2026-10-20T11:50:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141782/90080/farmville-3-halloween-2026_l660.jpg",
-      "summary": "Zynga is running Halloween events across 16 of its live games, including hits like Dragon City and Harry Potter: Puzzles & Spells. Ahead of the holiday on October 31st, the…",
-      "tags": []
-    },
-    {
-      "title": "Savvy Games Group signs MoU with Bahrain university to support games education",
-      "link": "https://www.pocketgamer.biz/savvy-games-group-signs-mou-with-bahrain-university-to-support-games-education/",
-      "date": "2026-10-20T10:34:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141775/90077/savvy-bahrain-mou_l660.jpg",
-      "summary": "Savvy Games Group has signed a memorandum of understanding (MoU) with the University of Technology Bahrain (UTB) to prepare students for careers in the games industry. The…",
-      "tags": []
-    },
-    {
-      "title": "App Store review times are being dragged down by a flood of AI-made apps and games",
-      "link": "https://mobilegamer.biz/app-store-review-times-are-being-dragged-down-by-a-flood-of-ai-made-apps-and-games/",
-      "date": "2026-10-20T10:29:00.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "One studio boss says review times “have gone back a decade”, and another says Apple's \"poor service\" is \"costing developers significantly\". Google Play Store review times remain…",
-      "tags": []
-    },
-    {
-      "title": "The first speakers announced for PG Connects Jordan - including Epic Games, Roblox and Mad Hook",
-      "link": "https://www.pocketgamer.biz/the-first-speakers-announced-for-pg-connects-jordan-including-epic-games-roblox-and-mad-hook/",
-      "date": "2026-10-20T08:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141572/90036/pgc-jor26-article-image-gen-d-1200x_l660.jpg",
-      "summary": "We're heading back to Jordan's capital city, Amman, for the return of Pocket Gamer Connects Jordan this November 7th and 8th. We'll deliver two days of networking and learning…",
       "tags": []
     },
     {
