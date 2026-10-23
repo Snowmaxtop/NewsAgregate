@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:52:40.775Z",
+  "generatedAt": "2026-10-23T06:49:56.398Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -47,15 +47,15 @@
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-22T16:48:38.000Z",
+      "newest": "2026-10-23T06:00:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-23T01:00:00.000Z",
-      "kept": 16
+      "newest": "2026-10-23T06:36:00.000Z",
+      "kept": 17
     },
     "kotaku": {
       "status": "ok",
@@ -115,6 +115,53 @@
     }
   },
   "articles": [
+    {
+      "title": "Sur Switch 2, un premier exploit vers le piratage de la console ?",
+      "link": "https://www.gamekult.com/actualite/sur-switch-2-un-premier-exploit-vers-le-piratage-de-la-console-3050872564.html",
+      "date": "2026-10-23T06:36:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872564/et-voila-comment-le-piratage-de-la-switch-2-commenca-a385d7d6__800_800__196-0-1049-853.jpg",
+      "summary": "Il aura donc fallu un peu plus d'un an. Un an pour que soit découverte la première vraie faille de la Switch 2. Selon Wccftech, qui a vu la vidéo de démonstration du chercheur en…",
+      "tags": []
+    },
+    {
+      "title": "Selon Masahiro Sakurai, les créateurs de jeux vraiment originaux compteront encore davantage à l'ère des copies de jeux générées par IA",
+      "link": "https://www.gamekult.com/actualite/selon-masahiro-sakurai-les-createurs-de-jeux-vraiment-originaux-compteront-encore-davantage-a-l-ere-des-copies-de-jeux-generees-par-ia-3050872567.html",
+      "date": "2026-10-23T06:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872567/selon-masahiro-sakurai-les-createurs-de-jeux-vraiment-originaux-compteront-encore-davantage-a-l-ere-des-copies-de-jeux-generees-par-ia-ccb9a8d1__800_800__408-0-1487-1080.jpg",
+      "summary": "Le papa de Smash Bros et Kirby Masahiro Sakurai s'est fait plutôt discret depuis la sortie l'an dernier de Kirby Air Riders. Tout récemment interrogé par Denfaminico Gamer, il…",
+      "tags": []
+    },
+    {
+      "title": "« C'est comme ça qu'on découvre les ficelles d'un jeu » Cyberpunk 2 promet d'être réalisé par une équipe de rêve avec de nombreux passionnés",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2-equipe-recrutement-moddeurs-725205?utm_source=RSS",
+      "date": "2026-10-23T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/426865_6478687303303.jpg",
+      "summary": "En plus de vétérans qui ont sauvé le jeu original, Cyberpunk 2 compterait également dans son équipe de nombreux passionnés embauchés après s'être fait remarqué par leur travail…",
+      "tags": []
+    },
+    {
+      "title": "Netflix ajoute l'ultime saison de cette série aux 900 millions d'heures de visionnage, ça va encore être un immense carton",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-lupin-partie-4-dispo-725204?utm_source=RSS",
+      "date": "2026-10-23T05:49:36.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf5acbcdb.jpg",
+      "summary": "La saison 4 de Lupin est disponible en intégralité sur Netflix. Omar Sy reprend le rôle titre pour une ultime aventure qui s'annonce spectaculaire. C'est dispo.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Mémoire cash - Forza Motorsport 3 : le jour où la simulation automobile a arrêté de nous punir (pour défier Gran Turismo)",
+      "link": "https://www.gamekult.com/actualite/forza-motorsport-3-le-jour-ou-la-simulation-automobile-a-arrete-de-nous-punir-pour-defier-gran-turismo-3050872507.html",
+      "date": "2026-10-23T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872507/forza-motorsport-3-le-jour-ou-la-simulation-automobile-a-arrete-de-nous-punir-pour-defier-gran-turismo-ede68cfa__800_800__0-0-1079-1080.jpg",
+      "summary": "Souvenons-nous de l'âpreté des simulations automobiles avant la fin des années 2000. L'amateur de belles mécaniques devait accepter un contrat tacite et impitoyable selon lequel…",
+      "tags": []
+    },
     {
       "title": "Preview : Wo Long 2 : Wings of Ember, déjà le souls-like à suivre en 2027 ? Nous avons revu le blockbuster de Koei Tecmo",
       "link": "https://www.gamekult.com/jeux/wo-long-2-wings-of-ember-3050889460/preview-3050872562.html",
@@ -919,21 +966,21 @@
       ]
     },
     {
-      "title": "How Pantaloon is curating an \"evolving library of bold and bizarre games\" with its new subscription service",
-      "link": "https://www.gamesindustry.biz/how-pantaloon-is-curating-an-evolving-library-of-bold-and-bizarre-games-with-its-new-subscription-service",
-      "date": "2026-10-22T11:00:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/CurtainsLogo.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Over recent years, more and more companies have moved away from the traditional publishing model and set their sights on indie curation.",
-      "tags": []
-    },
-    {
       "title": "Report explores how Roblox can maintain older players as it becomes most-played game by total hours in H1 2026",
       "link": "https://www.gamesindustry.biz/report-explores-how-roblox-can-maintain-older-players-as-it-becomes-most-played-game-by-total-hours-in-h1-2026",
       "date": "2026-10-22T11:00:00.000Z",
       "sourceId": "gibiz",
       "image": "https://assetsio.gnwcdn.com/Sonic-Speed-Simulator.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "Roblox generated 4.05 billion hours of playtime across PC and console in H1 2026, making it the most-played game by total hours.",
+      "tags": []
+    },
+    {
+      "title": "How Pantaloon is curating an \"evolving library of bold and bizarre games\" with its new subscription service",
+      "link": "https://www.gamesindustry.biz/how-pantaloon-is-curating-an-evolving-library-of-bold-and-bizarre-games-with-its-new-subscription-service",
+      "date": "2026-10-22T11:00:00.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/CurtainsLogo.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Over recent years, more and more companies have moved away from the traditional publishing model and set their sights on indie curation.",
       "tags": []
     },
     {
@@ -1155,15 +1202,6 @@
       "tags": []
     },
     {
-      "title": "« Je pense qu’on n’y arrivera pas du vivant du projet » Après 18 ans, Beyond Good & Evil 2 n’a toujours pas dépassé la pré-production et semble plus en danger que jamais",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/beyond-good-and-evil-2-rapport-developpement-pre-production-danger-725192?utm_source=RSS",
-      "date": "2026-10-22T09:09:22.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/411162_638779b66d89e.jpg",
-      "summary": "Après deux décennies de développement, le projet Beyond Good & Evil 2 patine sévèrement chez Ubisoft, qui pourrait bientôt être amené à prendre une décision radicale.",
-      "tags": []
-    },
-    {
       "title": "Fermeture de BioWare, annulation d'un projet Les Sims, 400 licenciements... la semaine noire d'Electronic Arts",
       "link": "https://www.gamekult.com/actualite/fermeture-de-bioware-annulation-d-un-projet-les-sims-400-licenciements-la-semaine-noire-d-electronic-arts-3050872552.html",
       "date": "2026-10-22T09:03:00.000Z",
@@ -1179,15 +1217,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141817/90089/mika-games-raises-10m-to-fund-mobile-game-studios_l660.jpg",
       "summary": "Cyprus-based investment company Mika Games has raised $10 million in fresh funding to help mobile games studios develop their titles and test paid marketing campaigns before they…",
-      "tags": []
-    },
-    {
-      "title": "« J'ai hâte d'être une sirène » Disney Dreamlight Valley vous dit tout sur son prochain DLC qui a l'air absolument magique",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-dreamlight-valley-dlc-keepsake-sea-showcase-725180?utm_source=RSS",
-      "date": "2026-10-22T08:52:59.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6ad9be069e958.jpg",
-      "summary": "Gameloft tenait son nouveau showcase Disney Dreamlight Valley pas plus tard que ce 21 octobre 2026, un rendez-vous annuel qui a mis en lumière le prochain DLC, The Keepsake Sea.",
       "tags": []
     },
     {
@@ -1316,24 +1345,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050866358/xenogears-abf3a511__800_800__516-0-1595-1080.jpg",
       "summary": "Sorti en octobre 1998 sur PlayStation (en version US), Xenogears est une sublime anomalie. Un jeu démesuré, tragiquement ambitieux, né d’une époque où Square croyait encore que le…",
-      "tags": []
-    },
-    {
-      "title": "Crimson Desert : pour peu que vous vouliez des infos sur l'extension Charting the Unknown, Pearl Abyss vous offre une vidéo de 6 minutes",
-      "link": "https://www.gamekult.com/actualite/crimson-desert-pour-peu-que-vous-vouliez-des-infos-sur-l-extension-charting-the-unknown-pearl-abyss-vous-offre-une-video-de-6-minutes-3050872546.html",
-      "date": "2026-10-22T05:32:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872546/crimson-desert-pour-peu-que-vous-vouliez-des-infos-sur-l-extension-charting-the-unknown-pearl-abyss-vous-offre-une-video-de-6-minutes-2e242ea8__800_800__1388-0-4625-3240.jpg",
-      "summary": "Pearl Abyss a publié une bande-annonce de six minutes consacrée aux fonctionnalités de Charting the Unknown, extension du fourre-tout action/RPG en monde ouvert Crimson Desert…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - À genoux, prosternez-vous, soyez ravis devant Aladdin sur Mega Drive",
-      "link": "https://www.gamekult.com/actualite/a-genoux-prosternez-vous-soyez-ravis-devant-aladdin-sur-mega-drive-3050872437.html",
-      "date": "2026-10-22T04:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872437/a-genoux-prosternez-vous-soyez-ravis-devant-aladdin-sur-mega-drive-54a52193__800_800__576-100-1455-980.jpg",
-      "summary": "Je vais tout de suite vous décevoir et même déshonorer ce qui fut un des running gags les plus célèbres de Gamekult, mais il ne sera pas question ici de remettre une pièce dans la…",
       "tags": []
     },
     {
