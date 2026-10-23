@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T20:37:04.747Z",
+  "generatedAt": "2026-10-23T23:28:10.266Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-23T18:15:09.000Z",
-      "kept": 15
+      "newest": "2026-10-23T20:20:09.000Z",
+      "kept": 19
     },
     "gameblog": {
       "status": "ok",
@@ -63,28 +63,28 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-23T20:30:36.000Z",
-      "kept": 13
+      "newest": "2026-10-23T21:26:36.000Z",
+      "kept": 14
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-23T20:07:21.000Z",
-      "kept": 24
+      "newest": "2026-10-23T22:46:50.000Z",
+      "kept": 23
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-23T20:01:19.000Z",
+      "newest": "2026-10-23T22:19:03.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-10-22T21:40:32.000Z",
+      "newest": "2026-10-23T21:53:32.000Z",
       "kept": 4
     },
     "pgbiz": {
@@ -99,7 +99,7 @@
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-23T10:55:30.000Z",
-      "kept": 5
+      "kept": 4
     },
     "gdco": {
       "status": "ok",
@@ -118,12 +118,111 @@
   },
   "articles": [
     {
+      "title": "Why private equity acquisitions like the one that just claimed BioWare are so dreaded",
+      "link": "https://www.pcgamer.com/gaming-industry/why-private-equity-acquisitions-like-the-one-that-just-claimed-bioware-are-so-dreaded/",
+      "date": "2026-10-23T22:46:50.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/VcinT8UXinhzfqDjA8Wi2F-1920-80.png",
+      "summary": "BioWare is just the latest casualty in a long history of private equity carnage.",
+      "tags": []
+    },
+    {
+      "title": "7 Classic JRPGs That Are So Good They Never Need a Remake",
+      "link": "https://www.polygon.com/best-classic-jrpgs-no-remake/",
+      "date": "2026-10-23T22:19:03.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/suikoden-2.png",
+      "summary": "These JRPGs may have been ported to newer platforms or lightly remastered, but they look and play nearly identical to when they were first released",
+      "tags": []
+    },
+    {
+      "title": "Every Marvel Post-Credits Scene That Went Nowhere (So Far)",
+      "link": "https://www.polygon.com/marvel-movies-tv-shows-post-credits-scenes-teases/",
+      "date": "2026-10-23T22:16:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25275429/mcu_dangling_threads.jpg",
+      "summary": "Marvel Studios has promised a lot in the Multiverse Saga. Here's every post-credits scene from the MCU we still need answers for.",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect 5 was set in a 'galactic Cold War,' new leak claims, and all 3 endings were wrapped into 1",
+      "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-was-set-in-a-galactic-cold-war-new-leak-claims-and-all-3-endings-were-wrapped-into-1/",
+      "date": "2026-10-23T21:58:50.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Crt9MrXnRKTkx7PBjmUocT-1920-80.jpg",
+      "summary": "The more I hear about what BioWare had cooking, the more pissed off I am that we're never going to get it.",
+      "tags": []
+    },
+    {
+      "title": "7 hours (at last!) with Grand Theft Auto III",
+      "link": "https://www.gamefile.news/p/gta-iii-belated-review",
+      "date": "2026-10-23T21:53:32.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!NFf3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe246a052-7e88-4e40-a6f1-757b4f8f619a_1024x768.jpeg",
+      "summary": "A game about freedom that's still worth your time, if you don't mind your options for playing it.",
+      "tags": []
+    },
+    {
+      "title": "Based on player data, Capcom's pretty happy with the difficulty level of Onimusha: Way of the Sword: 'We think it's hit the right spot'",
+      "link": "https://www.pcgamer.com/games/action/based-on-player-data-capcoms-pretty-happy-with-the-difficulty-level-of-onimusha-way-of-the-sword-we-think-its-hit-the-right-spot/",
+      "date": "2026-10-23T21:43:44.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/m9jozBeHDcZQTCMZLJkNLd-1920-80.png",
+      "summary": "Too easy, too hard, or just right?",
+      "tags": []
+    },
+    {
+      "title": "Belmont&#8217;s Curse Taught Me An Important Lesson About Parrying, Namely I Should Do It More",
+      "link": "https://kotaku.com/belmonts-curse-taught-me-an-important-lesson-about-parrying-namely-i-should-do-it-more-2000749181",
+      "date": "2026-10-23T21:26:36.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/rosebelmont-1280x720.jpg",
+      "summary": "ABP, always be parrying",
+      "tags": []
+    },
+    {
+      "title": "An '80s Cult Horror-Comedy Becomes a Global Streaming Hit on HBO Max",
+      "link": "https://www.polygon.com/gremlins-hbo-max-streaming-success-october-2026/",
+      "date": "2026-10-23T21:00:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2025/11/billy-receiving-a-christmas-gift-in-gremlins.jpg",
+      "summary": "1984's Gremlins finds worldwide streaming success on HBO Max, proving the horror comedy remains a fan favorite decades after its original release.",
+      "tags": []
+    },
+    {
+      "title": "10 New Movies To Watch This Weekend on HBO, Hulu, and Disney Plus (October 23-25)",
+      "link": "https://www.polygon.com/new-movies-streaming-this-weekend-hbo-disney-plus-hulu-october-23-25/",
+      "date": "2026-10-23T21:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-invite.jpg",
+      "summary": "In this week's movie streaming column, we have one of the best and funniest couples dramas of the year, a Disney live-action remake, and more.",
+      "tags": []
+    },
+    {
+      "title": "The Normandy SR-2 Is Now A Haunted House, But It Will Always Be My Home",
+      "link": "https://kotaku.com/mass-effect-5-bioware-closure-universe-legendary-edition-2000749192",
+      "date": "2026-10-23T20:45:06.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/normandycic-1280x720.jpg",
+      "summary": "I have spent years not being able to grieve Mass Effect , and now I finally have to",
+      "tags": []
+    },
+    {
       "title": "Developer Of &#8216;Ecosocialist&#8217; Game Future? No Thanks! Offers Refunds After Using AI Despite Calling It &#8216;Technofascist&#8217;",
       "link": "https://kotaku.com/developer-of-ecosocialist-game-future-no-thanks-offers-refunds-after-using-ai-despite-calling-it-technofascist-2000749158",
       "date": "2026-10-23T20:30:36.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/future-no-thanks-1280x720.jpg",
       "summary": "He seems to still stand by his AI use, though",
+      "tags": []
+    },
+    {
+      "title": "Le progressisme a-t-il tué Bioware ? Retour sur la fin du studio à l'origine de Mass Effect et Baldur's Gate",
+      "link": "https://www.jeuxvideo.com/news/2110379/le-progressisme-a-t-il-tue-bioware-retour-sur-la-fin-du-studio-a-l-origine-de-mass-effect-et-baldur-s-gate.htm",
+      "date": "2026-10-23T20:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674677-4525-card.jpg",
+      "summary": "La fermeture de BioWare marque la fin tragique d'un géant du RPG, voire du jeu vidéo tout entier. Mais réduire cette descente aux enfers à des polémiques autour du \"wokisme\" des…",
       "tags": []
     },
     {
@@ -151,6 +250,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/street-fighter-6-1280x729.jpg",
       "summary": "Ultimate Frame Data was a resource for players to study SF6 chararcter hitboxes",
+      "tags": []
+    },
+    {
+      "title": "Ça y est, la Switch 2 a été craquée : Nintendo va devoir renforcer ses défenses contre le piratage massif",
+      "link": "https://www.jeuxvideo.com/news/2110649/ca-y-est-la-switch-2-a-ete-craquee-nintendo-va-devoir-renforcer-ses-defenses-contre-le-piratage-massif.htm",
+      "date": "2026-10-23T19:40:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792763723-3231-card.jpg",
+      "summary": "Découvert par le chercheur Sammy Hajhamid, un exploit 100% logiciel permet d'exécuter du code natif sur le dernier firmware de la Nintendo Switch 2.",
       "tags": []
     },
     {
@@ -190,6 +298,15 @@
       "tags": []
     },
     {
+      "title": "Call of Duty Modern Warfare 4 : La liste des meilleurs atouts pour monter la classe ultime",
+      "link": "https://www.jeuxvideo.com/news/2110390/call-of-duty-modern-warfare-4-la-liste-des-meilleurs-atouts-pour-monter-la-classe-ultime.htm",
+      "date": "2026-10-23T19:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792677206-5836-card.jpg",
+      "summary": "Le choix des perks dans COD MW4 est tout aussi important que celui du choix de l'arme et de vos équipements stratégiques. Certains de ces bonus peuvent potentiellement retourner…",
+      "tags": []
+    },
+    {
       "title": "Capcom and Square Enix Suffer Online Attacks As Hackers Access Player Data",
       "link": "https://kotaku.com/capcom-and-square-enix-suffer-online-attacks-as-hackers-access-player-data-2000749070",
       "date": "2026-10-23T19:00:54.000Z",
@@ -223,6 +340,15 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/malequarian.JPG",
       "summary": "New Mass Effect: Universe details have surfaced. Reportedly it would have been a spy thriller inspired by John Wick and James Bond.",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 : La liste des meilleures armes pour dominer le champ de bataille !",
+      "link": "https://www.jeuxvideo.com/news/2110383/call-of-duty-modern-warfare-4-la-liste-des-meilleures-armes-pour-dominer-le-champ-de-bataille.htm",
+      "date": "2026-10-23T18:30:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674778-3257-card.jpg",
+      "summary": "A chaque Call of son lot de tier list pour vous aider à faire les bons choix, lorsque vous débloquerez la personnalisation de classe au niveau 4 de Modern Warfare 4. Ici, nous…",
       "tags": []
     },
     {
@@ -280,33 +406,6 @@
       "tags": []
     },
     {
-      "title": "4 Years Ago, 'Doctor Who’s Biggest Failure Was Just the Beginning of the End",
-      "link": "https://www.polygon.com/doctor-who-the-power-of-the-doctor-failed-jodie-whittaker-4th-anniversary/",
-      "date": "2026-10-23T18:00:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jodie-whittaker-potd.jpg",
-      "summary": "Doctor Who has faced problems for years, and it all traces back to one specific finale.",
-      "tags": []
-    },
-    {
-      "title": "Taylor Sheridan's Call of Duty Adaptation Will Have 'Soul,' Director Says",
-      "link": "https://www.polygon.com/call-of-duty-taylor-sheridan-movie-peter-berg/",
-      "date": "2026-10-23T17:59:57.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/call-of-duty.jpg",
-      "summary": "2028's Call of Duty movie adaptation from Peter Berg and Taylor Sheridan won't be a \"popcorn\" action thriller — it will have \"soul\" director says.",
-      "tags": []
-    },
-    {
-      "title": "The 25 Best Games on Xbox Game Pass in 2026",
-      "link": "https://www.polygon.com/best-game-pass-games-xbox/",
-      "date": "2026-10-23T17:59:21.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/assets_2026_06_1780855026_16_gow_eday_marcusscowl_4k.png",
-      "summary": "The best games on Game Pass Ultimate, Premium, and Essential across Xbox console and PC",
-      "tags": []
-    },
-    {
       "title": "'I'm forever grateful to BioWare': 16 game developers share the moment a BioWare game inspired them to join the industry",
       "link": "https://www.pcgamer.com/gaming-industry/im-forever-grateful-to-bioware-16-game-developers-share-the-moment-a-bioware-game-inspired-them-to-join-the-industry/",
       "date": "2026-10-23T17:56:29.000Z",
@@ -322,15 +421,6 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt734556b7d95b0e3c/6adba2900194af6b95dc39c5/gamemakerfeatured.jpg?width=720&quality=80&disable=upscale",
       "summary": "GameMaker's GMRT runtime will be free to use for all developers starting in 2027.",
-      "tags": []
-    },
-    {
-      "title": "Where to find the Netshin Tech Complex in DMZ in Modern Warfare 4",
-      "link": "https://www.polygon.com/mw4-modern-warfare-4-netshin-tech-complex-location/",
-      "date": "2026-10-23T17:35:07.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/modern-warfare-4-dmz-netshin-tech-complex-header.jpg",
-      "summary": "This guide explains where to find the Netshin Tech Complex location in DMZ in Modern Warfare 4.",
       "tags": []
     },
     {
@@ -773,7 +863,7 @@
       "date": "2026-10-23T11:16:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872570/figurez-vous-que-la-serie-saga-n-a-jamais-ete-aussi-populaire-grace-au-remake-de-romancing-saga-2-ff17ced5__800_800__435-0-1514-1080.jpg",
-      "summary": "Presque un an après sa commercialisation, le remake de Romancing Saga 2, nommé Revenge of The Seven, a atteint le million d'exemplaires écoulés, ce qui en fait l'opus SaGa le plus…",
+      "summary": "Presque deux ans après sa commercialisation, le remake de Romancing Saga 2, nommé Revenge of The Seven, a atteint le million d'exemplaires écoulés, ce qui en fait l'opus SaGa le…",
       "tags": []
     },
     {
@@ -1205,57 +1295,12 @@
       "tags": []
     },
     {
-      "title": "My GOTY is $7 and has 253 Steam reviews",
-      "link": "https://www.pcgamer.com/games/racing/my-goty-is-usd7-and-has-253-steam-reviews/",
-      "date": "2026-10-22T22:29:10.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Vo86zsDQwNRKRhdfHbVscG-1920-80.jpg",
-      "summary": "Stuntboost is a racing game for FPS movement sickos.",
-      "tags": []
-    },
-    {
-      "title": "A new Fallout 4 mod adds an entire town, but more importantly, it lets you join a gang",
-      "link": "https://www.pcgamer.com/games/fallout/a-new-fallout-4-mod-adds-an-entire-town-but-more-importantly-it-lets-you-join-a-gang/",
-      "date": "2026-10-22T22:22:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/rKPhj32cokdeEyPpNizGJT-1920-80.jpg",
-      "summary": "They're not the Tunnel Snakes, but they're trying.",
-      "tags": []
-    },
-    {
       "title": "Peak developer can explain the game’s console price",
       "link": "https://www.gamefile.news/p/peak-console-price-bucks",
       "date": "2026-10-22T21:40:32.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!1U3q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc05ad124-5276-42c6-8c71-8dddb7380b9e_1920x1080.jpeg",
       "summary": "Kaman: $10 is not $8, though $12 would also have been $10",
-      "tags": []
-    },
-    {
-      "title": "Epic announces game jam where you have to use AI, then walks back the requirement",
-      "link": "https://www.pcgamer.com/software/ai/epic-announces-game-jam-where-you-have-to-use-ai/",
-      "date": "2026-10-22T21:39:30.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/kcoLy3wUGtqe8Xvfo3fa5U-1920-80.jpg",
-      "summary": "The Unreal Engine and Fortnite company has extended the public a many-fingered invitation.",
-      "tags": []
-    },
-    {
-      "title": "Canadian politician calls on government to help BioWare employees buy the studio and run it themselves",
-      "link": "https://www.pcgamer.com/games/mass-effect/canadian-politician-calls-on-government-to-help-bioware-employees-buy-the-studio-and-run-it-themselves/",
-      "date": "2026-10-22T21:26:29.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/YVKeg3ZHUnns3N5BAXnxzm-1920-80.jpg",
-      "summary": "Avi Lewis, leader of one of Canada's top opposition parties, is not a fan of private equity.",
-      "tags": []
-    },
-    {
-      "title": "Sony Continues Its March Towards An All-Digital Future As It Reportedly Kills Off Its Last 4K UHD Player",
-      "link": "https://kotaku.com/sony-continues-its-march-towards-an-all-digital-future-as-it-reportedly-kills-off-its-last-4k-uhd-player-2000748873",
-      "date": "2026-10-22T20:41:01.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/sony-4kuhd-1-1280x720.jpg",
-      "summary": "It's part of a larger push by the PlayStation maker to move away from making home electronics, like TVs",
       "tags": []
     },
     {
@@ -1331,15 +1376,6 @@
       "tags": []
     },
     {
-      "title": "On the podcast: Apple app review woes, EA job cuts, Supercell, Monopoly Go and more",
-      "link": "https://mobilegamer.biz/subscribe-to-the-mobilegamer-biz-podcast-now/",
-      "date": "2026-10-21T23:20:00.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "This week’s inside view of the mobile game business.",
-      "tags": []
-    },
-    {
       "title": "EA closes BioWare, cuts 400 jobs",
       "link": "https://www.gamefile.news/p/ea-closes-bioware-cuts-400-jobs",
       "date": "2026-10-21T20:12:27.000Z",
@@ -1373,15 +1409,6 @@
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/youtube/w_728,c_limit/4lXClVv75kc",
       "summary": "A serious question for devs today. Also: the latest news & the new GameDiscoverCo Show.",
-      "tags": []
-    },
-    {
-      "title": "Want early access to the biggest new video games? This year’s offers changed a bit.",
-      "link": "https://www.gamefile.news/p/aaa-early-access-offers-2026",
-      "date": "2026-10-16T22:26:52.000Z",
-      "sourceId": "gamefile",
-      "image": "https://substackcdn.com/image/fetch/$s_!-Rhx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5a14fb4-5d31-4543-8216-7246ba1ab3ba_1500x844.png",
-      "summary": "In 2026, Take Two, Microsoft, Activision and others have tweaked how they let players play their mega-releases early.",
       "tags": []
     },
     {
