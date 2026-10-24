@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T18:11:14.252Z",
+  "generatedAt": "2026-10-24T20:53:20.755Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-24T10:04:44.000Z",
-      "kept": 7
+      "kept": 6
     },
     "gamedev": {
       "status": "ok",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-24T15:15:06.000Z",
+      "newest": "2026-10-24T18:30:09.000Z",
       "kept": 13
     },
     "gameblog": {
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-24T17:27:51.000Z",
-      "kept": 9
+      "newest": "2026-10-24T19:45:31.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-24T18:00:00.000Z",
-      "kept": 18
+      "newest": "2026-10-24T18:58:24.000Z",
+      "kept": 16
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-24T18:05:55.000Z",
+      "newest": "2026-10-24T20:33:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,114 @@
     }
   },
   "articles": [
+    {
+      "title": "Lord of the Rings Officially Returns in November with 3 Releases",
+      "link": "https://www.polygon.com/lotr-rings-of-power-s1-s2-physical-release-4k-blu-ray/",
+      "date": "2026-10-24T20:33:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/image-2.png",
+      "summary": "Rings of Power season 3 returns to Prime Video in November alongside the first two season on 4K Blu-ray and DVD for the first time.",
+      "tags": []
+    },
+    {
+      "title": "The 5 least-scary scary games for people who are scared of scary games",
+      "link": "https://www.polygon.com/best-not-scary-horror-games/",
+      "date": "2026-10-24T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7808383/Night_in_the_Woods_art.jpg",
+      "summary": "If you love Halloween, but could do without any nightmares, these non-scary scary games are for you.",
+      "tags": []
+    },
+    {
+      "title": "10 Near-Perfect Netflix Sci-Fi Shows That Hook You in the First Scene",
+      "link": "https://www.polygon.com/perfect-netflix-sci-fi-shows-that-hook-you-in-the-first-scene/",
+      "date": "2026-10-24T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dark-tv-series-2.jpg",
+      "summary": "From mind-bending mysteries to dystopian futures, these Netflix sci-fi series prove that some stories can't be forgotten from the moment they start.",
+      "tags": []
+    },
+    {
+      "title": "Legend Of Zelda Producer Eiji Aonuma Knighted By French Ministry Of Culture",
+      "link": "https://kotaku.com/legend-of-zelda-producer-eiji-aonuma-knighted-by-french-ministry-of-culture-2000749331",
+      "date": "2026-10-24T19:45:31.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/breathofthewildmastersword.jpg",
+      "summary": "The longtime caretaker of the Zelda series traveled to Paris to receive his title, honored for inspiring the world’s 'imagination'",
+      "tags": []
+    },
+    {
+      "title": "One Piece Is Officially Coming to Fortnite",
+      "link": "https://www.polygon.com/fortnite-one-piece-confirmed-mini-season-teaser/",
+      "date": "2026-10-24T19:05:06.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/fortnite-mini-season-logo.jpg",
+      "summary": "Epic Games confirms that One Piece, one of the most highly anticipated collabs, will be part of the next Fortnite season.",
+      "tags": []
+    },
+    {
+      "title": "Clint Eastwood's Most Intense Western Is Officially Streaming for Free on YouTube",
+      "link": "https://www.polygon.com/high-plains-drifter-clint-eastwood-free-to-stream/",
+      "date": "2026-10-24T19:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mmdhipl_ec002.jpg",
+      "summary": "Clint Eastwood's second film as director, High Plains Drifter is a horror Western free on YouTube",
+      "tags": []
+    },
+    {
+      "title": "Top Xbox exec promoted in brand 'reset' leaves after 3 months in role",
+      "link": "https://www.pcgamer.com/gaming-industry/top-xbox-exec-promoted-in-brand-reset-leaves-after-3-months-in-role/",
+      "date": "2026-10-24T18:58:24.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/nnXTHjAJbZ7bw4xzhZJCw-1920-80.jpg",
+      "summary": "Is that good?",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 : Liste des meilleurs équipements tactiques",
+      "link": "https://www.jeuxvideo.com/news/2110404/call-of-duty-modern-warfare-4-liste-des-meilleurs-equipements-tactiques.htm",
+      "date": "2026-10-24T18:30:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792679626-7839-card.jpg",
+      "summary": "Dans COD Modern Warfare 4, la personnalisation de votre classe va forcément passer par le choix d'une arme tactique. Dans ce guide, nous verrons lesquelles prioriser pour que vous…",
+      "tags": []
+    },
+    {
+      "title": "Call Of Duty: Modern Warfare 4 Director Says There’s Probably No Such Thing As &#8216;Perfected&#8217; Matchmaking",
+      "link": "https://kotaku.com/call-of-duty-modern-warfare-4-director-says-theres-probably-no-such-thing-as-perfected-matchmaking-2000749327",
+      "date": "2026-10-24T18:25:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/modernwarfare4duo-1280x872.jpg",
+      "summary": "With the latest Call of Duty landing, seemingly without matchmaking features, multiplayer director Joe Cecot says he doesn't believe a system to satisfy all is possible",
+      "tags": []
+    },
+    {
+      "title": "Commander Shepard Voice Actors Call for Action to Save Mass Effect",
+      "link": "https://www.polygon.com/mass-effect-universe-canceled-jennifer-hale-mark-meer-support-petition/",
+      "date": "2026-10-24T18:22:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mass-effect-commander-shepard-femshep-2.png",
+      "summary": "Jennifer Hale and Mark Meer join fans in the fight to save Mass Effect after EA shut down its development project.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : Avez vous acheté une PS5 Pro pour rien ?",
+      "link": "https://www.jeuxvideo.com/news/2109615/gta-6-avez-vous-achete-une-ps5-pro-pour-rien.htm",
+      "date": "2026-10-24T18:10:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179240/1792403285-2671-card.jpg",
+      "summary": "À quelques semaines du lancement mondial de GTA 6, l'enthousiasme pour la PlayStation 5 Pro fait face à un doute majeur. Alors que beaucoup de joueurs ont déboursé 899,99 € dans…",
+      "tags": []
+    },
+    {
+      "title": "Penguin Colony review: A daringly weird horror game whose atmosphere and surprises overcome its rough edges",
+      "link": "https://www.pcgamer.com/games/horror/penguin-colony-review/",
+      "date": "2026-10-24T18:10:01.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zZTTjF3rcB8LvDfbHX23jU-1920-80.jpg",
+      "summary": "Something ancient and horrible stirs in the farthest south: Are you bad enough penguin to… not really do much about it?",
+      "tags": []
+    },
     {
       "title": "Hulu Officially Bringing Back 2000s Fan-Favorite Crime Drama",
       "link": "https://www.polygon.com/prison-break-reboot-black-creek-hulu/",
@@ -163,6 +271,26 @@
       "tags": []
     },
     {
+      "title": "Mouette immaculée The Witcher 3 Remastered : Où trouver la formule et les composants de cet objet d'alchimie ?",
+      "link": "https://www.jeuxvideo.com/news/2110229/mouette-immaculee-the-witcher-3-remastered-ou-trouver-la-formule-et-les-composants-de-cet-objet-d-alchimie.htm",
+      "date": "2026-10-24T17:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792590071-891-card.jpg",
+      "summary": "En matière d'alchimie dans The Witcher 3 Wild Hunt, la Mouette immaculée est le composant ultime indispensable pour concocter les huiles, bombes et potions de niveau Supérieur…",
+      "tags": []
+    },
+    {
+      "title": "You tell me Cyberpunk 2077 Mise à jour 2.5 : Où trouver les 12 arcanes mineurs de Tarot ?",
+      "link": "https://www.jeuxvideo.com/news/2110585/you-tell-me-cyberpunk-2077-mise-a-jour-2-5-ou-trouver-les-12-arcanes-mineurs-de-tarot.htm",
+      "date": "2026-10-24T17:15:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792759536-9415-card.jpg",
+      "summary": "Déployé lors de la mise à jour Edgerunners 2, le contrat secondaire You Tell Me vient enrichir la collecte des fresques murales de Night City. Après la quête emblématique Fool on…",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
       "title": "Now it's over, WoW: Forever's beta has left me with just one fear—its endgame",
       "link": "https://www.pcgamer.com/games/world-of-warcraft/now-its-over-wow-forevers-beta-has-left-me-with-just-one-fear-its-endgame/",
       "date": "2026-10-24T17:00:00.000Z",
@@ -183,21 +311,21 @@
       ]
     },
     {
+      "title": "Piloter l'immense Airbus A380 comme en vrai sur PS5 sera bientôt possible : prix, détails, toutes les infos sur cette nouveauté de Flight Simulator 2024",
+      "link": "https://www.jeuxvideo.com/news/2110309/piloter-l-immense-airbus-a380-comme-en-vrai-sur-ps5-sera-bientot-possible-prix-details-toutes-les-infos-sur-cette-nouveaute-de-flight-simulator-2024.htm",
+      "date": "2026-10-24T16:45:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179266/1792655563-3329-card.jpg",
+      "summary": "L'Airbus A380 d'iniBuilds, la simulation la plus poussée du superjumbo dans Microsoft Flight Simulator 2024, prépare son atterrissage sur PS5. Le studio a envoyé la version…",
+      "tags": []
+    },
+    {
       "title": "Stephen King's 10 Best Villains of All Time, Ranked",
       "link": "https://www.polygon.com/stephen-kings-best-villains-of-all-time-ranked/",
       "date": "2026-10-24T16:01:20.000Z",
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/mcditit_ec013.jpg",
       "summary": "Stephen King has been creating scary villains since the '70s. Here's a list of our favorites, ranked.",
-      "tags": []
-    },
-    {
-      "title": "5 Hardest Platformers Ever Made, Ranked by Difficulty",
-      "link": "https://www.polygon.com/5-hardest-platformers-ever-ranked/",
-      "date": "2026-10-24T16:01:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2026/06/rayman-legends-retold-press-image-9.jpg",
-      "summary": "When missing a jump means certain doom, you might wish for death",
       "tags": []
     },
     {
@@ -237,24 +365,6 @@
       "tags": []
     },
     {
-      "title": "Steam Officially Rolls Out A Calendar Feature To Directly Recommend New Games",
-      "link": "https://www.polygon.com/steam-personal-calendar-wide-release/",
-      "date": "2026-10-24T15:20:31.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/steam-personal-calendar.png",
-      "summary": "Steam now features a Personal Calendar that will spotlight recently released and upcoming games that it thinks you'll like",
-      "tags": []
-    },
-    {
-      "title": "Dead by Daylight Is Losing Another Horror Icon",
-      "link": "https://www.polygon.com/dead-by-daylight-chucky-removed/",
-      "date": "2026-10-24T15:17:05.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25117661/dbd_artwork.jpg",
-      "summary": "This is Dead by Daylight's last Halloween with Chucky, as the horror movie icon is being removed from the game for good.",
-      "tags": []
-    },
-    {
       "title": "PS5 : Comment Sony manipule les prix pour inciter les joueurs à consommer plus",
       "link": "https://www.jeuxvideo.com/news/2102547/ps5-comment-sony-manipule-les-prix-pour-inciter-les-joueurs-a-consommer-plus.htm",
       "date": "2026-10-24T15:15:06.000Z",
@@ -273,30 +383,12 @@
       "tags": []
     },
     {
-      "title": "One of 2026’s Best-Rated Games Is Basically Mass Effect With Spies",
-      "link": "https://www.polygon.com/zero-parades-mass-effect-2-comparison/",
-      "date": "2026-10-24T15:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/23632439/ss_9ecf8386f29c5e3ef066d7591816add13a98d2b0.jpg",
-      "summary": "Mass Effect: Universe may be cancelled following BioWare's closure, but Zero Parades: For Died Spies is already Mass Effect meets James Bond",
-      "tags": []
-    },
-    {
       "title": "The best feature in the original Alan Wake is an absence: the man has no reticle",
       "link": "https://www.pcgamer.com/games/horror/the-best-feature-in-the-original-alan-wake-is-an-absence-the-man-has-no-reticle/",
       "date": "2026-10-24T15:00:00.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/SY4bRTAf7W5JrUVD9AVb3Z-1920-80.jpg",
       "summary": "Remedy forgot the rules of third-person shooting to build its inaugural horror game.",
-      "tags": []
-    },
-    {
-      "title": "Xbox's First-Ever COO Is Already Leaving After A Few Months",
-      "link": "https://www.polygon.com/xbox-loses-coo/",
-      "date": "2026-10-24T14:34:52.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/xbox-new-logo.png",
-      "summary": "Less than four months after becoming the first-ever Xbox COO, Helen Chiang has left the company",
       "tags": []
     },
     {
@@ -315,15 +407,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141851/90102/bioware-and-merge-mansion_l660.jpg",
       "summary": "PocketGamer.biz editorial director of events Mariam Ahmad and features and data editor Aaron Aastle talk through the latest games industry news on the 107th episode of the Week in…",
-      "tags": []
-    },
-    {
-      "title": "'Wildwood' Is a \"Risky\" Movie — Just Like 'Coraline' Was 20 Years Ago",
-      "link": "https://www.polygon.com/wildwood-coraline-interview/",
-      "date": "2026-10-24T14:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/wildwoodbts.jpg",
-      "summary": "Discover the 16-year journey of Laika's Wildwood, a groundbreaking stop-motion film directed by Travis Knight.",
       "tags": []
     },
     {
@@ -657,150 +740,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/rosebelmont-1280x720.jpg",
       "summary": "ABP, always be parrying",
-      "tags": []
-    },
-    {
-      "title": "The Normandy SR-2 Is Now A Haunted House, But It Will Always Be My Home",
-      "link": "https://kotaku.com/mass-effect-5-bioware-closure-universe-legendary-edition-2000749192",
-      "date": "2026-10-23T20:45:06.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/normandycic-1280x720.jpg",
-      "summary": "I have spent years not being able to grieve Mass Effect , and now I finally have to",
-      "tags": []
-    },
-    {
-      "title": "Developer Of &#8216;Ecosocialist&#8217; Game Future? No Thanks! Offers Refunds After Using AI Despite Calling It &#8216;Technofascist&#8217;",
-      "link": "https://kotaku.com/developer-of-ecosocialist-game-future-no-thanks-offers-refunds-after-using-ai-despite-calling-it-technofascist-2000749158",
-      "date": "2026-10-23T20:30:36.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/future-no-thanks-1280x720.jpg",
-      "summary": "He seems to still stand by his AI use, though",
-      "tags": []
-    },
-    {
-      "title": "Le progressisme a-t-il tué Bioware ? Retour sur la fin du studio à l'origine de Mass Effect et Baldur's Gate",
-      "link": "https://www.jeuxvideo.com/news/2110379/le-progressisme-a-t-il-tue-bioware-retour-sur-la-fin-du-studio-a-l-origine-de-mass-effect-et-baldur-s-gate.htm",
-      "date": "2026-10-23T20:20:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674677-4525-card.jpg",
-      "summary": "La fermeture de BioWare marque la fin tragique d'un géant du RPG, voire du jeu vidéo tout entier. Mais réduire cette descente aux enfers à des polémiques autour du \"wokisme\" des…",
-      "tags": []
-    },
-    {
-      "title": "Time could be running out for Arkane",
-      "link": "https://www.pcgamer.com/gaming-industry/time-could-be-running-out-for-arkane/",
-      "date": "2026-10-23T20:07:21.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/xpZT8qFrjD2JgUPKy2RxLa-1920-80.jpg",
-      "summary": "The famed immersive sim studio just got an extra month to find a new buyer, but will likely close if there are no takers.",
-      "tags": []
-    },
-    {
-      "title": "Street Fighter 6 Players Reeling After Capcom Takes Down Popular Community Resource Site",
-      "link": "https://kotaku.com/street-fighter-6-players-reeling-after-capcom-takes-down-popular-community-resource-site-2000749159",
-      "date": "2026-10-23T20:00:30.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/street-fighter-6-1280x729.jpg",
-      "summary": "Ultimate Frame Data was a resource for players to study SF6 chararcter hitboxes",
-      "tags": []
-    },
-    {
-      "title": "Ça y est, la Switch 2 a été craquée : Nintendo va devoir renforcer ses défenses contre le piratage massif",
-      "link": "https://www.jeuxvideo.com/news/2110649/ca-y-est-la-switch-2-a-ete-craquee-nintendo-va-devoir-renforcer-ses-defenses-contre-le-piratage-massif.htm",
-      "date": "2026-10-23T19:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792763723-3231-card.jpg",
-      "summary": "Découvert par le chercheur Sammy Hajhamid, un exploit 100% logiciel permet d'exécuter du code natif sur le dernier firmware de la Nintendo Switch 2.",
-      "tags": []
-    },
-    {
-      "title": "It's our new daily game fixation and we all stink at it: Can you guess how much used cars cost?",
-      "link": "https://www.pcgamer.com/games/puzzle/its-our-new-daily-game-fixation-and-we-all-stink-at-it-can-you-guess-how-much-used-cars-cost/",
-      "date": "2026-10-23T19:37:16.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/CkSRofcVfRDVfyHuKaQrYi-1920-80.jpg",
-      "summary": "Like Wordle, but it's about pricing used cars.",
-      "tags": []
-    },
-    {
-      "title": "Creative Assembly exec pins the blame for the Shogun 2 remaster mess on someone else: 'This was not a Creative Assembly developed game'",
-      "link": "https://www.pcgamer.com/games/strategy/creative-assembly-exec-pins-the-blame-for-the-shogun-2-remaster-mess-on-someone-else-this-was-not-a-creative-assembly-developed-game/",
-      "date": "2026-10-23T19:35:17.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/RHZVhJS7mGHS2pRTD7rBsk-1920-80.jpg",
-      "summary": "Roger Collum says Creative Assembly was \"focused on our next big projects,\" and didn't pay enough attention to the work being done by an \"external developer.\"",
-      "tags": []
-    },
-    {
-      "title": "Table Tennis Beast Lucía Has Returned To Torment Players Again In Switch Sports Resort",
-      "link": "https://kotaku.com/table-tennis-beast-lucia-has-returned-to-torment-players-again-in-switch-sports-resort-2000749121",
-      "date": "2026-10-23T19:30:42.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/imresizer-resize-table-tennis-1280x720.jpg",
-      "summary": "The iconic Mii is back, and players have beef once again",
-      "tags": []
-    },
-    {
-      "title": "'Every single week it's going to feel like the sky is falling': Cloudflare CEO says strap in for 'a couple years' of AI-powered internet security mayhem",
-      "link": "https://www.pcgamer.com/software/security/every-single-week-its-going-to-feel-like-the-sky-is-falling-cloudflare-ceo-says-strap-in-for-a-couple-years-of-ai-powered-internet-security-mayhem/",
-      "date": "2026-10-23T19:24:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XKCfWTAL3exAS4RH8dg8pX-1920-80.jpg",
-      "summary": "This week's PHP crisis is likely just the first of many.",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : La liste des meilleurs atouts pour monter la classe ultime",
-      "link": "https://www.jeuxvideo.com/news/2110390/call-of-duty-modern-warfare-4-la-liste-des-meilleurs-atouts-pour-monter-la-classe-ultime.htm",
-      "date": "2026-10-23T19:15:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792677206-5836-card.jpg",
-      "summary": "Le choix des perks dans COD MW4 est tout aussi important que celui du choix de l'arme et de vos équipements stratégiques. Certains de ces bonus peuvent potentiellement retourner…",
-      "tags": []
-    },
-    {
-      "title": "Capcom and Square Enix Suffer Online Attacks As Hackers Access Player Data",
-      "link": "https://kotaku.com/capcom-and-square-enix-suffer-online-attacks-as-hackers-access-player-data-2000749070",
-      "date": "2026-10-23T19:00:54.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/01/52e8ab9fb11874365da88ad07c50f1ab-1280x720.jpg",
-      "summary": "Japanese companies have been facing a growing number of security breaches in recent weeks",
-      "tags": []
-    },
-    {
-      "title": "Battlefield 6, One Year Later",
-      "link": "https://kotaku.com/battlefield-6-one-year-later-2000749095",
-      "date": "2026-10-23T18:44:13.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/BF6-s5-art-1280x720.jpg",
-      "summary": "It's been quite an up and down year for EA's big military shooter",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : La liste des meilleures armes pour dominer le champ de bataille !",
-      "link": "https://www.jeuxvideo.com/news/2110383/call-of-duty-modern-warfare-4-la-liste-des-meilleures-armes-pour-dominer-le-champ-de-bataille.htm",
-      "date": "2026-10-23T18:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674778-3257-card.jpg",
-      "summary": "A chaque Call of son lot de tier list pour vous aider à faire les bons choix, lorsque vous débloquerez la personnalisation de classe au niveau 4 de Modern Warfare 4. Ici, nous…",
-      "tags": []
-    },
-    {
-      "title": "Deux nouvelles collections de périphériques Corsair x Cyberpunk Arasaka White et Edgerunners 2 annoncées",
-      "link": "https://fr.ign.com/corsair-x-cyberpunk/93397/deux-nouvelles-collections-de-peripheriques-corsair-x-cyberpunk-arasaka-white-et-edgerunners-2-annon",
-      "date": "2026-10-23T18:16:50.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/corsair-x-cyberpunk-clavier_dt6v.jpg",
-      "summary": "Arasaka ou Edgerunners ?",
-      "tags": []
-    },
-    {
-      "title": "J.K. Rowling a établi une règle très stricte pour les films Harry Potter, et ça a empêché des acteurs extraordinaires d'y participer",
-      "link": "https://www.jeuxvideo.com/news/2110427/j-k-rowling-a-etabli-une-regle-tres-stricte-pour-les-films-harry-potter-et-ca-a-empeche-des-acteurs-extraordinaires-d-y-participer.htm",
-      "date": "2026-10-23T18:15:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792683926-2408-card.jpg",
-      "summary": "Alors que la série Harry Potter est tranquillement en cours de gestation, retour sur l'une des règles imposées par J.K. Rowling pour les premiers films. Règle qui pourra être…",
       "tags": []
     },
     {
