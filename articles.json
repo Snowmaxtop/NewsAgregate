@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T20:53:20.755Z",
+  "generatedAt": "2026-10-24T22:48:46.323Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-24T18:30:09.000Z",
-      "kept": 13
+      "newest": "2026-10-24T20:20:09.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -63,7 +63,7 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-24T19:45:31.000Z",
+      "newest": "2026-10-24T22:07:07.000Z",
       "kept": 5
     },
     "pcgamer": {
@@ -71,13 +71,13 @@
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-10-24T18:58:24.000Z",
-      "kept": 16
+      "kept": 13
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-24T20:33:18.000Z",
+      "newest": "2026-10-24T22:18:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,12 +118,48 @@
   },
   "articles": [
     {
+      "title": "Johnny Depp's 96-Minute Stephen King Thriller Is an Underrated Gem on Streaming",
+      "link": "https://www.polygon.com/johnny-depp-secret-window-stephen-king-streaming-hbo-max-october-2026/",
+      "date": "2026-10-24T22:18:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/secret-window-johnny-depp.jpg",
+      "summary": "Johnny Depp’s Secret Window, a 2004 Stephen King adaptation about plagiarism and paranoia, is finding a new audience on HBO Max.",
+      "tags": []
+    },
+    {
+      "title": "Xbox Reportedly Bungled $500 Million Netflix Exclusivity Deal To Develop Movies, Shows Based On Games",
+      "link": "https://kotaku.com/xbox-reportedly-bungled-500-million-netflix-exclusivity-deal-to-develop-movies-shows-based-on-games-2000749336",
+      "date": "2026-10-24T22:07:07.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/halotvshow-1280x761.jpg",
+      "summary": "According to industry insiders, newly appointed Xbox CEO Asha Sharma overplayed cross-media potential with recent Netflix exec Peter Rice to the tune of $800 million",
+      "tags": []
+    },
+    {
+      "title": "5 Cozy Horror Books to Read This Fall That Are Perfect From Start to Finish",
+      "link": "https://www.polygon.com/best-books-cozy-horror-fall-season/",
+      "date": "2026-10-24T21:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/my-best-friends-exorcism.jpg",
+      "summary": "Spooky season is always better with horror stories that feel cozy.",
+      "tags": []
+    },
+    {
       "title": "Lord of the Rings Officially Returns in November with 3 Releases",
       "link": "https://www.polygon.com/lotr-rings-of-power-s1-s2-physical-release-4k-blu-ray/",
       "date": "2026-10-24T20:33:18.000Z",
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/image-2.png",
       "summary": "Rings of Power season 3 returns to Prime Video in November alongside the first two season on 4K Blu-ray and DVD for the first time.",
+      "tags": []
+    },
+    {
+      "title": "Pokémon TCG Pocket rattrape 30 ans de retard : cette mécanique basique du jeu original enfin implantée",
+      "link": "https://www.jeuxvideo.com/news/2110231/pokemon-tcg-pocket-rattrape-30-ans-de-retard-cette-mecanique-basique-du-jeu-original-enfin-implantee.htm",
+      "date": "2026-10-24T20:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792587796-974-card.jpg",
+      "summary": "Deux ans après sa sortie, Pokémon TCG Pocket va enfin proposer une mécanique historique de la licence. De quoi bousculer la méta dès le 29 octobre.",
       "tags": []
     },
     {
@@ -151,6 +187,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/breathofthewildmastersword.jpg",
       "summary": "The longtime caretaker of the Zelda series traveled to Paris to receive his title, honored for inspiring the world’s 'imagination'",
+      "tags": []
+    },
+    {
+      "title": "Titan Final Fantasy Resonance : où se trouve cette chimère et comment obtenir l’invocation ?",
+      "link": "https://www.jeuxvideo.com/news/2110021/titan-final-fantasy-resonance-ou-se-trouve-cette-chimere-et-comment-obtenir-l-invocation.htm",
+      "date": "2026-10-24T19:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179251/1792511053-242-card.jpg",
+      "summary": "Sur chacun des continents de Final Fantasy Resonance, vous aurez l’occasion de croiser la route, si vous le voulez ou non, d’une Chimère afin de récupérer ses pouvoirs au terme…",
       "tags": []
     },
     {
@@ -262,15 +307,6 @@
       "tags": []
     },
     {
-      "title": "The 20 Most-Played Steam Next Fest Demos Features Troublemaking Students, Farting Hippos",
-      "link": "https://www.polygon.com/steam-next-fest-october-2026-most-played-games/",
-      "date": "2026-10-24T17:22:30.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ss_ba43feaedadc6d744d649f7ee6590a7ed8ae98d7-1920x1080.jpg",
-      "summary": "Worst Class Ever, Fart Together, and more co-op games are Steam Next Fest's most popular titles",
-      "tags": []
-    },
-    {
       "title": "Mouette immaculée The Witcher 3 Remastered : Où trouver la formule et les composants de cet objet d'alchimie ?",
       "link": "https://www.jeuxvideo.com/news/2110229/mouette-immaculee-the-witcher-3-remastered-ou-trouver-la-formule-et-les-composants-de-cet-objet-d-alchimie.htm",
       "date": "2026-10-24T17:15:07.000Z",
@@ -317,15 +353,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179266/1792655563-3329-card.jpg",
       "summary": "L'Airbus A380 d'iniBuilds, la simulation la plus poussée du superjumbo dans Microsoft Flight Simulator 2024, prépare son atterrissage sur PS5. Le studio a envoyé la version…",
-      "tags": []
-    },
-    {
-      "title": "Stephen King's 10 Best Villains of All Time, Ranked",
-      "link": "https://www.polygon.com/stephen-kings-best-villains-of-all-time-ranked/",
-      "date": "2026-10-24T16:01:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/mcditit_ec013.jpg",
-      "summary": "Stephen King has been creating scary villains since the '70s. Here's a list of our favorites, ranked.",
       "tags": []
     },
     {
@@ -698,48 +725,12 @@
       "tags": []
     },
     {
-      "title": "Why private equity acquisitions like the one that just claimed BioWare are so dreaded",
-      "link": "https://www.pcgamer.com/gaming-industry/why-private-equity-acquisitions-like-the-one-that-just-claimed-bioware-are-so-dreaded/",
-      "date": "2026-10-23T22:46:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VcinT8UXinhzfqDjA8Wi2F-1920-80.png",
-      "summary": "BioWare is just the latest casualty in a long history of private equity carnage.",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect 5 was set in a 'galactic Cold War,' new leak claims, and all 3 endings were wrapped into 1",
-      "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-was-set-in-a-galactic-cold-war-new-leak-claims-and-all-3-endings-were-wrapped-into-1/",
-      "date": "2026-10-23T21:58:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Crt9MrXnRKTkx7PBjmUocT-1920-80.jpg",
-      "summary": "The more I hear about what BioWare had cooking, the more pissed off I am that we're never going to get it.",
-      "tags": []
-    },
-    {
       "title": "7 hours (at last!) with Grand Theft Auto III",
       "link": "https://www.gamefile.news/p/gta-iii-belated-review",
       "date": "2026-10-23T21:53:32.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!NFf3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe246a052-7e88-4e40-a6f1-757b4f8f619a_1024x768.jpeg",
       "summary": "A game about freedom that's still worth your time, if you don't mind your options for playing it.",
-      "tags": []
-    },
-    {
-      "title": "Based on player data, Capcom's pretty happy with the difficulty level of Onimusha: Way of the Sword: 'We think it's hit the right spot'",
-      "link": "https://www.pcgamer.com/games/action/based-on-player-data-capcoms-pretty-happy-with-the-difficulty-level-of-onimusha-way-of-the-sword-we-think-its-hit-the-right-spot/",
-      "date": "2026-10-23T21:43:44.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/m9jozBeHDcZQTCMZLJkNLd-1920-80.png",
-      "summary": "Too easy, too hard, or just right?",
-      "tags": []
-    },
-    {
-      "title": "Belmont&#8217;s Curse Taught Me An Important Lesson About Parrying, Namely I Should Do It More",
-      "link": "https://kotaku.com/belmonts-curse-taught-me-an-important-lesson-about-parrying-namely-i-should-do-it-more-2000749181",
-      "date": "2026-10-23T21:26:36.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/rosebelmont-1280x720.jpg",
-      "summary": "ABP, always be parrying",
       "tags": []
     },
     {
