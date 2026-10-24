@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T06:49:20.888Z",
+  "generatedAt": "2026-10-24T11:47:13.704Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-23T18:16:50.000Z",
-      "kept": 10
+      "newest": "2026-10-24T10:04:44.000Z",
+      "kept": 12
     },
     "gamedev": {
       "status": "ok",
@@ -36,28 +36,28 @@
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-23T15:04:13.000Z",
-      "kept": 6
+      "kept": 3
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-23T20:20:09.000Z",
-      "kept": 17
+      "newest": "2026-10-24T09:20:08.000Z",
+      "kept": 16
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-24T06:30:00.000Z",
-      "kept": 13
+      "newest": "2026-10-24T09:30:00.000Z",
+      "kept": 9
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-24T04:01:00.000Z",
-      "kept": 18
+      "newest": "2026-10-24T11:38:00.000Z",
+      "kept": 14
     },
     "kotaku": {
       "status": "ok",
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-23T22:46:50.000Z",
-      "kept": 23
+      "newest": "2026-10-24T11:09:10.000Z",
+      "kept": 20
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-24T04:00:21.000Z",
+      "newest": "2026-10-24T11:01:19.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-23T15:04:00.000Z",
-      "kept": 14
+      "kept": 9
     },
     "mgbiz": {
       "status": "ok",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-23T10:55:30.000Z",
-      "kept": 4
+      "kept": 2
     },
     "gdco": {
       "status": "ok",
@@ -118,6 +118,262 @@
   },
   "articles": [
     {
+      "title": "\"Le jeu vidéo risque de devenir inabordable\" : ils réclament 435 millions d'euros à PlayStation",
+      "link": "https://www.gamekult.com/actualite/le-jeu-video-risque-de-devenir-inabordable-ils-reclament-435-millions-d-euros-a-playstation-3050872531.html",
+      "date": "2026-10-24T11:38:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872531/le-jeu-video-risque-de-devenir-inabordable-ils-reclament-435-millions-d-euros-a-playstation-aa919ed3__800_800__88-0-875-787.jpg",
+      "summary": "Aux Pays-Bas, plus tôt dans l'année, l'association de défense des consommateurs Stichting Massaschade & Consument a décidé d'attaquer Sony pour le prix des jeux, qu'elle juge…",
+      "tags": []
+    },
+    {
+      "title": "Star Wars Galaxies' Restoration project just received another massive update, including a huge visual upgrade and an overhaul to the Wookiees' home planet",
+      "link": "https://www.pcgamer.com/games/mmo/star-wars-galaxies-just-got-another-massive-update-thanks-to-its-community-restoration-project-including-a-huge-visual-upgrade-and-a-refurb-to-the-wookiees-home-planet/",
+      "date": "2026-10-24T11:09:10.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/wb9nztwWNtFMQcHyyfZxog-1920-80.jpg",
+      "summary": "\"We asked everyone: work on something that they loved about Galaxies, and showcase that to the world.\"",
+      "tags": []
+    },
+    {
+      "title": "Game of Thrones’ Perfect Replacement is a 100+ Hours Fantasy Series that's Free on YouTube",
+      "link": "https://www.polygon.com/game-of-thrones-replacement-critical-role/",
+      "date": "2026-10-24T11:01:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/3687796/game-of-thrones-505-jon-snow_2100.0.jpg",
+      "summary": "Few shows match 'Game of Thrones' gritty high-fantasy setting. So why not watch a Critical Role D&D show instead?",
+      "tags": []
+    },
+    {
+      "title": "'Super Mario' Creator Breaks Down The Problem With AI Perfectly",
+      "link": "https://www.polygon.com/super-mario-bros-shigeru-miyamoto-ai-order-culture-japan-award-nintendo/",
+      "date": "2026-10-24T10:13:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2024/08/super-mario-odyssey-trailer.jpg",
+      "summary": "Nintendo's Shigeru Miyamoto, known for Zelda and Mario, just gave the world a master class on the limits of AI creation",
+      "tags": []
+    },
+    {
+      "title": "EA semble avoir discrètement retiré le contenu Mass Effect de Battlefield 6 à la suite de la fermeture de BioWare",
+      "link": "https://fr.ign.com/battlefield-6/93407/ea-semble-avoir-discretement-retire-le-contenu-mass-effect-de-battlefield-6-a-la-suite-de-la-fermetu",
+      "date": "2026-10-24T10:04:44.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/ea-appears/ea-appears-to-have-quietly-pulled-mass-effect-content-from-b_272q.jpg",
+      "summary": "Le N7 Day aura lieu dans quelques semaines.",
+      "tags": []
+    },
+    {
+      "title": "13 Years Later, 'Adventure Time's Scariest Episode Is Still a 10-Minute Masterpiece",
+      "link": "https://www.polygon.com/adventure-time-scariest-episode-simon-and-marcy/",
+      "date": "2026-10-24T10:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/assets/4190327/adventuretime.png",
+      "summary": "Simon and Marcy remains the pinnacle of Adventure Time storytelling, and a must-watch for your Halloween Countdown",
+      "tags": []
+    },
+    {
+      "title": "Photos de l'Exposition The World of Fallout au Musée national des essais nucléaires",
+      "link": "https://fr.ign.com/fallout-the-series/93406/the-world-of-fallout-exhibit-at-the-national-atomic-testing-museum-photos",
+      "date": "2026-10-24T09:51:02.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/t/the-world-/the-world-of-fallout-exhibit-at-the-national-atomic-testing_xuj8.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Fallout Shelter : The Experiment est le titre officiel de l’émission de téléréalité compétitive diffusée sur Prime Video ; la date de sortie a été annoncée à l’occasion du Fallout Day",
+      "link": "https://fr.ign.com/fallout-shelter-1/93405/fallout-shelter-the-experiment-est-le-titre-officiel-de-lemission-de-telerealite-competitive-diffuse",
+      "date": "2026-10-24T09:51:02.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/f/fallout-sh/fallout-shelter-the-experiment-is-the-official-title-for-the_p9kp.png",
+      "summary": "Bunkerisé.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Arkane Lyon pourrait fermer mi-novembre si aucun acheteur n'est trouvé",
+      "link": "https://fr.ign.com/blade-arkane/93404/arkane-lyon-pourrait-fermer-mi-novembre-si-aucun-acheteur-nest-trouve",
+      "date": "2026-10-24T09:47:07.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/a/arkane-lyo/arkane-lyon-reportedly-could-be-closed-in-mid-november-if-a_vzgk.jpg",
+      "summary": "L&#x27;espoir est mince.",
+      "tags": []
+    },
+    {
+      "title": "Selon les analystes, les franchises telles que Mass Effect constituent un « projet de prestige » pour EA, et la fermeture de BioWare était « tout à fait prévisible ».",
+      "link": "https://fr.ign.com/mass-effect-next-chapter/93402/selon-les-analystes-les-franchises-telles-que-mass-effect-constituent-un-projet-de-prestige-pour-ea",
+      "date": "2026-10-24T09:32:06.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/f/franchises/franchises-like-mass-effect-are-a-prestige-project-for-ea-an_6ybd.jpg",
+      "summary": "« Malheureusement, les dernières productions à gros budget du studio n’ont pas rencontré le succès commercial escompté. »",
+      "tags": []
+    },
+    {
+      "title": "Disney Dreamlight Valley vous offre des contenus gratuits juste avant l'arrivée de son nouveau DLC, voici comment les récupérer",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-dreamlight-valley-twitch-drops-octobre-2026-725236?utm_source=RSS",
+      "date": "2026-10-24T09:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/story/722543_6aa11c004ecaf.jpg",
+      "summary": "Disney Dreamlight Valley vous offre des contenus gratuits à travers une nouvelle campagne de Twitch drops en ce mois d'octobre 2026. Recevez des cadeaux parfaits avant l'arrivée…",
+      "tags": []
+    },
+    {
+      "title": "La toute première directrice des opérations de Xbox quitte ses fonctions à peine trois mois après la création de ce poste",
+      "link": "https://fr.ign.com/xbox-series-x-1/93401/la-toute-premiere-directrice-des-operations-de-xbox-quitte-ses-fonctions-a-peine-trois-mois-apres-la",
+      "date": "2026-10-24T09:25:54.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/x/xboxs-firs/xboxs-first-ever-chief-operating-officer-leaves-role-just-th_qm5j.jpg",
+      "summary": "La PDG, Asha Sharma, a déclaré que l’entreprise « communiquera davantage sur la direction du COO dès que les plans seront finalisés ».",
+      "tags": []
+    },
+    {
+      "title": "Clampdown Cyberpunk 2077 Mise à jour 2.5 : Quels choix faire lors de la quête de King ?",
+      "link": "https://www.jeuxvideo.com/news/2110514/clampdown-cyberpunk-2077-mise-a-jour-2-5-quels-choix-faire-lors-de-la-quete-de-king.htm",
+      "date": "2026-10-24T09:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792749521-7880-card.jpg",
+      "summary": "Le nouveau contrat secondaire « Clampdown », introduit avec la mise à jour Edgerunners 2 de Cyberpunk 2077 propose d'organiser l'évasion de prison de Miguel en coopération avec…",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "GTA 6 sur Switch 2 ? \"Ça ne servirait à rien\" selon un ancien de Rockstar",
+      "link": "https://www.gamekult.com/actualite/gta-6-sur-switch-2-ca-ne-servirait-a-rien-selon-un-ancien-de-rockstar-3050872506.html",
+      "date": "2026-10-24T09:15:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872506/gta-6-sur-switch-2-ca-ne-servirait-a-rien-selon-un-ancien-de-rockstar-62635fa2__800_800__305-0-881-576.jpg",
+      "summary": "Chacun son blockbuster. En novembre, la PS5 et la Xbox Series accueilleront GTA 6 ; la Switch 2, elle, proposera le remake d'Ocarina of Time, finalement le seul blockbuster…",
+      "tags": []
+    },
+    {
+      "title": "Final Fantasy 14 Players Deliver Perfect Response to 2026’s PHP Vulnerability",
+      "link": "https://www.polygon.com/final-fantasy-14-php-issues-planet-watering-community-response/",
+      "date": "2026-10-24T09:05:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/2849754/ffxiv_pub_patch2.3_15.1403627489.png",
+      "summary": "Final Fantasy 14 community gets a green thumb and waters plants for players who couldn't log in during this week's security debacle",
+      "tags": []
+    },
+    {
+      "title": "7 Hilarious ‘Far Side’ Comics With the Worst Puns",
+      "link": "https://www.polygon.com/best-far-side-comics-with-terrible-puns/",
+      "date": "2026-10-24T09:00:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/screen-shot-2026-10-23-at-11-53-50-am-1.jpg",
+      "summary": "Some of Gary Larson's best Far Side comic strips featured a purposefully bad bit of word play, which was further proof of Larson's genius",
+      "tags": []
+    },
+    {
+      "title": "Pokemon Ecarlate & Violet : un pokemon surpuissant et ultra rare est de retour, ne le manquez surtout pas",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/pokemon-ecarlate-violet-raid-carchacrok-teracristal-sol-725364?utm_source=RSS",
+      "date": "2026-10-24T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/712310_69a17066e457a.webp",
+      "summary": "Un nouveau raid teracristal 7 étoiles démarre dans Pokemon Ecarlate et Violet. C'est une nouvelle chance pour vous de capturer Carchacrok si vous ne l'avez jamais eu.",
+      "tags": []
+    },
+    {
+      "title": "Sur Super Nintendo et Mega Drive, il existait des jeux de rôle légendaires jamais sortis en Europe",
+      "link": "https://www.jeuxvideo.com/news/2109843/sur-super-nintendo-et-mega-drive-il-existait-des-jeux-de-role-legendaires-jamais-sortis-en-europe.htm",
+      "date": "2026-10-24T08:30:14.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792588527-4700-card.jpg",
+      "summary": "Les années 1990 ont marqué l'âge d'or du jeu de rôle japonais, mais les joueurs européens sont passés à côté de plusieurs chefs-d'œuvre. Alors que la Super Nintendo et la Mega…",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 3 ajoute enfin un des mods gratuits préférés des joueurs sur PS5 et Xbox Series,",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-remastered-mod-capuche-ps5-xbox-725377?utm_source=RSS",
+      "date": "2026-10-24T08:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6adb62859c978.jpg",
+      "summary": "Les joueuses et joueurs PS5 et Xbox Series peuvent enfin réaliser un de leurs rêves sur The Witcher 3 Remastered grâce au mod Hoods qui permet de personnaliser Geralt de façon…",
+      "tags": []
+    },
+    {
+      "title": "12 Years Ago, 'Doctor Who's Most Unhinged Episode Revealed the Doctor at His Worst",
+      "link": "https://www.polygon.com/doctor-who-the-caretaker-peter-capaldi-12th-doctor-episode-analysis/",
+      "date": "2026-10-24T08:05:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/1-4.jpg",
+      "summary": "Peter Capaldi's Twelfth Doctor has plenty of outstanding moments, but one episode in particular shows the Time Lord at his worst.",
+      "tags": []
+    },
+    {
+      "title": "50 Years Later, the Best War Series of All Time Is Still Unlike Anything Else on TV",
+      "link": "https://www.polygon.com/mash-tv-series-retrospective/",
+      "date": "2026-10-24T08:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mash.jpg",
+      "summary": "MASH blended humor and heartbreak to create unforgettable characters and deliver one of television's most memorable finales.",
+      "tags": []
+    },
+    {
+      "title": "L'énorme collector de Berserk réservé à la France de nouveau en stock, attention à la rupture !",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/berserk-artbook-preco-stock-725371?utm_source=RSS",
+      "date": "2026-10-24T08:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/547780_661650e468385.jpg",
+      "summary": "Très prisé au sein de la communauté, l’artbook collector de Berserk qui comprendra plus de 240 pages d’illustrations est de retour en stock. Mais il n’y en aura sans doute pas…",
+      "tags": []
+    },
+    {
+      "title": "\"Un non catégorique\" L'auteur de One Piece a interdit une seule chose à Netflix pour sa série live action : il a fallu céder pour obtenir les droits d'adaptation",
+      "link": "https://www.jeuxvideo.com/news/2110524/un-non-categorique-l-auteur-de-one-piece-a-interdit-une-seule-chose-a-netflix-pour-sa-serie-live-action-il-a-fallu-ceder-pour-obtenir-les-droits-d-adaptation.htm",
+      "date": "2026-10-24T07:40:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792748702-2246-card.jpg",
+      "summary": "Pour voir Luffy et ses amis prendre vie en chair et en os, Netflix a dû montrer patte blanche. Eiichiro Oda, le créateur de One Piece, a posé une condition non négociable qui a…",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect et Dragon Age pourraient être sauvés, mais qui pour reprendre les licences et leur faire honneur ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/story/mass-effect-dragon-age-reprise-licences-bioware-725231?utm_source=RSS",
+      "date": "2026-10-24T07:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/725208_6ada059c6ed7a.jpg",
+      "summary": "Avec la fermeture de BioWare, il peut rester un espoir pour l'avenir de Mass Effect et Dragon Age, mais qui pourrait reprendre le flambeau ? C'est ce que nous allons théoriser ici.",
+      "tags": []
+    },
+    {
+      "title": "Menotté, un joueur pro de DOTA 2 forcé de jouer devant la police pour prouver son innocence",
+      "link": "https://www.gamekult.com/actualite/menotte-un-joueur-pro-de-dota-2-force-de-jouer-devant-la-police-pour-prouver-son-innocence-3050872500.html",
+      "date": "2026-10-24T07:04:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872500/menotte-un-joueur-pro-de-dota-2-force-de-jouer-devant-la-police-pour-prouver-son-innocence-4af1d6d6__800_800__105-0-1105-1000.jpg",
+      "summary": "23savage, joueur professionnel thaïlandais sur DOTA 2 et signé chez l'équipe singapourienne Xipto Esports, a déclaré avoir été menotté par la police malaisienne en plein…",
+      "tags": []
+    },
+    {
+      "title": "Tomb Raider a 30 ans ! On classe tous les jeux de la saga du pire au meilleur",
+      "link": "https://www.gameblog.fr/jeu-video/ed/story/tomb-raider-top-classement-jeux-franchises-725237?utm_source=RSS",
+      "date": "2026-10-24T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/story/725237_6ada22f24f2de.jpg",
+      "summary": "À l’occasion des 30 ans de Tomb Raider, on vous propose de revenir sur l’héritage de cette grande licence avec notre classement de tous les épisodes principaux de la franchise.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Marvel : Ultimate Alliance, c'était Avengers : Doomsday avant le MCU",
+      "link": "https://www.gamekult.com/actualite/marvel-ultimate-alliance-c-etait-avengers-doomsday-avant-le-mcu-101-3050866110.html",
+      "date": "2026-10-24T07:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866110/marvel-ultimate-alliance-c-etait-avengers-doomsday-avant-le-mcu-89f57b8d__800_800__278-0-998-720.jpg",
+      "summary": "Aujourd'hui, cela fait exactement 20 ans que les premières versions de Marvel : Ultimate Alliance sont parues aux États-Unis. C'était le 24 octobre 2006, la vie était plus simple…",
+      "tags": []
+    },
+    {
+      "title": "Tomb Raider a 30 ans aujourd'hui : découvrez en images la métamorphose de Lara Croft au fil des ans",
+      "link": "https://www.jeuxvideo.com/news/2110459/tomb-raider-a-30-ans-aujourd-hui-decouvrez-en-images-la-metamorphose-de-lara-croft-au-fil-des-ans.htm",
+      "date": "2026-10-24T06:40:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792746348-353-card.jpg",
+      "summary": "De ses premiers pas rigides en 1996 à aujourd'hui , retour sur 30 ans d'évolution de l'aventurière la plus iconique du jeu vidéo.",
+      "tags": []
+    },
+    {
       "title": "One Piece : les Français mettent les Japonais en colère en utilisant le drapeau emblématique dans les manifestations. Quand le manga devient un symbole",
       "link": "https://www.gameblog.fr/jeu-video/ed/news/one-piece-jolly-roger-manif-17-octobre-france-polemique-725207?utm_source=RSS",
       "date": "2026-10-24T06:30:00.000Z",
@@ -133,6 +389,15 @@
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/705694_691637f72f456.jpg",
       "summary": "PlayStation a dévoilé la liste totale des sorties du catalogue du PS Plus Extra et Premium de novembre 2026. Et il y a deux grands mastodontes signés Rockstar parmi eux.",
+      "tags": []
+    },
+    {
+      "title": "Le Seigneur des Anneaux : Le nouvel interprète d’Aragorn ne cherche même pas à égaler Viggo Mortensen dans La Traque de Gollum",
+      "link": "https://www.jeuxvideo.com/news/2110544/le-seigneur-des-anneaux-le-nouvel-interprete-d-aragorn-ne-cherche-meme-pas-a-egaler-viggo-mortensen-dans-la-traque-de-gollum.htm",
+      "date": "2026-10-24T04:55:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792749377-3623-le-seigneur-des-anneaux-le-nouvel-interprete-d-aragorn-ne-cherche-meme-pas-a-egaler-viggo-mortensen-dans-la-traque-de-gollum.jpg",
+      "summary": "Choisi pour incarner Aragorn dans « La Chasse à Gollum », Jamie Dornan aborde le rôle avec beaucoup d'humilité. L'acteur confie qu'il n'essaiera pas de surpasser Viggo Mortensen…",
       "tags": []
     },
     {
@@ -181,24 +446,6 @@
       "tags": []
     },
     {
-      "title": "7 Classic JRPGs That Are So Good They Never Need a Remake",
-      "link": "https://www.polygon.com/best-classic-jrpgs-no-remake/",
-      "date": "2026-10-23T22:19:03.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/suikoden-2.png",
-      "summary": "These JRPGs may have been ported to newer platforms or lightly remastered, but they look and play nearly identical to when they were first released",
-      "tags": []
-    },
-    {
-      "title": "Every Marvel Post-Credits Scene That Went Nowhere (So Far)",
-      "link": "https://www.polygon.com/marvel-movies-tv-shows-post-credits-scenes-teases/",
-      "date": "2026-10-23T22:16:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25275429/mcu_dangling_threads.jpg",
-      "summary": "Marvel Studios has promised a lot in the Multiverse Saga. Here's every post-credits scene from the MCU we still need answers for.",
-      "tags": []
-    },
-    {
       "title": "Mass Effect 5 was set in a 'galactic Cold War,' new leak claims, and all 3 endings were wrapped into 1",
       "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-was-set-in-a-galactic-cold-war-new-leak-claims-and-all-3-endings-were-wrapped-into-1/",
       "date": "2026-10-23T21:58:50.000Z",
@@ -235,24 +482,6 @@
       "tags": []
     },
     {
-      "title": "An '80s Cult Horror-Comedy Becomes a Global Streaming Hit on HBO Max",
-      "link": "https://www.polygon.com/gremlins-hbo-max-streaming-success-october-2026/",
-      "date": "2026-10-23T21:00:49.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2025/11/billy-receiving-a-christmas-gift-in-gremlins.jpg",
-      "summary": "1984's Gremlins finds worldwide streaming success on HBO Max, proving the horror comedy remains a fan favorite decades after its original release.",
-      "tags": []
-    },
-    {
-      "title": "10 New Movies To Watch This Weekend on HBO, Hulu, and Disney Plus (October 23-25)",
-      "link": "https://www.polygon.com/new-movies-streaming-this-weekend-hbo-disney-plus-hulu-october-23-25/",
-      "date": "2026-10-23T21:00:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-invite.jpg",
-      "summary": "In this week's movie streaming column, we have one of the best and funniest couples dramas of the year, a Disney live-action remake, and more.",
-      "tags": []
-    },
-    {
       "title": "The Normandy SR-2 Is Now A Haunted House, But It Will Always Be My Home",
       "link": "https://kotaku.com/mass-effect-5-bioware-closure-universe-legendary-edition-2000749192",
       "date": "2026-10-23T20:45:06.000Z",
@@ -286,15 +515,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/xpZT8qFrjD2JgUPKy2RxLa-1920-80.jpg",
       "summary": "The famed immersive sim studio just got an extra month to find a new buyer, but will likely close if there are no takers.",
-      "tags": []
-    },
-    {
-      "title": "8 New TV Shows to Watch This Weekend on Netflix, HBO, and Hulu (October 23-25)",
-      "link": "https://www.polygon.com/new-tv-shows-streaming-this-weekend-netflix-october-23-25/",
-      "date": "2026-10-23T20:01:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-terminal-list.jpg",
-      "summary": "In this week's TV column, we have the return of different shows, including one featuring Chris Pratt and an anime based on a video game.",
       "tags": []
     },
     {
@@ -370,30 +590,12 @@
       "tags": []
     },
     {
-      "title": "Esper locations in Final Fantasy Resonance",
-      "link": "https://www.polygon.com/final-fantasy-resonance-esper-locations/",
-      "date": "2026-10-23T18:51:59.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/final-fantasy-resonance-espers.jpg",
-      "summary": "Here's where to find each Esper location in Final Fantasy Resonance and how to recruit them",
-      "tags": []
-    },
-    {
       "title": "Battlefield 6, One Year Later",
       "link": "https://kotaku.com/battlefield-6-one-year-later-2000749095",
       "date": "2026-10-23T18:44:13.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/BF6-s5-art-1280x720.jpg",
       "summary": "It's been quite an up and down year for EA's big military shooter",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect 5 Pitched as 'John Wick and James Bond' in Space, Report Says",
-      "link": "https://www.polygon.com/mass-effect-5-leaked-plot-details-john-wick-james-bond-in-space/",
-      "date": "2026-10-23T18:34:46.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/malequarian.JPG",
-      "summary": "New Mass Effect: Universe details have surfaced. Reportedly it would have been a spy thriller inspired by John Wick and James Bond.",
       "tags": []
     },
     {
@@ -876,33 +1078,6 @@
       "tags": []
     },
     {
-      "title": "Carbuncle Final Fantasy Resonance : comment réussir la quête de la Grotte aux Rubis et obtenir l’invocation ?",
-      "link": "https://www.jeuxvideo.com/news/2109996/carbuncle-final-fantasy-resonance-comment-reussir-la-quete-de-la-grotte-aux-rubis-et-obtenir-l-invocation.htm",
-      "date": "2026-10-23T11:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179251/1792507638-6783-card.jpg",
-      "summary": "Dans Final Fantasy Resonance, vous aurez l’occasion de partir à la chasse aux invocations. Grande tradition de la saga, cet épisode place les Chimères au centre du gameplay…",
-      "tags": []
-    },
-    {
-      "title": "Figurez-vous que la série SaGa n'a jamais été aussi populaire grâce au remake de Romancing SaGa 2",
-      "link": "https://www.gamekult.com/actualite/figurez-vous-que-la-serie-saga-n-a-jamais-ete-aussi-populaire-grace-au-remake-de-romancing-saga-2-3050872570.html",
-      "date": "2026-10-23T11:16:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872570/figurez-vous-que-la-serie-saga-n-a-jamais-ete-aussi-populaire-grace-au-remake-de-romancing-saga-2-ff17ced5__800_800__435-0-1514-1080.jpg",
-      "summary": "Presque deux ans après sa commercialisation, le remake de Romancing Saga 2, nommé Revenge of The Seven, a atteint le million d'exemplaires écoulés, ce qui en fait l'opus SaGa le…",
-      "tags": []
-    },
-    {
-      "title": "Capcom affected by data breach, over 11.7m Capcom ID accounts compromised",
-      "link": "https://www.gamesindustry.biz/capcom-affected-by-data-breach-over-117m-capcom-id-accounts-compromised",
-      "date": "2026-10-23T11:05:20.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/monster-hunter_YYPxbEk.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Capcom has been hit by a data breach that affected over 11.7 million Capcom ID accounts.",
-      "tags": []
-    },
-    {
       "title": "New game digest: Football Manager, Dispatch, The Traitors, UnGodly, Dr. Seuss and more",
       "link": "https://mobilegamer.biz/new-games-digest-fm27-touch-dispatch-the-traitors-ungodly-dr-seuss-and-more/",
       "date": "2026-10-23T10:55:30.000Z",
@@ -914,15 +1089,6 @@
       ]
     },
     {
-      "title": "Faites-vous partie des 11,7 millions de joueurs concernés par la fuite de données chez Capcom ? Voici comment le savoir",
-      "link": "https://www.jeuxvideo.com/news/2110534/faites-vous-partie-des-11-7-millions-de-joueurs-concernes-par-la-fuite-de-donnees-chez-capcom-voici-comment-le-savoir.htm",
-      "date": "2026-10-23T10:50:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792749154-3166-card.jpg",
-      "summary": "Capcom a été victime d'une cyberattaque d'envergure ciblant les bases de données du service Capcom ID. Plus de 11,7 millions de comptes ont vu leurs données siphonnées à travers…",
-      "tags": []
-    },
-    {
       "title": "Dispatch coming to mobile on December 9th with first four episodes free",
       "link": "https://www.pocketgamer.biz/dispatch-coming-to-mobile-on-december-9th-with-first-four-episodes-free/",
       "date": "2026-10-23T10:49:00.000Z",
@@ -932,96 +1098,6 @@
       "tags": [
         "patch"
       ]
-    },
-    {
-      "title": "Lazare's Sacrifice : le créateur du Gwent revient avec un jeu de cartes à la Révolution Française",
-      "link": "https://www.gamekult.com/actualite/lazare-s-sacrifice-le-createur-du-gwent-revient-avec-un-jeu-de-cartes-a-la-revolution-francaise-3050872575.html",
-      "date": "2026-10-23T10:43:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872575/lazare-s-sacrifice-le-createur-du-gwent-revient-avec-un-jeu-de-cartes-a-la-revolution-francaise-42f45232__800_800__447-0-1528-1080.jpg",
-      "summary": "Après un passage chez Techland (Dying Light), le créateur du Gwent Damien Monnier revient pour collaborer avec le jeu de cartes narratif Lazare's Sacrifice, où l'on incarne un…",
-      "tags": []
-    },
-    {
-      "title": "Stolen RTX 5090 from Brazilian airport forklift heist reportedly turns up on second hand market for $6,400, but the rest remain AWOL",
-      "link": "https://www.pcgamer.com/hardware/graphics-cards/stolen-rtx-5090-from-brazilian-airport-forklift-heist-reportedly-turns-up-on-second-hand-market-for-usd6-400-but-the-rest-remain-awol/",
-      "date": "2026-10-23T10:42:31.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/5bd3uhMH4zZZvhutBqHPbM-1920-80.jpg",
-      "summary": "These things have serial numbers, you know.",
-      "tags": []
-    },
-    {
-      "title": "Witchbrook, le Stardew Valley-like à la croisée d'Harry Potter, annonce une nouvelle romance pour le jeu",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/witchbrook-kiara-chandra-annonce-725296?utm_source=RSS",
-      "date": "2026-10-23T10:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/708035_69455786e6ef7.jpg",
-      "summary": "Chucklefish a dévoilé une nouvelle romance pour Witchbrook et elle risque de faire tomber plein de cœurs lors de la sortie du Stardew Valley-like le plus attendu.",
-      "tags": []
-    },
-    {
-      "title": "I've tested every graphics setting in Call of Duty: Modern Warfare 4—tweak these four options for the best performance",
-      "link": "https://www.pcgamer.com/games/call-of-duty/ive-tested-every-graphics-setting-in-call-of-duty-modern-warfare-4-tweak-these-four-options-for-the-best-performance/",
-      "date": "2026-10-23T10:29:20.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/YCfD5BENn8KFH9od8t5TdT-1920-80.jpg",
-      "summary": "Upscaling can also help a bunch, of course.",
-      "tags": []
-    },
-    {
-      "title": "Katana Zero : le DLC n'est pas mort, il fait maintenant la taille d'un jeu complet",
-      "link": "https://www.gamekult.com/actualite/katana-zero-le-dlc-n-est-pas-mort-il-fait-maintenant-la-taille-d-un-jeu-complet-3050872573.html",
-      "date": "2026-10-23T10:24:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872573/katana-zero-le-dlc-n-est-pas-mort-il-fait-maintenant-la-taille-d-un-jeu-complet-4f74fca2__800_800__441-0-1522-1080.jpg",
-      "summary": "Chez Askiisoft, c'est prêt quand c'est prêt, et pas avant. Au charbon sur l'extension gratuite de Katana Zero depuis 2019, le développeur confirme être toujours en vie, et…",
-      "tags": []
-    },
-    {
-      "title": "Xbox Game Pass : 6 jeux gratuits tout le week-end, dont une licence culte du JRPG accessible à tous",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/xbox-game-pass-6-jeux-gratuits-week-end-22-octobre-725359?utm_source=RSS",
-      "date": "2026-10-23T10:15:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/721996_6a96bfd20d22c.jpg",
-      "summary": "Le Xbox Game Pass vient de lancer les Free Play Days du 22 octobre jusqu'au 26 octobre avec 6 jeux gratuits dont vous pouvez profiter pleinement avec ou sans abonnement.",
-      "tags": []
-    },
-    {
-      "title": "Clair Obscur réserve une belle surprise gratuite inattendue sur un autre jeu français cultissime",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/clair-obscur-crossover-gratuit-rayman-legends-retold-725358?utm_source=RSS",
-      "date": "2026-10-23T10:03:08.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/704944_6904692d3b82a.jpg",
-      "summary": "Clair Obscur se rappelle à notre bon souvenir avec l'annonce d'une belle surprise gratuite en lien avec un autre jeu français cultissime qui va faire son retour bientôt.",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty: Modern Warfare 4 | Critical Consensus",
-      "link": "https://www.gamesindustry.biz/call-of-duty-modern-warfare-4-critical-consensus",
-      "date": "2026-10-23T09:59:48.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/cd-(1).webp?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Activision has a lot riding on Call of Duty: Modern Warfare 4. Last year's entry, Black Ops 7, was poorly received by critics and players, and third-party tracking data suggested…",
-      "tags": []
-    },
-    {
-      "title": "Prime Gaming vous offre 2 jeux gratuits à garder dont un parfait juste avant Halloween",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-amazon-luna-jeux-gratuits-ad-infinitum-725351?utm_source=RSS",
-      "date": "2026-10-23T09:54:59.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/452559_64e87be6b05f1.webp",
-      "summary": "Prime Gaming vous fait cadeau de deux jeux gratuits à partir du 22 octobre 2026. Tous les abonnés Amazon peuvent les récupérer et les garder à vie ensuite.",
-      "tags": []
-    },
-    {
-      "title": "Asus ROG Rapture GT-BN98 router review",
-      "link": "https://www.pcgamer.com/hardware/networking/asus-rog-rapture-gt-bn98-review/",
-      "date": "2026-10-23T09:53:57.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/vXHNRot9UMxVM2PJRxBi4j-1920-80.jpg",
-      "summary": "Asus delivers the first Wi-Fi 8 router.",
-      "tags": []
     },
     {
       "title": "GameMaker makes GMRT free for commercial use from 2027",
@@ -1042,211 +1118,12 @@
       "tags": []
     },
     {
-      "title": "Charts USA : avec Marvel's Wolverine, la PS5 reprend les commandes en septembre",
-      "link": "https://www.gamekult.com/actualite/charts-usa-avec-marvel-s-wolverine-la-ps5-reprend-les-commandes-en-septembre-3050872565.html",
-      "date": "2026-10-23T09:40:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872565/charts-usa-avec-marvel-s-wolverine-la-ps5-reprend-les-commandes-en-septembre-a6703d6c__800_800__367-0-2167-1800.jpg",
-      "summary": "Circana a publié ses estimations du marché du jeu vidéo aux États-Unis pour la période allant du 30 août au 3 octobre 2026. Au milieu d'un grand nombre de nouvelles sorties…",
-      "tags": []
-    },
-    {
-      "title": "Aucun Fallout Day n'est réussi sans un Pip-Boy au bras, précommandez le modèle 3000 Mk V Overseer Edition sur l'IGN Store Europeut",
-      "link": "https://fr.ign.com/fallout-the-series/93392/aucun-fallout-day-nest-reussi-sans-un-pip-boy-au-bras-precommandez-le-modele-3000-mk-v-overseer-edit",
-      "date": "2026-10-23T09:39:01.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/sans-titre-54-20261023113553_uuxe.png",
-      "summary": "C&#x27;est une question de survie.",
-      "tags": []
-    },
-    {
-      "title": "A public outing of severe and unfixed Linux kernel vulnerabilities should have you thinking of updating your SteamOS or other distros to beta branches",
-      "link": "https://www.pcgamer.com/hardware/a-public-outing-of-severe-and-unfixed-linux-kernel-vulnerabilities-should-have-you-thinking-of-updating-your-steamos-or-other-distros-to-beta-branches/",
-      "date": "2026-10-23T09:26:40.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/7EimC87J9aoLbZEbfWBX9H-1920-80.jpg",
-      "summary": "The accidental reveal of unpatched vulnerabilities as high as 9 on the CVSS score chart is a little worrisome.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "« Bon travail » Half-Life 3 officiellement confirmé à cause d'une boulette d'un développeur de Valve ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/half-life-3-mention-qa-valve-725310?utm_source=RSS",
-      "date": "2026-10-23T09:25:07.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/675123_67c81c1c70f57.webp",
-      "summary": "Jusqu'alors l'objet d'insistantes rumeurs, le tant attendu Half-Life 3 aurait officiellement été mentionné par mégarde tout récemment par un développeur de Valve.",
-      "tags": []
-    },
-    {
-      "title": "Welcome to paradise Cyberpunk 2077 Mise à jour 2.5 : Quel choix faire lors de cette quête ?",
-      "link": "https://www.jeuxvideo.com/news/2110470/welcome-to-paradise-cyberpunk-2077-mise-a-jour-2-5-quel-choix-faire-lors-de-cette-quete.htm",
-      "date": "2026-10-23T09:20:11.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179274/1792744935-4497-card.jpg",
-      "summary": "Le nouveau contrat secondaire « Welcome to Paradise », introduit avec la mise à jour Edgerunners 2 de Cyberpunk 2077 propose une visite guidée de Night City narrée par une version…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Sauron porte l’Anneau Unique et affronte le Balrog dans la nouvelle bande-annonce de la saison 3 des Anneaux de Pouvoir",
-      "link": "https://fr.ign.com/the-lord-of-the-rings-the-rings-of-power/93390/sauron-porte-lanneau-unique-et-affronte-le-balrog-dans-la-nouvelle-bande-annonce-de-la-saison-3-des",
-      "date": "2026-10-23T09:11:10.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/s/sauron-wea/sauron-wears-the-one-ring-and-battles-the-balrog-in-new-ring_5mp8.jpg",
-      "summary": "« La victoire de Sauron est imminente. »",
-      "tags": []
-    },
-    {
-      "title": "8 ans après sa sortie, ce jeu Tomb Raider fait une belle surprise à certains joueurs",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/shadow-tomb-raider-survivor-trilogy-nintendo-switch-2-725295?utm_source=RSS",
-      "date": "2026-10-23T09:04:31.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6adb1b8bc2fc9.jpg",
-      "summary": "Shadow of the Tomb Raider débarque enfin sur Nintendo Switch 2, complétant ainsi la Survivor Trilogy proposée en compilation pour redécouvrir reboot du début à la fin.",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect 5 devait être « Mass Effect Universe » : voilà à quoi ressemblait le projet avant la fermeture de BioWare",
-      "link": "https://www.gamekult.com/actualite/mass-effect-5-devait-etre-mass-effect-universe-voila-a-quoi-ressemblait-le-projet-avant-la-fermeture-de-bioware-3050872571.html",
-      "date": "2026-10-23T09:02:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872571/mass-effect-5-devait-etre-mass-effect-universe-voila-a-quoi-ressemblait-le-projet-avant-la-fermeture-de-bioware-7b560b1b__800_800__684-0-1770-1085.png",
-      "summary": "Suite à la fermeture de BioWare et l'annulation de Mass Effect 5, un employé du studio a laissé fuiter une bande-annonce interne du projet qui dévoile son titre provisoire : Mass…",
-      "tags": []
-    },
-    {
-      "title": "20 ans et 160 millions d'heures vues sur Disney+ plus tard, cette saga culte va avoir une suite",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-plus-halloweentown-5-developpement-725288?utm_source=RSS",
-      "date": "2026-10-23T08:40:53.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/675662_67c9668a8834a.jpg",
-      "summary": "Disney+ travaillerait sur la suite d'une saga culte qui a fédéré énormément de fans à travers plusieurs décénnies d'existence et dont le dernier film remonte justement à 20 ans en…",
-      "tags": []
-    },
-    {
       "title": "New release roundup: House of Tesla, Crushed in Time, One Piece: Grand Gourmet, and more",
       "link": "https://www.pocketgamer.biz/new-release-roundup-house-of-tesla-crushed-in-time-one-piece-grand-gourmet-and-more/",
       "date": "2026-10-23T08:40:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141828/90094/new-mobile-games-october-4-2026_l660.jpg",
       "summary": "While the deals and the stats of the gaming world are important, nothing would happen without the research, funding and, of course, development that goes into making a great game…",
-      "tags": []
-    },
-    {
-      "title": "J'ai découvert ce jeu par hasard grâce aux soldes Steam et je me suis régalé. Mais si j'avais su, j'aurais attendu sa prochaine mise à jour gratuite",
-      "link": "https://www.jeuxvideo.com/news/2110396/j-ai-decouvert-ce-jeu-par-hasard-grace-aux-soldes-steam-et-je-me-suis-regale-mais-si-j-avais-su-j-aurais-attendu-sa-prochaine-mise-a-jour-gratuite.htm",
-      "date": "2026-10-23T08:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792677577-3832-card.jpg",
-      "summary": "Acheté pour moins de dix euros durant les soldes Steam, Ancestors: The Humankind Odyssey m'aura occupé pendant une vingtaine d’heures. Mais alors que j'approchais du 100%, Panache…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Au Japon, Shigeru Miyamoto est le premier acteur de l'industrie du jeu vidéo à recevoir le prestigieux Ordre de la Culture",
-      "link": "https://www.gamekult.com/actualite/au-japon-shigery-miyamoto-est-le-premier-acteur-de-l-industrie-du-jeu-video-a-recevoir-le-prestigieux-ordre-de-la-culture-3050872569.html",
-      "date": "2026-10-23T08:16:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872569/au-japon-shigery-miyamoto-est-le-premier-acteur-de-l-industrie-du-jeu-video-a-recevoir-le-prestigieux-ordre-de-la-culture-31f0bfaf__800_800__313-0-1766-1454.jpg",
-      "summary": "Le ministère japonais de l’Éducation, de la Culture, des Sports, des Sciences et de la Technologie a fait connaître le 23 octobre les huit lauréats de l’Ordre de la Culture pour…",
-      "tags": []
-    },
-    {
-      "title": "GUIDE Cyberpunk 2077 : comment débloquer et obtenir le nouveau contenu gratuit secret de The Witcher 3 ?",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/cyberpunk-2077-2-5-comment-obtenir-contenu-the-witcher-3-725269?utm_source=RSS",
-      "date": "2026-10-23T08:15:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/544581_660bb404a8da7.jpg",
-      "summary": "La mise à jour 2.5 de Cyberpunk 2077 vous donne accès à du contenu gratuit inédit directement inspiré de The Witcher 3. Découvrez avec nous comment l'obtenir dans le jeu.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Le Nintendo Switch Online annonce 3 jeux gratuits rares, dont l'un des premiers de Miyamoto",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-switch-online-jeux-gratuits-octobre-725272?utm_source=RSS",
-      "date": "2026-10-23T08:10:20.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/440260_64c8ba4d42513.webp",
-      "summary": "Le Nintendo Switch Online va continuer d’enrichir son catalogue avec l’arrivée de trois nouveaux jeux accessibles gratuitement pour les abonnés.",
-      "tags": []
-    },
-    {
-      "title": "Octopath Traveler 0 s'apprête à recevoir du nouveau contenu (un nouveau monstre dans l'arène, de nouveaux personnages) dès décembre",
-      "link": "https://www.gamekult.com/actualite/octopath-traveler-0-s-apprete-a-recevoir-du-nouveau-contenu-un-nouveau-monstre-dans-l-arene-de-nouveaux-personnages-des-decembre-3050872568.html",
-      "date": "2026-10-23T08:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872568/octopath-traveler-0-s-apprete-a-recevoir-du-nouveau-contenu-un-nouveau-monstre-dans-l-arene-de-nouveaux-personnages-des-decembre-537c4095__800_800__564-0-1643-1080.jpg",
-      "summary": "Square Enix a dévoilé le contenu d’une mise à jour gratuite d’Octopath Traveler 0, attendue \"environ en décembre 2026\", sans date plus précise, avec de nouveaux personnages et un…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "« Merci à tous pour votre patience » Assassin's Creed Black Flag va officiellement ajouter une fonctionnalité que vous réclamez depuis sa sortie",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/assassins-creed-black-flag-new-game-plus-725270?utm_source=RSS",
-      "date": "2026-10-23T08:02:59.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a5f28a30df9b.webp",
-      "summary": "Trois mois après sa sortie, Assassin's Creed Black Flag Resynced annonce une très bonne nouvelle avec l'ajout d'une fonctionnalité particulièrement attendue.",
-      "tags": []
-    },
-    {
-      "title": "Podcast: Landfall's Rebecca Lautner on Peak's 23 million sales and looking past friendslop",
-      "link": "https://www.gamesindustry.biz/podcast-landfalls-rebecca-lautner-on-peaks-23-million-sales-and-looking-past-friendslop",
-      "date": "2026-10-23T08:00:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Game-Republic-15-10-26-84.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "A new episode of the still-somewhat-irregular GamesIndustry.biz podcast features a fireside chat with Rebecca Lautner, CBO at Landfall Games, recorded at Game Republic New…",
-      "tags": []
-    },
-    {
-      "title": "La saison 2 de Cyberpunk Edgerunners sur Netflix déçoit... Elle ne réussit pas à faire aussi bien que la masterclass de la saison 1",
-      "link": "https://www.jeuxvideo.com/news/2110418/la-saison-2-de-cyberpunk-edgerunners-sur-netflix-decoit-elle-ne-reussit-pas-a-faire-aussi-bien-que-la-masterclass-de-la-saison-1.htm",
-      "date": "2026-10-23T07:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792681486-6888-card.jpg",
-      "summary": "Quatre ans après le raz-de-marée Cyberpunk Edgerunners, la saison 2 débarque enfin sur Netflix. Mais alors que la formule initiale frisait la perfection, cette suite divise la…",
-      "tags": []
-    },
-    {
-      "title": "Suite à la fermeture de BioWare, la série Mass Effect sortira-t-elle quand même sur Amazon Prime ?",
-      "link": "https://www.jeuxvideo.com/news/2110351/suite-a-la-fermeture-de-bioware-la-serie-mass-effect-sortira-t-elle-quand-meme-sur-amazon-prime.htm",
-      "date": "2026-10-23T07:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179266/1792663681-5401-card.jpg",
-      "summary": "La fermeture surprise du studio BioWare par Electronic Arts en octobre 2026, suivie de l'annulation de Mass Effect 5, a provoqué une onde de choc dans l'industrie. Du côté des…",
-      "tags": []
-    },
-    {
-      "title": "Une série Poison Ivy serait en préparation chez DC, avec la showrunner de The Penguin comme productrice",
-      "link": "https://fr.ign.com/the-batman-2/93388/une-serie-poison-ivy-serait-en-preparation-chez-dc-avec-la-showrunner-de-the-penguin-comme-productri",
-      "date": "2026-10-23T07:13:37.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/p/poison-ivy/poison-ivy-show-in-early-development-with-penguin-showrunner_nway.jpg",
-      "summary": "Cette série ne fera pas partie de l’univers Batman de Matt Reeves.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Faut-il réhabiliter Assassin’s Creed Syndicate ?",
-      "link": "https://www.gamekult.com/actualite/faut-il-rehabiliter-assassin-s-creed-syndicate-101-3050866331.html",
-      "date": "2026-10-23T07:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866331/il-y-a-10-ans-assassin-s-creed-syndicate-marquait-la-fin-d-une-ere-a47350fe__800_800__375-0-998-618.jpg",
-      "summary": "Le timing est assez cocasse pour le quinzième anniversaire d’Assassin’s Creed Syndicate. Son directeur créatif qui est ensuite devenu le directeur de toute la licence, vient en…",
-      "tags": []
-    },
-    {
-      "title": "Mark Darrah, ancien producteur exécutif de BioWare, estime qu’EA pourrait être « plus enclin » à vendre des propriétés intellectuelles telles que Mass Effect et Dragon Age suite à la fermeture du studio",
-      "link": "https://fr.ign.com/mass-effect-next-chapter/93386/mark-darrah-ancien-producteur-executif-de-bioware-estime-quea-pourrait-etre-plus-enclin-a-vendre-des",
-      "date": "2026-10-23T06:57:06.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/f/former-bio/former-bioware-executive-producer-mark-darrah-says-ea-might_hb3b.jpg",
-      "summary": "« Je pense que nous allons encore devoir attendre un peu. »",
       "tags": []
     },
     {
@@ -1265,69 +1142,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141801/90087/istikan-studios-danar-kayfi_l660.jpg",
       "summary": "Erbil-based Istikan Studio is building a growing catalogue of games, from cosy tea shop simulator Istikan Chai to strategy game General Idler and upcoming title Bathroom Please!…",
-      "tags": []
-    },
-    {
-      "title": "Entries for The Big Indie Pitch at Montréal close this week",
-      "link": "https://www.pocketgamer.biz/entries-for-the-big-indie-pitch-at-montral-close-this-week/",
-      "date": "2026-10-22T11:18:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/140960/90020/bip-mobile-pc-console_l660.jpg",
-      "summary": "Taking place within MIGS26, the Big Indie Pitch sponsored by Xsolla at PG Connects Summit Montr&eacute;al delivers a unique quick-fire format that gives each developer five…",
-      "tags": []
-    },
-    {
-      "title": "Supercell hit by cyberattack, but says no player data was affected",
-      "link": "https://mobilegamer.biz/supercell-hit-by-cyberattack-but-says-no-player-data-was-affected/",
-      "date": "2026-10-22T10:47:27.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "The Clash of Clans developer says it was the target of multiple attacks last week and has notified police and regulators.",
-      "tags": []
-    },
-    {
-      "title": "Side acquires art studio Roboto Entertainment to expand presence in China",
-      "link": "https://www.pocketgamer.biz/side-acquires-art-studio-roboto-entertainment-to-expand-presence-in-china/",
-      "date": "2026-10-22T10:24:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141822/90092/side-andrea-cordella_l660.jpg",
-      "summary": "Games services provider Side has acquired games art studio Roboto Entertainment, founded by industry veteran Andrea Cordella. The move marks an extension of Side's footprint in…",
-      "tags": []
-    },
-    {
-      "title": "Clash Royale tabletop game surpasses $100,000 on Kickstarter after reaching target in one hour",
-      "link": "https://www.pocketgamer.biz/clash-royale-tabletop-game-surpasses-100000-on-kickstarter-after-reaching-target-in-one-hour/",
-      "date": "2026-10-22T10:14:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141823/90091/supercell-table-top-game_l660.jpg",
-      "summary": "Supercell and Maestro Media's Clash Royale: The Grand Arena reached its Kickstarter funding goal in just one hour after launching the campaign on October 20th, 2026. The tabletop…",
-      "tags": []
-    },
-    {
-      "title": "Fortnite returns to the App Store in Australia today",
-      "link": "https://www.pocketgamer.biz/fortnite-returns-to-the-app-store-in-australia-today/",
-      "date": "2026-10-22T09:25:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/138573/90090/fortnite-night-king_l660.jpg",
-      "summary": "Fortnite returns to the App Store in Australia today after a federal court told Apple to open up iOS. The court determined Apple has violated competition law and will require the…",
-      "tags": []
-    },
-    {
-      "title": "Mika Games raises $10m to fund mobile game studios",
-      "link": "https://www.pocketgamer.biz/mika-games-raises-10m-to-fund-mobile-game-studios/",
-      "date": "2026-10-22T09:01:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141817/90089/mika-games-raises-10m-to-fund-mobile-game-studios_l660.jpg",
-      "summary": "Cyprus-based investment company Mika Games has raised $10 million in fresh funding to help mobile games studios develop their titles and test paid marketing campaigns before they…",
-      "tags": []
-    },
-    {
-      "title": "Fortnite is returning to the Australian App Store tomorrow",
-      "link": "https://mobilegamer.biz/fortnite-is-returning-to-the-australian-app-store-tomorrow/",
-      "date": "2026-10-22T08:36:32.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "Epic said the Australian Federal Court has told Apple to open up iOS after finding it violated competition law.",
       "tags": []
     },
     {
