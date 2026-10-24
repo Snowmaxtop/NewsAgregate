@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T01:55:51.747Z",
+  "generatedAt": "2026-10-24T06:49:20.888Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -43,21 +43,21 @@
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
       "newest": "2026-10-23T20:20:09.000Z",
-      "kept": 19
+      "kept": 17
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-23T15:53:34.000Z",
+      "newest": "2026-10-24T06:30:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-23T18:01:00.000Z",
-      "kept": 20
+      "newest": "2026-10-24T04:01:00.000Z",
+      "kept": 18
     },
     "kotaku": {
       "status": "ok",
@@ -77,7 +77,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-24T00:43:18.000Z",
+      "newest": "2026-10-24T04:00:21.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,42 @@
     }
   },
   "articles": [
+    {
+      "title": "One Piece : les Français mettent les Japonais en colère en utilisant le drapeau emblématique dans les manifestations. Quand le manga devient un symbole",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/one-piece-jolly-roger-manif-17-octobre-france-polemique-725207?utm_source=RSS",
+      "date": "2026-10-24T06:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6ada1004136cb.jpg",
+      "summary": "Parmi toutes les pancartes et autres banderoles tendues durant les manifestations du 17 octobre dernier, un symbole aura marqué les esprits. Partout en France, des jeunes ont…",
+      "tags": []
+    },
+    {
+      "title": "PS Plus Extra : les sorties du catalogue de novembre 2026 officiellement confirmées, avec deux énormes jeux de Rockstar",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-extra-sorties-novembre-2026-725363?utm_source=RSS",
+      "date": "2026-10-24T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/705694_691637f72f456.jpg",
+      "summary": "PlayStation a dévoilé la liste totale des sorties du catalogue du PS Plus Extra et Premium de novembre 2026. Et il y a deux grands mastodontes signés Rockstar parmi eux.",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Tomb Raider : autopsie d'une crise d'identité difficile à admettre",
+      "link": "https://www.gamekult.com/actualite/tomb-raider-autopsie-d-une-crise-d-identite-difficile-a-admettre-3050872541.html",
+      "date": "2026-10-24T04:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872541/tomb-raider-a-30-ans-qu-est-ce-qu-ils-t-ont-fait-ma-lara-5ac95c8b__800_800__504-0-1583-1080.jpg",
+      "summary": "Aujourd'hui, Lara Croft appartient à Embracer Group, le prochain jeu (Tomb Raider : Catalyst) sera édité par Amazon, Netflix a diffusé un anime pour tenter de recoller les…",
+      "tags": []
+    },
+    {
+      "title": "J.J. Abrams’ Best Original Sci-Fi Movie Officially Finds a New Home on Streaming",
+      "link": "https://www.polygon.com/cloverfield-jj-abrams-streaming-peacock-paramount-plus-pluto-tv/",
+      "date": "2026-10-24T04:00:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdclov_ec005.jpg",
+      "summary": "Cloverfield blends monster chaos with personal stories in New York City, and it's just found a new home on streaming.",
+      "tags": []
+    },
     {
       "title": "The Witcher's Geralt Officially Returns for New Adventure",
       "link": "https://www.polygon.com/the-witcher-geralt-returns-in-2026-with-new-release/",
@@ -367,15 +403,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674778-3257-card.jpg",
       "summary": "A chaque Call of son lot de tier list pour vous aider à faire les bons choix, lorsque vous débloquerez la personnalisation de classe au niveau 4 de Modern Warfare 4. Ici, nous…",
-      "tags": []
-    },
-    {
-      "title": "Best Visions to use in Final Fantasy Resonance",
-      "link": "https://www.polygon.com/final-fantasy-resonance-best-visions/",
-      "date": "2026-10-23T18:27:34.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/final-fantasy-resonance-best-visions.jpg",
-      "summary": "The best Visions in Final Fantasy Resonance combine excellent skills with universally useful mastery abilities",
       "tags": []
     },
     {
@@ -1196,24 +1223,6 @@
       "tags": []
     },
     {
-      "title": "Nintendo ne va pas aimer ça ! La Nintendo Switch 2 est déjà piratée par IA 16 mois seulement après sa sortie, et ça ouvre la porte à tout ce que l'éditeur déteste",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-switch-2-jailbreak-avec-ia-mario-kart-world-mods-725271?utm_source=RSS",
-      "date": "2026-10-23T07:34:24.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/story/690173_67ee7de682d35.jpg",
-      "summary": "Après la PS5, c’est maintenant au tour de la Nintendo Switch 2 d’être victime de jailbreaking, ce qui a permis à des hackeurs de concrétiser l’un des cauchemars de Nintendo.",
-      "tags": []
-    },
-    {
-      "title": "Même GTA 6 n'aurait pas réussi à les avoir ! Un nouveau set LEGO annoncé",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/lego-daft-punk-annonce-725264?utm_source=RSS",
-      "date": "2026-10-23T07:27:10.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/529853_65e04f571d9f9.jpg",
-      "summary": "LEGO a dévoilé une nouvelle collaboration originale, qui marquera une grande première pour un set basé sur un artiste. Et visiblement, même GTA 6 n’a pas réussi à obtenir un…",
-      "tags": []
-    },
-    {
       "title": "Une série Poison Ivy serait en préparation chez DC, avec la showrunner de The Penguin comme productrice",
       "link": "https://fr.ign.com/the-batman-2/93388/une-serie-poison-ivy-serait-en-preparation-chez-dc-avec-la-showrunner-de-the-penguin-comme-productri",
       "date": "2026-10-23T07:13:37.000Z",
@@ -1238,51 +1247,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/f/former-bio/former-bioware-executive-producer-mark-darrah-says-ea-might_hb3b.jpg",
       "summary": "« Je pense que nous allons encore devoir attendre un peu. »",
-      "tags": []
-    },
-    {
-      "title": "On a trouvé le meilleur jeu d'Halloween pour les quadragénaires : quand le 8-bit NES croise le cinéma d'horreur réel",
-      "link": "https://www.jeuxvideo.com/news/2110252/on-a-trouve-le-meilleur-jeu-d-halloween-pour-les-quadragenaires-quand-le-8-bit-nes-croise-le-cinema-d-horreur-reel.htm",
-      "date": "2026-10-23T06:40:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179260/1792595209-3117-card.jpg",
-      "summary": "À l'approche d'Halloween, ce jeu d'horreur indépendant associe une exploration en graphismes 8 bits façon NES à des cinématiques effrayantes tournées en prises de vues réelles. Ce…",
-      "tags": []
-    },
-    {
-      "title": "Sur Switch 2, un premier exploit vers le piratage de la console ?",
-      "link": "https://www.gamekult.com/actualite/sur-switch-2-un-premier-exploit-vers-le-piratage-de-la-console-3050872564.html",
-      "date": "2026-10-23T06:36:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872564/et-voila-comment-le-piratage-de-la-switch-2-commenca-a385d7d6__800_800__196-0-1049-853.jpg",
-      "summary": "Il aura donc fallu un peu plus d'un an. Un an pour que soit découverte la première vraie faille de la Switch 2. Selon Wccftech, qui a vu la vidéo de démonstration du chercheur en…",
-      "tags": []
-    },
-    {
-      "title": "Selon Masahiro Sakurai, les créateurs de jeux vraiment originaux compteront encore davantage à l'ère des copies de jeux générées par IA",
-      "link": "https://www.gamekult.com/actualite/selon-masahiro-sakurai-les-createurs-de-jeux-vraiment-originaux-compteront-encore-davantage-a-l-ere-des-copies-de-jeux-generees-par-ia-3050872567.html",
-      "date": "2026-10-23T06:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872567/selon-masahiro-sakurai-les-createurs-de-jeux-vraiment-originaux-compteront-encore-davantage-a-l-ere-des-copies-de-jeux-generees-par-ia-ccb9a8d1__800_800__408-0-1487-1080.jpg",
-      "summary": "Le papa de Smash Bros et Kirby Masahiro Sakurai s'est fait plutôt discret depuis la sortie l'an dernier de Kirby Air Riders. Tout récemment interrogé par Denfaminico Gamer, il…",
-      "tags": []
-    },
-    {
-      "title": "Oui, Sony prépare bien une technologie révolutionnaire pour les jeux PS6. Ce qu'on sait déjà",
-      "link": "https://www.jeuxvideo.com/news/2109926/oui-sony-prepare-bien-une-technologie-revolutionnaire-pour-les-jeux-ps6-ce-qu-on-sait-deja.htm",
-      "date": "2026-10-23T05:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179250/1792498167-7814-card.jpg",
-      "summary": "Sony prépare une technologie majeure pour sa future console. Un brevet récent dévoile les contours de cette innovation axée sur l'intelligence artificielle et la génération…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Forza Motorsport 3 : le jour où la simulation automobile a arrêté de nous punir (pour défier Gran Turismo)",
-      "link": "https://www.gamekult.com/actualite/forza-motorsport-3-le-jour-ou-la-simulation-automobile-a-arrete-de-nous-punir-pour-defier-gran-turismo-3050872507.html",
-      "date": "2026-10-23T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872507/forza-motorsport-3-le-jour-ou-la-simulation-automobile-a-arrete-de-nous-punir-pour-defier-gran-turismo-ede68cfa__800_800__0-0-1079-1080.jpg",
-      "summary": "Souvenons-nous de l'âpreté des simulations automobiles avant la fin des années 2000. L'amateur de belles mécaniques devait accepter un contrat tacite et impitoyable selon lequel…",
       "tags": []
     },
     {
