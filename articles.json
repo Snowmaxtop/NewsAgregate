@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T17:49:08.392Z",
+  "generatedAt": "2026-10-25T20:16:04.214Z",
   "sourceStatus": {
     "ign": "ok",
-    "gamedev": "ok",
+    "gamedev": "stale",
     "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
@@ -25,7 +25,7 @@
       "kept": 7
     },
     "gamedev": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-10-23T17:51:14.000Z",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-25T16:15:09.000Z",
-      "kept": 12
+      "newest": "2026-10-25T17:45:09.000Z",
+      "kept": 10
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-25T16:35:43.000Z",
+      "newest": "2026-10-25T20:09:55.000Z",
       "kept": 7
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-25T17:00:00.000Z",
-      "kept": 10
+      "newest": "2026-10-25T19:17:10.000Z",
+      "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-25T17:00:18.000Z",
+      "newest": "2026-10-25T20:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,11 +118,92 @@
   },
   "articles": [
     {
+      "title": "13 Short And Sweet Scary Games To Treat Yourself To Before Halloween",
+      "link": "https://kotaku.com/13-short-and-sweet-scary-games-to-treat-yourself-to-before-halloween-2000749391",
+      "date": "2026-10-25T20:09:55.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/childrenofclay.jpg",
+      "summary": "If you're lagging behind on your annual intake of ghouls and goblins, enjoy this selection of brief creeps, from retro classics to odd indie frights",
+      "tags": []
+    },
+    {
+      "title": "15 Years Later, Batman: Arkham City Remains Batman's Last Gaming Masterpiece",
+      "link": "https://www.polygon.com/batman-arkham-city-retrospective-best-superhero-video-game/",
+      "date": "2026-10-25T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/9759137/City.jpg",
+      "summary": "Batman: Arkham City set a new highwater mark for superhero games and has influenced their design and mechanics in the 15 years since its release.",
+      "tags": []
+    },
+    {
+      "title": "6 Hilarious 'Calvin and Hobbes' Comics Where Calvin is a Weird Little Genius",
+      "link": "https://www.polygon.com/calvin-hobbes-vocabulary/",
+      "date": "2026-10-25T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/calvin-and-hobbes-revenge-of-the-babysat.jpg",
+      "summary": "Words and verbs and adjectives, painted up like a picture in these iconic Calvin and Hobbes comic strips",
+      "tags": []
+    },
+    {
+      "title": "Indies and non-sequels have exploded in the last year, and it's not all friendslop",
+      "link": "https://www.pcgamer.com/gaming-industry/indies-and-non-sequels-have-exploded-in-the-last-year-and-its-not-all-friendslop/",
+      "date": "2026-10-25T19:17:10.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Yac4WCVwKt5nULBoDvLugh-1920-80.jpg",
+      "summary": "\"Indie studios produced 20 of the 21 extra breakout launches in the 2026 cohort,\" reads one industry analysis.",
+      "tags": []
+    },
+    {
+      "title": "Reddit&#8217;s Largest Open Source Community Dumbfounded By AI Ban: &#8216;I Guess Linux Is No Longer Allowed Here?&#8217;",
+      "link": "https://kotaku.com/reddits-largest-open-source-community-dumbfounded-by-ai-ban-i-guess-linux-is-no-longer-allowed-here-2000749384",
+      "date": "2026-10-25T19:00:21.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Linux-Tux-with-Reddit-Blog-background-Larry-Ewing-Reddit-1280x720.jpg",
+      "summary": "Moderators of r/opensource have banned projects under a year old, anything 'made by AI,' and, bizarrely, all non-English speakers",
+      "tags": []
+    },
+    {
+      "title": "'Save Mass Effect' petition hits over 180,000 signatures within days of BioWare's closure",
+      "link": "https://www.pcgamer.com/games/mass-effect/save-mass-effect-petition-hits-over-180-000-signatures-within-days-of-biowares-closure/",
+      "date": "2026-10-25T18:24:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/103434fa75f59d87cd2d9349dcb13623-1920-80.png",
+      "summary": "The desperate plea to EA has fans sharing their memories of the spacefaring shooter.",
+      "tags": []
+    },
+    {
+      "title": "The creator of our running RPG of the year weighs in on BioWare's closure: 'They were fundamental to the genre'",
+      "link": "https://www.pcgamer.com/games/rpg/the-creator-of-our-running-rpg-of-the-year-weighs-in-on-biowares-closure-they-were-fundamental-to-the-genre/",
+      "date": "2026-10-25T18:23:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/BsZwYT3hTw4C3kLLuFmmfi-1920-80.jpg",
+      "summary": "Don't cry because it's over.",
+      "tags": []
+    },
+    {
+      "title": "Riot resurrected 3 of its biggest League of Legends pop groups, but only one emerged victorious",
+      "link": "https://www.pcgamer.com/games/moba/riot-resurrected-3-of-its-biggest-league-of-legends-pop-groups-but-only-one-emerged-victorious/",
+      "date": "2026-10-25T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/C3uMndvfyTn5BujXRbAfEm-1920-80.jpg",
+      "summary": "I think I could guess where the budget went, but I'm not complaining.",
+      "tags": []
+    },
+    {
+      "title": "Selon ce leak, GTA 6 aura bien le poster que les joueurs attendent le plus inclus dans sa boîte",
+      "link": "https://www.jeuxvideo.com/news/2109627/selon-ce-leak-gta-6-aura-bien-le-poster-que-les-joueurs-attendent-le-plus-inclus-dans-sa-boite.htm",
+      "date": "2026-10-25T17:45:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179240/1792401118-91-card.jpg",
+      "summary": "À défaut de proposer un disque, les boîtes de Grand Theft Auto VI pourraient tout de même avoir un intérêt : un poster exclusif et utile qui plus est.",
+      "tags": []
+    },
+    {
       "title": "\"J'ai échoué\" : Dan Houser, cofondateur de Rockstar, considère Max Payne 3 comme son échec personnel",
       "link": "https://www.gamekult.com/actualite/j-ai-echoue-dan-houser-cofondateur-de-rockstar-considere-max-payne-3-comme-son-echec-personnel-3050872584.html",
       "date": "2026-10-25T17:21:00.000Z",
       "sourceId": "gamekult",
-      "image": null,
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872584/j-ai-echoue-dan-houser-cofondateur-de-rockstar-considere-max-payne-3-comme-son-echec-personnel-7902734c__800_800__119-0-601-482.jpg",
       "summary": "Bébé de Remedy, les droits de Max Payne sont toutefois cédés à Rockstar à la fin des années 2000, qui s'occupe alors du troisième opus. Si vous y étiez, vous vous souvenez…",
       "tags": []
     },
@@ -325,15 +406,6 @@
       "tags": []
     },
     {
-      "title": "GTA: San Andreas’ Most Frustrating MIssion Show How Far Rockstar Has Come in 22 Years",
-      "link": "https://www.polygon.com/gta-san-andreas-retrospective/",
-      "date": "2026-10-25T13:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gtasanandreas_sweet_firing.jpg",
-      "summary": "Grand Theft Auto: San Andreas is a classic game with interesting missions, but its annoying controls just feel worse after 22 years.",
-      "tags": []
-    },
-    {
       "title": "Call of Duty Modern Warfare 4 : Liste des meilleures améliorations de combat",
       "link": "https://www.jeuxvideo.com/news/2110412/call-of-duty-modern-warfare-4-liste-des-meilleures-ameliorations-de-combat.htm",
       "date": "2026-10-25T12:40:09.000Z",
@@ -349,15 +421,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872582/le-remaster-de-shrek-2-s-annonce-en-imitant-gta-6-et-fait-deja-un-carton-0d68e85f__800_800__422-0-1527-1106.png",
       "summary": "Dans les années 2000, il était encore de coutume d'avoir des jeux vidéo adaptés des films qui sortaient au cinoche. Des productions souvent foireuses pour un tas de raisons : peu…",
-      "tags": []
-    },
-    {
-      "title": "Nintendo Legend Reveals Super Mario Bros.' Most Surprising Innovation",
-      "link": "https://www.polygon.com/nintendo-super-mario-japan-award-biggest-series-innovation/",
-      "date": "2026-10-25T12:05:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/mario-artwork-from-the-original-super-mario-bros-nes-box-art.jpg",
-      "summary": "Nintendo designer Shigeru Miyamoto pinpoints the NES game's most notable invention, which remains unique 41 years after the original Super Mario Bros.",
       "tags": []
     },
     {
@@ -605,78 +668,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179259/1792587796-974-card.jpg",
       "summary": "Deux ans après sa sortie, Pokémon TCG Pocket va enfin proposer une mécanique historique de la licence. De quoi bousculer la méta dès le 29 octobre.",
-      "tags": []
-    },
-    {
-      "title": "Legend Of Zelda Producer Eiji Aonuma Knighted By French Ministry Of Culture",
-      "link": "https://kotaku.com/legend-of-zelda-producer-eiji-aonuma-knighted-by-french-ministry-of-culture-2000749331",
-      "date": "2026-10-24T19:45:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/breathofthewildmastersword.jpg",
-      "summary": "The longtime caretaker of the Zelda series traveled to Paris to receive his title, honored for inspiring the world’s 'imagination'",
-      "tags": []
-    },
-    {
-      "title": "Titan Final Fantasy Resonance : où se trouve cette chimère et comment obtenir l’invocation ?",
-      "link": "https://www.jeuxvideo.com/news/2110021/titan-final-fantasy-resonance-ou-se-trouve-cette-chimere-et-comment-obtenir-l-invocation.htm",
-      "date": "2026-10-24T19:15:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179251/1792511053-242-card.jpg",
-      "summary": "Sur chacun des continents de Final Fantasy Resonance, vous aurez l’occasion de croiser la route, si vous le voulez ou non, d’une Chimère afin de récupérer ses pouvoirs au terme…",
-      "tags": []
-    },
-    {
-      "title": "Top Xbox exec promoted in brand 'reset' leaves after 3 months in role",
-      "link": "https://www.pcgamer.com/gaming-industry/top-xbox-exec-promoted-in-brand-reset-leaves-after-3-months-in-role/",
-      "date": "2026-10-24T18:58:24.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/nnXTHjAJbZ7bw4xzhZJCw-1920-80.jpg",
-      "summary": "Is that good?",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : Liste des meilleurs équipements tactiques",
-      "link": "https://www.jeuxvideo.com/news/2110404/call-of-duty-modern-warfare-4-liste-des-meilleurs-equipements-tactiques.htm",
-      "date": "2026-10-24T18:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792679626-7839-card.jpg",
-      "summary": "Dans COD Modern Warfare 4, la personnalisation de votre classe va forcément passer par le choix d'une arme tactique. Dans ce guide, nous verrons lesquelles prioriser pour que vous…",
-      "tags": []
-    },
-    {
-      "title": "Call Of Duty: Modern Warfare 4 Director Says There’s Probably No Such Thing As &#8216;Perfected&#8217; Matchmaking",
-      "link": "https://kotaku.com/call-of-duty-modern-warfare-4-director-says-theres-probably-no-such-thing-as-perfected-matchmaking-2000749327",
-      "date": "2026-10-24T18:25:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/modernwarfare4duo-1280x872.jpg",
-      "summary": "With the latest Call of Duty landing, seemingly without matchmaking features, multiplayer director Joe Cecot says he doesn't believe a system to satisfy all is possible",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : Avez vous acheté une PS5 Pro pour rien ?",
-      "link": "https://www.jeuxvideo.com/news/2109615/gta-6-avez-vous-achete-une-ps5-pro-pour-rien.htm",
-      "date": "2026-10-24T18:10:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179240/1792403285-2671-card.jpg",
-      "summary": "À quelques semaines du lancement mondial de GTA 6, l'enthousiasme pour la PlayStation 5 Pro fait face à un doute majeur. Alors que beaucoup de joueurs ont déboursé 899,99 € dans…",
-      "tags": []
-    },
-    {
-      "title": "Penguin Colony review: A daringly weird horror game whose atmosphere and surprises overcome its rough edges",
-      "link": "https://www.pcgamer.com/games/horror/penguin-colony-review/",
-      "date": "2026-10-24T18:10:01.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/zZTTjF3rcB8LvDfbHX23jU-1920-80.jpg",
-      "summary": "Something ancient and horrible stirs in the farthest south: Are you bad enough penguin to… not really do much about it?",
-      "tags": []
-    },
-    {
-      "title": "BioWare's incredible legacy will continue as long as there are RPGs",
-      "link": "https://www.pcgamer.com/games/rpg/biowares-incredible-legacy-will-continue-as-long-as-there-are-rpgs/",
-      "date": "2026-10-24T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QaMGHy7ehiZ56gLwQYcngN-1920-80.jpg",
-      "summary": "EA is shutting down the venerable studio, but its impact will persevere.",
       "tags": []
     },
     {
