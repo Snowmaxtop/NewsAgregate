@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-25T14:24:26.206Z",
+  "generatedAt": "2026-10-25T17:49:08.392Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
-    "gibiz": "ok",
+    "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
     "gamekult": "ok",
@@ -32,7 +32,7 @@
       "kept": 0
     },
     "gibiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-23T15:04:13.000Z",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-25T12:40:09.000Z",
-      "kept": 13
+      "newest": "2026-10-25T16:15:09.000Z",
+      "kept": 12
     },
     "gameblog": {
       "status": "ok",
@@ -56,28 +56,28 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-25T14:03:00.000Z",
+      "newest": "2026-10-25T17:21:00.000Z",
       "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-25T12:00:58.000Z",
+      "newest": "2026-10-25T16:35:43.000Z",
       "kept": 7
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-25T13:20:37.000Z",
-      "kept": 12
+      "newest": "2026-10-25T17:00:00.000Z",
+      "kept": 10
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-25T14:10:43.000Z",
+      "newest": "2026-10-25T17:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,7 +92,7 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-24T14:26:00.000Z",
-      "kept": 2
+      "kept": 1
     },
     "mgbiz": {
       "status": "stale",
@@ -117,6 +117,150 @@
     }
   },
   "articles": [
+    {
+      "title": "\"J'ai échoué\" : Dan Houser, cofondateur de Rockstar, considère Max Payne 3 comme son échec personnel",
+      "link": "https://www.gamekult.com/actualite/j-ai-echoue-dan-houser-cofondateur-de-rockstar-considere-max-payne-3-comme-son-echec-personnel-3050872584.html",
+      "date": "2026-10-25T17:21:00.000Z",
+      "sourceId": "gamekult",
+      "image": null,
+      "summary": "Bébé de Remedy, les droits de Max Payne sont toutefois cédés à Rockstar à la fin des années 2000, qui s'occupe alors du troisième opus. Si vous y étiez, vous vous souvenez…",
+      "tags": []
+    },
+    {
+      "title": "'Avatar: Seven Havens' Fans Need to Watch Disney’s Overlooked Apocalyptic Fantasy Adventure",
+      "link": "https://www.polygon.com/raya-and-the-last-dragon-perfect-disney-movie-for-avatar-seven-havens-fans/",
+      "date": "2026-10-25T17:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22369238/RAYA_ONLINE_USE_First_Look_CG_Final_RGB.jpg",
+      "summary": "Raya and the Last Dragon has similar settings, characters, and dynamics as Avatar: Seven Havens, so it's a must-watch for fans.",
+      "tags": []
+    },
+    {
+      "title": "Overwatch devs took one look at Jetpack Cat and Bastion's combo and went 'oh, that's a little scary'",
+      "link": "https://www.pcgamer.com/games/fps/overwatch-devs-took-one-look-at-jetpack-cat-and-bastions-combo-and-went-oh-thats-a-little-scary/",
+      "date": "2026-10-25T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/2ErepaUaYWz9ZhzmeFDQUn-1920-80.jpg",
+      "summary": "The Apache helicopter meta was certainly something to be feared.",
+      "tags": []
+    },
+    {
+      "title": "Dark Souls 2 Seamless Co-op is the chillest way to play FromSoft's most frustrating game",
+      "link": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-seamless-co-op-is-the-chillest-way-to-play-fromsofts-most-frustrating-game/",
+      "date": "2026-10-25T16:56:24.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zL3Ty6HqGBCetJwTRqJE7P-1920-80.jpg",
+      "summary": "Don't give up, skeleton(s).",
+      "tags": []
+    },
+    {
+      "title": "With A Marvel-Sized Budget, Elden Ring Will Be A24’s Most Expensive Movie To Date",
+      "link": "https://kotaku.com/with-a-marvel-sized-budget-elden-ring-will-be-a24s-most-expensive-movie-to-date-2000749383",
+      "date": "2026-10-25T16:35:43.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2023/03/22a7d5f860110fb049d9d7f090f6946e.jpg",
+      "summary": "The trend-setting studio is betting $200 million on Alex Garland’s FromSoftware adaptation, having only seen that kind of box office mojo once with Backrooms",
+      "tags": []
+    },
+    {
+      "title": "La tier list des meilleurs survival horror de tous les temps (hors Resident Evil et Silent Hill) : la plupart sont des perles méconnues",
+      "link": "https://www.jeuxvideo.com/news/2110489/la-tier-list-des-meilleurs-survival-horror-de-tous-les-temps-hors-resident-evil-et-silent-hill-la-plupart-sont-des-perles-meconnues.htm",
+      "date": "2026-10-25T16:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792763201-307-card.jpg",
+      "summary": "Avec Halloween qui approche, nombreux sont les joueurs qui vont chercher des softs horrifiques à se mettre sous la dent pendant qu’ils croquent des Dragibus. Nous vous proposons…",
+      "tags": []
+    },
+    {
+      "title": "Clayface Gives Skydance Its Second Box Office Weekend Win In A Row",
+      "link": "https://www.polygon.com/clayface-opening-weekend-box-office/",
+      "date": "2026-10-25T16:02:01.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/clayface-movie-screenshot.webp",
+      "summary": "Clayface held off You Can See Everything to top the box office this weekend",
+      "tags": []
+    },
+    {
+      "title": "Forza Might Actually Lose at The Game Awards for the First Time in a Decade",
+      "link": "https://www.polygon.com/game-awards-sports-racing-forza-star-wars-galactic-racer/",
+      "date": "2026-10-25T16:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/assets_2026_01_1769110938_fh6_screenshots_11-city-car-meet.jpg",
+      "summary": "Forza Horizon 6 faces a stiff challenge in the Sports/Racing category from Star Wars: Galactic Racer",
+      "tags": []
+    },
+    {
+      "title": "Jordan Thomas, director of BioShock 2, played Path of Exile for over 7,000 hours while working on co-op horror game The Blackout Club: 'I was essentially awake all the time'",
+      "link": "https://www.pcgamer.com/gaming-industry/jordan-thomas-director-of-bioshock-2-played-path-of-exile-for-over-7-000-hours-while-working-on-co-op-horror-game-the-blackout-club-i-was-essentially-awake-all-the-time/",
+      "date": "2026-10-25T16:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/y5xF7f7D3uyVohVFgjxb7U-1920-80.png",
+      "summary": "The co-founder of indie studio Question guides us through the games on his PC.",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect Universe Director Reveals Canceled Game's Multiverse System",
+      "link": "https://www.polygon.com/mass-effect-universe-parallel-universe-timeline-system/",
+      "date": "2026-10-25T15:38:08.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mass-effect-multiverse.jpg",
+      "summary": "BioWare's technical director reveals that Mass Effect Universe was set to feature a complex parallel-universe system with multiple timelines.",
+      "tags": []
+    },
+    {
+      "title": "Akira Toriyama l’avait confirmé il y a 11 ans : Goku et Vegeta ne sont pas les guerriers les plus puissants de Dragon Ball",
+      "link": "https://www.jeuxvideo.com/news/2110516/akira-toriyama-l-avait-confirme-il-y-a-11-ans-goku-et-vegeta-ne-sont-pas-les-guerriers-les-plus-puissants-de-dragon-ball.htm",
+      "date": "2026-10-25T15:30:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792747832-311-card.jpg",
+      "summary": "Alors qu'ils sont les héros de Dragon Ball, Goku et Végéta ne seraient pas les êtres les plus puissants de leur univers d'après Akira Toriyama, créateur du manga. Si cette…",
+      "tags": []
+    },
+    {
+      "title": "'This is the bit where the comet hits the earth and the dinosaurs die:' Tim Sweeney revisits scathing 26-year-old eulogy for beloved studio Looking Glass",
+      "link": "https://www.pcgamer.com/gaming-industry/this-is-the-bit-where-the-comet-hits-the-earth-and-the-dinosaurs-die-tim-sweeney-revisits-scathing-26-year-old-eulogy-for-beloved-studio-looking-glass/",
+      "date": "2026-10-25T15:26:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Y8qHYK3jP7Wix7HUuMyuFL-1920-80.jpg",
+      "summary": "Sweeney's assessment of the games industry in the 2000s hits close to home today, but I still hold out hope that the future can be better.",
+      "tags": []
+    },
+    {
+      "title": "Overwatch Co-Creator Pushes The Legend of California's Early Access Release To 2027",
+      "link": "https://www.polygon.com/the-legend-of-california-delay/",
+      "date": "2026-10-25T15:08:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/legend-of-california.jpg",
+      "summary": "Jeff Kaplan's The Legend of California has shifted its early access launch from 2026 to 2027",
+      "tags": []
+    },
+    {
+      "title": "Le dernier film Resident Evil refait en jeu vidéo style PlayStation 1 grâce à un fan dévoué",
+      "link": "https://www.jeuxvideo.com/news/2110399/le-dernier-film-resident-evil-refait-en-jeu-video-style-playstation-1-grace-a-un-fan-devoue.htm",
+      "date": "2026-10-25T15:00:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792679598-8313-card.jpg",
+      "summary": "Avis aux nostalgiques : après un carton au box-office, devenant l’une des adaptations de jeu vidéo les plus rentables et parmi les plus réussies, le dernier film Resident Evil…",
+      "tags": []
+    },
+    {
+      "title": "This third-person mod for Deus Ex turns the classic immersive sim into Max Payne, introducing dual-wielding and shoot-dodging",
+      "link": "https://www.pcgamer.com/games/sim/this-third-person-mod-for-deus-ex-turns-the-classic-immersive-sim-into-max-payne-introducing-dual-wielding-and-shoot-dodging/",
+      "date": "2026-10-25T14:41:17.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/MJJETFQqg3R3MKwupDsN4N-1920-80.jpg",
+      "summary": "My vision is augmented.",
+      "tags": []
+    },
+    {
+      "title": "Vinland Saga&#8217;s Creator Has &#8216;No Good News&#8217; On Season 3: &#8216;The Project Is Not Currently In Progress&#8217;",
+      "link": "https://kotaku.com/vinland-sagas-creator-has-no-good-news-on-season-3-the-project-is-not-currently-in-progress-2000749374",
+      "date": "2026-10-25T14:31:04.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Vinland-Saga-season-1-official-key-visual-Netflix-1280x720.jpg",
+      "summary": "Is MAPPA just too busy working on Chainsaw Man and Jujutsu Kaisen , or is this a sign that a second season of Vinland Saga was a commercial flop?",
+      "tags": []
+    },
     {
       "title": "Elden Ring Has Quietly Become A24's Most Expensive Movie Yet",
       "link": "https://www.polygon.com/elden-ring-movie-budget/",
@@ -235,30 +379,12 @@
       "tags": []
     },
     {
-      "title": "BioWare's Closure Is Just the Tip of the Iceberg",
-      "link": "https://www.polygon.com/patch-notes-bioware-closure/",
-      "date": "2026-10-25T12:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/08/morrigan-from-dragon-age-origins.png",
-      "summary": "The Mass Effect and Dragon Age studio being shuttered by EA is a sign of a slow-motion industry crash that hasn't peaked",
-      "tags": []
-    },
-    {
       "title": "Attention à ces coffrets collectors ! Il n'y a pas le jeu à l'intérieur",
       "link": "https://www.jeuxvideo.com/news/2110181/attention-a-ces-coffrets-collectors-il-n-y-a-pas-le-jeu-a-l-interieur.htm",
       "date": "2026-10-25T11:50:10.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179258/1792575835-9396-card.jpg",
       "summary": "Désormais, acquérir une édition de collection ne garantit plus de pouvoir y jouer. De GTA 6 à God of War : Laufey, les géants du secteur assument de vendre des coffrets de…",
-      "tags": []
-    },
-    {
-      "title": "9 Near-Perfect 'Far Side' Comics Starring the Nerdy Kid",
-      "link": "https://www.polygon.com/best-nerdy-kid-far-side-comics/",
-      "date": "2026-10-25T11:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/screen-shot-2026-10-23-at-10-31-55-am.jpg",
-      "summary": "Gary Larson's The Far Side didn't really have recurring characters, though some faces did appear more than once, like the Nerdy Kid",
       "tags": []
     },
     {
@@ -277,15 +403,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872550/si-bioshock-rencontrait-resident-evil-dans-l-espace-ca-donnerait-satellite-odyssey-jupiter-487a1be6__800_800__224-0-1034-810.jpg",
       "summary": "Lors du showcase Galaxies qui s'est tenu il y a quelques jours, le petit studio Antifreeze Games, basé à Dubaï et composé de développeurs russes, en a profité pour dévoiler un peu…",
-      "tags": []
-    },
-    {
-      "title": "Vincent Price Is the Weirdest Serial Killer Ever in this '70s Cult Classic",
-      "link": "https://www.polygon.com/halloween-horror-what-to-watch-vincent-price-abominable-dr-phibes/",
-      "date": "2026-10-25T10:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdabdr_ec010_h.JPG",
-      "summary": "The Abominable Dr. Phibes is a campy horror movie about an organist who murders surgeons",
       "tags": []
     },
     {
@@ -347,15 +464,6 @@
       ]
     },
     {
-      "title": "5 Near-Perfect Psychological Thriller Movies Streaming for Free",
-      "link": "https://www.polygon.com/best-psychological-thrillers-movies-streaming-free-online/",
-      "date": "2026-10-25T08:54:46.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdamps_ec010.jpg",
-      "summary": "These tense genre picks are well worth your time.",
-      "tags": []
-    },
-    {
       "title": "Le réalisateur du film Call of Duty tease une histoire qui explore « le coût de la guerre » et fait l’éloge des personnages de Modern Warfare",
       "link": "https://fr.ign.com/call-of-duty-the-movie/93412/le-realisateur-du-film-call-of-duty-tease-une-histoire-qui-explore-le-cout-de-la-guerre-et-fait-lelo",
       "date": "2026-10-25T08:53:32.000Z",
@@ -408,17 +516,6 @@
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872545/quand-l-ia-fait-le-travail-de-bethesda-un-joueur-utilise-claude-pour-corriger-oblivion-remastered-c8185122__800_800__193-0-801-607.jpg",
       "summary": "Voilà maintenant un an qu'Oblivion Remastered est sorti, et peut-être l'avez-vous déjà exploré de fond en comble. Peut-être, aussi, avez-vous fait face à pléthore de problèmes…",
       "tags": []
-    },
-    {
-      "title": "23 Years Later, Spike's Best 'Buffy' Quote Is Still One of the Best Lines in TV History",
-      "link": "https://www.polygon.com/buffy-vampire-slayer-best-spike-quote/",
-      "date": "2026-10-25T08:08:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/spike.jpeg",
-      "summary": "Spike's best quote sums up his arc as one of the main characters in Buffy the Vampire Slayer.",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Mass Effect 5 : les 5 meilleures alternatives et celles à venir au jeu tristement annulé",
@@ -583,136 +680,6 @@
       "tags": []
     },
     {
-      "title": "Xbox’s Chief Operating Officer Out Three Months After Role’s Creation",
-      "link": "https://kotaku.com/xboxs-chief-operating-officer-out-three-months-after-roles-creation-2000749324",
-      "date": "2026-10-24T17:27:51.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/07/Xbox-bad1-1280x720.jpg",
-      "summary": "As turmoil continues to pile up, Microsoft veteran Helen Chiang departs the company just a few months after taking a newly created post to assure long-term stability",
-      "tags": []
-    },
-    {
-      "title": "Mouette immaculée The Witcher 3 Remastered : Où trouver la formule et les composants de cet objet d'alchimie ?",
-      "link": "https://www.jeuxvideo.com/news/2110229/mouette-immaculee-the-witcher-3-remastered-ou-trouver-la-formule-et-les-composants-de-cet-objet-d-alchimie.htm",
-      "date": "2026-10-24T17:15:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179259/1792590071-891-card.jpg",
-      "summary": "En matière d'alchimie dans The Witcher 3 Wild Hunt, la Mouette immaculée est le composant ultime indispensable pour concocter les huiles, bombes et potions de niveau Supérieur…",
-      "tags": []
-    },
-    {
-      "title": "You tell me Cyberpunk 2077 Mise à jour 2.5 : Où trouver les 12 arcanes mineurs de Tarot ?",
-      "link": "https://www.jeuxvideo.com/news/2110585/you-tell-me-cyberpunk-2077-mise-a-jour-2-5-ou-trouver-les-12-arcanes-mineurs-de-tarot.htm",
-      "date": "2026-10-24T17:15:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792759536-9415-card.jpg",
-      "summary": "Déployé lors de la mise à jour Edgerunners 2, le contrat secondaire You Tell Me vient enrichir la collecte des fresques murales de Night City. Après la quête emblématique Fool on…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Now it's over, WoW: Forever's beta has left me with just one fear—its endgame",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/now-its-over-wow-forevers-beta-has-left-me-with-just-one-fear-its-endgame/",
-      "date": "2026-10-24T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/cnhx4mTdSyZ8kB2GqHMDPJ-1920-80.png",
-      "summary": "How do you zig when all you know is zag?",
-      "tags": []
-    },
-    {
-      "title": "Claude&#8217;s Reverse Engineering Capabilities Used To Recompile Games May Have Been Quietly Nerfed",
-      "link": "https://kotaku.com/claudes-reverse-engineering-capabilities-used-to-recompile-games-may-have-been-quietly-nerfed-2000749320",
-      "date": "2026-10-24T16:48:26.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/Claude-Opus-5.5-official-image-Anthropic.jpg",
-      "summary": "Claude Opus 5.5 users are reporting that Anthropic’s AI suddenly seems to be a lot worse at stealing people's intellectual property",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Piloter l'immense Airbus A380 comme en vrai sur PS5 sera bientôt possible : prix, détails, toutes les infos sur cette nouveauté de Flight Simulator 2024",
-      "link": "https://www.jeuxvideo.com/news/2110309/piloter-l-immense-airbus-a380-comme-en-vrai-sur-ps5-sera-bientot-possible-prix-details-toutes-les-infos-sur-cette-nouveaute-de-flight-simulator-2024.htm",
-      "date": "2026-10-24T16:45:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179266/1792655563-3329-card.jpg",
-      "summary": "L'Airbus A380 d'iniBuilds, la simulation la plus poussée du superjumbo dans Microsoft Flight Simulator 2024, prépare son atterrissage sur PS5. Le studio a envoyé la version…",
-      "tags": []
-    },
-    {
-      "title": "New Blood CEO confirms it: the worst way to sell immersive sims like Gloomwood and Fallen Aces is to call them immersive sims",
-      "link": "https://www.pcgamer.com/games/sim/new-blood-ceo-confirms-it-the-worst-way-to-sell-immersive-sims-like-gloomwood-and-fallen-aces-is-to-call-them-immersive-sims/",
-      "date": "2026-10-24T16:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/jauXXTWFiZrQ8ZBvYhvWQQ-1920-80.jpg",
-      "summary": "\"It's not a good marketing term. And I don't think it helps.\"",
-      "tags": []
-    },
-    {
-      "title": "The mouse P.I. for hire from Mouse: P.I. For Hire joins the meat boy from Super Meat Boy 3D in gaming's latest indie crossover",
-      "link": "https://www.pcgamer.com/games/action/the-mouse-p-i-for-hire-from-mouse-p-i-for-hire-joins-the-meat-boy-from-super-meat-boy-3d-in-gamings-latest-indie-crossover/",
-      "date": "2026-10-24T15:46:15.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/iWfNSQCED57W2crFvwTk93-1920-80.png",
-      "summary": "Of mice and meat.",
-      "tags": []
-    },
-    {
-      "title": "Japan Actors Union pushes for heavy restrictions on AI copying dead actors",
-      "link": "https://www.pcgamer.com/software/ai/japan-actors-union-pushes-for-heavy-restrictions-on-ai-copying-dead-actors/",
-      "date": "2026-10-24T15:33:23.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/NYFR7QhivdoNWL5CenjD8c-1920-80.jpg",
-      "summary": "It's part of a broader set of guidelines the union hopes to set an industry-wide precedent for.",
-      "tags": []
-    },
-    {
-      "title": "Screamer est l'un des meilleurs jeux de course de l'année, mais son gameplay en rebutait certains : le voilà désormais plus accessible",
-      "link": "https://www.gamekult.com/actualite/screamer-est-l-un-des-meilleurs-jeux-de-course-de-l-annee-mais-son-gameplay-en-rebutait-certains-le-voila-desormais-plus-accessible-3050872542.html",
-      "date": "2026-10-24T15:27:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872542/screamer-est-l-un-des-meilleurs-jeux-de-course-de-l-annee-mais-son-gameplay-en-rebutait-certains-le-voila-desormais-plus-accessible-7d86f99f__800_800__762-264-2409-1911.jpg",
-      "summary": "Cela faisait un bon moment que Screamer nous faisait de l'œil à la rédaction et, dans une hâte non dissimulée, on on se jetait sur la production de Milestone en mars dernier…",
-      "tags": []
-    },
-    {
-      "title": "PS5 : Comment Sony manipule les prix pour inciter les joueurs à consommer plus",
-      "link": "https://www.jeuxvideo.com/news/2102547/ps5-comment-sony-manipule-les-prix-pour-inciter-les-joueurs-a-consommer-plus.htm",
-      "date": "2026-10-24T15:15:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/178879/1788789997-1622-card.jpg",
-      "summary": "Souvent sous le feu des critiques cette année pour ses décisions controversées, Sony a en plus de ça rajouté une fonctionnalité cachée dans le Playstation Store pour que vous…",
-      "tags": []
-    },
-    {
-      "title": "Are we in the cozy gaming gold rush era? 'Cozy' has grown over 250% on Steam and 200% in my inbox since 2024",
-      "link": "https://www.pcgamer.com/games/life-sim/are-we-in-the-cozy-gaming-gold-rush-era-cozy-has-grown-over-250-percent-on-steam-and-200-percent-in-my-inbox-since-2024/",
-      "date": "2026-10-24T15:10:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/LoFDNm5hwiEsSMamKFC2yU-1920-80.jpg",
-      "summary": "Uh oh, everything is cozy now.",
-      "tags": []
-    },
-    {
-      "title": "The best feature in the original Alan Wake is an absence: the man has no reticle",
-      "link": "https://www.pcgamer.com/games/horror/the-best-feature-in-the-original-alan-wake-is-an-absence-the-man-has-no-reticle/",
-      "date": "2026-10-24T15:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/SY4bRTAf7W5JrUVD9AVb3Z-1920-80.jpg",
-      "summary": "Remedy forgot the rules of third-person shooting to build its inaugural horror game.",
-      "tags": []
-    },
-    {
-      "title": "'I drank from the chalice of blood': indie dev scrubs his game of AI-generated voice lines, having previously described the technology as 'anti-human and anti-art'",
-      "link": "https://www.pcgamer.com/gaming-industry/game-development/i-drank-from-the-chalice-of-blood-indie-dev-scrubs-his-game-of-ai-generated-voice-lines-having-previously-described-the-technology-as-anti-human-and-anti-art/",
-      "date": "2026-10-24T14:30:20.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/J2SZTYU49FSR6FCXmQ3dv9-1920-80.jpg",
-      "summary": "Refund offered for players who \"still feel betrayed\" over AI use in Future? No Thanks!",
-      "tags": []
-    },
-    {
       "title": "Why EA shut down BioWare, Supercell’s Metacore takeover and Mika Games’ $10m soft launch bet | Week in Mobile Games podcast",
       "link": "https://www.pocketgamer.biz/why-ea-shut-down-bioware-mika-games-10m-supercell-metacore-week-in-mobile-games-podcast/",
       "date": "2026-10-24T14:26:00.000Z",
@@ -728,15 +695,6 @@
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!NFf3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe246a052-7e88-4e40-a6f1-757b4f8f619a_1024x768.jpeg",
       "summary": "A game about freedom that's still worth your time, if you don't mind your options for playing it.",
-      "tags": []
-    },
-    {
-      "title": "Lessons from PGC Nordics and game IPs take the stage in LA | Week in Views",
-      "link": "https://www.pocketgamer.biz/pgc-nordics-lessons-game-ips-la-concerts-week-in-views/",
-      "date": "2026-10-23T15:04:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141833/90095/weekinviews_l660.jpg",
-      "summary": "[staff id=\"100326\" name=\"Mariam Ahmad\"] Agree IP terms early, cut through AI hype, stop overloading players: Four lessons from PGC Nordics ... [ MORE ]",
       "tags": []
     },
     {
