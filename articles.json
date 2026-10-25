@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T10:05:45.696Z",
+  "generatedAt": "2026-10-25T14:24:26.206Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-25T09:20:03.000Z",
-      "kept": 6
+      "newest": "2026-10-25T13:58:20.000Z",
+      "kept": 7
     },
     "gamedev": {
       "status": "ok",
@@ -42,42 +42,42 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-25T08:40:08.000Z",
-      "kept": 12
+      "newest": "2026-10-25T12:40:09.000Z",
+      "kept": 13
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-25T10:00:00.000Z",
-      "kept": 8
+      "newest": "2026-10-25T13:02:28.000Z",
+      "kept": 9
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-25T08:15:00.000Z",
-      "kept": 6
+      "newest": "2026-10-25T14:03:00.000Z",
+      "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-25T01:46:01.000Z",
-      "kept": 6
+      "newest": "2026-10-25T12:00:58.000Z",
+      "kept": 7
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-24T18:58:24.000Z",
-      "kept": 13
+      "newest": "2026-10-25T13:20:37.000Z",
+      "kept": 12
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-25T10:00:18.000Z",
+      "newest": "2026-10-25T14:10:43.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-24T14:26:00.000Z",
-      "kept": 7
+      "kept": 2
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-23T10:55:30.000Z",
-      "kept": 1
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -117,6 +117,168 @@
     }
   },
   "articles": [
+    {
+      "title": "Elden Ring Has Quietly Become A24's Most Expensive Movie Yet",
+      "link": "https://www.polygon.com/elden-ring-movie-budget/",
+      "date": "2026-10-25T14:10:43.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/elden-ring-switch-2.jpg",
+      "summary": "A new report indicates that A24's Elden Ring adaptation from Alex Garland has a blockbuster budget higher than Marty Supreme's",
+      "tags": []
+    },
+    {
+      "title": "Game and watch - Prime Video fait aussi de Fallout un jeu TV où les joueurs sont enfermés dans un abri antiatomique",
+      "link": "https://www.gamekult.com/actualite/prime-video-fait-aussi-de-fallout-un-jeu-tv-ou-les-joueurs-sont-enfermes-dans-un-abri-antiatomique-3050872583.html",
+      "date": "2026-10-25T14:03:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872583/prime-video-fait-aussi-de-fallout-un-jeu-tv-ou-les-joueurs-sont-enfermes-dans-un-abri-antiatomique-49326987__800_800__282-0-1360-1078.png",
+      "summary": "On savait depuis quelque temps qu'une téléréalité Fallout était dans les tuyaux d'Amazon : ses contours sont désormais bien tracés et affichés publiquement. Voici donc Fallout…",
+      "tags": []
+    },
+    {
+      "title": "The Most Broken D&D Item Keeps Ruining Games. Here Are 3 Ways to Fix It",
+      "link": "https://www.polygon.com/dnd-most-broken-item-potion-healing-fix-dungeons-dragons/",
+      "date": "2026-10-25T14:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/10/d-d-2024-phb-spellcaster.jpg",
+      "summary": "One of the most common magic items in D&D is way overpowered for its cost, but here are three easy ways to fix it.",
+      "tags": []
+    },
+    {
+      "title": "Critique : Cyberpunk Edgerunners II, suite indépendante de corps et d'esprit",
+      "link": "https://fr.ign.com/cyberpunk-edgerunners-ii/93399/critique-cyberpunk-edgerunners-ii-suite-independante-de-corps-et-desprit",
+      "date": "2026-10-25T13:58:20.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/vlcsnap-2026-10-25-02h23m30s828_35ya.jpg",
+      "summary": "Rage, enrage contre la Machine. Beaucoup d&#x27;esprit et une excellent grammaire visuelle élèvent cette suite de l&#x27;adaptation cyberpunk.",
+      "tags": []
+    },
+    {
+      "title": "Steve Rogers Wields Mjolnir in the Latest Avengers: Doomsday Trailer",
+      "link": "https://www.polygon.com/avengers-doomsday-mjolnir-trailer/",
+      "date": "2026-10-25T13:43:26.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/captain-america-mjolnir.jpg",
+      "summary": "Steve Rogers, Thor, Mjolnir, and the other Captain Americas take center stage in the latest trailer",
+      "tags": []
+    },
+    {
+      "title": "Civilization 7's game changing update was 'personally challenging' for its creative director, as being able to play as a single faction 'wasn't part of the original vision'",
+      "link": "https://www.pcgamer.com/games/strategy/civilization-7s-game-changing-update-was-personally-challenging-for-its-creative-director-as-being-able-to-play-as-a-single-civ-wasnt-part-of-the-original-vision/",
+      "date": "2026-10-25T13:20:37.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/uCymHCkiAmFwNoFj8PinWS-1920-80.jpg",
+      "summary": "Ed Beach says that players \"had not been given full service by the game as the way it first shipped\".",
+      "tags": []
+    },
+    {
+      "title": "GUIDE FF Resonance : la tier list des meilleures Visions du jeu",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/ff-resonance-tier-list-meilleures-visions-725412?utm_source=RSS",
+      "date": "2026-10-25T13:02:28.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/724648_6ac90d6989c3e.jpg",
+      "summary": "Quelles sont les meilleures Visions du jeu ? Quelles Visions équiper en priorité ? Voici notre tier list des meilleures Visions de FF Resonance.",
+      "tags": []
+    },
+    {
+      "title": "GTA: San Andreas’ Most Frustrating MIssion Show How Far Rockstar Has Come in 22 Years",
+      "link": "https://www.polygon.com/gta-san-andreas-retrospective/",
+      "date": "2026-10-25T13:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gtasanandreas_sweet_firing.jpg",
+      "summary": "Grand Theft Auto: San Andreas is a classic game with interesting missions, but its annoying controls just feel worse after 22 years.",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 : Liste des meilleures améliorations de combat",
+      "link": "https://www.jeuxvideo.com/news/2110412/call-of-duty-modern-warfare-4-liste-des-meilleures-ameliorations-de-combat.htm",
+      "date": "2026-10-25T12:40:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792680937-1907-card.jpg",
+      "summary": "Découvrez la liste des améliorations de combat de COD Modern Warfare 4 que vous devrez utiliser en priorité sur le champ de bataille. Ces outils de terrain apportent une surcouche…",
+      "tags": []
+    },
+    {
+      "title": "Le remaster de Shrek 2 s'annonce, imite GTA 6 et fait déjà un carton",
+      "link": "https://www.gamekult.com/actualite/le-remaster-de-shrek-2-s-annonce-imite-gta-6-et-fait-deja-un-carton-3050872582.html",
+      "date": "2026-10-25T12:32:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872582/le-remaster-de-shrek-2-s-annonce-en-imitant-gta-6-et-fait-deja-un-carton-0d68e85f__800_800__422-0-1527-1106.png",
+      "summary": "Dans les années 2000, il était encore de coutume d'avoir des jeux vidéo adaptés des films qui sortaient au cinoche. Des productions souvent foireuses pour un tas de raisons : peu…",
+      "tags": []
+    },
+    {
+      "title": "Nintendo Legend Reveals Super Mario Bros.' Most Surprising Innovation",
+      "link": "https://www.polygon.com/nintendo-super-mario-japan-award-biggest-series-innovation/",
+      "date": "2026-10-25T12:05:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/mario-artwork-from-the-original-super-mario-bros-nes-box-art.jpg",
+      "summary": "Nintendo designer Shigeru Miyamoto pinpoints the NES game's most notable invention, which remains unique 41 years after the original Super Mario Bros.",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect 5 would have let players generate alternate timelines based on their choices in previous games, according to the series' technical director",
+      "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-would-have-let-players-generate-alternate-timelines-based-on-their-choices-in-previous-games-according-to-the-series-technical-director/",
+      "date": "2026-10-25T12:01:33.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/QLBVemEasSnJmdfJ6VMfKF-1920-80.jpg",
+      "summary": "\"You had so many choices that you could plug your saves together to create parallel universes,\" Romain Toutain explained in a livestream.",
+      "tags": []
+    },
+    {
+      "title": "The Leaked Mass Effect 5 Trailer Was Enough To Make Fans Go Feral For One Of Its Sexy, Mysterious Squadmates",
+      "link": "https://kotaku.com/mass-effect-5-universe-male-quarian-squadmate-liara-2000749347",
+      "date": "2026-10-25T12:00:58.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/image-32-1280x723.jpg",
+      "summary": "We've never had a male Quarian on the team before",
+      "tags": []
+    },
+    {
+      "title": "BioWare's Closure Is Just the Tip of the Iceberg",
+      "link": "https://www.polygon.com/patch-notes-bioware-closure/",
+      "date": "2026-10-25T12:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/08/morrigan-from-dragon-age-origins.png",
+      "summary": "The Mass Effect and Dragon Age studio being shuttered by EA is a sign of a slow-motion industry crash that hasn't peaked",
+      "tags": []
+    },
+    {
+      "title": "Attention à ces coffrets collectors ! Il n'y a pas le jeu à l'intérieur",
+      "link": "https://www.jeuxvideo.com/news/2110181/attention-a-ces-coffrets-collectors-il-n-y-a-pas-le-jeu-a-l-interieur.htm",
+      "date": "2026-10-25T11:50:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179258/1792575835-9396-card.jpg",
+      "summary": "Désormais, acquérir une édition de collection ne garantit plus de pouvoir y jouer. De GTA 6 à God of War : Laufey, les géants du secteur assument de vendre des coffrets de…",
+      "tags": []
+    },
+    {
+      "title": "9 Near-Perfect 'Far Side' Comics Starring the Nerdy Kid",
+      "link": "https://www.polygon.com/best-nerdy-kid-far-side-comics/",
+      "date": "2026-10-25T11:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/screen-shot-2026-10-23-at-10-31-55-am.jpg",
+      "summary": "Gary Larson's The Far Side didn't really have recurring characters, though some faces did appear more than once, like the Nerdy Kid",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 3 Remaster vous offre plein de contenus gratuits, voici comment les récupérer facilement",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/witcher-3-remastered-twitch-drops-octobre-2026-725143?utm_source=RSS",
+      "date": "2026-10-25T10:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/721664_6a8eae0ca572e.jpg",
+      "summary": "The Witcher 3 Remastered vous offre encore du contenu gratuit grâce à Twitch. Seulement, il ne vous reste plus que quelques jours pour participer à la campagne et gagner vos…",
+      "tags": []
+    },
+    {
+      "title": "Si BioShock rencontrait Resident Evil dans l'espace, ça donnerait Satellite Odyssey : Jupiter",
+      "link": "https://www.gamekult.com/actualite/si-bioshock-rencontrait-resident-evil-dans-l-espace-ca-donnerait-satellite-odyssey-jupiter-3050872550.html",
+      "date": "2026-10-25T10:08:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872550/si-bioshock-rencontrait-resident-evil-dans-l-espace-ca-donnerait-satellite-odyssey-jupiter-487a1be6__800_800__224-0-1034-810.jpg",
+      "summary": "Lors du showcase Galaxies qui s'est tenu il y a quelques jours, le petit studio Antifreeze Games, basé à Dubaï et composé de développeurs russes, en a profité pour dévoiler un peu…",
+      "tags": []
+    },
     {
       "title": "Vincent Price Is the Weirdest Serial Killer Ever in this '70s Cult Classic",
       "link": "https://www.polygon.com/halloween-horror-what-to-watch-vincent-price-abominable-dr-phibes/",
@@ -136,6 +298,15 @@
       "tags": [
         "release"
       ]
+    },
+    {
+      "title": "Refonte de Steam : ce qui va changer sur la plateforme de jeux vidéo",
+      "link": "https://www.jeuxvideo.com/news/2110689/refonte-de-steam-ce-qui-va-changer-sur-la-plateforme-de-jeux-video.htm",
+      "date": "2026-10-25T09:30:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179277/1792770548-1865-card.jpg",
+      "summary": "Steam s'apprête à tourner une page historique de son fonctionnement commercial. Valve a acté une transformation en profondeur de la vitrine de son magasin, visant à remplacer la…",
+      "tags": []
     },
     {
       "title": "Fallout 76 dévoile une énorme fonctionnalité dont tous les fans rêvent depuis des années",
@@ -250,15 +421,6 @@
       ]
     },
     {
-      "title": "61 Years Later, Paul's Best Dune Line Is Still the Coldest Quote in Sci-Fi History",
-      "link": "https://www.polygon.com/paul-atreides-best-dune-quote/",
-      "date": "2026-10-25T08:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/l-intro-1739976137.jpg",
-      "summary": "This brilliant quote from Frank Herbert's Dune reveals an unsavory truth.",
-      "tags": []
-    },
-    {
       "title": "Mass Effect 5 : les 5 meilleures alternatives et celles à venir au jeu tristement annulé",
       "link": "https://www.gameblog.fr/jeu-video/ed/story/mass-effect-5-alternatives-annulation-725232?utm_source=RSS",
       "date": "2026-10-25T08:00:00.000Z",
@@ -313,15 +475,6 @@
       "tags": []
     },
     {
-      "title": "Forget Tom Cruise, Sci-Fi's Foundational 1950s Classic Movie Is Free to Watch on YouTube",
-      "link": "https://www.polygon.com/war-of-worlds-streaming-free-youtube-october-2026/",
-      "date": "2026-10-25T04:01:20.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ann-robinson-gene-barry-war-of-the-worlds-1953.jpg",
-      "summary": "Every little green man from space for 70 years owes his existence to this flick from 1953",
-      "tags": []
-    },
-    {
       "title": "Mass Effect: Universe Would Have Allowed Players To &#8216;Generate&#8217; Timelines That Acknowledged Multiple Choices From The Trilogy",
       "link": "https://kotaku.com/mass-effect-universe-would-have-allowed-players-to-generate-timelines-that-acknowledged-multiple-choices-from-the-trilogy-2000749344",
       "date": "2026-10-25T01:46:01.000Z",
@@ -340,57 +493,12 @@
       "tags": []
     },
     {
-      "title": "58 Years Later, Captain Kirk's Best Star Trek Quote Is the Greatest Line in Sci-Fi History",
-      "link": "https://www.polygon.com/best-star-trek-original-series-quote-captain-kirk/",
-      "date": "2026-10-25T01:20:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/captain-kirk-og.png",
-      "summary": "Captain Kirk's speech in 'Return to Tomorrow' says more about what Star Trek stands for than any other line in the original series.",
-      "tags": []
-    },
-    {
-      "title": "Jean-Claude Van Damme's First Action Classic is Streaming for Free",
-      "link": "https://www.polygon.com/bloodsport-free-youtube/",
-      "date": "2026-10-25T01:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jean-claude-van-damme-bloodsport.jpg",
-      "summary": "Forged by fire, a beast in the night",
-      "tags": []
-    },
-    {
-      "title": "5 Most Perfect 1980s Games That Nobody Remembers",
-      "link": "https://www.polygon.com/best-forgotten-1980s-games/",
-      "date": "2026-10-25T00:53:58.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/paradroid.jpg",
-      "summary": "From Tempest to Captain Blood, unearth these classic 1980s games from the 8-bit era that deserve to make a comeback.",
-      "tags": []
-    },
-    {
-      "title": "The 6 Kingdom Hearts 4 Worlds We Want to See — and 4 We Absolutely Don't",
-      "link": "https://www.polygon.com/kingdom-hearts-4-worlds-theories/",
-      "date": "2026-10-25T00:39:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/kh4_d23_4k_1.jpg",
-      "summary": "Kingdom Hearts has a complicated history of representing Disney worlds, so here's a look at what should and should not be included in KH4.",
-      "tags": []
-    },
-    {
-      "title": "Every Legend of Zelda Movie Character and Cast Member Confirmed So Far",
-      "link": "https://www.polygon.com/the-legend-of-zelda-2027-movie-cast-link-zelda-ganondorf/",
-      "date": "2026-10-25T00:30:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ar4sz-1.jpg",
-      "summary": "Nintendo's The Legend of Zelda live-action movie hits theaters in 2027. Here's who's confirmed to appear in the film to date.",
-      "tags": []
-    },
-    {
-      "title": "Xbox Reportedly Bungled $500 Million Netflix Exclusivity Deal To Develop Movies, Shows Based On Games",
+      "title": "Xbox Reportedly Chased $800 Million Netflix Exclusivity Deal To Develop Movies, Shows Based On Games",
       "link": "https://kotaku.com/xbox-reportedly-bungled-500-million-netflix-exclusivity-deal-to-develop-movies-shows-based-on-games-2000749336",
       "date": "2026-10-24T22:07:07.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/halotvshow-1280x761.jpg",
-      "summary": "According to industry insiders, newly appointed Xbox CEO Asha Sharma overplayed cross-media potential with recent Netflix exec Peter Rice to the tune of $800 million",
+      "summary": "According to industry insiders, Netflix was only willing to offer $500 million",
       "tags": []
     },
     {
@@ -614,83 +722,6 @@
       "tags": []
     },
     {
-      "title": "La nouvelle stratégie Xbox a-t-elle une chance face à PlayStation ? Entre revirement stratégique, prise de risques et position long terme",
-      "link": "https://www.jeuxvideo.com/news/2110324/la-nouvelle-strategie-xbox-a-t-elle-une-chance-face-a-playstation-entre-revirement-strategique-prise-de-risques-et-position-long-terme.htm",
-      "date": "2026-10-24T14:00:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179266/1792660707-548-card.png",
-      "summary": "Que nous prépare Xbox pour les mois et années à venir ? Le “reboot” d’Asha Sharma a mené à des licenciements, des séparations avec des studios first-party et une rupture claire…",
-      "tags": []
-    },
-    {
-      "title": "Award-winning sci-fi author NK Jemisin joins BioWare's mourners and scorns a broken industry for killing geese that 'laid the golden eggs'",
-      "link": "https://www.pcgamer.com/gaming-industry/award-winning-sci-fi-author-nk-jemisin-joins-biowares-mourners-and-scorns-a-broken-industry-for-killing-geese-that-laid-the-golden-eggs/",
-      "date": "2026-10-24T14:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/w7WrWeEQuJfAzUrJLKWHhd-1920-80.jpg",
-      "summary": "\"The [Mass Effect] and [Dragon Age] games were a literal inspiration.\"",
-      "tags": []
-    },
-    {
-      "title": "GUIDE FF Resonance : les meilleures Visions à monter en priorité et les Bonus de Maîtrise à débloquer absolument",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-ff-resonance-visions-bonus-maitrise-725392?utm_source=RSS",
-      "date": "2026-10-24T13:20:46.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a86b5bf2ac2c.jpg",
-      "summary": "Parmi les 26 Visions de FF Resonance, quelles sont celles à faire évoluer en priorité ? Quels sont les Bonus de Maîtrise à débloquer absolument ? Notre guide.",
-      "tags": []
-    },
-    {
-      "title": "Pokémon : Mew n'existe que parce qu'il restait 300 octets sur la cartouche de Game Boy",
-      "link": "https://www.gamekult.com/actualite/pokemon-mew-n-existe-que-parce-qu-il-restait-300-octets-sur-la-cartouche-de-game-boy-3050872533.html",
-      "date": "2026-10-24T13:05:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872533/pokemon-mew-n-existe-que-parce-qu-il-restait-300-octets-sur-la-cartouche-de-game-boy-0110d180__800_800__24-10-419-405.jpg",
-      "summary": "Dans les années 90, Game Freak est plein de bonnes intentions. Le studio bosse sur un nouveau jeu ambitieux, mais qui dépend toutefois des contraintes techniques de la Game Boy…",
-      "tags": []
-    },
-    {
-      "title": "After 14 years of development, Factorio's final major update is out now",
-      "link": "https://www.pcgamer.com/games/survival-crafting/after-14-years-of-development-factorios-final-major-update-is-out-now/",
-      "date": "2026-10-24T12:10:44.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/uAsTdLQ9j9CdRBgi5PaAhN-1920-80.jpg",
-      "summary": "Patch 2.1 brings \"a big collection\" of small yet significant changes.",
-      "tags": [
-        "patch",
-        "release"
-      ]
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 : La liste des meilleurs killstreaks pour retourner vos games",
-      "link": "https://www.jeuxvideo.com/news/2110398/call-of-duty-modern-warfare-4-la-liste-des-meilleurs-killstreaks-pour-retourner-vos-games.htm",
-      "date": "2026-10-24T11:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179268/1792678692-610-card.jpg",
-      "summary": "Découvrez quelles sont les meilleures séries d'élimination à débloquer et à utiliser dans COD Modern Warfare 4, fraichement disponible sur consoles et PC. Dans ce guide, nous…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "\"Le jeu vidéo risque de devenir inabordable\" : ils réclament 435 millions d'euros à PlayStation",
-      "link": "https://www.gamekult.com/actualite/le-jeu-video-risque-de-devenir-inabordable-ils-reclament-435-millions-d-euros-a-playstation-3050872531.html",
-      "date": "2026-10-24T11:38:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872531/le-jeu-video-risque-de-devenir-inabordable-ils-reclament-435-millions-d-euros-a-playstation-aa919ed3__800_800__88-0-875-787.jpg",
-      "summary": "Aux Pays-Bas, plus tôt dans l'année, l'association de défense des consommateurs Stichting Massaschade & Consument a décidé d'attaquer Sony pour le prix des jeux, qu'elle juge…",
-      "tags": []
-    },
-    {
-      "title": "Star Wars Galaxies' Restoration project just received another massive update, including a huge visual upgrade and an overhaul to the Wookiees' home planet",
-      "link": "https://www.pcgamer.com/games/mmo/star-wars-galaxies-just-got-another-massive-update-thanks-to-its-community-restoration-project-including-a-huge-visual-upgrade-and-a-refurb-to-the-wookiees-home-planet/",
-      "date": "2026-10-24T11:09:10.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/wb9nztwWNtFMQcHyyfZxog-1920-80.jpg",
-      "summary": "\"We asked everyone: work on something that they loved about Galaxies, and showcase that to the world.\"",
-      "tags": []
-    },
-    {
       "title": "7 hours (at last!) with Grand Theft Auto III",
       "link": "https://www.gamefile.news/p/gta-iii-belated-review",
       "date": "2026-10-23T21:53:32.000Z",
@@ -716,64 +747,6 @@
       "image": "https://substackcdn.com/image/fetch/$s_!p_hX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46fdcaa8-be54-4162-8e8f-3198569c2515_800x450.jpeg",
       "summary": "Also: this week on Steam & a bunch of discovery news.",
       "tags": []
-    },
-    {
-      "title": "PG Connects Nordics showed the region's strong sense of community",
-      "link": "https://www.pocketgamer.biz/pg-connects-nordics-showed-the-regions-strong-sense-of-community/",
-      "date": "2026-10-23T13:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141827/90093/pgc-nor-26-audience-crop_l660.jpg",
-      "summary": "This week saw our 11th event in Helsinki, with PG Connects Nordics on October 20th and 21st. We were thrilled to see more than 1,100 attendees fully engaged with the event. The…",
-      "tags": []
-    },
-    {
-      "title": "“Another pair of culturally informed eyes”: Kate Edwards on culturalisation without a triple-A budget",
-      "link": "https://www.pocketgamer.biz/kate-edwards-geogrify-culturalisation-small-teams/",
-      "date": "2026-10-23T12:02:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141784/90074/kateedwardsgeogrify_l660.jpg",
-      "summary": "Kate Edwards built Microsoft's geopolitical strategy team before leaving to found Geogrify, the consultancy that focuses on content culturalisation. Three decades in, her client…",
-      "tags": []
-    },
-    {
-      "title": "Four key takeaways from Pocket Gamer Connects Nordics 2026",
-      "link": "https://www.pocketgamer.biz/four-key-takeaways-from-pocket-gamer-connects-nordics-2026/",
-      "date": "2026-10-23T12:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141843/90099/pgnordicstakeaways_l660.jpg",
-      "summary": "Pocket Gamer Connects Nordics 2026 is a wrap. The event took place in Helsinki and brought together people from across the games industry to share ideas, explore what it takes to…",
-      "tags": []
-    },
-    {
-      "title": "Stillfront names former King executive Marcus Jacobs as CEO",
-      "link": "https://www.pocketgamer.biz/stillfront-names-former-king-executive-marcus-jacobs-as-ceo/",
-      "date": "2026-10-23T11:58:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/134711/90096/stillfront_l660.jpg",
-      "summary": "Stillfront Group has appointed Marcus Jacobs as its new president and Group CEO as the games industry veteran gets set to take over on November 1st, 2026. He brings more than 25…",
-      "tags": []
-    },
-    {
-      "title": "New game digest: Football Manager, Dispatch, The Traitors, UnGodly, Dr. Seuss and more",
-      "link": "https://mobilegamer.biz/new-games-digest-fm27-touch-dispatch-the-traitors-ungodly-dr-seuss-and-more/",
-      "date": "2026-10-23T10:55:30.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "There’s also a big new game from NC and a couple of interesting new indie puzzlers in this week's round-up.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Dispatch coming to mobile on December 9th with first four episodes free",
-      "link": "https://www.pocketgamer.biz/dispatch-coming-to-mobile-on-december-9th-with-first-four-episodes-free/",
-      "date": "2026-10-23T10:49:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141840/90098/dispatchkeyart_l660.jpg",
-      "summary": "AdHoc Studio is bringing its narrative superhero-driven game Dispatch to iOS and Android on December 9th, 2026, following its success in reaching more than five million players…",
-      "tags": [
-        "patch"
-      ]
     },
     {
       "title": "Peak developer can explain the game’s console price",
