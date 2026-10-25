@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T00:43:38.552Z",
+  "generatedAt": "2026-10-25T05:34:04.100Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -43,7 +43,7 @@
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
       "newest": "2026-10-24T20:20:09.000Z",
-      "kept": 15
+      "kept": 14
     },
     "gameblog": {
       "status": "ok",
@@ -56,15 +56,15 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-24T15:27:00.000Z",
+      "newest": "2026-10-25T05:00:00.000Z",
       "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-24T22:07:07.000Z",
-      "kept": 5
+      "newest": "2026-10-25T01:46:01.000Z",
+      "kept": 6
     },
     "pcgamer": {
       "status": "ok",
@@ -77,7 +77,7 @@
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-25T00:39:16.000Z",
+      "newest": "2026-10-25T04:01:20.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,60 @@
     }
   },
   "articles": [
+    {
+      "title": "Mémoire cash - Successeur de The Dragon's Trap, Wonder Boy in Monster World a joué la sécurité et l'histoire l'a un peu oublié",
+      "link": "https://www.gamekult.com/actualite/successeur-de-the-dragon-s-trap-wonder-boy-in-monster-world-a-joue-la-securite-et-l-histoire-l-a-un-peu-oublie-3050872548.html",
+      "date": "2026-10-25T05:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872548/wonder-boy-in-monster-world-d29d5aec__800_800__393-321-1154-1080.jpg",
+      "summary": "Deux ans après avoir marqué la Master System au fer rouge avec Wonder Boy III : The Dragon's Trap, le studio japonais Westone récidive sur Mega Drive avec son successeur direct…",
+      "tags": []
+    },
+    {
+      "title": "Forget Tom Cruise, Sci-Fi's Foundational 1950s Classic Movie Is Free to Watch on YouTube",
+      "link": "https://www.polygon.com/war-of-worlds-streaming-free-youtube-october-2026/",
+      "date": "2026-10-25T04:01:20.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/ann-robinson-gene-barry-war-of-the-worlds-1953.jpg",
+      "summary": "Every little green man from space for 70 years owes his existence to this flick from 1953",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect: Universe Would Have Allowed Players To &#8216;Generate&#8217; Timelines That Acknowledged Multiple Choices From The Trilogy",
+      "link": "https://kotaku.com/mass-effect-universe-would-have-allowed-players-to-generate-timelines-that-acknowledged-multiple-choices-from-the-trilogy-2000749344",
+      "date": "2026-10-25T01:46:01.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/meuniverse1-1280x720.jpg",
+      "summary": "Now that the leaks are out there, some ex-BioWare devs are chatting about what they were working on before EA canceled the game",
+      "tags": []
+    },
+    {
+      "title": "58 Years Later, Captain Kirk's Best Star Trek Quote Is the Greatest Line in Sci-Fi History",
+      "link": "https://www.polygon.com/best-star-trek-original-series-quote-captain-kirk/",
+      "date": "2026-10-25T01:20:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/captain-kirk-og.png",
+      "summary": "Captain Kirk's speech in 'Return to Tomorrow' says more about what Star Trek stands for than any other line in the original series.",
+      "tags": []
+    },
+    {
+      "title": "Jean-Claude Van Damme's First Action Classic is Streaming for Free",
+      "link": "https://www.polygon.com/bloodsport-free-youtube/",
+      "date": "2026-10-25T01:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jean-claude-van-damme-bloodsport.jpg",
+      "summary": "Forged by fire, a beast in the night",
+      "tags": []
+    },
+    {
+      "title": "5 Most Perfect 1980s Games That Nobody Remembers",
+      "link": "https://www.polygon.com/best-forgotten-1980s-games/",
+      "date": "2026-10-25T00:53:58.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/paradroid.jpg",
+      "summary": "From Tempest to Captain Blood, unearth these classic 1980s games from the 8-bit era that deserve to make a comeback.",
+      "tags": []
+    },
     {
       "title": "The 6 Kingdom Hearts 4 Worlds We Want to See — and 4 We Absolutely Don't",
       "link": "https://www.polygon.com/kingdom-hearts-4-worlds-theories/",
@@ -190,15 +244,6 @@
       "tags": []
     },
     {
-      "title": "10 Near-Perfect Netflix Sci-Fi Shows That Hook You in the First Scene",
-      "link": "https://www.polygon.com/perfect-netflix-sci-fi-shows-that-hook-you-in-the-first-scene/",
-      "date": "2026-10-24T20:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dark-tv-series-2.jpg",
-      "summary": "From mind-bending mysteries to dystopian futures, these Netflix sci-fi series prove that some stories can't be forgotten from the moment they start.",
-      "tags": []
-    },
-    {
       "title": "Legend Of Zelda Producer Eiji Aonuma Knighted By French Ministry Of Culture",
       "link": "https://kotaku.com/legend-of-zelda-producer-eiji-aonuma-knighted-by-french-ministry-of-culture-2000749331",
       "date": "2026-10-24T19:45:31.000Z",
@@ -214,24 +259,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179251/1792511053-242-card.jpg",
       "summary": "Sur chacun des continents de Final Fantasy Resonance, vous aurez l’occasion de croiser la route, si vous le voulez ou non, d’une Chimère afin de récupérer ses pouvoirs au terme…",
-      "tags": []
-    },
-    {
-      "title": "One Piece Is Officially Coming to Fortnite",
-      "link": "https://www.polygon.com/fortnite-one-piece-confirmed-mini-season-teaser/",
-      "date": "2026-10-24T19:05:06.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/fortnite-mini-season-logo.jpg",
-      "summary": "Epic Games confirms that One Piece, one of the most highly anticipated collabs, will be part of the next Fortnite season.",
-      "tags": []
-    },
-    {
-      "title": "Clint Eastwood's Most Intense Western Is Officially Streaming for Free on YouTube",
-      "link": "https://www.polygon.com/high-plains-drifter-clint-eastwood-free-to-stream/",
-      "date": "2026-10-24T19:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mmdhipl_ec002.jpg",
-      "summary": "Clint Eastwood's second film as director, High Plains Drifter is a horror Western free on YouTube",
       "tags": []
     },
     {
@@ -259,15 +286,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/modernwarfare4duo-1280x872.jpg",
       "summary": "With the latest Call of Duty landing, seemingly without matchmaking features, multiplayer director Joe Cecot says he doesn't believe a system to satisfy all is possible",
-      "tags": []
-    },
-    {
-      "title": "Commander Shepard Voice Actors Call for Action to Save Mass Effect",
-      "link": "https://www.polygon.com/mass-effect-universe-canceled-jennifer-hale-mark-meer-support-petition/",
-      "date": "2026-10-24T18:22:49.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mass-effect-commander-shepard-femshep-2.png",
-      "summary": "Jennifer Hale and Mark Meer join fans in the fight to save Mass Effect after EA shut down its development project.",
       "tags": []
     },
     {
@@ -704,24 +722,6 @@
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/705694_691637f72f456.jpg",
       "summary": "PlayStation a dévoilé la liste totale des sorties du catalogue du PS Plus Extra et Premium de novembre 2026. Et il y a deux grands mastodontes signés Rockstar parmi eux.",
-      "tags": []
-    },
-    {
-      "title": "Le Seigneur des Anneaux : Le nouvel interprète d’Aragorn ne cherche même pas à égaler Viggo Mortensen dans La Traque de Gollum",
-      "link": "https://www.jeuxvideo.com/news/2110544/le-seigneur-des-anneaux-le-nouvel-interprete-d-aragorn-ne-cherche-meme-pas-a-egaler-viggo-mortensen-dans-la-traque-de-gollum.htm",
-      "date": "2026-10-24T04:55:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179275/1792749377-3623-le-seigneur-des-anneaux-le-nouvel-interprete-d-aragorn-ne-cherche-meme-pas-a-egaler-viggo-mortensen-dans-la-traque-de-gollum.jpg",
-      "summary": "Choisi pour incarner Aragorn dans « La Chasse à Gollum », Jamie Dornan aborde le rôle avec beaucoup d'humilité. L'acteur confie qu'il n'essaiera pas de surpasser Viggo Mortensen…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Tomb Raider : autopsie d'une crise d'identité difficile à admettre",
-      "link": "https://www.gamekult.com/actualite/tomb-raider-autopsie-d-une-crise-d-identite-difficile-a-admettre-3050872541.html",
-      "date": "2026-10-24T04:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872541/tomb-raider-a-30-ans-qu-est-ce-qu-ils-t-ont-fait-ma-lara-5ac95c8b__800_800__504-0-1583-1080.jpg",
-      "summary": "Aujourd'hui, Lara Croft appartient à Embracer Group, le prochain jeu (Tomb Raider : Catalyst) sera édité par Amazon, Netflix a diffusé un anime pour tenter de recoller les…",
       "tags": []
     },
     {
