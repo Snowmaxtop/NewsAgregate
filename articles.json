@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:42:12.689Z",
+  "generatedAt": "2026-10-26T05:41:31.151Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-25T13:58:20.000Z",
-      "kept": 7
+      "kept": 6
     },
     "gamedev": {
       "status": "stale",
@@ -56,28 +56,28 @@
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-10-25T17:21:00.000Z",
-      "kept": 7
+      "newest": "2026-10-26T05:31:00.000Z",
+      "kept": 8
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-25T22:59:26.000Z",
+      "newest": "2026-10-26T03:54:20.000Z",
       "kept": 8
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-25T20:49:51.000Z",
-      "kept": 12
+      "newest": "2026-10-26T03:12:41.000Z",
+      "kept": 13
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-26T00:00:18.000Z",
+      "newest": "2026-10-26T02:44:34.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,60 @@
     }
   },
   "articles": [
+    {
+      "title": "Mémoire cash - Le premier The Witcher était une purge technique, et pourtant c'est un jeu culte",
+      "link": "https://www.gamekult.com/actualite/le-premier-the-witcher-etait-une-purge-technique-et-pourtant-c-est-un-jeu-culte-3050872563.html",
+      "date": "2026-10-26T05:31:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872563/the-witcher-1-c-etait-quand-meme-bien-l-eurojank-20ea1915__800_800__351-0-1430-1080.jpg",
+      "summary": "En 2007, une bande de revendeurs polonais décide de braquer le RPG occidental avec un couteau à beurre, un manuel des Castors Juniors et une bonne dose d'esprit punk. Bâti sur les…",
+      "tags": []
+    },
+    {
+      "title": "Test : Phantom Blade Zero, le vaccin 100% wuxia contre l&#039;épidémie de souls-likes",
+      "link": "https://www.gamekult.com/jeux/phantom-blade-zero-3050886842/test.html",
+      "date": "2026-10-26T05:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/review/30/3050872474/phantom-blade-zero-b189074b__800_800__728-0-1809-1080.jpg",
+      "summary": "Sorti de l'ombre dès 2023 dans une conférence PlayStation Showcase, où il aura ensuite ses entrées garanties chaque année, Phantom Blade Zero est devenu le nouvel espoir chinois…",
+      "tags": []
+    },
+    {
+      "title": "Eric Bauza, The Voice Of Bugs Bunny, Daffy Duck, And Many More Has Died At 46",
+      "link": "https://kotaku.com/eric-bauza-looney-tunes-death-dies-announcement-2000749416",
+      "date": "2026-10-26T03:54:20.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/IMG_1307.jpeg",
+      "summary": "The actor’s family said he passed ‘suddenly’",
+      "tags": []
+    },
+    {
+      "title": "Steam Week in Review: AI disclosures enter the discourse again, as Epic CEO calls them 'just as partisan as mandatory political essays'",
+      "link": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-ai-disclosures-enter-the-discourse-again-as-epic-ceo-calls-them-just-as-partisan-as-mandatory-political-essays/",
+      "date": "2026-10-26T03:12:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/mquTcmtPeqPuULfWtDsgW-1920-80.jpg",
+      "summary": "All the interesting Steam facts for the week ending October 25.",
+      "tags": []
+    },
+    {
+      "title": "The 10 Best SNES Games to Play on Nintendo Switch Online",
+      "link": "https://www.polygon.com/best-snes-games-nintendo-switch-online-classics/",
+      "date": "2026-10-26T02:44:34.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/snes-classics-2.jpg",
+      "summary": "From Super Mario World to The Legend of Zelda: A Link to the Past, these are the best games on the Super Nintendo collection on Nintendo Classics.",
+      "tags": []
+    },
+    {
+      "title": "Phantom Blade Zero Reviews Just Beat Every Soulslike In 2026",
+      "link": "https://www.polygon.com/phantom-blade-zero-review-roundup-score/",
+      "date": "2026-10-26T00:56:40.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/phantom-blade-zero-slow-motion-walk.jpg",
+      "summary": "Phantom Blade Zero reviews put the Wuxia-inspired action game from S-Game in pole position as one of Metacritic's best-rated 2026 games.",
+      "tags": []
+    },
     {
       "title": "Phantom Blade Zero Is the Perfect Martial Arts Game, For Better or Worse",
       "link": "https://www.polygon.com/phantom-blade-zero-review/",
@@ -351,24 +405,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179276/1792763201-307-card.jpg",
       "summary": "Avec Halloween qui approche, nombreux sont les joueurs qui vont chercher des softs horrifiques à se mettre sous la dent pendant qu’ils croquent des Dragibus. Nous vous proposons…",
-      "tags": []
-    },
-    {
-      "title": "Clayface Gives Skydance Its Second Box Office Weekend Win In A Row",
-      "link": "https://www.polygon.com/clayface-opening-weekend-box-office/",
-      "date": "2026-10-25T16:02:01.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/clayface-movie-screenshot.webp",
-      "summary": "Clayface held off You Can See Everything to top the box office this weekend",
-      "tags": []
-    },
-    {
-      "title": "Forza Might Actually Lose at The Game Awards for the First Time in a Decade",
-      "link": "https://www.polygon.com/game-awards-sports-racing-forza-star-wars-galactic-racer/",
-      "date": "2026-10-25T16:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/assets_2026_01_1769110938_fh6_screenshots_11-city-car-meet.jpg",
-      "summary": "Forza Horizon 6 faces a stiff challenge in the Sports/Racing category from Star Wars: Galactic Racer",
       "tags": []
     },
     {
@@ -679,33 +715,6 @@
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/456521_64f1b7cadbfcc.jpg",
       "summary": "Pendant encore quelques jours, Prime Gaming offre pas moins de 6 jeux gratuits, dont de belles pépites, alors profitez-en avant qu'elles quittent bientôt le service.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Successeur de The Dragon's Trap, Wonder Boy in Monster World a joué la sécurité et l'histoire l'a un peu oublié",
-      "link": "https://www.gamekult.com/actualite/successeur-de-the-dragon-s-trap-wonder-boy-in-monster-world-a-joue-la-securite-et-l-histoire-l-a-un-peu-oublie-3050872548.html",
-      "date": "2026-10-25T05:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872548/wonder-boy-in-monster-world-d29d5aec__800_800__393-321-1154-1080.jpg",
-      "summary": "Deux ans après avoir marqué la Master System au fer rouge avec Wonder Boy III : The Dragon's Trap, le studio japonais Westone récidive sur Mega Drive avec son successeur direct…",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect: Universe Would Have Allowed Players To &#8216;Generate&#8217; Timelines That Acknowledged Multiple Choices From The Trilogy",
-      "link": "https://kotaku.com/mass-effect-universe-would-have-allowed-players-to-generate-timelines-that-acknowledged-multiple-choices-from-the-trilogy-2000749344",
-      "date": "2026-10-25T01:46:01.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/meuniverse1-1280x720.jpg",
-      "summary": "Now that the leaks are out there, some ex-BioWare devs are chatting about what they were working on before EA canceled the game",
-      "tags": []
-    },
-    {
-      "title": "Avengers: Doomsday - Official Trailer 2",
-      "link": "https://fr.ign.com/avengers-doomsday/93409/avengers-doomsday-official-trailer-2",
-      "date": "2026-10-25T01:45:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/a/avengers-d/avengers-doomsday-official-trailer-2_5vkr.jpg",
-      "summary": "In Avengers: Doomsday, beloved heroes from three distinct universes will be set on a deadly collision course and face an existential threat unlike anything they’ve ever…",
       "tags": []
     },
     {
