@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:57:59.207Z",
+  "generatedAt": "2026-10-28T07:59:49.123Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-10-27T19:08:56.000Z",
-      "kept": 20
+      "kept": 18
     },
     "gamedev": {
       "status": "ok",
@@ -42,21 +42,21 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-27T21:20:09.000Z",
-      "kept": 20
+      "newest": "2026-10-28T06:05:09.000Z",
+      "kept": 18
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-10-27T16:18:06.000Z",
+      "newest": "2026-10-28T07:10:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 49,
-      "newest": "2026-10-27T17:50:00.000Z",
+      "newest": "2026-10-28T07:07:00.000Z",
       "kept": 18
     },
     "kotaku": {
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-27T22:23:23.000Z",
-      "kept": 22
+      "newest": "2026-10-28T02:00:00.000Z",
+      "kept": 23
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-28T01:00:17.000Z",
+      "newest": "2026-10-28T04:00:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,129 @@
     }
   },
   "articles": [
+    {
+      "title": "Attention, Aniimo sera injouable en France dès aujourd'hui. Date, heure et tout ce que ça va changer",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/aniimo-maintenance-28-octobre-2026-mise-a-jour-toutes-les-infos-725632?utm_source=RSS",
+      "date": "2026-10-28T07:10:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/703228_68de86c197387.jpg",
+      "summary": "À compter d’aujourd’hui, Aniimo deviendra temporairement injouable pour préparer le terrain avant l’arrivée de sa prochaine mise à jour majeure. Voici toutes les infos.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Le FPS Active Matter franchit le cap des 500 000 exemplaires vendus, boosté par la Xbox",
+      "link": "https://www.gamekult.com/actualite/le-fps-active-matter-franchit-le-cap-des-500-000-exemplaires-vendus-booste-par-la-xbox-3050872623.html",
+      "date": "2026-10-28T07:07:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872623/le-fps-active-matter-franchit-le-cap-des-500-000-exemplaires-vendus-booste-par-la-xbox-9cd180a4__800_800__396-0-1476-1080.jpg",
+      "summary": "Gaijin Entertainment a annoncé que le jeu de tir Active Matter a franchi le cap des 500 000 exemplaires vendus à travers le monde. Disponible depuis le mois de septembre, le titre…",
+      "tags": []
+    },
+    {
+      "title": "Une reproduction du Gant de l'Infini décorée de gemmes Marvel en vente aux enchères à Abu Dhabi",
+      "link": "https://www.gameblog.fr/trends/une-reproduction-du-gant-de-linfini-decoree-de-gemmes-marvel-en-vente-aux-encheres-a-abu-dhabi-725675?utm_source=RSS",
+      "date": "2026-10-28T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/trends/725675_6ae198fe05a78.jpg",
+      "summary": "170 carats de pierres véritables, 30 ans d'attente pour une émeraude centenaire, un prix qui avait atteint 25 millions de dollars en 2022. Le Gantelet de l'Infini s'apprête à…",
+      "tags": []
+    },
+    {
+      "title": "PS5 : un nouveau jeu gratuit disponible et ils vous offre un trophée Platine facile",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps5-jeu-gratuit-dominoes-together-platine-725589?utm_source=RSS",
+      "date": "2026-10-28T06:47:22.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/509294_658bf691247b8.jpg",
+      "summary": "La PS5 accueille un nouveau jeu gratuit et fun en solo et en multi qui devrait surtout intéresser les chasseurs de trophées. Vous allez décrocher une platine supplémentaire.",
+      "tags": []
+    },
+    {
+      "title": "Game and watch - Film Call of Duty : le réalisateur promet d'éviter de faire un film \"décérébré\"",
+      "link": "https://www.gamekult.com/actualite/film-call-of-duty-le-realisateur-promet-d-eviter-de-faire-un-film-decerebre-3050872622.html",
+      "date": "2026-10-28T06:11:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872622/film-call-of-duty-le-realisateur-peter-berg-promet-une-reflexion-sur-le-fardeau-de-la-guerre-4c2fd334__800_800__478-0-1556-1080.jpg",
+      "summary": "Officialisé un peu plus tôt cette année, le film Call of Duty a trouvé son réalisateur en la personne de Peter Berg. Le cinéaste américain s'est récemment exprimé sur sa vision du…",
+      "tags": []
+    },
+    {
+      "title": "Donkey Kong Country 2 sur Super Nintendo était-il vraiment meilleur que le premier ? Finissons ce débat lancé en 1995",
+      "link": "https://www.jeuxvideo.com/news/2110911/donkey-kong-country-2-sur-super-nintendo-etait-il-vraiment-meilleur-que-le-premier-finissons-ce-debat-lance-en-1995.htm",
+      "date": "2026-10-28T06:05:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179303/1793032248-7037-card.jpg",
+      "summary": "Sorti en 1995 sur Super Nintendo, Donkey Kong Country 2 : Diddy's Kong Quest avait la lourde tâche de succéder à la bombe visuelle et ludique de 1994. Trente ans après, le match…",
+      "tags": []
+    },
+    {
+      "title": "Après 37 ans, TF1 arrête « Les Feux de l’amour », remplacé par un jeu culte",
+      "link": "https://www.gameblog.fr/trends/apres-37-ans-tf1-arrete-les-feux-de-lamour-remplace-par-un-jeu-culte-725673?utm_source=RSS",
+      "date": "2026-10-28T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/trends/725673_6ae19822702e1.jpg",
+      "summary": "Après 37 ans de bons et loyaux services, TF1 tirerait le rideau sur « Les Feux de l'amour ». En cause : une audience en chute libre face à « Pyramide », prêt à reprendre sa place…",
+      "tags": []
+    },
+    {
+      "title": "Elon Musk avait promis un film de « L’Odyssée » généré par IA : Grok vient de dévoiler ses sept premières minutes",
+      "link": "https://www.jeuxvideo.com/news/2110917/elon-musk-avait-promis-un-film-de-l-odyssee-genere-par-ia-grok-vient-de-devoiler-ses-sept-premieres-minutes.htm",
+      "date": "2026-10-28T05:55:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179309/1793088302-9604-elon-musk-avait-promis-un-film-de-l-odyssee-genere-par-ia-grok-vient-de-devoiler-ses-sept-premieres-minutes.jpg",
+      "summary": "Après avoir fustigé l'adaptation de Christopher Nolan, Elon Musk dévoile les sept premières minutes de sa version de L'Odyssée, entièrement générée par l'IA Grok Imagine. Entre…",
+      "tags": []
+    },
+    {
+      "title": "Zelda Ocarina of Time : Prix, contenu, édition spéciale, toutes les choses à savoir sur le remake sur Switch 2",
+      "link": "https://www.jeuxvideo.com/news/2110782/zelda-ocarina-of-time-prix-contenu-edition-speciale-toutes-les-choses-a-savoir-sur-le-remake-sur-switch-2.htm",
+      "date": "2026-10-28T05:05:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179302/1793019497-2825-card.jpg",
+      "summary": "Attendu au tournant sur Nintendo Switch 2, le remake de The Legend of Zelda: Ocarina of Time s'annonce comme une pièce maîtresse du catalogue de la machine. Date de sortie, prix…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Mémoire cash - Vous détestez Shaq Fu ? Il est temps de réhabiliter (un peu) le jeu de baston maudit",
+      "link": "https://www.gamekult.com/actualite/vous-detestez-shaq-fu-il-est-temps-de-rehabiliter-un-peu-le-jeu-de-baston-maudit-3050872620.html",
+      "date": "2026-10-28T05:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872620/shaq-fu-merite-t-il-vraiment-tant-de-haine-cc277368__800_800__308-0-1387-1080.jpg",
+      "summary": "Sorti à l'automne 1994 sous l'impulsion d'Electronic Arts, Shaq Fu, c'est un peu le fantasme du désastre artistique. Imaginez un peu : voilà un jeu de combat où la star de la NBA…",
+      "tags": []
+    },
+    {
+      "title": "29 Years Ago, ‘Buffy’s Wisest Character Got a Shocking Backstory that Redefined the Entire Series",
+      "link": "https://www.polygon.com/buffy-halloween-season-2-rupert-giles-ripper/",
+      "date": "2026-10-28T04:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/buffy-halloween.jpg",
+      "summary": "Buffy the Vampire Slayer began to find its rhythm in season 2, after introducing an unnerving backstory to Rupert Giles.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "The MCU's Oldest Villain Just Made a Surprise Return in 'VisionQuest'",
+      "link": "https://www.polygon.com/visionquest-mcus-oldest-iron-man-villain-raza-hamidmi-al-wazar/",
+      "date": "2026-10-28T02:46:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mcdirma_ec017.jpg",
+      "summary": "VisionQuest just brought back the character of Raza, the Ten Rings terrorist not seen since the first Iron Man movie",
+      "tags": []
+    },
+    {
+      "title": "Here's the Phantom Blade Zero release time for your region",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-release-date-launch-times/",
+      "date": "2026-10-28T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/HxHYfD2JnfBBDNmAPbsm6T-1920-80.jpg",
+      "summary": "Battle through the Wulin's monsters and martial masters.",
+      "tags": []
+    },
     {
       "title": "3 Upcoming Sci-Fi RPGs Better Than Waiting for a New Mass Effect",
       "link": "https://www.polygon.com/upcoming-games-like-mass-effect/",
@@ -370,30 +493,12 @@
       "tags": []
     },
     {
-      "title": "Matthew Lillard Officially Teases Mystery Superman Man of Tomorrow Role",
-      "link": "https://www.polygon.com/superman-man-of-tomorrow-dc-matthew-lillard-mystery-role/",
-      "date": "2026-10-27T18:59:39.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/otk-201-02041_r.jpg",
-      "summary": "Man of Tomorrow actor Mathew Lillard reveals an unexpected hint about his secret role in the new DCU",
-      "tags": []
-    },
-    {
       "title": "Crossy Road creator Matt Hall named Atari's EVP of Mobile",
       "link": "https://www.gamedeveloper.com/mobile/crossy-road-creator-matt-hall-named-atari-s-evp-of-mobile",
       "date": "2026-10-27T18:45:00.000Z",
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltda48dff3e66f9c09/673f584dfde1970d3e5da79b/Crossy_Road_Insert.png?width=720&quality=80&disable=upscale",
       "summary": "One of the mobile game industry's most well-known pioneers will spearhead Atari's own foray into mobile.",
-      "tags": []
-    },
-    {
-      "title": "New Dimension 20 Season Officially Announced",
-      "link": "https://www.polygon.com/dimension-20-starstruck-odyssey-season-2-announced/",
-      "date": "2026-10-27T18:42:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25160464/dimension_20_junior_year.jpg",
-      "summary": "Dropout and Dimension 20 have announced the next season of the actual play series: A Starstruck Odyssey season 2.",
       "tags": []
     },
     {
@@ -1195,35 +1300,6 @@
       ]
     },
     {
-      "title": "« Quel week-end de folie » Cyberpunk 2077 fait encore un carton avec sa mise à jour 2.5, ça fait 3 ans qu'il n'y avait pas eu autant de joueurs",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2077-mise-jour-2-5-pic-steam-725581?utm_source=RSS",
-      "date": "2026-10-27T11:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/705315_690b701d8ad14.jpg",
-      "summary": "Cyberpunk 2077 fait un retour fracassant sur Steam avec sa mise à jour 2.5 qui rassemble plus de 187 000 joueuse et joueurs en simultané. Même le studio n'en revient pas.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "« Le projet de mes rêves » Mass Effect Universe victime d'un nouveau leak, le compositeur lâche son travail dans la nature, et ça avait l'air incroyable",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/mass-effect-universe-leak-musique-compositeur-journey-725580?utm_source=RSS",
-      "date": "2026-10-27T10:53:46.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/725580_6ae082584212f.jpg",
-      "summary": "Les leaks continuent de pleuvoir après l'annulation de Mass Effect Universe et la fermeture de son studio, cette fois de la part de ce qui aurait pu être le compositeur du jeu, et…",
-      "tags": []
-    },
-    {
-      "title": "« Je suis prêt à y passer 200h de plus » Fire Emblem Fortune's Weave pourrait encore réserver de belles surprises aux joueurs avec ses DLC, ça a leaké",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/fire-emblem-fortunes-weave-leak-dataminers-contenus-dlc-rumeur-725583?utm_source=RSS",
-      "date": "2026-10-27T10:48:25.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/717438_6a280124d7118.jpg",
-      "summary": "Grâce au jailbreak de la Nintendo Switch 2, des dataminers ont pu découvrir une série d’informations potentielles sur les futurs DLC de Fire Emblem Fortune’s Weave.",
-      "tags": []
-    },
-    {
       "title": "Ghost of Yotei aurait généré plus de 400 millions de dollars, alors pourquoi Sucker Punch licencie quand même ?",
       "link": "https://www.gamekult.com/actualite/ghost-of-yotei-aurait-genere-plus-de-400-millions-de-dollars-alors-pourquoi-sucker-punch-licencie-quand-meme-3050872602.html",
       "date": "2026-10-27T10:40:00.000Z",
@@ -1257,15 +1333,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/h/hunger-gam/hunger-games-director-hopes-you-arent-too-distracted-with-gt_kn8d.png",
       "summary": "« Jouez à GTA, allez voir notre film, puis jouez encore à GTA. »",
-      "tags": []
-    },
-    {
-      "title": "Le pouvoir du tour par tour ? FF Resonance détrône FF7 Rebirth et établit un nouveau record pour un jeu Final Fantasy",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/final-fantasy-resonance-record-steam-jrpg-tour-par-tour-725574?utm_source=RSS",
-      "date": "2026-10-27T10:10:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/724648_6ac90d6989c3e.jpg",
-      "summary": "Final Fantasy Resonance réalise une performance exceptionnelle sur Steam, faisant même mieux que FF7 Rebirth. Serait-ce grâce à son retour au tour par tour ?",
       "tags": []
     },
     {
@@ -1380,96 +1447,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050866377/il-y-a-20-ans-sortait-shadow-of-the-colossus-l-autre-chef-d-oeuvre-de-fumito-ueda-586af01a__800_800__305-0-1115-810.jpg",
       "summary": "Il y a peu, c’est ICO qui fêtait son anniversaire. Mais si c’est ce dernier qui a permis à Fumito Ueda de mettre la première pierre à sa légende, c’est bien Shadow of the Colossus…",
-      "tags": []
-    },
-    {
-      "title": "La première collection officielle de jouets Palworld est arrivée, avec des œufs mystères et d'adorables Pals !",
-      "link": "https://fr.ign.com/palworld/93449/la-premiere-collection-officielle-de-jouets-palworld-est-arrivee-avec-des-oeufs-mysteres-et-dadorabl",
-      "date": "2026-10-27T07:43:06.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/p/palworlds-/palworlds-first-official-toy-collection-is-here-complete-wit_1tn8.jpg",
-      "summary": "Chillet, Grizzbolt, Relaxasaurus et bien d&#x27;autres.",
-      "tags": []
-    },
-    {
-      "title": "La science le prouve : les gamers affichent des performances cognitives de personnes de 13,7 ans plus jeunes",
-      "link": "https://www.jeuxvideo.com/news/2110727/la-science-le-prouve-les-gamers-affichent-des-performances-cognitives-de-personnes-de-13-7-ans-plus-jeunes.htm",
-      "date": "2026-10-27T07:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179301/1793005871-8659-card.jpg",
-      "summary": "Et si les heures passées devant un écran étaient finalement bénéfiques pour notre cerveau ? Longtemps accusés de favoriser la sédentarité ou de nuire à la concentration, les jeux…",
-      "tags": []
-    },
-    {
-      "title": "La franchise Call of Duty dépasse les 40 milliards de dollars de revenus cumulés après le lancement de Modern Warfare 4",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93448/la-franchise-call-of-duty-depasse-les-40-milliards-de-dollars-de-revenus-cumules-apres-le-lancement",
-      "date": "2026-10-27T07:32:12.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/call-of-du/call-of-duty-franchise-surpasses-40-billion-lifetime-revenue_k591.jpg",
-      "summary": "Rien n&#x27;arrête ce train.",
-      "tags": []
-    },
-    {
-      "title": "Silent Hill : Konami a cloisonné ses studios pour garantir l'indépendance de chaque jeu",
-      "link": "https://www.gamekult.com/actualite/silent-hill-konami-a-cloisonne-ses-studios-pour-garantir-l-independance-de-chaque-jeu-3050872605.html",
-      "date": "2026-10-27T07:11:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872605/silent-hill-konami-a-cloisonne-ses-studios-pour-garantir-l-independance-de-chaque-jeu-e4bee3fd__800_800__420-0-1500-1080.jpg",
-      "summary": "Jon McKellan, réalisateur de Silent Hill Townfall, a révélé que Konami avait délibérément isolé les équipes travaillant simultanément sur la franchise. Cette stratégie de…",
-      "tags": []
-    },
-    {
-      "title": "Entre Tower Defense, roguelike et Match-3, l'OVNI Titanium Court déboule sur consoles en octobre",
-      "link": "https://www.gamekult.com/actualite/entre-tower-defense-roguelike-et-match-3-l-ovni-titanium-court-deboule-sur-consoles-en-octobre-3050872604.html",
-      "date": "2026-10-27T06:07:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872604/entre-tower-defense-roguelike-et-match-3-l-ovni-titanium-court-deboule-sur-consoles-en-octobre-761d2c30__800_800__516-0-1866-1350.jpg",
-      "summary": "Sorti sur PC au printemps dernier, l'inclassable Titanium Court s'apprête à envahir le marché des consoles et du mobile. Fellow Traveller et AP Thomson déploieront ce mélange de…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : pour rendre les conversations des PNJ plus naturelles, les scénaristes ont utilisé une technique bien spéciale",
-      "link": "https://www.jeuxvideo.com/news/2110679/gta-6-pour-rendre-les-conversations-des-pnj-plus-naturelles-les-scenaristes-ont-utilise-une-technique-bien-speciale.htm",
-      "date": "2026-10-27T06:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179277/1792770163-7915-card.jpg",
-      "summary": "Pour rendre Grand Theft Auto VI plus immersif que tous ses jeux précédents, Rockstar Games a choisi de ne pas faire répéter les trois mêmes répliques en boucle à ses PNJ. Tant…",
-      "tags": []
-    },
-    {
-      "title": "Les films les plus chers issus du jeu vidéo : le prochain Elden Ring se place directement dans le classement",
-      "link": "https://www.jeuxvideo.com/news/2110879/les-films-les-plus-chers-issus-du-jeu-video-le-prochain-elden-ring-se-place-directement-dans-le-classement.htm",
-      "date": "2026-10-27T05:55:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179303/1793030320-8609-card.jpg",
-      "summary": "Avec un budget de production estimé à près de 200 millions de dollars, l'adaptation cinématographique d'Elden Ring par A24 s'installe directement parmi les projets les plus…",
-      "tags": []
-    },
-    {
-      "title": "Le premier jeu massivement solo de l'histoire : une seule personne sur Terre peut y jouer à la fois",
-      "link": "https://www.jeuxvideo.com/news/2110636/le-premier-jeu-massivement-solo-de-l-histoire-une-seule-personne-sur-terre-peut-y-jouer-a-la-fois.htm",
-      "date": "2026-10-27T05:05:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179276/1792762548-631-card.jpg",
-      "summary": "En général, le but de tout jeu est d'être accessible au maximum de joueurs. Ce titre indépendant propose tout le contraire : seule une personne peut y jouer à la fois. Les autres…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Torchlight : comment un petit jeu fauché a donné une leçon de hack'n'slash à Diablo",
-      "link": "https://www.gamekult.com/actualite/torchlight-comment-un-petit-jeu-fauche-a-donne-une-lecon-de-hack-n-slash-a-diablo-3050872601.html",
-      "date": "2026-10-27T05:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872601/torchlight-le-braquage-de-diablo-par-ses-propres-peres-1c1fa159__800_800__444-0-1524-1080.jpg",
-      "summary": "En octobre 2009, les orphelins de Diablo II crevaient la dalle. Blizzard s'embourbait dans le développement interminable du troisième opus, en enchaînant les promesses repoussées…",
-      "tags": []
-    },
-    {
-      "title": "Le premier Final Fantasy en HD-2D est-il à la hauteur des meilleurs opus de la saga ? Voici notre avis sur Resonance dans ce vidéo test !",
-      "link": "https://www.jeuxvideo.com/videos/2109883/le-premier-final-fantasy-en-hd-2d-est-il-a-la-hauteur-des-meilleurs-opus-de-la-saga-voici-notre-avis-sur-resonance-dans-ce-video-test.htm",
-      "date": "2026-10-27T04:35:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179249/1792488897-7890-card.jpg",
-      "summary": "Avec Final Fantasy Resonance, Square Enix tente un pari audacieux : transformer un ancien jeu mobile en une véritable expérience premium en HD-2D. Entre hommage vibrant aux 40 ans…",
       "tags": []
     },
     {
