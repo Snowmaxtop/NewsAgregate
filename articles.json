@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T18:30:11.269Z",
+  "generatedAt": "2026-10-29T22:56:24.459Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,29 +21,29 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-29T17:44:32.000Z",
+      "newest": "2026-10-29T20:50:03.000Z",
       "kept": 28
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
-      "newest": "2026-10-29T17:35:37.000Z",
-      "kept": 1
+      "newest": "2026-10-29T18:17:55.000Z",
+      "kept": 2
     },
     "gibiz": {
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-29T14:29:45.000Z",
-      "kept": 7
+      "kept": 6
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-10-29T17:10:11.000Z",
-      "kept": 17
+      "newest": "2026-10-29T21:20:09.000Z",
+      "kept": 19
     },
     "gameblog": {
       "status": "ok",
@@ -57,34 +57,34 @@
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
       "newest": "2026-10-29T18:05:00.000Z",
-      "kept": 21
+      "kept": 19
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-29T18:00:23.000Z",
+      "newest": "2026-10-29T21:30:18.000Z",
       "kept": 20
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-10-29T17:57:52.000Z",
-      "kept": 43
+      "newest": "2026-10-29T22:00:00.000Z",
+      "kept": 45
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-10-29T18:25:15.000Z",
+      "newest": "2026-10-29T21:14:52.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-10-27T20:14:06.000Z",
+      "newest": "2026-10-29T20:52:47.000Z",
       "kept": 3
     },
     "pgbiz": {
@@ -98,8 +98,8 @@
       "status": "ok",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
-      "newest": "2026-10-29T13:00:00.000Z",
-      "kept": 5
+      "newest": "2026-10-29T18:45:43.000Z",
+      "kept": 6
     },
     "gdco": {
       "status": "ok",
@@ -118,30 +118,300 @@
   },
   "articles": [
     {
-      "title": "Netflix Officially Confirms PUBG TV Adaptation in the Works",
-      "link": "https://www.polygon.com/netflix-pubg-tv-series-donald-glover-krafton/",
-      "date": "2026-10-29T18:25:15.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/16125953/guava_island_still_wide_62f1b8422be7d093c2308f7ddaaedb0765cf02b9.jpg",
-      "summary": "Battle royale shooter PUBG is getting a live-action TV series from Netflix, with Donald Glover set to write, direct, star and produce the adaptation.",
+      "title": "How to start the Charting the Unknown DLC in Crimson Desert",
+      "link": "https://www.pcgamer.com/games/rpg/crimson-desert-how-to-start-charting-the-unknown-dlc/",
+      "date": "2026-10-29T22:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/75rcSjrDiHsTdek7NxqPzf-1920-80.jpg",
+      "summary": "Unlock requirements for all of the expansion's new content.",
       "tags": []
     },
     {
-      "title": "'Rings of Power' Season 3 Will Introduce a Character That Subverts Tolkien’s Mythos",
-      "link": "https://www.polygon.com/lord-of-the-rings-rings-of-power-orc-with-an-arc-tolkien-dilemma/",
-      "date": "2026-10-29T18:15:31.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/meat.jpg",
-      "summary": "'The Lord of the Rings: The Rings of Power' will introduce an \"Orc with an arc.\"",
+      "title": "'None of these people have ever made a game,' BioWare co-founder Greg Zeschuk says of game industry executives: 'They just don't know how it works'",
+      "link": "https://www.pcgamer.com/gaming-industry/none-of-these-people-have-ever-made-a-game-bioware-co-founder-greg-zeschuk-says-of-game-industry-executives-they-just-dont-know-how-it-works/",
+      "date": "2026-10-29T21:47:36.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/SzmN5gBZ4AzPwnUJwehJHj-1920-80.jpg",
+      "summary": "In a rare interview, Zeschuk said the closure of BioWare is sad, but his greater concern is for the people put out of work.",
       "tags": []
     },
     {
-      "title": "James Gunn Finally Confirming What’s Official DCU Canon in The Suicide Squad",
-      "link": "https://www.polygon.com/dc-james-gunn-suicide-squad-canon-podcast-announced/",
-      "date": "2026-10-29T18:06:50.000Z",
+      "title": "Spirit Halloween 2026: The Kotaku Review",
+      "link": "https://kotaku.com/checking-in-on-spirit-halloween-in-2026-was-a-wild-ride-2000751047",
+      "date": "2026-10-29T21:30:18.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Spirt-Halloween-2026-1-1280x720.jpg",
+      "summary": "A world of pure imagination",
+      "tags": []
+    },
+    {
+      "title": "Du gameplay inédit de GTA 6 : plage et crottes de chien au programme",
+      "link": "https://www.jeuxvideo.com/news/2111350/du-gameplay-inedit-de-gta-6-plage-et-crottes-de-chien-au-programme.htm",
+      "date": "2026-10-29T21:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179328/1793278272-1642-card.jpg",
+      "summary": "Quand le jeu le plus attendu de la décennie s'invite chez les sales gosses du Colorado. En confiant un extrait de gameplay inédit et totalement trash de GTA VI aux créateurs de…",
+      "tags": []
+    },
+    {
+      "title": "Official The Elder Scrolls 6 Announcement Imminent, Report Says",
+      "link": "https://www.polygon.com/the-elder-scrolls-6-sentinel-news-tes6-skyrim-anniversary-bethesda/",
+      "date": "2026-10-29T21:14:52.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24399033/james_gunn.jpg",
-      "summary": "James Gunn will decide DCU canon in a podcast all about 2021's The Suicide Squad",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/elder-scrolls-online-skyrim-update-1.jpg",
+      "summary": "Skyrim's 15th anniversary will give fans a real reason to be excited about a new Bethesda RPG",
+      "tags": []
+    },
+    {
+      "title": "The Entire Internet Is Mourning Sir Patrick Stewart Right Now",
+      "link": "https://kotaku.com/patrick-stewart-death-internet-reaction-oh-captain-my-captain-2000751189",
+      "date": "2026-10-29T21:05:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/GettyImages-1031207830-1280x853.jpg",
+      "summary": "'Boldly go, my Captain'",
+      "tags": []
+    },
+    {
+      "title": "Rockstar Games’ union could top 1,600 workers",
+      "link": "https://www.gamefile.news/p/rockstar-union-size-xbox-missing-reviews",
+      "date": "2026-10-29T20:52:47.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!8oXk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe77c8848-8f84-4834-90a4-3470bceb9eb8_3840x2160.jpeg",
+      "summary": "Plus: Xbox game review drama, Ubisoft not remaking more Assassin's Creed games, and more",
+      "tags": []
+    },
+    {
+      "title": "Sir Patrick Stewart en images",
+      "link": "https://fr.ign.com/avengers-doomsday/93560/in-pictures-sir-patrick-stewart",
+      "date": "2026-10-29T20:50:03.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/i/in-picture/in-pictures-sir-patrick-stewart_bbaa.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Sir Patrick Stewart est mort à l’âge de 86 ans",
+      "link": "https://fr.ign.com/avengers-doomsday/93559/sir-patrick-stewart-est-mort-a-lage-de-86-ans",
+      "date": "2026-10-29T20:50:03.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/sir-patric/sir-patrick-stewart-dead-at-86_3usv.jpg",
+      "summary": "La mort de l’acteur de Star Trek et X-Men survient après un bref combat contre la maladie d’Alzheimer et la démence à corps de Lewy.",
+      "tags": []
+    },
+    {
+      "title": "Ubisoft Issues Official Update on Fate of Future Assassin's Creed Remakes",
+      "link": "https://www.polygon.com/assassins-creed-remakes-development-update-fall-2026/",
+      "date": "2026-10-29T20:48:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/ac-black-flag-resynced.jpeg",
+      "summary": "Ubisoft has confirmed no Assassin's Creed remakes are currently in development. It also shared updates on projects like Assassin's Creed Hexe.",
+      "tags": []
+    },
+    {
+      "title": "Steam Makes 96% Positive Puzzle Game Completely Free",
+      "link": "https://www.polygon.com/hexologic-free-steam-game-october-2026/",
+      "date": "2026-10-29T20:45:03.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/polygon-graphic-free-game-sale-banner-steam.jpg",
+      "summary": "Hexologic is free to keep on Steam for a limited time. Claim this relaxing Sudoku-inspired puzzle game and solve more than 90 levels.",
+      "tags": []
+    },
+    {
+      "title": "Patrick Stewart, Star Trek and Shakespeare legend, has died",
+      "link": "https://www.pcgamer.com/movies-tv/patrick-stewart-star-trek-and-shakespeare-legend-has-died/",
+      "date": "2026-10-29T20:33:11.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/WT5vdvXQX8KvB2w8eXv7Kh-1920-80.jpg",
+      "summary": "Stewart died at age 86 after \"a brief and poignant journey with Alzheimer's Disease.\"",
+      "tags": []
+    },
+    {
+      "title": "Archive Of Our Own Might Be Down For Several Weeks And Fanfic Readers Are (Rightfully) Crashing Out",
+      "link": "https://kotaku.com/archive-of-our-own-might-be-down-for-several-weeks-and-fanfic-readers-are-rightfully-crashing-out-2000751155",
+      "date": "2026-10-29T20:30:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/ao3broken-1280x720.jpg",
+      "summary": "The reason for the extended outage is as yet unknown",
+      "tags": []
+    },
+    {
+      "title": "Meilleures armes Phantom Blade Zero : lesquelles utiliser et améliorer ?",
+      "link": "https://www.jeuxvideo.com/news/2110947/meilleures-armes-phantom-blade-zero-lesquelles-utiliser-et-ameliorer.htm",
+      "date": "2026-10-29T20:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179310/1793102708-7877-card.jpg",
+      "summary": "Choisir son arme principale dans Phantom Blade Zero est un peu dans les Souls-Like, c'est un investissement pour apprendre à la manier et pour l'améliorer. Découvrez notre…",
+      "tags": []
+    },
+    {
+      "title": "19 Excellent Horror Games You Can Play For Free With PS Plus This Halloween",
+      "link": "https://kotaku.com/ps-plus-horror-halloween-silent-hill-2-free-ps4-ps5-2000637341",
+      "date": "2026-10-29T20:15:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2025/10/image-2026-10-29T161725.999-1280x720.jpg",
+      "summary": "The PlayStation subscription service is full of great horror picks",
+      "tags": []
+    },
+    {
+      "title": "Patrick Stewart's Greatest Captain Picard Quote Is Still a Defining Star Trek Moment",
+      "link": "https://www.polygon.com/patrick-stewart-best-star-trek-quote/",
+      "date": "2026-10-29T20:10:37.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/t2dsttr_pa001.jpg",
+      "summary": "\"The Inner Light\" contains Jean-Luc Picard's greatest quote, a quiet line that reveals the humanity behind Star Trek's most beloved captain.",
+      "tags": []
+    },
+    {
+      "title": "Square Enix should never make a Final Fantasy game without turn-based combat again",
+      "link": "https://www.polygon.com/final-fantasy-resonance-blueprint-for-new-ff-games/",
+      "date": "2026-10-29T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/final-fantasy-resonance-future-of-final-fantasy.jpg",
+      "summary": "Final Fantasy Resonance is everything Square Enix's RPG series has struggled to achieve ove the last decade, and it should guide the series' future",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 est un jeu Xbox, mais personne ne l'a testé sur Xbox : Microsoft réagit",
+      "link": "https://www.jeuxvideo.com/news/2111122/call-of-duty-modern-warfare-4-est-un-jeu-xbox-mais-personne-ne-l-a-teste-sur-xbox-microsoft-reagit.htm",
+      "date": "2026-10-29T20:00:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179320/1793196882-9830-card.jpg",
+      "summary": "Alors que Call of Duty Modern Warfare 4 cartonne avec des notes excellentes sur PS5 et PC, la version Xbox Series X se retrouve sans note officielle sur Metacritic. Tout ça causé…",
+      "tags": []
+    },
+    {
+      "title": "Star Trek and X-Men Icon Patrick Stewart Dies at 86",
+      "link": "https://www.polygon.com/patrick-stewart-dies-star-trek-x-men/",
+      "date": "2026-10-29T19:57:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdsttr_pa117.jpg",
+      "summary": "Sir Patrick Stewart, the actor famous for roles in Star Trek: The Next Generation, X-Men films, and Dune, has died, his family announced.",
+      "tags": []
+    },
+    {
+      "title": "Acting Legend Sir Patrick Stewart Has Died At 86",
+      "link": "https://kotaku.com/patrick-stewart-death-cause-announcement-x-men-star-trek-2000751164",
+      "date": "2026-10-29T19:50:11.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2025/03/69a13f2fb85d817b1fa1517d6a30f0d1-1280x721.jpg",
+      "summary": "The iconic actor known for his work in series like Star Trek and X-Men passed after 'a brief and poignant journey with Alzheimer’s disease and Lewy body dementia'",
+      "tags": []
+    },
+    {
+      "title": "'Whence the Weeping' quest walkthrough in Phantom Blade Zero",
+      "link": "https://www.polygon.com/phantom-blade-zero-whence-the-weeping-quest-walkthrough/",
+      "date": "2026-10-29T19:41:22.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/phantombladezero_guide_whencetheweeping_head.jpg",
+      "summary": "Here's how you complete the \"Whence the Weeping\" side quest in Phantom Blade Zero and where you must go to find the source of the weeping.",
+      "tags": []
+    },
+    {
+      "title": "Hua la fiancée mortelle Phantom Blade Zero : comment battre ce boss ?",
+      "link": "https://www.jeuxvideo.com/news/2110373/hua-la-fiancee-mortelle-phantom-blade-zero-comment-battre-ce-boss.htm",
+      "date": "2026-10-29T19:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792674460-9571-card.jpg",
+      "summary": "Le premier boss optionnel du jeu d'action Phantom Blade Zero ne plaisante pas. Découvrez une vidéo du combat face à Hua la fiancée mortelle ainsi qu'un guide écrit pour vous aider…",
+      "tags": []
+    },
+    {
+      "title": "Here&#8217;s A Metroid Prime Trilogy Dev&#8217;s Take On Why Metroid Prime 4&#8242;s Bike Sections Sucked",
+      "link": "https://kotaku.com/heres-a-metroid-prime-trilogy-devs-take-on-why-metroid-prime-4s-bike-sections-sucked-2000751031",
+      "date": "2026-10-29T19:37:15.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/Switch2_MetroidPrime4Beyond-1280x720.jpg",
+      "summary": "Jack Mathews, lead technical engineer for the Prime Trilogy, explains why Sol Valley was 'just a waste'",
+      "tags": []
+    },
+    {
+      "title": "Modern Warfare 4's newest map is actually older than the Gen Z & Alpha teens who will play it",
+      "link": "https://www.pcgamer.com/games/call-of-duty/modern-warfare-4s-newest-map-is-actually-older-than-the-gen-z-and-alpha-teens-who-will-play-it/",
+      "date": "2026-10-29T19:36:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/X2xUE5bZdxT3QrB6vMvCk-1920-80.jpg",
+      "summary": "This map can drink.",
+      "tags": []
+    },
+    {
+      "title": "Donald Glover is heading up a PUBG live action series for Netflix",
+      "link": "https://www.pcgamer.com/movies-tv/donald-glover-is-heading-up-a-pubg-live-action-series-for-netflix/",
+      "date": "2026-10-29T19:13:32.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dopiaLycxZXskTnzmsspbc-1920-80.jpg",
+      "summary": "The award-winning writer, actor, and musician is set to write, direct, produce, and star in the show.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 n’est pas seulement craint dans le milieu du jeu vidéo, le cinéma s’attend aussi à prendre un sacré coup",
+      "link": "https://www.jeuxvideo.com/news/2111390/gta-6-n-est-pas-seulement-craint-dans-le-milieu-du-jeu-video-le-cinema-s-attend-aussi-a-prendre-un-sacre-coup.htm",
+      "date": "2026-10-29T19:10:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179329/1793289059-7063-card.jpg",
+      "summary": "Prévu pour le 19 novembre 2026, GTA 6 ne se contente plus d’effrayer sa propre industrie : à Hollywood aussi, producteurs et distributeurs redoutent une onde de choc capable de…",
+      "tags": []
+    },
+    {
+      "title": "Ace Combat 8: Wings of Theve: The Kotaku Review",
+      "link": "https://kotaku.com/ace-combat-8-wings-of-theve-the-kotaku-review-2000750998",
+      "date": "2026-10-29T19:00:37.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/image-2026-10-29T092457.038-1280x720.jpg",
+      "summary": "It's time to stop denying yourself the joys of a peak Ace Combat thrill ride",
+      "tags": []
+    },
+    {
+      "title": "New James Bond Officially Joins The 007 Franchise Today",
+      "link": "https://www.polygon.com/new-james-bond-actor-silverfin-isaac-rouse-recast/",
+      "date": "2026-10-29T18:51:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19879751/bond_25_B25_25594_R_rgb.jpg",
+      "summary": "Isaac Rouse is the new James Bond in SilverFin, an adaptation of 007 author Charlie Higson's young adult novel based on Ian Fleming's super spy.",
+      "tags": []
+    },
+    {
+      "title": "How to get comms modules in DMZ in Modern Warfare 4",
+      "link": "https://www.polygon.com/mw4-modern-warfare-4-dmz-comms-modules-how-to-get/",
+      "date": "2026-10-29T18:46:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/modern-warfare-4-dmz-comms-modules-header.jpg",
+      "summary": "This guide explains how to get comms modules in DMZ in Modern Warfare 4 and the best locations to find them.",
+      "tags": []
+    },
+    {
+      "title": "Has Ubisoft quietly killed Tencent collab Assassin’s Creed Jade?",
+      "link": "https://mobilegamer.biz/has-ubisoft-quietly-killed-tencent-collab-assassins-creed-jade/",
+      "date": "2026-10-29T18:45:43.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "Ubisoft seemingly forgot to mention its mobile-exclusive iteration of Assassin’s Creed, subtitled Jade, in its latest franchise update blog. Have Tencent and Ubisoft quietly…",
+      "tags": []
+    },
+    {
+      "title": "'Pokémon' Officially Brings Back Long-Lost Rare Monster After 10 Years",
+      "link": "https://www.polygon.com/pokemon-legends-za-vivillon-poke-ball-pattern-challenge-how-to-get/",
+      "date": "2026-10-29T18:30:06.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/9389829/Screen_Shot_2017_10_04_at_11.24.42_AM.png",
+      "summary": "This elusive monster was last available in a 2016 event, but it's coming back for Pokémon Legends: Z-A",
+      "tags": []
+    },
+    {
+      "title": "Donald Glover to direct, star in Netflix adaptation of PUBG Battlegrounds",
+      "link": "https://www.gamedeveloper.com/business/netflix-adapts-krafton-pubg-to-be-written-and-led-by-donald-glover",
+      "date": "2026-10-29T18:17:55.000Z",
+      "sourceId": "gamedev",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf444fe6c2ef4562e/67ab6ea94aa212470924b757/PUBG_Header.png?width=720&quality=80&disable=upscale",
+      "summary": "An adaptation of the battle royale shooter has been picked up by Netflix, with protean entertainer Donald Glover to write, produce, and star in the adaptation.",
+      "tags": []
+    },
+    {
+      "title": "Lame ébréchée le maraudeur frénétique Phantom Blade Zero : comment battre ce boss ?",
+      "link": "https://www.jeuxvideo.com/news/2110814/lame-ebrechee-le-maraudeur-frenetique-phantom-blade-zero-comment-battre-ce-boss.htm",
+      "date": "2026-10-29T18:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179302/1793020590-2710-card.jpg",
+      "summary": "Le tout premier boss obligatoire du jeu d'action Phantom Blade Zero est un passage important pour comprendre les mécanismes du jeu. Découvrez une vidéo du combat face à la Lame…",
       "tags": []
     },
     {
@@ -154,30 +424,12 @@
       "tags": []
     },
     {
-      "title": "'PUBG: Final Circle' Officially Revealed",
-      "link": "https://www.polygon.com/pubg-final-circle-tabletop-card-game-announced/",
-      "date": "2026-10-29T18:02:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22722785/TAEGO_key_art.jpg",
-      "summary": "PUBG is getting a tabletop card game called Final Circle, where players loot gear, battle rivals, and fight to be the last survivor.",
-      "tags": []
-    },
-    {
       "title": "The Original Silent Hill&#8217;s Infamous Alley Intro Is Still The Scariest Moment I&#8217;ve Ever Experienced In A Game",
       "link": "https://kotaku.com/the-original-silent-hills-infamous-alley-intro-is-still-the-scariest-moment-ive-ever-experienced-in-a-game-2000743281",
       "date": "2026-10-29T18:00:23.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/10/sh1-alley-1280x720.jpg",
       "summary": "Perhaps I'll just go back to playing Tony Hawk's Pro Skater instead...",
-      "tags": []
-    },
-    {
-      "title": "Best Guns in the Modern Warfare 4 Beta",
-      "link": "https://www.polygon.com/modern-warfare-4-mw4-best-guns-weapons-meta/",
-      "date": "2026-10-29T18:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/modern-warfare-4-mw4-best-guns-header.jpg",
-      "summary": "Our guide lists the top five guns in the Modern Warfare 4 meta right now.",
       "tags": []
     },
     {
@@ -340,33 +592,6 @@
       "tags": []
     },
     {
-      "title": "BioWare Co-Founder Breaks Down the Problem With AI in Game Development Perfectly",
-      "link": "https://www.polygon.com/bioware-co-founder-slams-ai-push/",
-      "date": "2026-10-29T17:06:07.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7675959/mass_effect_2.jpg",
-      "summary": "BioWare co-founder Greg Zeschuk speaks out on inexperienced game executives and their reliance on AI.",
-      "tags": []
-    },
-    {
-      "title": "28 Years Later, Ocarina of Time’s Saddest Line Is Still the Best in Zelda History",
-      "link": "https://www.polygon.com/zelda-ocarina-of-time-retrospective-saddest-quote/",
-      "date": "2026-10-29T17:02:51.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-legend-of-zelda-ocarina-of-time-sheik-with-harp.png",
-      "summary": "Zelda: Ocarina of Time doesn't always tug at our heartstrings, but when it does, it knows just how to produce the waterworks.",
-      "tags": []
-    },
-    {
-      "title": "Game Pass Just Finally Got One of the Best Horror Games in Years",
-      "link": "https://www.polygon.com/mouthwashing-console-recommendation/",
-      "date": "2026-10-29T17:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/mouthwashing-curly-emergency.jpg",
-      "summary": "The cult hit Mouthwash is finally available on consoles two years after it became a horror sensation on PC.",
-      "tags": []
-    },
-    {
       "title": "Studio Atelico launches on-device AI engine for game developers",
       "link": "https://www.pocketgamer.biz/studio-atelico-launches-on-device-ai-engine-for-game-developers/",
       "date": "2026-10-29T17:00:00.000Z",
@@ -387,30 +612,12 @@
       "tags": []
     },
     {
-      "title": "'Celeste' and 'Towerfall' Delisted From Xbox as Dev Joins Boycott",
-      "link": "https://www.polygon.com/celeste-towerfall-delisted-bds-boycott/",
-      "date": "2026-10-29T16:53:51.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/celeste-concept-art.jpg",
-      "summary": "'Celeste' and 'Towerfall' have been delisted from Xbox as part of the pro-Palestinian BDS boycott.",
-      "tags": []
-    },
-    {
       "title": "Après 8 ans, The Elder Scrolls 6 enfin prêt à se révéler. L'annonce aurait leaké",
       "link": "https://www.gameblog.fr/jeu-video/ed/news/the-elder-scrolls-6-nom-725831?utm_source=RSS",
       "date": "2026-10-29T16:52:19.000Z",
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/410941_6384c8778500b.jpg",
       "summary": "Huit ans après son officialisation, The Elder Scrolls 6 serait enfin prêt à passer à la prochaine étape. La prochaine annonce de Bethesda aurait leaké.",
-      "tags": []
-    },
-    {
-      "title": "The 'Zelda' Switch 2 Console Release Is A Confirmed Disaster For Some",
-      "link": "https://www.polygon.com/zelda-switch-2-ocarina-of-time-edition-preorder-cancel-delay-walmart-target/",
-      "date": "2026-10-29T16:48:37.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/image-12.png",
-      "summary": "Major retailers like Walmart and Target are informing Zelda: Ocarina of Time fans of console and game stock issues at the last minute",
       "tags": []
     },
     {
@@ -441,7 +648,7 @@
       "tags": []
     },
     {
-      "title": "A Rare Pokémon Is Being Distributed Again For The First Time In A Decade, But There&#8217;s A Catch",
+      "title": "A Rare Pokémon Is Being Distributed Again For The First Time In A Decade, But There&#8217;s A Catch [Update: The Goal&#8217;s Been Met]",
       "link": "https://kotaku.com/pokemon-legends-za-vivillon-poke-ball-pattern-mystery-gift-2000751036",
       "date": "2026-10-29T16:30:29.000Z",
       "sourceId": "kotaku",
@@ -1292,15 +1499,6 @@
       "tags": []
     },
     {
-      "title": "Cyberpunk 2 avance d'une manière surprenante : le réalisateur du jeu nous prouve qu'il a tout compris en embauchant d'anciens modeurs",
-      "link": "https://www.jeuxvideo.com/news/2111074/cyberpunk-2-avance-d-une-maniere-surprenante-le-realisateur-du-jeu-nous-prouve-qu-il-a-tout-compris-en-embauchant-d-anciens-modeurs.htm",
-      "date": "2026-10-29T07:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179319/1793192469-1308-card.jpg",
-      "summary": "CD Projekt Red vient de dévoiler une info qui prouve que le studio polonais a pleinement compris la ferveur de sa communauté.",
-      "tags": []
-    },
-    {
       "title": "Le JRPG indé au tour par tour à travers les âges Threads of Time concocte une première fenêtre de sortie pour l'été prochain",
       "link": "https://www.gamekult.com/actualite/le-jrpg-inde-au-tour-par-tour-a-travers-les-ages-threads-of-time-concocte-une-premiere-fenetre-de-sortie-pour-l-ete-prochain-3050872640.html",
       "date": "2026-10-29T07:33:00.000Z",
@@ -1323,84 +1521,12 @@
       ]
     },
     {
-      "title": "Pourquoi le gameplay à 4 joueurs de GoldenEye 007 sur Nintendo 64 reste imbattable dans nos souvenirs ?",
-      "link": "https://www.jeuxvideo.com/news/2111061/pourquoi-le-gameplay-a-4-joueurs-de-goldeneye-007-sur-nintendo-64-reste-imbattable-dans-nos-souvenirs.htm",
-      "date": "2026-10-29T06:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179312/1793118308-2161-card.jpg",
-      "summary": "À la fin des années 1990, le jeu de tir à la première personne semblait réservé à l'élite du PC, armée de son duo clavier-souris. Pourtant, quatre petits ports manette en façade…",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - 16 ans plus tard, Deadly Premonition incarne toujours le meilleur du pire",
       "link": "https://www.gamekult.com/actualite/16-ans-plus-tard-deadly-premonition-incarne-toujours-le-meilleur-du-pire-3050872599.html",
       "date": "2026-10-29T05:00:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872599/16-ans-plus-tard-deadly-premonition-incarne-toujours-le-meilleur-du-pire-75c5cf04__800_800__424-0-1504-1080.jpg",
       "summary": "Incarnation totale du cult classic appliqué au jeu vidéo, ces nanars dont il faut aller chercher le cœur fondant sous une couche de crasse rebutante, Deadly Premonition n'a rien…",
-      "tags": []
-    },
-    {
-      "title": "Where to find the Flesh Lily in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-flesh-lily-location/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Fh9kdG3PrEvkL7ym66t4UX-1920-80.jpg",
-      "summary": "Track down this rare flower to help Yu'er's father.",
-      "tags": []
-    },
-    {
-      "title": "Where to find the Backstreet Courtyard Key in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-backstreet-courtyard-key-location/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/f3tcWcvMjhYcSi5iYTCwqV-1920-80.jpg",
-      "summary": "Open the locked door in the backstreets of Pangzhen.",
-      "tags": []
-    },
-    {
-      "title": "Phantom Blade Zero's best weapon might just be the first one you get",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-best-weapon-jagged-steel/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/7rVNNg3tqanb9juZ9aueEQ-1920-80.jpg",
-      "summary": "Bleed's back on the menu, boys.",
-      "tags": []
-    },
-    {
-      "title": "How to complete Whence the Weeping in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-whence-the-weeping-walkthrough/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/mQhWzkGDcwYPgBFAaGomZW-1920-80.jpg",
-      "summary": "Find the source of the weeping and discover its mysteries.",
-      "tags": []
-    },
-    {
-      "title": "Where to find The Banyan's Heart in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-banyans-heart-location/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/N2mf2bj7nLarUx9Xx2vSwj-1920-80.jpg",
-      "summary": "Acquire this special material to unlock new skills.",
-      "tags": []
-    },
-    {
-      "title": "How to beat Hua, Deadly Betrothed in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-hua-boss-guide/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/uE8cerkqwJf6xpcFFQw73B-1920-80.jpg",
-      "summary": "Defeat this phantom bride below the Valley Sha-Chi tower.",
-      "tags": []
-    },
-    {
-      "title": "How to beat The Gold-Masked One in Phantom Blade Zero",
-      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-gold-masked-one-boss-guide/",
-      "date": "2026-10-29T02:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/CG76CztHFLMWgYfgyHVBEP-1920-80.jpg",
-      "summary": "Complete the Long Pillar challenge.",
       "tags": []
     },
     {
@@ -1496,21 +1622,75 @@
       "tags": []
     },
     {
+      "title": "Where to find the Flesh Lily in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-flesh-lily-location/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Fh9kdG3PrEvkL7ym66t4UX-1920-80.jpg",
+      "summary": "Track down this rare flower to help Yu'er's father.",
+      "tags": []
+    },
+    {
+      "title": "Where to find the Backstreet Courtyard Key in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-backstreet-courtyard-key-location/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/f3tcWcvMjhYcSi5iYTCwqV-1920-80.jpg",
+      "summary": "Open the locked door in the backstreets of Pangzhen.",
+      "tags": []
+    },
+    {
+      "title": "Phantom Blade Zero's best weapon might just be the first one you get",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-best-weapon-jagged-steel/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/7rVNNg3tqanb9juZ9aueEQ-1920-80.jpg",
+      "summary": "Bleed's back on the menu, boys.",
+      "tags": []
+    },
+    {
+      "title": "How to complete Whence the Weeping in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-whence-the-weeping-walkthrough/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/mQhWzkGDcwYPgBFAaGomZW-1920-80.jpg",
+      "summary": "Find the source of the weeping and discover its mysteries.",
+      "tags": []
+    },
+    {
+      "title": "Where to find The Banyan's Heart in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-banyans-heart-location/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/N2mf2bj7nLarUx9Xx2vSwj-1920-80.jpg",
+      "summary": "Acquire this special material to unlock new skills.",
+      "tags": []
+    },
+    {
+      "title": "How to beat Hua, Deadly Betrothed in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-hua-boss-guide/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/uE8cerkqwJf6xpcFFQw73B-1920-80.jpg",
+      "summary": "Defeat this phantom bride below the Valley Sha-Chi tower.",
+      "tags": []
+    },
+    {
+      "title": "How to beat The Gold-Masked One in Phantom Blade Zero",
+      "link": "https://www.pcgamer.com/games/action/phantom-blade-zero-gold-masked-one-boss-guide/",
+      "date": "2026-10-29T02:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/CG76CztHFLMWgYfgyHVBEP-1920-80.jpg",
+      "summary": "Complete the Long Pillar challenge.",
+      "tags": []
+    },
+    {
       "title": "GTA 6's NPCs have about 600,000 animations, as well as personality traits that take 'demographic and professional' variables into account",
       "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-npcs-have-about-600-000-animations-as-well-as-personality-traits-that-take-demographic-and-professional-variables-into-account/",
       "date": "2026-10-29T00:52:16.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/mGAbwHEYqU99h2xFrdszPL-1920-80.jpg",
       "summary": "\"Who's going to be aggressive? … How many are going to test me?\"",
-      "tags": []
-    },
-    {
-      "title": "BioWare Co-Founder Says EA&#8217;s Private Equity Acquisition Was &#8216;Final Nail In The Coffin&#8217; For The Mass Effect Studio",
-      "link": "https://kotaku.com/bioware-co-founder-says-eas-acquisition-was-final-nail-in-the-coffin-for-the-mass-effect-studio-2000750626",
-      "date": "2026-10-29T00:43:49.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2021/05/40aba6f00c5e80046d4eddd9ef2b7d85-1280x720.jpg",
-      "summary": "Greg Zeschuk left the studio after Mass Effect 3 , but still weighed in on the company's closure earlier this month following EA's acquisition by private equity",
       "tags": []
     },
     {
@@ -1532,160 +1712,12 @@
       "tags": []
     },
     {
-      "title": "Can you name the horror games these deeply unpleasant bathrooms are from?",
-      "link": "https://www.pcgamer.com/games/horror/can-you-name-the-horror-game-these-deeply-unpleasant-bathrooms-are-from/",
-      "date": "2026-10-28T22:50:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/jGgQPA6L6k3Cc6i2nqLZQD-1920-80.jpg",
-      "summary": "Bring holy water and Clorox wipes",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft&#8217;s Long Awaited Housing Feature Was The Best Thing About This Expansion, So Why Did I Stop Visiting?",
-      "link": "https://kotaku.com/world-of-warcrafts-long-awaited-housing-feature-was-the-best-thing-about-this-expansion-so-why-did-i-stop-visiting-2000750584",
-      "date": "2026-10-28T22:30:49.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/wow-housing-1-1280x720.jpg",
-      "summary": "You can always come home",
-      "tags": []
-    },
-    {
       "title": "On the podcast: those ‘decompiling’ videos, iPhone Duo games, Bing Gordon talks EA, Zynga and AI plus plenty more",
       "link": "https://mobilegamer.biz/subscribe-to-the-mobilegamer-biz-podcast-now/",
       "date": "2026-10-28T22:20:00.000Z",
       "sourceId": "mgbiz",
       "image": null,
       "summary": "This week’s inside view of the mobile game business.",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft: Forever Had &#8216;The Largest Beta In Franchise History&#8217;",
-      "link": "https://kotaku.com/world-of-warcraft-forever-had-the-largest-beta-in-franchise-history-2000750606",
-      "date": "2026-10-28T22:09:47.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/09/WoW-forever-4-1280x720.jpg",
-      "summary": "'The craziest numbers I've seen in 17 years'",
-      "tags": []
-    },
-    {
-      "title": "Notre sélection des meilleurs jeux en promo à moins de 10€ sur Steam pour les soldes Halloween",
-      "link": "https://www.jeuxvideo.com/news/2111058/notre-selection-des-meilleurs-jeux-en-promo-a-moins-de-10-sur-steam-pour-les-soldes-halloween.htm",
-      "date": "2026-10-28T21:20:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179312/1793120110-3606-card.jpg",
-      "summary": "Les soldes Steam d'Halloween sont enfin arrivées ! De quoi se faire une petite collection de jeux, pour se faire peur à petit prix. Voilà les offres les plus intéressantes que…",
-      "tags": []
-    },
-    {
-      "title": "Xbox&#8217;s First Report Card Following Its Big &#8216;Reset&#8217; Looks A Lot Like All The Others",
-      "link": "https://kotaku.com/xboxs-first-report-card-following-its-big-reset-looks-a-lot-like-all-the-others-2000750607",
-      "date": "2026-10-28T21:13:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/05/xbox-logo.jpg",
-      "summary": "Hardware down",
-      "tags": []
-    },
-    {
-      "title": "Epic Games chief Tim Sweeney claims 'Valve has held gaming back for years'",
-      "link": "https://www.pcgamer.com/software/platforms/epic-games-chief-tim-sweeney-claims-valve-has-held-gaming-back-for-years/",
-      "date": "2026-10-28T21:00:20.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/SWGLSq2JBdYi2GbcGA2LYP-1920-80.jpg",
-      "summary": "Sweeney says locking developers into the \"walled garden\" of Steamworks is a real problem.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : l'espace nécessaire pour l'installer fait peur aux joueurs surtout par rapport à GTA 5",
-      "link": "https://www.jeuxvideo.com/news/2111124/gta-6-l-espace-necessaire-pour-l-installer-fait-peur-aux-joueurs-surtout-par-rapport-a-gta-5.htm",
-      "date": "2026-10-28T20:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179318/1793184725-7758-card.jpg",
-      "summary": "L'espace de stockage potentiel de GTA 6 donne déjà des sueurs froides aux joueurs. Avec un poids estimé à plus de 200 Go, le prochain blockbuster de Rockstar Games pourrait…",
-      "tags": []
-    },
-    {
-      "title": "WoW: Forever's update schedule will be 'a little more laid back' than the main MMO",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-update-schedule-will-be-a-little-more-laid-back-than-the-main-mmo/",
-      "date": "2026-10-28T20:10:35.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XZ5JSePvRqFfQeiXqg8qL7-1920-80.jpg",
-      "summary": "Developers say the plan is to release updates a few times a year to match the MMO's classic spirit.",
-      "tags": []
-    },
-    {
-      "title": "Get Up To Speed On World Of Warcraft: Forever&#8217;s Big Launch: Everything You Need To Know",
-      "link": "https://kotaku.com/everything-you-need-to-know-about-world-of-warcraft-forever-2000750522",
-      "date": "2026-10-28T19:30:11.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/on-the-boat-1-1280x720.jpg",
-      "summary": "See you at the Crossroads",
-      "tags": []
-    },
-    {
-      "title": "PressEngine announces The Pre-Show, an in-person London showcase for upcoming games",
-      "link": "https://www.gamesindustry.biz/pressengine-announces-the-pre-show-an-in-person-london-showcase-for-upcoming-games",
-      "date": "2026-10-28T19:13:51.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Screenshot-2026-10-28-at-19.10.58.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "PR and influencer marketing platform PressEngine is launching The Pre-Show, an in-person event that puts developers directly in front of media and content creators.",
-      "tags": []
-    },
-    {
-      "title": "Gorgeous Stardew Valley With Magic Cozy Sim Witchbrook Finally Has A Release Date After 10 Years Of Waiting",
-      "link": "https://kotaku.com/after-10-years-of-teasing-witchbrook-finally-has-a-release-date-2000750543",
-      "date": "2026-10-28T19:00:10.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/college-bridge-1-1280x720.jpg",
-      "summary": "Chucklefish is finally ready for players to hop into Witchbrook",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Le PlayStation Plus déballe ses jeux de novembre avec Dead Island 2 à l'affiche",
-      "link": "https://www.gamekult.com/actualite/le-playstation-plus-deballe-ses-jeux-de-novembre-avec-dead-island-2-a-l-affiche-3050872641.html",
-      "date": "2026-10-28T18:55:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872641/le-playstation-plus-deballe-ses-jeux-de-novembre-avec-dead-island-2-a-l-affiche-ca8f567d__800_800__840-0-1920-1080.jpg",
-      "summary": "On s'approche lentement mais sûrement de la fin du mois d'octobre, l'heure est donc venue pour Sony Interactive Entertainment de procéder à l'annonce des jeux PlayStation Plus de…",
-      "tags": []
-    },
-    {
-      "title": "Game and watch - Madison : une adaptation en film, une grosse mise à jour et un DLC gratuit pour le jeu d'horreur",
-      "link": "https://www.gamekult.com/actualite/madison-une-adaptation-en-film-une-grosse-mise-a-jour-et-un-dlc-gratuit-pour-le-jeu-d-horreur-3050872636.html",
-      "date": "2026-10-28T18:41:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872636/madison-le-jeu-d-horreur-va-devenir-un-film-chez-story-kitchen-sonic-bf57eed3__800_800__181-0-1261-1080.jpg",
-      "summary": "Le jeu d'horreur psychologique Madison, sorti en 2022, va faire l'objet d'une adaptation cinématographique. Le projet n'en est qu'à ses balbutiements, sans réalisateur ni casting…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "A Few at the Museum - Trailer de gameplay officiel",
-      "link": "https://fr.ign.com/a-few-at-the-museum/93520/a-few-at-the-museum-trailer-de-gameplay-officiel",
-      "date": "2026-10-28T18:31:09.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/a/a-few-at-t/a-few-at-the-museum-official-gameplay-trailer_y2kn.png",
-      "summary": "Découvrez la bande-annonce de gameplay de A Few at the Museum, un jeu de destruction à la première personne développé par Moimart et Martinez.sh. Les joueurs devront former une…",
-      "tags": []
-    },
-    {
-      "title": "Athanasia Is System Shock With Dinosaurs, And It Works So Damn Well",
-      "link": "https://kotaku.com/athanasia-indie-pc-steam-black-lantern-system-shock-immersive-sim-review-2000750533",
-      "date": "2026-10-28T18:30:58.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/athanasia-main-1280x720.jpg",
-      "summary": "Athanasia is an immersive sim with dinos, secret passages, and codes hidden in emails",
-      "tags": []
-    },
-    {
-      "title": "Punch Upon a Time - Trailer officiel de lancement en accès anticipé",
-      "link": "https://fr.ign.com/punch-upon-a-time/93519/punch-upon-a-time-trailer-officiel-de-lancement-en-acces-anticipe",
-      "date": "2026-10-28T18:30:33.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/p/punch-upon/punch-upon-a-time-official-early-access-launch-trailer_dzxp.png",
-      "summary": "Ne manquez pas la bande-annonce de lancement de l&#x27;accès anticipé de Punch Upon a Time, un jeu de combat d&#x27;action festif en équipe développé par Supersaurus. Les joueurs…",
       "tags": []
     },
     {
@@ -1821,15 +1853,6 @@
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/fetch/$s_!p_hX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46fdcaa8-be54-4162-8e8f-3198569c2515_800x450.jpeg",
       "summary": "Also: this week on Steam & a bunch of discovery news.",
-      "tags": []
-    },
-    {
-      "title": "Peak developer can explain the game’s console price",
-      "link": "https://www.gamefile.news/p/peak-console-price-bucks",
-      "date": "2026-10-22T21:40:32.000Z",
-      "sourceId": "gamefile",
-      "image": "https://substackcdn.com/image/fetch/$s_!1U3q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc05ad124-5276-42c6-8c71-8dddb7380b9e_1920x1080.jpeg",
-      "summary": "Kaman: $10 is not $8, though $12 would also have been $10",
       "tags": []
     },
     {
