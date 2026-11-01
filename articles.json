@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T08:33:34.250Z",
+  "generatedAt": "2026-11-01T15:26:03.965Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
-    "gibiz": "ok",
+    "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
     "gamekult": "ok",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-10-31T21:45:58.000Z",
-      "kept": 19
+      "newest": "2026-11-01T10:17:33.000Z",
+      "kept": 4
     },
     "gamedev": {
       "status": "ok",
@@ -32,7 +32,7 @@
       "kept": 0
     },
     "gibiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-10-30T14:39:49.000Z",
@@ -42,42 +42,42 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-01T05:55:08.000Z",
-      "kept": 16
+      "newest": "2026-11-01T12:40:10.000Z",
+      "kept": 14
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-11-01T08:30:00.000Z",
+      "newest": "2026-11-01T10:30:00.000Z",
       "kept": 10
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 50,
-      "newest": "2026-11-01T08:28:00.000Z",
-      "kept": 9
+      "newest": "2026-11-01T12:41:00.000Z",
+      "kept": 8
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-10-31T19:48:02.000Z",
-      "kept": 8
+      "newest": "2026-11-01T15:00:43.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-11-01T04:05:48.000Z",
-      "kept": 18
+      "kept": 15
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-01T05:30:17.000Z",
+      "newest": "2026-11-01T15:14:23.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-10-31T16:30:00.000Z",
-      "kept": 8
+      "kept": 4
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-10-30T09:26:27.000Z",
-      "kept": 2
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -117,6 +117,240 @@
     }
   },
   "articles": [
+    {
+      "title": "New Fortnite Item Makes Everything on the Item Shop Completely Free",
+      "link": "https://www.polygon.com/fortnite-pirate-item-shop-access-token-free-how-to-get/",
+      "date": "2026-11-01T15:14:23.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/fortnite-one-piece-collab.jpg",
+      "summary": "There's a rare item in Fortnite that grants free Item Shop cosmetics for two weeks, as part of the new One Piece season.",
+      "tags": []
+    },
+    {
+      "title": "Valve&#8217;s Cancelled Portal Prequel F-Stop Has Leaked",
+      "link": "https://kotaku.com/valves-cancelled-portal-prequel-f-stop-has-leaked-2000752082",
+      "date": "2026-11-01T15:00:43.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/F-Stop-Image-from-ToothpasteVixens-video-Valve-1280x720.jpg",
+      "summary": "Three separate Valve leaks have been combined a fully playable version of the cancelled 2007 game F-Stop",
+      "tags": []
+    },
+    {
+      "title": "Animal Crossing Is Finally Getting Some Real Competition With Petit Planet for Switch 2 In 2027",
+      "link": "https://www.polygon.com/petit-planet-switch-2-release-date-animal-crossing-competitor/",
+      "date": "2026-11-01T14:27:56.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/petit-planet-switch-2.jpg",
+      "summary": "Nintendo Switch 2 is the first console Petit Planet, an Animal Crossing clone from Genshin Impact's HoYoverse, will be ported to",
+      "tags": []
+    },
+    {
+      "title": "The 10 Most Anticipated Sci-Fi and Fantasy Books of November 2026",
+      "link": "https://www.polygon.com/most-anticipated-sci-fi-fantasy-books-november-2026/",
+      "date": "2026-11-01T14:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/monsters-of-ohio-by-john-scalzi.jpg",
+      "summary": "Get cozy with sky pirates, faerie princesses, and political schemes",
+      "tags": []
+    },
+    {
+      "title": "15 Years Ago, Zelda Told its Most Memorable Story with its Worst Gameplay",
+      "link": "https://www.polygon.com/legend-zelda-skyward-sword-retrospective/",
+      "date": "2026-11-01T13:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22695444/Switch_ZeldaSSHD_ND_Feb_SCRN07.jpg",
+      "summary": "Zelda’s most memorable story still shines, but the motion controls, Fi, and repeat fights often make it a tough replay",
+      "tags": []
+    },
+    {
+      "title": "Le mythique Dragon Ball Z Budokai est désormais jouable dans un navigateur",
+      "link": "https://www.gamekult.com/actualite/le-mythique-dragon-ball-z-budokai-est-desormais-jouable-dans-un-navigateur-3050872674.html",
+      "date": "2026-11-01T12:41:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872674/le-mythique-dragon-ball-z-budokai-est-desormais-jouable-dans-un-navigateur-aecbbbed__800_800__0-149-373-522.jpg",
+      "summary": "Avant la trilogie Tenkaichi, il y avait Budokai, première pierre d'un édifice massif du jeu vidéo de castagne : le titre de Dimps posait les fondations de l'âge d'or des jeux…",
+      "tags": []
+    },
+    {
+      "title": "Pokémon Pocket Fusion Double : ce deck de la nouvelle extension peut infliger jusqu'à 360 points de dégâts !",
+      "link": "https://www.jeuxvideo.com/news/2111496/pokemon-pocket-fusion-double-ce-deck-de-la-nouvelle-extension-peut-infliger-jusqu-a-360-points-de-degats.htm",
+      "date": "2026-11-01T12:40:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179336/1793359332-1255-card.jpg",
+      "summary": "Comment jouer les nouvelles cartes que je viens de recevoir ? C'est l'éternelle question que se pose chaque dresseur lors de la sortie d'une extension de Pokémon TCG Pocket…",
+      "tags": []
+    },
+    {
+      "title": "Dungeons & Dragons Turned Hansel and Gretel Into a Near-Perfect Adventure",
+      "link": "https://www.polygon.com/dragon-delves-hansel-gretel/",
+      "date": "2026-11-01T12:31:50.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dragon-delves-gingerbread-people.png",
+      "summary": "A delicious one-shot sends players to a candy cottage",
+      "tags": []
+    },
+    {
+      "title": "Netflix's Near-Perfect Thriller With 94% Rotten Tomatoes Score Is Getting Cut From Streaming",
+      "link": "https://www.polygon.com/best-dark-comedy-show-comic-book-adaptation/",
+      "date": "2026-11-01T12:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/wp2398092.jpg",
+      "summary": "Two eccentric teenagers cross paths and embark on a road trip to remember.",
+      "tags": []
+    },
+    {
+      "title": "7 Near-Perfect Prime Video Sci-Fi Shows that Hook You in the First Scene",
+      "link": "https://www.polygon.com/prime-video-sci-fi-near-perfect-first-scene/",
+      "date": "2026-11-01T12:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/the-end-of-the-world-is-going-to-be-weird-on-prime-videos-quirky-clever-adaptation-of-fallout-1.jpg",
+      "summary": "Sci-fi comes in all flavors, including ones that are addictive.",
+      "tags": []
+    },
+    {
+      "title": "Il y a 26 ans sortait sur Dreamcast un des meilleurs jeux de son époque, très en avance sur son temps",
+      "link": "https://www.jeuxvideo.com/news/2111479/il-y-a-26-ans-sortait-sur-dreamcast-un-des-meilleurs-jeux-de-son-epoque-tres-en-avance-sur-son-temps.htm",
+      "date": "2026-11-01T11:50:05.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179335/1793354542-8937-card.jpg",
+      "summary": "Le 29 décembre 1999, Sega et Yu Suzuki lâchaient sur Dreamcast un OVNI qui allait révolutionner le jeu à jamais. Vingt-six ans plus tard, retour complet sur un projet pharaonique…",
+      "tags": []
+    },
+    {
+      "title": "6 Perfect 'Peanuts' Comics from the 1960s that Prove Charles Schulz is a Genius",
+      "link": "https://www.polygon.com/best-peanuts-comics-1960s/",
+      "date": "2026-11-01T11:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/charlie-brown.jpg",
+      "summary": "The best decade for Charles Schulz's Peanuts comic strip was the 1960s — here are six perfect comics which prove it.",
+      "tags": []
+    },
+    {
+      "title": "Crimes de guerre dans les jeux vidéo : pourquoi la touche \"Sauvegarde Rapide\" restera toujours plus forte que la morale des développeurs",
+      "link": "https://www.jeuxvideo.com/news/2111503/crimes-de-guerre-dans-les-jeux-video-pourquoi-la-touche-sauvegarde-rapide-restera-toujours-plus-forte-que-la-morale-des-developpeurs.htm",
+      "date": "2026-11-01T10:50:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179337/1793366105-400-card.jpg",
+      "summary": "Ce matin sur Reddit, les joueurs s'enflamment face aux exigences du Comité international de la Croix-Rouge (CICR). L'organisation humanitaire souhaite intégrer des sanctions…",
+      "tags": []
+    },
+    {
+      "title": "Fan de Skyrim ? Découvrez un nouveau RPG au tour par tour qui a tout de l'alternative parfaite",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/world-of-anterra-rpg-skyrim-like-725931?utm_source=RSS",
+      "date": "2026-11-01T10:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/413721_63b7339f4f73f.jpg",
+      "summary": "Un nouveau jeu prometteur en pixel art pourrait bien vous rappeler vos belles heures sur Skyrim avec ses donjons et son univers fantastiques. Découvrez The World of Anterra.",
+      "tags": []
+    },
+    {
+      "title": "Durée de vie Phantom Blade Zero : Combien de temps faut-il pour finir le jeu ?",
+      "link": "https://www.jeuxvideo.com/news/2111379/duree-de-vie-phantom-blade-zero-combien-de-temps-faut-il-pour-finir-le-jeu.htm",
+      "date": "2026-11-01T10:20:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179328/1793284896-8621-card.jpg",
+      "summary": "Se lancer dans un nouveau jeu d'action difficile avec un univers de jeu conséquent comme The Phantom Blade est un investissement notable en temps. Découvrez notre analyse du temps…",
+      "tags": []
+    },
+    {
+      "title": "Interdire Hellraiser Revival dans un pays pour sa violence, c'était un véritable objectif",
+      "link": "https://www.gamekult.com/actualite/interdire-hellraiser-revival-dans-un-pays-pour-sa-violence-c-etait-un-veritable-objectif-3050872661.html",
+      "date": "2026-11-01T10:18:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872661/interdire-hellraiser-revival-dans-un-pays-pour-sa-violence-c-etait-un-veritable-objectif-8e145fc1__800_800__0-0-1080-1080.jpg",
+      "summary": "Sorti le 8 octobre 2026, Hellraiser Revival fait partie de ces jeux qui ne nous ont pas laissés indifférents. C'était après tout l'un des objectifs de Saber Interactive : heurter…",
+      "tags": []
+    },
+    {
+      "title": "L'acteur de Star Wars Hayden Christensen raconte comment un cambrioleur l'a reconnu chez lui et lui a rendu ses affaires",
+      "link": "https://fr.ign.com/ahsoka/93617/lacteur-de-star-wars-hayden-christensen-raconte-comment-un-cambrioleur-la-reconnu-chez-lui-et-lui-a",
+      "date": "2026-11-01T10:17:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/star-wars-/star-wars-actor-hayden-christensen-says-a-man-who-burgled-hi_7skw.jpg",
+      "summary": "Rentrez chez vous et réfléchissez à votre vie...",
+      "tags": []
+    },
+    {
+      "title": "Les nouveautés réconfortantes (et celles un peu moins) à lire au coin du feu – Nos reco sorties manga Novembre 2026",
+      "link": "https://fr.ign.com/mangas/93610/les-nouveautes-reconfortantes-et-celles-un-peu-moins-a-lire-au-coin-du-feu-nos-reco-sorties-manga-no",
+      "date": "2026-11-01T10:00:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/sortiesnov-une_eu1n.jpg",
+      "summary": "Les one-shot en cadeau ça passe bien, on dit ça comme ça. Votre sélection mensuelle des nouveautés manga du mois avec une tendance de fond plutôt cosy.",
+      "tags": []
+    },
+    {
+      "title": "Welcome to the New Era of Video Game Adaptations",
+      "link": "https://www.polygon.com/patch-notes-video-game-adaptations/",
+      "date": "2026-11-01T10:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/16-street-fighter.jpg",
+      "summary": "A week filled with updates on upcoming video game adaptations proves that Hollywood's latest trend is here to stay.",
+      "tags": []
+    },
+    {
+      "title": "Cyberpunk 2077 s'offre une nouvelle collection que les fans vont vouloir s'arracher, voici où la précommander",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2077-nouvelles-collections-corsair-arasaka-white-edgerunners-2-725934?utm_source=RSS",
+      "date": "2026-11-01T10:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/691412_67f3cee214fee.jpg",
+      "summary": "En ce moment, Cyberpunk 2077 est de nouveau à l’honneur chez CD Projekt RED, qui a renouvelé sa collaboration avec CORSAIR pour de nouveaux objets exclusifs.",
+      "tags": []
+    },
+    {
+      "title": "L'Input Lag est tellement important dans Call of Duty : Modern Warfare 4 sur Nintendo Switch 2 que les joueurs subissent un « désavantage en compétition »",
+      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/93614/linput-lag-est-tellement-important-dans-call-of-duty-modern-warfare-4-sur-nintendo-switch-2-que-les",
+      "date": "2026-11-01T09:53:59.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/i/input-lag-/input-lag-is-so-bad-in-call-of-duty-modern-warfare-4-on-nint_d5n1.jpg",
+      "summary": "Laisse pas trainer ton soldat.",
+      "tags": []
+    },
+    {
+      "title": "Est-ce grave de ne jamais avoir joué à Zelda Ocarina of Time ?",
+      "link": "https://www.jeuxvideo.com/news/2111494/est-ce-grave-de-ne-jamais-avoir-joue-a-zelda-ocarina-of-time.htm",
+      "date": "2026-11-01T09:30:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179336/1793355875-7460-card.jpg",
+      "summary": "Pour embellir son catalogue de sorties de fin d’année, Nintendo a misé sur un cheval, et pas n’importe lequel. Après des mois de rumeurs annonçant la confection d’un remake de The…",
+      "tags": []
+    },
+    {
+      "title": "Les fans d'Animal Crossing ne peuvent pas passer à côté de ces adorables nouveautés parfaites pour leur collection",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/animal-crossing-happy-room-725829?utm_source=RSS",
+      "date": "2026-11-01T09:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/697376_6853b4c58bde8.jpg",
+      "summary": "Les collectionneurs et fans d'Animal Crossing ne peuvent pas passer à côté de cette collection avec des personnages et lieux iconiques. Découvrez où la commander.",
+      "tags": []
+    },
+    {
+      "title": "20 Years Later, The Departed's Best Line Is Still One Of The Greatest Quotes In Gangster Movie History",
+      "link": "https://www.polygon.com/best-quote-gangster-movie-the-departed/",
+      "date": "2026-11-01T09:09:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-departed-1.jpg",
+      "summary": "Jack Nicholson delivered mob cinema's ultimate statement of power.",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 3 s'offre 5 heures de jeu supplémentaires dans une nouvelle région grâce à ce mod gratuit",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-3-tales-of-cintra-mod-725927?utm_source=RSS",
+      "date": "2026-11-01T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/399725_62570ce4d6362.jpg",
+      "summary": "The Witcher 3 a droit à un mod gratuit très ambitieux qui vous ouvre les portes d'un nouveau royaume, celui de Cintra, autrement dit celui de Ciri. Découvrez comment l'installer…",
+      "tags": []
+    },
+    {
+      "title": "Fan de Dofus depuis 20 ans, j'ai vu le film qui vient de sortir gratuitement sur Youtube : mon avis tranché",
+      "link": "https://www.jeuxvideo.com/news/2111569/fan-de-dofus-depuis-20-ans-j-ai-vu-le-film-qui-vient-de-sortir-gratuitement-sur-youtube-mon-avis-tranche.htm",
+      "date": "2026-11-01T08:40:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179338/1793375835-4593-card.jpg",
+      "summary": "En 2016, Ankama Animations sort un film en salles pour la toute première fois. Son titre est prometteur : DOFUS Livre 1 : Julith. À l'époque, je loupe le film en salles, allez…",
+      "tags": []
+    },
     {
       "title": "GTA 6 : cette nouveauté devrait empêcher les joueurs de finir le jeu trop vite, et c'est sans doute une excellente nouvelle",
       "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-nouveaute-histoire-patience-moins-de-spoilers-725929?utm_source=RSS",
@@ -152,6 +386,17 @@
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050866448/le-monde-d-alex-kidd-n-avait-rien-d-un-miracle-mais-il-fallait-bien-commencer-quelque-part-2170de17__800_800__287-0-1676-1389.png",
       "summary": "S'il y a bien quelque chose que la rédaction de Gamekult a appris à ses dépens en lançant la rubrique Mémoire cash, c'est bien la difficulté (voire l'impossibilité) de trouver la…",
       "tags": []
+    },
+    {
+      "title": "WoW Forever : Pourquoi Blizzard ressort le même jeu pour la quatrième fois ?",
+      "link": "https://www.jeuxvideo.com/news/2109690/wow-forever-pourquoi-blizzard-ressort-le-meme-jeu-pour-la-quatrieme-fois.htm",
+      "date": "2026-11-01T07:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179241/1792412062-6144-card.jpg",
+      "summary": "La sortie de Wow Forever approche, mais c’est loin d’être une nouveauté vu qu’il s’agit du “même” jeu que Blizzard nous ressort pour la quatrième fois. Et cette version est celle…",
+      "tags": [
+        "release"
+      ]
     },
     {
       "title": "Les sorties jeux vidéo de novembre 2026 avec le Remake d'un des plus grands jeux de tous les temps et le phénomène culturel le plus attendu de ces dernières années",
@@ -201,39 +446,12 @@
       "tags": []
     },
     {
-      "title": "Harry Potter HBO risque d'être ennuyeux : rien que le premier épisode est plus long que l'intégralité du premier film",
-      "link": "https://www.jeuxvideo.com/news/2111527/harry-potter-hbo-risque-d-etre-ennuyeux-rien-que-le-premier-episode-est-plus-long-que-l-integralite-du-premier-film.htm",
-      "date": "2026-11-01T05:55:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179337/1793366429-1200-card.jpg",
-      "summary": "La fuite autour de la série Harry Potter de HBO fait grincer des dents : son premier épisode durerait plus de deux heures. Un choix créatif ambitieux qui divise entre fidélité…",
-      "tags": []
-    },
-    {
-      "title": "9 Years Later, Jon Bernthal’s Action Series Is a Masterpiece From Start to Finish",
-      "link": "https://www.polygon.com/jon-bernthal-punisher-action-masterpiece-marvel-disney-plus/",
-      "date": "2026-11-01T05:30:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jon-bernthal-punisher-born-again.jpg",
-      "summary": "One batch, two batch, penny and dime",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - Le couloir de la mort sur route : comment Burnout a redéfini le jeu de course arcade",
       "link": "https://www.gamekult.com/actualite/le-couloir-de-la-mort-sur-route-comment-burnout-a-redefini-le-jeu-de-course-arcade-3050872657.html",
       "date": "2026-11-01T05:01:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872657/burnout-1fea971e__800_800__183-0-1272-1089.jpg",
       "summary": "En 2001, du côté de la PlayStation 2, c'est le rouleau compresseur Gran Turismo 3 qui fait la loi sur le bitume virtuel. C'est en pleine hégémonie de Polyphony Digital que…",
-      "tags": []
-    },
-    {
-      "title": "Ridley Scott's Near-Perfect Sci-Fi Masterpiece is Waiting to Be Rediscovered on Streaming",
-      "link": "https://www.polygon.com/ridley-scott-blade-runner-final-cut-streaming-november-2026/",
-      "date": "2026-11-01T04:26:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/blade-runner-3.jpg",
-      "summary": "One of the best films in Ridley Scott's filmography and a key entry into the sci-fi canon",
       "tags": []
     },
     {
@@ -246,84 +464,12 @@
       "tags": []
     },
     {
-      "title": "All 8 Dungeon Crawler Carl Books Ranked (by Their Goodreads Score)",
-      "link": "https://www.polygon.com/every-dungeon-crawler-carl-book-ranked-by-their-goodreads-score/",
-      "date": "2026-11-01T04:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dungeon-crawler-carl.jpg",
-      "summary": "Matt Dinniman's hit LitRPG series keeps raising the stakes, but which Dungeon Crawler Carl book ranks highest?",
-      "tags": []
-    },
-    {
-      "title": "Patrick Stewart's Perfect 'Simpsons' Episode Reveals the Beloved Actor's Secret Weapon",
-      "link": "https://www.polygon.com/patrick-stewart-the-simpsons-guest-star/",
-      "date": "2026-11-01T03:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdsttr_pa117.jpg",
-      "summary": "Sir Patrick Stewart is being remembered for Star Trek and X-Men, but he was also the perfect guest star on The Simpsons",
-      "tags": []
-    },
-    {
       "title": "After almost a decade of work, Alien: Isolation mod tools hit 1.0 with support for 'full custom maps, missions, modes, characters, weapons, animations, sounds, models, textures, and more'",
       "link": "https://www.pcgamer.com/games/horror/after-almost-a-decade-of-work-alien-isolation-mod-tools-hit-1-0-with-support-for-full-custom-maps-missions-modes-characters-weapons-animations-sounds-models-textures-and-more/",
       "date": "2026-11-01T01:30:27.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/LxcS4vFnPo4sKYRXgXRKZM-1920-80.jpg",
       "summary": "Structural perfection.",
-      "tags": []
-    },
-    {
-      "title": "10 Video Games With the Best Twist Endings Nobody Saw Coming",
-      "link": "https://www.polygon.com/best-video-game-twist-endings/",
-      "date": "2026-11-01T01:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19231262/Link_s_Awakening_Wind_Fish_s_Egg_cover.jpg",
-      "summary": "From Spec Ops: The Line to Link’s Awakening, these 10 video games have the best twist endings, with reveals that recast everything before them.",
-      "tags": []
-    },
-    {
-      "title": "Andy Weir's New Time-Travel Sci-fi Thriller Officially Arrives Nov. 5",
-      "link": "https://www.polygon.com/andy-weir-benjamin-percy-exoplanet-sci-fi-audiobook/",
-      "date": "2026-10-31T23:09:24.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/project-hail-mary.jpg",
-      "summary": "The Andy Weir-produced Audible Original story Exoplanet stars Anthony Mackie, Ariana DeBose, and John Leguizamo.",
-      "tags": []
-    },
-    {
-      "title": "5 Must-Play Nintendo Switch 2 Games Coming in November 2026",
-      "link": "https://www.polygon.com/new-nintendo-switch-games-november-2026/",
-      "date": "2026-10-31T23:01:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_thelegendofzeldaocarinaoftime_scrn_15.png",
-      "summary": "The Legend of Zelda: Ocarina of Time remake and Metaphor: ReFantazio lead a strong month for Nintendo Switch 2 game releases",
-      "tags": []
-    },
-    {
-      "title": "5 Best Nintendo Switch Games That Desperately Need Switch 2 Upgrades, Ranked",
-      "link": "https://www.polygon.com/nintendo-switch-games-no-switch-2-edition/",
-      "date": "2026-10-31T22:14:33.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/9958985/Switch_SMO_ND0913_SCRN07.jpg",
-      "summary": "Many Nintendo Switch games received upgrades for Switch 2, but here are five classic Nintendo Switch games that did not.",
-      "tags": []
-    },
-    {
-      "title": "10 Classic '90s RPGs That Have Aged Like Fine Wine, Ranked",
-      "link": "https://www.polygon.com/best-classic-90s-rpgs/",
-      "date": "2026-10-31T22:05:29.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/fire-emblem-genealogy-artwork.jpg",
-      "summary": "RPGs from the 1990s were some of the most pivotal games in history. Here are 10 classic 1990s RPGs that are so good they don't need a remake.",
-      "tags": []
-    },
-    {
-      "title": "Every Resident Evil Game, Ranked From Worst to Best",
-      "link": "https://www.polygon.com/resident-evil-games-ranked-worst-best/",
-      "date": "2026-10-31T21:54:25.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13690297/capcom_resident_evil_2_more_remakes_leon_claire.jpg.optimal.jpg",
-      "summary": "We've ranked every mainline Resident Evil game, from the original all the way through 2026's Resident Evil Requiem.",
       "tags": []
     },
     {
@@ -583,376 +729,6 @@
       "tags": []
     },
     {
-      "title": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
-      "link": "https://www.pcgamer.com/gaming-industry/anthropic-updates-claude-to-steer-it-away-from-letting-users-clone-games-following-weeks-of-steam-being-inundated-with-ai-slop/",
-      "date": "2026-10-31T15:23:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Vmhmhycwkn6YrhJ8EMDcK3-1920-80.png",
-      "summary": "Anthropic updates Claude to 'steer it away' from letting users clone other games.",
-      "tags": []
-    },
-    {
-      "title": "Shigeru Miyamoto Declares November 1st Pikmin Day In Surprise Nintendo Direct",
-      "link": "https://kotaku.com/shigeru-miyamoto-declares-november-1st-pikmin-day-in-surprise-nintendo-direct-2000751948",
-      "date": "2026-10-31T15:21:38.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/pikminday-1280x731.jpg",
-      "summary": "While there were no new games announced, the Direct provided updates for the upcoming edition of Pikmin 4, Pikmin Bloom and crocheted hats",
-      "tags": []
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 x Monster : Comment récupérer les récompenses exclusives ?",
-      "link": "https://www.jeuxvideo.com/news/2111103/call-of-duty-modern-warfare-4-x-monster-comment-recuperer-les-recompenses-exclusives.htm",
-      "date": "2026-10-31T15:00:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179318/1793180172-3618-card.jpg",
-      "summary": "La rentrée s’annonce verte et chargée en caféine pour la franchise d’Activision ! À l'occasion de la sortie de Call of Duty : Modern Warfare 4, Monster Energy remet le couvert…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Final Fantasy Resonance réussit-il à transformer Brave Exvius en l’une des meilleures expériences de la saga ? Mon verdict en vidéo !",
-      "link": "https://www.jeuxvideo.com/news/2109886/final-fantasy-resonance-reussit-il-a-transformer-brave-exvius-en-l-une-des-meilleures-experiences-de-la-saga-mon-verdict-en-video.htm",
-      "date": "2026-10-31T15:00:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179249/1792489078-1187-card.jpg",
-      "summary": "Après des années d’attente pour voir la saga passer à la HD-2D, Final Fantasy Resonance est enfin là. Pari audacieux de Square Enix, le titre transforme un ancien jeu mobile en un…",
-      "tags": []
-    },
-    {
-      "title": "Red Barrels' co-founder is just as confused as we are as to why no one's tried to replicate Outlast's success: 'Honestly, I don't know'",
-      "link": "https://www.pcgamer.com/games/horror/red-barrels-co-founder-is-just-as-confused-as-we-are-as-to-why-no-ones-tried-to-replicate-outlasts-success-honestly-i-dont-know/",
-      "date": "2026-10-31T14:11:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HZNJzXs28GBi8Snt9ianX5-1920-80.jpg",
-      "summary": "You'd think someone else would've successfully taken gore to the next level.",
-      "tags": []
-    },
-    {
-      "title": "Des lunettes Phantom Blade Zero de réalité augmentée, juste parce que",
-      "link": "https://www.gamekult.com/actualite/des-lunettes-phantom-blade-zero-de-realite-augmentee-juste-parce-que-3050872638.html",
-      "date": "2026-10-31T14:10:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872638/des-lunettes-phantom-blade-zero-de-realite-augmentee-juste-parce-que-078fa542__800_800__426-0-1706-1280.jpg",
-      "summary": "Nouvel étalon venu de Chine, Phantom Blade Zero fait beaucoup parler de lui, en ce moment. Déjà, parce que le jeu est vraiment très bon (et c'est sans doute le plus important)…",
-      "tags": []
-    },
-    {
-      "title": "The Outlast Trials Is An Exercise In Bad Taste And Good Politics",
-      "link": "https://kotaku.com/the-outlast-trials-is-an-exercise-in-bad-taste-and-good-politics-2000750631",
-      "date": "2026-10-31T14:05:59.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/outlaststrialspookyweek-1.jpg",
-      "summary": "This multiplayer prequel is as gruesome as it is relevant",
-      "tags": []
-    },
-    {
-      "title": "Doom Director Says &#8216;We&#8217;re Doing Great&#8217; After Half Of id Software Was Laid Off",
-      "link": "https://kotaku.com/doom-director-says-were-doing-great-after-half-of-id-software-was-laid-off-2000751940",
-      "date": "2026-10-31T13:47:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/08/DOOM-MAIN-1280x720.jpg",
-      "summary": "The studio is collaborating more closely than ever with MachineGames",
-      "tags": []
-    },
-    {
-      "title": "Final Fantasy 14 Evercold Gets A Month Long Delay But An Awesome New Trailer",
-      "link": "https://kotaku.com/final-fantasy-14-evercold-gets-a-month-long-delay-but-an-awesome-new-trailer-2000751936",
-      "date": "2026-10-31T13:17:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/FFXIV_FANFESTIVAL_2026_in_TOKYO_02-e1793450915848-1280x703.jpg",
-      "summary": "This looks awesome",
-      "tags": []
-    },
-    {
-      "title": "I'm 100% here for a more grounded, realistic GTA 6, one I believe won't come at the expense of its usual haphazard chaos",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/im-100-percent-here-for-a-more-grounded-realistic-gta-6-one-i-believe-wont-come-at-the-expense-of-its-usual-haphazard-chaos/",
-      "date": "2026-10-31T13:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/MdBiu7GSCh7a39PrLtpQBL-1920-80.jpg",
-      "summary": "I hope Rockstar makes us work a little harder to wreak our usual mayhem.",
-      "tags": []
-    },
-    {
-      "title": "Meilleures Lames Spectrales Phantom Blade Zero : lesquelles utiliser et où les trouver ?",
-      "link": "https://www.jeuxvideo.com/news/2111027/meilleures-lames-spectrales-phantom-blade-zero-lesquelles-utiliser-et-ou-les-trouver.htm",
-      "date": "2026-10-31T12:40:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179311/1793111753-5315-card.jpg",
-      "summary": "Les armes spectrales disposent d'effets puissants, mais en quantité limitée dans Phantom Blade Zero. Découvrez notre sélection dans ce guide pour faciliter les combats autant que…",
-      "tags": []
-    },
-    {
-      "title": "Pourquoi GTA 6 pourrait bien devenir le jeu de la décennie - Sponsorisé",
-      "link": "https://fr.ign.com/grand-theft-auto-6/93609/pourquoi-gta-6-pourrait-bien-devenir-le-jeu-de-la-decennie-sponsorise",
-      "date": "2026-10-31T12:18:23.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/a/appreciate/appreciate-the-fans-gta-5-cast-tell-jason-and-lucias-actors_smu5.jpg",
-      "summary": "Encore un tout petit peu de patience.",
-      "tags": []
-    },
-    {
-      "title": "\"Une version fictive de Miami définie par le crime et la violence\" : quand la police s'oppose à collaborer avec Rockstar sur GTA 6",
-      "link": "https://www.gamekult.com/actualite/une-version-fictive-de-miami-definie-par-le-crime-et-la-violence-quand-la-police-s-oppose-a-collaborer-avec-rockstar-sur-gta-6-3050872637.html",
-      "date": "2026-10-31T12:09:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872637/une-version-fictive-de-miami-definie-par-le-crime-et-la-violence-quand-la-police-refuse-de-collaborer-avec-rockstar-sur-gta-6-a5f766b8__800_800__133-310-1002-1178.jpg",
-      "summary": "Vous ne serez pas surpris si l'on vous dit que GTA 6 se déroule à Vice City et que Vice City est une reproduction de Miami et de tous ses environs floridiens. Pour mieux…",
-      "tags": []
-    },
-    {
-      "title": "Certains jeux vidéo constituent un danger pour les enfants d'après cette nouvelle étude",
-      "link": "https://www.jeuxvideo.com/news/2110346/certains-jeux-video-constituent-un-danger-pour-les-enfants-d-apres-cette-nouvelle-etude.htm",
-      "date": "2026-10-31T11:50:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179267/1792670886-7630-card.jpg",
-      "summary": "Derrière leurs couleurs attrayantes et leurs récompenses virtuelles, certains jeux vidéo cachent des mécanismes bien moins innocents qu'il n'y paraît. Une nouvelle étude française…",
-      "tags": []
-    },
-    {
-      "title": "Put Your Toys Away Together! - Trailer de lancement officiel",
-      "link": "https://fr.ign.com/put-your-toys-away-together/93608/put-your-toys-away-together-trailer-de-lancement-officiel",
-      "date": "2026-10-31T11:42:37.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/p/put-your-t/put-your-toys-away-together-official-launch-trailer_yf37.jpg",
-      "summary": "Put Your Toys Away Together ! est désormais disponible sur Steam. Découvrez la bande-annonce de lancement de Put Your Toys Away Together !, ce jeu coopératif chaleureux qui vous…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Vibe Together - Trailer d'annonce officiel",
-      "link": "https://fr.ign.com/vibe-together/93607/vibe-together-trailer-dannonce-officiel",
-      "date": "2026-10-31T11:42:03.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/v/vibe-toget/vibe-together-official-announcement-trailer_j9gu.jpg",
-      "summary": "Voici la bande-annonce de Vibe Together, un jeu multijoueur de création musicale à venir. Il s’agit d’un hybride entre jeu vidéo et logiciel musical, axé sur l’exploration et la…",
-      "tags": []
-    },
-    {
-      "title": "Rip It! Card Collector - Trailer de lancement officiel",
-      "link": "https://fr.ign.com/rip-it-card-collector/93606/rip-it-card-collector-trailer-de-lancement-officiel",
-      "date": "2026-10-31T11:41:23.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/r/rip-it-car/rip-it-card-collector-official-launch-trailer_7ptm.jpg",
-      "summary": "Rip It! Card Collector est désormais disponible sur Steam. Découvrez votre mission et lancez-vous dans la collection grâce à cette bande-annonce de lancement de Rip It! Card…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Totally Safe Moon Project - Trailer de lancement officiel",
-      "link": "https://fr.ign.com/totally-safe-moon-project/93605/totally-safe-moon-project-trailer-de-lancement-officiel",
-      "date": "2026-10-31T11:40:17.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/t/totally-sa/totally-safe-moon-project-official-launch-trailer_yymf.jpg",
-      "summary": "Découvrez la bande-annonce de lancement de Totally Safe Moon Project, un jeu de plateforme coopératif en ligne. Un astéroïde géant s&#x27;apprête à détruire la Terre ! La Lune est…",
-      "tags": []
-    },
-    {
-      "title": "SURI: The Seventh Note - Trailer de lancement officiel",
-      "link": "https://fr.ign.com/suri-the-seventh-note/93604/suri-the-seventh-note-trailer-de-lancement-officiel",
-      "date": "2026-10-31T11:39:22.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/s/suri-the-s/suri-the-seventh-note-official-launch-trailer_zkbx.png",
-      "summary": "Découvrez la bande-annonce de lancement de SURI: The Seventh Note, un jeu de plateforme rythmique et d&#x27;action développé par Tathvamasi Studios dans le cadre du programme…",
-      "tags": []
-    },
-    {
-      "title": "Star Wars ou Harry Potter en UGEARS ? L'idée de cadeau inattendue débarque dans l'IGN Store Europe",
-      "link": "https://fr.ign.com/ugears/93587/star-wars-ou-harry-potter-en-ugears-lidee-de-cadeau-inattendue-debarque-dans-lign-store-europe",
-      "date": "2026-10-31T10:51:25.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/blob_wpu5.jpg",
-      "summary": "Un carton.",
-      "tags": []
-    },
-    {
-      "title": "Exemples de modèles UGEARS disponibles dans la boutique IGN Europe",
-      "link": "https://fr.ign.com/ign-store-europe/93592/exemples-de-modeles-ugears-disponibles-dans-la-boutique-ign-europe",
-      "date": "2026-10-31T10:51:25.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/ugear1_cq6s.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Final Fantasy XIV Evercold repoussé, la nouvelle date de sortie sera annoncée au FFXIV Fan Fest",
-      "link": "https://fr.ign.com/final-fantasy-xiv-online-evercold/93603/final-fantasy-xiv-evercold-repousse-la-nouvelle-date-de-sortie-sera-annoncee-au-ffxiv-fan-fest",
-      "date": "2026-10-31T10:51:01.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/f/final-fant/final-fantasy-xiv-evercold-delayed-new-release-date-announce_5jhx.jpg",
-      "summary": "La prochaine extension du MMORPG devait initialement sortir en janvier 2027, mais il va falloir patienter encore un peu.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Gears of War : E-Day aurait coûté 500 millions de dollars à produire",
-      "link": "https://fr.ign.com/gears-of-war-e-day/93594/gears-of-war-e-day-aurait-coute-500-millions-de-dollars-a-produire",
-      "date": "2026-10-31T10:34:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gears-of-w/gears-of-war-e-day-reportedly-cost-500-million-to-make-amid_3ksh.jpg",
-      "summary": "Un budget important pour un jeu vendu \"seulement\" à 400 000 exemplaires.",
-      "tags": []
-    },
-    {
-      "title": "Pokemon Ecarlate & Violet proposent un nouveau pokemon surpuissant et de niveau 100 à capturer, voici comment le battre",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/pokemon-ecarlate-violet-trioxhydre-725917?utm_source=RSS",
-      "date": "2026-10-31T10:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/410891_638489363de54.jpg",
-      "summary": "Toutes les semaines, Pokemon Ecarlate & Violet vous proposent d’affronter une créature surpuissante de niveau 100, de la capturer et de farmer ses précieux objets.",
-      "tags": []
-    },
-    {
-      "title": "Carte interactive Phantom Blade : Armes, trésors, lames spectrales, découvrez tous les points d'intérêt",
-      "link": "https://www.jeuxvideo.com/news/2111545/carte-interactive-phantom-blade-armes-tresors-lames-spectrales-decouvrez-tous-les-points-d-interet.htm",
-      "date": "2026-10-31T10:20:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179337/1793368759-7873-card.jpg",
-      "summary": "Explorer le Wulin dans le jeu d'Action Phantom Blade Zero à l'aveuglette s'avère parfois difficile. Heureusement, l'interactive map évite de rater des objets importants ou de…",
-      "tags": []
-    },
-    {
-      "title": "Une fin cachée de Resident Evil 7 révélait déjà les Connections, l'organisation qui contrôlait Umbrella",
-      "link": "https://www.gamekult.com/actualite/une-fin-cachee-de-resident-evil-7-revelait-deja-les-connections-l-organisation-qui-controlait-umbrella-3050872603.html",
-      "date": "2026-10-31T10:19:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872603/une-fin-cachee-de-resident-evil-7-revelait-deja-les-connections-l-organisation-qui-controlait-umbrella-95cb3523__800_800__404-0-1424-1020.png",
-      "summary": "Umbrella ci, Umbrella là, Umbrella tout le temps : après autant de jeux à tisser la toile du parapluie bicolore, il y avait de quoi frôler l'overdose et d'ailleurs, peut-être que…",
-      "tags": []
-    },
-    {
-      "title": "Bungie prévient : « N’achetez pas Marathon par compassion », alors que les joueurs de Destiny cherchent à tout faire pour soutenir l’avenir du studio",
-      "link": "https://fr.ign.com/destiny-2-1/93593/bungie-previent-nachetez-pas-marathon-par-compassion-alors-que-les-joueurs-de-destiny-cherchent-a-to",
-      "date": "2026-10-31T10:14:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/b/bungie-say/bungie-says-dont-buy-marathon-as-a-donation-as-destiny-playe_sbdh.jpg",
-      "summary": "« Le plan Destiny se poursuit quoi qu&#x27;il arrive. »",
-      "tags": []
-    },
-    {
-      "title": "Phantom Blade Zero : un 18/20 qui va faire date dans l'histoire du jeu vidéo",
-      "link": "https://www.jeuxvideo.com/news/2111179/phantom-blade-zero-un-18-20-qui-va-faire-date-dans-l-histoire-du-jeu-video.htm",
-      "date": "2026-10-31T10:10:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179319/1793193448-7612-card.jpg",
-      "summary": "Soul n’a plus que 66 jours à vivre. Vous, vous avez quelques minutes pour découvrir en vidéo notre test de Phantom Blade Zero, le jeu d’action du studio S-Game.",
-      "tags": []
-    },
-    {
-      "title": "Baldur's Gate 3 s'offre 16 nouveautés gratuites sur PS5 et Xbox Series, la liste complète",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/baldurs-gate-3-mods-31-octobre-725912?utm_source=RSS",
-      "date": "2026-10-31T10:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/462506_650155a57acb9.jpg",
-      "summary": "Cette semaine, les versions consoles de Baldur’s Gate 3 accueillent 16 nouveautés gratuites grâce aux derniers mods validés par Larian Studios.",
-      "tags": []
-    },
-    {
-      "title": "Sonic the Hedgehog #91 - premières images",
-      "link": "https://fr.ign.com/sonic-the-hedgehog-idw/93600/sonic-the-hedgehog-91-preview-gallery",
-      "date": "2026-10-31T09:56:36.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/s/sonic-the-/sonic-the-hedgehog-91-preview-gallery_874a.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Un hérisson meurt après avoir été peint en bleu pour ressembler à Sonic",
-      "link": "https://fr.ign.com/sonic-the-hedgehog-3/93599/un-herisson-meurt-apres-avoir-ete-peint-en-bleu-pour-ressembler-a-sonic",
-      "date": "2026-10-31T09:56:36.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/h/hedgehog-d/hedgehog-dies-after-being-spray-painted-blue-to-look-like-so_6qcu.jpg",
-      "summary": "Une secouriste a déclaré qu&#x27;elle \"n&#x27;avait rien vu d&#x27;aussi méchant ou d&#x27;aussi triste depuis longtemps\".",
-      "tags": []
-    },
-    {
-      "title": "Hideo Kojima fait une apparition surprise dans le nouveau court-métrage d’animation de My Chemical Romance",
-      "link": "https://fr.ign.com/death-stranding/93602/hideo-kojima-fait-une-apparition-surprise-dans-le-nouveau-court-metrage-danimation-de-my-chemical-ro",
-      "date": "2026-10-31T09:55:45.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/h/hideo-koji/hideo-kojima-makes-surprise-cameo-in-new-my-chemical-romance_rp4n.jpg",
-      "summary": "Kojima partout.",
-      "tags": []
-    },
-    {
-      "title": "Okami HD - images du jeu",
-      "link": "https://fr.ign.com/gallery/93597/screens--okami-hd",
-      "date": "2026-10-31T09:44:45.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/s/screens-ok/screens-okami-hd_1d49.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "« Il vaut mieux ne pas avoir trop d'attentes » — Hideki Kamiya se confie sur la suite d'Okami",
-      "link": "https://fr.ign.com/okami-sequel/93596/il-vaut-mieux-ne-pas-avoir-trop-dattentes--hideki-kamiya-se-confie-sur-la-suite-dokami",
-      "date": "2026-10-31T09:44:45.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/i/its-better/its-better-if-you-dont-have-many-expectations-hideki-kamiya_6fp1.jpg",
-      "summary": "« C&#x27;est devenu une sorte de mission pour moi. »",
-      "tags": []
-    },
-    {
-      "title": "Les créateurs de Monster Hunter Wilds: Ascendance sont formels : \"il n'y a pas de meilleure opportunité que ce DLC pour se lancer dans la saga\"",
-      "link": "https://fr.ign.com/monster-hunter-wilds/93417/les-createurs-de-monster-hunter-wilds-ascendance-sont-formels-il-ny-a-pas-de-meilleure-opportunite-q",
-      "date": "2026-10-31T09:31:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/interview-monster-hunter-wilds-ascendance_698g.jpg",
-      "summary": "Takuro Hiraoka, le directeur de Monster Hunter Wilds: Ascendance, et Ryozo Tsujimoto, le producteur de la saga Monster Hunter, ont répondu à nos questions en marge de la Paris…",
-      "tags": []
-    },
-    {
-      "title": "Il a fallu 20 ans pour découvrir ces codes de triche cachés dans ce jeu vidéo, véritable monument de la PS2",
-      "link": "https://www.jeuxvideo.com/news/2111184/il-a-fallu-20-ans-pour-decouvrir-ces-codes-de-triche-caches-dans-ce-jeu-video-veritable-monument-de-la-ps2.htm",
-      "date": "2026-10-31T09:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179320/1793195173-2309-card.jpg",
-      "summary": "Pendant près de deux décennies, ce jeu culte de la PlayStation 2 est parvenu à conserver son plus grand secret. En son sein, les développeurs ont dissimulé des codes secrets, et…",
-      "tags": []
-    },
-    {
-      "title": "Le rival gratuit d'Animal Crossing dévoile enfin sa date de sortie, voici où et quand vous pourrez y jouer",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/animal-crossing-petit-planet-date-725905?utm_source=RSS",
-      "date": "2026-10-31T09:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/725905_6ae49858ef1b3.jpg",
-      "summary": "Face au succès d’Animal Crossing New Horizons, les créateurs de Genshin Impact vont proposer leur propre vision, Petit Planet. Le jeu gratuit tient enfin sa date de sortie.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Ubisoft confirme qu'« aucun autre remake d'Assassin's Creed n'est actuellement en développement »",
-      "link": "https://fr.ign.com/assassins-creed-black-flag-resynced/93598/ubisoft-confirme-qu-aucun-autre-remake-dassassins-creed-nest-actuellement-en-developpement",
-      "date": "2026-10-31T09:29:29.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/u/ubisoft-co/ubisoft-confirms-there-is-no-other-assassins-creed-remake-ac_tu15.jpg",
-      "summary": "Aucune lame cachée ici.",
-      "tags": []
-    },
-    {
-      "title": "La Nintendo Switch 2 va avoir droit à ce RPG au tour par tour qui fait de l'œil aux fans de Chrono Trigger",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/nintendo-switch-2-threads-of-time-rpg-725818?utm_source=RSS",
-      "date": "2026-10-31T09:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/story/690173_67ee7de682d35.jpg",
-      "summary": "La Nintendo Switch 2 va officiellement avoir droit à sa version d'un nouveau RPG au tour par tour à surveiller l'année prochaine. Il s'appelle Threads of Time et ce pourrait bien…",
-      "tags": []
-    },
-    {
-      "title": "Cette star n'a pas supporté la fin du \"Seigneur des anneaux : Le Retour du roi\" et a quitté le cinéma : « Je suis allé à la voiture et j'ai attendu les enfants. »",
-      "link": "https://www.jeuxvideo.com/news/2111449/cette-star-n-a-pas-supporte-la-fin-du-seigneur-des-anneaux-le-retour-du-roi-et-a-quitte-le-cinema-je-suis-alle-a-la-voiture-et-j-ai-attendu-les-enfants.htm",
-      "date": "2026-10-31T08:40:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179335/1793353076-9587-card.jpg",
-      "summary": "Récompensé par onze Oscars, \"Le Seigneur des Anneaux : Le Retour du Roi\" fait figure de chef-d’œuvre indiscutable. Pourtant, sa fin à rallonge a essuyé pas mal de critiques à…",
-      "tags": []
-    },
-    {
       "title": "12 more hours with GTA: Vice City and GTA: San Andreas",
       "link": "https://www.gamefile.news/p/gta-vice-city-san-andreas-review",
       "date": "2026-10-30T22:27:09.000Z",
@@ -995,60 +771,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/141936/90140/more-than-80-of-robloxs-top-100-games-by-hours-played-used-ai-to-speed-up-development-in-october-2026-as-more-creators-turned-to-ai-tools-to-build-and-publish-games_l660.jpg",
       "summary": "More than 80% of Roblox's top 100 games by hours played used AI to speed up development in October 2026, as more creators turned to AI tools to build and publish games. In its…",
-      "tags": []
-    },
-    {
-      "title": "Unreal Engine instructor Sandra Kawar on AI as a creative partner, ahead of PGC Jordan",
-      "link": "https://www.pocketgamer.biz/sandra-kawar-unreal-ai-creative-partner-pgc-jordan/",
-      "date": "2026-10-30T14:40:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141947/90141/sandrakawar_l660.jpg",
-      "summary": "Ahead of PGC Jordan on November 7th and 8th, we're putting the spotlight on some of our star speakers. The event takes place at Abdali Boulevard in Amman - you can find more…",
-      "tags": []
-    },
-    {
-      "title": "Moye Interactive Entertainment on Gods and Demons' development and global expansion",
-      "link": "https://www.pocketgamer.biz/moye-interactive-entertainment-on-gods-and-demons-development-and-global-expansion/",
-      "date": "2026-10-30T14:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141800/90064/1-2208x1242-en_l660.jpg",
-      "summary": "Xiao Han, head of publishing at Moye Interactive Entertainment (Xiaoxi Technology Group), speaks to PocketGamer.biz about Gods and Demons and the decision to roll out the game…",
-      "tags": []
-    },
-    {
-      "title": "Nexus signs MoU with Dubai to support local game studios and global publishing",
-      "link": "https://www.pocketgamer.biz/nexus-signs-mou-with-dubai-to-support-local-game-studios-and-global-publishing/",
-      "date": "2026-10-30T10:54:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141935/90139/nexus-dubai-mou_l660.jpg",
-      "summary": "South Korea's Nexus (ONE Corp) has signed a Memorandum of Understanding (MOU) with Dubai Media Council (DMC) to support the development of Dubai's games industry. As reported by…",
-      "tags": []
-    },
-    {
-      "title": "Netflix developing live-action PUBG series with Donald Glover",
-      "link": "https://www.pocketgamer.biz/netflix-developing-live-action-pubg-series-with-donald-glover/",
-      "date": "2026-10-30T10:35:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141934/90138/netflix-developing-live-action-pubg-series-with-donald-glover_l660.jpg",
-      "summary": "Netflix is developing a live-action adaptation of Krafton's battle royale game PUBG, with Emmy winner Donald Glover set to write, direct, executive produce and star in the series…",
-      "tags": []
-    },
-    {
-      "title": "New game digest: Monster Hunter, Saints Row, No Man&#8217;s Sky, Digimon, Darkest Dungeon, Cut The Rope, more",
-      "link": "https://mobilegamer.biz/new-game-digest-monster-hunter-saints-row-no-mans-sky-digimon-darkest-dungeon-cut-the-rope-more/",
-      "date": "2026-10-30T09:26:27.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "There's also new Easybrain games, Everything is Crab and plenty more in this week's round-up.",
-      "tags": []
-    },
-    {
-      "title": "Roblox shares fall as it beats billings guidance but growth stalls",
-      "link": "https://mobilegamer.biz/roblox-shares-fall-as-it-beats-billings-guidance-but-growth-stalls/",
-      "date": "2026-10-30T09:17:46.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "The UGC platform is facing tough user metric and income comparisons with the explosive growth of 2025. Net losses shrunk a little, though.",
       "tags": []
     },
     {
