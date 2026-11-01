@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:52:47.181Z",
+  "generatedAt": "2026-11-01T23:16:45.552Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-01T10:17:33.000Z",
-      "kept": 4
+      "kept": 3
     },
     "gamedev": {
       "status": "stale",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-01T18:15:08.000Z",
-      "kept": 14
+      "newest": "2026-11-01T21:20:09.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-01T19:29:35.000Z",
-      "kept": 3
+      "newest": "2026-11-01T22:40:51.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-11-01T18:41:29.000Z",
-      "kept": 14
+      "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-01T19:09:33.000Z",
+      "newest": "2026-11-01T21:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,12 +118,75 @@
   },
   "articles": [
     {
+      "title": "Patrick Stewart, Our Captain Of Multimedia CD-ROM Edutainment",
+      "link": "https://kotaku.com/patrick-stewart-our-captain-of-multimedia-cd-rom-edutainment-2000752105",
+      "date": "2026-11-01T22:40:51.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/nineworldspatrickstewart.jpg",
+      "summary": "While there is still much to parse from the multifaceted performer, we should take a minute to remember the scholar who lived inside our computer encyclopedias",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 déjà ringard ? Pourquoi la satire de notre société risque de vieillir beaucoup trop vite",
+      "link": "https://www.jeuxvideo.com/news/2111546/gta-6-deja-ringard-pourquoi-la-satire-de-notre-societe-risque-de-vieillir-beaucoup-trop-vite.htm",
+      "date": "2026-11-01T21:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179337/1793374668-6571-card.jpg",
+      "summary": "Le premier trailer de GTA 6 en 2023 avais mis une énorme claque, mais un détail inquiète : la parodie de TikTok et des réseaux sociaux. À l'ère où une tendance meurt en deux…",
+      "tags": []
+    },
+    {
+      "title": "Team Behind Fan-Made Oblivion Remake Face Lawsuit From Former Contributor",
+      "link": "https://kotaku.com/team-behind-fan-made-oblivion-remake-face-lawsuit-from-former-contributor-2000752100",
+      "date": "2026-11-01T21:19:05.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/skyblivion-1280x849.jpg",
+      "summary": "Community projects are no stranger to legal threats, but in a rare instance the 'Skyblivion' developers are facing litigation from one of their own",
+      "tags": []
+    },
+    {
+      "title": "5 Classic Nintendo Games That Are So Good They Never Need a Remake",
+      "link": "https://www.polygon.com/classic-nintendo-games-no-remake-needed/",
+      "date": "2026-11-01T21:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/mario-sports.jpg",
+      "summary": "Remakes and remasters are all the rage, but five classics from Nintendo are good enough that no one ever needs to bother trying to improve them.",
+      "tags": []
+    },
+    {
+      "title": "How to get the Pirate Shop Access Token in Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-pirate-shop-access-token-free-how-to-get/",
+      "date": "2026-11-01T20:18:04.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/treasure-chest_fn.jpg",
+      "summary": "The Pirate Shop Access Token lets you get anything for free in Fortnite Chapter 7 mini season. Here's how to get it and what you can buy.",
+      "tags": []
+    },
+    {
+      "title": "All map fragment locations in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-c7ms-map-fragment-locations/",
+      "date": "2026-11-01T20:11:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_mapfragment0.jpg",
+      "summary": "Here's where to find all the currently available map fragments in Fortnite's Chapter 7 mini season.",
+      "tags": []
+    },
+    {
       "title": "Tony Hawk Kicked Out Of Park While Trying To Recreate Pro Skater 3",
       "link": "https://kotaku.com/tony-hawk-kicked-out-of-park-while-trying-to-recreate-pro-skater-3-2000752094",
       "date": "2026-11-01T19:29:35.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/ss_8b6b1072bd6d96bd37949e4bfb8c3a229f3ef337.1920x1080-1280x720.jpg",
       "summary": "The legendary Birdman wanted to celebrate 25 years of the iconic third entry in his video game series, only to be escorted out by security",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 : la nouvelle carte Shipment ne ressemble pas aux versions des autres jeux",
+      "link": "https://www.jeuxvideo.com/news/2111607/call-of-duty-modern-warfare-4-la-nouvelle-carte-shipment-ne-ressemble-pas-aux-versions-des-autres-jeux.htm",
+      "date": "2026-11-01T19:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179338/1793379140-8089-card.jpg",
+      "summary": "Véritable monument du mode multijoueur depuis 2007, Shipment a fait son grand retour dans Call of Duty Modern Warfare 4. Pourtant, cette énième réinterprétation divise déjà la…",
       "tags": []
     },
     {
@@ -257,15 +320,6 @@
       "tags": []
     },
     {
-      "title": "Doom Creator John Romero Revives Xbox-Canceled Game At New Publisher",
-      "link": "https://www.polygon.com/john-romero-game-new-publisher/",
-      "date": "2026-11-01T16:58:37.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/doom-1.jpg",
-      "summary": "Romero Games' next shooter has found a new publisher, although the scope of the project has drastically changed since Xbox dropped it",
-      "tags": []
-    },
-    {
       "title": "Les trajets en moto de Metroid Prime \"n'ont aucun sens\" selon cet ancien développeur du studio",
       "link": "https://www.gamekult.com/actualite/les-trajets-en-moto-de-metroid-prime-n-ont-aucun-sens-selon-cet-ancien-developpeur-du-studio-3050872679.html",
       "date": "2026-11-01T16:53:00.000Z",
@@ -320,15 +374,6 @@
       "tags": []
     },
     {
-      "title": "A Persona 1 Remake Is In Development, New Leak Suggests",
-      "link": "https://www.polygon.com/persona-1-remake-leak/",
-      "date": "2026-11-01T16:14:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/screenshot-2026-09-16-at-4-00-48-pm.jpg",
-      "summary": "Persona games really do have a bad habit of leaking ahead of their reveals, as gameplay of a Revelations: Persona remake has surfaced",
-      "tags": []
-    },
-    {
       "title": "I'm glad that WoW: Forever'll have a slower, lo-fi update schedule, because I'm not playing this thing to be in a rush",
       "link": "https://www.pcgamer.com/games/world-of-warcraft/im-glad-that-wow-foreverll-have-a-slower-lo-fi-update-schedule-because-im-not-playing-this-thing-to-be-in-a-rush/",
       "date": "2026-11-01T16:00:00.000Z",
@@ -344,15 +389,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872678/jouer-a-la-game-boy-en-voiture-a-dope-le-cerveau-de-toute-une-generation-3158699c__800_800__0-262-1080-1341.jpg",
       "summary": "Si vous étiez gamins dans les années 80 ou 90, vous vous souvenez probablement des longs trajets en voiture à poncer n'importe quel jeu Game Boy en tant que bien que mal…",
-      "tags": []
-    },
-    {
-      "title": "Itch.io Reveals Just How Much AI Slop Is Flooding Gaming Storefronts",
-      "link": "https://www.polygon.com/itch-io-doubled-game-pages-ai-slop/",
-      "date": "2026-11-01T15:36:02.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/itch-io-new-games.png",
-      "summary": "The number of new game pages being created daily has doubled in the past two months, itch.io confirmed",
       "tags": []
     },
     {
@@ -379,7 +415,7 @@
       "date": "2026-11-01T15:00:43.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/F-Stop-Image-from-ToothpasteVixens-video-Valve-1280x720.jpg",
-      "summary": "Three separate Valve leaks have been combined a fully playable version of the cancelled 2007 game F-Stop",
+      "summary": "Three separate Valve leaks have been combined into a fully playable version of the cancelled 2007 game F-Stop",
       "tags": []
     },
     {
@@ -645,51 +681,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/LxcS4vFnPo4sKYRXgXRKZM-1920-80.jpg",
       "summary": "Structural perfection.",
-      "tags": []
-    },
-    {
-      "title": "Les Reco nouveautés manga d'IGN France – Novembre 2026",
-      "link": "https://fr.ign.com/mangas/93611/les-reco-nouveautes-manga-dign-france-novembre-2026",
-      "date": "2026-10-31T21:45:58.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/elle-et-moi-dans-lopen-space_vj8d.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "FromSoftware temporarily shuts down Dark Souls 2 and 3 multiplayer over 'server issue'",
-      "link": "https://www.pcgamer.com/games/dark-souls/fromsoftware-temporarily-shuts-down-dark-souls-2-and-3-multiplayer-over-server-issue/",
-      "date": "2026-10-31T21:40:23.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/M6zM5WU9WHi2vy6AB7ptFc-1920-80.jpg",
-      "summary": "The reason and timeline for restoration were not disclosed.",
-      "tags": []
-    },
-    {
-      "title": "PS6 : une source fiable indique que, comme la PS5, la prochaine console de Sony serait équipée d'un slot de SSD NVME",
-      "link": "https://www.jeuxvideo.com/news/2111582/ps6-une-source-fiable-indique-que-comme-la-ps5-la-prochaine-console-de-sony-serait-equipee-d-un-slot-de-ssd-nvme.htm",
-      "date": "2026-10-31T21:20:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179337/1793373007-3737-card.jpg",
-      "summary": "La PS6 laisse échapper de plus en plus d’indices sur ses specs. Ce coup-ci, on apprend que le format M.2 NVMe serait reconduit, avec un bond massif vers le PCIe 5.0 et une…",
-      "tags": []
-    },
-    {
-      "title": "Fanfiction Library of Alexandria AO3 down for up to a month following hack",
-      "link": "https://www.pcgamer.com/gaming-industry/fanfiction-library-of-alexandria-ao3-down-for-up-to-a-month-following-hack/",
-      "date": "2026-10-31T21:11:46.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XKCfWTAL3exAS4RH8dg8pX-1920-80.jpg",
-      "summary": "Just uncalled-for.",
-      "tags": []
-    },
-    {
-      "title": "Elder Scrolls Skyblivion mod faces lawsuit from former volunteer, project lead urges 'Please don't turn this into any kind of witch hunt'",
-      "link": "https://www.pcgamer.com/games/the-elder-scrolls/elder-scrolls-skyblivion-mod-faces-lawsuit-from-former-volunteer-project-lead-urges-please-dont-turn-this-into-any-kind-of-witch-hunt/",
-      "date": "2026-10-31T20:29:22.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HjFB9gstkbAF8dFMnxtqic-1920-80.jpg",
-      "summary": "The volunteer team is seeking pro bono legal aid.",
       "tags": []
     },
     {
