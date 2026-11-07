@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T16:51:40.112Z",
+  "generatedAt": "2026-11-07T20:37:51.378Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,15 +21,15 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-07T15:32:55.000Z",
-      "kept": 7
+      "newest": "2026-11-07T18:00:31.000Z",
+      "kept": 6
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-11-06T19:17:10.000Z",
-      "kept": 2
+      "kept": 0
     },
     "gibiz": {
       "status": "ok",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-07T15:17:09.000Z",
-      "kept": 20
+      "newest": "2026-11-07T19:10:09.000Z",
+      "kept": 19
     },
     "gameblog": {
       "status": "ok",
@@ -57,27 +57,27 @@
       "url": "https://www.gamekult.com/feed.xml",
       "items": 42,
       "newest": "2026-11-07T16:37:00.000Z",
-      "kept": 8
+      "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-07T15:59:42.000Z",
-      "kept": 12
+      "newest": "2026-11-07T20:20:28.000Z",
+      "kept": 8
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-07T15:00:00.000Z",
+      "newest": "2026-11-07T18:10:16.000Z",
       "kept": 14
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-07T16:47:52.000Z",
+      "newest": "2026-11-07T20:34:48.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,141 @@
   },
   "articles": [
     {
+      "title": "The No. 1 Horror Movie of 2026 Is Officially Leaving Peacock",
+      "link": "https://www.polygon.com/obsession-horror-hit-streaming-peacock-november-2026/",
+      "date": "2026-11-07T20:34:48.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mcdobse_uc003-1-1.jpg",
+      "summary": "Unless you have a One Wish Willow handy, you'll want to get in a final watch soon.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 PS5 Physical Boxes Have Hit The Wild, A Harbinger Of Our Disc-Less Future",
+      "link": "https://kotaku.com/gta-6-ps5-physical-boxes-have-hit-the-wild-a-harbinger-of-our-disc-less-future-2000754816",
+      "date": "2026-11-07T20:20:28.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/Jason_and_Lucia_20-1280x720.jpg",
+      "summary": "Prepare to shuffle off these plastic coils",
+      "tags": []
+    },
+    {
+      "title": "Former Rockstar Developer Says They Should Hurry Up On GTA 6&#8217;s PC Version Before AI Gets There First",
+      "link": "https://kotaku.com/former-rockstar-developer-says-they-should-hurry-up-on-gta-6s-pc-version-before-ai-gets-there-first-2000754810",
+      "date": "2026-11-07T19:23:59.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0000_Brightness_Contrast-1-1280x720.jpg",
+      "summary": "Grand Theft Auto III technical director Obbe Vermeij says the studio prefers a console-first approach to having to compromise a PC build, but overnight AI copycats could change…",
+      "tags": []
+    },
+    {
+      "title": "Switch 2 : Nintendo se prépare à un Noël difficile selon les analystes. Face aux chiffres en baisse, ils misent tout sur Zelda",
+      "link": "https://www.jeuxvideo.com/news/2113016/switch-2-nintendo-se-prepare-a-un-noel-difficile-selon-les-analystes-face-aux-chiffres-en-baisse-ils-misent-tout-sur-zelda.htm",
+      "date": "2026-11-07T19:10:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179397/1793973971-3665-card.jpg",
+      "summary": "Face à des résultats financiers en chute libre et une Switch 2 qui cale en rayon, Nintendo aborde un Noël sous très haute tension. Entre usines asphyxiées par l’essor de l’IA et…",
+      "tags": []
+    },
+    {
+      "title": "Dropout’s Vic Michaelis Wants to Toss Their Star Wars Character Out a Window",
+      "link": "https://www.polygon.com/dropout-vic-michaelis-interview-star-wars-zero-company/",
+      "date": "2026-11-07T19:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/star-wars-zero-company-runa-close-up.jpeg",
+      "summary": "Polygon spoke with Dropout's Vic Michaelis about their Star Wars Zero Company character Runa, one of the game's fan-favorite characters.",
+      "tags": []
+    },
+    {
+      "title": "Donnie Yen Phantom Blade Zero : Comment le rencontrer et battre le boss Mo Yuan ?",
+      "link": "https://www.jeuxvideo.com/news/2112185/donnie-yen-phantom-blade-zero-comment-le-rencontrer-et-battre-le-boss-mo-yuan.htm",
+      "date": "2026-11-07T18:15:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179379/1793786473-8162-card.jpg",
+      "summary": "Un acteur chinois célèbre joue le rôle d'un personnage notable de Phantom Blade Zero, qui fait aussi office de boss majeur. Découvrez les détails dans ce guide, avec une vidéo du…",
+      "tags": []
+    },
+    {
+      "title": "AMD CEO Lisa Su: 'We are a data center-first company'",
+      "link": "https://www.pcgamer.com/gaming-industry/amd-ceo-lisa-su-we-are-a-data-center-first-company/",
+      "date": "2026-11-07T18:10:16.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/qDK99x7KtDSDHFZjKX9dj3-1920-80.jpg",
+      "summary": "Congratulations.",
+      "tags": []
+    },
+    {
+      "title": "Un homme politique canadien lance une pétition pour demander au gouvernement d’aider BioWare à se racheter des mains d’EA",
+      "link": "https://fr.ign.com/mass-effect-3/93771/un-homme-politique-canadien-lance-une-petition-pour-demander-au-gouvernement-daider-bioware-a-se-rac",
+      "date": "2026-11-07T18:00:31.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/canadian-p/canadian-politician-petitions-government-to-help-bioware-buy_dskp.jpg",
+      "summary": "Le combat n’est pas terminé.",
+      "tags": []
+    },
+    {
+      "title": "I Wouldn’t Dream of Playing the Zelda: Ocarina of Time Remake Right Now",
+      "link": "https://www.polygon.com/switchboard-zelda-ocarina-of-time-switch-2-remake/",
+      "date": "2026-11-07T18:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-legend-of-zelda-ocarina-of-time-sheik-with-harp.png",
+      "summary": "The Legenda of Zelda: OoT is sacred, so I'll be waiting to playing the Switch 2 remake",
+      "tags": []
+    },
+    {
+      "title": "After seeing them myself, I'm convinced WoW: Forever's RP servers don't need to be this separate, and I say that as a decorated veteran of MMO roleplay",
+      "link": "https://www.pcgamer.com/games/world-of-warcraft/after-seeing-them-myself-im-convinced-wow-forevers-rp-servers-dont-need-to-be-this-separate-and-i-say-that-as-a-decorated-veteran-of-mmo-roleplay/",
+      "date": "2026-11-07T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/6Ywe8m6nRRzBLZTNpNbAXn-1920-80.png",
+      "summary": "I'm kinda just playing chiller PvE, here.",
+      "tags": []
+    },
+    {
+      "title": "Voir un jeu gratuit aux allures de Skyrim, c'est rare : le passe temps parfait avant The Elder Scrolls 6 ?",
+      "link": "https://www.jeuxvideo.com/news/2112905/voir-un-jeu-gratuit-aux-allures-de-skyrim-c-est-rare-le-passe-temps-parfait-avant-the-elder-scrolls-6.htm",
+      "date": "2026-11-07T17:45:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793979260-7037-card.jpg",
+      "summary": "Alors que les joueurs attendent toujours de pouvoir explorer le prochain univers de Bethesda, un autre RPG pourrait bien leur faire prendre leur mal en patience. Gratuit…",
+      "tags": []
+    },
+    {
+      "title": "Grand Theft Auto 6 Physical Copies Are Officially in the Wild",
+      "link": "https://www.polygon.com/gta-6-grand-theft-auto-physical-copies-retail/",
+      "date": "2026-11-07T17:26:29.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ultimate_edition_electric_fang_02.jpg",
+      "summary": "Physical editions of GTA 6 have started to arrive at retailers, offering a first look at the box and its contents.",
+      "tags": []
+    },
+    {
+      "title": "How Modders Spent Three Years Remastering Mass Effect 3&#8217;s Fantastic Multiplayer For Legendary Edition: ‘Let’s Do Something Stupid’",
+      "link": "https://kotaku.com/mass-effect-3-multiplayer-legendary-edition-mod-me3tweaks-2000754691",
+      "date": "2026-11-07T17:00:29.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/me3mplead-1280x720.jpg",
+      "summary": "The ME3Tweaks Legendary Edition mod is out today for N7 Day",
+      "tags": []
+    },
+    {
+      "title": "Commander Shepard’s Actors Are ‘Wildly Hopeful’ for Mass Effect, Despite Everything",
+      "link": "https://www.polygon.com/mass-effect-commander-shepard-jennifer-hale-mark-meer-interview-n7-day-2026/",
+      "date": "2026-11-07T17:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/masseffectlegendaryedition_helmet.png",
+      "summary": "Polygon spoke to Mass Effect's Jennifer Hale and Mark Meer about their optimism for Mass Effect after EA shut down BioWare and canceled Mass Effect 5.",
+      "tags": []
+    },
+    {
+      "title": "What's the toughest choice you've made in an RPG?",
+      "link": "https://www.pcgamer.com/games/rpg/whats-the-toughest-choice-youve-made-in-an-rpg/",
+      "date": "2026-11-07T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/ahPWtukZQkroGgxFKvPUZT-1920-80.jpg",
+      "summary": "Unburden yourself.",
+      "tags": []
+    },
+    {
       "title": "Wardogs Season 3 Will Add A Mode That Limits What Weapons Players Can Use",
       "link": "https://www.polygon.com/wardogs-season-3-reveal/",
       "date": "2026-11-07T16:47:52.000Z",
@@ -136,6 +271,15 @@
       "tags": []
     },
     {
+      "title": "Les images de la suite de ce jeu vidéo noté 90%  viennent de fuiter, mais il y a un problème",
+      "link": "https://www.jeuxvideo.com/news/2112279/les-images-de-la-suite-de-ce-jeu-video-note-90-viennent-de-fuiter-mais-il-y-a-un-probleme.htm",
+      "date": "2026-11-07T16:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793978181-5642-card.jpg",
+      "summary": "Un trésor vidéoludique caché depuis près de 20 ans vient brutalement de refaire surface sur la toile. F-Stop, le mythique préquel annulé de Portal, est désormais entièrement…",
+      "tags": []
+    },
+    {
       "title": "Path of Exile 2 Sets The Stage For Massive Update Alongside December Launch",
       "link": "https://www.polygon.com/path-of-exile-2-launch-update/",
       "date": "2026-11-07T16:13:09.000Z",
@@ -145,7 +289,7 @@
       "tags": []
     },
     {
-      "title": "Sony Delays Wireless PlayStation Pulse Speakers A Week Away From Launch",
+      "title": "Sony Indefinitely Delays Another PlayStation Accessory Just A Week Before Launch",
       "link": "https://kotaku.com/sony-delays-wireless-playstation-pulse-speakers-a-week-away-from-launch-2000754806",
       "date": "2026-11-07T15:59:42.000Z",
       "sourceId": "kotaku",
@@ -291,15 +435,6 @@
       "tags": []
     },
     {
-      "title": "Ridley Scott’s R-Rated Sci-Fi Masterpiece is Officially Being Cut From Netflix",
-      "link": "https://www.polygon.com/alien-ridley-scott-sci-fi-movie-streaming-december-2026/",
-      "date": "2026-11-07T13:16:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/msdalie_ec009_h.jpg",
-      "summary": "Alien and Aliens are leaving Netflix on Dec. 1, giving subscribers limited time to stream Ridley Scott’s sci-fi classics.",
-      "tags": []
-    },
-    {
       "title": "Ruines de Lordaeron WoW Forever : Comment finir ce nouveau donjon de la Horde ?",
       "link": "https://www.jeuxvideo.com/news/2109836/ruines-de-lordaeron-wow-forever-comment-finir-ce-nouveau-donjon-de-la-horde.htm",
       "date": "2026-11-07T12:40:07.000Z",
@@ -318,30 +453,12 @@
       "tags": []
     },
     {
-      "title": "10 Funniest 'Far Side' Comics About Cows",
-      "link": "https://www.polygon.com/funniest-far-side-comics-cows/",
-      "date": "2026-11-07T12:14:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/screen-shot-2026-08-19-at-2-17-15-pm.jpg",
-      "summary": "Gary Larson's The Far Side often featured cows in funny situations. Here are the 10 funniest examples",
-      "tags": []
-    },
-    {
       "title": "Un fan propose 5 millions de dollars à Ubisoft pour relancer Prince of Persia : Les Sables du Temps",
       "link": "https://www.gamekult.com/actualite/un-fan-propose-5-millions-de-dollars-a-ubisoft-pour-relancer-prince-of-persia-les-sables-du-temps-3050872776.html",
       "date": "2026-11-07T12:10:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872776/un-fan-propose-5-millions-de-dollars-a-ubisoft-pour-relancer-prince-of-persia-les-sables-du-temps-65010cf7__800_800__90-0-990-900.jpg",
       "summary": "Il y a des histoires que l'on peine à avaler : celle du remake de Prince of Persia : Les Sables du Temps est visiblement restée en travers de la gorge d'un fan fortuné, qui vient…",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect’s Cruelest Moral Choice Remains Gaming's Most Haunting Mission 19 Years Later",
-      "link": "https://www.polygon.com/mass-effect-homecoming-samesh-bhatia-choice/",
-      "date": "2026-11-07T12:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mass-effect-geth.jpg",
-      "summary": "Mass Effect’s Homecoming quest asks you to hand a widower his wife’s body or keep it for research. Neither ending feels clean, but one is better",
       "tags": []
     },
     {
@@ -372,15 +489,6 @@
       "tags": []
     },
     {
-      "title": "Sydney Sweeney's New Netflix Sci-Fi Epic Is Mandatory Viewing For Transformers Fans",
-      "link": "https://www.polygon.com/sydney-sweeney-gundam-netflix-transformers-sci-fi-epic/",
-      "date": "2026-11-07T11:30:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/sydney_sweeney.jpg",
-      "summary": "Robots (not) in disguise.",
-      "tags": []
-    },
-    {
       "title": "Forteresse Gerudo Zelda Ocarina of Time : Comment atteindre le Temple de l'Esprit ?",
       "link": "https://www.jeuxvideo.com/news/2112388/forteresse-gerudo-zelda-ocarina-of-time-comment-atteindre-le-temple-de-l-esprit.htm",
       "date": "2026-11-07T11:30:07.000Z",
@@ -405,15 +513,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/r/robert-pat/robert-pattinson-reportedly-screen-tested-for-007-in-james-b_q5xx.jpg",
       "summary": "Nicholas Hoult, du film Superman, pourrait également être en lice.",
-      "tags": []
-    },
-    {
-      "title": "Magic: The Gathering Star Trek Perfectly Captures the Sci-Fi Show’s Most Brutal Running Joke",
-      "link": "https://www.polygon.com/star-trek-redshirts-tokens-explainer/",
-      "date": "2026-11-07T11:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/he-s-dead-jim-art-star-trek-114-2c309b0d-94b4-405e-be6c-18b407323e51-art.jpg",
-      "summary": "Lots of Redshirts are going to die",
       "tags": []
     },
     {
@@ -707,196 +806,12 @@
       "tags": []
     },
     {
-      "title": "PS5 : Wolverine s'est vendu à 2,4 millions d'exemplaires... est-ce que ce sont de bons chiffres de ventes ?",
-      "link": "https://www.jeuxvideo.com/news/2112913/ps5-wolverine-s-est-vendu-a-2-4-millions-d-exemplaires-est-ce-que-ce-sont-de-bons-chiffres-de-ventes.htm",
-      "date": "2026-11-06T20:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179390/1793896412-9326-card.jpg",
-      "summary": "Qu’il est loin le temps où il suffisait de dépasser le million de ventes pour s’assurer d’une bonne rentabilité. Aujourd’hui, à une époque où les coûts de production des jeux AAA…",
-      "tags": []
-    },
-    {
-      "title": "10 Zelda: Ocarina Of Time Tips For The First-Time Player",
-      "link": "https://kotaku.com/10-zelda-ocarina-of-time-tips-for-the-first-time-player-2000754728",
-      "date": "2026-11-06T20:35:00.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/castle-1280x720.jpg",
-      "summary": "Cucco advice, bottles, and more",
-      "tags": []
-    },
-    {
       "title": "October 2026’s top new PC & console games, revealed...",
       "link": "https://newsletter.gamediscover.co/p/october-2026s-top-new-pc-and-console",
       "date": "2026-11-06T20:13:13.000Z",
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/fetch/$s_!H2Xm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8a91365-9896-44c4-8593-f5bbad058922_1900x1069.jpeg",
       "summary": "Also: this week on Steam & lots of discovery news.",
-      "tags": []
-    },
-    {
-      "title": "Qu'est ce que le GoG Preservation Program qui a sauvé 267 jeux avec 1400 correctifs ?",
-      "link": "https://www.jeuxvideo.com/news/2112893/qu-est-ce-que-le-gog-preservation-program-qui-a-sauve-267-jeux-avec-1400-correctifs.htm",
-      "date": "2026-11-06T20:00:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179389/1793893271-9355-card.jpg",
-      "summary": "Des jeux devenus injouables, des systèmes d'exploitation qui évoluent et des titres cultes menacés de disparition : préserver le patrimoine vidéoludique représente un véritable…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Village Cocorico Zelda Ocarina of Time : Comment finir cette zone à 100% ?",
-      "link": "https://www.jeuxvideo.com/news/2113143/village-cocorico-zelda-ocarina-of-time-comment-finir-cette-zone-a-100.htm",
-      "date": "2026-11-06T19:55:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179399/1793994389-3285-card.jpg",
-      "summary": "Découvrez comment compléter toutes les quêtes annexes et où trouver tous les collectibles du remake Switch 2 de Zelda Ocarina of Time. Même si elle n'est pas bien grande, cette…",
-      "tags": []
-    },
-    {
-      "title": "You Can&#8217;t Cheat At The Chicken Game Anymore In Zelda: Ocarina Of Time",
-      "link": "https://kotaku.com/you-cant-cheat-at-the-chicken-game-anymore-in-zelda-ocarina-of-time-2000754711",
-      "date": "2026-11-06T19:30:19.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/cucco-1280x720.jpg",
-      "summary": "You gotta get your milk the honest way",
-      "tags": []
-    },
-    {
-      "title": "Cocottes de Cocorico Zelda Ocarina of Time : Où toutes les trouver pour gagner le flacon vide ?",
-      "link": "https://www.jeuxvideo.com/news/2113144/cocottes-de-cocorico-zelda-ocarina-of-time-ou-toutes-les-trouver-pour-gagner-le-flacon-vide.htm",
-      "date": "2026-11-06T19:21:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179399/1793992370-6728-card.jpg",
-      "summary": "Découvrez l'emplacement de toutes les poules qui se cachent dans le Village Cocorico pour compléter cette quête annexe du remake Switch 2 de Zelda Ocarina of Time. La récompense…",
-      "tags": []
-    },
-    {
-      "title": "SAG-AFTRA introduces new process for hiring union actors in game pitches",
-      "link": "https://www.gamedeveloper.com/production/sag-aftra-introduces-new-process-for-using-actors-in-game-pitches",
-      "date": "2026-11-06T19:17:10.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd2c6ef59fc1e919f/669e70619d85eed2432cc9c2/SAGAFTRA_Header.png?width=720&quality=80&disable=upscale",
-      "summary": "SAG-AFTRA actors can now be recruited for vertical slices, demos, and other forms of content needed to pitch games.",
-      "tags": []
-    },
-    {
-      "title": "Hogwarts Legacy est-il réellement différent grâce au DLSS 5 ?",
-      "link": "https://www.jeuxvideo.com/news/2112989/hogwarts-legacy-est-il-reellement-different-grace-au-dlss-5.htm",
-      "date": "2026-11-06T19:10:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793962861-9604-card.jpg",
-      "summary": "Critiqué lors de sa première démonstration au printemps, le DLSS 5 débarque enfin sur PC, et Hogwarts Legacy est l’un des premiers jeux à servir de cobaye. Entre promesses de…",
-      "tags": []
-    },
-    {
-      "title": "This Is What Video Game Preservation Looks Like",
-      "link": "https://kotaku.com/this-is-what-video-game-preservation-looks-like-2000754684",
-      "date": "2026-11-06T19:00:41.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/classic-games-e1793984360883-1280x686.jpg",
-      "summary": "An EA producer outlines the painstaking process it took to bring back 25 classic games",
-      "tags": []
-    },
-    {
-      "title": "The Pirate Shop Token Hunt Is Tearing Fortnite Apart",
-      "link": "https://kotaku.com/the-pirate-shop-token-lottery-is-tearing-fortnite-apart-2000754678",
-      "date": "2026-11-06T18:30:17.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/fortnite-pirate.jpg",
-      "summary": "Players are so upset they can't win the super-rare item that naturally, they're alerting the FTC",
-      "tags": []
-    },
-    {
-      "title": "A Truck Demanding EA ‘Save Mass Effect’ Is Currently Driving Around The Company’s Headquarters",
-      "link": "https://kotaku.com/save-mass-effect-ea-bioware-redwood-truck-billboard-2000754705",
-      "date": "2026-11-06T18:15:39.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/MEtruck-1280x720.jpg",
-      "summary": "BioWare fans continue to take the fight to IRL spaces",
-      "tags": []
-    },
-    {
-      "title": "Ratchet & Clank : Ranger Rumble, c'est déjà fini",
-      "link": "https://www.gamekult.com/actualite/ratchet-clank-ranger-rumble-c-est-deja-fini-3050872840.html",
-      "date": "2026-11-06T18:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872840/ratchet-clank-ranger-rumble-c-est-deja-fini-6c002ba9__800_800__824-65-1763-1003.jpg",
-      "summary": "Tentative bancale d'exporter le lombax sur mobiles, Ratchet & Clank : Ranger Rumble est loin d'avoir séduit les joueurs dans les rares pays où il était déjà disponible, et les…",
-      "tags": []
-    },
-    {
-      "title": "Razer Hammerhead V3 Chroma : écouteurs filaires USB-C avec ANC, disponibles en France à 89,99 €",
-      "link": "https://fr.ign.com/razer-hammerhead-v3-chroma/93759/razer-hammerhead-v3-chroma-ecouteurs-filaires-usb-c-avec-anc-disponibles-en-france-a-8999-eur",
-      "date": "2026-11-06T18:00:28.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/razer-hammerhead-v3-chroma_ee6h.jpg",
-      "summary": "L’immersion nomade.",
-      "tags": []
-    },
-    {
-      "title": "WoW: Forever’s Dungeon EXP Nerf Is Shaping Up To Be A Disaster For Dungeon Lovers",
-      "link": "https://kotaku.com/wow-forevers-dungeon-exp-nerf-is-shaping-up-to-be-a-disaster-for-dungeon-lovers-2000754647",
-      "date": "2026-11-06T18:00:04.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/dalaran-1280x720.jpg",
-      "summary": "LFG...I guess",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "It's hard to meet women when I keep teleporting all the time",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/its-hard-to-meet-women-when-i-keep-teleporting-all-the-time/",
-      "date": "2026-11-06T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/5ofbJXFyWF5y96rwN7g8RM-1920-80.jpg",
-      "summary": "This is why there's a male loneliness epidemic.",
-      "tags": []
-    },
-    {
-      "title": "Report: Silver Lake and the Saudi Arabia PIF hold talks with Unity to explore acquisition",
-      "link": "https://www.gamedeveloper.com/business/silver-lake-and-the-saudi-arabia-pif-hold-talks-with-unity-to-explore-acquisition",
-      "date": "2026-11-06T17:57:21.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt78529dedab85c7dd/650f04e227144bcd7c2b193f/unitynewlogofeatured.jpg?width=720&quality=80&disable=upscale",
-      "summary": "The investment partners recently acquired Electronic Arts and are now reportedly turning their gaze toward software engine Unity.",
-      "tags": []
-    },
-    {
-      "title": "All that stands between a hacker and admin privileges on some Linux distros is a 257-character long string of literally anything",
-      "link": "https://www.pcgamer.com/software/linux/all-that-stands-between-a-hacker-and-admin-privileges-on-some-linux-distros-is-a-257-character-long-string-of-literally-anything/",
-      "date": "2026-11-06T17:31:29.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/FzqWo3fsvLDFRpTumixHaY-1920-80.jpg",
-      "summary": "Eeeeeeeeeeeeeep. Thankfully there's already a fix out.",
-      "tags": []
-    },
-    {
-      "title": "Ratchet & Clank : Ranger Rumble ferme ses portes moins d'un an après sa sortie",
-      "link": "https://fr.ign.com/ratchet-clank-ranger-rumble/93768/ratchet-clank-ranger-rumble-ferme-ses-portes-moins-dun-an-apres-sa-sortie",
-      "date": "2026-11-06T17:28:01.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/r/ratchet-cl/ratchet-clank-ranger-rumble-shutting-down-less-than-a-year-a_rjz1.jpg",
-      "summary": "Le spin-off mobile n&#x27;a même pas eu le temps de jouir d&#x27;une sortie mondiale.",
-      "tags": []
-    },
-    {
-      "title": "PlayStation Is Already Killing Off Ratchet &#038; Clank Mobile Game Just 12 Months After It Was Revealed",
-      "link": "https://kotaku.com/playstation-mobile-game-shuts-down-just-12-months-after-it-was-revealed-2000754657",
-      "date": "2026-11-06T17:00:11.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/11/ratchclankmobile-1280x720.jpg",
-      "summary": "Ratchet & Clank: Ranger Rumble never officially launched globally",
-      "tags": []
-    },
-    {
-      "title": "Live from this very minute, Newegg has a 200 Hz, 1440p gaming monitor going for just $129 in its early Black Friday goodie box",
-      "link": "https://www.pcgamer.com/hardware/gaming-monitors/live-from-this-very-minute-newegg-has-a-200-hz-1440p-gaming-monitor-going-for-just-usd129-in-its-early-black-friday-goodie-box/",
-      "date": "2026-11-06T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/XJi7rruHVvaQQ8i6kzrBY3-1920-80.jpg",
-      "summary": "Or its 'Doorbuster' deals box, whatever that means.",
       "tags": []
     },
     {
