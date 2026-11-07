@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T20:37:51.378Z",
+  "generatedAt": "2026-11-07T23:56:16.588Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-07T18:00:31.000Z",
-      "kept": 6
+      "newest": "2026-11-07T22:15:33.000Z",
+      "kept": 7
     },
     "gamedev": {
       "status": "ok",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-07T19:10:09.000Z",
+      "newest": "2026-11-07T21:20:06.000Z",
       "kept": 19
     },
     "gameblog": {
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-07T20:20:28.000Z",
-      "kept": 8
+      "newest": "2026-11-07T22:12:46.000Z",
+      "kept": 7
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-07T18:10:16.000Z",
-      "kept": 14
+      "newest": "2026-11-07T23:22:07.000Z",
+      "kept": 9
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-07T20:34:48.000Z",
+      "newest": "2026-11-07T23:40:59.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,96 @@
   },
   "articles": [
     {
+      "title": "Fortune treasure hours schedule in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fornite-treasure-hours-chapter-7-mini-season-c7ms/",
+      "date": "2026-11-07T23:40:59.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261105_1001_fn_treasurehour.jpg",
+      "summary": "Here's what time you can expect the next batch of Fortnite treasure hours, as well as what bonuses are coming with them.",
+      "tags": []
+    },
+    {
+      "title": "One of the buggiest D&D games ever released, Pool of Radiance: Ruins of Myth Drannor, is back and actually playable again",
+      "link": "https://www.pcgamer.com/games/rpg/one-of-the-buggiest-d-and-d-games-ever-released-pool-of-radiance-ruins-of-myth-drannor-is-back-and-actually-playable-again/",
+      "date": "2026-11-07T23:22:07.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/RTBYtRwwXNQ5uHRWkUh2FL-1920-80.jpg",
+      "summary": "But did anyone ask for this?",
+      "tags": []
+    },
+    {
+      "title": "Les acteurs de Mass Effect célèbrent la Journée N7 avec une vidéo invitant les fans à contribuer à sauver la franchise",
+      "link": "https://fr.ign.com/mass-effect-next-chapter/93776/les-acteurs-de-mass-effect-celebrent-la-journee-n7-avec-une-video-invitant-les-fans-a-contribuer-a-s",
+      "date": "2026-11-07T22:15:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/m/mass-effec/mass-effect-cast-celebrates-n7-day-with-video-asking-fans-to_ug5n.jpg",
+      "summary": "Shepard, Garrus, Tali’Zorah, Mordin et bien d’autres encore.",
+      "tags": []
+    },
+    {
+      "title": "For This Year&#8217;s N7 Day, Fans, Alumni And Policy Makers Fought For Mass Effect&#8217;s Future",
+      "link": "https://kotaku.com/this-years-n7-day-spent-fighting-for-mass-effects-future-2000754828",
+      "date": "2026-11-07T22:12:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2024/03/ab7be0140108d75dfb05d247751184ee-1280x720.jpg",
+      "summary": "While previous years brought hope of updates on BioWare's beloved Mass Effect saga, this November had incensed fans pushing EA towards a course correction",
+      "tags": []
+    },
+    {
+      "title": "All Gold Skulltula locations in Ocarina of Time",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-gold-skulltula-token-locations-where-to-find/",
+      "date": "2026-11-07T21:41:33.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gold-skulltula_oot.jpg",
+      "summary": "Gold Skulltulas are a collectible in Ocarina of Time, but they're also needed for a cursed family. Here's where to find every Gold Skulltula.",
+      "tags": []
+    },
+    {
+      "title": "AI Stuffy Says &#8216;I Can&#8217;t Help With Killing You&#8217; Completely Unprompted",
+      "link": "https://kotaku.com/ai-stuffy-says-i-cant-help-with-killing-you-completely-unprompted-2000754819",
+      "date": "2026-11-07T21:30:17.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/bunny.jpg",
+      "summary": "Cross that one off the Christmas list",
+      "tags": []
+    },
+    {
+      "title": "Pourquoi le jeu vidéo Phantom Blade Zero fait un carton ? Notre analyse",
+      "link": "https://www.jeuxvideo.com/news/2112345/pourquoi-le-jeu-video-phantom-blade-zero-fait-un-carton-notre-analyse.htm",
+      "date": "2026-11-07T21:20:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179387/1793867442-1656-card.jpg",
+      "summary": "4 millions d’exemplaires vendus en 72 heures. Le chiffre donne le tournis, au point de faire presque oublier GTA 6, attendu dans deux semaines à peine. Venu de Chine, Phantom…",
+      "tags": []
+    },
+    {
+      "title": "5 Incredible Anime Arcs That Are 10/10, No Notes",
+      "link": "https://www.polygon.com/perfect-anime-arcs-everyone-needs-to-watch/",
+      "date": "2026-11-07T21:04:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/mob-psycho-scary-painting.webp",
+      "summary": "These anime storylines elevate these five series with thrilling character developments and satisfying resolutions.",
+      "tags": []
+    },
+    {
+      "title": "New Stellar Blade Ad Gives Fans Plenty To Talk About With Therapist",
+      "link": "https://kotaku.com/new-stellar-blade-ad-gives-fans-plenty-to-talk-about-with-therapist-2000754823",
+      "date": "2026-11-07T21:03:27.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/stellarbladead-1280x821.jpg",
+      "summary": "A live action, throwback ad campaign features Eve tucking people in, reading bed time stories, and YouTube commenters wishing it were them",
+      "tags": []
+    },
+    {
+      "title": "Commander Shepard’s Actor Accidentally Immortalized One Mass Effect Race as Steve Buscemi",
+      "link": "https://www.polygon.com/mass-effect-commander-shepard-mark-meer-interview/",
+      "date": "2026-11-07T21:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7675959/mass_effect_2.jpg",
+      "summary": "Polygon spoke to Mass Effect's Mark Meer about how he joined the series and how he and fellow Shepard Jennifer Hale defined the character.",
+      "tags": []
+    },
+    {
       "title": "The No. 1 Horror Movie of 2026 Is Officially Leaving Peacock",
       "link": "https://www.polygon.com/obsession-horror-hit-streaming-peacock-november-2026/",
       "date": "2026-11-07T20:34:48.000Z",
@@ -133,6 +223,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/Jason_and_Lucia_20-1280x720.jpg",
       "summary": "Prepare to shuffle off these plastic coils",
+      "tags": []
+    },
+    {
+      "title": "Partitions Zelda Ocarina of Time : Où trouver tous les chants à l'ocarina ?",
+      "link": "https://www.jeuxvideo.com/news/2113207/chants-zelda-ocarina-of-time-ou-trouver-toutes-les-melodies-a-l-ocarina.htm",
+      "date": "2026-11-07T19:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179408/1794079248-9899-card.jpg",
+      "summary": "Découvrez comment obtenir tous les chants de l'ocarina dans le remake Switch 2 de Zelda OOT. Des mélodies secrètes essentielles à la quête du 100%, à tous les airs capables de…",
       "tags": []
     },
     {
@@ -280,15 +379,6 @@
       "tags": []
     },
     {
-      "title": "Path of Exile 2 Sets The Stage For Massive Update Alongside December Launch",
-      "link": "https://www.polygon.com/path-of-exile-2-launch-update/",
-      "date": "2026-11-07T16:13:09.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/shadow_closeup3.jpg",
-      "summary": "The campaign will wrap up and the Shadow class will be introduced next month",
-      "tags": []
-    },
-    {
       "title": "Sony Indefinitely Delays Another PlayStation Accessory Just A Week Before Launch",
       "link": "https://kotaku.com/sony-delays-wireless-playstation-pulse-speakers-a-week-away-from-launch-2000754806",
       "date": "2026-11-07T15:59:42.000Z",
@@ -304,26 +394,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0822_gy52.jpg",
       "summary": "Avec le MMX 130 Wireless, beyerdynamic mise sur l&#x27;essentiel : une restitution sonore convaincante dès la sortie du carton, un excellent confort et une belle polyvalence, le…",
-      "tags": []
-    },
-    {
-      "title": "GI Joe and Paranormal Activity Get New Official Release Dates from Paramount",
-      "link": "https://www.polygon.com/paramount-gi-joe-release-date-paranormal-activity-delay/",
-      "date": "2026-11-07T15:31:59.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/mcdpaac_ec023.jpg",
-      "summary": "Paramount reveals the release date for Danny McBride's GI Joe reboot and delays the next installment in the Paranormal Activity series.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "World of Warcraft Forever Officially Breaks Records For The 22-Year-Old MMO",
-      "link": "https://www.polygon.com/world-of-warcraft-forever-record-breaking-launch/",
-      "date": "2026-11-07T15:25:08.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/wow_forever_scenic_announce_race_class_newcombos_054.png",
-      "summary": "World of Warcraft got a whole lot of people to come back and play the MMO together",
       "tags": []
     },
     {
@@ -345,7 +415,7 @@
       "tags": []
     },
     {
-      "title": "Quarts de coeur Zelda Ocarina of Time : Où trouver tous les fragments ?",
+      "title": "Quarts de coeur Zelda Ocarina of Time : Où trouver tous les fragments du remake Switch 2 ?",
       "link": "https://www.jeuxvideo.com/news/2113161/quarts-de-coeur-zelda-ocarina-of-time-ou-trouver-tous-les-fragments.htm",
       "date": "2026-11-07T15:17:09.000Z",
       "sourceId": "jv",
@@ -387,15 +457,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/VuYAMFPN58skETzPcrxBkY-1920-80.jpg",
       "summary": "Hulick also revealed that he was asked by BioWare to score an internal demo for Mass Effect: Universe—but work was cut short by the studio's closure.",
-      "tags": []
-    },
-    {
-      "title": "One Of Hollywood's Biggest Stars Just Auditioned For James Bond",
-      "link": "https://www.polygon.com/james-bond-robert-pattinson/",
-      "date": "2026-11-07T14:51:43.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19879751/bond_25_B25_25594_R_rgb.jpg",
-      "summary": "Robert Pattinson might be our next James Bond, according to new reports about the next James Bond film",
       "tags": []
     },
     {
@@ -689,120 +750,12 @@
       "tags": []
     },
     {
-      "title": "Dans ce jeu gratuit, tu as une chance sur 6 de naître en Inde, mais tu peux aussi être n'importe qui... et ça m'a ému aux larmes !",
-      "link": "https://www.jeuxvideo.com/news/2112685/dans-ce-jeu-gratuit-tu-as-une-chance-sur-6-de-naitre-en-inde-mais-tu-peux-aussi-etre-n-importe-qui-et-ca-m-a-emu-aux-larmes.htm",
-      "date": "2026-11-07T06:01:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179389/1793891109-1772-card.jpg",
-      "summary": "Vous aviez une chance sur six de naître en Inde, et pourtant, vous lisez ces lignes bien au chaud. Un petit jeu sur navigateur gratuit, développé en quelques heures, vous propose…",
-      "tags": []
-    },
-    {
       "title": "Ultime bafouille - Mass Effect et BioWare sacrifiés : pourquoi ce N7 Day sera le plus amer de l'histoire",
       "link": "https://www.gamekult.com/actualite/mass-effect-et-bioware-sacrifies-pourquoi-ce-n7-day-sera-le-plus-amer-de-l-histoire-3050872834.html",
       "date": "2026-11-07T05:01:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872834/mass-effect-et-bioware-sacrifies-pourquoi-ce-n7-day-sera-le-plus-amer-de-l-histoire-76db24c5__800_800__435-0-1514-1080.jpg",
       "summary": "D’ordinaire, le 7 novembre est une date que je coche sur mon calendrier avec la ferveur d’un gosse, prêt à enfiler mon sweat N7 pour célébrer l’héritage du commandant Shepard et…",
-      "tags": []
-    },
-    {
-      "title": "Here's what's in Path of Exile 2’s huge 1.0 release, coming in December",
-      "link": "https://www.pcgamer.com/games/rpg/heres-whats-in-path-of-exile-2s-huge-1-0-release-coming-in-december/",
-      "date": "2026-11-06T23:36:21.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/PhVjZbGy2wt3kcRcFUPNc7-1920-80.jpg",
-      "summary": "The full release will feature new classes, finished campaign, a new league, and more.",
-      "tags": []
-    },
-    {
-      "title": "Rockstar's having a sale on old GTA games on the only platform Grand Theft Auto 6 isn't coming to (ours)",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/rockstars-having-sale-on-old-gta-games-on-the-only-platform-grand-theft-auto-6-isnt-coming-to-ours/",
-      "date": "2026-11-06T23:11:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Ga8N8nrBc2G2kBQqNRkFSG-1920-80.jpg",
-      "summary": "Are we being trolled here?",
-      "tags": []
-    },
-    {
-      "title": "Three Games You Can Play For Free This Weekend On PC",
-      "link": "https://kotaku.com/three-free-games-you-can-play-for-free-this-weekend-on-pc-2000754769",
-      "date": "2026-11-06T23:00:34.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/flotsam.jpg",
-      "summary": "Here's how to save on games in November",
-      "tags": []
-    },
-    {
-      "title": "This Is One Of My Favorite Stupid Details They Kept In The Ocarina Of Time Remake",
-      "link": "https://kotaku.com/legend-zelda-ocarina-of-time-remake-iron-boots-cutscenes-2000754765",
-      "date": "2026-11-06T22:30:52.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/linkgoron-1280x720.jpg",
-      "summary": "These boots weren’t made for walking",
-      "tags": []
-    },
-    {
-      "title": "The AI posting war is heating up: 'Please, leave me behind,' says artist who got into it with Epic CEO Tim Sweeney on X",
-      "link": "https://www.pcgamer.com/software/ai/the-ai-posting-war-is-heating-up-please-leave-me-behind-says-artist-who-got-into-it-with-epic-ceo-tim-sweeney-on-x/",
-      "date": "2026-11-06T22:21:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QAh2KbRTQ6Y9BSbgacF6VT-1920-80.jpg",
-      "summary": "Two factions of gamers and game developers are at an impasse.",
-      "tags": []
-    },
-    {
-      "title": "A Much-Requested Battlefield 6 Feature Revealed Last Spring Won&#8217;t Arrive In 2026 After All",
-      "link": "https://kotaku.com/a-much-requested-battlefield-6-feature-revealed-last-spring-wont-arrive-in-2026-after-all-2000754757",
-      "date": "2026-11-06T21:55:03.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/08/bg6-1280x720.jpg",
-      "summary": "Platoons were supposed to be added in December but will be MIA until 2027",
-      "tags": []
-    },
-    {
-      "title": "Path of Exile 2 announces a second new class, the Shadow, for its December 1.0 release",
-      "link": "https://www.pcgamer.com/games/rpg/path-of-exile-2-announces-a-second-new-class-the-shadow-for-its-december-1-0-release/",
-      "date": "2026-11-06T21:50:58.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/DGA7LqKTtAjY5xuVxbZqUa-1920-80.jpg",
-      "summary": "Two classes two furious.",
-      "tags": []
-    },
-    {
-      "title": "\"Je me suis allongé et j'ai joué à Balatro\" C'est ce qu'a fait ce développeur après avoir travaillé 17 ans sur son projet !",
-      "link": "https://www.jeuxvideo.com/news/2112897/je-me-suis-allonge-et-j-ai-joue-a-balatro-c-est-ce-qu-a-fait-ce-developpeur-apres-avoir-travaille-17-ans-sur-son-projet.htm",
-      "date": "2026-11-06T21:20:16.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179389/1793894340-5234-card.jpg",
-      "summary": "Après 17 ans de travail acharné, un créateur de jeu indépendant a enfin pu souffler. Son premier réflexe après la sortie du projet ? Se détendre sur un autre jeu.",
-      "tags": []
-    },
-    {
-      "title": "Dad Has 6-Year-Old Daughter Save His Spot In Line At Target For Pokémon Cards And Then Leaves",
-      "link": "https://kotaku.com/dad-has-6-year-old-daughter-save-his-spot-in-line-at-target-for-pokemon-cards-and-then-leaves-2000754745",
-      "date": "2026-11-06T21:15:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GettyImages-2300243843-e1793996570578-1280x817.jpg",
-      "summary": "Other people who had camped out began to get worried when he didn't come right back",
-      "tags": []
-    },
-    {
-      "title": "Underkeep is my favorite old-school dungeon crawler since Legend of Grimrock, and yes that includes Queen's Domain",
-      "link": "https://www.pcgamer.com/games/rpg/underkeep-is-my-favorite-old-school-dungeon-crawler-since-legend-of-grimrock-and-yes-that-includes-queens-domain/",
-      "date": "2026-11-06T21:14:51.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/t6zfrRCc3rr5uWAxv7RJLg-1920-80.jpg",
-      "summary": "Queen's Domain might be the trendy game of the moment but for my money, the classic grid-based action of Underkeep is where it's at. (And yes, there's a demo.)",
-      "tags": []
-    },
-    {
-      "title": "'It came out of nowhere. I was shocked and sad': He was the face of Hunt: Showdown for years, then Crytek laid him off",
-      "link": "https://www.pcgamer.com/games/fps/it-came-out-of-nowhere-i-was-shocked-and-sad-he-was-the-face-of-hunt-showdown-for-years-then-crytek-laid-him-off/",
-      "date": "2026-11-06T21:06:01.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/guRENWiogEnRFh78VTeCuG-1920-80.jpg",
-      "summary": "Bence \"Beedyboy\" Hamos reflects on 8 years at Crytek helping build Hunt: Showdown's community.",
       "tags": []
     },
     {
