@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-08T04:19:33.026Z",
+  "generatedAt": "2026-11-08T17:13:18.381Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
-    "gibiz": "ok",
+    "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
     "gamekult": "ok",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -21,7 +21,7 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-07T22:15:33.000Z",
+      "newest": "2026-11-08T17:00:31.000Z",
       "kept": 7
     },
     "gamedev": {
@@ -32,7 +32,7 @@
       "kept": 0
     },
     "gibiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-11-06T16:10:00.000Z",
@@ -42,42 +42,42 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-07T21:20:06.000Z",
-      "kept": 19
+      "newest": "2026-11-08T16:00:13.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-11-07T11:00:00.000Z",
-      "kept": 8
+      "newest": "2026-11-08T11:00:00.000Z",
+      "kept": 10
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
-      "items": 42,
-      "newest": "2026-11-07T16:37:00.000Z",
-      "kept": 7
+      "items": 41,
+      "newest": "2026-11-08T16:21:00.000Z",
+      "kept": 5
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-07T22:12:46.000Z",
-      "kept": 7
+      "newest": "2026-11-08T16:52:15.000Z",
+      "kept": 6
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-08T02:13:27.000Z",
-      "kept": 12
+      "newest": "2026-11-08T16:00:00.000Z",
+      "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-08T04:00:17.000Z",
+      "newest": "2026-11-08T17:00:19.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-11-07T15:21:00.000Z",
-      "kept": 10
+      "kept": 4
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-11-06T12:14:33.000Z",
-      "kept": 2
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -118,39 +118,421 @@
   },
   "articles": [
     {
-      "title": "Paramount’s 4-Part Action Fantasy Epic Has One of the Best Seasons in TV History",
-      "link": "https://www.polygon.com/the-legend-of-korra-season-3-best-season/",
-      "date": "2026-11-08T04:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/legend-of-korra-outlook.jpeg",
-      "summary": "In its third season, a beloved animated hero grows up the hard way, living with the fallout of her biggest choice and facing a chilling new villain.",
+      "title": "Ed Boon souhaite savoir quel nom les fans aimeraient donner au prochain jeu Mortal Kombat",
+      "link": "https://fr.ign.com/marvel-vs-capcom-infinite/93778/ed-boon-souhaite-savoir-quel-nom-les-fans-aimeraient-donner-au-prochain-jeu-mortal-kombat",
+      "date": "2026-11-08T17:00:31.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/ed-boon-wa/ed-boon-wants-to-know-what-fans-want-the-next-mortal-kombat_p94u.jpg",
+      "summary": "Il a également posé la question concernant Marvel vs Capcom.",
       "tags": []
     },
     {
-      "title": "9 Near-Perfect Dragon Age Replacements For Fans of Fantasy RPGs",
-      "link": "https://www.polygon.com/best-dragon-age-replacements/",
-      "date": "2026-11-08T03:40:49.000Z",
+      "title": "The Legend of Zelda: Ocarina of Time Thankfully Resists FromSoftware’s Influence",
+      "link": "https://www.polygon.com/the-legend-of-zelda-ocarina-of-time-parrying/",
+      "date": "2026-11-08T17:00:19.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/9450027/dragon_age.jpg",
-      "summary": "If you're looking for the best games like Dragon Age, these Dragon Age replacement fantasy RPGs have you covered.",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/zelda-ocarina-of-time-remake-attack-deflection.png",
+      "summary": "The Legend of Zelda: Ocarina of Time makes a lot of modernizations to the original game, but there's one thing it doesn't add: parrying.",
       "tags": []
     },
     {
-      "title": "How to Play Every GTA Game in 2026",
-      "link": "https://www.polygon.com/gta-games-all-2026-where-to-play/",
-      "date": "2026-11-08T02:54:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/grand-theft-auto-6-promo-shot.jpg",
-      "summary": "GTA might be the most popular video game franchise of all time, but a lot of it is hard to play. Here's a guide on how to play every GTA game.",
+      "title": "Speedrunners Are Already Breaking The Legend Of Zelda: Ocarina Of Time Remake In Absurd Ways",
+      "link": "https://kotaku.com/speedrunners-are-already-breaking-the-legend-of-zelda-ocarina-of-time-remake-in-absurd-ways-2000754878",
+      "date": "2026-11-08T16:52:15.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/zeldaocarinaspeedrunlunk-1280x768.jpg",
+      "summary": "In record time, the hunt for new speedrunning tech and sequence breaking is pushing Link to jump higher and look freakier",
       "tags": []
     },
     {
-      "title": "8 Near-Perfect BioWare Games That Aged Like Fine Wine",
-      "link": "https://www.polygon.com/top-bioware-games/",
-      "date": "2026-11-08T02:43:33.000Z",
+      "title": "Speedrunners Already Breaking The Legend of Zelda: Ocarina of Time's Remake",
+      "link": "https://www.polygon.com/ocarina-of-time-remake-speedrunning-actor-jumping/",
+      "date": "2026-11-08T16:32:01.000Z",
       "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/07/Neverwinter-Nights-2-Enhanced-Edition-cover-image-Shadow-King.jpg",
-      "summary": "From Baldur's Gate to a surprisingly good Sonic RPG, these 8 BioWare games still hold up decades later",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ocarina-of-time-happy-mask-bunny-hood.jpg",
+      "summary": "The addition of jumping to The Legend of Zelda: Ocarina of Time has enabled a new speedrunning trick",
+      "tags": []
+    },
+    {
+      "title": "Portal 2 ne devait pas avoir de portails et devait être un préquel : ce prototype est désormais jouable",
+      "link": "https://www.gamekult.com/actualite/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-3050872693.html",
+      "date": "2026-11-08T16:21:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872693/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-9e8269e3__800_800__507-0-1574-1066.png",
+      "summary": "L'été dernier, Valve a été quelque peu mis à mal avec le leak de plusieurs téras de données issus de Steam. Dedans, on y trouve un peu de tout quand on y cherche bien, y compris…",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time Is Guaranteed a GOTY Nomination. It Will Never Win",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-switch-2-remake-goty-game-awards/",
+      "date": "2026-11-08T16:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ns2_thelegendofzeldaocarinaoftime_scrn_11.png",
+      "summary": "Nintendo's Switch 2 remake of The Legend of Zelda: OoT will do well at The Game Awards 2026, but it can't win",
+      "tags": []
+    },
+    {
+      "title": "Quêtes annexes Zelda Ocarina of Time : Comment finir le remake Switch 2 à 100% ?",
+      "link": "https://www.jeuxvideo.com/news/2113330/quetes-annexes-zelda-ocarina-of-time-comment-finir-le-remake-switch-2-a-100.htm",
+      "date": "2026-11-08T16:00:13.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179415/1794152991-4706-card.jpg",
+      "summary": "Découvrez notre guide recensant toutes les plus grosses quêtes annexes du remake Switch 2 de Zelda OOT. A l'intérieur, vous retrouverez l'emplacement de tous les quarts de coeur…",
+      "tags": []
+    },
+    {
+      "title": "Dominic Armato, voice of Guybrush Threepwood, has always loved LucasArts' adventure games, but there's one he still can't get into: 'I get 10 minutes in and I'm like, oh, this is tedious, man'",
+      "link": "https://www.pcgamer.com/gaming-industry/dominic-armato-voice-of-guybrush-threepwood-has-always-loved-lucasarts-adventure-games-but-theres-one-he-still-cant-get-into-i-get-10-minutes-in-and-im-like-oh-this-is-tedious-man/",
+      "date": "2026-11-08T16:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/SUfuLuGeymJT2fTFnDZLj4-1920-80.jpg",
+      "summary": "The actor and food critic guides us through the games on his PC.",
+      "tags": []
+    },
+    {
+      "title": "The Legend Of Zelda: Ocarina of Time For Switch 2 Could Bring Back A Classic Mode",
+      "link": "https://www.polygon.com/ocarina-of-time-master-quest-switch-2/",
+      "date": "2026-11-08T15:38:32.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/the-legend-of-zelda-ocarina-of-time-goron-and-link.png",
+      "summary": "Master Quest might come to The Legend of Zelda: Ocarina of Time's Nintendo Switch 2 remake as DLC",
+      "tags": []
+    },
+    {
+      "title": "Test Turtle Beach Vulcan II XP : un clavier mécanique solide malgré quelques légers couacs",
+      "link": "https://fr.ign.com/turtle-beach-vulcan-ii-xp/93784/test-turtle-beach-vulcan-ii-xp-un-clavier-mecanique-solide-malgre-quelques-legers-couacs",
+      "date": "2026-11-08T15:31:36.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0814_akh8.jpg",
+      "summary": "Son confort, sa conception, et ses possibilités de personnalisation m&#x27;ont convaincu sur la durée, malgré quelques points à réajuster Avec le Vulcan II XP, Turtle Beach…",
+      "tags": []
+    },
+    {
+      "title": "Inspired by Dark Messiah and Thief, this stealth game sees you sneak through a medieval megastructure prowled by undead guards",
+      "link": "https://www.pcgamer.com/games/sim/inspired-by-dark-messiah-and-thief-this-stealth-game-sees-you-sneak-through-a-medieval-megastructure-prowled-by-undead-guards/",
+      "date": "2026-11-08T15:08:46.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/d2WvAanTYs5x843XGHNQi3-1920-80.jpg",
+      "summary": "The Citadel Project will be released next week.",
+      "tags": []
+    },
+    {
+      "title": "Assassin's Creed Hexe Reportedly Delayed As New Assassin's Creed Games Leak",
+      "link": "https://www.polygon.com/assassins-creed-hexe-delay-leak/",
+      "date": "2026-11-08T15:07:40.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/assassin-s-creed-codename-hexe-official-announcement-trailer-_-ubisoft-forward-2022-0-18-screenshot.jpg",
+      "summary": "Some new insider reporting has shed new light on the future of Assassin's Creed",
+      "tags": []
+    },
+    {
+      "title": "Magic’s Star Trek Set Doubles as a Must-Watch Guide to the Sci-Fi Franchise",
+      "link": "https://www.polygon.com/star-trek-magic-the-gathering-saga-cards-episodes/",
+      "date": "2026-11-08T15:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/worf-holds-at-bat-leth-in-art-from-magic-the-gathering-star-trek.jpg",
+      "summary": "From The Wrath of Khan to The Best of Both Worlds, discover the 14 Star Trek stories inspiring Magic: The Gathering's new Saga cards.",
+      "tags": []
+    },
+    {
+      "title": "23 développeurs se sont alliés pour faire ça : le jeu gratuit le plus étrange de l'année",
+      "link": "https://www.jeuxvideo.com/news/2110281/23-developpeurs-se-sont-allies-pour-faire-ca-le-jeu-gratuit-le-plus-etrange-de-l-annee.htm",
+      "date": "2026-11-08T15:00:15.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179266/1792661043-6504-card.jpg",
+      "summary": "Un curseur de volume a-t-il déjà ruiné votre journée ? Dirigé par le créateur de Buckshot Roulette, le projet loufoque de Volume.art transforme cette simple fonctionnalité en un…",
+      "tags": []
+    },
+    {
+      "title": "WoW: Forever is more than just a millennial retirement home",
+      "link": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-is-more-than-just-a-millennial-retirement-home/",
+      "date": "2026-11-08T15:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/GmfjPrH94zwSEoEpGw7Son-1920-80.png",
+      "summary": "Though bingo night IS poppin'.",
+      "tags": []
+    },
+    {
+      "title": "Pour la sortie de Zelda : Ocarina of Time, Google revient en 1998",
+      "link": "https://www.gamekult.com/actualite/pour-la-sortie-de-zelda-ocarina-of-time-google-revient-en-1998-3050872796.html",
+      "date": "2026-11-08T14:18:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872796/pour-la-sortie-de-zelda-ocarina-of-time-google-revient-en-1998-f0401247__800_800__0-0-889-889.png",
+      "summary": "Annoncé cet été et tout juste sorti sur Switch 2, Nintendo a fait les choses diablement bien pour le remake d'Ocarina of Time : une campagne marketing efficace, certainement pas à…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Bouclier Hylien Zelda Ocarina of Time : Comment l'obtenir gratuitement ?",
+      "link": "https://www.jeuxvideo.com/news/2113326/bouclier-hylien-zelda-ocarina-of-time-comment-l-obtenir-gratuitement.htm",
+      "date": "2026-11-08T14:15:11.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179415/1794146532-6453-card.jpg",
+      "summary": "Découvrez les différentes manières d'obtenir le célèbre Bouclier Hylien dans le remake Switch 2 de Zelda OOT. Que vous souhaitiez claquer des dizaines de rubis en ville, ou…",
+      "tags": []
+    },
+    {
+      "title": "Cairn 'Belongs' Next to Death Stranding in ‘History of Grand Adventure Games'",
+      "link": "https://www.polygon.com/cairn-game-bakers-interview/",
+      "date": "2026-11-08T14:05:44.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/cairn-lede-image.jpg",
+      "summary": "Cairn is the latest game from The Game Bakers, and though it looks like a sports game, it really has the spirit of an action-adventure game.",
+      "tags": []
+    },
+    {
+      "title": "This massive mod essentially turns Skyrim into a persistent MMO 'where player actions create lasting consequences'",
+      "link": "https://www.pcgamer.com/games/the-elder-scrolls/this-massive-mod-essentially-turns-skyrim-into-a-persistent-mmo-where-player-actions-create-lasting-consequences/",
+      "date": "2026-11-08T13:19:55.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/zcxc3uHvAH7FJr4rQrSwXE-1920-80.jpg",
+      "summary": "Aurbis converts Bethesda's fantasy adventure into a shared multiplayer world, with all the systems that entails.",
+      "tags": []
+    },
+    {
+      "title": "FM27 : quelles équipes choisir pour lancer sa carrière de manager ?",
+      "link": "https://www.jeuxvideo.com/news/2112931/fm27-quelles-equipes-choisir-pour-lancer-sa-carriere-de-manager.htm",
+      "date": "2026-11-08T12:40:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793955490-8991-card.jpg",
+      "summary": "Prendre place sur le banc de touche d'une nouvelle équipe s'apparente toujours à un grand saut dans l'inconnu. Que vous cherchiez un confort immédiat ou une reconstruction…",
+      "tags": []
+    },
+    {
+      "title": "Marty O'Donnell, compositeur de Halo et républicain, a perdu les élections de mi-mandat aux USA",
+      "link": "https://www.gamekult.com/actualite/marty-o-donnell-compositeur-de-halo-et-republicain-a-perdu-les-elections-de-mi-mandat-aux-usa-3050872793.html",
+      "date": "2026-11-08T12:17:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872793/marty-o-donnell-compositeur-de-halo-et-republicain-a-perdu-les-elections-de-mi-mandat-aux-usa-a6bcbb31__800_800__164-0-971-807.png",
+      "summary": "Marty O'Donnell, ce n'est pas n'importe qui dans l'industrie vidéoludique. Ce compositeur américain a cosigné la musique des deux premiers Myth, mais aussi des Halo (jusqu'à…",
+      "tags": []
+    },
+    {
+      "title": "As Wardogs Season 3 looms, Bulkhead claims to have built 'one of the world's most sophisticated anti-cheat systems', assisted by 'machine learning and AI'",
+      "link": "https://www.pcgamer.com/games/fps/as-wardogs-season-3-looms-bulkhead-claims-to-have-built-one-of-the-worlds-most-sophisticated-anti-cheat-systems-assisted-by-machine-learning-and-ai/",
+      "date": "2026-11-08T12:16:51.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/5X2trJGNeT8taFz3b56iPZ-1920-80.jpg",
+      "summary": "Season 3 also brings a new map and multi-path unlocks.",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time Beats The Elder Scrolls 5: Skyrim in One Major Way",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-better-than-elder-scrolls-skyrim/",
+      "date": "2026-11-08T12:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8669311/vlcsnap_00169.png",
+      "summary": "Ocarina of Time and The Elder Scrolls 5: Skyrim are two of the industry's biggest games, but their publishers have deployed them very differently.",
+      "tags": []
+    },
+    {
+      "title": "La couleur \"bleu 2000\" : pourquoi les jeux vidéo d'il y a 30 ans avaient tous un air de vacances ?",
+      "link": "https://www.jeuxvideo.com/news/2112971/la-couleur-bleu-2000-pourquoi-les-jeux-video-d-il-y-a-30-ans-avaient-tous-un-air-de-vacances.htm",
+      "date": "2026-11-08T11:50:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793959552-1655-card.jpg",
+      "summary": "Ciel d'azur éclatant, mers turquoise et plages ensoleillées. Dans les années 2000, les jeux vidéo avaient comme un air de vacances. Une direction artistique qu’on retrouvait sur…",
+      "tags": []
+    },
+    {
+      "title": "Matt Mercer's Best Critical Role Quote Is Still the Most Inspiring Line in D&D History",
+      "link": "https://www.polygon.com/matthew-mercer-dungeon-master-advice-dungeons-and-dragons/",
+      "date": "2026-11-08T11:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/critical-role-matt-mercer-hed.jpg",
+      "summary": "If you're looking to become a Dungeon Master, Matthew Mercer's advice is all you need.",
+      "tags": []
+    },
+    {
+      "title": "Zelda Ocarina of Time : le remake supprime cette petite surprise pourtant appréciée du jeu original",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/zelda-ocarina-of-time-remake-supprime-easter-egg-mario-726322?utm_source=RSS",
+      "date": "2026-11-08T11:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aeded505c36b.jpg",
+      "summary": "Zelda Ocarina of Time Remake aura finalement fait l'impasse sur un Easter Egg resté culte dans la version orginale. Ne cherchez plus ces portraits, ils ont été remplacés.",
+      "tags": []
+    },
+    {
+      "title": "68 Years Later, Peanuts’ Most Mysterious Character Is Finally Making Her Official Debut — But There's a Catch",
+      "link": "https://www.polygon.com/charlie-brown-pencil-pal-history-peanuts/",
+      "date": "2026-11-08T10:30:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/snoopy-unleashed-2027-apple-tv.jpg",
+      "summary": "\"Yeah, but Morag--\" Hang on, we're covering that",
+      "tags": []
+    },
+    {
+      "title": "Fortnite Treasure Hunters Images",
+      "link": "https://fr.ign.com/fortnite/93783/fortnite-treasure-hunters-images",
+      "date": "2026-11-08T10:29:16.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/f/fortnite-t/fortnite-treasure-hunters-images_m6rr.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Epic dévoile le taux d’apparition du jeton pirate de Fortnite suite à la pression exercée par les fans",
+      "link": "https://fr.ign.com/fortnite/93782/epic-devoile-le-taux-dapparition-du-jeton-pirate-de-fortnite-suite-a-la-pression-exercee-par-les-fan",
+      "date": "2026-11-08T10:29:16.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/e/epic-revea/epic-reveals-drop-rate-for-fortnites-pirate-token-following_6s5y.jpg",
+      "summary": "Bon à savoir.",
+      "tags": []
+    },
+    {
+      "title": "Les enfants qui ont beaucoup joué à Pokémon ont apparemment des cerveaux qui carburent",
+      "link": "https://www.gamekult.com/actualite/les-enfants-qui-ont-beaucoup-joue-a-pokemon-ont-apparemment-des-cerveaux-qui-carburent-3050872789.html",
+      "date": "2026-11-08T10:28:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872789/les-enfants-qui-ont-beaucoup-joue-a-pokemon-ont-apparemment-des-cerveaux-qui-carburent-c361226d__800_800__162-0-1162-1000.jpg",
+      "summary": "Des chercheurs de l'Université de Stanford viennent de publier une étude dans la revue Nature Human Behavior qui a de quoi retenir l'attention : les adultes ayant joué…",
+      "tags": []
+    },
+    {
+      "title": "New Game Plus Phantom Blade Zero : Comment débloquer un nouveau cycle ?",
+      "link": "https://www.jeuxvideo.com/news/2112331/new-game-plus-phantom-blade-zero-comment-debloquer-un-nouveau-cycle.htm",
+      "date": "2026-11-08T10:20:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179380/1793800907-4276-card.jpg",
+      "summary": "Le mode de jeu NG+ est une fonctionnalité populaire, et il est bien présent dans le jeu d'action Phantom Blade Zero. Découvrez où aller et que faire pour passer au cycle suivant…",
+      "tags": []
+    },
+    {
+      "title": "(EXCLU) « Si elle veut participer à Tomb Raider, qu’elle me contacte » Cette actrice adorée n'est pas dans Legacy of Atlantis et c'est la douche froide, mais tout n'est pas perdu",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/tomb-raider-legacy-of-atlantis-sarah-michelle-gellar-casting-declaration-726319?utm_source=RSS",
+      "date": "2026-11-08T10:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/717041_6a1fd939e4a05.jpg",
+      "summary": "Cette grande actrice ne sera peut-être pas Tomb Raider Legacy of Atlantis, mais Crystal Dynamics l’assure : la porte lui est grande ouverte pour un futur projet si elle le…",
+      "tags": []
+    },
+    {
+      "title": "À cause des faux arrêts maladie, la sortie de GTA 6 pourrait faire perdre 1 milliard de dollars à l'économie américaine en une seule journée",
+      "link": "https://www.jeuxvideo.com/news/2111049/a-cause-des-faux-arrets-maladie-la-sortie-de-gta-6-pourrait-faire-perdre-1-milliard-de-dollars-a-l-economie-americaine-en-une-seule-journee.htm",
+      "date": "2026-11-08T09:30:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179312/1793119280-7727-card.jpg",
+      "summary": "Pour le lancement de GTA 6 le 19 novembre, près de 1,5 million de salariés américains prévoient de poser un faux arrêt maladie. Cette épidémie de « GTA Flu » pourrait coûter 1…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Il n'est pas trop tard pour piquer une tête à la Y/Con",
+      "link": "https://fr.ign.com/ycon/93777/il-nest-pas-trop-tard-pour-piquer-une-tete-a-la-ycon",
+      "date": "2026-11-08T09:03:25.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/blob_jqdj.jpg",
+      "summary": "Le salon préféré de ton artiste Bluesky préféré Aujourd&#x27;hui, à Montreuil, se déroule le second jour de la Y/Con, évènement réjouissant qui met l&#x27;accent sur…",
+      "tags": []
+    },
+    {
+      "title": "Le PS Plus vous offre l'un des meilleurs opus de cette franchise légendaire, c'est le moment parfait pour le (re)découvrir",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-novembre-2026-tomb-raider-4-6-remastered-726313?utm_source=RSS",
+      "date": "2026-11-08T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/726313_6aeddb97544a2.jpg",
+      "summary": "À l’aube de l’arrivée de Tomb Raider: Legacy of Atlantis, le PS Plus fait un très beau cadeau à tous les abonnés au service, et vous auriez vraiment tort de ne pas en profiter.",
+      "tags": []
+    },
+    {
+      "title": "24 ans après, ce jeu Dragon Ball Z culte est gratuit pour tous et sans téléchargement",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/dragon-ball-z-budokai-gratuit-navigateur-726330?utm_source=RSS",
+      "date": "2026-11-08T08:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aedf7f015244.jpg",
+      "summary": "Retrouvez Goku et la Team Z gratuitement avec une nouveauté complètement inattendue après 24 ans pour le jeu de combat culte qu'est Dragon Ball Z Budokai.",
+      "tags": []
+    },
+    {
+      "title": "Prime Gaming vous offre encore un jeu gratuit à garder et très apprécié, mais dépêchez-vous",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-jeu-gratuit-rappel-conarium-726326?utm_source=RSS",
+      "date": "2026-11-08T08:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/456521_64f1b7cadbfcc.jpg",
+      "summary": "Prime Gaming (désormais Amazon Luna) s'apprête à faire le ménage dans ses jeux gratuits et un dernier rappel pour ce titre apprécié s'impose avant son départ du service dans peu…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Suikoden Tactics, le détour resté sans suite",
+      "link": "https://www.gamekult.com/actualite/suikoden-tactics-le-detour-reste-sans-suite-101-3050866606.html",
+      "date": "2026-11-08T08:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866606/suikoden-tactics-ou-l-art-d-etre-un-honnete-jeu-dans-la-mauvaise-serie-9d7f6dc6__800_800__320-0-1280-960.jpg",
+      "summary": "Spin-off oublié d’une série déjà sur le déclin, Suikoden Tactics n’a jamais vraiment trouvé sa place, ce malgré ses 20 de vie. Ni tout à fait un Suikoden, ni tout à fait un grand…",
+      "tags": []
+    },
+    {
+      "title": "Dans l'histoire, un seul jeu vidéo a réussi l'exploit d'être élu jeu de l'année par les critiques et par les joueurs",
+      "link": "https://www.jeuxvideo.com/news/2112955/dans-l-histoire-un-seul-jeu-video-a-reussi-l-exploit-d-etre-elu-jeu-de-l-annee-par-les-critiques-et-par-les-joueurs.htm",
+      "date": "2026-11-08T07:40:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793980089-2423-card.jpg",
+      "summary": "En 2023, ce jeu vidéo a réalisé l'impensable : rafler le titre de Jeu de l'Année (GOTY) dans l'intégralité des cérémonies majeures, tout en s'emparant du vote du public.",
+      "tags": []
+    },
+    {
+      "title": "PS Plus : tous les contenus gratuits à récupérer en novembre 2026 pour vos jeux préférés",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-cadeaux-gratuits-abonnes-novembre-2026-726325?utm_source=RSS",
+      "date": "2026-11-08T07:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/698820_6870fc8f6155c.jpg",
+      "summary": "En plus de ses traditionnels jeux gratuits, le PS Plus permet à l’ensemble de ses abonnés de récupérer plein de contenus gratuits en novembre 2026 grâce à leur abonnement.",
+      "tags": []
+    },
+    {
+      "title": "Un code percé pour le cadenas de l'épave, révélant un mystère vieux de 400 ans",
+      "link": "https://www.gameblog.fr/trends/un-code-perce-pour-le-cadenas-de-lepave-revelant-un-mystere-vieux-de-400-ans-726346?utm_source=RSS",
+      "date": "2026-11-08T07:00:53.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aef96925ef95.webp",
+      "summary": "Vingt ans d'échecs, trois scanners et un mécanisme à 1 296 combinaisons : voici comment un cadenas vieux de 400 ans vient de livrer un secret enfoui depuis un naufrage espagnol de…",
+      "tags": []
+    },
+    {
+      "title": "LEGO PlayStation, un set parfait pour les collectionneurs que les fans de longue date vont s'arracher",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/lego-playstation-presentation-726317?utm_source=RSS",
+      "date": "2026-11-08T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aede06aa3b5f.jpg",
+      "summary": "Alors qu'elle va fêter ses 32 ans en décembre prochain, la PlayStation renaît cette année grâce à un set LEGO plein de nostalgie. Un véritable indispensable pour les fans et les…",
+      "tags": []
+    },
+    {
+      "title": "Crimson Desert : on pensait que le DLC Charting the Unknown allait trop en faire, mais il nous a prouvé le contraire",
+      "link": "https://www.jeuxvideo.com/news/2113085/crimson-desert-on-pensait-que-le-dlc-charting-the-unknown-allait-trop-en-faire-mais-il-nous-a-prouve-le-contraire.htm",
+      "date": "2026-11-08T06:50:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793982029-9425-card.jpg",
+      "summary": "Sept mois après un lancement aussi fracassant que décrié, Crimson Desert, du haut de ses six millions de ventes et quelques, hisse les voiles avec Charting the Unknown, sa…",
+      "tags": []
+    },
+    {
+      "title": "Dans une eau à 2 °C, cette plongeuse a fait l'histoire en plongeant d’un iceberg de 15 mètres",
+      "link": "https://www.gameblog.fr/trends/dans-une-eau-a-2-c-cette-plongeuse-a-fait-lhistoire-en-plongeant-dun-iceberg-de-15-metres-726344?utm_source=RSS",
+      "date": "2026-11-08T06:30:35.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aef95db8d8ec.webp",
+      "summary": "Un iceberg de 15 mètres, une eau à 2 degrés et une femme qui défie ses peurs. Comment Molly Carlson a-t-elle vécu ce saut qu'elle qualifie elle-même de terrifiant ?",
+      "tags": []
+    },
+    {
+      "title": "Skulltula d'or Zelda Ocarina of Time : Où trouver les 100 collectibles du remake Switch 2 ?",
+      "link": "https://www.jeuxvideo.com/news/2113222/skulltulas-d-or-zelda-ocarina-of-time-ou-trouver-les-100-collectibles-du-remake-switch-2.htm",
+      "date": "2026-11-08T06:30:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179411/1794108603-5118-card.jpg",
+      "summary": "Découvrez l'emplacement des 100 skulltulas d'or du remake Switch 2 de Zelda OOT, la plus grosse quête fil rouge du jeu culte de Nintendo. Pour obtenir un quart de coeur et…",
+      "tags": []
+    },
+    {
+      "title": "Elon Musk fait tourner son centre de données IA avec des moteurs de Boeing 747 : des riverains excédés par la pollution saisissent les autorités",
+      "link": "https://www.gameblog.fr/trends/elon-musk-fait-tourner-son-centre-de-donnees-ia-avec-des-moteurs-de-boeing-747-des-riverains-excedes-par-la-pollution-saisissent-les-autorites-726342?utm_source=RSS",
+      "date": "2026-11-08T06:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6aef949f7374d.webp",
+      "summary": "Des moteurs de Boeing 747 retirés du désert pour alimenter l'IA de Musk : 1,2 GW, du formaldéhyde cancérogène et des riverains qui saturent. Jusqu'où ira cette course effrénée aux…",
       "tags": []
     },
     {
@@ -160,15 +542,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/DGA7LqKTtAjY5xuVxbZqUa-1920-80.jpg",
       "summary": "Sometimes it's you, sometimes it's the crab",
-      "tags": []
-    },
-    {
-      "title": "4 Years Later, Captain Pike's Most Inspiring Star Trek Quote Is Still the Best Sci-Fi Line of the Decade",
-      "link": "https://www.polygon.com/star-trek-captain-pike-most-inspiring-quote/",
-      "date": "2026-11-08T02:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/08/snw3_307_mg_03_27_24_00037_rt_f.jpg",
-      "summary": "Anson Mount's Captain Pike delivers a powerful Star Trek quote about hope, destiny, and why the future is still ours to shape.",
       "tags": []
     },
     {
@@ -187,24 +560,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/Y9Kr7JgAuyp7mudsm8uiRn-1920-80.png",
       "summary": "\"Pawn Chess\" is whatever you want it to be in Rulehouse.",
-      "tags": []
-    },
-    {
-      "title": "Cyberpunk 2077 Meets Papers, Please in Steam’s Latest Surprise Viral Hit",
-      "link": "https://www.polygon.com/probably-stolen-cyberpunk-shopkeeping-simulator-steam-hit/",
-      "date": "2026-11-08T00:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/probably-stolen-steam-hit-header.jpg",
-      "summary": "Probably Stolen is the latest indie game to explode in popularity on Steam, pulling in over 150,000 concurrent players, and it's showing no signs of s",
-      "tags": []
-    },
-    {
-      "title": "Fortune treasure hours schedule in the Fortnite Chapter 7 mini season",
-      "link": "https://www.polygon.com/fornite-treasure-hours-chapter-7-mini-season-c7ms/",
-      "date": "2026-11-07T23:40:59.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261105_1001_fn_treasurehour.jpg",
-      "summary": "Here's what time you can expect the next batch of Fortnite treasure hours, as well as what bonuses are coming with them.",
       "tags": []
     },
     {
@@ -235,15 +590,6 @@
       "tags": []
     },
     {
-      "title": "All Gold Skulltula locations in Ocarina of Time",
-      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-gold-skulltula-token-locations-where-to-find/",
-      "date": "2026-11-07T21:41:33.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gold-skulltula_oot.jpg",
-      "summary": "Gold Skulltulas are a collectible in Ocarina of Time, but they're also needed for a cursed family. Here's where to find every Gold Skulltula.",
-      "tags": []
-    },
-    {
       "title": "AI Stuffy Says &#8216;I Can&#8217;t Help With Killing You&#8217; Completely Unprompted",
       "link": "https://kotaku.com/ai-stuffy-says-i-cant-help-with-killing-you-completely-unprompted-2000754819",
       "date": "2026-11-07T21:30:17.000Z",
@@ -262,30 +608,12 @@
       "tags": []
     },
     {
-      "title": "5 Incredible Anime Arcs That Are 10/10, No Notes",
-      "link": "https://www.polygon.com/perfect-anime-arcs-everyone-needs-to-watch/",
-      "date": "2026-11-07T21:04:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/mob-psycho-scary-painting.webp",
-      "summary": "These anime storylines elevate these five series with thrilling character developments and satisfying resolutions.",
-      "tags": []
-    },
-    {
       "title": "New Stellar Blade Ad Gives Fans Plenty To Talk About With Therapist",
       "link": "https://kotaku.com/new-stellar-blade-ad-gives-fans-plenty-to-talk-about-with-therapist-2000754823",
       "date": "2026-11-07T21:03:27.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/stellarbladead-1280x821.jpg",
       "summary": "A live action, throwback ad campaign features Eve tucking people in, reading bed time stories, and YouTube commenters wishing it were them",
-      "tags": []
-    },
-    {
-      "title": "Commander Shepard’s Actor Accidentally Immortalized One Mass Effect Race as Steve Buscemi",
-      "link": "https://www.polygon.com/mass-effect-commander-shepard-mark-meer-interview/",
-      "date": "2026-11-07T21:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7675959/mass_effect_2.jpg",
-      "summary": "Polygon spoke to Mass Effect's Mark Meer about how he joined the series and how he and fellow Shepard Jennifer Hale defined the character.",
       "tags": []
     },
     {
@@ -370,60 +698,6 @@
       "tags": []
     },
     {
-      "title": "How Modders Spent Three Years Remastering Mass Effect 3&#8217;s Fantastic Multiplayer For Legendary Edition: ‘Let’s Do Something Stupid’",
-      "link": "https://kotaku.com/mass-effect-3-multiplayer-legendary-edition-mod-me3tweaks-2000754691",
-      "date": "2026-11-07T17:00:29.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/me3mplead-1280x720.jpg",
-      "summary": "The ME3Tweaks Legendary Edition mod is out today for N7 Day",
-      "tags": []
-    },
-    {
-      "title": "What's the toughest choice you've made in an RPG?",
-      "link": "https://www.pcgamer.com/games/rpg/whats-the-toughest-choice-youve-made-in-an-rpg/",
-      "date": "2026-11-07T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ahPWtukZQkroGgxFKvPUZT-1920-80.jpg",
-      "summary": "Unburden yourself.",
-      "tags": []
-    },
-    {
-      "title": "Game and watch - Le groupe de rock My Chemical Romance invite Hideo Kojima dans son bien joli court-métrage",
-      "link": "https://www.gamekult.com/actualite/le-groupe-de-rock-my-chemical-romance-invite-hideo-kojima-dans-son-bien-joli-court-metrage-3050872784.html",
-      "date": "2026-11-07T16:37:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872784/le-groupe-de-rock-my-chemical-romance-invite-hideo-kojima-dans-son-bien-joli-court-metrage-ef60c012__800_800__364-0-1445-1080.jpg",
-      "summary": "Bien occupé avec moult projets sur le feu, Hideo Kojima trouve aussi le temps de collaborer avec quelques prestigieuses personnalités quand l'occasion se présente. Le groupe My…",
-      "tags": []
-    },
-    {
-      "title": "Les images de la suite de ce jeu vidéo noté 90%  viennent de fuiter, mais il y a un problème",
-      "link": "https://www.jeuxvideo.com/news/2112279/les-images-de-la-suite-de-ce-jeu-video-note-90-viennent-de-fuiter-mais-il-y-a-un-probleme.htm",
-      "date": "2026-11-07T16:15:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793978181-5642-card.jpg",
-      "summary": "Un trésor vidéoludique caché depuis près de 20 ans vient brutalement de refaire surface sur la toile. F-Stop, le mythique préquel annulé de Portal, est désormais entièrement…",
-      "tags": []
-    },
-    {
-      "title": "Sony Indefinitely Delays Another PlayStation Accessory Just A Week Before Launch",
-      "link": "https://kotaku.com/sony-delays-wireless-playstation-pulse-speakers-a-week-away-from-launch-2000754806",
-      "date": "2026-11-07T15:59:42.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/pspulsespeaker-1280x720.jpg",
-      "summary": "Sony cites a 'production issue' as hardware shortages stymie what would have been an otherwise whirlwind holiday season for the console",
-      "tags": []
-    },
-    {
-      "title": "Test beyerdynamic MMX 130 Wireless : un casque gaming ouvert qui va droit à l'essentiel",
-      "link": "https://fr.ign.com/beyerdynamic-mmx-130/93775/test-beyerdynamic-mmx-130-wireless-un-casque-gaming-ouvert-qui-va-droit-a-lessentiel",
-      "date": "2026-11-07T15:32:55.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0822_gy52.jpg",
-      "summary": "Avec le MMX 130 Wireless, beyerdynamic mise sur l&#x27;essentiel : une restitution sonore convaincante dès la sortie du carton, un excellent confort et une belle polyvalence, le…",
-      "tags": []
-    },
-    {
       "title": "The AI clone wars and fake mobile game ads | Week in Mobile Games podcast",
       "link": "https://www.pocketgamer.biz/the-ai-clone-wars-week-in-mobile-games-podcast/",
       "date": "2026-11-07T15:21:00.000Z",
@@ -442,302 +716,12 @@
       "tags": []
     },
     {
-      "title": "Quarts de coeur Zelda Ocarina of Time : Où trouver tous les fragments du remake Switch 2 ?",
-      "link": "https://www.jeuxvideo.com/news/2113161/quarts-de-coeur-zelda-ocarina-of-time-ou-trouver-tous-les-fragments.htm",
-      "date": "2026-11-07T15:17:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179406/1794064357-5631-card.jpg",
-      "summary": "Découvrez l'emplacement de tous les quarts de coeur zone par zone dans le remake Switch 2 de Zelda OOT. Cela vous permettra de compléter entièrement les points de vie de Link, une…",
-      "tags": []
-    },
-    {
       "title": "The good, bad and the ugly of AI in games",
       "link": "https://www.pocketgamer.biz/the-good-bad-and-the-ugly-of-ai-in-games/",
       "date": "2026-11-07T15:16:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/131443/90200/artificial-intelligence-ai-image_l660.jpg",
       "summary": "This article was first published in the PocketGamer.biz newsletter. Subscribe for more content like this straight to your inbox here - you'll even get discounts on PGC events. The…",
-      "tags": []
-    },
-    {
-      "title": "No Man's Sky : mais comment fait le studio pour proposer des mises à jour gratuites depuis 10 ans ?",
-      "link": "https://www.jeuxvideo.com/news/2113011/no-man-s-sky-mais-comment-fait-le-studio-pour-proposer-des-mises-a-jour-gratuites-depuis-10-ans.htm",
-      "date": "2026-11-07T15:00:11.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179397/1793971560-9734-card.jpg",
-      "summary": "Près de dix ans après son lancement chaotique, No Man's Sky continue de déployer d'immenses mises à jour sans jamais réclamer un centime de plus. Sans passe de combat ni boutique…",
-      "tags": []
-    },
-    {
-      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
-      "link": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
-      "date": "2026-11-07T15:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/eyYchBd274FJCGzgDdyxyT-1920-80.jpg",
-      "summary": "I recommend openSUSE Tumbleweed, personally.",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye… at least for now'",
-      "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
-      "date": "2026-11-07T15:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VuYAMFPN58skETzPcrxBkY-1920-80.jpg",
-      "summary": "Hulick also revealed that he was asked by BioWare to score an internal demo for Mass Effect: Universe—but work was cut short by the studio's closure.",
-      "tags": []
-    },
-    {
-      "title": "Chateau de Ganondorf Zelda Ocarina of Time : Comment finir ce donjon et battre le boss de fin ?",
-      "link": "https://www.jeuxvideo.com/news/2112429/chateau-de-ganondorf-zelda-ocarina-of-time-comment-finir-ce-donjon-et-battre-le-boss-de-fin.htm",
-      "date": "2026-11-07T14:30:05.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179383/1793828566-8372-card.jpg",
-      "summary": "C'est le moment d'écrire le dernier chapitre de ce remake Switch 2 de Zelda OOT avec notre soluce du donjon final et du combat contre le fameux boss de fin. Préparez-vous pour un…",
-      "tags": []
-    },
-    {
-      "title": "\"Les mods générés par l'IA sont les bienvenus\" sur Nexus Mods, mais à la condition d'une totale transparence",
-      "link": "https://www.gamekult.com/actualite/les-mods-generes-par-l-ia-sont-les-bienvenus-sur-nexus-mods-mais-a-la-condition-d-une-totale-transparence-3050872778.html",
-      "date": "2026-11-07T14:21:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872778/les-mods-generes-par-l-ia-sont-les-bienvenus-sur-nexus-mods-mais-a-la-condition-d-une-totale-transparence-19a187bd__800_800__175-0-710-535.png",
-      "summary": "Plateforme de référence pour le modding sur PC, Nexus Mods fait partie des sites majeurs du paysage vidéoludique et, comme tant d'autres, il lui est difficile de faire l'impasse…",
-      "tags": []
-    },
-    {
-      "title": "Todd Howard's game design power is knowing when to make things 'simple and digestible' according to Skyrim's lead designer",
-      "link": "https://www.pcgamer.com/games/the-elder-scrolls/todd-howards-game-design-power-is-knowing-when-to-make-things-simple-and-digestible-according-to-skyrims-lead-designer/",
-      "date": "2026-11-07T14:16:28.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/2tZ8acjKKVc9o26nuhBAEi-1920-80.jpg",
-      "summary": "Howard is \"very good at putting himself in the seat of your typical player\" says Bruce Nesmith.",
-      "tags": []
-    },
-    {
-      "title": "Temple de l'Esprit Zelda Ocarina of Time : Comment finir ce donjon ?",
-      "link": "https://www.jeuxvideo.com/news/2112394/temple-de-l-esprit-zelda-ocarina-of-time-comment-finir-ce-donjon.htm",
-      "date": "2026-11-07T13:30:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179383/1793826963-3544-card.jpg",
-      "summary": "Le colosse atteint, on part à l'assaut du dernier donjon du remake Switch 2 de Zelda OOT avant le château de Ganondorf. Bienvenue dans le Temple de l'Esprit, un dédale dans lequel…",
-      "tags": []
-    },
-    {
-      "title": "Ruines de Lordaeron WoW Forever : Comment finir ce nouveau donjon de la Horde ?",
-      "link": "https://www.jeuxvideo.com/news/2109836/ruines-de-lordaeron-wow-forever-comment-finir-ce-nouveau-donjon-de-la-horde.htm",
-      "date": "2026-11-07T12:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179257/1792569731-9808-card.jpg",
-      "summary": "Ce nouveau donjon de World of Warcraft Forever devrait faire très plaisir aux fans de Warcraft 3, puisqu'il permet aux fans de la série de découvrir les ruines au-dessus…",
-      "tags": []
-    },
-    {
-      "title": "After furloughing its developers and then hiring some of them back, Star Wars Zero Company developer has laid off an unspecified number of staff",
-      "link": "https://www.pcgamer.com/games/strategy/after-furloughing-its-developers-and-then-hiring-some-of-them-back-star-wars-zero-company-developer-has-laid-off-an-unspecified-number-of-staff/",
-      "date": "2026-11-07T12:18:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QzGk2ZJyUzdTRQXxUM2RhW-1920-80.png",
-      "summary": "\"While it stings, I'm really proud of what we built together.\"",
-      "tags": []
-    },
-    {
-      "title": "Un fan propose 5 millions de dollars à Ubisoft pour relancer Prince of Persia : Les Sables du Temps",
-      "link": "https://www.gamekult.com/actualite/un-fan-propose-5-millions-de-dollars-a-ubisoft-pour-relancer-prince-of-persia-les-sables-du-temps-3050872776.html",
-      "date": "2026-11-07T12:10:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872776/un-fan-propose-5-millions-de-dollars-a-ubisoft-pour-relancer-prince-of-persia-les-sables-du-temps-65010cf7__800_800__90-0-990-900.jpg",
-      "summary": "Il y a des histoires que l'on peine à avaler : celle du remake de Prince of Persia : Les Sables du Temps est visiblement restée en travers de la gorge d'un fan fortuné, qui vient…",
-      "tags": []
-    },
-    {
-      "title": "Louer une PS5 pour jouer à GTA 6 : une bonne idée ? Prix, options, notre comparatif face à l'achat",
-      "link": "https://www.jeuxvideo.com/news/2112991/louer-une-ps5-pour-jouer-a-gta-6-une-bonne-idee-prix-options-notre-comparatif-face-a-l-achat.htm",
-      "date": "2026-11-07T11:50:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793963028-1983-card.jpg",
-      "summary": "Louer une PS5 pour jouer à GTA 6 s'avère tentant pour alléger la facture immédiate. Mais entre les engagements de plusieurs années et les pénalités d'usure, est-ce un bon calcul…",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect N7 Wearable LED Helmet en images",
-      "link": "https://fr.ign.com/gallery/93774/mass-effect-n7-wearable-led-helmet-images",
-      "date": "2026-11-07T11:45:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/m/mass-effec/mass-effect-n7-wearable-led-helmet-images_ghs8.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect n’est plus, mais la boutique officielle de Bioware continue de proposer de nouveaux produits dérivés à l’occasion du N7 Day",
-      "link": "https://fr.ign.com/mass-effect-3/93773/mass-effect-nest-plus-mais-la-boutique-officielle-de-bioware-continue-de-proposer-de-nouveaux-produi",
-      "date": "2026-11-07T11:45:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/m/mass-effec/mass-effect-is-dead-but-the-official-bioware-store-is-still_hnxf.jpg",
-      "summary": "Ma boutique préférée de la Citadelle.",
-      "tags": []
-    },
-    {
-      "title": "Forteresse Gerudo Zelda Ocarina of Time : Comment atteindre le Temple de l'Esprit ?",
-      "link": "https://www.jeuxvideo.com/news/2112388/forteresse-gerudo-zelda-ocarina-of-time-comment-atteindre-le-temple-de-l-esprit.htm",
-      "date": "2026-11-07T11:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179382/1793818389-5707-card.jpg",
-      "summary": "Le Temple de l'Ombre derrière vous, il est désormais temps de s'attaquer à la région des Gerudo du remake Switch 2 de Zelda OOT. Le désert et la forteresse vous tendent les bras…",
-      "tags": []
-    },
-    {
-      "title": "Nier: Automata developer is 'currently investigating' a bizarre update bug that drastically inflated the game's file size from 50GB to 366GB",
-      "link": "https://www.pcgamer.com/games/rpg/nier-automata-developer-is-currently-investigating-a-bizarre-update-bug-that-drastically-inflated-the-games-file-size-from-50gb-to-366gb/",
-      "date": "2026-11-07T11:15:54.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/k598NBBJiCSKJrL33QJRvC-1920-80.jpg",
-      "summary": "Square Enix is 'working to resolve the issue'.",
-      "tags": []
-    },
-    {
-      "title": "Robert Pattinson aurait passé un casting pour le rôle de 007 dans James Bond 26",
-      "link": "https://fr.ign.com/james-bond-26/93770/robert-pattinson-aurait-passe-un-casting-pour-le-role-de-007-dans-james-bond-26",
-      "date": "2026-11-07T11:00:30.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/r/robert-pat/robert-pattinson-reportedly-screen-tested-for-007-in-james-b_q5xx.jpg",
-      "summary": "Nicholas Hoult, du film Superman, pourrait également être en lice.",
-      "tags": []
-    },
-    {
-      "title": "Baldur's Gate 3 accueille du contenu gratuit qui rend hommage à l'un des plus grands jeux de tous les temps",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/baldurs-gate-3-mod-campagne-reprouves-wow-726321?utm_source=RSS",
-      "date": "2026-11-07T11:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/472292_65152cb960eda.jpg",
-      "summary": "Grâce à une énorme création de fan disponible gratuitement, Baldur's Gate 3 rend à sa façon un bel hommage à un véritable monument du RPG massivement célèbre.",
-      "tags": []
-    },
-    {
-      "title": "Ubisoft veut \"traiter les joueurs comme des rois\" : ne pas jouer à GTA 6 à sa sortie sera récompensé dans Rainbow Six Siege",
-      "link": "https://www.gamekult.com/actualite/ubisoft-veut-traiter-les-joueurs-comme-des-rois-ne-pas-jouer-a-gta-6-a-sa-sortie-sera-recompense-dans-rainbow-six-siege-3050872694.html",
-      "date": "2026-11-07T10:29:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872694/ubisoft-veut-traiter-les-joueurs-comme-des-rois-ne-pas-jouer-a-gta-6-a-sa-sortie-sera-recompense-dans-rainbow-six-siege-cb3c2f99__800_800__489-0-1569-1080.jpg",
-      "summary": "GTA 6 arrivera le 19 novembre et le marché se doit de s'y adapter. La plupart des studios ont choisi de laisser le champ libre à la production de Rockstar, tandis que quelques…",
-      "tags": []
-    },
-    {
-      "title": "Salle des Thanes WoW Forever : Comment finir ce nouveau donjon de l'Alliance ?",
-      "link": "https://www.jeuxvideo.com/news/2109837/salle-des-thanes-wow-forever-comment-finir-ce-nouveau-donjon-de-l-alliance.htm",
-      "date": "2026-11-07T10:20:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179257/1792569623-4356-card.jpg",
-      "summary": "Découvrez tout ce qu'il y a à savoir sur le nouveau donjon de la Salle des Thanes dans WoW Forever, une instance qui se trouve dans la capitale des Nains. Prévu pour les bas…",
-      "tags": []
-    },
-    {
-      "title": "Le premier niveau 60 de World of Warcraft Forever atteint trois jours après le lancement",
-      "link": "https://fr.ign.com/world-of-warcraft-forever/93772/le-premier-niveau-60-de-world-of-warcraft-forever-atteint-trois-jours-apres-le-lancement",
-      "date": "2026-11-07T10:07:22.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/w/world-of-w/world-of-warcraft-forever-world-first-level-60-character-hit_5b3a.jpg",
-      "summary": "Le marathon commence.",
-      "tags": []
-    },
-    {
-      "title": "(EXCLU) « C’est tellement plus amusant » Tomb Raider Legacy of Atlantis ne sera pas un simple remake, les développeurs nous ont confirmés plein de surprises",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/tomb-raider-legacy-of-atlantis-reinvention-nouveautes-surprises-fans-726305?utm_source=RSS",
-      "date": "2026-11-07T10:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/714277_69d4b57fdad4b.jpg",
-      "summary": "Bien plus qu’un simple remake du premier Tomb Raider, Legacy of Atlantis promet également d’offrir son lot de nouveautés à découvrir pour les fans de la première heure.",
-      "tags": []
-    },
-    {
-      "title": "Temple de l'Ombre Zelda Ocarina of Time : Comment finir ce donjon ?",
-      "link": "https://www.jeuxvideo.com/news/2112349/temple-de-l-ombre-zelda-ocarina-of-time-comment-finir-ce-donjon.htm",
-      "date": "2026-11-07T09:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179380/1793803790-5746-card.jpg",
-      "summary": "Découvrez le cheminement du Temple de l'Ombre, l'un des donjons principaux les plus difficiles du remake Switch 2 de Zelda OOT. Pour le traverser, vous devrez bien utiliser vos…",
-      "tags": []
-    },
-    {
-      "title": "Abandonnée pendant 30 heures, cette IA s'est mise à créer des jeux vidéo pour s'occuper",
-      "link": "https://www.jeuxvideo.com/news/2112467/abandonnee-pendant-30-heures-cette-ia-s-est-mise-a-creer-des-jeux-video-pour-s-occuper.htm",
-      "date": "2026-11-07T09:30:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179387/1793873278-5110-card.jpg",
-      "summary": "Abandonner une intelligence artificielle sur une île déserte pendant 30 heures sans aucune directive ? Des chercheurs du MIT l'ont fait avec le modèle Claude Opus 4.7. Pour…",
-      "tags": []
-    },
-    {
-      "title": "Tomb Raider Legacy of Atlantis : histoire, nouveautés, gameplay... Tout savoir sur le grand retour de Lara Croft",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/tomb-raider-legacy-of-atlantis-tout-savoir-faq-726218?utm_source=RSS",
-      "date": "2026-11-07T09:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/707643_693c1f935f12f.jpg",
-      "summary": "Vous attendez avec impatience le grand retour de Lara Croft ? On vous dit tout ce qu’il faut savoir sur sa prochaine aventure à venir en 2027, Tomb Raider Legacy of Atlantis.",
-      "tags": []
-    },
-    {
-      "title": "Ces promos Xbox sont dingues : notre top 10 des jeux incontournables (et à prix cassés) à ne pas rater",
-      "link": "https://www.jeuxvideo.com/news/2113007/ces-promos-xbox-sont-dingues-notre-top-10-des-jeux-incontournables-et-a-prix-casses-a-ne-pas-rater.htm",
-      "date": "2026-11-07T08:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793975543-1016-card.jpg",
-      "summary": "Avec la sortie de GTA 6 et le retour d'Ocarina of Time, nos comptes en banque risquent de se rappeler de ce mois de novembre 2026. Heureusement, Microsoft brade plus de 1 200 jeux…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Fond du puits Zelda Ocarina of Time : Comment accéder au Temple de l'Ombre ?",
-      "link": "https://www.jeuxvideo.com/news/2112330/fond-du-puits-zelda-ocarina-of-time-comment-acceder-au-temple-de-l-ombre.htm",
-      "date": "2026-11-07T08:30:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179380/1793802417-59-card.jpg",
-      "summary": "Une fois que le problème des Zora en Link adulte est réglé, dans le remake Switch 2 de Ocarina of Time, vous verrez que de la fumée sort du Village Cocorico. Allez directement sur…",
-      "tags": []
-    },
-    {
-      "title": "« Sans vouloir manquer de respect » The Elder Scrolls 6 ne fera jamais aussi fort que GTA 6 selon cet expert",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-elder-scrolls-6-impact-analyse-gta-6-726315?utm_source=RSS",
-      "date": "2026-11-07T08:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/410941_6384c899c29e2.jpg",
-      "summary": "Après l'arrivée imminente de GTA 6, celle bien plus lointaine de The Elder Scrolls 6 aura-t-elle un impact culturel aussi fort ? Absolument pas, selon un expert spécialisé dans le…",
-      "tags": []
-    },
-    {
-      "title": "Rockstar commence enfin à lâcher les chevaux : voici GTA 6 sous toutes les coutures",
-      "link": "https://www.gamekult.com/actualite/rockstar-commence-enfin-a-lacher-les-chevaux-voici-gta-6-sous-toutes-les-coutures-3050872838.html",
-      "date": "2026-11-07T08:11:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872838/rockstar-commence-enfin-a-lacher-les-chevaux-voici-gta-6-sous-toutes-les-coutures-75abdef8__800_800__660-0-2821-2160.jpg",
-      "summary": "Les jours passent et l'embrasement s'accentue progressivement, menant jusqu'à l'apocalypse prévue du 19 novembre : par hype pure ou par simple curiosité, vous reprendrez donc bien…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : 7 choses qu'on attend le plus et qui pourraient rendre le jeu vraiment unique",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/gta-6-7-attentes-predictions-experience-unique-726306?utm_source=RSS",
-      "date": "2026-11-07T08:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bdbf4ab9b.jpg",
-      "summary": "Alors que sa sortie est désormais imminente, voici 10 choses qu'on attend dans GTA 6 pour que le jeu phénomène de Rockstar nous offre une expérience unique.",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - GoldenEye 007, quand le FPS a changé de dimension sur console",
-      "link": "https://www.gamekult.com/actualite/goldeneye-007-quand-le-fps-a-change-de-dimension-sur-console-101-3050866583.html",
-      "date": "2026-11-07T08:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866583/goldeneye-007-28-ans-apres-les-diamants-sont-toujours-eternels-f87570aa__800_800__442-0-1523-1080.jpg",
-      "summary": "Il y a 29 ans jour pour jour, l'agent très spécial 007 revenait au service de sa Majesté sur nos Nintendo 64 avec la sortie européenne de GoldenEye 007. Comment ne pas reparler en…",
-      "tags": []
-    },
-    {
-      "title": "PS Plus : plein d'avantages et de nouveautés gratuites sont dispo dès maintenant, et sans hausse de prix",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-avantages-reductions-essais-gratuits-abonnes-726332?utm_source=RSS",
-      "date": "2026-11-07T07:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/407846_6347e7a4708a6.jpg",
-      "summary": "Vous disposez d’un abonnement au PS Plus ? Grâce à celui-ci, profitez dès maintenant d’une série d’avantages supplémentaires, avec des réductions et différents essais gratuits.",
       "tags": []
     },
     {
@@ -750,122 +734,12 @@
       "tags": []
     },
     {
-      "title": "Zelda Ocarina of Time : 6 choses qui changent complètement de l'original et qu'on adore",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/zelda-ocarina-of-time-remake-switch-2-6-changements-quon-adore-726307?utm_source=RSS",
-      "date": "2026-11-07T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6aedcfe14316e.jpg",
-      "summary": "Zelda Ocarina of Time Remake est enfin sorti ; les joueuses et joueurs Nintendo Switch 2 découvrent ainsi toutes les nouveautés et les changements qui font une vraie différence…",
-      "tags": []
-    },
-    {
-      "title": "Zelda Ocarina of Time sur Switch 2 : Nintendo a gardé les temps de chargement pour faire comme à l'époque, mais ont-il vraiment eu le choix ?",
-      "link": "https://www.jeuxvideo.com/news/2113129/zelda-ocarina-of-time-sur-switch-2-nintendo-a-garde-les-temps-de-chargement-pour-faire-comme-a-l-epoque-mais-ont-il-vraiment-eu-le-choix.htm",
-      "date": "2026-11-07T06:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179399/1793985392-4274-card.jpg",
-      "summary": "Sorti le 5 novembre 2026 sur Nintendo Switch 2, le remake de The Legend of Zelda : Ocarina of Time déchaîne déjà les passions. 28 ans après la sortie du jeu original, le maintien…",
-      "tags": []
-    },
-    {
-      "title": "Ce bébé macaque abandonné dans un zoo japonais s'accroche à une peluche comme à une mère : les vétérinaires disent que c'est un réflexe de survie",
-      "link": "https://www.gameblog.fr/trends/ce-bebe-macaque-abandonne-dans-un-zoo-japonais-saccroche-a-une-peluche-comme-a-une-mere-les-veterinaires-disent-que-cest-un-reflexe-de-survie-726340?utm_source=RSS",
-      "date": "2026-11-07T06:30:44.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6aeec3e945034.webp",
-      "summary": "Abandonné par sa mère, un bébé macaque a trouvé du réconfort dans une peluche IKEA. Son attachement a ému des milliers de personnes en ligne. Son histoire, entre fragilité et…",
-      "tags": []
-    },
-    {
-      "title": "Ultime bafouille - Mass Effect et BioWare sacrifiés : pourquoi ce N7 Day sera le plus amer de l'histoire",
-      "link": "https://www.gamekult.com/actualite/mass-effect-et-bioware-sacrifies-pourquoi-ce-n7-day-sera-le-plus-amer-de-l-histoire-3050872834.html",
-      "date": "2026-11-07T05:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872834/mass-effect-et-bioware-sacrifies-pourquoi-ce-n7-day-sera-le-plus-amer-de-l-histoire-76db24c5__800_800__435-0-1514-1080.jpg",
-      "summary": "D’ordinaire, le 7 novembre est une date que je coche sur mon calendrier avec la ferveur d’un gosse, prêt à enfiler mon sweat N7 pour célébrer l’héritage du commandant Shepard et…",
-      "tags": []
-    },
-    {
       "title": "October 2026’s top new PC & console games, revealed...",
       "link": "https://newsletter.gamediscover.co/p/october-2026s-top-new-pc-and-console",
       "date": "2026-11-06T20:13:13.000Z",
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/fetch/$s_!H2Xm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8a91365-9896-44c4-8593-f5bbad058922_1900x1069.jpeg",
       "summary": "Also: this week on Steam & lots of discovery news.",
-      "tags": []
-    },
-    {
-      "title": "Report: Silver Lake and PIF explore $25bn deal to acquire Unity",
-      "link": "https://www.pocketgamer.biz/silver-lake-and-pif-explore-25bn-deal-to-acquire-unity/",
-      "date": "2026-11-06T15:55:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142059/90185/silver-lake-and-pif-explore-25bn-deal-to-acquire-unity_l660.jpg",
-      "summary": "Silver Lake and Saudi Arabia's Public Investment Fund (PIF) have reportedly held talks to acquire Unity in a deal that could value the game engine and ads firm at around $25…",
-      "tags": []
-    },
-    {
-      "title": "Shinobi Group launches games agency and Smurfs project with Peyo",
-      "link": "https://www.pocketgamer.biz/shinobi-group-launches-games-agency-and-smurfs-project-with-peyo/",
-      "date": "2026-11-06T15:50:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142061/90187/shinobi-group-launches-games-agency-and-smurfs-project-with-peyo_l660.jpg",
-      "summary": "Shinobi Group has launched a new digital games agency to help entertainment brands bring their intellectual properties into video games. Games industry veterans Wally Nguyen and…",
-      "tags": []
-    },
-    {
-      "title": "New release roundup: NBA 2K Arcade Edition, Astro Burn, The Farmer Was Replaced, and more",
-      "link": "https://www.pocketgamer.biz/new-release-roundup-nba-2k-arcade-edition-astro-burn-the-farmer-was-replaced-and-more/",
-      "date": "2026-11-06T15:45:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142058/90184/new-mobile-games-november-1-2026_l660.jpg",
-      "summary": "While the deals and the stats of the gaming world are important, nothing would happen without the research, funding and, of course, development that goes into making a great game…",
-      "tags": []
-    },
-    {
-      "title": "New game digest: Honkai: Nexus Anima, WB All Star Mayhem, Crossy Road, Red Dead, Vampirio, more",
-      "link": "https://mobilegamer.biz/new-game-digest-honkai-nexus-anima-wb-all-star-mayhem-crossy-road-red-dead-vampirio-more/",
-      "date": "2026-11-06T12:14:33.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "There's also another new Genshin Impact-like RPG and a load of indie games in this week's round-up.",
-      "tags": []
-    },
-    {
-      "title": "The Saudi-led consortium that bought EA is in talks to acquire Unity, says Reuters",
-      "link": "https://mobilegamer.biz/the-saudi-led-consortium-that-bought-ea-is-in-talks-to-acquire-unity-says-reuters/",
-      "date": "2026-11-06T09:25:53.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "A potential $25bn deal was discussed before Unity’s latest earnings report, according to Reuters sources.",
-      "tags": []
-    },
-    {
-      "title": "Supercell launches GTA VI-inspired Brawl Vice season for Brawl Stars",
-      "link": "https://www.pocketgamer.biz/supercell-launches-gta-vi-inspired-brawl-vice-season-for-brawl-stars/",
-      "date": "2026-11-06T08:46:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142063/90189/brawl-stars-gta-6_l660.jpg",
-      "summary": "Supercell has launched Brawl Vice, a new season for Brawl Stars, that appears to draw inspiration from GTA VI, alongside a major ranked overhaul and new characters. The company…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Kabam reveals mobile RPG bringing together nine Warner Bros. animated franchises",
-      "link": "https://www.pocketgamer.biz/kabam-reveals-mobile-rpg-bringing-together-nine-warner-bros-animated-franchises/",
-      "date": "2026-11-06T08:41:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142062/90188/wb-all-star-mayhem-teaser-2-thebrain-broadcast1600x900_l660.jpg",
-      "summary": "Kabam has revealed WB All-Star Mayhem, a new mobile idle RPG set to feature more than 100 characters from nine Warner Bros. animated series at launch. Developed under licence from…",
-      "tags": []
-    },
-    {
-      "title": "DENMU closes debut games fund above $50m target",
-      "link": "https://www.pocketgamer.biz/denmu-closes-debut-games-fund-above-50m-target/",
-      "date": "2026-11-06T08:32:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142060/90186/denmu_l660.jpg",
-      "summary": "Video game investment house DENMU has closed its first fund with more than $50 million in capital commitments, exceeding its original fundraising target. DENMU Fund I will support…",
       "tags": []
     },
     {
