@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-08T17:13:18.381Z",
+  "generatedAt": "2026-11-08T21:12:45.123Z",
   "sourceStatus": {
     "ign": "ok",
-    "gamedev": "ok",
+    "gamedev": "stale",
     "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
@@ -21,11 +21,11 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-08T17:00:31.000Z",
+      "newest": "2026-11-08T18:00:31.000Z",
       "kept": 7
     },
     "gamedev": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-11-06T19:17:10.000Z",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-08T16:00:13.000Z",
+      "newest": "2026-11-08T19:10:10.000Z",
       "kept": 15
     },
     "gameblog": {
@@ -63,29 +63,29 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-08T16:52:15.000Z",
-      "kept": 6
+      "newest": "2026-11-08T20:38:51.000Z",
+      "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-08T16:00:00.000Z",
-      "kept": 11
+      "newest": "2026-11-08T18:33:45.000Z",
+      "kept": 12
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-08T17:00:19.000Z",
+      "newest": "2026-11-08T21:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-11-05T23:30:39.000Z",
-      "kept": 2
+      "newest": "2026-11-08T19:45:13.000Z",
+      "kept": 3
     },
     "pgbiz": {
       "status": "ok",
@@ -117,6 +117,143 @@
     }
   },
   "articles": [
+    {
+      "title": "25 Years Later, ‘Buffy the Vampire Slayer’s Best Quote Is Still the Most Inspiring Line in TV History",
+      "link": "https://www.polygon.com/buffy-the-vampire-slayer-best-buffy-quote/",
+      "date": "2026-11-08T21:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/buffy.jpg",
+      "summary": "Buffy’s sacrifice for Dawn in the season 5 finale gave us one of the show’s best quotes and an ending that could have closed the series for good.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "World Of Warcraft: Forever Player Already Hits Level Cap As Users Return To Azeroth In Record Numbers",
+      "link": "https://kotaku.com/world-of-warcraft-forever-player-already-hits-level-cap-as-users-return-to-azeroth-in-record-numbers-2000754888",
+      "date": "2026-11-08T20:38:51.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/wowforevercampfire-1280x720.jpg",
+      "summary": "A World of Warcraft Classic record holder returned to pull off the same trick twice, all the more impressive during one of the highest player surges the online RPG has ever seen",
+      "tags": []
+    },
+    {
+      "title": "9 hours with the stubbornly different Grand Theft Auto IV",
+      "link": "https://www.gamefile.news/p/gta-iv-review",
+      "date": "2026-11-08T19:45:13.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!TnzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac769f3-837e-4eeb-870c-f5466d2da988_3840x2160.png",
+      "summary": "A harder GTA to enjoy, which makes it all the more worth it",
+      "tags": []
+    },
+    {
+      "title": "Melty New Puzzle Game From Shotgun King Creators Burns Tetris At Both Ends",
+      "link": "https://kotaku.com/melty-new-puzzle-game-from-shotgun-king-creators-burns-tetris-at-both-ends-2000754885",
+      "date": "2026-11-08T19:41:21.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/HotWax-1280x843.jpg",
+      "summary": "In the indie game Hot Wax, you'll descend into a deep, unlit dungeon, carefully igniting tetrominoes to survive",
+      "tags": []
+    },
+    {
+      "title": "Pourquoi WoW Forever n'est pas un problème pour GTA 6 ?",
+      "link": "https://www.jeuxvideo.com/news/2113138/pourquoi-wow-forever-n-est-pas-un-probleme-pour-gta-6.htm",
+      "date": "2026-11-08T19:10:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179399/1793987046-7603-card.jpg",
+      "summary": "Alors que l'industrie retient son souffle face à l'arrivée imminente de Grand Theft Auto VI, une communauté bien spécifique continue de vaquer à ses occupations sur Azeroth sans…",
+      "tags": []
+    },
+    {
+      "title": "All vault locations in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-vault-locations-c7ms/",
+      "date": "2026-11-08T18:39:47.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/covered-vault_oot.jpg",
+      "summary": "Vaults are full of valuable loot in Fortnite Chapter 7's mini season. Here's where to find them all and how to open them.",
+      "tags": []
+    },
+    {
+      "title": "Skyrim lead designer Bruce Nesmith loved that Baldur's Gate 3 closed off story paths based on your decisions, but defends Bethesda's approach: 'They were both fun, they're just fun in different ways'",
+      "link": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-bruce-nesmith-loved-that-baldurs-gate-3-closed-off-story-paths-based-on-your-decisions-but-defends-bethesdas-approach-they-were-both-fun-theyre-just-fun-in-different-ways/",
+      "date": "2026-11-08T18:33:45.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/9fXDM6ZgfniUps2Mv9Gmei-1920-80.jpg",
+      "summary": "I love being Cyrodiil's one-man deep state in charge of all major economic, social, criminal, and paramilitary organizations.",
+      "tags": []
+    },
+    {
+      "title": "Perle noire The Witcher 3 Remastered : Où trouver ce matériau d'artisanat ?",
+      "link": "https://www.jeuxvideo.com/news/2112978/perle-noire-the-witcher-3-remastered-ou-trouver-ce-materiau-d-artisanat.htm",
+      "date": "2026-11-08T18:15:14.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793962633-3952-card.jpg",
+      "summary": "Indispensable pour confectionner de puissantes runes et optimiser votre équipement de grand maître dans The Witcher 3 Wild Hunt, la perle noire est difficile à obtenir quand on…",
+      "tags": []
+    },
+    {
+      "title": "Je pensais vraiment ce que j’ai dit — Nicolas Cage est en réalité soulagé que Spider-Noir ait été annulé",
+      "link": "https://fr.ign.com/madden/93780/je-pensais-vraiment-ce-que-jai-dit-nicolas-cage-est-en-realite-soulage-que-spider-noir-ait-ete-annul",
+      "date": "2026-11-08T18:00:31.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/i/i-meant-it/i-meant-it-when-i-said-what-i-said-nicolas-cage-is-actually_5khp.png",
+      "summary": "« On ne veut jamais se retrouver coincé à incarner sans cesse le même personnage et finir par lasser le public. »",
+      "tags": []
+    },
+    {
+      "title": "My apologies Deadlock, I wasn't familiar with your (musical) game",
+      "link": "https://www.pcgamer.com/games/moba/my-apologies-deadlock-i-wasnt-familiar-with-your-musical-game/",
+      "date": "2026-11-08T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/pbYEWFvkgVi8QrjcR2QAea-1920-80.jpg",
+      "summary": "Yeah, yeah, I'm the Hidden King.",
+      "tags": []
+    },
+    {
+      "title": "Ichorous is the bloody platformer I've been waiting for ever since I finished Blasphemous 2",
+      "link": "https://www.pcgamer.com/games/roguelike/ichorous-is-the-bloody-platformer-ive-been-waiting-for-ever-since-i-finished-blasphemous-2/",
+      "date": "2026-11-08T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/rsmfHbpNsdX4uoZqE5dEUR-1920-80.png",
+      "summary": "I impale myself with a sword to heal? I'm sold!",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : un ancien braqueur juge le réalisme du jeu du siècle... Il va y avoir des déçus !",
+      "link": "https://www.jeuxvideo.com/news/2112543/gta-6-un-ancien-braqueur-juge-le-realisme-du-jeu-du-siecle-il-va-y-avoir-des-decus.htm",
+      "date": "2026-11-08T17:45:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179389/1793889146-2768-card.jpg",
+      "summary": "GTA 6 est le jeu de la décennie, et peut-être même celui du siècle. La création de Rockstar s’apprête à pulvériser tous les records, à commencer par son budget, et ses ventes…",
+      "tags": []
+    },
+    {
+      "title": "All map fragment locations in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-c7ms-map-fragment-locations/",
+      "date": "2026-11-08T17:33:11.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_mapfragment0.jpg",
+      "summary": "Here's where to find all the currently available map fragments in Fortnite's Chapter 7 mini season.",
+      "tags": []
+    },
+    {
+      "title": "All sprites in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-all-sprites-list-abilities/",
+      "date": "2026-11-08T17:26:26.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_sprites.jpg",
+      "summary": "Here's a list of the currently available sprite in Fortnite's Chapter 7 \"Treasure Hunters\" mini season, along with what they do.",
+      "tags": []
+    },
+    {
+      "title": "Godzilla Minus Zero Opening Weekend Box Office Breaks A Foreign-Language Film Records",
+      "link": "https://www.polygon.com/godzilla-minus-zero-opening-weekend-box-office/",
+      "date": "2026-11-08T17:15:02.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mcdgomi_ec019.jpg",
+      "summary": "Godzilla Minus Zero had a great first weekend in theaters",
+      "tags": []
+    },
     {
       "title": "Ed Boon souhaite savoir quel nom les fans aimeraient donner au prochain jeu Mortal Kombat",
       "link": "https://fr.ign.com/marvel-vs-capcom-infinite/93778/ed-boon-souhaite-savoir-quel-nom-les-fans-aimeraient-donner-au-prochain-jeu-mortal-kombat",
@@ -160,6 +297,15 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872693/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-9e8269e3__800_800__507-0-1574-1066.png",
       "summary": "L'été dernier, Valve a été quelque peu mis à mal avec le leak de plusieurs téras de données issus de Steam. Dedans, on y trouve un peu de tout quand on y cherche bien, y compris…",
+      "tags": []
+    },
+    {
+      "title": "Un avocat nous explique pourquoi Nintendo attaque systématiquement les jeux créés par les fans",
+      "link": "https://www.jeuxvideo.com/news/2111143/un-avocat-nous-explique-pourquoi-nintendo-attaque-systematiquement-les-jeux-crees-par-les-fans.htm",
+      "date": "2026-11-08T16:15:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179319/1793189893-199-card.jpg",
+      "summary": "Nintendo est réputé pour sa tolérance zéro à l'égard des projets créés par la communauté. Derrière la passion des joueurs se cache toutefois une réalité économique implacable qui…",
       "tags": []
     },
     {
@@ -226,15 +372,6 @@
       "tags": []
     },
     {
-      "title": "Magic’s Star Trek Set Doubles as a Must-Watch Guide to the Sci-Fi Franchise",
-      "link": "https://www.polygon.com/star-trek-magic-the-gathering-saga-cards-episodes/",
-      "date": "2026-11-08T15:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/worf-holds-at-bat-leth-in-art-from-magic-the-gathering-star-trek.jpg",
-      "summary": "From The Wrath of Khan to The Best of Both Worlds, discover the 14 Star Trek stories inspiring Magic: The Gathering's new Saga cards.",
-      "tags": []
-    },
-    {
       "title": "23 développeurs se sont alliés pour faire ça : le jeu gratuit le plus étrange de l'année",
       "link": "https://www.jeuxvideo.com/news/2110281/23-developpeurs-se-sont-allies-pour-faire-ca-le-jeu-gratuit-le-plus-etrange-de-l-annee.htm",
       "date": "2026-11-08T15:00:15.000Z",
@@ -270,15 +407,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179415/1794146532-6453-card.jpg",
       "summary": "Découvrez les différentes manières d'obtenir le célèbre Bouclier Hylien dans le remake Switch 2 de Zelda OOT. Que vous souhaitiez claquer des dizaines de rubis en ville, ou…",
-      "tags": []
-    },
-    {
-      "title": "Cairn 'Belongs' Next to Death Stranding in ‘History of Grand Adventure Games'",
-      "link": "https://www.polygon.com/cairn-game-bakers-interview/",
-      "date": "2026-11-08T14:05:44.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/cairn-lede-image.jpg",
-      "summary": "Cairn is the latest game from The Game Bakers, and though it looks like a sports game, it really has the spirit of an action-adventure game.",
       "tags": []
     },
     {
@@ -318,15 +446,6 @@
       "tags": []
     },
     {
-      "title": "Zelda: Ocarina of Time Beats The Elder Scrolls 5: Skyrim in One Major Way",
-      "link": "https://www.polygon.com/zelda-ocarina-of-time-better-than-elder-scrolls-skyrim/",
-      "date": "2026-11-08T12:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/8669311/vlcsnap_00169.png",
-      "summary": "Ocarina of Time and The Elder Scrolls 5: Skyrim are two of the industry's biggest games, but their publishers have deployed them very differently.",
-      "tags": []
-    },
-    {
       "title": "La couleur \"bleu 2000\" : pourquoi les jeux vidéo d'il y a 30 ans avaient tous un air de vacances ?",
       "link": "https://www.jeuxvideo.com/news/2112971/la-couleur-bleu-2000-pourquoi-les-jeux-video-d-il-y-a-30-ans-avaient-tous-un-air-de-vacances.htm",
       "date": "2026-11-08T11:50:08.000Z",
@@ -336,30 +455,12 @@
       "tags": []
     },
     {
-      "title": "Matt Mercer's Best Critical Role Quote Is Still the Most Inspiring Line in D&D History",
-      "link": "https://www.polygon.com/matthew-mercer-dungeon-master-advice-dungeons-and-dragons/",
-      "date": "2026-11-08T11:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/critical-role-matt-mercer-hed.jpg",
-      "summary": "If you're looking to become a Dungeon Master, Matthew Mercer's advice is all you need.",
-      "tags": []
-    },
-    {
       "title": "Zelda Ocarina of Time : le remake supprime cette petite surprise pourtant appréciée du jeu original",
       "link": "https://www.gameblog.fr/jeu-video/ed/news/zelda-ocarina-of-time-remake-supprime-easter-egg-mario-726322?utm_source=RSS",
       "date": "2026-11-08T11:00:00.000Z",
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img//_6aeded505c36b.jpg",
       "summary": "Zelda Ocarina of Time Remake aura finalement fait l'impasse sur un Easter Egg resté culte dans la version orginale. Ne cherchez plus ces portraits, ils ont été remplacés.",
-      "tags": []
-    },
-    {
-      "title": "68 Years Later, Peanuts’ Most Mysterious Character Is Finally Making Her Official Debut — But There's a Catch",
-      "link": "https://www.polygon.com/charlie-brown-pencil-pal-history-peanuts/",
-      "date": "2026-11-08T10:30:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/snoopy-unleashed-2027-apple-tv.jpg",
-      "summary": "\"Yeah, but Morag--\" Hang on, we're covering that",
       "tags": []
     },
     {
@@ -605,96 +706,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179387/1793867442-1656-card.jpg",
       "summary": "4 millions d’exemplaires vendus en 72 heures. Le chiffre donne le tournis, au point de faire presque oublier GTA 6, attendu dans deux semaines à peine. Venu de Chine, Phantom…",
-      "tags": []
-    },
-    {
-      "title": "New Stellar Blade Ad Gives Fans Plenty To Talk About With Therapist",
-      "link": "https://kotaku.com/new-stellar-blade-ad-gives-fans-plenty-to-talk-about-with-therapist-2000754823",
-      "date": "2026-11-07T21:03:27.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/stellarbladead-1280x821.jpg",
-      "summary": "A live action, throwback ad campaign features Eve tucking people in, reading bed time stories, and YouTube commenters wishing it were them",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 PS5 Physical Boxes Have Hit The Wild, A Harbinger Of Our Disc-Less Future",
-      "link": "https://kotaku.com/gta-6-ps5-physical-boxes-have-hit-the-wild-a-harbinger-of-our-disc-less-future-2000754816",
-      "date": "2026-11-07T20:20:28.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/Jason_and_Lucia_20-1280x720.jpg",
-      "summary": "Prepare to shuffle off these plastic coils",
-      "tags": []
-    },
-    {
-      "title": "Partitions Zelda Ocarina of Time : Où trouver tous les chants à l'ocarina ?",
-      "link": "https://www.jeuxvideo.com/news/2113207/chants-zelda-ocarina-of-time-ou-trouver-toutes-les-melodies-a-l-ocarina.htm",
-      "date": "2026-11-07T19:45:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179408/1794079248-9899-card.jpg",
-      "summary": "Découvrez comment obtenir tous les chants de l'ocarina dans le remake Switch 2 de Zelda OOT. Des mélodies secrètes essentielles à la quête du 100%, à tous les airs capables de…",
-      "tags": []
-    },
-    {
-      "title": "Former Rockstar Developer Says They Should Hurry Up On GTA 6&#8217;s PC Version Before AI Gets There First",
-      "link": "https://kotaku.com/former-rockstar-developer-says-they-should-hurry-up-on-gta-6s-pc-version-before-ai-gets-there-first-2000754810",
-      "date": "2026-11-07T19:23:59.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0000_Brightness_Contrast-1-1280x720.jpg",
-      "summary": "Grand Theft Auto III technical director Obbe Vermeij says the studio prefers a console-first approach to having to compromise a PC build, but overnight AI copycats could change…",
-      "tags": []
-    },
-    {
-      "title": "Switch 2 : Nintendo se prépare à un Noël difficile selon les analystes. Face aux chiffres en baisse, ils misent tout sur Zelda",
-      "link": "https://www.jeuxvideo.com/news/2113016/switch-2-nintendo-se-prepare-a-un-noel-difficile-selon-les-analystes-face-aux-chiffres-en-baisse-ils-misent-tout-sur-zelda.htm",
-      "date": "2026-11-07T19:10:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179397/1793973971-3665-card.jpg",
-      "summary": "Face à des résultats financiers en chute libre et une Switch 2 qui cale en rayon, Nintendo aborde un Noël sous très haute tension. Entre usines asphyxiées par l’essor de l’IA et…",
-      "tags": []
-    },
-    {
-      "title": "Donnie Yen Phantom Blade Zero : Comment le rencontrer et battre le boss Mo Yuan ?",
-      "link": "https://www.jeuxvideo.com/news/2112185/donnie-yen-phantom-blade-zero-comment-le-rencontrer-et-battre-le-boss-mo-yuan.htm",
-      "date": "2026-11-07T18:15:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179379/1793786473-8162-card.jpg",
-      "summary": "Un acteur chinois célèbre joue le rôle d'un personnage notable de Phantom Blade Zero, qui fait aussi office de boss majeur. Découvrez les détails dans ce guide, avec une vidéo du…",
-      "tags": []
-    },
-    {
-      "title": "AMD CEO Lisa Su: 'We are a data center-first company'",
-      "link": "https://www.pcgamer.com/gaming-industry/amd-ceo-lisa-su-we-are-a-data-center-first-company/",
-      "date": "2026-11-07T18:10:16.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/qDK99x7KtDSDHFZjKX9dj3-1920-80.jpg",
-      "summary": "Congratulations.",
-      "tags": []
-    },
-    {
-      "title": "Un homme politique canadien lance une pétition pour demander au gouvernement d’aider BioWare à se racheter des mains d’EA",
-      "link": "https://fr.ign.com/mass-effect-3/93771/un-homme-politique-canadien-lance-une-petition-pour-demander-au-gouvernement-daider-bioware-a-se-rac",
-      "date": "2026-11-07T18:00:31.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/canadian-p/canadian-politician-petitions-government-to-help-bioware-buy_dskp.jpg",
-      "summary": "Le combat n’est pas terminé.",
-      "tags": []
-    },
-    {
-      "title": "After seeing them myself, I'm convinced WoW: Forever's RP servers don't need to be this separate, and I say that as a decorated veteran of MMO roleplay",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/after-seeing-them-myself-im-convinced-wow-forevers-rp-servers-dont-need-to-be-this-separate-and-i-say-that-as-a-decorated-veteran-of-mmo-roleplay/",
-      "date": "2026-11-07T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/6Ywe8m6nRRzBLZTNpNbAXn-1920-80.png",
-      "summary": "I'm kinda just playing chiller PvE, here.",
-      "tags": []
-    },
-    {
-      "title": "Voir un jeu gratuit aux allures de Skyrim, c'est rare : le passe temps parfait avant The Elder Scrolls 6 ?",
-      "link": "https://www.jeuxvideo.com/news/2112905/voir-un-jeu-gratuit-aux-allures-de-skyrim-c-est-rare-le-passe-temps-parfait-avant-the-elder-scrolls-6.htm",
-      "date": "2026-11-07T17:45:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793979260-7037-card.jpg",
-      "summary": "Alors que les joueurs attendent toujours de pouvoir explorer le prochain univers de Bethesda, un autre RPG pourrait bien leur faire prendre leur mal en patience. Gratuit…",
       "tags": []
     },
     {
