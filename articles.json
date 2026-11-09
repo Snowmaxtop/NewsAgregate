@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T21:12:45.123Z",
+  "generatedAt": "2026-11-09T00:56:31.139Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-08T18:00:31.000Z",
-      "kept": 7
+      "kept": 6
     },
     "gamedev": {
       "status": "stale",
@@ -42,7 +42,7 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-08T19:10:10.000Z",
+      "newest": "2026-11-08T21:20:09.000Z",
       "kept": 15
     },
     "gameblog": {
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-08T20:38:51.000Z",
+      "newest": "2026-11-08T23:56:01.000Z",
       "kept": 5
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-08T18:33:45.000Z",
-      "kept": 12
+      "newest": "2026-11-09T00:45:39.000Z",
+      "kept": 13
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-08T21:00:17.000Z",
+      "newest": "2026-11-09T00:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,69 @@
     }
   },
   "articles": [
+    {
+      "title": "Warhammer Blood Bowl has been delayed into early 2027",
+      "link": "https://www.pcgamer.com/games/sports/warhammer-blood-bowl-has-been-delayed-into-2027/",
+      "date": "2026-11-09T00:45:39.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/yYFgBZtpHgQ9MwUKngZ8tV-1920-80.jpg",
+      "summary": "One more turn.",
+      "tags": []
+    },
+    {
+      "title": "Sega’s Most Influential Platformer Deserves Its Big Remake Moment Next",
+      "link": "https://www.polygon.com/super-monkey-ball-retrospective-25-years-sega/",
+      "date": "2026-11-09T00:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/assets/4489221/gamecube-controller-photo_1280.jpg",
+      "summary": "Not every remake has to be for a huge game. Some quicker plays from yesteryear could also benefit, like one all-time great from Sega.",
+      "tags": []
+    },
+    {
+      "title": "Return Of The Living Dead Cast Horrified By AI-Made Sequel They Were Originally Set To Star In",
+      "link": "https://kotaku.com/return-of-the-living-dead-cast-horrified-by-ai-made-sequel-they-were-originally-set-to-star-in-2000754899",
+      "date": "2026-11-08T23:56:01.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/returnofthelivingdead-1280x821.jpg",
+      "summary": "You mean the movie lied???",
+      "tags": []
+    },
+    {
+      "title": "Nvidia Launches Investigation Into CEO Jensen Huang Following Honeypot Scandal",
+      "link": "https://kotaku.com/nvidia-launches-investigation-into-ceo-jensen-huang-following-honeypot-scandal-2000754894",
+      "date": "2026-11-08T22:09:06.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2025/01/10f5e14638f82f1a04b70d553fef6e8e.jpg",
+      "summary": "The GPU titans say that Huang will not be stepping down and maintain that no secrets were compromised despite the growing spy plot",
+      "tags": []
+    },
+    {
+      "title": "Jackbox Games isn't interested in AI development: 'All that is done by people, and we have no intention of changing that'",
+      "link": "https://www.pcgamer.com/gaming-industry/game-development/jackbox-games-isnt-interested-in-ai-development-all-that-is-done-by-people-and-we-have-no-intention-of-changing-that/",
+      "date": "2026-11-08T22:06:56.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/ZimasKeFtUuoHSCqpCekQo-1920-80.png",
+      "summary": "CEO Mike Bilder doesn't see AI as having much to offer Jackbox.",
+      "tags": []
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang admits to affair with alleged Chinese spy as company board launches investigation",
+      "link": "https://www.pcgamer.com/gaming-industry/nvidia-ceo-jensen-huang-admits-to-affair-with-alleged-chinese-spy-as-company-board-launches-investigation/",
+      "date": "2026-11-08T21:38:31.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/VE3dBZCG8wUwPxHWNzqwD9-1920-80.jpg",
+      "summary": "Good lord what is happening in there.",
+      "tags": []
+    },
+    {
+      "title": "Zelda Ocarina of Time a traumatisé toute une génération de joueurs : et si nous avions tous tort à propos du Temple de l'Eau ?",
+      "link": "https://www.jeuxvideo.com/news/2112898/zelda-ocarina-of-time-a-traumatise-toute-une-generation-de-joueurs-et-si-nous-avions-tous-tort-a-propos-du-temple-de-l-eau.htm",
+      "date": "2026-11-08T21:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179390/1793895048-3359-card.jpg",
+      "summary": "Considéré comme le pire calvaire du jeu, le Temple de l'Eau d'Ocarina of Time refait parler de lui avec l'arrivée de son remake sur Nintendo Switch 2. Entre erreurs d'ergonomie…",
+      "tags": []
+    },
     {
       "title": "25 Years Later, ‘Buffy the Vampire Slayer’s Best Quote Is Still the Most Inspiring Line in TV History",
       "link": "https://www.polygon.com/buffy-the-vampire-slayer-best-buffy-quote/",
@@ -360,15 +423,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/d2WvAanTYs5x843XGHNQi3-1920-80.jpg",
       "summary": "The Citadel Project will be released next week.",
-      "tags": []
-    },
-    {
-      "title": "Assassin's Creed Hexe Reportedly Delayed As New Assassin's Creed Games Leak",
-      "link": "https://www.polygon.com/assassins-creed-hexe-delay-leak/",
-      "date": "2026-11-08T15:07:40.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/assassin-s-creed-codename-hexe-official-announcement-trailer-_-ubisoft-forward-2022-0-18-screenshot.jpg",
-      "summary": "Some new insider reporting has shed new light on the future of Assassin's Creed",
       "tags": []
     },
     {
@@ -652,60 +706,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/uSjqHDZA7WMXxsKULPqTL3-1920-80.jpg",
       "summary": "\"The best stories never really end.\"",
-      "tags": []
-    },
-    {
-      "title": "Chess is immediately more fun if you jettison most of the rules and replace them with weapons-grade Game Boy Advance",
-      "link": "https://www.pcgamer.com/games/puzzle/chess-is-immediately-more-fun-if-you-jettison-most-of-the-rules-and-replace-them-with-weapons-grade-game-boy-advance/",
-      "date": "2026-11-08T00:40:53.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Y9Kr7JgAuyp7mudsm8uiRn-1920-80.png",
-      "summary": "\"Pawn Chess\" is whatever you want it to be in Rulehouse.",
-      "tags": []
-    },
-    {
-      "title": "One of the buggiest D&D games ever released, Pool of Radiance: Ruins of Myth Drannor, is back and actually playable again",
-      "link": "https://www.pcgamer.com/games/rpg/one-of-the-buggiest-d-and-d-games-ever-released-pool-of-radiance-ruins-of-myth-drannor-is-back-and-actually-playable-again/",
-      "date": "2026-11-07T23:22:07.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/RTBYtRwwXNQ5uHRWkUh2FL-1920-80.jpg",
-      "summary": "But did anyone ask for this?",
-      "tags": []
-    },
-    {
-      "title": "Les acteurs de Mass Effect célèbrent la Journée N7 avec une vidéo invitant les fans à contribuer à sauver la franchise",
-      "link": "https://fr.ign.com/mass-effect-next-chapter/93776/les-acteurs-de-mass-effect-celebrent-la-journee-n7-avec-une-video-invitant-les-fans-a-contribuer-a-s",
-      "date": "2026-11-07T22:15:33.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/m/mass-effec/mass-effect-cast-celebrates-n7-day-with-video-asking-fans-to_ug5n.jpg",
-      "summary": "Shepard, Garrus, Tali’Zorah, Mordin et bien d’autres encore.",
-      "tags": []
-    },
-    {
-      "title": "For This Year&#8217;s N7 Day, Fans, Alumni And Policy Makers Fought For Mass Effect&#8217;s Future",
-      "link": "https://kotaku.com/this-years-n7-day-spent-fighting-for-mass-effects-future-2000754828",
-      "date": "2026-11-07T22:12:46.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2024/03/ab7be0140108d75dfb05d247751184ee-1280x720.jpg",
-      "summary": "While previous years brought hope of updates on BioWare's beloved Mass Effect saga, this November had incensed fans pushing EA towards a course correction",
-      "tags": []
-    },
-    {
-      "title": "AI Stuffy Says &#8216;I Can&#8217;t Help With Killing You&#8217; Completely Unprompted",
-      "link": "https://kotaku.com/ai-stuffy-says-i-cant-help-with-killing-you-completely-unprompted-2000754819",
-      "date": "2026-11-07T21:30:17.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/bunny.jpg",
-      "summary": "Cross that one off the Christmas list",
-      "tags": []
-    },
-    {
-      "title": "Pourquoi le jeu vidéo Phantom Blade Zero fait un carton ? Notre analyse",
-      "link": "https://www.jeuxvideo.com/news/2112345/pourquoi-le-jeu-video-phantom-blade-zero-fait-un-carton-notre-analyse.htm",
-      "date": "2026-11-07T21:20:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179387/1793867442-1656-card.jpg",
-      "summary": "4 millions d’exemplaires vendus en 72 heures. Le chiffre donne le tournis, au point de faire presque oublier GTA 6, attendu dans deux semaines à peine. Venu de Chine, Phantom…",
       "tags": []
     },
     {
