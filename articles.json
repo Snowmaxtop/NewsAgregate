@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:48:03.523Z",
+  "generatedAt": "2026-11-10T01:03:22.155Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-09T17:31:54.000Z",
-      "kept": 23
+      "newest": "2026-11-09T22:10:11.000Z",
+      "kept": 28
     },
     "gamedev": {
       "status": "ok",
@@ -35,15 +35,15 @@
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-11-09T17:37:10.000Z",
-      "kept": 5
+      "newest": "2026-11-09T21:39:40.000Z",
+      "kept": 8
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-09T16:30:10.000Z",
-      "kept": 17
+      "newest": "2026-11-09T21:20:08.000Z",
+      "kept": 19
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-09T17:29:34.000Z",
-      "kept": 15
+      "newest": "2026-11-10T00:00:42.000Z",
+      "kept": 19
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-09T17:15:26.000Z",
-      "kept": 23
+      "newest": "2026-11-10T00:24:43.000Z",
+      "kept": 21
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-09T17:36:44.000Z",
+      "newest": "2026-11-09T23:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,30 +118,349 @@
   },
   "articles": [
     {
+      "title": "'The experiences on console and PC tend to be roughly the same,' says Take-Two CEO in response to question about GTA roleplaying",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/the-experiences-on-console-and-pc-tend-to-be-roughly-the-same-says-take-two-ceo-in-response-to-question-about-gta-roleplaying/",
+      "date": "2026-11-10T00:24:43.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Er7sxeh8RRbBBp8GXXPfsC-1920-80.jpg",
+      "summary": "Of course, in the case of Grand Theft Auto 6, the PC experience at launch will be a blank screen.",
+      "tags": []
+    },
+    {
+      "title": "There&#8217;s An IRL GTA 6 Live Event And You&#8217;ll Need To Win A Lottery To Get In",
+      "link": "https://kotaku.com/theres-an-irl-gta-6-live-event-and-youll-need-to-win-a-lottery-to-get-in-2000755131",
+      "date": "2026-11-10T00:00:42.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/Jason_and_Lucia_20-1280x720.jpg",
+      "summary": "Cardi B and others will be performing in Miami",
+      "tags": []
+    },
+    {
+      "title": "Side-By-Side Comparisons Show Breath Of The Wild&#8216;s Fingerprints All Over The Ocarina Of Time Remake In The Best Way",
+      "link": "https://kotaku.com/side-by-side-comparisons-show-breath-of-the-wilds-fingerprints-all-over-the-ocarina-of-time-remake-in-the-best-way-2000755169",
+      "date": "2026-11-09T23:00:49.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/ocarina-botw-1280x715.jpg",
+      "summary": "Man, climate change really did a number on Hyrule",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time Remake Gives Its Best Boy the Happy Ending He Deserved Decades Ago",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-richard-lives/",
+      "date": "2026-11-09T23:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ocarina-of-time-richard-lives.jpg",
+      "summary": "The Legend of Zelda: Ocarina of Time remake on Switch 2 makes a small, but welcome change to the fate of Richard the dog",
+      "tags": []
+    },
+    {
+      "title": "A month after Paramount acquired Warner Bros. Discovery, its merged game division is laying people off",
+      "link": "https://www.pcgamer.com/gaming-industry/a-month-after-paramount-acquired-warner-bros-discovery-its-merged-game-division-is-laying-people-off/",
+      "date": "2026-11-09T22:33:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/wKbv8zjAaUe8ogbgTPav7N-1920-80.jpg",
+      "summary": "Skydance Games has \"made the difficult decision to scale down some of our projects.\"",
+      "tags": []
+    },
+    {
+      "title": "Here’s The New Head Of DC Studios Being Interviewed On One Of The Biggest Conservative Christian Outlets",
+      "link": "https://kotaku.com/dc-studios-jeremy-latcham-james-gunn-marvel-cbn-christian-2000755180",
+      "date": "2026-11-09T22:30:00.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/latcham-1280x720.jpg",
+      "summary": "Jeremy Latcham is a Marvel veteran whose ‘guiding light’ was whether his grandma would like something",
+      "tags": []
+    },
+    {
+      "title": "NBA 2K27 Sold Less Than Expected Because Of&#8230;GTA 6",
+      "link": "https://kotaku.com/nba-2k27-sold-less-than-expected-because-of-gta-6-2000755174",
+      "date": "2026-11-09T22:17:50.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/09/Jason_and_Lucia_03.15z--1280x720.jpg",
+      "summary": "'This timing may have affected performance so far'",
+      "tags": []
+    },
+    {
+      "title": "James Gunn adresse un message à ses fans après son départ surprise de DC Studios",
+      "link": "https://fr.ign.com/man-of-tomorrow/93818/james-gunn-adresse-un-message-a-ses-fans-apres-son-depart-surprise-de-dc-studios",
+      "date": "2026-11-09T22:10:11.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/j/james-gunn/james-gunn-shares-message-to-fans-following-shock-dc-studios_j7yh.jpg",
+      "summary": "« Je suis content d’avoir accepté ce poste. »",
+      "tags": []
+    },
+    {
+      "title": "Take-Two expects to make as much as $3.5 billion during the GTA 6 launch period",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/take-two-expects-to-make-as-much-as-usd3-5-billion-during-the-gta-6-launch-period/",
+      "date": "2026-11-09T22:06:34.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/9SieU3JpSSPX34eMduXqsW-1920-80.jpg",
+      "summary": "Pre-orders for GTA 6 are still \"unprecedented,\" says the publisher.",
+      "tags": []
+    },
+    {
+      "title": "James Gunn et Peter Safran quittent DC Studios, laissant le DCU en suspens",
+      "link": "https://fr.ign.com/man-of-tomorrow/93816/james-gunn-et-peter-safran-quittent-dc-studios-laissant-le-dcu-en-suspens",
+      "date": "2026-11-09T22:00:23.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/j/james-gunn/james-gunn-and-peter-safran-are-stepping-down-from-dc-studio_u9rg.jpg",
+      "summary": "La fin prématurée d&#x27;une ère.",
+      "tags": []
+    },
+    {
+      "title": "Game Awards 2026: All Game of the Year Front-Runners and Predictions",
+      "link": "https://www.polygon.com/game-of-the-year-goty-game-awards-2026-frontrunners/",
+      "date": "2026-11-09T21:51:34.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ns2_thelegendofzeldaocarinaoftime_scrn_02-1.png",
+      "summary": "We rank the contenders for GOTY 2026 at TGAs, including Resident Evil Requiem and Zelda: Ocarina of Time",
+      "tags": []
+    },
+    {
+      "title": "How to get the Biggoron Sword in Ocarina of Time",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-biggorons-sword-how-to-get/",
+      "date": "2026-11-09T21:50:25.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/biggoron-sword_oot.jpg",
+      "summary": "The Biggoron Sword is the reward for the \"From a Pocket Egg Comes...\" quest in Ocarina of Time. Here's how to complete the quest and get the sword.",
+      "tags": []
+    },
+    {
+      "title": "HBO Max-Paramount Plus Bundle Officially Confirmed for 2027",
+      "link": "https://www.polygon.com/hbo-max-paramount-plus-streaming-bundle-launching-2027/",
+      "date": "2026-11-09T21:49:51.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ulf-tames-silverwing-and-rides-into-kingslanding-to-bait-aemond-hod-s2-episode-7-1-31-screenshot.png",
+      "summary": "HBO Max and Paramount+ are launching a streaming bundle in early 2027, bringing two major services together for subscribers.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Pre-Orders Are Coming In &#8216;Far In Excess&#8217; Of What Take-Two Expected, Says CEO",
+      "link": "https://kotaku.com/gta-6-pre-orders-are-coming-in-far-in-excess-of-what-take-two-expected-says-ceo-2000755171",
+      "date": "2026-11-09T21:49:41.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/10/gta-6-screen-booth-1280x720.jpg",
+      "summary": "'Tracking far above our initial expectations'",
+      "tags": []
+    },
+    {
+      "title": "The Best New Video Games of 2026 (So Far)",
+      "link": "https://www.polygon.com/best-2026-games-so-far/",
+      "date": "2026-11-09T21:46:48.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/fire-emblem-fortune-s-weave-theodora.avif",
+      "summary": "Before GOTY season approaches, take a look back at some of the best games of 2026, from Cairn to Fire Emblem: Fortune's Weave.",
+      "tags": []
+    },
+    {
+      "title": "James Gunn, Peter Safran Out at DC Studios - IGN Daily Fix",
+      "link": "https://fr.ign.com/man-of-tomorrow/93817/james-gunn-peter-safran-out-at-dc-studios-ign-daily-fix",
+      "date": "2026-11-09T21:42:05.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/j/james-gunn/james-gunn-peter-safran-out-at-dc-studios-ign-daily-fix_1ne9.jpg",
+      "summary": "In today&#x27;s Daily Fix: DC Studios co-CEOs James Gunn and Peter Safran are out, in a massive shakeup in Skydance media subsidiaries. The announcement was made by owner Skydance…",
+      "tags": []
+    },
+    {
+      "title": "\"There's no such thing as easy money in our business\" – Strauss Zelnick on GTA 6, BioShock, Take-Two's acquisition plans, and reviving old IP",
+      "link": "https://www.gamesindustry.biz/theres-no-such-thing-as-easy-money-in-our-business-strauss-zelnick-on-gta-6-bioshock-take-twos-acquisition-plans-and-reviving-old-ip",
+      "date": "2026-11-09T21:39:40.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/Strauss_Zelnick_2023_wide.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Take-Two Interactive reported the earnings for its second quarter today, and GamesIndustry.biz had a chance to talk with CEO Strauss Zelnick about the results, as well as where…",
+      "tags": []
+    },
+    {
+      "title": "Take-Two Q2 net bookings fall 18% to $1.6bn as NBA 2K27 misses forecast but GTA 6 pre-orders are \"tracking far in excess\" of expectations",
+      "link": "https://www.gamesindustry.biz/take-two-q2-net-bookings-fall-18-to-16bn-as-nba-2k27-misses-forecast-but-gta-6-pre-orders-are-tracking-far-in-excess-of-expectations",
+      "date": "2026-11-09T21:22:20.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/gta-6_S2BF1hr.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Take-Two Interactive has published its financial results for its second fiscal quarter, with net bookings down 18% to $1.60 billion and net revenue down 16% to $1.50 billion.",
+      "tags": []
+    },
+    {
+      "title": "Pour GTA 6, cela n'avait aucun sens de remplacer les créatifs par de l'IA : le jeu est une \"production artisanale\" pour le patron de Take Two",
+      "link": "https://www.jeuxvideo.com/news/2113360/pour-gta-6-cela-n-avait-aucun-sens-de-remplacer-les-creatifs-par-de-l-ia-le-jeu-est-une-production-artisanale-pour-le-patron-de-take-two.htm",
+      "date": "2026-11-09T21:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179424/1794235330-9076-card.jpg",
+      "summary": "Nous sommes en 2026. Toute l'industrie vidéoludique est occupée par l'intelligence artificielle générative... Toute ? Non ! Car un studio peuplé d'irréductibles développeurs nommé…",
+      "tags": []
+    },
+    {
+      "title": "Superman Sequel Will Officially Introduce the DCU’s Wonder Woman, Report Says",
+      "link": "https://www.polygon.com/superman-2-man-of-tomorrow-wonder-woman-adria-arjona/",
+      "date": "2026-11-09T21:12:33.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/wonder-woman-alex-ross-dc.jpg",
+      "summary": "James Gunn has stepped down from a leadership role at DC, but is still wrapping up Man of Tomorrow. A new report claims Wonder Woman will be in it.",
+      "tags": []
+    },
+    {
+      "title": "How to get the Golden Scale in Zelda Ocarina of Time",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-golden-scale-how-to-get-fishing-pond/",
+      "date": "2026-11-09T21:05:23.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/zeldaootremake_guide_goldscale_lead.jpg",
+      "summary": "Here's how you obtain the Golden Scale in The Legend of Zelda: Ocarina of Time remake, the item you need to dive deeper.",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time’s Coolest Dungeon Hides a Secret Tribute to a Beloved Classic",
+      "link": "https://www.polygon.com/zelda-ocarina-time-forest-temple-little-women/",
+      "date": "2026-11-09T21:05:21.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/screenshot-2026-11-09-at-12-26-53-pm.jpg",
+      "summary": "Nintendo's latest Zelda remake contains a clear reference to a coming-of-age-classic of American literature",
+      "tags": []
+    },
+    {
+      "title": "25 Hours With World Of Warcraft: Forever",
+      "link": "https://kotaku.com/first-25-hours-wow-forever-wasting-time-2000755140",
+      "date": "2026-11-09T21:00:22.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/wow-forever-durotar-1280x720.jpg",
+      "summary": "Don't ask me how the new dungeons are",
+      "tags": []
+    },
+    {
+      "title": "Mass Effect Legendary Edition Finally Gets Co-op Back on PC",
+      "link": "https://www.polygon.com/mass-effect-3-co-op-legendary-edition-free-mod/",
+      "date": "2026-11-09T21:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7675959/mass_effect_2.jpg",
+      "summary": "Want to play Mass Effect 3 co-op in Legendary Edition? Here’s how to install the free ME3Tweaks mod released on N7 Day.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "\"Je ne comprends pas comment c'est légal\", ce joueur ne peut plus jouer à Minecraft alors qu'il l'a acheté : attention, ça pourrait vous arriver à vous aussi...",
+      "link": "https://www.jeuxvideo.com/news/2112904/je-ne-comprends-pas-comment-c-est-legal-ce-joueur-ne-peut-plus-jouer-a-minecraft-alors-qu-il-l-a-achete-attention-ca-pourrait-vous-arriver-a-vous-aussi.htm",
+      "date": "2026-11-09T20:40:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179389/1793894733-7759-card.jpg",
+      "summary": "Avec le succès du film Minecraft au cinéma, beaucoup de joueurs qui n’avaient pas touché au jeu depuis plusieurs années ont voulu réessayer de s’y mettre. Petit problème…",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time’s Best Replacement Has 11,000+ ‘Very Positive’ Reviews on Steam",
+      "link": "https://www.polygon.com/deaths-door-five-year-anniversary-retrospective/",
+      "date": "2026-11-09T20:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2025/01/death-s-door-press-image-3.jpg",
+      "summary": "Death's Door turns five years old this year, and it's still one of the best games like The Legend of Zelda around.",
+      "tags": []
+    },
+    {
+      "title": "Tripwire Interactive lays off 36",
+      "link": "https://www.gamesindustry.biz/tripwire-interactive-lays-off-36",
+      "date": "2026-11-09T19:43:10.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/killing-floor-3_WcgSJ7n.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Killing Floor and Maneater developer Tripwire Interactive has laid off 36 staff.",
+      "tags": []
+    },
+    {
+      "title": "A week after expanding its publishing division, Killing Floor studio Tripwire Interactive lays off 36 people",
+      "link": "https://www.pcgamer.com/gaming-industry/a-week-after-expanding-its-publishing-division-killing-floor-studio-tripwire-interactive-lays-off-36-people/",
+      "date": "2026-11-09T19:32:33.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/u3pB62ZFdhyJToq4ytTGJH-1920-80.jpg",
+      "summary": "Tripwire said the decision to put people out of work was \"a necessary one for the organization.\"",
+      "tags": []
+    },
+    {
+      "title": "Call of Duty Modern Warfare 4 respecte-t-il les promesses faites aux joueurs ?",
+      "link": "https://www.jeuxvideo.com/news/2113421/call-of-duty-modern-warfare-4-respecte-t-il-les-promesses-faites-aux-joueurs.htm",
+      "date": "2026-11-09T19:10:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179423/1794230685-6649-card.jpg",
+      "summary": "L’année dernière, après la sortie de Black Ops 7, Call of Duty faisait son mea culpa… Est-ce que les promesses ont été tenues avec Modern Warfare 4 ?",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "WoW Forever : nouvelle volte face de Blizzard qui augmente de 50% l'expérience gagnée en tuant les monstres en donjon",
+      "link": "https://www.jeuxvideo.com/news/2113434/wow-forever-nouvelle-volte-face-de-blizzard-qui-augmente-de-50-l-experience-gagnee-en-tuant-les-monstres-en-donjon.htm",
+      "date": "2026-11-09T19:10:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179423/1794231582-5802-card.jpg",
+      "summary": "Blizzard semble incapable de se décider pour ce qui est de WoW Forever. Après avoir drastiquement bridé le gain d'expérience en donjon pour pousser la communauté vers le monde…",
+      "tags": []
+    },
+    {
+      "title": "Has The Ocarina Of Time Remake Changed Too Much? Fans Debate Difficulty, Tone, And Handholding",
+      "link": "https://kotaku.com/legend-zelda-ocarina-time-remake-changes-differences-difficulty-soldier-2000755144",
+      "date": "2026-11-09T18:30:06.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/linktemple-1280x720.jpg",
+      "summary": "The Switch 2 reimagining of the N64 classic is missing a lot of the original’s friction",
+      "tags": []
+    },
+    {
+      "title": "Fortnite Bullied Into Divulging The Drop Rate Of The Pirate Shop Token",
+      "link": "https://kotaku.com/fortnite-bullied-into-divulging-the-drop-rate-of-the-pirate-shop-token-2000755124",
+      "date": "2026-11-09T18:15:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/fortnite-pirate.jpg",
+      "summary": "The token that gives you free stuff in the item shop isn't even the rarest loot in the event",
+      "tags": []
+    },
+    {
+      "title": "Mu Xiaokui Phantom Blade Zero : Comment débloquer la phase secrète et battre ce boss ?",
+      "link": "https://www.jeuxvideo.com/news/2112354/mu-xiaokui-phantom-blade-zero-comment-debloquer-la-phase-secrete-et-battre-ce-boss.htm",
+      "date": "2026-11-09T18:15:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179422/1794219217-6687-card.jpg",
+      "summary": "Les anciens alliés de Soul sont aussi à sa poursuite dans Phantom Blade Zero. La jeune maîtresse de l'ordre, Mu Xiaokui, qui est comme sa petite sœur, l'affronte lors d'un long…",
+      "tags": []
+    },
+    {
+      "title": "LEGO Interstellar Set",
+      "link": "https://fr.ign.com/gallery/93810/lego-interstellar-set",
+      "date": "2026-11-09T18:11:00.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/l/lego-inter/lego-interstellar-set_7wv3.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Interstellar de Christopher Nolan va avoir droit à son propre set LEGO",
+      "link": "https://fr.ign.com/interstellar/93809/interstellar-de-christopher-nolan-va-avoir-droit-a-son-propre-set-lego",
+      "date": "2026-11-09T18:11:00.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/christophe/christopher-nolans-interstellar-is-getting-a-lego-set_fhb1.jpg",
+      "summary": "« L’humanité est née sur Terre. Elle n&#x27;était pas faite pour y mourir. »",
+      "tags": []
+    },
+    {
+      "title": "Cyberpunk 2077 s'offre un nouveau mod multijoueur, avec des serveurs RP",
+      "link": "https://fr.ign.com/cyberpunk-2077/93815/cyberpunk-2077-soffre-un-nouveau-mod-multijoueur-avec-des-serveurs-rp",
+      "date": "2026-11-09T17:53:01.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/cyberpunk-/cyberpunk-2077-just-got-a-new-multiplayer-mod-complete-with_p812.jpg",
+      "summary": "Affrontez Night City avec plus de 100 chooms.",
+      "tags": []
+    },
+    {
+      "title": "Sony annonce une nouvelle PlayStation Portal, voici ses caractéristiques",
+      "link": "https://www.jeuxvideo.com/news/2113344/sony-annonce-une-nouvelle-playstation-portal-voici-ses-caracteristiques.htm",
+      "date": "2026-11-09T17:45:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179422/1794218164-3901-card.jpg",
+      "summary": "Trois ans après son lancement, la PlayStation Portal continue d'évoluer. Sony vient d'annoncer une nouvelle version de son appareil portable, avec une modification matérielle qui…",
+      "tags": []
+    },
+    {
       "title": "PlayStation cancels Ratchet & Clank: Ranger Rumble a year into soft launch",
       "link": "https://www.gamesindustry.biz/playstation-cancels-ratchet-clank-ranger-rumble-a-year-into-soft-launch",
       "date": "2026-11-09T17:37:10.000Z",
       "sourceId": "gibiz",
       "image": "https://assetsio.gnwcdn.com/ratchet-and-clank-ranger-rumble-has-been-announced-for-mobile-cover6914bd26ba3ad-3399469877.jpg?width=690&quality=85&format=jpg&auto=webp",
       "summary": "PlayStation has canceled Ratchet & Clank: Ranger Rumble, its free-to-play mobile spin-off of the platforming series, a year after it entered soft launch.",
-      "tags": []
-    },
-    {
-      "title": "DC Studios Hit with Major Shakeup: James Gunn & Peter Safran Officially Leaving",
-      "link": "https://www.polygon.com/dc-studios-james-gunn-peter-safran-jeremy-latcham-skydance/",
-      "date": "2026-11-09T17:36:44.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/mcdsupe_wb003.jpg",
-      "summary": "Superman director James Gunn is out at DC Studios after 4 years, Skydance has officially announce.",
-      "tags": []
-    },
-    {
-      "title": "Unexpected Christopher Nolan Film Officially Gets First Lego Set",
-      "link": "https://www.polygon.com/interstellar-lego-set-ranger-announced/",
-      "date": "2026-11-09T17:35:32.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/interstellar-lego-1-1.jpg",
-      "summary": "Interstellar is finally getting an official Lego set, more than a decade after the film’s release.",
       "tags": []
     },
     {
@@ -217,6 +536,15 @@
       "tags": []
     },
     {
+      "title": "Epona Zelda Ocarina of Time : Comment débloquer le cheval de Link",
+      "link": "https://www.jeuxvideo.com/news/2113508/epona-zelda-ocarina-of-time-comment-debloquer-le-cheval-de-link.htm",
+      "date": "2026-11-09T17:01:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179424/1794242858-7817-card.jpg",
+      "summary": "Découvrez comment débloquer Epona, la célèbre monture de Link, dans le remake Switch 2 de Zelda OOT. Une petite quête annexe pas bien compliquée, mais qui peut vous laisser bloqué…",
+      "tags": []
+    },
+    {
       "title": "Zelda: Ocarina Of Time Remake&#8217;s Castle Town Has A Scene That Will Haunt Me Forever",
       "link": "https://kotaku.com/zelda-ocarina-of-time-remakes-castle-town-has-a-scene-that-will-haunt-me-forever-2000755088",
       "date": "2026-11-09T17:00:53.000Z",
@@ -262,24 +590,6 @@
       "tags": []
     },
     {
-      "title": "Marvel Officially Rebooting the Hulk in 2027 With Major Power Move",
-      "link": "https://www.polygon.com/marvel-hulk-new-series-announced-comics-giveaway-day/",
-      "date": "2026-11-09T16:38:26.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/mcdavin_ec072.jpg",
-      "summary": "Marvel has officially announced an all-new Hulk series coming next year after the fallout of the Infernal Hulk saga",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect 3: Take Earth Back Surprises Fans With Official New Game Release",
-      "link": "https://www.polygon.com/mass-effect-3-take-earth-back-legendary-edition-pc-mod-final-mission-fix/",
-      "date": "2026-11-09T16:31:52.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/2664976/mass_20effect__203__20captain_20shepard_verge_super_wide.1351111923.jpeg",
-      "summary": "The new release makes Mass Effect 3's final mission feel more like ME2's suicide mission via added gameplay options, dialogue, and cutscenes",
-      "tags": []
-    },
-    {
       "title": "Preview Exterminauts sur PC, PS5 et Xbox Series",
       "link": "https://www.jeuxvideo.com/preview/2113495/exterminauts-le-studio-de-dead-by-daylight-prepare-t-il-le-rival-inattendu-de-helldivers-2-nos-premieres-impressions.htm",
       "date": "2026-11-09T16:30:10.000Z",
@@ -304,24 +614,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/ZwtmdmY7xMZj3T24GbFWJH-1920-80.jpg",
       "summary": "The AMD RX 9070 GRE is the latest Radeon GPU and the only graphics card we've seen below its MSRP in recent times.",
-      "tags": []
-    },
-    {
-      "title": "Clayface Officially Passes Huge Box Office Milestone",
-      "link": "https://www.polygon.com/clayface-100-million-box-office-breaking-even/",
-      "date": "2026-11-09T16:22:48.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/clayface-movie-screenshot.webp",
-      "summary": "Clayface cleared $100 million at the box office, signaling an important milestone.",
-      "tags": []
-    },
-    {
-      "title": "A Free GTA 6 Competitor Is Blowing Up on Steam",
-      "link": "https://www.polygon.com/gta-6-competitor-rob-run-blowing-up-steam/",
-      "date": "2026-11-09T16:15:47.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gta-6-couple-in-car.webp",
-      "summary": "A free, brutal crime sandbox game may be just what you're looking for as a 'Grand Theft Auto 6' alternative.",
       "tags": []
     },
     {
@@ -361,15 +653,6 @@
       "tags": []
     },
     {
-      "title": "Pokémon Go 'Into the Wild' 2026 event guide",
-      "link": "https://www.polygon.com/pokemon-go-into-the-wild-2026-event-go-pass/",
-      "date": "2026-11-09T16:12:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/unnamed-1.jpg",
-      "summary": "Pokémon Go's 2026 \"Into the Wild\" event leads into this weekend's Wild Area event. Here are all the bonuses to take advantage of.",
-      "tags": []
-    },
-    {
       "title": "GUIDE Zelda Ocarina of Time Remake : la soluce complète du donjon du Grand Jabu Jabu pour obtenir le saphir zora",
       "link": "https://www.gameblog.fr/jeu-video/ed/soluces/zelda-ocarina-of-time-remake-soluce-donjon-jabu-jabu-726401?utm_source=RSS",
       "date": "2026-11-09T16:10:00.000Z",
@@ -388,39 +671,12 @@
       "tags": []
     },
     {
-      "title": "Ridley Scott’s Failed Dune Movie Paved the Way For His Sci-Fi Masterpiece",
-      "link": "https://www.polygon.com/ridley-scott-failed-dune-movie-explained/",
-      "date": "2026-11-09T15:59:26.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/dune_part_two_screencap_056_webp-1.webp",
-      "summary": "Frank Herbert wasn't happy with Ridley Scott's spin on Dune, although some of it sounds pretty cool",
-      "tags": []
-    },
-    {
-      "title": "New Physint Details Reveal Major Metal Gear Solid Connection",
-      "link": "https://www.polygon.com/physint-hideo-kojima-new-details-metal-gear-mech/",
-      "date": "2026-11-09T15:51:39.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/physint.jpg",
-      "summary": "Pictures from Kojima Productions's 10th anniversary exhibition confirm that Physint will be even closer to Metal Gear Solid than fans hoped.",
-      "tags": []
-    },
-    {
       "title": "Google’s Play Store is already hosting multiple clones of unreleased Steam game Fart Together",
       "link": "https://mobilegamer.biz/googles-play-store-is-already-hosting-multiple-clones-of-unreleased-steam-game-fart-together/",
       "date": "2026-11-09T15:49:17.000Z",
       "sourceId": "mgbiz",
       "image": null,
       "summary": "“I think we may have broken a record for the most clones in the shortest time – for a game that hasn’t even launched yet,” said the original game's developer.",
-      "tags": []
-    },
-    {
-      "title": "Water Temple dungeon walkthrough in Ocarina of Time",
-      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-water-temple-dungeon-walkthrough/",
-      "date": "2026-11-09T15:49:16.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/water-temple_oot.jpg",
-      "summary": "In this walkthrough, we'll guide you through the Water Temple in Ocarina of Time, including how to beat the boss.",
       "tags": []
     },
     {
@@ -862,21 +1118,21 @@
       "tags": []
     },
     {
-      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
-      "link": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
-      "date": "2026-11-09T11:30:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/sF7aJvNGHwVQoNL44cyGFj-1920-80.jpg",
-      "summary": "A proposition that's hard to argue against.",
-      "tags": []
-    },
-    {
       "title": "'I think we'd accidentally created the most hardcore extraction game of all time:' EVE Vanguard is taking hard-won playtest lessons into a '24/7 Alpha'",
       "link": "https://www.pcgamer.com/games/fps/i-think-wed-accidentally-created-the-most-hardcore-extraction-game-of-all-time-eve-vanguard-is-taking-hard-won-playtest-lessons-into-a-24-7-alpha/",
       "date": "2026-11-09T11:30:00.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/Ar6zd5huxuDbunoDSuzDx5-1920-80.jpg",
       "summary": "It's not early access, not yet. Super-early access.",
+      "tags": []
+    },
+    {
+      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
+      "link": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
+      "date": "2026-11-09T11:30:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/sF7aJvNGHwVQoNL44cyGFj-1920-80.jpg",
+      "summary": "A proposition that's hard to argue against.",
       "tags": []
     },
     {
@@ -1174,24 +1430,6 @@
       "tags": []
     },
     {
-      "title": "Zelda : les joueurs de Breath of the Wild peuvent-ils apprécier Ocarina of Time ?",
-      "link": "https://www.jeuxvideo.com/news/2111719/zelda-les-joueurs-de-breath-of-the-wild-peuvent-ils-apprecier-ocarina-of-time.htm",
-      "date": "2026-11-09T06:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179398/1793980737-8851-card.jpg",
-      "summary": "Disponible depuis le 5 novembre sur Nintendo Switch 2, le remake d'Ocarina of Time fait revenir la licence à son ancien système. Mais après avoir goûté à la liberté totale de…",
-      "tags": []
-    },
-    {
-      "title": "Comment les papas de Call of Duty peuvent sauver le FPS le plus important de Xbox ? Nos 5 conseils et attentes",
-      "link": "https://www.jeuxvideo.com/news/2112977/comment-les-papas-de-call-of-duty-peuvent-sauver-le-fps-le-plus-important-de-xbox-nos-5-conseils-et-attentes.htm",
-      "date": "2026-11-09T05:05:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793961679-4365-card.jpg",
-      "summary": "Autrefois licence la plus plus importante des consoles Xbox, Halo est perçu comme un poids pour Microsoft. Avec ses 500 kg, John-117 s’enlise et ne parvient plus à se distinguer…",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - Le Roi Lion : avant Command & Conquer, Westwood Studios était en charge du plus prestigieux des Disney",
       "link": "https://www.gamekult.com/actualite/le-roi-lion-avant-command-conquer-westwood-studios-etait-en-charge-du-plus-prestigieux-des-disney-3050872841.html",
       "date": "2026-11-09T05:00:00.000Z",
@@ -1210,138 +1448,12 @@
       "tags": []
     },
     {
-      "title": "Warhammer Blood Bowl has been delayed into early 2027",
-      "link": "https://www.pcgamer.com/games/sports/warhammer-blood-bowl-has-been-delayed-into-2027/",
-      "date": "2026-11-09T00:45:39.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/yYFgBZtpHgQ9MwUKngZ8tV-1920-80.jpg",
-      "summary": "One more turn.",
-      "tags": []
-    },
-    {
-      "title": "Return Of The Living Dead Cast Horrified By AI-Made Sequel They Were Originally Set To Star In",
-      "link": "https://kotaku.com/return-of-the-living-dead-cast-horrified-by-ai-made-sequel-they-were-originally-set-to-star-in-2000754899",
-      "date": "2026-11-08T23:56:01.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/returnofthelivingdead-1280x821.jpg",
-      "summary": "You mean the movie lied???",
-      "tags": []
-    },
-    {
-      "title": "Nvidia Launches Investigation Into CEO Jensen Huang Following Honeypot Scandal",
-      "link": "https://kotaku.com/nvidia-launches-investigation-into-ceo-jensen-huang-following-honeypot-scandal-2000754894",
-      "date": "2026-11-08T22:09:06.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2025/01/10f5e14638f82f1a04b70d553fef6e8e.jpg",
-      "summary": "The GPU titans say that Huang will not be stepping down and maintain that no secrets were compromised despite the growing spy plot",
-      "tags": []
-    },
-    {
-      "title": "Jackbox Games isn't interested in AI development: 'All that is done by people, and we have no intention of changing that'",
-      "link": "https://www.pcgamer.com/gaming-industry/game-development/jackbox-games-isnt-interested-in-ai-development-all-that-is-done-by-people-and-we-have-no-intention-of-changing-that/",
-      "date": "2026-11-08T22:06:56.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ZimasKeFtUuoHSCqpCekQo-1920-80.png",
-      "summary": "CEO Mike Bilder doesn't see AI as having much to offer Jackbox.",
-      "tags": []
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang admits to affair with alleged Chinese spy as company board launches investigation",
-      "link": "https://www.pcgamer.com/gaming-industry/nvidia-ceo-jensen-huang-admits-to-affair-with-alleged-chinese-spy-as-company-board-launches-investigation/",
-      "date": "2026-11-08T21:38:31.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/VE3dBZCG8wUwPxHWNzqwD9-1920-80.jpg",
-      "summary": "Good lord what is happening in there.",
-      "tags": []
-    },
-    {
-      "title": "Zelda Ocarina of Time a traumatisé toute une génération de joueurs : et si nous avions tous tort à propos du Temple de l'Eau ?",
-      "link": "https://www.jeuxvideo.com/news/2112898/zelda-ocarina-of-time-a-traumatise-toute-une-generation-de-joueurs-et-si-nous-avions-tous-tort-a-propos-du-temple-de-l-eau.htm",
-      "date": "2026-11-08T21:20:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179390/1793895048-3359-card.jpg",
-      "summary": "Considéré comme le pire calvaire du jeu, le Temple de l'Eau d'Ocarina of Time refait parler de lui avec l'arrivée de son remake sur Nintendo Switch 2. Entre erreurs d'ergonomie…",
-      "tags": []
-    },
-    {
-      "title": "World Of Warcraft: Forever Player Already Hits Level Cap As Users Return To Azeroth In Record Numbers",
-      "link": "https://kotaku.com/world-of-warcraft-forever-player-already-hits-level-cap-as-users-return-to-azeroth-in-record-numbers-2000754888",
-      "date": "2026-11-08T20:38:51.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/wowforevercampfire-1280x720.jpg",
-      "summary": "A World of Warcraft Classic record holder returned to pull off the same trick twice, all the more impressive during one of the highest player surges the online RPG has ever seen",
-      "tags": []
-    },
-    {
       "title": "9 hours with the stubbornly different Grand Theft Auto IV",
       "link": "https://www.gamefile.news/p/gta-iv-review",
       "date": "2026-11-08T19:45:13.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!TnzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac769f3-837e-4eeb-870c-f5466d2da988_3840x2160.png",
       "summary": "A harder GTA to enjoy, which makes it all the more worth it",
-      "tags": []
-    },
-    {
-      "title": "Melty New Puzzle Game From Shotgun King Creators Burns Tetris At Both Ends",
-      "link": "https://kotaku.com/melty-new-puzzle-game-from-shotgun-king-creators-burns-tetris-at-both-ends-2000754885",
-      "date": "2026-11-08T19:41:21.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/HotWax-1280x843.jpg",
-      "summary": "In the indie game Hot Wax, you'll descend into a deep, unlit dungeon, carefully igniting tetrominoes to survive",
-      "tags": []
-    },
-    {
-      "title": "Pourquoi WoW Forever n'est pas un problème pour GTA 6 ?",
-      "link": "https://www.jeuxvideo.com/news/2113138/pourquoi-wow-forever-n-est-pas-un-probleme-pour-gta-6.htm",
-      "date": "2026-11-08T19:10:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179399/1793987046-7603-card.jpg",
-      "summary": "Alors que l'industrie retient son souffle face à l'arrivée imminente de Grand Theft Auto VI, une communauté bien spécifique continue de vaquer à ses occupations sur Azeroth sans…",
-      "tags": []
-    },
-    {
-      "title": "Skyrim lead designer Bruce Nesmith loved that Baldur's Gate 3 closed off story paths based on your decisions, but defends Bethesda's approach: 'They were both fun, they're just fun in different ways'",
-      "link": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-bruce-nesmith-loved-that-baldurs-gate-3-closed-off-story-paths-based-on-your-decisions-but-defends-bethesdas-approach-they-were-both-fun-theyre-just-fun-in-different-ways/",
-      "date": "2026-11-08T18:33:45.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/9fXDM6ZgfniUps2Mv9Gmei-1920-80.jpg",
-      "summary": "I love being Cyrodiil's one-man deep state in charge of all major economic, social, criminal, and paramilitary organizations.",
-      "tags": []
-    },
-    {
-      "title": "Perle noire The Witcher 3 Remastered : Où trouver ce matériau d'artisanat ?",
-      "link": "https://www.jeuxvideo.com/news/2112978/perle-noire-the-witcher-3-remastered-ou-trouver-ce-materiau-d-artisanat.htm",
-      "date": "2026-11-08T18:15:14.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179396/1793962633-3952-card.jpg",
-      "summary": "Indispensable pour confectionner de puissantes runes et optimiser votre équipement de grand maître dans The Witcher 3 Wild Hunt, la perle noire est difficile à obtenir quand on…",
-      "tags": []
-    },
-    {
-      "title": "Je pensais vraiment ce que j’ai dit — Nicolas Cage est en réalité soulagé que Spider-Noir ait été annulé",
-      "link": "https://fr.ign.com/madden/93780/je-pensais-vraiment-ce-que-jai-dit-nicolas-cage-est-en-realite-soulage-que-spider-noir-ait-ete-annul",
-      "date": "2026-11-08T18:00:31.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/i/i-meant-it/i-meant-it-when-i-said-what-i-said-nicolas-cage-is-actually_5khp.png",
-      "summary": "« On ne veut jamais se retrouver coincé à incarner sans cesse le même personnage et finir par lasser le public. »",
-      "tags": []
-    },
-    {
-      "title": "My apologies Deadlock, I wasn't familiar with your (musical) game",
-      "link": "https://www.pcgamer.com/games/moba/my-apologies-deadlock-i-wasnt-familiar-with-your-musical-game/",
-      "date": "2026-11-08T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/pbYEWFvkgVi8QrjcR2QAea-1920-80.jpg",
-      "summary": "Yeah, yeah, I'm the Hidden King.",
-      "tags": []
-    },
-    {
-      "title": "Ichorous is the bloody platformer I've been waiting for ever since I finished Blasphemous 2",
-      "link": "https://www.pcgamer.com/games/roguelike/ichorous-is-the-bloody-platformer-ive-been-waiting-for-ever-since-i-finished-blasphemous-2/",
-      "date": "2026-11-08T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/rsmfHbpNsdX4uoZqE5dEUR-1920-80.png",
-      "summary": "I impale myself with a sword to heal? I'm sold!",
       "tags": []
     },
     {
