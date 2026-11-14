@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T21:37:39.846Z",
+  "generatedAt": "2026-11-14T01:44:22.686Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-13T18:37:18.000Z",
-      "kept": 19
+      "kept": 20
     },
     "gamedev": {
       "status": "ok",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-13T19:10:07.000Z",
-      "kept": 13
+      "newest": "2026-11-13T21:20:08.000Z",
+      "kept": 15
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-13T21:30:56.000Z",
-      "kept": 17
+      "newest": "2026-11-13T23:24:49.000Z",
+      "kept": 18
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-13T20:37:35.000Z",
-      "kept": 23
+      "newest": "2026-11-13T22:28:10.000Z",
+      "kept": 22
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-13T21:30:26.000Z",
+      "newest": "2026-11-14T00:20:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -118,6 +118,87 @@
   },
   "articles": [
     {
+      "title": "HBO’s 5-Part Crime Drama Has One of the Best Seasons in TV History",
+      "link": "https://www.polygon.com/the-wire-season-4-recommendation/",
+      "date": "2026-11-14T00:20:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/roland-pryzbylewski-teached-a-class-in-the-wire-season-4.jpg",
+      "summary": "The Wire’s fourth season provided a far deeper look at Baltimore’s problems",
+      "tags": []
+    },
+    {
+      "title": "Fallout 5 and Fallout Remasters Officially Announced",
+      "link": "https://www.polygon.com/fallout-5-fo3-remaster-new-games-bethesda-softworks/",
+      "date": "2026-11-14T00:16:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/fallouts2tbimage3_3000.jpg",
+      "summary": "Bethesda Softworks updates fans on the future of Fallout, which includes new Fallout 3 and New Vegas releases and Fallout 5.",
+      "tags": []
+    },
+    {
+      "title": "Microsoft On FAA Ground Stop: It Wasn&#8217;t Me",
+      "link": "https://kotaku.com/microsoft-on-faa-ground-stop-it-wasnt-me-2000756749",
+      "date": "2026-11-13T23:24:49.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/microsoft-sflight-sim-1280x720.jpg",
+      "summary": "The cause is still unknown",
+      "tags": []
+    },
+    {
+      "title": "Blizzard Officially Responds to Disappointed Overwatch Fans Over Hero 55",
+      "link": "https://www.polygon.com/overwatch-new-hero-55-hudson-damage-dps-blizzard/",
+      "date": "2026-11-13T22:53:10.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/ow_s1_herolineup_keyart.jpg",
+      "summary": "Overwatch's next hero, Hudson, will be a Damage (DPS) character, not a support. Fans are disappointed by the switch and Blizzard is responding.",
+      "tags": []
+    },
+    {
+      "title": "The Hater&#8217;s Guide To Ocarina Of Time",
+      "link": "https://kotaku.com/the-haters-guide-to-ocarina-of-time-2000756728",
+      "date": "2026-11-13T22:33:50.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/ganon-1280x720.jpg",
+      "summary": "Stay strong, fellow Ocarina antagonists, we will get through this",
+      "tags": []
+    },
+    {
+      "title": "Yes, some brave games are still launching on Steam during GTA 6 week",
+      "link": "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week/",
+      "date": "2026-11-13T22:28:10.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/8TjNUwvCTei477eGjE9ymL-1920-80.jpg",
+      "summary": "Roundabouts, merchant republics, and dark fantasy roguelikes aren't budging their release plans.",
+      "tags": []
+    },
+    {
+      "title": "Don't like AI in games? Crimson Desert studio Pearl Abyss ain't care: it's expanding AI use 'throughout our entire development pipeline'",
+      "link": "https://www.pcgamer.com/software/ai/dont-like-ai-in-games-crimson-desert-studio-pearl-abyss-aint-care-its-expanding-ai-use-throughout-our-entire-development-pipeline/",
+      "date": "2026-11-13T22:17:06.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/nLRUSe282Y7dBidATad2pm-1920-80.jpg",
+      "summary": "Pearl Abyss apologized for the presence of AI-generated art in Crimson Desert earlier this year, but it's not slowing down.",
+      "tags": []
+    },
+    {
+      "title": "Checking In On The Weird Little Guys In Ocarina Of Time To See How They Fared In The Remake",
+      "link": "https://kotaku.com/checking-in-on-the-weird-little-guys-in-ocarina-of-time-to-see-how-they-fared-in-the-remake-2000756684",
+      "date": "2026-11-13T22:00:33.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/freaks-17-1280x720.jpg",
+      "summary": "Time will change you",
+      "tags": []
+    },
+    {
+      "title": "10 New Movies to Watch This Weekend on Netflix, Prime Video, and HBO Max (November 13 - 15)",
+      "link": "https://www.polygon.com/new-movies-streaming-this-weekend-netflix-november-13-15/",
+      "date": "2026-11-13T22:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/anne-hathaway-end-of-oak-street-032626-3eee5c3dcc1a4cd4b378d5646318c42c.jpg",
+      "summary": "On this week's streaming column, there's one of the biggest dinosaur blockbusters of the year, a big horror movie, and much more.",
+      "tags": []
+    },
+    {
       "title": "Warhammer Survivors Puts Your Brain In A Mindless Blender Of Non-Stop Action",
       "link": "https://kotaku.com/warhammer-survivors-puts-your-brain-in-a-blender-with-non-stop-action-but-precious-little-engagement-2000756655",
       "date": "2026-11-13T21:30:56.000Z",
@@ -136,6 +217,15 @@
       "tags": []
     },
     {
+      "title": "GTA 6 : votre précommande est en retard, que faut-il faire ?",
+      "link": "https://www.jeuxvideo.com/news/2114266/gta-6-votre-precommande-est-en-retard-que-faut-il-faire.htm",
+      "date": "2026-11-13T21:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179458/1794576638-6611-card.jpg",
+      "summary": "Vous pensiez avoir l’esprit tranquille parce que vous avez effectué votre précommande de Grand Theft Auto 6 des mois à l’avance ? Rassurez-vous, vous n’étiez pas les seuls à…",
+      "tags": []
+    },
+    {
       "title": "Marvel Officially Confirms New Avengers Team for Doomsday",
       "link": "https://www.polygon.com/avengers-doomsday-marvel-confirms-new-team-lineup/",
       "date": "2026-11-13T21:02:48.000Z",
@@ -150,7 +240,7 @@
       "date": "2026-11-13T21:00:18.000Z",
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/IMG_1778-1280x720.jpg",
-      "summary": "The Legend Of Zelda: Ocarina of Time remake wants you to know this is a tragedy",
+      "summary": "The Legend of Zelda: Ocarina of Time remake wants you to know this is a tragedy",
       "tags": []
     },
     {
@@ -169,6 +259,15 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/tcdbody_zx012.jpg",
       "summary": "On this week's TV column, there's the return of one of the biggest fantasy franchises in the world, a new Netflix horror, and more.",
+      "tags": []
+    },
+    {
+      "title": "Le Baldur's Gate 3 de la SF : ce RPG est le jeu que j'attends le plus début 2027 !",
+      "link": "https://www.jeuxvideo.com/news/2114232/le-baldur-s-gate-3-de-la-sf-ce-rpg-est-le-jeu-que-j-attends-le-plus-debut-2027.htm",
+      "date": "2026-11-13T20:40:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179457/1794567029-2256-card.jpg",
+      "summary": "D’un côté, Warhammer 40.000, un univers que je connais très bien. De l’autre, Baldur’s Gate 3, un jeu de rôle que je considère comme le meilleur dans sa catégorie. Quand un CRPG…",
       "tags": []
     },
     {
@@ -208,24 +307,6 @@
       "tags": []
     },
     {
-      "title": "The Game Awards 2026 Nominees Announcement Confirmed for Nov. 17",
-      "link": "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
-      "date": "2026-11-13T20:23:24.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/tga_key_art_side.jpg",
-      "summary": "Geoff Keighley's The Game Awards will announce 2026's nominees, including Game of the Year, on Tuesday, Nov. 17.",
-      "tags": []
-    },
-    {
-      "title": "Every Free Game You Can Keep on Steam, Epic, PlayStation Plus, and Xbox (Nov. 13-19)",
-      "link": "https://www.polygon.com/free-games-right-now-steam-epic-ps-plus-nov-13-19/",
-      "date": "2026-11-13T20:14:13.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/knightica-steam.jpg",
-      "summary": "Epic Games Store, Steam, and Xbox have some free games to keep you busy before GTA 6 drops.",
-      "tags": []
-    },
-    {
       "title": "Microsoft ‘deeply’ apologizes for global service outage, says no AI or hackers are to blame",
       "link": "https://www.pcgamer.com/software/microsoft-deeply-apologizes-for-global-service-outage-says-no-ai-or-hackers-are-to-blame/",
       "date": "2026-11-13T19:54:20.000Z",
@@ -262,15 +343,6 @@
       "tags": []
     },
     {
-      "title": "Tom Hiddleston's Loki: A Marvel Series Evolution",
-      "link": "https://www.polygon.com/tom-hiddleston-loki-better-with-every-episode/",
-      "date": "2026-11-13T19:21:43.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25074120/ARC_205_15197_R.jpg",
-      "summary": "Explore how Tom Hiddleston's Loki redefined Marvel's storytelling.",
-      "tags": []
-    },
-    {
       "title": "Au lancement, vous ne pourrez pas jouer à GTA 6 sur PC... mais sur cette vieille console à 50 €, c'est possible",
       "link": "https://www.jeuxvideo.com/news/2113978/au-lancement-vous-ne-pourrez-pas-jouer-a-gta-6-sur-pc-mais-sur-cette-vieille-console-a-50-c-est-possible.htm",
       "date": "2026-11-13T19:10:07.000Z",
@@ -286,15 +358,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872969/9708049c__800_800__782-18-1820-1056.jpg",
       "summary": "C'était quasiment couru d'avance : peu exigeant sur le plan technique, l'exclusivité PS5 God of War : Sons of Sparta va finalement recevoir sa déclinaison PS4, accompagnée d'une…",
-      "tags": []
-    },
-    {
-      "title": "Magic Just Revealed 19 New Cards From 2027’s First Set — Including a $30 Reprint With Stunning Art",
-      "link": "https://www.polygon.com/mtg-nauctis-the-sunken-realm-magiccon-reveals-spoilers/",
-      "date": "2026-11-13T19:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/2h0cqitn2c.jpg",
-      "summary": "Wizards of the Coast gave Nauctis: The Sunken Realm a proper introduction at MagicCon: Atlanta.",
       "tags": []
     },
     {
@@ -349,6 +412,24 @@
       "sourceId": "gamedev",
       "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd8d689dd5fde781e/6af754d33153df897cb0e447/euflagandphone.jpg?width=720&quality=80&disable=upscale",
       "summary": "The Digital Fairness Act, if adopted, could massively change the way some games are developed and published not just in Europe, but across the globe.",
+      "tags": []
+    },
+    {
+      "title": "Crazy Taxi World Tour - Trailer de la carte de l'Inde",
+      "link": "https://fr.ign.com/crazy-taxi-new/93940/crazy-taxi-world-tour-exclusive-india-map-reveal-trailer",
+      "date": "2026-11-13T18:00:00.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/c/crazy-taxi/crazy-taxi-world-tour-exclusive-india-map-reveal-trailer_mtgc.jpg",
+      "summary": "C’est l’heure de gagner un paquet d’argent ! Le compteur tourne et la destination finale est officiellement confirmée : bienvenue en Inde ! Découvrez en avant-première exclusive…",
+      "tags": []
+    },
+    {
+      "title": "Crazy Taxi : la carte finale de World Tour dévoilée",
+      "link": "https://fr.ign.com/crazy-taxi-new/93928/crazy-taxi-la-carte-finale-de-world-tour-devoilee",
+      "date": "2026-11-13T18:00:00.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/crazy-taxi-india-map-revealed-1794350622082_35fs.jpg",
+      "summary": "Bienvenue en Inde !",
       "tags": []
     },
     {
@@ -442,7 +523,7 @@
       "tags": []
     },
     {
-      "title": "Overwatch Fans Got The News They Were Afraid Of About The New ‘Omnic Detective’ Hero",
+      "title": "Overwatch Fans Got The News They Were Afraid Of About The New ‘Omnic Detective’ Hero [Update]",
       "link": "https://kotaku.com/overwatch-hudson-omnic-detective-damage-support-role-2000756631",
       "date": "2026-11-13T17:00:01.000Z",
       "sourceId": "kotaku",
@@ -1224,15 +1305,6 @@
       "tags": []
     },
     {
-      "title": "Wolfenstein 3 is in production at MachineGames",
-      "link": "https://www.pcgamer.com/games/fps/wolfenstein-3-is-in-production-at-machinegames/",
-      "date": "2026-11-13T01:35:32.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/kLcpoTPbNywZi79u2Nox5C-1920-80.jpg",
-      "summary": "Blazkowicz is backscowicz.",
-      "tags": []
-    },
-    {
       "title": "What an Xbox agreement [***] looks like",
       "link": "https://www.gamefile.news/p/xbox-take-two-2026-agreement",
       "date": "2026-11-13T00:39:25.000Z",
@@ -1242,57 +1314,12 @@
       "tags": []
     },
     {
-      "title": "Slay The Spire 2&#8242;s Latest Update Adds A New Character, Two New Modes, And A Byrdpip Evolution!",
-      "link": "https://kotaku.com/slay-the-spire-2s-latest-update-adds-a-new-character-two-new-modes-and-a-byrdpip-evolution-2000756380",
-      "date": "2026-11-12T23:00:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/Slay-the-Spire-2s-new-character-The-Fool-in-the-new-Blitz-Mode.jpg",
-      "summary": "Oh, and a not-so-subtle hint that either the Hermit or the Watcher will be the next new characters",
-      "tags": []
-    },
-    {
-      "title": "New 4-minute Fable gameplay trailer shows a game that doesn't look much like Fable",
-      "link": "https://www.pcgamer.com/games/rpg/new-4-minute-fable-gameplay-trailer-shows-a-game-that-doesnt-look-much-like-fable/",
-      "date": "2026-11-12T22:43:21.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/vQV33tgAikCCCHGpnBucEo-1920-80.jpg",
-      "summary": "Maybe it's just me. Is it just me?",
-      "tags": []
-    },
-    {
-      "title": "Palworld developer Pocketpair gives employees time off for 'a 5-day business trip in Vice City when GTA 6 launches'",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/palworld-developer-pocketpair-gives-employees-time-off-for-a-5-day-business-trip-in-vice-city-when-gta-6-launches/",
-      "date": "2026-11-12T22:08:48.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/qssUN2VdpiBrvmcfvqWGdK-1920-80.jpg",
-      "summary": "Must be nice.",
-      "tags": []
-    },
-    {
-      "title": "Xbox Adds 21 More Original Xbox Games To Backwards Compatibility Program And Over Half Of Them Are Star Wars",
-      "link": "https://kotaku.com/xbox-releases-21-more-original-xbox-games-on-pc-and-over-half-of-them-are-star-wars-2000756360",
-      "date": "2026-11-12T22:00:34.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/111226_XBOX-Wire_PCBackCompat-JPG-6d6dbed266e723ed4c62-1280x720.jpg",
-      "summary": "And some of them are getting achievements",
-      "tags": []
-    },
-    {
       "title": "Candy Crush crossover celebrates 25 years of Xbox with Halo, Spyro, Banjo-Kazooie and more",
       "link": "https://www.pocketgamer.biz/candy-crush-crossover-celebrates-25-years-of-xbox/",
       "date": "2026-11-12T22:00:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142050/90182/candy-crush-xbox-25th-anniversary_l660.jpg",
       "summary": "Candy Crush is crossing over with eight games franchises that have appeared on Xbox from across its owned studios, celebrating 25 years of the platform. Halo, Fallout, Spyro…",
-      "tags": []
-    },
-    {
-      "title": "Hugh Jackman et Ryan Reynolds sont crédités en tant qu'auteurs sur Avengers: Doomsday, relançant les spéculations autour des rôles de Deadpool et Wolverine",
-      "link": "https://fr.ign.com/avengers-doomsday/93918/hugh-jackman-et-ryan-reynolds-sont-credites-en-tant-quauteurs-sur-avengers-doomsday-relancant-les-sp",
-      "date": "2026-11-12T21:45:01.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/h/hugh-jackm/hugh-jackman-and-ryan-reynolds-are-credited-as-writers-on-av_yq14.jpg",
-      "summary": "Marvel Jesus revient.",
       "tags": []
     },
     {
