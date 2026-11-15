@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-15T18:54:21.746Z",
+  "generatedAt": "2026-11-15T23:17:33.430Z",
   "sourceStatus": {
     "ign": "ok",
-    "gamedev": "ok",
+    "gamedev": "stale",
     "gibiz": "stale",
     "jv": "ok",
     "gameblog": "ok",
@@ -25,7 +25,7 @@
       "kept": 12
     },
     "gamedev": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-11-13T18:32:59.000Z",
@@ -42,8 +42,8 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-15T16:15:08.000Z",
-      "kept": 9
+      "newest": "2026-11-15T21:20:09.000Z",
+      "kept": 10
     },
     "gameblog": {
       "status": "ok",
@@ -63,7 +63,7 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-15T18:33:40.000Z",
+      "newest": "2026-11-15T22:09:53.000Z",
       "kept": 5
     },
     "pcgamer": {
@@ -71,13 +71,13 @@
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-11-15T18:00:00.000Z",
-      "kept": 14
+      "kept": 12
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-15T18:41:30.000Z",
+      "newest": "2026-11-15T23:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -85,7 +85,7 @@
       "url": "https://www.gamefile.news/feed",
       "items": 20,
       "newest": "2026-11-14T18:34:51.000Z",
-      "kept": 5
+      "kept": 4
     },
     "pgbiz": {
       "status": "ok",
@@ -118,6 +118,87 @@
   },
   "articles": [
     {
+      "title": "Tom Cruise's Favorite Director's Breakout Action Thriller Is Officially Free to Stream",
+      "link": "https://www.polygon.com/way-of-gun-movie-streaming-free-november-2026/",
+      "date": "2026-11-15T23:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/wotg2.jpg",
+      "summary": "Watch it while doing your favorite man dance",
+      "tags": []
+    },
+    {
+      "title": "Universal Paperclips Creator Blends Scrabble And Strategy In Towers Of Babble",
+      "link": "https://kotaku.com/universal-paperclips-creator-blends-scrabble-and-strategy-in-towers-of-babble-2000757126",
+      "date": "2026-11-15T22:09:53.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/towersofbable.jpg",
+      "summary": "Frank Lantz' latest indie game is perfect for the semiotician looking for a more bespoke Scribblenauts experience",
+      "tags": []
+    },
+    {
+      "title": "Prime Video's Near-Perfect Game of Thrones Replacement Officially Arrives in 2 Months",
+      "link": "https://www.polygon.com/blood-axe-prime-video-episode-1-review/",
+      "date": "2026-11-15T21:25:25.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/bldx_s1_ut_250806_walber_00342r_cropc_f_3000-1.jpg",
+      "summary": "Time to start sharpening your bloodaxe...",
+      "tags": []
+    },
+    {
+      "title": "WoW Forever et Zelda Ocarina of Time sont des cartons et c'est déprimant : pourquoi les vieux jeux vidéo marchent autant ?",
+      "link": "https://www.jeuxvideo.com/news/2114448/wow-forever-et-zelda-ocarina-of-time-sont-des-cartons-et-c-est-deprimant-pourquoi-les-vieux-jeux-video-marchent-autant.htm",
+      "date": "2026-11-15T21:20:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179476/1794758197-4661-card.jpg",
+      "summary": "Le succès insolent de World of Warcraft: Forever et du remake d’Ocarina of Time confirme un repli massif de l'industrie et des joueurs vers le passé. Derrière ces triomphes…",
+      "tags": []
+    },
+    {
+      "title": "Halifax Parents Hoping To Reverse Nine-Year-Old’s $20,000 Roblox Bill",
+      "link": "https://kotaku.com/halifax-parents-hoping-to-reverse-nine-year-olds-20000-roblox-bill-2000757111",
+      "date": "2026-11-15T21:15:46.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2021/04/fy9ihubagxwnsksltxtb.jpg",
+      "summary": "Racking up a total of $28,000 through a shared Apple Pay account, the Maritimers are frustrated that the popular gaming platform refuses to refund like the rest",
+      "tags": []
+    },
+    {
+      "title": "Zelda: Ocarina of Time’s No. 1 cause of death officially revealed",
+      "link": "https://www.polygon.com/zelda-ocarina-of-time-remake-mobile-app-deaths/",
+      "date": "2026-11-15T20:20:50.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ocarina-of-time-remake-stalchildren.jpeg",
+      "summary": "The most modern thing about the Zelda remake might just be its mobile app.",
+      "tags": []
+    },
+    {
+      "title": "17 Years Ago, the Longest Running Sci-Fi Show Flipped Its Core Concept On Its Head",
+      "link": "https://www.polygon.com/doctor-who-the-waters-of-mars-17th-anniversary-retrospective/",
+      "date": "2026-11-15T20:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/doctor-who-the-waters-of-mars.jpg",
+      "summary": "David Tennant is king when it comes to giving complex performances. His best is in the Doctor Who episode 'The Water of Mars.'",
+      "tags": []
+    },
+    {
+      "title": "Retenue captive pendant 521 jours, cette ado s'en sort grâce à un jeu vidéo",
+      "link": "https://www.jeuxvideo.com/news/2114008/retenue-captive-pendant-521-jours-cette-ado-s-en-sort-grace-a-un-jeu-video.htm",
+      "date": "2026-11-15T19:10:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179450/1794501763-7427-card.jpg",
+      "summary": "Disparue depuis mai 2025 dans l'Utah, Kylie Arellano a été retrouvée vivante le 1er novembre 2026 dans l'Oregon après 521 jours de captivité. C'est en lançant un appel à l'aide…",
+      "tags": []
+    },
+    {
+      "title": "Nintendo Switch 2 Is Finally Getting Capcom’s Fastest-Selling Game Ever",
+      "link": "https://www.polygon.com/monster-hunter-wilds-nintendo-switch-2-release-date/",
+      "date": "2026-11-15T19:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/capcom-characters.jpg",
+      "summary": "Monster Hunter Wilds is coming to Switch 2, just in time for the holiday season. And it's also a cool 25% off ahead of launch.",
+      "tags": []
+    },
+    {
       "title": "GTA 6 Trophy Count and Full Completion Time Leaks in New Reports",
       "link": "https://www.polygon.com/gta-6-platinum-trophy-mythic-achievement-time-to-get/",
       "date": "2026-11-15T18:41:30.000Z",
@@ -142,6 +223,15 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2021/10/2cc9f11c710d6cdf53226db581ca09c4.jpg",
       "summary": "After trying to reverse course with petitions, billboards and lawmakers, the 'Save Mass Effect' movement is resorting to a new tactic: baked goods",
+      "tags": []
+    },
+    {
+      "title": "Armure de plates du vide Crimson Desert : où récupérer les 5 pièces de cet ensemble et la Grande épée du vide ?",
+      "link": "https://www.jeuxvideo.com/news/2113568/armure-de-plates-du-vide-crimson-desert-ou-recuperer-les-5-pieces-de-cet-ensemble-et-la-grande-epee-du-vide.htm",
+      "date": "2026-11-15T18:15:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179432/1794316111-7330-card.jpg",
+      "summary": "Avec l’arrivée du DLC Charting the Unknown de Crimson Desert, de nouveaux équipements ont fait leur apparition dans les terres de Pywel, notamment dans l’immense désert pourpre…",
       "tags": []
     },
     {
@@ -178,6 +268,15 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/9ioSw2Gug8fVTiMxZ36YyA-1920-80.png",
       "summary": "\"We want League to stand the test of time.\"",
+      "tags": []
+    },
+    {
+      "title": "The Legend of Zelda Ocarina of Time se vend deux fois plus en physique qu'en dématérialisé dans ce pays et ce n'est pas un hasard",
+      "link": "https://www.jeuxvideo.com/news/2114342/the-legend-of-zelda-ocarina-of-time-se-vend-deux-fois-plus-en-physique-qu-en-dematerialise-dans-ce-pays-et-ce-n-est-pas-un-hasard.htm",
+      "date": "2026-11-15T17:45:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179459/1794586428-1456-card.jpg",
+      "summary": "Alors que le jeu vidéo mondial bascule massivement vers le tout-numérique, le remake de The Legend of Zelda : Ocarina of Time signe un démarrage historique sur Nintendo Switch 2…",
       "tags": []
     },
     {
@@ -262,30 +361,12 @@
       "tags": []
     },
     {
-      "title": "‘Rings of Power’ Stars Break Down 2 Major Deaths in Prime Video’s Lord of the Rings Series",
-      "link": "https://www.polygon.com/rings-of-power-season-3-deaths-interview/",
-      "date": "2026-11-15T16:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/rings-of-power-elrond.jpg",
-      "summary": "The Rings of Power stars Ema Horvath and Ismael Cruz Córdova discuss season 3’s shocking deaths and their final moments as Eärien and Arondir.",
-      "tags": []
-    },
-    {
       "title": "Slay the Spire 2 has a new character in testing, and she's really quite busted",
       "link": "https://www.pcgamer.com/games/roguelike/slay-the-spire-2-has-a-new-character-in-testing-and-shes-really-quite-busted/",
       "date": "2026-11-15T16:00:00.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/u8CE4nwC7yPfoUuGx45ytR-1920-80.png",
       "summary": "I won't miss.",
-      "tags": []
-    },
-    {
-      "title": "PlayStation Announces New Black Friday Deals On Hardware",
-      "link": "https://www.polygon.com/playstation-black-friday-hardware-deals/",
-      "date": "2026-11-15T15:56:06.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24018308/PSVR2_front.jpg",
-      "summary": "The PlayStation VR2 is discounted, but the PlayStation 5 is not",
       "tags": []
     },
     {
@@ -370,15 +451,6 @@
       "tags": []
     },
     {
-      "title": "Netflix's New 12-Part Sci-Fi Mystery Already Feels Like a Masterpiece Just 3 Episodes In",
-      "link": "https://www.polygon.com/fool-night-netflix-review/",
-      "date": "2026-11-15T15:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/fool-night-2.jpg",
-      "summary": "Fool Night turns a bleak sci-fi premise into an visually stunning mystery that rewards patience.",
-      "tags": []
-    },
-    {
       "title": "Fable ne sait pas se vendre auprès des joueurs, s'en est même étrange. D'une ambiance colorée on passe désormais à une atmosphère sombre et peu séduisante",
       "link": "https://www.jeuxvideo.com/news/2114234/fable-ne-sait-pas-se-vendre-aupres-des-joueurs-s-en-est-meme-etrange-d-une-ambiance-coloree-on-passe-desormais-a-une-atmosphere-sombre-et-peu-seduisante.htm",
       "date": "2026-11-15T15:00:09.000Z",
@@ -394,15 +466,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/4VT5ApRCBpRhSw3ke8HCqm-1920-80.jpg",
       "summary": "King's Field of dreams.",
-      "tags": []
-    },
-    {
-      "title": "No One Injured After Gunman Opens Fire On Xbox Studio",
-      "link": "https://www.polygon.com/inxile-entertainment-shooting-xbox/",
-      "date": "2026-11-15T14:49:51.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ss_6f5cdefeaa1a4bb9644314b522c11bc8de325832-1920x1080.jpg",
-      "summary": "The Xbox-owned studio inXile Entertainment confirmed that no developers were hurt",
       "tags": []
     },
     {
@@ -430,15 +493,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179475/1794751335-6747-card.jpg",
       "summary": "Découvrez l'emplacement de Kiki dans le remake Switch 2 de Zelda OOT. Cela vous permettra de récolter un nouveau quart de coeur de la citadelle d'Hyrule, de quoi vous rapprocher…",
-      "tags": []
-    },
-    {
-      "title": "All sprites in the Fortnite Chapter 7 mini season",
-      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-all-sprites-list-abilities/",
-      "date": "2026-11-15T14:01:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_sprites.jpg",
-      "summary": "Here's a list of the currently available sprite in Fortnite's Chapter 7 \"Treasure Hunters\" mini season, along with what they do.",
       "tags": []
     },
     {
@@ -651,71 +705,6 @@
       "tags": []
     },
     {
-      "title": "WoW: Forever dungeon mobs no longer give EXP if they're trivial for anyone in the party",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-dungeon-mobs-no-longer-give-exp-if-theyre-trivial-for-anyone-in-the-party/",
-      "date": "2026-11-14T22:17:19.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/nGEgktqvFSg7YMjusbfHAb-1920-80.png",
-      "summary": "No more calling on your high-level buddy for a boost.",
-      "tags": []
-    },
-    {
-      "title": "League of Legends : New Dawn, la nouvelle version du jeu phare de Riot Games, arrive en 2027",
-      "link": "https://www.jeuxvideo.com/news/2114302/league-of-legends-new-dawn-la-nouvelle-version-du-jeu-phare-de-riot-games-arrive-en-2027.htm",
-      "date": "2026-11-14T22:02:58.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179458/1794579489-3573-card.jpg",
-      "summary": "Teasée depuis près d'un an sous le nom de League Next, la prochaine grande évolution de League of Legends a enfin été dévoilée. Baptisée New Dawn, cette mise à jour d'envergure…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Long-Lost, Self-Deleting Pokémon Fishing Game For Nintendo DS Resurfaces 20 Years Later",
-      "link": "https://kotaku.com/long-lost-self-deleting-pokemon-fishing-game-for-nintendo-ds-resurfaces-20-years-later-2000756876",
-      "date": "2026-11-14T21:47:32.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/pokemangafishing-1280x857.jpg",
-      "summary": "PokéPark: Fishing Rally was only available at a Japanese theme park in 2005, with one collector now boasting what's believed to be the lone playable hard copy",
-      "tags": []
-    },
-    {
-      "title": "Il y a 15 ans, le jeu vidéo qui a révolutionné les grands RPG solos est sorti : voici pourquoi Skyrim est si unique",
-      "link": "https://www.jeuxvideo.com/news/2113967/il-y-a-15-ans-le-jeu-video-qui-a-revolutionne-les-grands-rpg-solos-est-sorti-voici-pourquoi-skyrim-est-si-unique.htm",
-      "date": "2026-11-14T21:20:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179449/1794493143-7497-card.jpg",
-      "summary": "The Elder Scrolls V : Skyrim vient de fêter son quinzième anniversaire. Pourtant, même une décennie et demie après sa sortie, ce titre culte de Bethesda reste une référence…",
-      "tags": []
-    },
-    {
-      "title": "Is the game funny, or just the players? Jackbox CEO says they get 'a lot of false positives' with a staff of comedy writers",
-      "link": "https://www.pcgamer.com/games/is-the-game-funny-or-just-the-players-jackbox-ceo-says-they-get-a-lot-of-false-positives-with-a-staff-of-comedy-writers/",
-      "date": "2026-11-14T20:45:44.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/n4HBHbWrPLcQxSeZHb37v4-1920-80.jpg",
-      "summary": "Testing comedy games comes with a unique challenge.",
-      "tags": []
-    },
-    {
-      "title": "Team Meat Whips Out Remake Of Classic Brutal Platformer Super Meat Boy",
-      "link": "https://kotaku.com/team-meat-whips-out-remake-of-classic-brutal-platformersuper-meat-boy-2000756869",
-      "date": "2026-11-14T19:33:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/supermeatboyagain-1280x816.jpg",
-      "summary": "The seminal bone grinding indie platformer from 2010 will be getting a fresh coat of red stuff in Super Meat Boy Again+",
-      "tags": []
-    },
-    {
-      "title": "Nintendo recrute pour sauver son passé : pourquoi la conservation du jeu vidéo est-elle un enjeu majeur ?",
-      "link": "https://www.jeuxvideo.com/news/2114280/nintendo-recrute-pour-sauver-son-passe-pourquoi-la-conservation-du-jeu-video-est-elle-un-enjeu-majeur.htm",
-      "date": "2026-11-14T19:10:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179458/1794575283-6933-card.jpg",
-      "summary": "Que restera-t-il de nos jeux vidéo préférés dans cinquante ans ? Derrière les cartouches oubliées, les consoles vieillissantes et les serveurs qui ferment, c'est toute une partie…",
-      "tags": []
-    },
-    {
       "title": "A prediction market’s odd GTA VI moves",
       "link": "https://www.gamefile.news/p/gta-vi-prediction-markets",
       "date": "2026-11-14T18:34:51.000Z",
@@ -776,15 +765,6 @@
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!wEIu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F927d15e3-c968-4514-8d09-61e767f18544_1920x1080.jpeg",
       "summary": "A chat with Atari's CEO, who has some experience publishing games near other studio's mega-launches",
-      "tags": []
-    },
-    {
-      "title": "9 hours with the stubbornly different Grand Theft Auto IV",
-      "link": "https://www.gamefile.news/p/gta-iv-review",
-      "date": "2026-11-08T19:45:13.000Z",
-      "sourceId": "gamefile",
-      "image": "https://substackcdn.com/image/fetch/$s_!TnzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac769f3-837e-4eeb-870c-f5466d2da988_3840x2160.png",
-      "summary": "A harder GTA to enjoy, which makes it all the more worth it",
       "tags": []
     },
     {
