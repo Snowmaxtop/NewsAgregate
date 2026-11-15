@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T04:19:31.225Z",
+  "generatedAt": "2026-11-15T12:02:38.562Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-14T23:29:02.000Z",
-      "kept": 8
+      "kept": 1
     },
     "gamedev": {
       "status": "ok",
@@ -42,22 +42,22 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-14T22:02:58.000Z",
-      "kept": 17
+      "newest": "2026-11-15T05:15:07.000Z",
+      "kept": 11
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-11-14T11:00:00.000Z",
-      "kept": 9
+      "newest": "2026-11-15T11:00:00.000Z",
+      "kept": 7
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 49,
-      "newest": "2026-11-14T16:20:00.000Z",
-      "kept": 6
+      "newest": "2026-11-15T10:07:00.000Z",
+      "kept": 8
     },
     "kotaku": {
       "status": "ok",
@@ -70,14 +70,14 @@
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-14T23:50:31.000Z",
-      "kept": 10
+      "newest": "2026-11-15T11:27:41.000Z",
+      "kept": 12
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-15T03:14:17.000Z",
+      "newest": "2026-11-15T12:00:17.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -92,14 +92,14 @@
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
       "newest": "2026-11-13T17:00:00.000Z",
-      "kept": 7
+      "kept": 6
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-11-13T10:22:37.000Z",
-      "kept": 1
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -117,6 +117,206 @@
     }
   },
   "articles": [
+    {
+      "title": "Stardew Valley Meets Night in the Woods in One of 2026's Scariest New Games",
+      "link": "https://www.polygon.com/village-in-the-shade-new-farm-sim-horror-game/",
+      "date": "2026-11-15T12:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/village-in-the-shade-preview-4.jpg",
+      "summary": "Village in the Shade is a horror farm sim that digs deep into the horrors of community life",
+      "tags": []
+    },
+    {
+      "title": "Chronicles: Medieval developer declared bankruptcy on the day it announced it was in trouble, but development will continue after a $5 million reprieve from Coffee Stain",
+      "link": "https://www.pcgamer.com/games/strategy/chronicles-medieval-developer-declared-bankruptcy-on-the-day-it-announced-it-was-in-trouble-but-development-will-continue-after-a-usd5-million-reprieve-from-coffee-stain/",
+      "date": "2026-11-15T11:27:41.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/XKegTpWNWNwSysdkzRKN3o-1920-80.jpg",
+      "summary": "A new studio overseen by \"key members\" of the Chronicles team will finish the historical strategy.",
+      "tags": []
+    },
+    {
+      "title": "15 Years Later, Jamie Lannister’s Best Game of Thrones Quote Is an All-Time Fantasy Hit",
+      "link": "https://www.polygon.com/jamie-lannisters-best-game-of-thrones-quote-is-an-all-time-fantasy-hit/",
+      "date": "2026-11-15T11:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/16180812/fff0d9dfb4ca0146ca40c7c544774aab6d742bd96e2c9159d72602d7cc9a29e0816324128c1aed588d806f603b3019b3.jpg",
+      "summary": "'Game of Thrones' has plenty of iconic quotes. But Jamie Lannister's best sums up his downfall.",
+      "tags": []
+    },
+    {
+      "title": "INTERVIEW « L’idée a tenu 10 minutes » SAROS Zenith a failli inclure une nouveauté complètement inattendue inspirée d'une grande franchise",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/saros-housemarque-interview-mode-grosse-tete-new-game-plus-726645?utm_source=RSS",
+      "date": "2026-11-15T11:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/681934_67dbd76e73cc1.webp",
+      "summary": "Pour accompagner le mode Nouvelle Partie+ de sa mise à jour gratuite, SAROS Zenith a bien failli bénéficier d’une nouveauté inattendue inspirée d’une autre licence.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "La police retrouve un cambrioleur grâce à la trace de la console portable qu'il a volée",
+      "link": "https://www.gamekult.com/actualite/la-police-retrouve-un-cambrioleur-grace-a-la-trace-de-la-console-portable-qu-il-a-volee-3050872924.html",
+      "date": "2026-11-15T10:07:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872924/la-police-retrouve-un-cambrioleur-grace-a-la-trace-de-la-console-portable-qu-il-a-volee-a33a8031__800_800__712-41-1752-1080.jpg",
+      "summary": "En Espagne, la police a collaboré avec un fabricant de consoles, tenu secret, pour retrouver un cambrioleur. Celui-ci a été effectivement retrouvé, puis arrêté, au terme d'une…",
+      "tags": []
+    },
+    {
+      "title": "7 Decades Later, the Most Satisfying Movie of All Time Is Free on YouTube",
+      "link": "https://www.polygon.com/12-angry-men-free-youtube/",
+      "date": "2026-11-15T10:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25480296/613g0zgd.png",
+      "summary": "Sidney Lumet’s 12 Angry Men is one of the best, simplest films ever made and its free to stream on YouTube",
+      "tags": []
+    },
+    {
+      "title": "HBO Max : toutes les sorties confirmées de décembre 2026 avec une série ultra attendue d'une franchise magique",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/hbo-max-sorties-confirmees-decembre-2026-harry-potter-726639?utm_source=RSS",
+      "date": "2026-11-15T10:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/701770_68c0276888dda.webp",
+      "summary": "On fait un premier tour d'horizon des sorties confirmées de décembre 2026 sur HBO Max, avec notamment une série proprement magique à venir en fin d'année.",
+      "tags": []
+    },
+    {
+      "title": "25 Funniest 'Peanuts' Comics from the 1960s That Prove Charles M. Schulz Is Unbeatable",
+      "link": "https://www.polygon.com/funniest-peanuts-comics-1960s/",
+      "date": "2026-11-15T09:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/lucy-van-pelt-peanuts.jpg",
+      "summary": "In 1964, Charles Schulz told a 25-part story that was some of his best work",
+      "tags": []
+    },
+    {
+      "title": "Avec 1 milliard de dollars de budget, Star Citizen nous en met enfin plein les yeux avec Squadron 42 et fait une grande annonce",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/squadron-42-community-gameplay-video-726637?utm_source=RSS",
+      "date": "2026-11-15T09:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/726637_6af729fcb5403.jpg",
+      "summary": "Après des années de mystère, Squadron 42, la campagne solo de Star Citizen, dévoile un montage de gameplay qui met des étoiles dans les yeux en attendant une sortie qui approche…",
+      "tags": []
+    },
+    {
+      "title": "Wardogs offre une tonne de contenu gratuit pour sa saison 3, comment le récupérer ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/wardogs-contenu-gratuit-twitch-drop-726606?utm_source=RSS",
+      "date": "2026-11-15T08:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6ab2479e7330d.jpg",
+      "summary": "Pour sa saison 3, Wardogs offre une multitude de contenus gratuits à ses joueurs et il est possible de commencer à les récupérer dès maintenant, voici comment faire.",
+      "tags": []
+    },
+    {
+      "title": "Situation compliquée pour Nintendo : Zelda Ocarina of Time déjà porté sur PC (avec du multijoueur)",
+      "link": "https://www.gamekult.com/actualite/situation-compliquee-pour-nintendo-zelda-ocarina-of-time-deja-porte-sur-pc-avec-du-multijoueur-3050872922.html",
+      "date": "2026-11-15T08:08:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872922/situation-compliquee-pour-nintendo-zelda-ocarina-of-time-deja-porte-sur-pc-avec-du-multijoueur-a77f8f72__800_800__318-0-1399-1080.png",
+      "summary": "Le premier raz-de-marée médiatique de la sphère vidéoludique du mois de novembre, c'est sans aucun doute le remake de Zelda : Ocarina of Time. C'est un succès critique et…",
+      "tags": []
+    },
+    {
+      "title": "Voici l'Arduview, la première console 100% transparente, de la taille d'une carte bleue",
+      "link": "https://www.gamekult.com/actualite/voici-l-arduview-la-premiere-console-100-transparente-de-la-taille-d-une-carte-bleue-3050872835.html",
+      "date": "2026-11-15T08:02:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872835/voici-l-arduview-la-premiere-console-100-transparente-de-la-taille-d-une-carte-bleue-88601014__800_800__148-0-530-382.jpg",
+      "summary": "À la fin des années 90 et début 2000, les produits électroniques connaissent un nouvel essor avec les ordinateurs, consoles et autres manettes translucides : l'esthétique Y2K…",
+      "tags": []
+    },
+    {
+      "title": "I Can't Wait to Ignore the Main Story of GTA 6",
+      "link": "https://www.polygon.com/gta-6-main-story-side-activities/",
+      "date": "2026-11-15T08:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/screenshot-2026-05-18-at-10-16-01-am.jpg",
+      "summary": "GTA 6's side activities like mini-golf, parachuting, and working out sound more fun than stealing cars and getting chased by the cops",
+      "tags": []
+    },
+    {
+      "title": "7 ans après The Last of Us, on sait enfin quand on verra Intergalactic, le prochain jeu de Naughty Dog. Qu’est-ce qu’on attend le plus ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/story/intergalactic-nouveau-naughty-dog-2027-ce-quon-attend-plus-726635?utm_source=RSS",
+      "date": "2026-11-15T08:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/678028_67d281edc89c4.jpg",
+      "summary": "Intergalactic The Heretic Prophet devrait devenir l'une des nouvelles vitrines de PlayStation. Alors que l'horizon de la sortie commence à se préciser, voyons ce qu'on attend le…",
+      "tags": []
+    },
+    {
+      "title": "Mémoire cash - Alors que l'avenir de la série s'écrira chez Activision, retour sur l'aura du tout premier Halo",
+      "link": "https://www.gamekult.com/actualite/alors-que-l-avenir-de-la-serie-s-ecrira-chez-activision-retour-sur-l-aura-du-tout-premier-halo-101-3050866624.html",
+      "date": "2026-11-15T08:00:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050866624/en-2001-halo-a-fait-croire-que-microsoft-et-xbox-pouvaient-sauver-le-jeu-video-8356d04e__800_800__424-0-1503-1080.jpg",
+      "summary": "Avant de devenir un mème en armure verte, Halo a été un manifeste. Une symphonie de plasma et de solitude qui a redéfini le FPS, manette en main, et un hurlement du credo de…",
+      "tags": []
+    },
+    {
+      "title": "Prime Video : toutes les sorties confirmées de décembre 2026, avec la fin d'une série événement",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-video-sorties-confirmees-decembre-2026-726636?utm_source=RSS",
+      "date": "2026-11-15T07:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_69eb5e6fb4b15.jpg",
+      "summary": "Pendant que le mois de novembre 2026 poursuit son cours, Prime Video a déjà levé le voile sur une partie des nouveautés qui attendront les abonnés pour clôturer l’année.",
+      "tags": []
+    },
+    {
+      "title": "The most annoying questgivers in PC games",
+      "link": "https://www.pcgamer.com/games/the-most-annoying-questgivers-in-pc-games/",
+      "date": "2026-11-15T07:21:40.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/AYyTypwYVPussabQGzn9TJ-1920-80.jpg",
+      "summary": "The XP isn't worth it.",
+      "tags": []
+    },
+    {
+      "title": "Prime Gaming vous offre encore un jeu gratuit très apprécié à garder à vie, mais dépêchez-vous",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/prime-gaming-jeu-gratuit-rappel-swansong-726632?utm_source=RSS",
+      "date": "2026-11-15T07:00:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/463591_6502c296567a0.jpg",
+      "summary": "Prime Gaming va bientôt faire partir un autre jeu gratuit de sa sélection, cette fois un titre très apprécié issu d'une licence mythique, ne le ratez donc pas si d'aventure il…",
+      "tags": []
+    },
+    {
+      "title": "Préchargement GTA 6 : le son du jeu est plus gros que toutes les données de The Legend of Zelda Breath of the Wild !",
+      "link": "https://www.jeuxvideo.com/news/2114255/prechargement-gta-6-le-son-du-jeu-est-plus-gros-que-toutes-les-donnees-de-the-legend-of-zelda-breath-of-the-wild.htm",
+      "date": "2026-11-15T05:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179457/1794567188-3741-card.jpg",
+      "summary": "Depuis ce mardi 10 novembre à minuit en France, le préchargement de GTA 6 est officiellement lancé sur PS5 et Xbox Series. En analysant les fichiers chiffrés transmis sur les…",
+      "tags": []
+    },
+    {
+      "title": "Watch Dogs 2, trop rebelle pour l'Ubisoft d'aujourd'hui ?",
+      "link": "https://www.gamekult.com/actualite/memoire-watch-dogs-2-3050872715.html",
+      "date": "2026-11-15T05:01:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872715/memoire-watch-dogs-2-4e279fa2__800_800__431-0-1512-1080.jpg",
+      "summary": "Après le sérieux désarmant du premier épisode de Watch Dogs et le scandale historique derrière le « downgrade » graphique, entre les promesses mirobolantes des bandes-annonces et…",
+      "tags": []
+    },
+    {
+      "title": "8 Near-Perfect Sci-Fi Miniseries that Hook You in the First Episode",
+      "link": "https://www.polygon.com/sci-fi-miniseries-perfect-hook-first-episode/",
+      "date": "2026-11-15T05:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mv5bnwyzmda5mjqtzmnlns00nwrllwexmtqtogexowmwnjq2ntexxkeyxkfqcgc-_v1_.jpg",
+      "summary": "These sci-fi miniseries accomplish so much within 12 or less episodes.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 soundtrack leak confirmed accurate with new songs from Lana Del Rey, Playboi Carti, and Keith Richards",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-soundtrack-leak-confirmed-accurate-with-new-songs-from-lana-del-rey-playboi-carti-and-keith-richards/",
+      "date": "2026-11-15T04:52:26.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/AkvZgaawSvDoiAwX5qbvvY-1920-80.jpg",
+      "summary": "What, no Sideways Hank O'Mally?",
+      "tags": []
+    },
     {
       "title": "Tomb Raider Remake Gameplay Changes Are Dividing Fans",
       "link": "https://www.polygon.com/tomb-raider-remake-changes-legacy-of-atlantis/",
@@ -151,33 +351,6 @@
       "sourceId": "polygon",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/img_1600.jpeg",
       "summary": "Stephen King fans rejoice: a Lovecraftian crime-thriller epic is on the way with Crouch End, a new miniseries from Prime Video.",
-      "tags": []
-    },
-    {
-      "title": "10 Must-Play Co-Op Games for People With Real-Life Schedules",
-      "link": "https://www.polygon.com/co-op-games-real-life-schedules/",
-      "date": "2026-11-15T01:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22389863/snow__2_.png",
-      "summary": "Short on time but ready to game? These 10 co-op games range from one-level sessions to month-long campaigns, from Overcooked! to Gears of War: E-Day.",
-      "tags": []
-    },
-    {
-      "title": "Nintendo Officially Reveals New Kirby Game for Switch 2",
-      "link": "https://www.polygon.com/kirby-world-beyond-nintendo-switch-2-2027/",
-      "date": "2026-11-15T00:19:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_kirbyandtheworldbeyond_scrn_19.jpeg",
-      "summary": "Kirby and the World Beyond is coming to Nintendo Switch 2 in 2027",
-      "tags": []
-    },
-    {
-      "title": "Calvin and Hobbes’ 5 Greatest Spaceman Spiff Comic Strips",
-      "link": "https://www.polygon.com/calvin-hobbes-best-spaceman-spiff-comics/",
-      "date": "2026-11-15T00:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/calvin-hobbes-spaceman.avif",
-      "summary": "The best Spaceman Spiff comics in Calvin and Hobbes turn boring school days into dazzling sci-fi adventures, showcasing Bill Watterson’s imagination.",
       "tags": []
     },
     {
@@ -217,15 +390,6 @@
       "tags": []
     },
     {
-      "title": "League of Legends: New Dawn Revealed, Major Overhaul Set for 2027",
-      "link": "https://www.polygon.com/league-of-legends-with-new-dawn-reveal-worlds-2026/",
-      "date": "2026-11-14T22:03:57.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/still002.png",
-      "summary": "Riot Games revealed at Worlds Finals 2026 a major update to League of Legends coming in 2027 with new gameplay and features.",
-      "tags": []
-    },
-    {
       "title": "League of Legends : New Dawn, la nouvelle version du jeu phare de Riot Games, arrive en 2027",
       "link": "https://www.jeuxvideo.com/news/2114302/league-of-legends-new-dawn-la-nouvelle-version-du-jeu-phare-de-riot-games-arrive-en-2027.htm",
       "date": "2026-11-14T22:02:58.000Z",
@@ -255,30 +419,12 @@
       "tags": []
     },
     {
-      "title": "32 Years Later, Star Trek's Most Important Movie Is Officially Free on Streaming",
-      "link": "https://www.polygon.com/star-trek-generations-streaming-free-november-2026/",
-      "date": "2026-11-14T21:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdsttr_pa117.jpg",
-      "summary": "Star Trek: Generations is streaming free on Pluto TV. Here's why the underrated Kirk and Picard crossover deserves another look.",
-      "tags": []
-    },
-    {
       "title": "Is the game funny, or just the players? Jackbox CEO says they get 'a lot of false positives' with a staff of comedy writers",
       "link": "https://www.pcgamer.com/games/is-the-game-funny-or-just-the-players-jackbox-ceo-says-they-get-a-lot-of-false-positives-with-a-staff-of-comedy-writers/",
       "date": "2026-11-14T20:45:44.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/n4HBHbWrPLcQxSeZHb37v4-1920-80.jpg",
       "summary": "Testing comedy games comes with a unique challenge.",
-      "tags": []
-    },
-    {
-      "title": "Zelda: Ocarina of Time Is Actually the Perfect Way to Introduce Kids to Nintendo",
-      "link": "https://www.polygon.com/zelda-ocarina-time-first-nintendo-kids-game/",
-      "date": "2026-11-14T20:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/zelda-ocarina-of-time-great-deku-tree-and-link.jpg",
-      "summary": "Parents are debating whether the Ocarina of Time remake is too scary for kids. Here’s the case for the child-era half as a first Nintendo game.",
       "tags": []
     },
     {
@@ -480,257 +626,6 @@
       "tags": []
     },
     {
-      "title": "Le prochain processeur AMD va révolutionner le jeu vidéo, mais à quel prix ?",
-      "link": "https://www.jeuxvideo.com/news/2113946/le-prochain-processeur-amd-va-revolutionner-le-jeu-video-mais-a-quel-prix.htm",
-      "date": "2026-11-14T11:50:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179448/1794481665-7889-card.png",
-      "summary": "AMD vient de dévoiler sa future architecture Zen 6. Avec plus de cœurs regroupés au même endroit, des fréquences en hausse et une mémoire cache massive, les prochains processeurs…",
-      "tags": []
-    },
-    {
-      "title": "Indiana Jones and the Great Circle once had a Grand Theft Auto-inspired wanted system, because MachineGames was 'afraid' players would kill all the Nazis 'with just guns'",
-      "link": "https://www.pcgamer.com/games/action/indiana-jones-and-the-great-circle-once-had-a-grand-theft-auto-inspired-wanted-system-because-machinegames-was-afraid-players-would-kill-all-the-nazis-with-just-guns/",
-      "date": "2026-11-14T11:26:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/BU3qVd2qNLkVKS9g95TYsD-1920-80.jpg",
-      "summary": "\"We penalised shooting so much in that game,\" says design director Jens Andersson.",
-      "tags": []
-    },
-    {
-      "title": "« Il reste encore beaucoup d’histoires à raconter » Mass Effect 5 a été annulé, mais ce vétéran de BioWare donne encore de l'espoir aux fans",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/mass-effect-message-espoir-encore-histoire-a-raconter-trent-oster-bioware-726634?utm_source=RSS",
-      "date": "2026-11-14T11:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/429325_649d5bbe2b64c.jpg",
-      "summary": "Tandis que le mouvement « #SaveMassEffect » ne faiblit pas, un ancien boss de BioWare continue de porter des messages d’espoir aux fans sur ses réseaux sociaux.",
-      "tags": []
-    },
-    {
-      "title": "Attack on Titan 3 : notre avis après 4 heures de jeu, le meilleur épisode de la saga ?",
-      "link": "https://www.jeuxvideo.com/news/2114436/attack-on-titan-3-notre-avis-apres-4-heures-de-jeu-le-meilleur-episode-de-la-saga.htm",
-      "date": "2026-11-14T10:45:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179463/1794630438-9686-card.jpg",
-      "summary": "Le manga de Hajime Isayama est une œuvre majeure qui mérite des adaptations en jeux vidéo de qualité. Et pour une fois dans le monde des animes, nous avons été gâtés avec A.O.T…",
-      "tags": []
-    },
-    {
-      "title": "Pokemon Ecarlate & Violet : un pokémon surpuissant est dispo gratuitement, attrapez-le vite !",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/pokemon-ecarlate-violet-gratuit-ekaiser-teracristal-combat-726630?utm_source=RSS",
-      "date": "2026-11-14T10:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/702587_68d24f6c928c0.webp",
-      "summary": "Apprêtez-vous à affronter et capture un Ekaïser Teracristal combat avec les nouveaux raids 7 étoiles de Pokemon Ecarlate et Violet. On vous dit tout sur ce spécimen surpuissant.",
-      "tags": []
-    },
-    {
-      "title": "« Il a entendu les mots \"bombe\" puis \"explosion\" » : un avion évacué à cause d'une conversation sur Call of Duty",
-      "link": "https://www.gamekult.com/actualite/il-a-entendu-les-mots-bombe-puis-explosion-un-avion-evacue-a-cause-d-une-conversation-sur-call-of-duty-3050872883.html",
-      "date": "2026-11-14T10:23:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872883/il-a-entendu-les-mots-bombe-puis-explosion-un-avion-evacue-a-cause-d-une-conversation-sur-call-of-duty-3213ea89__800_800__508-0-1589-1080.jpg",
-      "summary": "Si jamais : les termes militaires évoqués avec un inconnu au téléphone, ça passe moyennement dans un aéroport. Un joueur en a fait les frais dimanche 8 novembre dernier, alors…",
-      "tags": []
-    },
-    {
-      "title": "Apple TV+ : toutes les sorties confirmées de décembre 2026 avec le grand retour d'une série culte",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/apple-tv-sorties-confirmees-decembre-2026-singe-726628?utm_source=RSS",
-      "date": "2026-11-14T10:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/708612_6957806a5f602.webp",
-      "summary": "Voici le programme actuellement connu d'Apple TV+ pour décembre 2026, avec notamment le grand retour d'une série culte de la plateforme SVOD à la Pomme.",
-      "tags": []
-    },
-    {
-      "title": "Est-il possible de jouer sans console, ni PC ? Mon test en profondeur du gaming... sur MacBook",
-      "link": "https://www.jeuxvideo.com/news/2113960/est-il-possible-de-jouer-sans-console-ni-pc-mon-test-en-profondeur-du-gaming-sur-macbook.htm",
-      "date": "2026-11-14T09:30:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179450/1794501699-8616-card.jpg",
-      "summary": "Tout le monde le sait : MacOS et le jeu vidéo, c’est l’histoire d’un rendez-vous manqué qui tente désespérément de se rattraper. Joueur console assumé et fidèle de la marque à la…",
-      "tags": []
-    },
-    {
-      "title": "Mais pourquoi ça s'appelle The Legend of Zelda et pas The Legend of Link ?",
-      "link": "https://www.jeuxvideo.com/news/2114295/mais-pourquoi-ca-s-appelle-the-legend-of-zelda-et-pas-the-legend-of-link.htm",
-      "date": "2026-11-14T09:30:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179458/1794581982-8789-card.jpg",
-      "summary": "Depuis près de quarante ans, The Legend of Zelda porte le nom de sa princesse alors que nous incarnons quasi systématiquement son chevalier muet. Entre hommage littéraire…",
-      "tags": []
-    },
-    {
-      "title": "Red Dead Redemption 2 nous met une claque graphique encore plus magistrale grâce à cette nouveauté sur PC",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/red-dead-redemption-2-ray-tracing-mod-726536?utm_source=RSS",
-      "date": "2026-11-14T09:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/704918_690369fc198e1.jpg",
-      "summary": "À quelques jours de la sortie de GTA 6, Red Dead Redemption 2 revient sur le devant de la scène des claques graphiques avec le support d'une technologie en vogue.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Un nouvel opus de Rainbow Six: Vegas serait en développement chez Ubisoft",
-      "link": "https://fr.ign.com/tom-clancys-rainbow-six-vegas/93947/un-nouvel-opus-de-rainbow-six-vegas-serait-en-developpement-chez-ubisoft",
-      "date": "2026-11-14T09:00:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/r/rainbow-si/rainbow-six-vegas-reportedly-returning-with-new-installment_x5ea.jpg",
-      "summary": "Un atout dans sa manche.",
-      "tags": []
-    },
-    {
-      "title": "Disney+ : toutes les sorties confirmées de décembre 2026 avec des films événements et la suite d'une série très bien notée",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/disney-plus-sorties-confirmees-decembre-2026-726626?utm_source=RSS",
-      "date": "2026-11-14T09:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/558679_663600dae83c8.png",
-      "summary": "Disney+ dévoile ses premières nouveautés du mois de décembre 2026. Films ou séries, ne ratez aucune sortie SVOD de la plateforme avec notre calendrier.",
-      "tags": []
-    },
-    {
-      "title": "On a tous joué à ces jeux vidéo : après avoir rapporté 1/2 milliard au box-office, un 3e film sur cette série culte arrive en 2026",
-      "link": "https://www.jeuxvideo.com/news/2114279/on-a-tous-joue-a-ces-jeux-video-apres-avoir-rapporte-1-2-milliard-au-box-office-un-3e-film-sur-cette-serie-culte-arrive-en-2026.htm",
-      "date": "2026-11-14T08:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179458/1794575944-8900-card.jpg",
-      "summary": "Un lance-pierre, des oiseaux de mauvaise humeur et des cochons verts un peu trop sûrs d’eux. Il n’en fallait pas plus pour conquérir les smartphones du monde entier, avant…",
-      "tags": []
-    },
-    {
-      "title": "La PS5 Digital collector du 30ᵉ anniversaire de PlayStation",
-      "link": "https://fr.ign.com/gallery/93946/ps5-digital-console-30th-anniversary-limited-edition",
-      "date": "2026-11-14T08:39:03.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/p/ps5-digita/ps5-digital-console-30th-anniversary-limited-edition_kxs1.jpg",
-      "summary": "La PS5 Digital collector du 30ᵉ anniversaire de PlayStation",
-      "tags": []
-    },
-    {
-      "title": "Marvel's Spider-Man 2, Arc Raiders et d'autres titres vont avoir droit à leur mise à jour QSSR sur PS5",
-      "link": "https://fr.ign.com/arc-raiders/93945/marvels-spider-man-2-arc-raiders-et-dautres-titres-vont-avoir-droit-a-leur-mise-a-jour-qssr-sur-ps5",
-      "date": "2026-11-14T08:39:03.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/p/ps5-qssr-u/ps5-qssr-updates-revealed-for-marvels-spider-man-2-arc-raide_svw5.jpg",
-      "summary": "D’autres jeux viendront s’ajouter à la liste dans les mois à venir.",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "« J’ai fait de mon mieux » Skyrim est énorme, mais les développeurs ont quand même dû abandonner cette idée impossible à concevoir",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-elder-scrolls-5-skyrim-7000-marches-absence-explication-bethesda-726629?utm_source=RSS",
-      "date": "2026-11-14T08:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/401200_62861985130e0.jpg",
-      "summary": "Vous faites partie de ces joueurs qui ont été bouleversés par le mensonge des 7 000 marches de The Elder Scrolls 5: Skyrim ? Grâce à Bethesda, nous avons enfin une explication.",
-      "tags": []
-    },
-    {
-      "title": "La cérémonie des Game Awards 2026 sera diffusée en live sur Roblox, avec possibilité de voter et d'obtenir du merch virtuel",
-      "link": "https://fr.ign.com/roblox/93944/la-ceremonie-des-game-awards-2026-sera-diffusee-en-live-sur-roblox-avec-possibilite-de-voter-et-dobt",
-      "date": "2026-11-14T08:22:25.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-game-a/the-game-awards-2026-will-stream-live-on-roblox-for-the-firs_574j.png",
-      "summary": "C&#x27;est la première fois qu&#x27;une cérémonie de remise de prix externe est diffusée en direct sur Roblox.",
-      "tags": []
-    },
-    {
-      "title": "Le sabre laser original de Dark Vador vient d'être vendu aux enchères pour 4,875 millions de dollars – la plus grosse vente de l'histoire de Star Wars",
-      "link": "https://fr.ign.com/star-wars-episode-vi-return-of-the-jedi/93943/le-sabre-laser-original-de-dark-vador-vient-detre-vendu-aux-encheres-pour-4875-millions-de-dollars-l",
-      "date": "2026-11-14T08:03:30.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/d/darth-vade/darth-vaders-actual-lightsaber-just-sold-for-4875-million-br_1zcq.jpg",
-      "summary": "Le pouvoir du côté obscur.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : Rockstar annonce le festival de musique Grand Theft Auto VI à Miami avec Justice, Travis Scott et bien d'autres",
-      "link": "https://www.gamekult.com/actualite/gta-6-rockstar-annonce-le-festival-de-musique-grand-theft-auto-vi-a-miami-avec-justice-travis-scott-et-bien-d-autres-3050872880.html",
-      "date": "2026-11-14T08:03:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872880/gta-6-rockstar-annonce-le-festival-de-musique-grand-theft-auto-vi-a-miami-avec-justice-travis-scott-et-bien-d-autres-eac847f6__800_800__431-0-1512-1080.png",
-      "summary": "L'heure sera bientôt à la fête, et pas que métaphoriquement : Rockstar vient d'annoncer un véritable festival de musique qui se tiendra à Miami, deux jours après la sortie de GTA…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Les orphelins de Mass Effect 5 devraient se tourner vers ces deux RPG de science-fiction ultra prometteurs et différents qui s'inspirent du chef d'œuvre de BioWare",
-      "link": "https://www.gameblog.fr/jeu-video/ed/story/mass-effect-5-remplacants-exodus-the-expanse-726541?utm_source=RSS",
-      "date": "2026-11-14T08:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/725580_6ae082584212f.jpg",
-      "summary": "Mass Effect 5 est peut-être mort, mais son esprit subsiste dans ces deux RPG spatiaux très prometteurs à venir prochainement, pour tout fan en deuil let en manque d'expériences…",
-      "tags": []
-    },
-    {
-      "title": "Image de la conférence de la MagicCon Atlanta",
-      "link": "https://fr.ign.com/magic-the-gathering-trading-card-game/93942/magiccon-atlanta-preview-panel-screenshots",
-      "date": "2026-11-14T07:50:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/gallery/m/magiccon-a/magiccon-atlanta-preview-panel-screenshots_tt9j.jpg",
-      "summary": "",
-      "tags": []
-    },
-    {
-      "title": "La série animée Magic: The Gathering, intitulée Planeswalker, tient enfin sa fenêtre de sortie sur Netflix",
-      "link": "https://fr.ign.com/magic-the-gathering-animated-show/93941/la-serie-animee-magic-the-gathering-intitulee-planeswalker-tient-enfin-sa-fenetre-de-sortie-sur-netf",
-      "date": "2026-11-14T07:50:34.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/t/the-magic-/the-magic-the-gathering-animated-series-planeswalker-is-fina_vjdx.jpg",
-      "summary": "Il faudra attendre jusqu&#x27;en 2027.",
-      "tags": []
-    },
-    {
-      "title": "Le jour de sortie de GTA 6, vous allez pouvoir jouer gratuitement à l'un des meilleurs jeux vidéo sur la saga Alien",
-      "link": "https://www.jeuxvideo.com/news/2114274/le-jour-de-sortie-de-gta-6-vous-allez-pouvoir-jouer-gratuitement-a-l-un-des-meilleurs-jeux-video-sur-la-saga-alien.htm",
-      "date": "2026-11-14T07:40:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179457/1794573080-4501-card.jpg",
-      "summary": "Alors qu’aucun gros studio n’a osé sortir de jeu en même temps que GTA 6, Epic Games Store propose un titre gratuit le même jour, et c’est l’un des meilleurs jeux Alien !",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Netflix : toutes les sorties confirmées de décembre 2026 avec une tonne de films et séries très attendus",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-sorties-confirmees-decembre-2026-ray-gunn-726618?utm_source=RSS",
-      "date": "2026-11-14T07:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf138349d.jpg",
-      "summary": "En attendant une liste complète, voici les sorties films et séries confirmées pour décembre 2026 sur Netflix, avec un programme déjà bien chargé à tous les niveaux.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 sera aussi jouable sur Xbox One mais à une condition, voici comment faire",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-jouable-xbox-one-cloud-gaming-comment-faire-726625?utm_source=RSS",
-      "date": "2026-11-14T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/723155_6aabe0718e6f8.jpg",
-      "summary": "Vous n’avez pas de PS5 ou de Xbox Series mais possédez une Xbox One ? Bonne nouvelle : vous pourrez quand même jouer à GTA 6. On vous explique comment en profiter.",
-      "tags": []
-    },
-    {
-      "title": "Sans ce film vieux de 44 ans, pas de Cyberpunk 2077. En 2026, une série étend son univers sur Amazon Prime Video",
-      "link": "https://www.jeuxvideo.com/news/2114269/sans-ce-film-vieux-de-44-ans-pas-de-cyberpunk-2077-en-2026-une-serie-etend-son-univers-sur-amazon-prime-video.htm",
-      "date": "2026-11-14T05:55:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179457/1794573520-2469-card.jpg",
-      "summary": "En Occident, le cyberpunk a deux pères. Blade Runner, le film de Ridley Scott sorti en 1982, et Neuromancien, le roman de William Gibson publié deux ans plus tard. À eux deux, ils…",
-      "tags": []
-    },
-    {
-      "title": "Mémoire cash - Sonic Spinball : un premier spin-off frustrant pondu en 9 mois pour Noël 1993",
-      "link": "https://www.gamekult.com/actualite/sonic-spinball-un-premier-spin-off-frustrant-pondu-en-9-mois-pour-noel-1993-3050872863.html",
-      "date": "2026-11-14T05:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872863/memoire-sonic-spinball-feee4281__800_800__792-446-1425-1080.jpg",
-      "summary": "Dans le sillage du succès immédiat de Sonic the Hedgehog en juin 1991, il n'aura pas fallu attendre longtemps pour que la mascotte de Sega devienne une machine à pondre des suites…",
-      "tags": []
-    },
-    {
       "title": "What’s your China playbook for PC game discovery?",
       "link": "https://newsletter.gamediscover.co/p/whats-your-china-playbook-for-pc",
       "date": "2026-11-13T19:32:26.000Z",
@@ -791,24 +686,6 @@
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/136235/90247/minecraft_l660.jpg",
       "summary": "NetEase's Minecraft China has reached 100 million annual active players, nearly a decade after the sandbox game first launched in the country. As reported by Niko Partners via its…",
-      "tags": []
-    },
-    {
-      "title": "Finnish and German games associations warn EU Digital Fairness Act could hurt industry",
-      "link": "https://www.pocketgamer.biz/finnish-and-german-games-associations-warn-eu-digital-fairness-act-could-hurt-industry/",
-      "date": "2026-11-13T10:45:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142180/90245/finnish-and-german-games-associations-warn-eu-digital-fairness-act-could-hurt-industry_l660.jpg",
-      "summary": "Neogames Finland and Germany's game association have criticised the European Commission's proposed Digital Fairness Act (DFA), warning that its rules on in-game purchases, virtual…",
-      "tags": []
-    },
-    {
-      "title": "New game digest: PUBG, Transformers, Plants Vs Zombies, Football Manager, Prince of Persia, more",
-      "link": "https://mobilegamer.biz/new-game-digest-pubg-transformers-plants-vs-zombies-football-manager-prince-of-persia-more/",
-      "date": "2026-11-13T10:22:37.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "We've also got a new My Hero Academia game, Outfit7’s new soft launch, indie darling The Roottrees Are Dead and even some iPhone Duo and Apple Watch games in this week's round-up.",
       "tags": []
     },
     {
