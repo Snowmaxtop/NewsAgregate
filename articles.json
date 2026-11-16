@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T23:17:33.430Z",
+  "generatedAt": "2026-11-16T02:50:23.519Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-15T17:16:06.000Z",
-      "kept": 12
+      "kept": 11
     },
     "gamedev": {
       "status": "stale",
@@ -64,28 +64,28 @@
       "url": "https://kotaku.com/feed",
       "items": 20,
       "newest": "2026-11-15T22:09:53.000Z",
-      "kept": 5
+      "kept": 4
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
       "newest": "2026-11-15T18:00:00.000Z",
-      "kept": 12
+      "kept": 11
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-15T23:00:17.000Z",
+      "newest": "2026-11-16T02:49:38.000Z",
       "kept": 10
     },
     "gamefile": {
       "status": "ok",
       "url": "https://www.gamefile.news/feed",
       "items": 20,
-      "newest": "2026-11-14T18:34:51.000Z",
-      "kept": 4
+      "newest": "2026-11-16T00:39:22.000Z",
+      "kept": 5
     },
     "pgbiz": {
       "status": "ok",
@@ -117,6 +117,78 @@
     }
   },
   "articles": [
+    {
+      "title": "All 10 Zelda: Ocarina of Time Bosses, Ranked From Worst to Best",
+      "link": "https://www.polygon.com/legend-zelda-ocarina-time-bosses-ranked/",
+      "date": "2026-11-16T02:49:38.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/zelda-ocarina-of-time-ganondorf-smirking.jpg",
+      "summary": "Not all The Legend of Zelda: Ocarina of Time bosses are equal. We've ranked all boss fights by challenge, design, and excitement.",
+      "tags": []
+    },
+    {
+      "title": "David Tennant Officially Returns to Doctor Who in 2027",
+      "link": "https://www.polygon.com/doctor-who-david-tennant-returns-audio-drama-2027/",
+      "date": "2026-11-16T02:01:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24138791/Screen_Shot_2022_10_25_at_10.11.48_AM.png",
+      "summary": "David Tennant is reprising his role as the Tenth Doctor in a new 12-part audio drama series, Doctor Who — The Tenth Doctor and Rani .",
+      "tags": []
+    },
+    {
+      "title": "Halo Defined a Generation of LAN Parties — Then It Killed Them",
+      "link": "https://www.polygon.com/halo-combat-evolve-lan-party-memories/",
+      "date": "2026-11-16T02:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/halo-2-map-pack-image.jpg",
+      "summary": "As Xbox and Halo turn 25, a look back at the chaotic LAN parties that made multiplayer unforgettable — and how Halo 2 helped make gathering optional.",
+      "tags": []
+    },
+    {
+      "title": "Extremely Rare Pokémon Game Found 20 Years Later",
+      "link": "https://www.polygon.com/pokemon-pokepark-fishing-rally-ds-found/",
+      "date": "2026-11-16T00:59:53.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/pokemon-winds-and-waves-screen-wailord.png",
+      "summary": "PSA Video Games confirms that a collector has unearthed a playable copy of PokéPark Fishing Rally DS, a previously lost piece of Pokémon history.",
+      "tags": []
+    },
+    {
+      "title": "The 7 Best Star Wars: Galactic Racer Replacements You Can Play Right Now",
+      "link": "https://www.polygon.com/best-games-like-star-wars-galactic-racer/",
+      "date": "2026-11-16T00:58:15.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/star-wars-galactic-racer-story-trailer-screenshot.jpg",
+      "summary": "Star Wars: Galactic Racer has no exact replicas, but there are plenty of obvious influences. Here are the best games like Star War: Galactic Racer.",
+      "tags": []
+    },
+    {
+      "title": "10 Most Underrated RPGs of the Past Decade",
+      "link": "https://www.polygon.com/most-underrated-new-rpgs/",
+      "date": "2026-11-16T00:50:58.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/08/trails-in-the-sky-first-chapter-demo.jpg",
+      "summary": "Some stellar RPGs have arrived over the last decade, but their brilliance made 10 absolute gems easy to miss.",
+      "tags": []
+    },
+    {
+      "title": "13 more hours with GTA V helped me discover that Grand Theft Auto Online is terrific now",
+      "link": "https://www.gamefile.news/p/gta-v-gta-online-review",
+      "date": "2026-11-16T00:39:22.000Z",
+      "sourceId": "gamefile",
+      "image": "https://substackcdn.com/image/fetch/$s_!Sij-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd60e6593-ea14-426e-b24e-6f47ecdd59ed_3840x2160.png",
+      "summary": "Exploding gas stations. Pizza deliveries. An underground bunker. And more. I need to tell you what I found.",
+      "tags": []
+    },
+    {
+      "title": "5 Brilliant Books To Read Before Kicking the Bucket",
+      "link": "https://www.polygon.com/brilliant-books-read-before-you-die/",
+      "date": "2026-11-16T00:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/perfume-movie.jpg",
+      "summary": "Add these five picks to your ever-expanding list of “must-read” books.",
+      "tags": []
+    },
     {
       "title": "Tom Cruise's Favorite Director's Breakout Action Thriller Is Officially Free to Stream",
       "link": "https://www.polygon.com/way-of-gun-movie-streaming-free-november-2026/",
@@ -172,48 +244,12 @@
       "tags": []
     },
     {
-      "title": "17 Years Ago, the Longest Running Sci-Fi Show Flipped Its Core Concept On Its Head",
-      "link": "https://www.polygon.com/doctor-who-the-waters-of-mars-17th-anniversary-retrospective/",
-      "date": "2026-11-15T20:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/doctor-who-the-waters-of-mars.jpg",
-      "summary": "David Tennant is king when it comes to giving complex performances. His best is in the Doctor Who episode 'The Water of Mars.'",
-      "tags": []
-    },
-    {
       "title": "Retenue captive pendant 521 jours, cette ado s'en sort grâce à un jeu vidéo",
       "link": "https://www.jeuxvideo.com/news/2114008/retenue-captive-pendant-521-jours-cette-ado-s-en-sort-grace-a-un-jeu-video.htm",
       "date": "2026-11-15T19:10:07.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179450/1794501763-7427-card.jpg",
       "summary": "Disparue depuis mai 2025 dans l'Utah, Kylie Arellano a été retrouvée vivante le 1er novembre 2026 dans l'Oregon après 521 jours de captivité. C'est en lançant un appel à l'aide…",
-      "tags": []
-    },
-    {
-      "title": "Nintendo Switch 2 Is Finally Getting Capcom’s Fastest-Selling Game Ever",
-      "link": "https://www.polygon.com/monster-hunter-wilds-nintendo-switch-2-release-date/",
-      "date": "2026-11-15T19:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/capcom-characters.jpg",
-      "summary": "Monster Hunter Wilds is coming to Switch 2, just in time for the holiday season. And it's also a cool 25% off ahead of launch.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Trophy Count and Full Completion Time Leaks in New Reports",
-      "link": "https://www.polygon.com/gta-6-platinum-trophy-mythic-achievement-time-to-get/",
-      "date": "2026-11-15T18:41:30.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/jason_and_lucia_04.jpg",
-      "summary": "Thanks to animal studies and RNG-based achievements, completionists will have to spend hundreds of hours in Grand Theft Auto 6 to 100% the game.",
-      "tags": []
-    },
-    {
-      "title": "All map fragment locations in the Fortnite Chapter 7 mini season",
-      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-c7ms-map-fragment-locations/",
-      "date": "2026-11-15T18:38:01.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_mapfragment0.jpg",
-      "summary": "Here's where to find all the currently available map fragments in Fortnite's Chapter 7 mini season.",
       "tags": []
     },
     {
@@ -232,15 +268,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179432/1794316111-7330-card.jpg",
       "summary": "Avec l’arrivée du DLC Charting the Unknown de Crimson Desert, de nouveaux équipements ont fait leur apparition dans les terres de Pywel, notamment dans l’immense désert pourpre…",
-      "tags": []
-    },
-    {
-      "title": "8 Must-Play Open-World RPGs for People With Real-Life Schedules",
-      "link": "https://www.polygon.com/open-world-rpgs-real-life-schedules/",
-      "date": "2026-11-15T18:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22138241/Immortals_Fenyx_Rising_beginners_guide.png",
-      "summary": "Busy schedule with no time to game? These eight open-world RPGs fit into short sessions, one quest or shrine at a time.",
       "tags": []
     },
     {
@@ -307,15 +334,6 @@
       "tags": []
     },
     {
-      "title": "The 2026 GOTY Race Could Be a Disaster for Indie Games",
-      "link": "https://www.polygon.com/goty-2026-game-awards-indie-big-walk-ai/",
-      "date": "2026-11-15T17:00:19.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/big_walk_ho2uyexilo.jpg",
-      "summary": "Big Walk's AI controversy might result in a step back after gains made at The Game Awards by Clair Obscur and Silksong",
-      "tags": []
-    },
-    {
       "title": "YouTuber and comedian Ashens has 1,000 hours in Baldur's Gate 3 and reveals the worst retro game he's ever played: 'By the time you've hacked it to work, it's just no fun whatsoever'",
       "link": "https://www.pcgamer.com/gaming-industry/youtuber-and-comedian-ashens-has-1-000-hours-in-baldurs-gate-3-and-reveals-the-worst-retro-game-hes-ever-played-by-the-time-youve-hacked-it-to-work-its-just-no-fun-whatsoever/",
       "date": "2026-11-15T17:00:00.000Z",
@@ -340,15 +358,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050872967/il-fallait-s-y-attendre-gta-6-pourrait-etre-censure-dans-certains-pays-6e53aaee__800_800__0-1034-1768-2801.jpeg",
       "summary": "Vous n'êtes pas sans savoir que le très dodu GTA VI peut déjà être téléchargé sur PS5 et Xbox Series, en attendant le déverrouillage tant attendu le 19 novembre. Selon de…",
-      "tags": []
-    },
-    {
-      "title": "Super Meat Boy Is Officially Getting Remade Without Edmund McMillen's Involvement",
-      "link": "https://www.polygon.com/super-meat-boy-again-announcement/",
-      "date": "2026-11-15T16:19:05.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/super-meat-boy-again-gameplay.jpg",
-      "summary": "The announcement of Super Meat Boy Again+ served as a reminder that Edmund McMillen is no longer part of Team Meat",
       "tags": []
     },
     {
@@ -675,33 +684,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/AkvZgaawSvDoiAwX5qbvvY-1920-80.jpg",
       "summary": "What, no Sideways Hank O'Mally?",
-      "tags": []
-    },
-    {
-      "title": "Planeswalker, Netflix's Magic: The Gathering animated series, will have a different art style for each plane",
-      "link": "https://www.pcgamer.com/movies-tv/planeswalker-netflixs-magic-the-gathering-animated-series-will-have-a-different-art-style-for-each-plane/",
-      "date": "2026-11-14T23:50:31.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Gs2wFp5NQYqEwgi23bw4PW-1920-80.jpg",
-      "summary": "\"Each one of these cards is this window into this incredible world. It's not just world building—it's worlds building.\"",
-      "tags": []
-    },
-    {
-      "title": "Une fuite du côté de GTA 6 semble livrer l'entièreté de la bande originale avant la sortie",
-      "link": "https://fr.ign.com/grand-theft-auto-6/93951/une-fuite-du-cote-de-gta-6-semble-livrer-lentierete-de-la-bande-originale-avant-la-sortie",
-      "date": "2026-11-14T23:29:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-leak/gta-6-leak-seemingly-reveals-full-track-list-days-before-lau_pz45.jpg",
-      "summary": "Playlist en avance.",
-      "tags": []
-    },
-    {
-      "title": "Some GTA 6 Box Copies Reported To Have Download Code Issues With No Disc To Fall Back On",
-      "link": "https://kotaku.com/some-gta-6-box-copies-reported-to-have-download-code-issues-2000756883",
-      "date": "2026-11-14T23:24:45.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/01/gta6-1280x720.jpg",
-      "summary": "Shipped with no disc inside, fans who purchased a physical copy of Grand Theft Auto in advance are claiming their codes have already been used, or are missing entirely",
       "tags": []
     },
     {
