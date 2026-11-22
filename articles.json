@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T12:49:47.120Z",
+  "generatedAt": "2026-11-22T20:05:19.286Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -12,7 +12,7 @@
     "polygon": "ok",
     "gamefile": "ok",
     "pgbiz": "ok",
-    "mgbiz": "ok",
+    "mgbiz": "stale",
     "gdco": "ok",
     "htmag": "ok"
   },
@@ -21,8 +21,8 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-22T09:16:56.000Z",
-      "kept": 8
+      "newest": "2026-11-22T16:20:29.000Z",
+      "kept": 7
     },
     "gamedev": {
       "status": "ok",
@@ -42,42 +42,42 @@
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-22T11:04:08.000Z",
+      "newest": "2026-11-22T18:45:08.000Z",
       "kept": 20
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-11-22T12:04:18.000Z",
+      "newest": "2026-11-22T16:33:11.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
       "items": 47,
-      "newest": "2026-11-22T12:14:00.000Z",
+      "newest": "2026-11-22T17:25:00.000Z",
       "kept": 7
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-22T00:18:14.000Z",
-      "kept": 12
+      "newest": "2026-11-22T18:44:40.000Z",
+      "kept": 7
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-22T10:54:09.000Z",
-      "kept": 21
+      "newest": "2026-11-22T18:43:01.000Z",
+      "kept": 18
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-22T12:00:18.000Z",
+      "newest": "2026-11-22T19:32:30.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -91,15 +91,15 @@
       "status": "ok",
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
-      "newest": "2026-11-20T19:20:00.000Z",
-      "kept": 8
+      "newest": "2026-11-22T13:00:00.000Z",
+      "kept": 1
     },
     "mgbiz": {
-      "status": "ok",
+      "status": "stale",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
       "newest": "2026-11-20T18:46:57.000Z",
-      "kept": 1
+      "kept": 0
     },
     "gdco": {
       "status": "ok",
@@ -117,6 +117,386 @@
     }
   },
   "articles": [
+    {
+      "title": "'GTA 6' Bombshell: Husband Melts Down After Wife Hid Her Role In Game For Years",
+      "link": "https://www.polygon.com/gta-6-amber-wallin-comedian-instagram-npc-voice-actor-husband-secret/",
+      "date": "2026-11-22T19:32:30.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/grand-theft-auto-6-jason-and-lucia-motorcycles.jpg",
+      "summary": "A long-kept GTA 6 secret low-key almost destroyed comedian Amber Wallin's marriage.",
+      "tags": []
+    },
+    {
+      "title": "Bloqueur d'encre GTA 6 : Comment débloquer cet outil pour braquer les banques ?",
+      "link": "https://www.jeuxvideo.com/news/2116241/bloqueur-d-encre-gta-6-comment-debloquer-cet-outil-pour-braquer-les-banques.htm",
+      "date": "2026-11-22T18:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179537/1795372573-1257-card.jpg",
+      "summary": "Comme le cloneur de clé, le bloqueur d'encre est un outil essentiel de GTA VI, puisqu'il va vous permettre de cibler les braquages de banque bien plus facilement. Grâce à lui…",
+      "tags": []
+    },
+    {
+      "title": "Godfather Of Cyberpunk Says He’s Never Played A Video Game, But Finds GTA 6 &#8216;Intriguing&#8217;",
+      "link": "https://kotaku.com/godfather-of-cyberpunk-says-hes-never-played-a-video-game-but-finds-gta-6-intriguing-2000759281",
+      "date": "2026-11-22T18:44:40.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2023/08/6e09a0056e1d3bd2d72c274f795f16fc-1280x720.jpg",
+      "summary": "Arcade addicts of the 1980s inspired the cyberspace of William Gibson’s influential Neuromancer, now the author is transfixed on viral footage of Rockstar’s ultra-hit",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 discourse is suffering from the flat earther effect",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-discourse-is-already-suffering-from-the-flat-earther-effect/",
+      "date": "2026-11-22T18:43:01.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/88bmYYeTdzTBy8hNsLoXrc-1920-80.jpg",
+      "summary": "Didn't you hear? You can't even steal cars anymore.",
+      "tags": []
+    },
+    {
+      "title": "The Best GTA 6 Easter Eggs We’ve Seen So Far",
+      "link": "https://www.polygon.com/gta-6-easter-eggs/",
+      "date": "2026-11-22T18:42:14.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/10/gta6jason.JPG",
+      "summary": "Grand Theft Auto 6 features tons of celebrity cameos, pop-culture references, and nods to past Rockstar games. Here are a few of our faves.",
+      "tags": []
+    },
+    {
+      "title": "American Psycho Reboot Is 'Not Happening,' Director Says",
+      "link": "https://www.polygon.com/american-psycho-reboot-movie-update-luca-guadagnino/",
+      "date": "2026-11-22T18:09:46.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25019298/american_psycho_bateman.jpg",
+      "summary": "We won't be getting a version of American Psycho from the director of Challengers",
+      "tags": []
+    },
+    {
+      "title": "Go on a trip with Dave and Beezlebub for a sick boss fight in GTA 6",
+      "link": "https://www.polygon.com/gta-6-hell-event-port-hellhorn-circles-of-hell-hellspawn-comshot/",
+      "date": "2026-11-22T18:05:11.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta6_guide_hellevent_lead2.jpg",
+      "summary": "In this guide, you learn all you need to start the Hell event in GTA 6 and go fight demons in Doom style to earn a unique weapon.",
+      "tags": []
+    },
+    {
+      "title": "Six Years Too Late, Next-Gen Finally Arrives with GTA 6",
+      "link": "https://www.polygon.com/patch-notes-gta-6-next-gen/",
+      "date": "2026-11-22T18:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/vice_city_13-1.jpg",
+      "summary": "Grand Theft Auto 6 is the best reason to buy a PS5 or Xbox Series X, but it might be the last time a game makes us feel this way",
+      "tags": []
+    },
+    {
+      "title": "Which GTA 6 radio station is your favourite so far?",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/which-gta-6-radio-station-is-your-favourite-so-far/",
+      "date": "2026-11-22T18:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dwVa6qqWCdhXccbQVsGLNo-1920-80.jpg",
+      "summary": "The music of Leonida is so damn good.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6's massive casino and sick go-kart track are currently closed, but I'm hoping we can trust those 'coming soon' signs 🙏",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-massive-casino-and-sick-go-kart-track-are-currently-closed-but-im-hoping-we-can-trust-those-coming-soon-signs/",
+      "date": "2026-11-22T17:51:53.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/8q3aB7eUKTKyvGtqBRoLPE-1920-80.jpg",
+      "summary": "And not just for GTA 6 Online, right? Right?",
+      "tags": []
+    },
+    {
+      "title": "Resident Evil : Il existe une version du film que vous ne verrez jamais et on vous explique pourquoi !",
+      "link": "https://www.jeuxvideo.com/news/2115350/resident-evil-il-existe-une-version-du-film-que-vous-ne-verrez-jamais-et-on-vous-explique-pourquoi.htm",
+      "date": "2026-11-22T17:45:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179500/1794999632-7331-card.jpg",
+      "summary": "À Hollywood, un film vit rarement une seule vie. Bien avant la Snyder Cut de Justice League, Blade Runner avait déjà connu plusieurs montages, dont certains des décennies après sa…",
+      "tags": []
+    },
+    {
+      "title": "Deux jeux, portant le même nom et sortis en même temps, font équipe pour sortir sur Switch",
+      "link": "https://www.gamekult.com/actualite/deux-jeux-portant-le-meme-nom-et-sortis-en-meme-temps-font-equipe-pour-sortir-sur-switch-3050872912.html",
+      "date": "2026-11-22T17:25:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050872912/nintendo-a-deteste-ca-deux-jeux-portant-le-meme-nom-et-sortis-en-meme-temps-font-equipe-pour-sortir-sur-switch-7b947c74__800_800__0-0-1081-1080.jpg",
+      "summary": "Le plus grand concours de circonstances se trouve ici : deux jeux, chacun intitulé Piece by Piece mais sans aucun lien, sortent dans le même bundle sur Switch. Le pack a été…",
+      "tags": []
+    },
+    {
+      "title": "Christopher Nolan's Mystery Thriller Masterpiece Is Officially Being Removed from Netflix",
+      "link": "https://www.polygon.com/memento-leaving-netflix-december-2026/",
+      "date": "2026-11-22T17:23:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mv5byjdknjm3m2qtywzlzs00mdzjlthmnzktmmjkotazzmrjymm1xkeyxkfqcgc-_v1_.jpg",
+      "summary": "The director's 2001 breakthrough film established many of the techniques and themes he's used throughout his career",
+      "tags": []
+    },
+    {
+      "title": "Creator Of Infamous E.T. Atari Game Warns That AI Could Trigger Another &#8217;83-Style Crash",
+      "link": "https://kotaku.com/creator-of-infamous-e-t-atari-game-warns-that-ai-could-trigger-another-83-style-crash-2000759257",
+      "date": "2026-11-22T17:12:48.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/ETatari.jpg",
+      "summary": "While the hastily made Spielberg tie-in is often blamed for the industry collapse of the 1980s, any crash in the 2020s would be unrelated to that same filmmaker's Artificial…",
+      "tags": []
+    },
+    {
+      "title": "How to steal the Declasse Vamos in GTA 6",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-declasse-vamos-code/",
+      "date": "2026-11-22T17:04:39.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/JB6TuHdPTuVWZym7wq6ebT-1920-80.jpg",
+      "summary": "Grab the code to unlock the garage and steal the car for Moses.",
+      "tags": []
+    },
+    {
+      "title": "Christopher Nolan's The Odyssey Built a 36-Foot Cyclops Puppet and Hauled It Up a Mountain",
+      "link": "https://www.polygon.com/the-odyssey-cyclops-puppet-practical-effects/",
+      "date": "2026-11-22T17:00:19.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/cyclops.jpg",
+      "summary": "The Odyssey's effects team reveals how they built a 36-foot Cyclops puppet and hauled it up a mountain to film inside a cave in Greece.",
+      "tags": []
+    },
+    {
+      "title": "Scott Lynch, author of The Lies of Locke Lamora, has 1,493 hours in Star Wars: Rebellion and 1,564 in BattleTech: 'If J.R.R. Tolkien had had a Steam account, his numbers would be pretty embarrassing too'",
+      "link": "https://www.pcgamer.com/gaming-industry/scott-lynch-author-of-the-lies-of-locke-lamora-has-1-493-hours-in-star-wars-rebellion-and-1-564-in-battletech-if-j-r-r-tolkien-had-had-a-steam-account-his-numbers-would-be-pretty-embarrassing-too/",
+      "date": "2026-11-22T17:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/fkpXpggwPwTWqi7omc8ABe-1920-80.png",
+      "summary": "The fantasy novelist guides us through the games on his PC.",
+      "tags": []
+    },
+    {
+      "title": "Former Rockstar environment artist breaks silence: GTA 6 is 'generally stunning,' but Red Dead 2 might have had better rivers",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/former-rockstar-environment-artist-breaks-silence-gta-6-is-generally-stunning-but-red-dead-2-might-have-had-better-rivers/",
+      "date": "2026-11-22T16:55:10.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/dTy3LYCVBVa7JXWmxWrNx9-1920-80.jpg",
+      "summary": "\"I want to celebrate this world that I spent literal years working on.\"",
+      "tags": []
+    },
+    {
+      "title": "Sunrise on the Reaping Makes Hunger Games A Box Office Blockbuster Franchise Again",
+      "link": "https://www.polygon.com/the-hunger-games-sunrise-on-the-reaping-box-office/",
+      "date": "2026-11-22T16:49:49.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/hunger_games_sunrise_reaping.jpg",
+      "summary": "Sunrise on the Reaping had a strong opening box office haul this weekend, re-establishing The Hunger Games as a box office giant.",
+      "tags": []
+    },
+    {
+      "title": "Meilleures voitures GTA 6 : Liste et emplacement des voitures uniques de la carte de Léonida",
+      "link": "https://www.jeuxvideo.com/news/2116235/meilleures-voitures-gta-6-liste-et-emplacement-des-voitures-uniques-de-la-carte-de-leonida.htm",
+      "date": "2026-11-22T16:43:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179537/1795365285-6671-card.jpg",
+      "summary": "Découvrez notre liste des voitures uniques, les meilleures de la carte de GTA VI, dans ce nouveau chapitre de notre soluce complète de GTA VI. Cela vous aidera à remplir votre…",
+      "tags": []
+    },
+    {
+      "title": "ASTUCE GTA 6 : comment débloquer le trophée secret « Pas de bol j'imagine » facilement ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-guide-trophee-pas-de-bol-jimagine-727260?utm_source=RSS",
+      "date": "2026-11-22T16:33:11.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/soluces/727260_6b03187a80f9b.png",
+      "summary": "GTA 6 garde certains trophées volontairement mystérieux, mais ça n'aide pas. Voici donc comment débloquer facilement le trophée « Pas de bol j'imagine » et donner une revanche à…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6’s Worst Feature Needs to Be Patched ASAP",
+      "link": "https://www.polygon.com/gta-6-stash-box-atm-money/",
+      "date": "2026-11-22T16:30:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gta6-3.jpg",
+      "summary": "Depositing and withdrawing money from your stash box and ATMs is shockingly fiddly and counterintuitive in GTA 6.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "On a fait le test du jeu dans le jeu : Time Jackers Rewind, un peu cher mais ça offre un accès à GTA 6",
+      "link": "https://fr.ign.com/time-jackers-rewind/94172/on-a-fait-le-test-du-jeu-dans-le-jeu-time-jackers-rewind-un-peu-cher-mais-ca-offre-un-acces-a-gta-6",
+      "date": "2026-11-22T16:20:29.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/blob_m6vv.png",
+      "summary": "A 80€ ça fait cher la pépite indé. À 80 euros pour une heure de jeu, ça fait quand même un peu cher pour une petite pépite indépendante. Heureusement, le jeu offre également un…",
+      "tags": []
+    },
+    {
+      "title": "All map fragment locations in the Fortnite Chapter 7 mini season",
+      "link": "https://www.polygon.com/fortnite-chapter-7-mini-season-c7ms-map-fragment-locations/",
+      "date": "2026-11-22T16:14:04.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jlee_261101_1001_fn_mapfragment0.jpg",
+      "summary": "Here's where to find all the currently available map fragments in Fortnite's Chapter 7 mini season.",
+      "tags": []
+    },
+    {
+      "title": "This '90s-inspired horror game has one of the coolest post-apocalyptic worlds I've ever seen",
+      "link": "https://www.pcgamer.com/games/horror/this-90s-inspired-horror-game-has-one-of-the-coolest-post-apocalyptic-worlds-ive-ever-seen/",
+      "date": "2026-11-22T16:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/9NRHokYQAAJfSkWEZafGdc-1920-80.png",
+      "summary": "Plus you can experience it all from the comfort of your campervan.",
+      "tags": []
+    },
+    {
+      "title": "Lamborghini Urus en or GTA 6 : Où trouver la voiture unique de Casanova Island ?",
+      "link": "https://www.jeuxvideo.com/news/2116228/lamborghini-urus-en-or-gta-6-ou-trouver-la-voiture-unique-de-casanova-island.htm",
+      "date": "2026-11-22T15:57:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179536/1795361159-4334-card.jpg",
+      "summary": "Si vous êtes allés jusque Vespucci Island pour récupérer la voiture de Fast and Furious dans GTA VI, vous allez peut-être vouloir faire un détour par Casanova Island pour aller…",
+      "tags": []
+    },
+    {
+      "title": "Prise du Kraken Disney Dreamlight Valley : comment préparer cette recette 4 étoile ?",
+      "link": "https://www.jeuxvideo.com/news/2115990/prise-du-kraken-disney-dreamlight-valley-comment-preparer-cette-recette-4-etoile.htm",
+      "date": "2026-11-22T15:56:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179519/1795190036-9380-card.jpg",
+      "summary": "Vous avez besoin de la recette de la Prise du Kraken pour la quête principale du nouveau DLC de Disney Dreamlight Valley ? Vous êtes au bon endroit : ce guide contient toutes les…",
+      "tags": []
+    },
+    {
+      "title": "GUIDE GTA 6 : les 5 meilleures banques à braquer et comment se faire un max d'argent ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/guide-gta-6-5-meilleures-banque-petites-braquage-facile-727250?utm_source=RSS",
+      "date": "2026-11-22T15:40:44.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6af443177eeb7.jpg",
+      "summary": "GTA 6 a plein de banques qui ne demandent qu'à être pillées. Voici notre top 5 des meilleures banques de petite taille pour faire de grosses sommes d'argent avec peu d'effort.",
+      "tags": []
+    },
+    {
+      "title": "WoW Forever : Blizzard dévoile les chiffres du MMO. Sa population est supérieure de 30% à celle de la Belgique",
+      "link": "https://www.jeuxvideo.com/news/2115709/wow-forever-blizzard-devoile-les-chiffres-du-mmo-sa-population-est-superieure-de-30-a-celle-de-la-belgique.htm",
+      "date": "2026-11-22T15:00:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179518/1795175624-1330-card.jpg",
+      "summary": "On savait que le retour en Azeroth ferait des heureux, mais peut-être pas à ce point. Deux semaines après son lancement, World of Warcraft Forever semble avoir réveillé bien plus…",
+      "tags": []
+    },
+    {
+      "title": "The GTAs that are still worth playing while you wait for GTA 6 on PC",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/the-gtas-that-are-still-worth-playing-while-you-wait-for-gta-6-on-pc/",
+      "date": "2026-11-22T15:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/efAnj32m7jksy98SeLMVmY-1920-80.jpg",
+      "summary": "I bet GTA 6 doesn't even have a jetpack.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Mamba GT locations: How to restore the third car for Wyman",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mamba-gt-locations/",
+      "date": "2026-11-22T14:53:59.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/jnfdvJA73GUjwwUeBTtm89-1920-80.jpg",
+      "summary": "Repair the '64 Mamba GT by finding some cars.",
+      "tags": []
+    },
+    {
+      "title": "Jason et Lucia GTA 6 : Les astuces pour améliorer leur relation au max !",
+      "link": "https://www.jeuxvideo.com/news/2116221/jason-et-lucia-gta-6-les-astuces-pour-ameliorer-leur-relation-au-max.htm",
+      "date": "2026-11-22T14:46:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179536/1795358440-1304-card.jpg",
+      "summary": "La relation entre Jason et Lucia est un élément central de Grand Theft Auto VI et vous avez plutôt intérêt à en prendre soin si vous voulez la meilleure conclusion possible. Dans…",
+      "tags": []
+    },
+    {
+      "title": "Comment la bande-son de GTA 6 a-t-elle pulvérisé les records sur Spotify dès sa sortie ?",
+      "link": "https://www.jeuxvideo.com/news/2116217/comment-la-bande-son-de-gta-6-a-t-elle-pulverise-les-records-sur-spotify-des-sa-sortie.htm",
+      "date": "2026-11-22T14:30:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179536/1795356413-6558-card.jpg",
+      "summary": "Accompagnant la sortie du jeu de Rockstar Games, la compilation officielle intitulée GTA VI: The Album vient de signer une entrée fracassante sur Spotify.",
+      "tags": []
+    },
+    {
+      "title": "Salle de sport GTA 6 : Comment vous entrainer au chapitre 2 et à Vice City ?",
+      "link": "https://www.jeuxvideo.com/news/2116213/salle-de-sport-gta-6-comment-vous-entrainer-au-chapitre-2.htm",
+      "date": "2026-11-22T14:10:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179536/1795356567-2338-card.jpg",
+      "summary": "Alors que vous aviez tout ce qu'il fallait pour prendre de la masse dans votre jardin, au chapitre 1 de GTA VI, il va désormais falloir composer avec ce que vous trouvez dans le…",
+      "tags": []
+    },
+    {
+      "title": "Sur Twitch, GTA 6 explose le record de Valorant et devient le jeu vidéo le plus streamé de l'histoire",
+      "link": "https://www.gamekult.com/actualite/sur-twitch-gta-6-explose-le-record-de-valorant-et-devient-le-jeu-video-le-plus-streame-de-l-histoire-3050873099.html",
+      "date": "2026-11-22T14:02:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873099/sur-twitch-gta-6-explose-le-record-de-valorant-et-devient-le-jeu-video-le-plus-streame-de-l-histoire-53d1e596__800_800__703-0-1567-864.png",
+      "summary": "Les limites sont faites pour être franchies : d'aucuns diraient que cette phrase est souvent borderline, mais qu'elle convient on ne peut mieux au mastodonte Grand Theft Auto VI…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Riata locations: How to restore the second car for Wyman",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-riata-locations/",
+      "date": "2026-11-22T13:48:06.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/UDuySb62PjV6diMhaDehpm-1920-80.jpg",
+      "summary": "Fix the '70 Riata by tracking down some wrecked cars.",
+      "tags": []
+    },
+    {
+      "title": "Dernière mission du chapitre 1 GTA 6 : La liste des choses à faire avant le point de non-retour",
+      "link": "https://www.jeuxvideo.com/news/2116209/derniere-mission-du-chapitre-1-gta-6-la-liste-des-choses-a-faire-avant-le-point-de-non-retour.htm",
+      "date": "2026-11-22T13:42:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179535/1795354437-6032-card.jpg",
+      "summary": "Une certaine mission agit comme un point de non-retour dans le déroulement du scénario de GTA VI. Dans ce guide, nous verrons quelle est cette fameuse dernière mission et ce que…",
+      "tags": []
+    },
+    {
+      "title": "Grand Theft Auto 6 has a 'complex drug network' that tracks everything from where drugs come from to 'how they eventually reach the street-level buyer'",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-has-a-complex-drug-network-that-tracks-everything-from-where-drugs-come-from-to-how-they-eventually-reach-the-street-level-buyer/",
+      "date": "2026-11-22T13:25:42.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/s8f7vCvwQwKdVpYM98hjNQ-1920-80.jpg",
+      "summary": "\"Having that structure in the background as something we consistently refer to helps everything feel more real.\"",
+      "tags": []
+    },
+    {
+      "title": "Schafter V12 GTA 6 : Où trouver la voiture à voler dans Service de Voiture au chapitre 3 ?",
+      "link": "https://www.jeuxvideo.com/news/2116205/schafter-v12-gta-6-ou-trouver-la-voiture-a-voler-dans-service-de-voiture-au-chapitre-3.htm",
+      "date": "2026-11-22T13:07:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179535/1795352144-5837-card.jpg",
+      "summary": "Pour commencer vos missions avec Raul dans GTA 6, vous allez d'abord devoir voler la voiture qui va servir à vos prochaines exactions. Le hic, c'est qu'elle se trouve dans un…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 goes gangbusters, Netflix Games layoffs and Pikmin Bloom's unlikely rise | Week in Mobile Games podcast",
+      "link": "https://www.pocketgamer.biz/gta-6-goes-gangbusters-week-in-mobile-games-podcast/",
+      "date": "2026-11-22T13:00:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142319/90335/week-in-mobile-games-111_l660.jpg",
+      "summary": "PocketGamer.biz head of content Craig Chapple, editorial director of events Mariam Ahmad and features and data editor Aaron Astle talk through the latest games industry news on…",
+      "tags": []
+    },
+    {
+      "title": "The designer of Atari's notorious E.T. likens the deluge of AI games to events that preceded the '80s industry crash: 'There was a glut of crap on the market'",
+      "link": "https://www.pcgamer.com/gaming-industry/game-development/the-designer-of-ataris-notorious-e-t-likens-the-deluge-of-ai-games-to-events-that-preceded-the-80s-industry-crash-there-was-a-glut-of-crap-on-the-market/",
+      "date": "2026-11-22T12:44:48.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/wWpvRCE5GXHwEVaYibPhMU-1920-80.jpg",
+      "summary": "Despite this, Howard Scott Warshaw thinks AI will be a \"super positive thing\" for the industry.",
+      "tags": []
+    },
+    {
+      "title": "Origine Douteuse GTA 6 : Faut-il donner la statuette à Halifax, quel choix faire ?",
+      "link": "https://www.jeuxvideo.com/news/2116201/origine-douteuse-gta-6-faut-il-donner-la-statuette-a-halifax-quel-choix-faire.htm",
+      "date": "2026-11-22T12:15:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179535/1795349636-6855-card.jpg",
+      "summary": "Découvrez quel choix faire au début du chapitre 3, pendant la mission principale Origines Douteuses. Devez-vous confier l'effigie qui se trouvait dans le sac à ce personnage…",
+      "tags": []
+    },
     {
       "title": "Gran Turismo 7 est en train d'avoir son remake sous Unreal Engine 5 (avec du DLSS 5)",
       "link": "https://www.gamekult.com/actualite/gran-turismo-7-est-en-train-d-avoir-son-remake-sous-unreal-engine-5-avec-du-dlss-5-3050873076.html",
@@ -136,12 +516,12 @@
       "tags": []
     },
     {
-      "title": "30 Years Later, Sean Connery's Secret James Bond Thriller Is Officially Free on Streaming",
-      "link": "https://www.polygon.com/the-rock-sean-connery-free-to-stream/",
-      "date": "2026-11-22T12:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/msdrock_ec013_h.jpg",
-      "summary": "Michael Bay’s 1996 thriller The Rock is currently free to stream. 30 years later, its still an exciting ride.",
+      "title": "Il y a 20 ans, cette mécanique de MMORPG m'a traumatisé, me dégoûtant de ce genre de jeu",
+      "link": "https://www.jeuxvideo.com/news/2115909/il-y-a-20-ans-cette-mecanique-de-mmorpg-m-a-traumatise-me-degoutant-de-ce-genre-de-jeu.htm",
+      "date": "2026-11-22T11:50:06.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179518/1795182318-967-card.jpg",
+      "summary": "Parmi tous les jeux auxquels j’ai joué, il y en a un en particulier qui m’a marqué.Traumatisé même, au point que j’ai renoncé de m’approcher du moindre jeu qui s’approchait de ce…",
       "tags": []
     },
     {
@@ -178,15 +558,6 @@
       "sourceId": "gameblog",
       "image": "https://cdn-uploads.gameblog.fr/img/news/592677_66ac8f65d71d2.jpg",
       "summary": "L'un des isekai star de Crunchyroll vient de faire une grande annonce. La suite de l'anime se prépare officiellement et nous donne un premier aperçu avec un visuel de la prochaine…",
-      "tags": []
-    },
-    {
-      "title": "Star Wars’ 2-Part Sci-Fi War Thriller Has One of the Best Seasons in TV History",
-      "link": "https://www.polygon.com/disney-sci-fi-thriller-star-wars-andor/",
-      "date": "2026-11-22T10:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/andor-season-1-taramyn.jpg",
-      "summary": "Disney needed a win for one specific franchise, and Tony Gilroy gave Star Wars just that with the first season of 'Andor.'",
       "tags": []
     },
     {
@@ -232,24 +603,6 @@
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/news/g/gta-6-play/gta-6-players-are-running-into-npcs-who-fight-back-so-hard-y_m8ha.jpg",
       "summary": "Allons en paix.",
-      "tags": []
-    },
-    {
-      "title": "8 Best Science Fantasy Books of the 21st Century",
-      "link": "https://www.polygon.com/best-science-fantasy-books-of-the-century/",
-      "date": "2026-11-22T09:04:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gideon-the-ninth.jpg",
-      "summary": "Break genre barriers with spacefaring necromancers and aliens employing goblins. Here are some of the best sci-fi fantasy books.",
-      "tags": []
-    },
-    {
-      "title": "29 years later, Homer’s Best ‘The Simpsons’ Quote is Still Pure Genius",
-      "link": "https://www.polygon.com/the-simpsons-best-homer-quote/",
-      "date": "2026-11-22T09:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/6058959/homer-simpson.0.jpg",
-      "summary": "Homer Simpson’s best quote from The Simpsons came during season 8 and contains some profoubd wisdom",
       "tags": []
     },
     {
@@ -304,15 +657,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050873058/sachez-que-l-on-aurait-pu-avoir-un-call-of-duty-au-moyen-age-6fbde2b9__800_800__433-0-1057-624.png",
       "summary": "Il y a un monde où Call of Duty, le temple des flingues et des 360 no-scope, s'essayait aux épées et aux fléaux : l'idée d'un épisode médiéval a réellement été imaginée par…",
-      "tags": []
-    },
-    {
-      "title": "'Calvin and Hobbes' Best Bully Quote Is Still Among the Wisest in Comic Strip History",
-      "link": "https://www.polygon.com/calvin-and-hobbes-moe-best-quote/",
-      "date": "2026-11-22T08:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/screen-shot-2026-11-18-at-7-58-53-pm.jpg",
-      "summary": "Moe was Calvin’s big dumb bully in Calvin and Hobbes. Here is his best quote from the beloved comic strip.",
       "tags": []
     },
     {
@@ -388,24 +732,6 @@
       "tags": []
     },
     {
-      "title": "150 ans après un naufrage, des archéologues identifient pour la première fois des vestiges laissés par certains rescapés",
-      "link": "https://www.gameblog.fr/trends/150-ans-apres-un-naufrage-des-archeologues-identifient-pour-la-premiere-fois-des-vestiges-laisses-par-certains-rescapes-727217?utm_source=RSS",
-      "date": "2026-11-22T06:30:24.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b0284f71793c.webp",
-      "summary": "Perles de verre, charnière de gouvernail, coques de bois échouées : sur une plage isolée de Patagonie, des archéologues exhument peut-être le campement des naufragés de l'Espora…",
-      "tags": []
-    },
-    {
-      "title": "Adrianne, mère de 3 enfants, entretient une liaison avec une IA depuis 5 ans : « mon mari n'y voit aucun inconvénient »",
-      "link": "https://www.gameblog.fr/trends/adrianne-mere-de-3-enfants-entretient-une-liaison-avec-une-ia-depuis-5-ans-mon-mari-ny-voit-aucun-inconvenient-727215?utm_source=RSS",
-      "date": "2026-11-22T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b02783ad62cf.webp",
-      "summary": "Une femme mariée, trois enfants, et une liaison virtuelle avec Geralt de The Witcher depuis cinq ans. Son mari approuve. Entre deuil, intimité numérique et équilibre familial…",
-      "tags": []
-    },
-    {
       "title": "Condemned : Criminal Origins, c'est poisse partout, justice nulle part",
       "link": "https://www.gamekult.com/actualite/condemned-criminal-origins-c-est-poisse-partout-justice-nulle-part-3050872709.html",
       "date": "2026-11-22T05:01:00.000Z",
@@ -415,59 +741,12 @@
       "tags": []
     },
     {
-      "title": "46 Years Later, the Most Influential Thriller of All Time Is Officially Free on YouTube",
-      "link": "https://www.polygon.com/friday-the-13th-youtube-watch-free-november-2026/",
-      "date": "2026-11-22T04:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/m8dfrth_ec020.jpg",
-      "summary": "The start of Jason Voorhees's story, 'Friday the 13th,' is now available to watch for free.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "58 Years Later, Captain Kirk's Best Star Trek Quote Is the Greatest Line in Sci-Fi History",
-      "link": "https://www.polygon.com/best-captain-kirk-quote-star-trek-original-series/",
-      "date": "2026-11-22T03:59:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/captain-kirk-og.png",
-      "summary": "Captain Kirk's speech in 'Return to Tomorrow' says more about what Star Trek stands for than any other line in the original series.",
-      "tags": []
-    },
-    {
       "title": "Astarion's Baldur's Gate 3 prequel novel infuriated fans, now it's Shadowheart's turn",
       "link": "https://www.pcgamer.com/games/baldurs-gate/astarions-baldurs-gate-3-prequel-novel-infuriated-fans-now-its-shadowhearts-turn/",
       "date": "2026-11-22T03:03:45.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/ZzLc6TsxfGskr3J8FoCT7G-1920-80.jpg",
       "summary": "Her book's being written by award-winning author Tasha Suri.",
-      "tags": []
-    },
-    {
-      "title": "61 Years Later, Charlie Brown's Greatest Enemy Is Still an Undefeated 'Peanuts' Icon",
-      "link": "https://www.polygon.com/kite-eating-tree-peanuts/",
-      "date": "2026-11-22T03:00:28.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/charlie-brown-011-1024.jpg",
-      "summary": "Charlie Brown's only real arch-rival was a malevolent tree. Chomp chomp chomp.",
-      "tags": []
-    },
-    {
-      "title": "8 Must-Play JRPGs for People With Real-Life Schedules",
-      "link": "https://www.polygon.com/jrpgs-real-life-schedules/",
-      "date": "2026-11-22T01:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/octopath-traveler-switch-2.jpg",
-      "summary": "Busy schedule, long JRPG backlog? These eight games fit short sessions with chapter breaks, adjustable battles, and easy saves.",
-      "tags": []
-    },
-    {
-      "title": "Star Trek Reboot Officially Teased as Crimson Tide Meets Training Day Sci-Fi Thriller",
-      "link": "https://www.polygon.com/star-trek-movie-reboot-crimson-tide-training-day/",
-      "date": "2026-11-22T00:40:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/01/mcdsttr_ec059.jpg",
-      "summary": "The next Star Trek movie has writers and a strong pitch: Crimson Tide meets Training Day meets Starfleet.",
       "tags": []
     },
     {
@@ -561,30 +840,12 @@
       "tags": []
     },
     {
-      "title": "J'adore cette mission de GTA 6 mais impossible de la refaire",
-      "link": "https://www.jeuxvideo.com/news/2116004/j-adore-cette-mission-de-gta-6-mais-impossible-de-la-refaire.htm",
-      "date": "2026-11-21T21:20:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179519/1795190021-762-card.jpg",
-      "summary": "Est-ce que peut rejouer les missions principales dans GTA 6 ? La réponse peut étonner : c’est un non.",
-      "tags": []
-    },
-    {
       "title": "The team behind Ubisoft's 'first playable AI-based R&D project' has been established as its own subsidiary called Motherbrain",
       "link": "https://www.pcgamer.com/gaming-industry/the-team-behind-ubisofts-first-playable-ai-based-r-and-d-project-has-been-established-as-its-own-subsidiary-called-motherbrain/",
       "date": "2026-11-21T21:16:16.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/V6aMPiSGDvVuMNgnYf3iAa-1920-80.jpg",
       "summary": "In the name of \"more immersive and engaging player experiences,\" of course.",
-      "tags": []
-    },
-    {
-      "title": "ATM GTA 6 : Comment braquer les distributeurs automatiques ?",
-      "link": "https://www.jeuxvideo.com/news/2116178/atm-gta-6-comment-braquer-les-distributeurs-automatiques.htm",
-      "date": "2026-11-21T21:07:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179529/1795294425-1719-card.jpg",
-      "summary": "Tous les moyens sont bons pour remplir son compte en banque de GTA VI, même les plus farfelus. Dans cette nouvelle astuce rapide, nous verrons comment réussir à braquer les…",
       "tags": []
     },
     {
@@ -606,339 +867,6 @@
       "tags": []
     },
     {
-      "title": "Déclassé Vamos GTA 6 : Quel est le code du garage de la mission de Moses ?",
-      "link": "https://www.jeuxvideo.com/news/2116173/declasse-vamos-gta-6-quel-est-le-code-du-garage-de-la-mission-de-moses.htm",
-      "date": "2026-11-21T20:10:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179529/1795291311-3890-card.jpg",
-      "summary": "Découvrez le code de la porte menant à la Déclassé Vamos, l'une des voitures recherchées par Moses dans les missions secondaires de GTA VI. Cela vous permettra de vous faire 4000$…",
-      "tags": []
-    },
-    {
-      "title": "Original Director Behind Marvel&#8217;s Failed Mahershala Ali Blade Movie Says &#8216;Life&#8217;s Too Short To Make Sh*t Films&#8217;",
-      "link": "https://kotaku.com/original-director-behind-marvels-failed-mahershala-ali-blade-movie-says-lifes-too-short-to-make-sht-films-2000759167",
-      "date": "2026-11-21T20:00:52.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/cmoics-1280x720.jpg",
-      "summary": "Bassam Tariq dished on the experience in a recent interview",
-      "tags": []
-    },
-    {
-      "title": "Rockstar Dev Tells GTA 6 Players To &#8216;Stop Thinking In Tasks, Completion Percentages, Online Guides&#8217;",
-      "link": "https://kotaku.com/rockstar-dev-tells-gta-6-players-to-stop-thinking-in-tasks-completion-percentages-online-guides-2000759151",
-      "date": "2026-11-21T19:15:01.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/experience.jpg",
-      "summary": "The best way to play is just to experience the game, even if most of us are too internet-pilled to do that",
-      "tags": []
-    },
-    {
-      "title": "Motel Cascara GTA 6 : Où trouver le code du coffre et les objets de valeur du meilleur braquage de Port Gellhorn",
-      "link": "https://www.jeuxvideo.com/news/2116165/motel-cascara-gta-6-ou-trouver-tous-les-objets-de-valeur-du-meilleur-braquage-de-port-gellhorn.htm",
-      "date": "2026-11-21T19:12:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179529/1795288092-3708-card.jpg",
-      "summary": "Découvrez comment vider la zone du Motel de Carcara à 100% dans GTA 6. Vous pourrez y dénicher une arme unique, une montagne d'argent et de marchandises, mais aussi une grosse…",
-      "tags": []
-    },
-    {
-      "title": "Ce membre clé de l'équipe du film Resident Evil a fini chez le psy à cause d'un jeu NES",
-      "link": "https://www.jeuxvideo.com/news/2115307/ce-membre-cle-de-l-equipe-du-film-resident-evil-a-fini-chez-le-psy-a-cause-d-un-jeu-nes.htm",
-      "date": "2026-11-21T19:10:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179500/1794997268-6505-card.jpg",
-      "summary": "Les adaptations de jeux vidéo ont longtemps traîné une sale réputation, surtout en prises de vues réelles. Resident Evil fait figure d’exception. Le reboot de Zach Cregger a…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Players Hate Using ATMs: &#8216;Just Let Me Type In A Number!&#8221;",
-      "link": "https://kotaku.com/gta-6-players-hate-using-atms-just-let-me-type-in-a-number-2000759155",
-      "date": "2026-11-21T18:38:58.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GTa-6-atm-1280x720.jpg",
-      "summary": "People don't like having to scroll a big number back and forth to deposit a specific amount",
-      "tags": []
-    },
-    {
-      "title": "HMD PureView : une fuite inattendue pointe vers le retour de la gamme ?",
-      "link": "https://fr.ign.com/hmd-pureview/94165/hmd-pureview-une-fuite-inattendue-pointe-vers-le-retour-de-la-gamme",
-      "date": "2026-11-21T18:30:27.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/nokia-hmd_64xn.jpg",
-      "summary": "Le retour du PureView ?",
-      "tags": []
-    },
-    {
-      "title": "Jennifer Hale Hopes EA Sells Mass Effect Rights To The Fans: &#8216;Who Knows? This Could Happen&#8217;",
-      "link": "https://kotaku.com/jennifer-hale-hopes-ea-sells-mass-effect-rights-to-the-fans-who-knows-this-could-happen-2000759154",
-      "date": "2026-11-21T18:11:18.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2024/11/9965a243e22eef65f2eb5a4c2e41498d-1280x720.jpg",
-      "summary": "In a new interview, the voice of Commander Shepard pins her hopes on crowdfunding, saying she's had a sinking feeling since EA purchased BioWare nearly 20 years ago",
-      "tags": []
-    },
-    {
-      "title": "Skyrim lead chats about the Fallout diehards who hated that Bethesda got the series: 'We had to prove them wrong, and fortunately we did'",
-      "link": "https://www.pcgamer.com/games/fallout/skyrim-lead-chats-about-the-fallout-diehards-who-hated-that-bethesda-got-the-series-we-had-to-prove-them-wrong-and-fortunately-we-did/",
-      "date": "2026-11-21T18:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Sz4SXMccvrs3ehk26Yrm5-1920-80.jpg",
-      "summary": "\"You can't help but take it a little bit personally\".",
-      "tags": []
-    },
-    {
-      "title": "Ces 3 jeux à la GTA ont participé à la fermeture de leur studio et ils ne sont jamais sortis",
-      "link": "https://www.jeuxvideo.com/news/2115396/ces-3-jeux-a-la-gta-ont-participe-a-la-fermeture-de-leur-studio-et-ils-ne-sont-jamais-sortis.htm",
-      "date": "2026-11-21T17:45:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179502/1795016329-955-card.jpg",
-      "summary": "Faire des jeux d’action-aventure dans des univers urbains plus ou moins ouverts, ça a toujours représenté un investissement considérable. Tellement que, parfois, ces projets…",
-      "tags": []
-    },
-    {
-      "title": "How to steal the BF Bandito in GTA 6",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bf-bandito-location/",
-      "date": "2026-11-21T17:34:25.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/j3r6wPqXaPSUDLSeUfq6w9-1920-80.jpg",
-      "summary": "Track down this white off-roader for Moses.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Makes Fun Of Call Of Duty With A Joke About Unions While Rockstar Devs Are Voting To Unionize",
-      "link": "https://kotaku.com/gta-6features-a-parody-of-call-of-dutythat-contains-a-joke-about-unionizing-2000759139",
-      "date": "2026-11-21T17:22:00.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/codgta-1280x720.jpg",
-      "summary": "It's a funny ad poking fun at another big franchise, but is a bit awkward as Rockstar deals with its own employees trying to form a union",
-      "tags": []
-    },
-    {
-      "title": "Red Dead Redemption Movie And TV Rights Could Reportedly Cost $100 Million",
-      "link": "https://kotaku.com/it-doesnt-sound-like-well-get-a-gta-movie-anytime-soon-but-the-rights-to-red-dead-redemption-2-could-reportedly-start-at-100-million-2000759136",
-      "date": "2026-11-21T17:11:18.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/RD2.jpg",
-      "summary": "I could see an HBO TV adaptation of Red Dead Redemption making sense",
-      "tags": []
-    },
-    {
-      "title": "Fake figures seized from dishonest dealer in Shanghai sting spurred by tacky Tifa tchotchke",
-      "link": "https://www.pcgamer.com/games/final-fantasy/fake-figures-seized-from-dishonest-dealer-in-shanghai-sting-spurred-by-tacky-tifa-tchotchke/",
-      "date": "2026-11-21T17:08:06.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/sQNDu82xunDjdg7dpg7EmD-1920-80.jpg",
-      "summary": "Keeping our streets safe.",
-      "tags": []
-    },
-    {
-      "title": "World of Warcraft: Forever has turned me into a big, friendly golden retriever that says hello to everybody",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-has-turned-me-into-a-big-friendly-golden-retriever-that-says-hello-to-everybody/",
-      "date": "2026-11-21T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/A3M5iPYCVKQsLxXi9nGeTK-1920-80.png",
-      "summary": "I'd almost forgotten what it was like.",
-      "tags": []
-    },
-    {
-      "title": "Growler de Vanessa GTA VI : Où trouver cette excellente voiture au chapitre 3 ?",
-      "link": "https://www.jeuxvideo.com/news/2116156/growler-de-vanessa-gta-vi-ou-trouver-cette-excellente-voiture-au-chapitre-3.htm",
-      "date": "2026-11-21T16:50:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179528/1795279655-8484-card.jpg",
-      "summary": "Découvrez comment obtenir l'une des meilleures voitures pour débuter le chapitre 3 de GTA VI. Liée à une petite mission secondaire liée Auntie's Place du PC de l'appartement que…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 La Cascara Motel safe code",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-la-cascara-motel-safe-code/",
-      "date": "2026-11-21T16:36:30.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HenJAcBgYfxiaLBLcqGCJN-1920-80.jpg",
-      "summary": "Open the safe on the top floor of this ruined motel.",
-      "tags": []
-    },
-    {
-      "title": "Sega Rally 2 : un circuit caché découvert presque trente ans plus tard, et il est jouable",
-      "link": "https://www.gamekult.com/actualite/sega-rally-2-un-circuit-cache-decouvert-presque-trente-ans-plus-tard-et-il-est-jouable-3050873054.html",
-      "date": "2026-11-21T16:35:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873054/sega-rally-2-un-circuit-cache-decouvert-presque-trente-ans-plus-tard-et-il-est-jouable-bf8c4f6d__800_800__362-0-1114-752.png",
-      "summary": "Le sacro-saint Sega Rally 2 a soufflé tout récemment ses vingt-huit bougies, et qui aurait pu croire qu'il avait du rab au garage ? En fouillant les tréfonds du jeu, le datamineur…",
-      "tags": []
-    },
-    {
-      "title": "How to find the Avery Pawn Shop safe code in GTA 6",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pawn-shop-safe-code/",
-      "date": "2026-11-21T16:30:40.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QSYeXFDYmqVX3aynee9h2T-1920-80.jpg",
-      "summary": "Crack the case in the Hit Avery Pawn mission.",
-      "tags": []
-    },
-    {
-      "title": "The most unforgivable crime in GTA 6 is that TV placement",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/the-most-unforgivable-crime-in-gta-6-is-that-tv-placement/",
-      "date": "2026-11-21T16:16:37.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/UXEEfJQmgZiEK3gAaNSDGb-1920-80.png",
-      "summary": "Jason and Cal do their best to redecorate the bach' pad but c'mon boys, a TV in front of a giant glass door? We can do better.",
-      "tags": []
-    },
-    {
-      "title": "8 ans après sa sortie, le meilleur jeu Dragon Ball Z de tous les temps va être amélioré : pourquoi refuse-t-il de mourir ?",
-      "link": "https://www.jeuxvideo.com/news/2115092/8-ans-apres-sa-sortie-le-meilleur-jeu-dragon-ball-z-de-tous-les-temps-va-etre-ameliore-pourquoi-refuse-t-il-de-mourir.htm",
-      "date": "2026-11-21T16:15:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179493/1794928008-219-card.jpg",
-      "summary": "Huit ans après son lancement, Dragon Ball FighterZ reste le meilleur jeu de Dragon Ball Z et continue d’être joué. Alors que d'autres titres sont paru entre temps, Bandai Namco…",
-      "tags": []
-    },
-    {
-      "title": "J'ai résisté à World of Warcraft pendant 22 ans, mais j'ai craqué pour Forever : mon avis de noob",
-      "link": "https://www.jeuxvideo.com/news/2115989/j-ai-resiste-a-world-of-warcraft-pendant-22-ans-mais-j-ai-craque-pour-forever-mon-avis-de-noob.htm",
-      "date": "2026-11-21T16:00:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179519/1795190429-5176-card.jpg",
-      "summary": "World of Warcraft Forever est sorti et… je dois l’admettre, je me suis laissé aspirer dans le vortex. En 22 ans, je n’y avais jamais plongé, mais Wow Forever a réussi là où les…",
-      "tags": []
-    },
-    {
-      "title": "As a kid, I didn't have a monster in my attic, I had a LAN",
-      "link": "https://www.pcgamer.com/games/as-a-kid-i-didnt-have-a-monster-in-my-attic-i-had-a-lan/",
-      "date": "2026-11-21T16:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Kc7gddwixwFSdNyg4DfmM9-1920-80.jpg",
-      "summary": "I'm not boasting. OK, I am a bit.",
-      "tags": []
-    },
-    {
-      "title": "How to unlock the Brooks Boatworks safe in GTA 6",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-brooks-boatworks-safe-code/",
-      "date": "2026-11-21T15:51:59.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/D2t7xpNhbWuw8Lh3Rekxym-1920-80.jpg",
-      "summary": "And find a new gun, lots of pills and plenty of cash.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : Comment réussir un braquage de banque ?",
-      "link": "https://www.jeuxvideo.com/news/2116146/gta-6-comment-reussir-un-braquage-de-banque.htm",
-      "date": "2026-11-21T15:51:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179528/1795276204-4552-card.jpg",
-      "summary": "Les braquages de banque sont un excellent moyen d'engranger énormément d'argent en très peu de temps dans GTA VI. Mais c'est aussi une activité à très haut risque, que vous ne…",
-      "tags": []
-    },
-    {
-      "title": "J'ai passé 3 jours sur GTA 6 et je n'ai toujours rien fait. Comme dans la vraie vie, le jeu me fait procrastiner",
-      "link": "https://www.jeuxvideo.com/news/2115984/j-ai-passe-3-jours-sur-gta-6-et-je-n-ai-toujours-rien-fait-comme-dans-la-vraie-vie-le-jeu-me-fait-procrastiner.htm",
-      "date": "2026-11-21T15:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179519/1795187604-9940-card.jpg",
-      "summary": "Presque soixante-douze heures après le lancement officiel de Grand Theft Auto 6, le pourcentage de mon avancée s’approche à peine des 20%. Ce n’est pas un manque d’envie ou de…",
-      "tags": []
-    },
-    {
-      "title": "Le boss le plus macabre de Zelda Ocarina of Time a une tragique histoire cachée",
-      "link": "https://www.jeuxvideo.com/news/2115164/le-boss-le-plus-macabre-de-zelda-ocarina-of-time-a-une-tragique-histoire-cachee.htm",
-      "date": "2026-11-21T15:00:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179517/1795166256-9837-card.jpg",
-      "summary": "Derrière ce boss d'Ocarina of Time se cache une histoire sinistre, peu connue du grand public...",
-      "tags": []
-    },
-    {
-      "title": "While you wait for The Elder Scrolls 6: Sentinel, you owe it to yourself to play Tainted Grail",
-      "link": "https://www.pcgamer.com/games/rpg/while-you-wait-for-the-elder-scrolls-6-sentinel-you-owe-it-to-yourself-to-play-tainted-grail/",
-      "date": "2026-11-21T15:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/99cX8e9QjEz66iS6MhMack-1920-80.jpg",
-      "summary": "They do make them like they used to.",
-      "tags": []
-    },
-    {
-      "title": "Fallout 1 s'offre un remaster HD fait par un fan",
-      "link": "https://www.gamekult.com/actualite/fallout-1-s-offre-un-remaster-hd-fait-par-un-fan-3050873041.html",
-      "date": "2026-11-21T14:45:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873041/fallout-1-s-offre-un-remaster-hd-fait-par-un-fan-2c1c9084__800_800__255-0-820-565.png",
-      "summary": "Paraît-il que l'on est jamais mieux servi que par soi-même : un développeur solo est donc en train de faire, tout seul comme un grand, Fallout HD Project, remaster complet et…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Transgressor locations: How to restore the first car for Wyman",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-transgressor-locations/",
-      "date": "2026-11-21T14:43:05.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Zsq8XcWVvA37H4bJYN6Lbi-1920-80.jpg",
-      "summary": "Find cars for Wyman to fix the 67' Sirius Transgressor.",
-      "tags": []
-    },
-    {
-      "title": "Seven years on since Persona 5 Royal, Atlus says 'people won't have to wait as long as they have previously' for the next game after Persona 6",
-      "link": "https://www.pcgamer.com/games/rpg/seven-years-on-since-persona-5-royal-atlus-says-people-wont-have-to-wait-as-long-as-they-have-previously-for-the-next-game-after-persona-6/",
-      "date": "2026-11-21T14:31:07.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/RtNxgB4RG4rJNWfzDhWpnc-1920-80.jpg",
-      "summary": "\"Persona 6 is not the end\".",
-      "tags": []
-    },
-    {
-      "title": "Kyle GTA 6 : Comment finir la mission secondaire de la Ferme Mc Kittrick au chapitre 2 ?",
-      "link": "https://www.jeuxvideo.com/news/2116138/kyle-gta-6-comment-finir-la-mission-secondaire-secrete-de-hulk-au-chapitre-2.htm",
-      "date": "2026-11-21T14:01:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179527/1795268737-1309-card.jpg",
-      "summary": "Rockstar s'est complètement lâché sur les missions secondaires de GTA 6, avec des objectifs de fous et de nombreuses références à la pop culture. Dans ce guide, nous verrons le…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Bowling Alley safe code",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bowling-alley-safe-code-location/",
-      "date": "2026-11-21T13:49:37.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/AqhZNUxzhqfHXaW4h6HTZK-1920-80.jpg",
-      "summary": "Crack this safe during the Hit Kingpin Bowling mission.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 is a cozy game",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-is-a-cozy-game/",
-      "date": "2026-11-21T13:45:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/7rrKZFvVzmmHCPprp36VhD-1920-80.jpg",
-      "summary": "The best parts of GTA 6 happen when everyone puts their guns away.",
-      "tags": []
-    },
-    {
-      "title": "MANGMI AIR X Pro : la prochaine console portable Android dévoilée dans un teasing",
-      "link": "https://fr.ign.com/mangmi-air-x-pro/94164/mangmi-air-x-pro-la-prochaine-console-portable-android-devoilee-dans-un-teasing",
-      "date": "2026-11-21T13:43:47.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/mangmi-air-x-pro_qs1a.jpg",
-      "summary": "La version Pro se dessine.",
-      "tags": []
-    },
-    {
-      "title": "Deltarune chapter 6 is 'structurally complete' while development has begun on chapter 7, according to Toby Fox",
-      "link": "https://www.pcgamer.com/games/rpg/deltarune-chapter-6-is-structurally-complete-while-development-has-begun-on-chapter-7-according-to-toby-fox/",
-      "date": "2026-11-21T13:09:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/9mtBLYoPocDpbS5srRdg5-1920-80.png",
-      "summary": "\"All the maps, events and battles exist\" for the next slice of the RPG.",
-      "tags": []
-    },
-    {
-      "title": "These Are The 11 Best Romances BioWare Ever Made",
-      "link": "https://kotaku.com/bioware-best-11-romance-dragon-age-mass-effect-garrus-2000758976",
-      "date": "2026-11-21T13:00:31.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/garurs-1280x726.jpg",
-      "summary": "BioWare set the standard for having some of the best lovers in video games",
-      "tags": []
-    },
-    {
       "title": "GTA VI reaches the clouds, in more ways than one",
       "link": "https://www.gamefile.news/p/gta-vi-xbox-cloud-launch-sales",
       "date": "2026-11-21T01:17:09.000Z",
@@ -948,93 +876,12 @@
       "tags": []
     },
     {
-      "title": "Jam City lays off 10% of staff",
-      "link": "https://www.pocketgamer.biz/jam-city-lays-off-10-of-staff/",
-      "date": "2026-11-20T19:20:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/135462/90334/jam-city_l660.jpg",
-      "summary": "US mobile games publisher Jam City has laid off approximately 10% of staff. The company said no studios or games would be closed as a result of the decision. A spokesperson said…",
-      "tags": []
-    },
-    {
-      "title": "Jam City to cut around 60 staff",
-      "link": "https://mobilegamer.biz/jam-city-to-cut-around-60-staff/",
-      "date": "2026-11-20T18:46:57.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "The maker of Harry Potter: Hogwarts Mystery said no studios or games will be closed. The layoffs affect about 10% of its workforce.",
-      "tags": []
-    },
-    {
-      "title": "Is GTA 6 a swan song for big-budget triple-A?",
-      "link": "https://www.pocketgamer.biz/is-gta-6-a-swan-song-for-big-budget-triple-a/",
-      "date": "2026-11-20T18:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142317/90333/gta-6_l660.jpg",
-      "summary": "This article was first published in the PocketGamer.biz newsletter. Subscribe for more content like this straight to your inbox here - you'll even get discounts on PGC events…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6's cultural moment, Pikmin Bloom's music and the importance of playtests | Week in Views",
-      "link": "https://www.pocketgamer.biz/gta-6s-cultural-moment-pikmin-blooms-music-and-the-importance-of-playtests-week-in-views/",
-      "date": "2026-11-20T17:58:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142316/90332/week-in-views_l660.jpg",
-      "summary": "The games industry moves quickly and while stories may come and go there are some that we just can't let go of… So, to give those particularly thorny topics a further going over…",
-      "tags": []
-    },
-    {
       "title": "How Queen’s Domain brutalized its way to 250k sales...",
       "link": "https://newsletter.gamediscover.co/p/how-queens-domain-brutalized-its",
       "date": "2026-11-20T16:28:30.000Z",
       "sourceId": "gdco",
       "image": "https://substackcdn.com/image/fetch/$s_!Pygc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F305cc253-890b-4efe-8a4b-18fd1833b69b_800x450.jpeg",
       "summary": "It's a tough one. Also in the mix: the latest discovery news & this week on Steam.",
-      "tags": []
-    },
-    {
-      "title": "\"Clarity is kindness\": How to land an IP collaboration",
-      "link": "https://www.pocketgamer.biz/clarity-is-kindness-ip-collaboration-katharina-schmidt/",
-      "date": "2026-11-20T15:46:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142306/90299/katharinaschmidt_l660.jpg",
-      "summary": "Most game developers are used to moving relatively fast. Stash associate director of business development Katharina Schmidt's advice for anyone hoping to bring a famous brand into…",
-      "tags": []
-    },
-    {
-      "title": "Tencent takes 26.9% stake in Beijing Jiangxin Interactive Entertainment",
-      "link": "https://www.pocketgamer.biz/tencent-takes-269-stake-in-beijing-jiangxin-interactive-entertainment-4193182/",
-      "date": "2026-11-20T15:44:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/128382/90302/tencent-office_l660.jpg",
-      "summary": "Tencent has acquired a 26.9% stake in Beijing Jiangxin Interactive Entertainment as the Chinese tech giant continues to expand its investments in casual games. As reported by…",
-      "tags": []
-    },
-    {
-      "title": "Tencent commits $150m to Battle of Golden Spatula esports and growth",
-      "link": "https://www.pocketgamer.biz/tencent-commits-150m-to-battle-of-golden-spatula-esports-and-growth/",
-      "date": "2026-11-20T15:42:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142309/90304/golden-spatula_l660.jpg",
-      "summary": "Tencent has committed $150 million to Battle of Golden Spatula over the next three years as the mobile auto chess game passes 240m registered users. As reported by GameLook…",
-      "tags": []
-    },
-    {
-      "title": "New release roundup: Crossy Road Rush, GigaBash Mobile and all things besides GTA 6",
-      "link": "https://www.pocketgamer.biz/new-release-roundup-crossy-road-rush-gigabash-mobile-and-all-things-besides-gta-6/",
-      "date": "2026-11-20T15:40:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142303/90298/new-mobile-games-november-2-2026_l660.jpg",
-      "summary": "While the deals and the stats of the gaming world are important, nothing would happen without the research, funding and, of course, development that goes into making a great game…",
-      "tags": []
-    },
-    {
-      "title": "Ubisoft lays off 166 staff across Montreal and Quebec City studios",
-      "link": "https://www.pocketgamer.biz/ubisoft-lays-off-166-staff-across-montreal-and-quebec-city-studios/",
-      "date": "2026-11-20T12:50:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/130705/90303/ubisoft-logo_l660.jpg",
-      "summary": "Ubisoft has laid off 166 staff across its Montreal and Quebec City studios as the company continues to cut costs. As reported by GamesIndustry.biz, the affected roles were mainly…",
       "tags": []
     },
     {
