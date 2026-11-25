@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:42:15.392Z",
+  "generatedAt": "2026-11-25T18:55:48.504Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "ok",
@@ -21,63 +21,63 @@
       "status": "ok",
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
-      "newest": "2026-11-25T07:14:53.000Z",
-      "kept": 21
+      "newest": "2026-11-25T18:30:30.000Z",
+      "kept": 40
     },
     "gamedev": {
       "status": "ok",
       "url": "https://www.gamedeveloper.com/rss.xml",
       "items": 50,
       "newest": "2026-11-24T15:42:06.000Z",
-      "kept": 1
+      "kept": 0
     },
     "gibiz": {
       "status": "ok",
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
-      "newest": "2026-11-24T15:28:00.000Z",
-      "kept": 4
+      "newest": "2026-11-25T18:03:10.000Z",
+      "kept": 7
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-25T06:05:07.000Z",
-      "kept": 18
+      "newest": "2026-11-25T17:45:08.000Z",
+      "kept": 19
     },
     "gameblog": {
       "status": "ok",
       "url": "https://www.gameblog.fr/rssmap/rss_all.xml",
       "items": 13,
-      "newest": "2026-11-25T08:21:20.000Z",
+      "newest": "2026-11-25T17:05:00.000Z",
       "kept": 13
     },
     "gamekult": {
       "status": "ok",
       "url": "https://www.gamekult.com/feed.xml",
-      "items": 48,
-      "newest": "2026-11-25T07:45:00.000Z",
+      "items": 49,
+      "newest": "2026-11-25T18:41:00.000Z",
       "kept": 12
     },
     "kotaku": {
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-25T05:55:11.000Z",
+      "newest": "2026-11-25T18:30:39.000Z",
       "kept": 20
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-25T03:34:01.000Z",
-      "kept": 36
+      "newest": "2026-11-25T17:18:20.000Z",
+      "kept": 31
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-25T05:00:18.000Z",
+      "newest": "2026-11-25T18:45:37.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -91,15 +91,15 @@
       "status": "ok",
       "url": "https://www.pocketgamer.biz/rss/",
       "items": 50,
-      "newest": "2026-11-24T18:04:00.000Z",
-      "kept": 25
+      "newest": "2026-11-25T15:54:00.000Z",
+      "kept": 23
     },
     "mgbiz": {
       "status": "ok",
       "url": "https://mobilegamer.biz/feed/",
       "items": 10,
-      "newest": "2026-11-24T15:43:38.000Z",
-      "kept": 5
+      "newest": "2026-11-25T17:43:23.000Z",
+      "kept": 4
     },
     "gdco": {
       "status": "ok",
@@ -118,32 +118,1212 @@
   },
   "articles": [
     {
-      "title": "« Nous sommes satisfaits de là où nous en sommes » Cyberpunk 2 : CD Projekt donne officiellement des nouvelles et fait une promesse aux fans de ses RPG",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/cyberpunk-2-nouvelles-novembre-2026-727444?utm_source=RSS",
-      "date": "2026-11-25T08:21:20.000Z",
+      "title": "Lego Announces New Set for Fan-Favorite Marvel Character",
+      "link": "https://www.polygon.com/lego-marvel-rivals-jeff-the-land-shark-set-announced/",
+      "date": "2026-11-25T18:45:37.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2024/12/n7hRLND.png",
+      "summary": "Lego has revealed its first Marvel Rivals set starring fan-favorite character Jeff the Land Shark",
+      "tags": []
+    },
+    {
+      "title": "skate. : E.A. fait machine arrière et supprime définitivement ses saisons et son battle pass dès le 1er décembre",
+      "link": "https://www.gamekult.com/actualite/skate-e-a-fait-machine-arriere-et-supprime-definitivement-ses-saisons-et-son-battle-pass-des-le-1er-decembre-3050873189.html",
+      "date": "2026-11-25T18:41:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873189/skate-dit-adieu-au-systeme-de-saisons-youpi-a96ca616__800_800__554-0-1633-1080.jpg",
+      "summary": "Après une première année de rodage dans les rues de San Vansterdam, Electronic Arts et le studio Full Circle font machine arrière sur l'un des réflexes les plus tenaces du modèle…",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "How to whistle to distract enemies in GTA 6",
+      "link": "https://www.polygon.com/gta-6-whistle-how-to-distract-npcs/",
+      "date": "2026-11-25T18:39:58.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta6_guide_whistle_lead.jpg",
+      "summary": "Here's how to whistle in GTA 6 and when you can whistle, one of the best skills to use if you plan on hiding from enemies and taking them by surprise.",
+      "tags": []
+    },
+    {
+      "title": "Dropout’s Most Unhinged Show Officially Returns with New Trailer",
+      "link": "https://www.polygon.com/dropout-very-important-people-season-4-trailer-vic-michaelis/",
+      "date": "2026-11-25T18:34:08.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/very-important-people-vic-michaelis.jpg",
+      "summary": "Dropout released a new trailer for the Vic Michaelis-led improvised talk show Very Important People, and season 4 premieres in December.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Players Are Running Into a Game-Breaking Bug",
+      "link": "https://www.polygon.com/gta-6-soft-lock-bug-chapter-3-game-breaking/",
+      "date": "2026-11-25T18:32:07.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-release-time-header.jpg",
+      "summary": "GTA 6 players are running into a game-breaking bug that makes it impossible to progress the story.",
+      "tags": []
+    },
+    {
+      "title": "Add A Worf TV Show To The Growing Pile Of Abandoned Star Trek Series",
+      "link": "https://kotaku.com/add-a-worf-tv-show-to-the-growing-pile-of-abandoned-star-trek-series-2001000350",
+      "date": "2026-11-25T18:30:39.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/worf.jpg",
+      "summary": "Every day is a good day to die for Paramount Star Trek pitches, apparently",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : on décortique le braquage de banque le plus clean qu'on ait jamais vu jusqu'ici",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94273/gta-6-on-decortique-le-braquage-de-banque-le-plus-clean-quon-ait-jamais-vu-jusquici",
+      "date": "2026-11-25T18:30:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-brea/gta-6-breaking-down-the-cleanest-bank-robbery-weve-seen-so-f_uuaz.jpg",
+      "summary": "Pas vu pas pris.",
+      "tags": []
+    },
+    {
+      "title": "New 'GTA 6' Leak Is Great News For PC Gamers, But There's A Catch",
+      "link": "https://www.polygon.com/gta-6-leak-pc-port-settings-ps5-pro-ultra-medium-graphics-cards-price/",
+      "date": "2026-11-25T18:10:10.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jason2.JPG",
+      "summary": "A new leak gives PC players a sense of what to expect from Grand Theft Auto 6 with souped-up settings that aren't possible on PS5 Pro or Xbox",
+      "tags": []
+    },
+    {
+      "title": "Roblox signs licensing deal with PRS for Music",
+      "link": "https://www.gamesindustry.biz/roblox-signs-licensing-deal-with-prs-for-music",
+      "date": "2026-11-25T18:03:10.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/UbWClbf7.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Roblox has struck a licensing agreement with UK music rights organization PRS for Music, opening up a new revenue stream for songwriters and composers whose work is used on the…",
+      "tags": []
+    },
+    {
+      "title": "« Incroyablement secret » - Une actrice de GTA 6 dévoile des détails de « l'énorme » NDA de Rockstar",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94270/incroyablement-secret-une-actrice-de-gta-6-devoile-des-details-de-lenorme-nda-de-rockstar",
+      "date": "2026-11-25T18:00:35.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/crazy-secr/crazy-secretive-gta-6-voice-actor-reveals-details-of-rocksta_dyvj.jpg",
+      "summary": "« Avez-vous déjà signé des documents pour acheter une maison ? »",
+      "tags": []
+    },
+    {
+      "title": "Attempts To Vibe-Code PC Ports Of GTA 6 Are Being Shut Down, But It Might Be Too Late To Put The Genie Back In The Bottle",
+      "link": "https://kotaku.com/attempts-to-vibe-code-pc-ports-of-gta-6-are-being-shut-down-but-it-might-be-too-late-to-put-the-genie-back-in-the-bottle-2001000396",
+      "date": "2026-11-25T18:00:14.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/08/GTA6art_0001_Raul_Bautista_landscape-2-1280x720.jpg",
+      "summary": "Take-Two is already going after projects but may not be able to stop the flood",
+      "tags": []
+    },
+    {
+      "title": "Take-Two semble en plein nettoyage de portage PC de GTA 6, tandis que les vibecoders font la course à première place",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94276/take-two-semble-en-plein-nettoyage-de-portage-pc-de-gta-6-tandis-que-les-vibecoders-font-la-course-a",
+      "date": "2026-11-25T17:55:57.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/take-two-a/take-two-appears-to-be-trying-to-scrub-gta-6-pc-ports-from-t_xeqp.jpg",
+      "summary": "Ca travaille dur.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Fans Are Hissing Mad About Dolores the Snake",
+      "link": "https://www.polygon.com/gta-6-dolores-snake/",
+      "date": "2026-11-25T17:55:12.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-dolores.jpg",
+      "summary": "A Reddit post highlighting the inaccuracies of the reptile habitat in GTA 6 has captured the attention of gamers and normies alike",
+      "tags": []
+    },
+    {
+      "title": "Un portage de fan de GTA 5 sur iPhone s'arrête net après une plainte de Take-Two",
+      "link": "https://fr.ign.com/grand-theft-auto-v/94274/un-portage-de-fan-de-gta-5-sur-iphone-sarrete-net-apres-une-plainte-de-take-two",
+      "date": "2026-11-25T17:47:17.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/f/fan-made-g/fan-made-gta-5-port-for-iphone-shuts-down-after-take-two-cea_bwum.jpg",
+      "summary": "Grillé.",
+      "tags": []
+    },
+    {
+      "title": "Zenless Zone Zero - Trailer officiel du personnage Sunbringer",
+      "link": "https://fr.ign.com/zenless-zone-zero/94272/zenless-zone-zero-trailer-officiel-du-personnage-sunbringer",
+      "date": "2026-11-25T17:45:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/video/z/zenless-zo/zenless-zone-zero-official-sunbringer-character-demo-trailer_m7kd.jpg",
+      "summary": "« C’était comme si ce soleil d’une lourdeur insupportable l’avait condamnée à son sort. » Découvrez Sunbringer et apprenez à connaître cette agente dans cette toute nouvelle…",
+      "tags": []
+    },
+    {
+      "title": "CD Projekt pense faire « comme GTA 6 » avec The Witcher 4 : c'est courageux ou inconscient ?",
+      "link": "https://www.jeuxvideo.com/news/2116860/cd-projekt-pense-faire-comme-gta-6-avec-the-witcher-4-c-est-courageux-ou-inconscient.htm",
+      "date": "2026-11-25T17:45:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179562/1795618516-3655-card.jpg",
+      "summary": "En comparant le futur saut générationnel de The Witcher 4 à celui qui sépare GTA 5 de GTA 6, CD Projekt Red affiche une ambition démesurée. Entre force de frappe colossale…",
+      "tags": []
+    },
+    {
+      "title": "European studios are moving focus from &#8216;oversaturated&#8217; mobile market to PC, says EGDF",
+      "link": "https://mobilegamer.biz/european-studios-are-moving-focus-from-oversaturated-mobile-market-to-pc-says-egdf/",
+      "date": "2026-11-25T17:43:23.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "Overall staff numbers have stayed broadly flat even after years of industry-wide layoffs, says EGDF boss Jari-Pekka Kaleva, who notes that European labour laws have not had much…",
+      "tags": []
+    },
+    {
+      "title": "PlayStation Plus Free Games For December 2026 Include One Of The Best Horror Games In Years",
+      "link": "https://kotaku.com/playstation-plus-free-games-for-december-2026-include-one-of-the-best-horror-games-in-years-2001000406",
+      "date": "2026-11-25T17:42:53.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/bunker-1280x720.jpg",
+      "summary": "It's a well-rounded batch of games for the holidays",
+      "tags": []
+    },
+    {
+      "title": "Pour faire face à un marché indé toujours plus chaotique, Plug In Digital (Caravan SandWitch) rachète Twin Sails Interactive (Gloomhaven)",
+      "link": "https://www.gamekult.com/actualite/pour-faire-face-a-un-marche-inde-toujours-plus-chaotique-plug-in-digital-caravan-sandwitch-rachete-twin-sails-interactive-gloomhaven-3050873188.html",
+      "date": "2026-11-25T17:36:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873188/twin-sails-9da4e250__800_800__1681-0-3840-2160.jpg",
+      "summary": "L'éditeur et distributeur montpelliérain Plug In Digital a annoncé le 23 novembre le rachat de Twin Sails Interactive, l'ancienne filiale numérique d'Asmodee. L'opération, dont le…",
+      "tags": []
+    },
+    {
+      "title": "LEGO Marvel Rivals: Jeff the Land Shark Set - Image Gallery",
+      "link": "https://fr.ign.com/gallery/94269/lego-marvel-rivals-jeff-the-land-shark-set-image-gallery",
+      "date": "2026-11-25T17:30:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/l/lego-marve/lego-marvel-rivals-jeff-the-land-shark-set-image-gallery_dzkj.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "LEGO a fait un set Marvel Rivals Jeff the Land Shark, et c'est adorable",
+      "link": "https://fr.ign.com/marvel-rivals/94268/lego-a-fait-un-set-marvel-rivals-jeff-the-land-shark-et-cest-adorable",
+      "date": "2026-11-25T17:30:30.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/l/lego-revea/lego-reveals-adorable-marvel-rivals-jeff-the-land-shark-set_6uq4.jpg",
+      "summary": "Le personnage phare du jeu dispose enfin de son propre ensemble LEGO.",
+      "tags": []
+    },
+    {
+      "title": "Diablo 4 Officially Gets a Big Live-Service Change",
+      "link": "https://www.polygon.com/diablo-4-season-16-changes-season-15-content/",
+      "date": "2026-11-25T17:29:46.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/04/cover_art_no_logo.png",
+      "summary": "Diablo 4's 16th season will make a big change to the game’s usual update cadence, keeping much of season 15.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6-Like Partnership With Playstation Announced by Witcher Developer",
+      "link": "https://www.polygon.com/playstation-cd-projekt-red-marketing-partnership-deal-announced/",
+      "date": "2026-11-25T17:19:32.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/the-witcher-3-yen-screenshot.jpg",
+      "summary": "Witcher and Cyberpunk developer CD Projekt Red and PlayStation enter new marketing deal akin to GTA 6.",
+      "tags": []
+    },
+    {
+      "title": "Capcom will shut down Exoprimal servers in September 2027",
+      "link": "https://www.gamesindustry.biz/capcom-will-shut-down-exoprimal-servers-in-september-2027",
+      "date": "2026-11-25T17:19:20.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/AA2ibh2S-821792418.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Capcom has announced it will end service for its online dinosaur shooter Exoprimal on September 29, 2027.",
+      "tags": []
+    },
+    {
+      "title": "Speedy and cheap storage might seem like a pipe dream in 2026, but I'd say this PCIe 5.0 SSD is worth a look at this price for Black Friday",
+      "link": "https://www.pcgamer.com/hardware/ssds/speedy-and-cheap-storage-might-seem-like-a-pipe-dream-in-2026-but-id-say-this-pcie-5-0-ssd-is-worth-a-look-at-this-price-for-black-friday/",
+      "date": "2026-11-25T17:18:20.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/QFw2GNghoXtYCaMFKVQ7S-1920-80.jpg",
+      "summary": "It's pretty efficient, too, for a PCIe 5.0 drive.",
+      "tags": []
+    },
+    {
+      "title": "My joints are getting stiff from sitting in the office hunting down Black Friday deals... what I need is a standing desk. Come join me",
+      "link": "https://www.pcgamer.com/hardware/gaming-desks/my-joints-are-getting-stiff-from-sitting-in-the-office-hunting-down-black-friday-deals-what-i-need-is-a-standing-desk-come-join-me/",
+      "date": "2026-11-25T17:10:25.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/DM9uxsYvCN9EjupLsafJQZ-1920-80.jpg",
+      "summary": "This aching body needs a standing desk in the office.",
+      "tags": []
+    },
+    {
+      "title": "How to disable advanced trackers in GTA 6",
+      "link": "https://www.polygon.com/gta-6-advanced-trackers-how-to-disable-deactivate/",
+      "date": "2026-11-25T17:09:29.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta6-disable-advanced-tracker-1.jpg",
+      "summary": "Here's a secret way to stop advanced trackers from alerting the police in GTA 6",
+      "tags": []
+    },
+    {
+      "title": "Les fuites de The Last of Us Part 2 ont fait empirer les retours, d'après Laura Bailey",
+      "link": "https://fr.ign.com/the-last-of-us-2/94267/les-fuites-de-the-last-of-us-part-2-ont-fait-empirer-les-retours-dapres-laura-bailey",
+      "date": "2026-11-25T17:07:22.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/the-last-o/the-last-of-us-part-2-leaks-made-backlash-worse-laura-bailey_249h.jpg",
+      "summary": "Faut vraiment être cinglé.",
+      "tags": []
+    },
+    {
+      "title": "GUIDE GTA 6 : tous les emplacements de découvertes sous-marines pour le 100 %",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-decouvertes-sous-marines-liste-emplacements-727499?utm_source=RSS",
+      "date": "2026-11-25T17:05:00.000Z",
       "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/427957_6487311c54993.jpg",
-      "summary": "A l’occasion de son dernier bilan financier, CD Projekt RED donne officiellement des nouvelles de Cyberpunk 2 et fait une promesse quant à la sortie de ses prochains RPG.",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6b0714708a988.jpg",
+      "summary": "Enfilez votre tenue de plongée et partez à la recherche de toutes les découvertes sous-marines de GTA 6 grâce à notre guide de tous les emplacements.",
+      "tags": []
+    },
+    {
+      "title": "Hollow Knight: Silksong Dev Officially Breaks Silence on Sea Of Sorrow DLC With New Showcase",
+      "link": "https://www.polygon.com/hollow-knight-silksong-sea-of-sorrow-team-cherry-time/",
+      "date": "2026-11-25T17:04:06.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/09/hollow-knight-silksong-enter-putrified-ducts-0.jpg",
+      "summary": "Team Cherry will reveal new details on Hollow Knight Silksong's DLC, Sea of Sorrow, during a special showcase called Cherry Time on Friday, Nov. 27.",
+      "tags": []
+    },
+    {
+      "title": "AI kills another coding competition: 'I was not at all interested in giving awards to the output of large language models'",
+      "link": "https://www.pcgamer.com/software/ai/ai-kills-another-coding-competition-i-was-not-at-all-interested-in-giving-awards-to-the-output-of-large-language-models/",
+      "date": "2026-11-25T17:03:08.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/BvZt97gX78J4Yyb7GMzhA3-1920-80.jpg",
+      "summary": "After eight years of operation, the Atari Homebrew Awards are no more.",
+      "tags": []
+    },
+    {
+      "title": "Test Company of Heroes 3 : Operation Torch, sable et poudre à canon !",
+      "link": "https://fr.ign.com/company-of-heroes-3-operation-torch/94262/test-company-of-heroes-3-operation-torch-sable-et-poudre-a-canon",
+      "date": "2026-11-25T17:00:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/key-art-1_ndb4.png",
+      "summary": "Sable et poudre à canon ! Bah voilà ! C’est ce que les joueurs attendent ! Une nouvelle campagne solo, à l’ancienne avec sa bonne dizaine d’heures de jeu et pour un prix…",
+      "tags": []
+    },
+    {
+      "title": "Company of Heroes 3 : Operation Torch - Les choix de fin de missions seront cruciaux pour la suite",
+      "link": "https://fr.ign.com/company-of-heroes-3-operation-torch/94264/company-of-heroes-3-operation-torch-les-choix-de-fin-de-missions-seront-cruciaux-pour-la-suite",
+      "date": "2026-11-25T17:00:52.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/004_9g6q.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Motorola Signature 27 : le smartphone enfin en précommande en Europe, et en France",
+      "link": "https://fr.ign.com/motorola-signature-27/94256/motorola-signature-27-le-smartphone-enfin-en-precommande-en-europe-et-en-france",
+      "date": "2026-11-25T17:00:34.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/motorola-signature-27-lifestyle-1_d2ju.jpg",
+      "summary": "Un prix très ambitieux aussi.",
+      "tags": []
+    },
+    {
+      "title": "For The Love Of God, Stop Buying Canned Cranberry Sauce",
+      "link": "https://kotaku.com/for-the-love-of-god-stop-buying-canned-cranberry-sauce-2001000340",
+      "date": "2026-11-25T17:00:26.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/crannberry1-1280x720.jpg",
+      "summary": "Last year, we all learned the word 'spatchcock.' This year, I want to eradicate the can-berry menace",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Marvel dévoile un premier aperçu du personnage du Beast de Kelsey Grammer dans Avengers : Doomsday, et les fans sont partagés",
+      "link": "https://fr.ign.com/avengers-doomsday/94266/marvel-devoile-un-premier-apercu-du-personnage-du-beast-de-kelsey-grammer-dans-avengers-doomsday-et",
+      "date": "2026-11-25T16:59:08.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/m/marvel-sho/marvel-shows-off-first-look-at-kelsey-grammers-beast-in-aven_18cs.jpg",
+      "summary": "Oeuf brouillés et salade.",
+      "tags": []
+    },
+    {
+      "title": "Treat your cheeks to a Razer gaming chair from $215 this Black Friday. Or don't, I'm not your boss",
+      "link": "https://www.pcgamer.com/hardware/gaming-chairs/treat-your-cheeks-to-a-razer-gaming-chair-from-usd215-this-black-friday-or-dont-im-not-your-boss/",
+      "date": "2026-11-25T16:41:21.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/LjR2URVNxssYBsBsYvvxsX-1920-80.jpg",
+      "summary": "Take a seat.",
+      "tags": []
+    },
+    {
+      "title": "GUIDE GTA 6 Chapitre 1 : attention, à partir de cette mission tout va changer, quel est le point de non-retour ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-guide-chapitre-1-mission-non-retour-727504?utm_source=RSS",
+      "date": "2026-11-25T16:40:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/720531_6a747c878ace8.jpg",
+      "summary": "GTA 6 a quelques missions qui changent absolument tout et peuvent bouleverser votre progression. Faites très attention à ces missions du chapitre 1.",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 4 et tous les futurs jeux de CD Projekt resteront multiplateformes, et ce malgré le deal marketing avec PlayStation",
+      "link": "https://fr.ign.com/codename-orion/94260/the-witcher-4-et-tous-les-futurs-jeux-de-cd-projekt-resteront-multiplateformes-et-ce-malgre-le-deal",
+      "date": "2026-11-25T16:35:50.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/the-witche/the-witcher-4-and-all-cd-projekts-upcoming-games-remain-mult_w169.jpg",
+      "summary": "Ils sont Cirieux.",
+      "tags": []
+    },
+    {
+      "title": "PS Plus : les 3 jeux gratuits de décembre 2026 dévoilés, avec des licences très cultes",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps-plus-jeux-gratuits-decembre-2026-727479?utm_source=RSS",
+      "date": "2026-11-25T16:31:52.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/591795_66aa0ed7a0e92.jpg",
+      "summary": "PlayStation a dévoilé les trois jeux gratuits offerts à tous les abonnés PS Plus en décembre 2026. Voici ce qui sera offert dès le mois prochain avec votre abonnement.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 Ditched Mission Replay Because It ‘Felt At Odds With The Story’",
+      "link": "https://kotaku.com/gta-6-ditched-mission-replay-because-it-felt-at-odds-with-the-story-2001000335",
+      "date": "2026-11-25T16:30:19.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/gta-6-1-1280x720.jpg",
+      "summary": "The GTA 5 feature is missing this time around",
+      "tags": []
+    },
+    {
+      "title": "EA Sports FC : l'IA générative a été utilisée pour recréer la voix d'un commentateur décédé",
+      "link": "https://www.gamekult.com/actualite/ea-sports-fc-l-ia-generative-a-ete-utilisee-pour-recreer-la-voix-d-un-commentateur-decede-3050873186.html",
+      "date": "2026-11-25T16:30:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873186/ea-sports-fc-l-ia-generative-a-ete-utilisee-pour-recreer-une-voix-legendaire-du-football-anglais-1987011f__800_800__493-0-1933-1439.jpg",
+      "summary": "Qu'on le compare à Thierry Roland (pour la longévité) ou à Thierry Gilardi (pour sa présence chez EA Sports), John Motson était une légende du paysage télévisuel britannique, l'un…",
+      "tags": []
+    },
+    {
+      "title": "Someone counted all 5,588 buildings in GTA 6, and it turns out you can go inside 28% of them",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/someone-counted-all-5-588-buildings-in-gta-6-and-it-turns-out-you-can-go-inside-28-percent-of-them/",
+      "date": "2026-11-25T16:24:15.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/X5bwnU4v3okUuzcqFbJz63-1920-80.jpg",
+      "summary": "Maybe even more will open up for Online, too.",
+      "tags": []
+    },
+    {
+      "title": "Two pink Razer webcams are at their best price this Black Friday - one 4K and one 1440p",
+      "link": "https://www.pcgamer.com/hardware/webcams/two-pink-razer-webcams-are-at-their-best-price-this-black-friday-one-4k-and-one-1440p/",
+      "date": "2026-11-25T16:19:49.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/M4B7WSANaVmnXrgAfK9ep8-1920-80.jpg",
+      "summary": "And I reviewed both earlier this year.",
+      "tags": []
+    },
+    {
+      "title": "In a peculiar turn of events, there are actually budget and mid-range gaming PCs worth the money this Black Friday - here are the top three I've found",
+      "link": "https://www.pcgamer.com/hardware/gaming-pcs/in-a-peculiar-turn-of-events-there-are-actually-budget-and-mid-range-gaming-pcs-worth-the-money-this-black-friday-here-are-the-top-three-ive-found/",
+      "date": "2026-11-25T16:19:18.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/poBsnD3b7tHkyisFdLHtBD-1920-80.jpg",
+      "summary": "Starting at just $749. I didn't expect this, given 2026 prices so far.",
+      "tags": []
+    },
+    {
+      "title": "Les joueurs s'insultent tellement en vocal sur Discord qu'Activision veut utiliser leurs conversations pour améliorer le réalisme de ses PNJ",
+      "link": "https://www.jeuxvideo.com/news/2116731/les-joueurs-s-insultent-tellement-en-vocal-sur-discord-qu-activision-veut-utiliser-leurs-conversations-pour-ameliorer-le-realisme-de-ses-pnj.htm",
+      "date": "2026-11-25T16:15:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179553/1795531923-9717-card.jpg",
+      "summary": "Pour rendre ses PNJ plus crédibles, l'éditeur américain envisage de nourrir une intelligence artificielle avec les véritables échanges vocaux des utilisateurs, y compris sur des…",
+      "tags": []
+    },
+    {
+      "title": "We're giving away a Warhammer 40,000: Dawn of War 4 Custom Faction PC for the glory of the Machine God",
+      "link": "https://www.pcgamer.com/games/strategy/dawn-of-war-4-giveaway/",
+      "date": "2026-11-25T16:14:39.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Myq2zLcxUeV8AgSmm8jNQi-1920-80.jpg",
+      "summary": "Win an exclusive Dawn of War 4-themed PC.",
+      "tags": []
+    },
+    {
+      "title": "How to steal the Pegassi Infernus in GTA 6",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/",
+      "date": "2026-11-25T16:10:20.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/cSMhCzgd23bambkhDRa2C3-1920-80.jpg",
+      "summary": "Pilfer the '96 Infernus from the police lockup for Randy.",
+      "tags": []
+    },
+    {
+      "title": "Gratin courge-mand Disney Dreamlight Valley : comment préparer cette recette 5 étoiles ?",
+      "link": "https://www.jeuxvideo.com/news/2116820/gratin-courge-mand-disney-dreamlight-valley-comment-preparer-cette-recette-5-etoiles.htm",
+      "date": "2026-11-25T16:00:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795604138-4830-card.jpg",
+      "summary": "Le gratin courge-mand est une recette essentielle pour progresser dans l'aventure de la Mer des Souvenirs et débloquer le Capitaine Crochet ! Si vous ne savez pas comment vous y…",
+      "tags": []
+    },
+    {
+      "title": "Pikachu And Mario Might Not Fly As Gale Force Winds Threaten The 100th Macy’s Thanksgiving Day Parade",
+      "link": "https://kotaku.com/pikachu-and-mario-might-not-fly-as-gale-force-winds-threaten-the-100th-macys-thanksgiving-day-parade-2001000348",
+      "date": "2026-11-25T16:00:08.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/Macys-mario-1280x720.jpg",
+      "summary": "Parade officials are discussing a few options to avoid a nasty storm, including an earlier-than-normal start",
+      "tags": []
+    },
+    {
+      "title": "Colossal Order's CEO on data, gut feeling and why \"a game for everyone is a game for no one\"",
+      "link": "https://www.pocketgamer.biz/colossal-order-mariina-hallikainen-data-gut-feeling-game-for-everyone/",
+      "date": "2026-11-25T15:54:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142356/90356/mariinacolossalorder_l660.jpg",
+      "summary": "When a colleague asked Colossal Order CEO Mariina Hallikainen how the studio chose games that kept finding their audience, her first answer was gut feeling. On reflection, she…",
+      "tags": []
+    },
+    {
+      "title": "Softgames CEO: \"Relying on one platform or one model is risky\"",
+      "link": "https://www.pocketgamer.biz/softgames-ceo-relying-on-one-platform-or-one-model-is-risky/",
+      "date": "2026-11-25T15:52:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142363/90361/alexander-krug-softgames_l660.jpg",
+      "summary": "Softgames is celebrating 20 years in the games industry, having moved between platforms and business models as the market has evolved over the years. Softgames operates more than…",
+      "tags": []
+    },
+    {
+      "title": "BBC Studios’ Marina Mello confirmed for PGC London",
+      "link": "https://www.pocketgamer.biz/bbc-studios-marina-mello-joins-pgc-london-speaker-lineup/",
+      "date": "2026-11-25T15:51:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142314/90306/marina-mello-speaker-announcement_l660.jpg",
+      "summary": "BBC Studios' global director of gaming and interactive Marina Mello will speak at Pocket Gamer Connects London in January. Since joining BBC Studios in 2024, Mello has led Bluey's…",
+      "tags": []
+    },
+    {
+      "title": "November's Collabs Corner: Doomsday comes to Monopoly Go, the Angry Birds fly into Sonic Rumble, Duolingo steps into Pokémon Go, and more",
+      "link": "https://www.pocketgamer.biz/november-2026-collabs-corner/",
+      "date": "2026-11-25T15:50:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142365/90222/november-collabs-corner-2_l660.jpg",
+      "summary": "Among the updates, announcements and marketing drives for mobile games, this bustling industry sees a never-ending flow of crossovers and collaborations. Some partnerships see…",
+      "tags": []
+    },
+    {
+      "title": "\"You'd be nuts to take on all of that in the first project, and yet here we are\" – How Playground is finally making good on an all-new Fable",
+      "link": "https://www.gamesindustry.biz/youd-be-nuts-to-take-on-all-of-that-in-the-first-project-and-yet-here-we-are-how-playground-is-finally-making-good-on-an-all-new-fable",
+      "date": "2026-11-25T15:48:30.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/massive_FABLE_Gamescom2026_Official_Quest_Gameplay_Screenshot_Bowerstone_4_K_No_Logo_977a45ca54.webp?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Fable is finally set to be released on February 23, 2027, after being pushed back from its autumn 2026 launch date earlier this year , and having previously slipped from a 2025…",
       "tags": [
         "release"
       ]
     },
     {
-      "title": "« Attendez-vous à un bond encore plus grand » Après 11 ans, The Witcher 4 veut être ce que GTA 6 a été pour GTA 5",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-witcher-4-ecart-wild-hunt-gta-6-gta-5-727438?utm_source=RSS",
-      "date": "2026-11-25T08:15:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/696065_683efdc88b4f2.jpg",
-      "summary": "11 ans après son prestigieux grand-frère, The Witcher 4 compte proposer un bond aussi majeur que ce que GTA 6 a été pour GTA 5, voilà qui peut laisser les fans rêveurs.",
+      "title": "Hollow Knight: Silksong Studio Breaks Silence On Sea Of Sorrow DLC With A Showcase Announcement",
+      "link": "https://kotaku.com/team-cherry-will-break-its-long-silence-on-silksong-dlc-with-a-livestream-update-later-this-week-2001000355",
+      "date": "2026-11-25T15:32:51.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2025/08/Hornet_banner_wide-1-1.jpg",
+      "summary": "The wait might finally be over",
       "tags": []
     },
     {
-      "title": "Toujours pas de GTA 6 sur PC annoncé, mais Take Two tue déjà la version des fans en 3 jours",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-pc-recompilation-stop-727441?utm_source=RSS",
-      "date": "2026-11-25T08:11:16.000Z",
+      "title": "GTA 6 launch results in 4x downloads boost for series' mobile games",
+      "link": "https://www.pocketgamer.biz/gta-6-launch-results-in-4x-downloads-boost-for-series-mobile-games/",
+      "date": "2026-11-25T15:30:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142378/90363/vice-c-ity_l660.jpg",
+      "summary": "The launch of Grand Theft Auto 6 on console sparked a 4x boost to downloads of GTA mobile games, according to AppMagic estimates sent to PocketGamer.biz. In the launch week of…",
+      "tags": []
+    },
+    {
+      "title": "I'm going to struggle to beat this RTX 5060 gaming laptop for $1,150 this Black Friday, I can already tell",
+      "link": "https://www.pcgamer.com/hardware/gaming-laptops/im-going-to-struggle-to-beat-this-rtx-5060-gaming-laptop-for-usd1-150-this-black-friday-i-can-already-tell/",
+      "date": "2026-11-25T15:28:19.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Fq59W7uF87nuVuFTC59sRY-1920-80.jpg",
+      "summary": "This one will likely give me grief, but it's a great buy for you.",
+      "tags": []
+    },
+    {
+      "title": "Magic The Gathering x Star Trek : 60 ans de science-fiction réunis dans une nouvelle extension",
+      "link": "https://fr.ign.com/magic-the-gathering-trading-card-game/94259/magic-the-gathering-x-star-trek-60-ans-de-science-fiction-reunis-dans-une-nouvelle-extension",
+      "date": "2026-11-25T15:24:11.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/mtg-star-trek-header_ebnf.jpg",
+      "summary": "Magic The Gathering accueille 60 ans d’histoire de Star Trek dans une nouvelle extension réunissant personnages emblématiques, vaisseaux légendaires et mécaniques inédites, entre…",
+      "tags": []
+    },
+    {
+      "title": "Noble Audio Astrid : une restitution musicale ample, puissante et vivante",
+      "link": "https://fr.ign.com/tech/94258/noble-audio-astrid-une-restitution-musicale-ample-puissante-et-vivante",
+      "date": "2026-11-25T15:10:47.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/img-0949_1t4c.jpg",
+      "summary": "Une signature sonore particulièrement convaincante, misant avant tout sur une restitution musicale ample, précise et polyvalente. Avec les Astrid, Noble Audio propose des…",
+      "tags": []
+    },
+    {
+      "title": "Pegassi Vitello GTA 6 : Où trouver cette voiture pour Randy ?",
+      "link": "https://www.jeuxvideo.com/news/2116884/pegassi-vitello-gta-6-ou-trouver-cette-voiture-pour-randy.htm",
+      "date": "2026-11-25T15:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179562/1795617975-3496-card.jpg",
+      "summary": "Une des meilleures voitures de Grand Theft Auto VI, même dans la catégorie Hyper luxe, la Pegassi Vitello est aussi rare. Que ce soit pour remplir votre garage ou valider la liste…",
+      "tags": []
+    },
+    {
+      "title": "You Should Go Back To Your Old House After GTA 6’s Second Chapter",
+      "link": "https://kotaku.com/grand-theft-auto-6-dolores-snake-alive-where-to-find-2001000332",
+      "date": "2026-11-25T15:00:37.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/jasonhouse-1280x720.jpg",
+      "summary": "There’s something waiting for you to discover after you’ve been gone a while",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 sur PC : 3007 versions pirates déjà identifiées par Rockstar, des vidéos tournent",
+      "link": "https://www.jeuxvideo.com/news/2116831/gta-6-sur-pc-3007-versions-pirates-deja-identifiees-par-rockstar-des-videos-tournent.htm",
+      "date": "2026-11-25T15:00:10.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795604749-2973-card.jpg",
+      "summary": "C'est un coup de tonnerre qui vient de frapper les décompileurs du jeu GTA 6. Rockstar a répliqué très largement en mettant fin à plus de 3000 projets en lien avec le portage…",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : Samuel Étienne a fait son premier Sam in Live avec le nouveau Jeuxvideo.com, retour sur toutes les annonces",
+      "link": "https://www.jeuxvideo.com/news/2116876/gta-6-samuel-etienne-a-fait-son-premier-sam-in-live-avec-le-nouveau-jeuxvideo-com-retour-sur-toutes-les-annonces.htm",
+      "date": "2026-11-25T14:58:02.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179561/1795613945-5545-card.jpg",
+      "summary": "Pour accompagner son grand retour aux sources, jeuxvideo.com a frappé fort le jeudi 19 novembre dernier avec le lancement de sa nouvelle émission mensuelle, Sam in Live. Animé par…",
+      "tags": []
+    },
+    {
+      "title": "Game and watch - Red Dead Redemption au cinéma : Rockstar réclamerait 100 millions de dollars rien que pour les droits",
+      "link": "https://www.gamekult.com/actualite/red-dead-redemption-au-cinema-rockstar-reclamerait-100-millions-de-dollars-rien-que-pour-les-droits-3050873187.html",
+      "date": "2026-11-25T14:56:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873187/red-dead-redemption-au-cinema-rockstar-reclamerait-100-millions-de-dollars-rien-que-pour-les-droits-151bfe7f__800_800__314-0-1222-900.jpg",
+      "summary": "Pendant que Grand Theft Auto VI explose les compteurs depuis sa sortie le 19 novembre dernier, Hollywood fait les yeux doux à Rockstar Games dans l'espoir de décrocher le gros…",
+      "tags": []
+    },
+    {
+      "title": "Gaming sector to benefit from funding package of over £45m as part of Creative Industries Sector Plan",
+      "link": "https://www.gamesindustry.biz/gaming-sector-to-benefit-from-funding-package-of-over-45m-as-part-of-creative-industries-sector-plan",
+      "date": "2026-11-25T14:55:50.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/nathaniel-cherian-2Z9isw4Pamk-unsplash.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Eight games studios will share over &pound;45 million in a government funding package with other creative sectors as part of a wider &pound;500 million investment by UK Research…",
+      "tags": []
+    },
+    {
+      "title": "The best gaming speakers I've used all year are cheaper than they've ever been in the Black Friday sales",
+      "link": "https://www.pcgamer.com/hardware/speakers/the-best-gaming-speakers-ive-used-all-year-are-cheaper-than-theyve-ever-been-in-the-black-friday-sales/",
+      "date": "2026-11-25T14:48:14.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/3wn6Wkv8H6TG92j5KFUMeJ-1920-80.jpg",
+      "summary": "The Black variant is $20 more though.",
+      "tags": []
+    },
+    {
+      "title": "The Normal Person’s Guide To Understanding Grand Theft Auto 6",
+      "link": "https://kotaku.com/the-non-gamers-guide-to-grand-theft-auto-6-all-your-questions-even-silly-ones-answered-2001000011",
+      "date": "2026-11-25T14:47:02.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/08/GTa-6-artwork-jason-lucia-1-1280x720.jpg",
+      "summary": "What even is this big game that everyone around you is suddenly talking and post about?",
+      "tags": []
+    },
+    {
+      "title": "GUIDE GTA 6 : où et comment trouver l'Assassin pistol légendaire, l'arme unique cachée au début du jeu ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-assassin-pistol-nipper-38-emplacement-727493?utm_source=RSS",
+      "date": "2026-11-25T14:30:39.000Z",
       "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a96bde17d855.jpg",
-      "summary": "À défaut d'avoir une version officielle de GTA 6 sur PC, des moddeurs tentent de créer la leur. Sauf que Take-Two Interactive est déjà intervenu pour mettre un coup d'arrêt au…",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6b06ef108dc25.jpg",
+      "summary": "Complétez votre arsenal avec le silencieux Assassin pistol de GTA 6, une arme unique légendaire à trouver dès le début du jeu dans le comté de Key Lento.",
+      "tags": []
+    },
+    {
+      "title": "Noir comic adventure Frames of Mind wins the Big Indie Pitch's Paris debut",
+      "link": "https://www.pocketgamer.biz/noir-comic-adventure-frames-of-mind-wins-the-big-indie-pitchs-paris-debut/",
+      "date": "2026-11-25T14:28:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142370/90260/bip-winner-paris-lead_l660.jpg",
+      "summary": "Ponpon Studio story-driven noir game Frames of Mind has taken first place at the Big Indie Pitch in Paris Games Week. The event, sponsored by Gameloft Paris and season sponsor…",
+      "tags": []
+    },
+    {
+      "title": "How to steal an ATM and get a winched vehicle in GTA 6",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-atm-winched-vehicle/",
+      "date": "2026-11-25T14:27:50.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/2bsbrPohC2jrFUKms54Zqi-1920-80.jpg",
+      "summary": "Yank out ATMs and grab the cash with Yasmani's tips.",
+      "tags": []
+    },
+    {
+      "title": "Even Max Verstappen has succumbed to GTA 6 fever, squeezing in 40 hours around his Las Vegas Grand Prix win",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/even-max-verstappen-has-succumbed-to-gta-6-fever-squeezing-in-40-hours-around-his-las-vegas-grand-prix-win/",
+      "date": "2026-11-25T14:15:51.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/CQTzhRbNRKLtjyYiPMkaDh-1920-80.jpg",
+      "summary": "What's your excuse?",
+      "tags": []
+    },
+    {
+      "title": "Méditation GTA 6 : où trouver tous les lieux requis pour le trophée Faut rester positifs ?",
+      "link": "https://www.jeuxvideo.com/news/2116869/meditation-gta-6-ou-trouver-tous-les-lieux-requis-pour-le-trophee-faut-rester-positifs.htm",
+      "date": "2026-11-25T14:10:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179561/1795611220-2332-card.jpg",
+      "summary": "Prendre une grande inspiration au sommet du Mont Kalaga n'est pas qu'une simple pause détente entre deux braquages. Découvrez comment fonctionne la méditation dans GTA 6, où…",
+      "tags": []
+    },
+    {
+      "title": "Créateur de la PlayStation, Ken Kutaragi assure n'avoir jamais été motivé par un sentiment de revanche contre Nintendo",
+      "link": "https://www.gamekult.com/actualite/createur-de-la-playstation-ken-kutaragi-assure-n-avoir-jamais-ete-motive-par-un-sentiment-de-revanche-contre-nintendo-3050873178.html",
+      "date": "2026-11-25T13:45:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873178/createur-de-la-playstation-ken-kutaragi-assure-n-avoir-jamais-ete-motive-par-un-de-sentiment-de-revanche-contre-nintendo-d38db94d__800_800__568-0-1732-1164.jpg",
+      "summary": "Le journaliste Christopher Dring a eu l'honneur de s'entretenir avec Ken Kutaragi, figure majeure de l'industrie du jeu vidéo, dans le cadre de la Game Republic New Horizons qui…",
+      "tags": []
+    },
+    {
+      "title": "Nothing Ear (note) : Bloomberg confirme la présentation officielle le 8 décembre 2026",
+      "link": "https://fr.ign.com/nothing-ear-note/94255/nothing-ear-note-bloomberg-confirme-la-presentation-officielle-le-8-decembre-2026",
+      "date": "2026-11-25T13:23:32.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/axxhbvbb_fzzs.jpg",
+      "summary": "Des écouteurs devenus enregistreur IA.",
+      "tags": []
+    },
+    {
+      "title": "An audiophile-grade gaming headset for $209? I don't care how silly I'd look, I want one of these this Black Friday",
+      "link": "https://www.pcgamer.com/hardware/gaming-headsets/an-audiophile-grade-gaming-headset-for-usd209-i-dont-care-how-silly-id-look-i-want-one-of-these-this-black-friday/",
+      "date": "2026-11-25T13:20:23.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/Kaaz3SfZC5gjuzUVMY8xP9-1920-80.jpg",
+      "summary": "Audiophile and well-priced rarely go together, but here? Lovely.",
+      "tags": []
+    },
+    {
+      "title": "For $1,500 this Black Friday, I'd be picking up this 16-core, full-fat RTX 5070 gaming laptop",
+      "link": "https://www.pcgamer.com/hardware/gaming-laptops/for-usd1-500-this-black-friday-id-be-picking-up-this-16-core-full-fat-rtx-5070-gaming-laptop/",
+      "date": "2026-11-25T13:17:38.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/xtA5D8podezN954qQPpJzb-1920-80.jpg",
+      "summary": "Great for both gaming and productivity.",
+      "tags": []
+    },
+    {
+      "title": "Analyst: Don't expect hardware price cuts until at least 2028",
+      "link": "https://www.gamesindustry.biz/analyst-dont-expect-hardware-price-cuts-until-at-least-2028",
+      "date": "2026-11-25T13:09:40.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/ps5-kerde-severin-unsplash.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Manufacturers are unlikely to drop console prices until at least 2028, according to a new analysis by S&P Global Market Intelligence Kagan, which judged that planned expansions in…",
+      "tags": []
+    },
+    {
+      "title": "Data digest: Monopoly Go hits $8bn, Block Blast and Vita Mahjong lead ad charts, Korea stats, more",
+      "link": "https://mobilegamer.biz/data-digest-monopoly-go-hits-8bn-block-blast-and-vita-mahjong-lead-ad-charts-korea-stats-more/",
+      "date": "2026-11-25T13:06:53.000Z",
+      "sourceId": "mgbiz",
+      "image": null,
+      "summary": "We've also got Colony Flow's $13.7m quarter, Tencent's $140m Golden Spatula pledge and Walking Zombie 2's 100m downloads in this week's round-up.",
+      "tags": []
+    },
+    {
+      "title": "« Voyez les personnages du monde comme des êtres humains » GTA 6 salué par un vétéran de Baldur's Gate 3 pour ce qui déplaît à de nombreux joueurs",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-avis-baldurs-gate-3-simulation-vie-727477?utm_source=RSS",
+      "date": "2026-11-25T13:04:24.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6a34e675edc32.webp",
+      "summary": "Si certains critiquent des passages jugés trop « réalistes » de GTA 6, un vétéran de Baldur's Gate 3 salue au contraire cette partie du dernier titre de Rockstar.",
+      "tags": []
+    },
+    {
+      "title": "DLC The Keepsake Sea Disney Dreamlight Valley : Comment débloquer Mégara ?",
+      "link": "https://www.jeuxvideo.com/news/2116807/dlc-the-keepsake-sea-disney-dreamlight-valley-comment-debloquer-megara.htm",
+      "date": "2026-11-25T12:47:29.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795599256-6529-card.jpg",
+      "summary": "Tout droit sortie de l'univers d'Hercule, Mégara fait son apparition dans le nouveau DLC de Disney Dreamlight Valley. Pour l'obtenir, vous devez avancer dans les quêtes d'histoire…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "Unreal Engine 6 won't include Blueprints or Actor Gameplay Framework",
+      "link": "https://www.gamesindustry.biz/unreal-engine-6-wont-include-blueprints-or-actor-gameplay-framework",
+      "date": "2026-11-25T12:43:40.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/Screenshot-2026-05-27-at-20.20.30.png?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Unreal Engine 6 will discontinue support for Blueprints and the Actor Gameplay Framework, instead utilising Verse and Epic's new Scene Graph framework.",
+      "tags": []
+    },
+    {
+      "title": "One of the best controllers we've ever used is at its lowest price for Black Friday - for $79 off I'd pick up the Razer Wolverine V3 Pro over its V4 successor",
+      "link": "https://www.pcgamer.com/hardware/controllers/one-of-the-best-controllers-weve-ever-used-is-at-its-lowest-price-for-black-friday-for-usd79-off-id-pick-up-the-razer-wolverine-v3-pro-over-its-v4-successor/",
+      "date": "2026-11-25T12:40:44.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/d5z9Z3Nc8XwFA3ngEkt7mb-1920-80.jpg",
+      "summary": "You're getting TMR sticks, super-high polling, fast trigger, and remappable buttons. The works.",
+      "tags": []
+    },
+    {
+      "title": "Secretlab Black Friday 2026 : jusqu'à 139 € de remise",
+      "link": "https://www.gameblog.fr/bons-plans/secretlab-black-friday-2026-727464?utm_source=RSS",
+      "date": "2026-11-25T12:32:41.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/good_deal/727464_6b06d4dd62633.jpg",
+      "summary": "Le Black Friday Secretlab 2026 a déjà commencé et se terminera le vendredi 27 novembre.",
+      "tags": []
+    },
+    {
+      "title": "Nioh 3 : Insurrection Sanglante sera (pour l'instant) le grand final de la saga",
+      "link": "https://www.gamekult.com/actualite/nioh-3-insurrection-sanglante-sera-pour-l-instant-le-grand-final-de-la-saga-3050873180.html",
+      "date": "2026-11-25T12:32:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873180/nioh-3-insurrection-sanglante-est-pour-l-instant-le-grand-final-de-la-saga-272637b7__800_800__1260-0-3422-2160.jpg",
+      "summary": "Éventée par l'apparition de Nioh 3 : Complete Edition chez les organismes de classification coréen et japonais, l'extension Insurrection Sanglante conclut l'histoire de la saga…",
+      "tags": []
+    },
+    {
+      "title": "Treuil GTA 6 : Comment en obtenir un et l'utiliser pour voler un ATM ?",
+      "link": "https://www.jeuxvideo.com/news/2116840/treuil-gta-6-comment-en-obtenir-un-et-l-utiliser-pour-voler-un-atm.htm",
+      "date": "2026-11-25T12:31:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795604866-3342-card.jpg",
+      "summary": "Arracher un distributeur de billets en pleine rue demande un peu plus que de la force brute : il vous faut le bon câble en acier. Découvrez les différents moyens d'obtenir un…",
+      "tags": []
+    },
+    {
+      "title": "Wait, What? GTA 6 Runs Better On Xbox Series X Than PS5",
+      "link": "https://kotaku.com/grand-theft-auto-vi-gta-6-framerates-xbox-series-x-ps5-rockstar-2001000296",
+      "date": "2026-11-25T12:30:40.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/gta-techspecs-1280x720.jpg",
+      "summary": "The techperts at Digital Foundry have all the nerdy details",
+      "tags": []
+    },
+    {
+      "title": "I'd recommend an OLED to any gamer and this 1440p, 240 Hz gaming monitor is only $269 this Black Friday",
+      "link": "https://www.pcgamer.com/hardware/gaming-monitors/id-recommend-an-oled-to-any-gamer-and-this-1440p-240-hz-gaming-monitor-is-only-usd269-this-black-friday/",
+      "date": "2026-11-25T12:21:31.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/9X5yGpBxoQN447UsWhWMTU-1920-80.jpg",
+      "summary": "An OLED makes every game look better.",
+      "tags": []
+    },
+    {
+      "title": "As The U.S. Treasury Is Targeted By A Cybersecurity Attack, CIO Sam Corcos Is Busy Vibecoding A Civilization Ripoff",
+      "link": "https://kotaku.com/us-treasury-cybersecurity-breach-vibecoding-civilization-ripoff-2001000286",
+      "date": "2026-11-25T12:00:40.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/Civilization-IV-official-box-art.jpg",
+      "summary": "Worry not, 'the computers are doing it on their own' says the Treasury official",
+      "tags": []
+    },
+    {
+      "title": "Elden Ring face à Baldur's Gate 3 et GTA 5 : Steam veut élire le meilleur jeu de la décennie",
+      "link": "https://www.jeuxvideo.com/news/2116755/elden-ring-face-a-baldur-s-gate-3-et-gta-5-steam-veut-elire-le-meilleur-jeu-de-la-decennie.htm",
+      "date": "2026-11-25T11:50:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179554/1795536966-6063-card.jpg",
+      "summary": "Pour fêter les dix ans des Steam Awards en novembre 2026, Valve lance une catégorie spéciale baptisée Hall of Fame. L'objectif est simple : laisser la communauté PC élire le…",
+      "tags": []
+    },
+    {
+      "title": "An RTX 5060 gaming PC for $750 – Black Friday finally delivers the goods",
+      "link": "https://www.pcgamer.com/hardware/gaming-pcs/an-rtx-5060-gaming-pc-for-usd750-black-friday-finally-delivers-the-goods/",
+      "date": "2026-11-25T11:46:29.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/GCkdTpKcMfWMSBgnuN4UVb-1920-80.jpg",
+      "summary": "That's less than the price of an RTX 5060 Ti 16 GB.",
+      "tags": []
+    },
+    {
+      "title": "Symphony of War II : Dominion, la suite de l'excellent tactical indé, sonnera le cor de guerre dès l'année prochaine",
+      "link": "https://www.gamekult.com/actualite/symphony-of-war-ii-dominion-la-suite-de-l-excellent-tactical-inde-sonnera-le-cor-de-guerre-des-l-annee-prochaine-3050873170.html",
+      "date": "2026-11-25T11:36:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873170/symphony-of-war-ii-dominion-la-suite-de-l-excellent-tactical-inde-sonnera-le-cor-de-guerre-des-l-annee-prochaine-6ceba0aa__800_800__484-0-1160-675.jpg",
+      "summary": "Hooded Horse se chargera de l'édition de Symphony of War II : Dominion, nouveau jeu du studio Dancing Dragon Games et suite de Symphony of War : The Nephilim Saga, sorti en 2022…",
+      "tags": []
+    },
+    {
+      "title": "Yes2Games surpasses 25 million plays across its YouTube Playables portfolio",
+      "link": "https://www.pocketgamer.biz/yes2games-surpasses-25-million-plays-across-its-youtube-playables-portfolio/",
+      "date": "2026-11-25T11:36:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142364/90362/y2g_l660.jpg",
+      "summary": "Yes2Games has surpassed 25.1 million plays and 2.2 million hours of playtime across its portfolio of games distributed through YouTube Playables. Its portfolio includes several…",
+      "tags": []
+    },
+    {
+      "title": "Cyberpunk 2 Development Ramps Up At CD Projekt Red, But Ambitions For The Project Are &#8216;Not Changed&#8217; By GTA 6&#8242;s Success",
+      "link": "https://kotaku.com/cyberpunk-2-cd-projekt-red-the-witcher-4-sirius-gta6-rockstar-2001000233",
+      "date": "2026-11-25T11:30:21.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/The-Witcher-4-Ciri-1280x815.jpg",
+      "summary": "CDPR proclaims GTA 6 an 'inspiration' as it credits the various TV adaptations of The Witcher and Cyberpunk for helping keep those properties popular",
+      "tags": []
+    },
+    {
+      "title": "GUIDE GTA 6 : où et comment trouver le fusil d'assaut légendaire FRA des Guardia Brothers ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-fusil-assaut-legendaire-fra-guardia-brothers-727465?utm_source=RSS",
+      "date": "2026-11-25T11:30:00.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6b06c516bd9a6.jpg",
+      "summary": "Renforcez votre arsenal dans GTA 6 avec le fusil d'assaut légendaire FRA des Guardia Brothers, une arme unique qu'on vous aide à trouver dans ce guide.",
+      "tags": []
+    },
+    {
+      "title": "As a dual monitor evangelist, this is the budget 1080p gaming panel I'd be picking this Black Friday",
+      "link": "https://www.pcgamer.com/hardware/gaming-monitors/as-a-dual-monitor-evangelist-this-is-the-budget-1080p-gaming-panel-id-be-picking-this-black-friday/",
+      "date": "2026-11-25T11:27:12.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/BKE4cHwDJKQafwHUn8SJv-1920-80.jpg",
+      "summary": "I have a budget 1080p panel myself.",
+      "tags": []
+    },
+    {
+      "title": "SI vous aussi vous en êtes toujours au chapitre 1 de GTA 6 juste parce que vous kiffez son rythme plus chill et son côté RP, vous n'êtes pas seuls",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94245/si-vous-aussi-vous-en-etes-toujours-au-chapitre-1-de-gta-6-juste-parce-que-vous-kiffez-son-rythme-pl",
+      "date": "2026-11-25T11:26:24.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/s/some-gta-6/some-gta-6-fans-love-chapter-1-for-its-slower-pace-and-are-s_1313.jpg",
+      "summary": "\"Même pas totalement ouvert, le jeu donne une impression de richesse et de plaisir incroyable\".",
+      "tags": []
+    },
+    {
+      "title": "Netflix dévoile sa série événement sur l'un des plus célèbres meurtres, toujours non résolu 30 ans après",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/netflix-le-meurtre-de-jonbenet-ramsey-727463?utm_source=RSS",
+      "date": "2026-11-25T11:23:37.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/597038_66bdaf5acbcdb.jpg",
+      "summary": "Netflix vient de dévoiler la première bande-annonce de sa prochaine mini-série, prévue pour le mois prochain. Elle reviendra sur l’une des affaires non résolues qui a fasciné les…",
+      "tags": []
+    },
+    {
+      "title": "ASUS alerte sur un retour critique des PC à 8 Go de RAM",
+      "link": "https://fr.ign.com/asus/94249/asus-alerte-sur-un-retour-critique-des-pc-a-8-go-de-ram",
+      "date": "2026-11-25T11:21:28.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/asus-computex-booth_1qgv.jpg",
+      "summary": "Retour forcé aux 8 Go.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6's best lore drops happen when you're chilling with your partner, so stop leaving them at home all the time",
+      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-best-lore-drops-happen-when-youre-chilling-with-your-partner-so-stop-leaving-them-at-home-all-the-time/",
+      "date": "2026-11-25T11:14:42.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/MybRDJeCE4mrHokyi4PpA5-1920-80.png",
+      "summary": "Learning things about your partner by spending time with them? Say it ain't so.",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : il y a apparemment \"nettement plus\" de chutes de framerate sur PS5 que sur Xbox Series X, de quoi remettre en question l'argument marketing de Sony « Plays Best on PS5 »",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94254/gta-6-il-y-a-apparemment-nettement-plus-de-chutes-de-framerate-sur-ps5-que-sur-xbox-series-x-de-quoi",
+      "date": "2026-11-25T11:03:33.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-anal/gta-6-analysis-shows-ps5-version-suffers-substantially-more_7zp9.jpg",
+      "summary": "PlayStation aurait menti ? Plutôt team Croix ou X ?",
+      "tags": []
+    },
+    {
+      "title": "The Japanese Erotic Visual Novel That&#8217;s Filled With AI&#8217;s Prudish Refusals To Translate Explicit Sexual Content",
+      "link": "https://kotaku.com/the-japanese-erotic-visual-novel-thats-filled-with-ais-prudish-refusals-to-translate-explicit-sexual-content-2001000228",
+      "date": "2026-11-25T11:00:09.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/Muv-Luv-Girls-Gaiden-1280x731.jpg",
+      "summary": "Muv-Luv Girls Gaiden has put out a disastrous English-language version",
+      "tags": []
+    },
+    {
+      "title": "Pegasi Infernus GTA 6 : Comment obtenir cette voiture pour Randy ?",
+      "link": "https://www.jeuxvideo.com/news/2116811/pegasi-infernus-gta-6-comment-obtenir-cette-voiture-pour-randy.htm",
+      "date": "2026-11-25T10:58:09.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795599387-1567-card.jpg",
+      "summary": "L'une des meilleures voitures de Grand Theft Auto VI, même dans la catégorie Supercar, la Pegasi Infernus n'est pas courante. Que ce soit pour remplir votre garage ou valider la…",
+      "tags": []
+    },
+    {
+      "title": "Playgama developers earn over $1m in first nine months of 2026",
+      "link": "https://www.pocketgamer.biz/playgama-developers-earn-over-1m-in-first-nine-months-of-2026/",
+      "date": "2026-11-25T10:53:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142361/90360/playgama_l660.jpg",
+      "summary": "Web games destruction and monetisation platform Playgama has revealed that developers using its platform collectively earned more than $1 million between January and September…",
+      "tags": []
+    },
+    {
+      "title": "Lords of the Fallen 2, le RPG à la Dark Souls fait une annonce très attendue, et ce n'est que la première",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/lords-of-the-fallen-2-annonce-sortie-avril-2027-727458?utm_source=RSS",
+      "date": "2026-11-25T10:47:45.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/727458_6b06b119b8947.png",
+      "summary": "Trois ans après le précédent opus et un long support post-lancement, Lords of the Fallen 2 fait enfin une première annonce attendue, avec plus de précision à venir prochainement.",
+      "tags": []
+    },
+    {
+      "title": "8BitDo's lovely C64-themed gaming keyboard is a third off for Black Friday - my main driver for more than a year",
+      "link": "https://www.pcgamer.com/hardware/gaming-keyboards/8bitdos-lovely-c64-themed-gaming-keyboard-is-a-third-off-for-black-friday-my-main-driver-for-more-than-a-year/",
+      "date": "2026-11-25T10:23:15.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/d6soTRAM85P7taPxu8XgKJ-1920-80.jpg",
+      "summary": "And yes, I even used its included Super Buttons.",
+      "tags": []
+    },
+    {
+      "title": "Un club de strip-tease affirme avoir reçu « des centaines de demandes » de la part de fans de GTA 6, alors que le trafic sur Pornhub est en chute libre",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94236/un-club-de-strip-tease-affirme-avoir-recu-des-centaines-de-demandes-de-la-part-de-fans-de-gta-6-alor",
+      "date": "2026-11-25T10:23:04.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/r/real-life-/real-life-strip-club-says-its-had-hundreds-of-inquiries-from_acvs.jpg",
+      "summary": "Jouir des mêmes lap-dances que Jason et Lucia dans GTA 6, ça vous tente ?",
+      "tags": []
+    },
+    {
+      "title": "Exoprimal : Capcom programme l'extinction des dinosaures en 2027",
+      "link": "https://www.gamekult.com/actualite/exoprimal-capcom-programme-l-extinction-des-dinosaures-en-2027-3050873177.html",
+      "date": "2026-11-25T10:23:00.000Z",
+      "sourceId": "gamekult",
+      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873177/exoprimal-capcom-programme-l-extinction-des-dinosaures-en-2027-7721bb9b__800_800__660-0-1740-1080.jpg",
+      "summary": "Si les résultats de Capcom depuis 2017 sont tout simplement historiques, c'est que l'éditeur nippon sait aussi passer ses rares échecs sous silence. Après tout, qui se rappelle…",
+      "tags": []
+    },
+    {
+      "title": "HBO Max : toutes les nouveautés de décembre 2026, avec l'une des séries les plus attendues de l'année",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/hbo-max-decembre-2026-calendrier-nouveautes-harry-potter-727457?utm_source=RSS",
+      "date": "2026-11-25T10:20:16.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img//_6b06b24da4456.jpg",
+      "summary": "HBO dévoile son calendrier de décembre 2026. Le programme s'annonce chargé pour les fêtes, avec des films remarquables et des séries événements pour Noël.",
+      "tags": []
+    },
+    {
+      "title": "Bravado banshee GTA 6 : Comment obtenir cette voiture pour Randy ?",
+      "link": "https://www.jeuxvideo.com/news/2116824/bravado-banshee-gta-6-comment-obtenir-cette-voiture-pour-randy.htm",
+      "date": "2026-11-25T10:20:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795600595-9906-card.jpg",
+      "summary": "L'une des voitures les plus emblématiques de la licence est de retour dans Grand Theft Auto VI, la Bravado Banshee avec sa couleur bleue et sa ligne blanche caractéristique. Que…",
+      "tags": []
+    },
+    {
+      "title": "La Japan Expo 2027 ouvre sa billetterie et dévoile son invité d'honneur",
+      "link": "https://fr.ign.com/ign-misc/94253/la-japan-expo-2027-ouvre-sa-billetterie-et-devoile-son-invite-dhonneur",
+      "date": "2026-11-25T10:04:40.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/japan-expo-2027_fnga.jpg",
+      "summary": "Captain Tsubasa à l&#x27;honneur !",
+      "tags": []
+    },
+    {
+      "title": "« Maudit par tellement d'éléments différents » The Last of Us 2 a subi une énorme vague de haine à cause de leaks, l'actrice harcelée se confie",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/the-last-of-us-2-harcelement-bailey-727456?utm_source=RSS",
+      "date": "2026-11-25T10:02:37.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/689207_67ed029d18127.webp",
+      "summary": "Laura Bailey, l'interprète d'Abby dans The Last of Us 2, revient sur l'importante vague de harcèlement qu'elle a subie suite à la sortie du jeu et la diffusion de leaks.",
+      "tags": []
+    },
+    {
+      "title": "« La version PS5 semble substantiellement pire » GTA 6 : le grand comparatif des consoles est tombé, PS5 vs Xbox Series, qui s'en sort le mieux ?",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-comparatif-ps5-xbox-series-digital-foundry-727454?utm_source=RSS",
+      "date": "2026-11-25T09:54:45.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/726261_6aed8c99c7e97.jpg",
+      "summary": "Un peu moins d'une semaine après sa sortie, c'est l'heure du bilan : quelle version entre PS5 et Xbox Series de GTA 6 s'en sort le mieux ? Les experts de Digital Foundry ont…",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "La sortie de Cyberpunk 2 n'est pas pour tout de suite, mais CD Projekt Red promet que ses RPG sortiront plus vite à l’avenir",
+      "link": "https://fr.ign.com/codename-orion/94242/la-sortie-de-cyberpunk-2-nest-pas-pour-tout-de-suite-mais-cd-projekt-red-promet-que-ses-rpg-sortiron",
+      "date": "2026-11-25T09:31:54.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/c/cyberpunk-/cyberpunk-2-is-still-a-ways-out-but-cd-projekt-red-says-its_68mp.jpg",
+      "summary": "Gotta go fast.",
+      "tags": [
+        "release"
+      ]
+    },
+    {
+      "title": "« Cyberpunk 2 est annulé » : face à GTA 6, les autres studios craignent de ne pas pouvoir faire aussi bien",
+      "link": "https://www.jeuxvideo.com/news/2116695/cyberpunk-2-est-annule-face-a-gta-6-les-autres-studios-craignent-de-ne-pas-pouvoir-faire-aussi-bien.htm",
+      "date": "2026-11-25T09:30:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179553/1795529225-8254-card.jpg",
+      "summary": "Si les joueurs sont nombreux à s'émerveiller devant GTA 6, imaginez un peu ce que doivent ressentir ceux dont le métier est justement de créer des jeux vidéo. Depuis la sortie du…",
+      "tags": []
+    },
+    {
+      "title": "Save the date: where will you catch PG Connects in the first half of 2027?",
+      "link": "https://www.pocketgamer.biz/save-the-date-where-will-you-catch-pg-connects-in-the-first-half-of-2027/",
+      "date": "2026-11-25T09:30:00.000Z",
+      "sourceId": "pgbiz",
+      "image": "https://media.pocketgamer.biz/images/142053/90352/pgc26-article-roundtheworldin2027-1200x600-1_l660.jpg",
+      "summary": "We'll bring our usual trademark blend of essential games ecosystem connections whilst having fun and fostering a real 'games industry family' feel to familiar venues and new…",
+      "tags": []
+    },
+    {
+      "title": "Test World of Warcraft: Forever : bien plus qu'un simple retour aux sources",
+      "link": "https://fr.ign.com/world-of-warcraft-forever/94173/test-world-of-warcraft-forever-bien-plus-quun-simple-retour-aux-sources",
+      "date": "2026-11-25T09:27:40.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/us61g7ywrors1789667898380_jbt5.jpg",
+      "summary": "Forever ravive la magie de World of Warcraft en mêlant l&#x27;exigence de Vanilla à des améliorations modernes. Un retour aux sources qui va bien au-delà de la nostalgie.",
+      "tags": []
+    },
+    {
+      "title": "WoW Forever : à la découverte des Eolides",
+      "link": "https://fr.ign.com/world-of-warcraft-forever/94175/wow-forever-a-la-decouverte-des-eolides",
+      "date": "2026-11-25T09:27:40.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/wow-forever-zephras-2_fbqs.png",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "WoW Forever : screen éditeur",
+      "link": "https://fr.ign.com/world-of-warcraft-forever/94176/wow-forever-screen-editeur",
+      "date": "2026-11-25T09:27:40.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/wow-forever-cinematic-still-1_fm36.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Les Anneaux de Pouvoir : Amazon renouvelle la série pour une saison 4",
+      "link": "https://fr.ign.com/the-lord-of-the-rings-the-rings-of-power/94237/les-anneaux-de-pouvoir-amazon-renouvelle-la-serie-pour-une-saison-4",
+      "date": "2026-11-25T09:16:34.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/r/rings-of-p/rings-of-power-renewed-by-amazon-for-season-4_tr7k.jpg",
+      "summary": "Quatre anneaux pour Prime Video.",
+      "tags": []
+    },
+    {
+      "title": "Le Seigneur des Anneaux : Les Anneaux de Pouvoir, saison 3 – Photos de Theo / Nazgnagôl",
+      "link": "https://fr.ign.com/the-lord-of-the-rings-the-rings-of-power/94238/the-lord-of-the-rings-the-rings-of-power-season-3-theo-nazgnagol-photos",
+      "date": "2026-11-25T09:16:34.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/t/the-lord-o/the-lord-of-the-rings-the-rings-of-power-season-3-theo-nazgn_86nk.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Gravity Well enters hibernation after failing to secure funding",
+      "link": "https://www.gamesindustry.biz/gravity-well-enters-hibernation-after-failing-to-secure-funding",
+      "date": "2026-11-25T09:15:50.000Z",
+      "sourceId": "gibiz",
+      "image": "https://assetsio.gnwcdn.com/concept_gw_piece_2_R25tGX13H-(1).jpg?width=690&quality=85&format=jpg&auto=webp",
+      "summary": "Gravity Well has entered hibernation after failing to secure funding.",
+      "tags": []
+    },
+    {
+      "title": "Witchbrook est le jeu le plus attendu par les fans de Stardew Valley et il annonce une excellente nouvelle après 10 ans",
+      "link": "https://www.gameblog.fr/jeu-video/ed/news/witchbrook-gold-annonce-727450?utm_source=RSS",
+      "date": "2026-11-25T09:10:11.000Z",
+      "sourceId": "gameblog",
+      "image": "https://cdn-uploads.gameblog.fr/img/news/708035_6945582b83d8e.jpg",
+      "summary": "Après 10 ans de développement et presque tout autant d’attente, Witchbrook, le jeu à la croisée de Stardew Valley et Hogwarts Legacy annonce une excellente nouvelle.",
+      "tags": []
+    },
+    {
+      "title": "Everyone’s Getting Trolled By GTA 6&#8217;s Looney Tunes Tunnel",
+      "link": "https://kotaku.com/everyones-getting-trolled-by-gta-6s-looney-toons-tunnel-2001000177",
+      "date": "2026-11-25T09:00:08.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/11/jason-gta-6-1280x800.jpg",
+      "summary": "Congrats on landing the job at Rockstar, Wil E. Coyote",
+      "tags": []
+    },
+    {
+      "title": "Pimin 4 Switch 2 Edition - screen éditeur",
+      "link": "https://fr.ign.com/pikmin-4-nintendo-switch-2-edition-dandori-academy/94250/pimin-4-switch-2-edition-screen-editeur",
+      "date": "2026-11-25T08:55:06.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/screenshot/default/ns2-pikmin4ns2editionda-scrn-01_b7u2.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Pikmin 4 refleurit sur Nintendo Switch 2 !",
+      "link": "https://fr.ign.com/pikmin-4-nintendo-switch-2-edition-dandori-academy/94251/pikmin-4-refleurit-sur-nintendo-switch-2",
+      "date": "2026-11-25T08:55:06.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/trailer/p/pikmin-4-r/pikmin-4-refleurit-sur-nintendo-switch-2_v7c8.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Fuka Koshiba découvre l'Académie Dandori",
+      "link": "https://fr.ign.com/pikmin-4-nintendo-switch-2-edition-dandori-academy/94252/fuka-koshiba-decouvre-lacademie-dandori",
+      "date": "2026-11-25T08:55:06.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/trailer/f/fuka-koshi/fuka-koshiba-decouvre-lacademie-dandori_bvx7.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "Pikmin 4 atterrit sur Switch 2 : une aventure toujours aussi réussie, mais un portage timide",
+      "link": "https://fr.ign.com/pikmin-4-nintendo-switch-2-edition-dandori-academy/94223/pikmin-4-atterrit-sur-switch-2-une-aventure-toujours-aussi-reussie-mais-un-portage-timide",
+      "date": "2026-11-25T08:55:06.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/n/nintendo-c/nintendo-confirms-pikmin-4-switch-2-edition_qg5x.jpg",
+      "summary": "Une aventure toujours aussi séduisante, mais une mise à niveau qui manque d&#x27;ambition.",
+      "tags": []
+    },
+    {
+      "title": "Le set de cartes à collectionner GTA 6 - Rockstar x Panini America",
+      "link": "https://fr.ign.com/gallery/94240/rockstar-x-panini-america-gta-6-trading-cards",
+      "date": "2026-11-25T08:50:24.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/r/rockstar-x/rockstar-x-panini-america-gta-6-trading-cards_cp5a.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 va avoir droit à ses propres cartes sous licence officielle, inspirées des collectibles qu'on trouve dans le jeu",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94239/gta-6-va-avoir-droit-a-ses-propres-cartes-sous-licence-officielle-inspirees-des-collectibles-quon-tr",
+      "date": "2026-11-25T08:50:24.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-gets/gta-6-gets-officially-licensed-trading-cards-based-on-in-gam_1g5q.jpg",
+      "summary": "La chasse est ouverte.",
+      "tags": []
+    },
+    {
+      "title": "Wizards of the Coast attaque en justice un site qui imprime de fausses cartes Magic: The Gathering, les accusant de réseau de contrefaçon",
+      "link": "https://fr.ign.com/magic-the-gathering-trading-card-game/94247/wizards-of-the-coast-attaque-en-justice-un-site-qui-imprime-de-fausses-cartes-magic-the-gathering-le",
+      "date": "2026-11-25T08:31:15.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/w/wizards-of/wizards-of-the-coast-sues-website-that-prints-fake-magic-the_n7nv.jpg",
+      "summary": "Territoire.",
+      "tags": []
+    },
+    {
+      "title": "Magic: The Gathering – Nauctis: The Sunken Realm New Cards",
+      "link": "https://fr.ign.com/magic-the-gathering-trading-card-game/94248/magic-the-gathering-nauctis-the-sunken-realm-new-cards",
+      "date": "2026-11-25T08:31:15.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/gallery/m/magic-the-/magic-the-gathering-nauctis-the-sunken-realm-new-cards_q5v8.jpg",
+      "summary": "",
+      "tags": []
+    },
+    {
+      "title": "The Witcher 4 marquera un gap comparable à celui observé entre GTA 5 et GTA 6",
+      "link": "https://fr.ign.com/grand-theft-auto-6/94243/the-witcher-4-marquera-un-gap-comparable-a-celui-observe-entre-gta-5-et-gta-6",
+      "date": "2026-11-25T08:30:55.000Z",
+      "sourceId": "ign",
+      "image": "https://sm.ign.com/ign_fr/news/t/the-witche/the-witcher-4-will-have-a-comparable-leap-from-gta-5-to-gta_rp81.jpg",
+      "summary": "C&#x27;est CD Projekt Red qui le dit.",
       "tags": []
     },
     {
@@ -156,57 +1336,12 @@
       "tags": []
     },
     {
-      "title": "« Faisons avec les sorcières ce que j'ai fait avec les assassins ! » Le créateur du concurrent d'Assassin's Creed Hexe parle de son nouveau projet ambitieux",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/assassins-creed-hexe-patrice-desilets-amsterdam-1666-727424?utm_source=RSS",
-      "date": "2026-11-25T07:40:26.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/430366_64ad4e5a0e6d9.jpg",
-      "summary": "En attendant Assassin's Creed Hexe, le créateur original de la franchise phare d'Ubisoft parle de son propre projet ambitieux avec des sorcières, déjà disponible en accès anticipé.",
-      "tags": []
-    },
-    {
-      "title": "« GTA 6 est la grande pyramide du développement de jeu » Un vétéran de The Last of Us 2 donne son avis sur le mastodonte de Rockstar",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/gta-6-echelle-avis-veteran-the-last-of-us-2-727409?utm_source=RSS",
-      "date": "2026-11-25T07:30:54.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a954494440c0.jpg",
-      "summary": "Un vétéran de The Last of Us 2, un titre pourtant connu pour son développement particulièrement complexe, se dit soufflé par l'échelle stratosphérique de GTA 6.",
-      "tags": []
-    },
-    {
-      "title": "La PS5 accueille un nouveau jeu gratuit très bien noté et apprécié",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/ps5-jeu-gratuit-geo-book-727419?utm_source=RSS",
-      "date": "2026-11-25T07:20:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/587595_669a34775d105.jpg",
-      "summary": "La PS5 propose actuellement un nouveau jeu gratuit bien noté par l'ensemble des joueurs et apprécié notamment pour son caractère aussi éducatif que ludique.",
-      "tags": []
-    },
-    {
       "title": "Lenovo Legion Go Beam : les fuites dévoilent une console portable Android abordable",
       "link": "https://fr.ign.com/lenovo-go-beam/94235/lenovo-legion-go-beam-les-fuites-devoilent-une-console-portable-android-abordable",
       "date": "2026-11-25T07:14:53.000Z",
       "sourceId": "ign",
       "image": "https://sm.ign.com/ign_fr/screenshot/default/console-portable-gaming_gfhv.jpg",
       "summary": "Lenovo mise sur le streaming.",
-      "tags": []
-    },
-    {
-      "title": "« Une grande importance au respect des designs d'Akira Toriyama » Comment Dragon Quest Monsters 4 a créé les 3 nouveaux monstres sans le mangaka ? (EXCLU)",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/dragon-quest-monsters-4-interview-monstres-727425?utm_source=RSS",
-      "date": "2026-11-25T07:03:41.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6a2915a805950.webp",
-      "summary": "Dragon Quest Monsters : Le royaume de Boisflétri proposera pour l’une des premières fois depuis la disparition de Toriyama 3 nouveaux monstres. Les développeurs nous expliquent…",
-      "tags": []
-    },
-    {
-      "title": "Pour célébrer les 50 ans de Star Wars, LEGO recrée l'affiche originale de 1977 avec 3 209 briques",
-      "link": "https://www.gameblog.fr/trends/pour-celebrer-les-50-ans-de-star-wars-lego-recree-laffiche-originale-de-1977-avec-3-209-briques-727443?utm_source=RSS",
-      "date": "2026-11-25T07:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b069221f104a.webp",
-      "summary": "Pour les 50 ans de Star Wars, LEGO sort du jamais vu : une affiche géante de 3209 briques reproduisant l'illustration culte de 1977. Sept sets, des prix de 39,99 à 299,99 euros…",
       "tags": []
     },
     {
@@ -219,30 +1354,12 @@
       "tags": []
     },
     {
-      "title": "« Je ne ferai plus jamais la queue en caisse » : le nouveau caddie testé par E.Leclerc et Intermarché calcule votre note tout seul",
-      "link": "https://www.gameblog.fr/trends/je-ne-ferai-plus-jamais-la-queue-en-caisse-le-nouveau-caddie-teste-par-e-leclerc-et-intermarche-calcule-votre-note-tout-seul-727436?utm_source=RSS",
-      "date": "2026-11-25T06:30:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b067d7c17c15.webp",
-      "summary": "Un caddie qui scanne, calcule et facture tout seul : la fin des files d'attente en caisse est-elle vraiment pour demain ? Intermarché et E.Leclerc testent déjà la révolution, non…",
-      "tags": []
-    },
-    {
       "title": "Dans GTA 6, les joueurs ont trouvé un secret caché de GTA San Andreas Definitive Edition",
       "link": "https://www.jeuxvideo.com/news/2116690/dans-gta-6-les-joueurs-ont-trouve-un-secret-cache-de-gta-san-andreas-definitive-edition.htm",
       "date": "2026-11-25T06:05:07.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179552/1795524009-5171-card.jpg",
       "summary": "Cinq ans après avoir dissimulé une mystérieuse photographie dans Grand Theft Auto: The Trilogy – The Definitive Edition, Rockstar Games confirme l'existence de ce premier aperçu…",
-      "tags": []
-    },
-    {
-      "title": "Ce refuge secret enfoui sous terre dans le nord de la NSW est en vente : les acheteurs n'en croient pas le prix affiché",
-      "link": "https://www.gameblog.fr/trends/ce-refuge-secret-enfoui-sous-terre-dans-le-nord-de-la-nsw-est-en-vente-les-acheteurs-nen-croient-pas-le-prix-affiche-727440?utm_source=RSS",
-      "date": "2026-11-25T06:00:00.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b0691b6719f9.webp",
-      "summary": "Une maison qui résiste totalement au feu, reste fraîche en été sans clim et se fond dans le paysage australien. Son secret : un terrain semi-enterré qui change tout.",
       "tags": []
     },
     {
@@ -273,15 +1390,6 @@
       "tags": []
     },
     {
-      "title": "7 Funniest MST3K Episodes to Watch For Your Personal Turkey Day Marathon",
-      "link": "https://www.polygon.com/mst3k-turkey-day-2026/",
-      "date": "2026-11-25T05:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24491191/unnamed.jpg",
-      "summary": "It's 14 straight hours and it's called Turkey Day",
-      "tags": []
-    },
-    {
       "title": "Mémoire cash - Avec Daytona USA, le rêve américain de Sega brillait de mille feux",
       "link": "https://www.gamekult.com/actualite/avec-daytona-usa-le-reve-americain-de-sega-brillait-de-mille-feux-3050873128.html",
       "date": "2026-11-25T05:00:00.000Z",
@@ -306,15 +1414,6 @@
       "sourceId": "kotaku",
       "image": "https://kotaku.com/app/uploads/2026/11/mandy-1280x699.jpg",
       "summary": "Lexie Shoaibi recently guested on Hasan Piker's Twitch channel",
-      "tags": []
-    },
-    {
-      "title": "GTA 6's Most Heartbreaking Scene Is Exactly Why You Had To Do All Those Chores",
-      "link": "https://www.polygon.com/gta-6-chapter-1-tragic-ending-home-sweet-home/",
-      "date": "2026-11-25T00:00:17.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jason_and_lucia_08.jpg",
-      "summary": "Grand Theft Auto 6 features an exhilarating and heartbreaking sequence to end its first chapter as Lucia and Jason start a life on the run.",
       "tags": []
     },
     {
@@ -354,33 +1453,6 @@
       "tags": []
     },
     {
-      "title": "Wizards Goes To War With Magic: The Gathering Counterfeiters Over Printing ‘High-Quality, Realistic’ Proxies",
-      "link": "https://kotaku.com/wizards-of-the-coast-files-lawsuit-against-counterfeit-magic-the-gathering-card-printing-business-2001000110",
-      "date": "2026-11-24T22:30:04.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/04/PXL_20260421_175632981-1280x960.jpg",
-      "summary": "The company is seeking $28 million in damages",
-      "tags": []
-    },
-    {
-      "title": "How to flip your car in GTA 6",
-      "link": "https://www.polygon.com/gta-6-flip-car-how-to/",
-      "date": "2026-11-24T22:27:23.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-flip-car.jpg",
-      "summary": "Flipping your car in GTA 6 works differently from previous games. Here's how to flip your car so you don't have to pay Scooter Bros for delivery",
-      "tags": []
-    },
-    {
-      "title": "Vice City portal Easter egg location in GTA 6",
-      "link": "https://www.polygon.com/gta-6-vice-city-portal-easter-egg-location-walkthrough-how-to-open/",
-      "date": "2026-11-24T22:11:43.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta6_guide_vicecityportal_lead.jpg",
-      "summary": "Here's how to start and complete the Vice City portal easter egg in GTA 6 and the rewards you receive from it.",
-      "tags": []
-    },
-    {
       "title": "Nvidia patch finally eradicates the SSD-hammering bug its last hotfix didn't actually fix",
       "link": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-patch-finally-eradicates-the-ssd-hammering-bug-its-last-hotfix-didnt-actually-fix/",
       "date": "2026-11-24T22:04:28.000Z",
@@ -390,35 +1462,6 @@
       "tags": [
         "patch"
       ]
-    },
-    {
-      "title": "How to get your car out of the impound in GTA 6",
-      "link": "https://www.polygon.com/gta-6-impound-car-how-to-get-back/",
-      "date": "2026-11-24T22:00:58.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta6_guide_impound_lead.jpg",
-      "summary": "In this guide, you learn how to get your car out of the police impound in GTA 6",
-      "tags": []
-    },
-    {
-      "title": "Yes, Despite What Some Say Online, There Are Thunderstorms In GTA 6",
-      "link": "https://kotaku.com/yes-despite-what-some-say-online-there-are-thunderstorms-in-gta-6-2001000112",
-      "date": "2026-11-24T22:00:57.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/Lucia_Caminos_11.0j617-ylicowx-1280x720.jpg",
-      "summary": "It seems like things weren't working properly for some people until a recent patch, though",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Best way to reveal the map in GTA 6",
-      "link": "https://www.polygon.com/gta-6-reveal-map-best-method-defog-tips/",
-      "date": "2026-11-24T21:49:24.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/flying-whale-dodo-plane_gta6.jpg",
-      "summary": "Revealing the GTA 6 map takes a very long time. Here's the best method to remove the fog, so you can see the entire map and everything it has to offer",
-      "tags": []
     },
     {
       "title": "The race to port GTA 6 to PC, explained",
@@ -445,15 +1488,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/m2KePNqos3tQNXQw6yUfTc-1920-80.jpg",
       "summary": "Most of the secrets from the current season aren't going anywhere.",
-      "tags": []
-    },
-    {
-      "title": "The Rings Of Power Will Continue Until Morale Improves",
-      "link": "https://kotaku.com/the-rings-of-power-will-continue-until-morale-improves-2001000134",
-      "date": "2026-11-24T21:30:03.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/rings-oof-power.jpg",
-      "summary": "After all, why not? Why shouldn't we renew it for season 4?",
       "tags": []
     },
     {
@@ -484,39 +1518,12 @@
       "tags": []
     },
     {
-      "title": "Atari Homebrew Awards Canceled Over Torrent Of AI Games: &#8216;I Saw No Path Forward&#8217;",
-      "link": "https://kotaku.com/atari-homebrew-awards-canceled-over-torrent-of-ai-games-i-saw-no-path-forward-2001000096",
-      "date": "2026-11-24T21:00:14.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GettyImages-2178400107-e1795551443398-1280x753.jpg",
-      "summary": "It would have been the event's ninth year",
-      "tags": []
-    },
-    {
-      "title": "GTA 6's Staggering Sales Still Might Never Catch GTA 5",
-      "link": "https://www.polygon.com/gta-6-sales-gta-5-record/",
-      "date": "2026-11-24T20:56:41.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/ultimate_edition_saras_salon_03.jpg",
-      "summary": "Grand Theft Auto 6 smashed records for an entertainment launch, but GTA 5's lifetime sales might still be tough to beat",
-      "tags": []
-    },
-    {
       "title": "GTA 6 : les rencontres aléatoires les plus étranges",
       "link": "https://www.jeuxvideo.com/news/2116649/gta-6-les-rencontres-aleatoires-les-plus-etranges.htm",
       "date": "2026-11-24T20:40:08.000Z",
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179551/1795513913-577-card.jpg",
       "summary": "Depuis le lancement de GTA 6, les rues et les marais de Leonida regorgent de surprises inattendues mêlant faits divers déjantés, faune incontrôlable et mystères paranormaux. On…",
-      "tags": []
-    },
-    {
-      "title": "Here&#8217;s How To Get A Banshee In GTA 6 And Unlock A GTA 3-Inspired Trophy",
-      "link": "https://kotaku.com/heres-how-to-get-a-banshee-in-gta-6-and-unlock-a-gta-3-inspired-trophy-2001000076",
-      "date": "2026-11-24T20:30:04.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GTa-6-bansheeee-1280x720.jpg",
-      "summary": "Stealing cars just like you did back in 2001 on the PS2",
       "tags": []
     },
     {
@@ -529,39 +1536,12 @@
       "tags": []
     },
     {
-      "title": "The Witcher 4 Will Be a GTA 6-Sized Leap Forward, CD Projekt Red Says",
-      "link": "https://www.polygon.com/the-witcher-4-vs-gta-6-cyberpunk-2-cd-projekt-red/",
-      "date": "2026-11-24T20:10:45.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/the-witcher-4-ciri.jpg",
-      "summary": "The Witcher 4 will be a generational leap forward, a la Grand Theft Auto 6, CD Projekt Red boss says.",
-      "tags": []
-    },
-    {
-      "title": "In Defense Of The Legend Of Zelda: Skyward Sword",
-      "link": "https://kotaku.com/in-defense-of-the-legend-of-zelda-skyward-sword-2001000036",
-      "date": "2026-11-24T20:00:55.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/link-e1795551032506.jpg",
-      "summary": "In hindsight and with an updated Switch version, this game deserves a re-evaluation",
-      "tags": []
-    },
-    {
       "title": "How to steal the Ocelot Bloodless Jugular in GTA 6",
       "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
       "date": "2026-11-24T19:50:49.000Z",
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/sd4NitdEcJNcuzrwqXoyEa-1920-80.jpg",
       "summary": "Where to find the car wanted by Randy.",
-      "tags": []
-    },
-    {
-      "title": "The One Thing to Know About Jason and Lucia Before You Play Too Much GTA 6",
-      "link": "https://www.polygon.com/gta-6-jason-lucia-dialogue/",
-      "date": "2026-11-24T19:40:05.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/grand-theft-auto-6-jason-and-lucia-holding-hands.jpg",
-      "summary": "Grand Theft Auto 6 hides some key character details behind moments you'll only see when Jason and Lucia are together.",
       "tags": []
     },
     {
@@ -594,44 +1574,6 @@
       ]
     },
     {
-      "title": "To Kill A God - Trailer officiel de date de sortie en accès anticipé",
-      "link": "https://fr.ign.com/to-kill-a-god/94233/to-kill-a-god-trailer-officiel-de-date-de-sortie-en-acces-anticipe",
-      "date": "2026-11-24T19:32:03.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/t/to-kill-a-/to-kill-a-god-official-early-access-release-date-trailer_xx5t.jpg",
-      "summary": "Découvrez des séquences de gameplay de To Kill A God dans cette bande-annonce du prochain jeu d&#x27;action de type roguelike. Créez votre arbre de compétences dans ce roguelike…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "The GTA 6 NPCs Who Crash Out When You Steal From Them Are Some Of The Funniest In The Game",
-      "link": "https://kotaku.com/grand-theft-auto-6-gta6-npc-fight-back-car-hijack-2001000086",
-      "date": "2026-11-24T19:30:39.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/jasonluciacar-1280x720.jpg",
-      "summary": "Not every potential grand theft auto victim will go quietly into the night",
-      "tags": []
-    },
-    {
-      "title": "Symphony of War 2: Dominion - Trailer d'annonce officiel",
-      "link": "https://fr.ign.com/symphony-of-war-ii-dominion/94232/symphony-of-war-2-dominion-trailer-dannonce-officiel",
-      "date": "2026-11-24T19:30:21.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/s/symphony-o/symphony-of-war-2-dominion-official-announcement-trailer_trfy.jpg",
-      "summary": "Voici la bande-annonce de Symphony of War 2 : Dominion, la suite du RPG tactique Symphony of War : The Nephilim Saga, dont la sortie est prévue prochainement. Symphony of War 2…",
-      "tags": []
-    },
-    {
-      "title": "Goodbye Seoul - Trailer de gameplay officiel",
-      "link": "https://fr.ign.com/goodbye-seoul/94231/goodbye-seoul-trailer-de-gameplay-officiel",
-      "date": "2026-11-24T19:29:32.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/g/goodbye-se/goodbye-seoul-official-gameplay-trailer_h456.png",
-      "summary": "Découvrez la bande-annonce de gameplay de Goodbye Seoul, un jeu d&#x27;action-aventure narratif en graphisme pixelisé développé par JINO Games. Les joueurs vivront les six…",
-      "tags": []
-    },
-    {
       "title": "How do Steam fans think about playing - and switching - co-op games?",
       "link": "https://newsletter.gamediscover.co/p/how-do-steam-fans-think-about-playing",
       "date": "2026-11-24T19:25:57.000Z",
@@ -659,48 +1601,12 @@
       "tags": []
     },
     {
-      "title": "GTA 6 Data Reveals Only 40% of Players Have Cleared Chapter 2",
-      "link": "https://www.polygon.com/gta-6-player-data-taking-it-slow-progress/",
-      "date": "2026-11-24T19:08:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/grand-theft-auto-6-jason-with-gun.jpg",
-      "summary": "Grand Theft Auto 6 achievement data shows that only 40% of players have reached Chapter 3.",
-      "tags": []
-    },
-    {
       "title": "Nvidia : soupçons de délit d'initié et manœuvres politiques, le rôle de Donald Trump dans le retour de Jensen Huang",
       "link": "https://www.gamekult.com/actualite/nvidia-soupcons-de-delit-d-initie-et-manoeuvres-politiques-le-role-de-donald-trump-dans-le-retour-de-jensen-huang-3050873163.html",
       "date": "2026-11-24T19:02:00.000Z",
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050873163/nvidia-soupcons-de-delit-d-initie-et-manoeuvres-politiques-le-role-de-donald-trump-dans-le-retour-de-jensen-huang-e73d24a2__800_800__377-0-1657-1280.jpg",
       "summary": "Alors que le conseil d'administration d'Nvidia s'était opposé au retour de son PDG et cofondateur Jensen Huang, le Président des États-Unis Donald Trump assume avoir fait pression…",
-      "tags": []
-    },
-    {
-      "title": "Here&#8217;s How To Listen To The Radio On Foot In GTA 6 Using Headphones",
-      "link": "https://kotaku.com/heres-how-to-listen-to-the-radio-on-foot-in-gta-6-using-headphones-2001000040",
-      "date": "2026-11-24T19:00:08.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/gtaheadphones3-1280x720.jpeg",
-      "summary": "This earbud’s for you",
-      "tags": []
-    },
-    {
-      "title": "Studio founded by former Apex Legends leaders is closing without releasing a game",
-      "link": "https://www.pcgamer.com/gaming-industry/studio-founded-by-former-apex-legends-leaders-is-closing-without-releasing-a-game/",
-      "date": "2026-11-24T18:46:25.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/38KyYr2LFKt4GnrNmQQhRC-1920-80.jpg",
-      "summary": "Gravity Well, founded in 2020 as an \"anti-crunch\" game studio, lost its funding earlier this year and wasn't able to find a new backer.",
-      "tags": []
-    },
-    {
-      "title": "As the owner of an ultrawide OLED gaming monitor I can safely say there are few better ways to spend your money this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-monitors/as-the-owner-of-an-ultrawide-oled-gaming-monitor-i-can-safely-say-there-are-few-better-ways-to-spend-your-money-this-black-friday/",
-      "date": "2026-11-24T18:44:15.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Mtnsm6qxT5yhU5974vHRWU-1920-80.jpg",
-      "summary": "An OLED monitor makes any game look good.",
       "tags": []
     },
     {
@@ -713,24 +1619,6 @@
       "tags": []
     },
     {
-      "title": "The Plan Was For Mass Effect: Universe To Tell You What Happened To All Your Favorite Characters",
-      "link": "https://kotaku.com/mass-effect-5-universe-liara-garrus-tali-grunt-edi-shepard-2001000067",
-      "date": "2026-11-24T18:30:47.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/meuniverse1-1280x720.jpg",
-      "summary": "The now-canceled fifth game in the sci-fi series was meant to pick up old threads",
-      "tags": []
-    },
-    {
-      "title": "Chapitre 3 GTA 6 : Liste des missions, comment toutes les finir ?",
-      "link": "https://www.jeuxvideo.com/news/2116745/chapitre-3-gta-6-liste-des-missions-comment-toutes-les-finir.htm",
-      "date": "2026-11-24T18:30:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179554/1795544826-1061-card.jpg",
-      "summary": "Découvrez la liste des missions du chapitre 3 de GTA 6 et comment les finir dans ce nouveau chapitre de notre soluce. Une série de missions bien large, qui devrait vous prendre…",
-      "tags": []
-    },
-    {
       "title": "UK Developers can now claim part of £260m Google settlement",
       "link": "https://www.pocketgamer.biz/uk-developers-can-now-claim-part-of-260m-google-settlement/",
       "date": "2026-11-24T18:04:00.000Z",
@@ -740,192 +1628,12 @@
       "tags": []
     },
     {
-      "title": "Chatting With People In GTA Online About Why They’re Not Playing GTA 6: &#8216;$80 Is Too Much For Me, Bro&#8217;",
-      "link": "https://kotaku.com/chatting-with-people-in-gta-online-about-why-theyre-not-playing-gta-6-80-is-too-much-for-me-bro-2001000022",
-      "date": "2026-11-24T18:03:21.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GTA-online-1-1280x720.jpg",
-      "summary": "Some are simply waiting until they can afford the sequel, others are playing both, and some think Rockstar's new game looks boring",
-      "tags": []
-    },
-    {
-      "title": "Ultime bafouille - GTA 6 Online cultive autant de questions que de promesses",
-      "link": "https://www.gamekult.com/actualite/gta-6-online-cultive-autant-de-questions-que-de-promesses-3050873132.html",
-      "date": "2026-11-24T18:00:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873132/gta-6-online-cultive-autant-de-questions-que-de-promesses-52d44297__800_800__83-0-2243-2160.jpg",
-      "summary": "Grand Theft Auto VI est encore loin d'avoir révélé tous ses secrets aux dizaines de millions de joueurs qui s'y adonnent chaque jour depuis le 19 novembre, mais déjà la question…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 est un bon jeu d’action, mais c'est la partie infiltration qui fait toute sa saveur",
-      "link": "https://www.jeuxvideo.com/news/2116686/gta-6-est-un-bon-jeu-d-action-mais-c-est-la-partie-infiltration-qui-fait-toute-sa-saveur.htm",
-      "date": "2026-11-24T17:45:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179552/1795518010-9012-card.jpg",
-      "summary": "Sur le Net, et dans les médias, GTA 6 est partout. Certains évoquent sa violence qui serait trop réaliste, d’autres parlent d’un titre qui irait moins loin que les autres dans…",
-      "tags": []
-    },
-    {
-      "title": "Les joueurs de GTA 6 optimisent à l'extrême une faille pour faire de l'argent facile, au point de générer 100 000 $ en seulement 10 minutes",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94226/les-joueurs-de-gta-6-optimisent-a-lextreme-une-faille-pour-faire-de-largent-facile-au-point-de-gener",
-      "date": "2026-11-24T17:42:46.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-play/gta-6-players-are-optimizing-the-money-glitch-to-within-an-i_tx56.jpg",
-      "summary": "C&#x27;est pas la crise pour tout le monde.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 recomp leaders bail out as Take-Two cracks down on illicit efforts to get the game running on PC",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-illicit-efforts-to-get-the-game-running-on-pc/",
-      "date": "2026-11-24T17:42:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/QSYeXFDYmqVX3aynee9h2T-1920-80.jpg",
-      "summary": "The leads of Leonida, the biggest and best-known effort to recreate GTA 6 on PC, have quit the project, although others are still trying to carry it on.",
-      "tags": []
-    },
-    {
-      "title": "It's time to raise your top hat to the classiest of gaming keyboards, now with $28 off this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-keyboards/its-time-to-raise-your-top-hat-to-the-classiest-of-gaming-keyboards-now-with-usd28-off-this-black-friday/",
-      "date": "2026-11-24T17:20:39.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/yDa9Z9MME9yFqwTMevEZLe-1920-80.jpg",
-      "summary": "Or doff your cap, one of the two.",
-      "tags": []
-    },
-    {
-      "title": "I've had these wireless earbuds in my ears almost every day for the past few months and they're at a new lowest price for Black Friday",
-      "link": "https://www.pcgamer.com/hardware/earbuds-headphones/ive-had-these-wireless-earbuds-in-my-ears-almost-every-day-for-the-past-few-months-and-theyre-at-a-new-lowest-price-for-black-friday/",
-      "date": "2026-11-24T17:19:24.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/SCYiQrStMvJruTo2xCYitD-1920-80.jpg",
-      "summary": "They're still my fave for handheld gaming, music, and calls.",
-      "tags": []
-    },
-    {
-      "title": "There are some excellent videogame-inspired board game deals this Black Friday – from Slay the Spire to Skyrim to Metal Gear Solid",
-      "link": "https://www.pcgamer.com/hardware/there-are-some-excellent-videogame-inspired-board-game-deals-this-black-friday-from-slay-the-spire-to-skyrim-to-metal-gear-solid/",
-      "date": "2026-11-24T17:18:28.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/e8ZhYjmtSnsyM27gU79YdM-1920-80.jpg",
-      "summary": "Slay the Spire is my personal favorite.",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect: Universe Writer Says BioWare Spent A ‘Long And Laborious’ Time On Making Sure It Handled ME3’s Endings In A Way That ‘Wouldn’t Piss Everyone Off’",
-      "link": "https://kotaku.com/mass-effect-5-universe-3-me3-canon-ending-destroy-control-synthesis-2001000044",
-      "date": "2026-11-24T17:10:53.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/10/image-32-1280x723.jpg",
-      "summary": "‘I know so many people think it’s easy, just make Destroy canon and move on’",
-      "tags": []
-    },
-    {
-      "title": "Sick of the constant tippy taps from the PC gamer in your life? This gaming keyboard is designed to be quiet and under $100 this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-keyboards/sick-of-the-constant-tippy-taps-from-the-pc-gamer-in-your-life-this-gaming-keyboard-is-designed-to-be-quiet-and-under-usd100-this-black-friday/",
-      "date": "2026-11-24T17:06:19.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/e2ajeG2V7xULxMqhBXumdc-1920-80.jpg",
-      "summary": "It's literally in the name.",
-      "tags": []
-    },
-    {
-      "title": "We're giving away Warhammer 40,000: Dawn of War 4 Commander Edition Steam codes",
-      "link": "https://www.pcgamer.com/games/rts/were-giving-away-warhammer-40-000-dawn-of-war-4-commander-edition-steam-codes/",
-      "date": "2026-11-24T17:00:00.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/aWdLYJ652C5kKxteCAKd4V-1920-80.jpg",
-      "summary": "Join the war effort.",
-      "tags": []
-    },
-    {
-      "title": "Final Fantasy 14 Is Letting Players Travel Between North American And European Servers For The First Time In 16 Years And Fans Are Psyched",
-      "link": "https://kotaku.com/final-fantasy-14-is-letting-players-travel-between-north-america-and-european-servers-for-the-first-time-in-16-years-and-fans-are-psyched-2001000012",
-      "date": "2026-11-24T16:51:50.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2024/06/3dca14566eb14a4ecfd328797b998000.jpg",
-      "summary": "Mr. Yoshida, tear down this wall",
-      "tags": []
-    },
-    {
-      "title": "Attention strategy RPG sickos: The Fire-Emblem-style game that captured our hearts 4 years ago is back with a sequel",
-      "link": "https://www.pcgamer.com/games/rpg/attention-strategy-rpg-sickos-the-fire-emblem-style-game-that-captured-our-hearts-4-years-ago-is-back-with-a-sequel/",
-      "date": "2026-11-24T16:51:41.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/zoeJmAV4EArouNhHE5DtrD-1920-80.jpg",
-      "summary": "Symphonic.",
-      "tags": []
-    },
-    {
-      "title": "GUIDE GTA 6 : La liste de tous les magazines, livres et BD et où les trouver",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-liste-magazine-livres-bd-emplacement-727404?utm_source=RSS",
-      "date": "2026-11-24T16:40:33.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img//_6b05a02a8142e.jpg",
-      "summary": "Ne manquez aucun des magazines, livres et BD à collectionner dans GTA 6 grâce à notre guide qui vous aide à atteindre le 100 %.",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 is great because of all its murderous NPCs, not in spite of them",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-is-great-because-of-all-its-murderous-npcs-not-in-spite-of-them/",
-      "date": "2026-11-24T16:40:04.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/mGAbwHEYqU99h2xFrdszPL-1920-80.jpg",
-      "summary": "Nobody wants to work for their crimes anymore, smh.",
-      "tags": []
-    },
-    {
-      "title": "Logitech’s mighty MX Master ergo meeces have dropped in price for Black Friday, and after a year of testing I’m finally happy to recommend both",
-      "link": "https://www.pcgamer.com/hardware/gaming-mice/logitechs-mighty-mx-master-ergo-meeces-have-dropped-in-price-for-black-friday-and-after-a-year-of-testing-im-finally-happy-to-recommend-both/",
-      "date": "2026-11-24T16:31:34.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/6oujTgX6YEX6pAnXK4hqFK-1920-80.jpg",
-      "summary": "I may have been slightly too harsh on the MX Master 4, now I've used it for months.",
-      "tags": []
-    },
-    {
-      "title": "Yoshinori Kitase Wants Final Fantasy VII Revelation Players To Be ‘Curious About What Happens Next,’ Even Though They Know The Ending",
-      "link": "https://kotaku.com/final-fantasy-7-revelation-square-enix-kitase-fans-remake-2001000016",
-      "date": "2026-11-24T16:30:54.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/ff7rev-1280x720.jpg",
-      "summary": "The remake producer was giving a lecture at a South Korean games event",
-      "tags": []
-    },
-    {
       "title": "Saudi mobile studio NJD Games secures $1.1m investment",
       "link": "https://www.pocketgamer.biz/saudi-mobile-studio-njd-games-secures-11m-investment/",
       "date": "2026-11-24T16:30:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/139363/90357/4-1_l660.jpg",
       "summary": "Saudi Arabia-based mobile games studio NJD Games has secured $1.1 million in investment. The round was led by Mirac Capital and Impact46. The company has worked on titles such as…",
-      "tags": []
-    },
-    {
-      "title": "All GTA 6 Kitty Litter lab locations",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-kitty-litter-lab-locations/",
-      "date": "2026-11-24T16:29:48.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/hmvKSjMPp6dzdaAJCZePnC-1920-80.jpg",
-      "summary": "Take Out Kitty Litter for Tyrone across the Vice City.",
-      "tags": []
-    },
-    {
-      "title": "The Razer DeathAdder Essential is going for 'screw it, why not?' money this Black Friday at a lowest-ever price of just $15",
-      "link": "https://www.pcgamer.com/hardware/gaming-mice/the-razer-deathadder-essential-is-going-for-screw-it-why-not-money-this-black-friday-at-a-lowest-ever-price-of-just-usd15/",
-      "date": "2026-11-24T16:28:41.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/x3bybbnoDaLVdibgFzzsDb-1920-80.jpg",
-      "summary": "If you're not using a proper gaming mouse yet, now might be the time for an upgrade.",
-      "tags": []
-    },
-    {
-      "title": "Wave Race Blue Storm : le jeu de lancement de la GameCube refait surface pour les abonnés Nintendo Switch Online",
-      "link": "https://www.gamekult.com/actualite/wave-race-blue-storm-le-jeu-de-lancement-de-la-gamecube-refait-surface-pour-les-abonnes-nintendo-switch-online-3050873161.html",
-      "date": "2026-11-24T16:05:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873161/wave-race-blue-storm-le-jeu-de-lancement-de-la-gamecube-refait-surface-pour-les-abonnes-nintendo-switch-online-815efda5__800_800__852-0-3012-2160.jpg",
-      "summary": "Troisième et dernier volet de la franchise, Wave Race : Blue Storm est de retour aujourd'hui dans le cadre de l'abonnement Nintendo Switch Online + Pack additionnel.",
       "tags": []
     },
     {
@@ -956,30 +1664,12 @@
       "tags": []
     },
     {
-      "title": "GTA 6 might play best when it hits PC, but it'll be best played with a controller",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-might-play-best-when-it-hits-pc-but-itll-be-best-played-with-a-controller/",
-      "date": "2026-11-24T15:52:10.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/iuRU99tBoHCUomy9rvZHw8-1920-80.jpg",
-      "summary": "I cannot get over all the ways Rockstar has turned a controller into an immersion tool.",
-      "tags": []
-    },
-    {
       "title": "\"A game must grow with its players\": What 10 years of Mobile Legends taught Moonton about Europe",
       "link": "https://www.pocketgamer.biz/what-10-years-of-mlbb-taught-moonton-about-europe/",
       "date": "2026-11-24T15:52:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142337/90342/rogeryumoonto_l660.jpg",
       "summary": "Mobile Legends: Bang Bang has just turned 10, with the hit MOBA attracting 110 million monthly players. \"When we launched MLBB, we were focused on bringing a competitive MOBA…",
-      "tags": []
-    },
-    {
-      "title": "The best MMO gaming mouse is half off for Black Friday, and it also works as a Stream Deck",
-      "link": "https://www.pcgamer.com/hardware/gaming-mice/the-best-mmo-gaming-mouse-is-half-off-for-black-friday-and-it-also-works-as-a-stream-deck/",
-      "date": "2026-11-24T15:50:50.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/9LZViBT3Fm8pWwz2BhsjJW-1920-80.jpg",
-      "summary": "Perfect for Final Fantasy 14, WoW Forever, and The Elder Scrolls Online.",
       "tags": []
     },
     {
@@ -992,147 +1682,12 @@
       "tags": []
     },
     {
-      "title": "Opinion: Grand Theft Auto VI and World of Warcraft: Forever show that mundanity is having a moment",
-      "link": "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment",
-      "date": "2026-11-24T15:42:06.000Z",
-      "sourceId": "gamedev",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt55d46d9586e2d62a/6b006b7e56870f552d68ad55/ULTIMATE_EDITION_SARAS_SALON_03.jpg?width=720&quality=80&disable=upscale",
-      "summary": "Two of the year's biggest hits tell us that downtime and doldrums can be as compelling as dungeons and dragons.",
-      "tags": []
-    },
-    {
-      "title": "GUIDE GTA 6 : l'emplacement de tous les paniers de basket indispensables pour le 100%",
-      "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-guide-emplacement-paniers-basket-727421?utm_source=RSS",
-      "date": "2026-11-24T15:38:26.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/soluces/727421_6b05b4a0ed7c6.png",
-      "summary": "GTA 6 vous demande de chercher une centaine de paniers de basket dans Leonida, indispensables pour le 100 %, mais ils sont définitivement bien cachés. Voici donc l'emplacement de…",
-      "tags": []
-    },
-    {
-      "title": "This is the controller I'd go for to level up my GTA 6 experience this Black Friday - the best wired gamepad is at its lowest ever price",
-      "link": "https://www.pcgamer.com/hardware/controllers/this-is-the-controller-id-go-for-to-level-up-my-gta-6-experience-this-black-friday-the-best-wired-gamepad-is-at-its-lowest-ever-price/",
-      "date": "2026-11-24T15:37:12.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/F2AGBD5LEKB7eNGvxUofz3-1920-80.jpg",
-      "summary": "It's well worth the cable requirement for this price.",
-      "tags": []
-    },
-    {
-      "title": "We reviewed this gaming keyboard two weeks ago and it's already down to $70 for Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-keyboards/we-reviewed-this-gaming-keyboard-two-weeks-ago-and-its-already-down-to-usd70-for-black-friday/",
-      "date": "2026-11-24T15:36:12.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/hD2q4BBPmQNYmgdDoPg5nP-1920-80.jpg",
-      "summary": "Hot-swappable mechanical for less.",
-      "tags": []
-    },
-    {
-      "title": "Buckingham Jubilee GTA 6 : Où trouver cette voiture pour Randy ?",
-      "link": "https://www.jeuxvideo.com/news/2116713/buckingham-jubilee-gta-6-ou-trouver-cette-voiture-pour-randy.htm",
-      "date": "2026-11-24T15:35:29.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179553/1795529761-5390-card.jpg",
-      "summary": "Pour les américains fans de SUV urbain de luxe, rien ne vaut le Buckingham Jubilee avec son nom prestigieux dans Grand Theft Auto VI. Que ce soit pour garnir votre garage ou…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Is PlayStation’s Biggest Launch Of All Time, With Over 39 Million Players",
-      "link": "https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009",
-      "date": "2026-11-24T15:33:18.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/gta-records-1280x720.jpg",
-      "summary": "It's also set a new record for concurrent players on the PS5",
-      "tags": []
-    },
-    {
-      "title": "\"You are still taking 100% of the risk\" – Why Cairn dev The Game Bakers backs self-publishing for all but the smallest developers",
-      "link": "https://www.gamesindustry.biz/you-are-still-taking-100-of-the-risk-why-cairn-dev-the-game-bakers-backs-self-publishing-for-all-but-the-smallest-developers",
-      "date": "2026-11-24T15:28:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Cairn_KeyArt_4K_LargeShot_NoLogo.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Self-publishing is now firmly established as a viable route to market for indie developers, with many only looking to publishers for help with specific issues – chiefly marketing…",
-      "tags": []
-    },
-    {
-      "title": "US and EU players will be able to play together in Final Fantasy 14 soon, with Square Enix considering 'the possibility of permanently enabling travel' in the future",
-      "link": "https://www.pcgamer.com/games/mmo/na-and-eu-players-will-be-able-to-play-together-in-final-fantasy-14-soon-with-square-enix-considering-the-possibility-of-permanently-enabling-travel-in-the-future/",
-      "date": "2026-11-24T15:18:57.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/7b8uxEsMbx9gzcvHPYNAfn-1920-80.jpg",
-      "summary": "It's a temporary congestion measure, but it might be around to stay.",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect writer says 'as a fan I would have been happy with the solution' they came up with for ME3's endings in ME Universe",
-      "link": "https://www.pcgamer.com/games/mass-effect/mass-effect-writer-says-as-a-fan-i-would-have-been-happy-with-the-solution-they-came-up-with-for-me3s-endings-in-me-universe/",
-      "date": "2026-11-24T15:14:07.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Ejh4Z9YqLYB8hwzrfyYisK-1920-80.jpg",
-      "summary": "My personal solution would be playable elcor main character. Can't go wrong with that.",
-      "tags": []
-    },
-    {
-      "title": "Personnes Disparues GTA 6 : Où trouver les corps de Port Gellhorn ?",
-      "link": "https://www.jeuxvideo.com/news/2116718/personnes-disparues-gta-6-ou-trouver-les-corps-de-port-gellhorn.htm",
-      "date": "2026-11-24T15:13:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179553/1795531820-2526-card.jpg",
-      "summary": "On continue de parcourir la liste des missions secondaires de GTA VI, avec l'emplacement des 3 personnes disparues de Port Gellhorn. Vous pourrez lancer cette petite quête annexe…",
-      "tags": []
-    },
-    {
       "title": "Plug In Digital acquires Twin Sails Interactive",
       "link": "https://www.pocketgamer.biz/plug-in-digital-acquires-twin-sails-interactive/",
       "date": "2026-11-24T15:10:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142355/90355/plug-in-digital-twin-sails-acquisition_l660.jpg",
       "summary": "Distributor Plug In Digital has acquired publisher Twin Sails Interactive for an undisclosed fee. The deal aims to bring together Plug In Digital's global distribution network and…",
-      "tags": []
-    },
-    {
-      "title": "Scott Pilgrim et Ramona Flowers débarquent dans Fortnite cette semaine",
-      "link": "https://fr.ign.com/fortnite/94227/scott-pilgrim-et-ramona-flowers-debarquent-dans-fortnite-cette-semaine",
-      "date": "2026-11-24T15:09:22.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/s/scott-pilg/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week_69hg.jpg",
-      "summary": "Ex factor. Scott Pilgrim va rejoindre l'univers de Fortnite plus tard cette semaine, à l'occasion du prochain crossover du célèbre battle royale. Des skins à l'effigie de Scott…",
-      "tags": []
-    },
-    {
-      "title": "Wireless gaming headsets have some of the biggest discounts this Black Friday—I've picked out 6 of the best deals starting from $60",
-      "link": "https://www.pcgamer.com/hardware/gaming-headsets/wireless-gaming-headsets-have-some-of-the-biggest-discounts-this-black-friday-ive-picked-out-6-of-the-best-deals-starting-from-usd60/",
-      "date": "2026-11-24T15:00:26.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/wQt2DPtTw9BuSarBR5Cn2o-1920-80.jpg",
-      "summary": "Time for an upgrade, don'tcha think?",
-      "tags": []
-    },
-    {
-      "title": "Toujours personne pour lui succéder après 12 ans : c'est le seul jeu gratuit à avoir été nommé pour le GOTY",
-      "link": "https://www.jeuxvideo.com/news/2116594/toujours-personne-pour-lui-succeder-apres-12-ans-c-est-le-seul-jeu-gratuit-a-avoir-ete-nomme-pour-le-goty.htm",
-      "date": "2026-11-24T15:00:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179545/1795452893-8905-card.jpg",
-      "summary": "Depuis plus de 10 ans, la cérémonie des Game Awards couronne chaque année la crème du jeu vidéo. Si des mastodontes gratuits comme Fortnite, League of Legends ou Genshin Impact…",
-      "tags": []
-    },
-    {
-      "title": "Mass Effect Universe aurait apporté des réponses aux questions sur la fin de la trilogie et sur le sort de nos coéquipiers, selon une scénariste",
-      "link": "https://fr.ign.com/mass-effect-next-chapter/94224/mass-effect-universe-aurait-apporte-des-reponses-aux-questions-sur-la-fin-de-la-trilogie-et-sur-le-s",
-      "date": "2026-11-24T14:54:33.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/m/mass-effec/mass-effect-universe-would-have-answered-trilogy-ending-ques_ph37.jpg",
-      "summary": "Mais aussi des réponses concernant l’intrigue d’Andromeda, entre autres.",
-      "tags": []
-    },
-    {
-      "title": "I track gaming PC prices all year and these are my favorite high-end PC deals this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-pcs/i-track-gaming-pc-prices-all-year-and-these-are-my-favorite-high-end-pc-deals-this-black-friday/",
-      "date": "2026-11-24T14:54:33.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/szFUZygMV7BJzu9SrujRuL-1920-80.jpg",
-      "summary": "Starting from $1,900.",
       "tags": []
     },
     {
@@ -1145,84 +1700,12 @@
       "tags": []
     },
     {
-      "title": "The best gaming keyboard to gift a gamer at any price – I've reviewed too many keyboards and here's what I'd pick this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-keyboards/the-best-gaming-keyboard-to-gift-a-gamer-at-any-price-ive-reviewed-too-many-keyboards-and-heres-what-id-pick-this-black-friday/",
-      "date": "2026-11-24T14:35:59.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/PdEaKVuqcFuxW3bz259Ts4-1920-80.jpg",
-      "summary": "Want to buy your PC gaming companion something they actually want?",
-      "tags": []
-    },
-    {
-      "title": "Ubisoft : le patron de Massive Entertainment rêve de devenir « l'A24 du jeu vidéo »",
-      "link": "https://www.gamekult.com/actualite/ubisoft-le-patron-de-massive-entertainment-reve-de-devenir-l-a24-du-jeu-video-3050873162.html",
-      "date": "2026-11-24T14:31:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873162/ubisoft-le-patron-de-massive-entertainment-reve-de-devenir-l-a24-du-jeu-video-060f3873__800_800__382-0-1290-900.jpg",
-      "summary": "La formule a de quoi faire sourire, tant le grand écart entre le cinéma indépendant d'auteur et les blockbusters militaires estampillés Tom Clancy paraît énorme. Arrivé il y a…",
-      "tags": []
-    },
-    {
-      "title": "Grotti Itali Rsx GTA 6 : Où trouver cette voiture pour Randy ?",
-      "link": "https://www.jeuxvideo.com/news/2116701/grotti-itali-rsx-gta-6-ou-trouver-cette-voiture-pour-randy.htm",
-      "date": "2026-11-24T14:30:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179553/1795528551-4047-card.jpg",
-      "summary": "Une des meilleures voitures de Grand Theft Auto VI, même dans la catégorie Supercar, la Grotti Itali Rsx est aussi très rare. Que ce soit pour remplir votre garage ou valider la…",
-      "tags": []
-    },
-    {
       "title": "Angry Birds 2 promotes The Angry Birds Movie 3 with in-game character and ASPCA charity campaign",
       "link": "https://www.pocketgamer.biz/angry-birds-2-promotes-the-angry-birds-movie-3-with-in-game-character-and-aspca-charity-campaign/",
       "date": "2026-11-24T14:00:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142300/90294/angry-birds-2-fuzzy_l660.jpg",
       "summary": "Angry Birds 2 is introducing an upcoming character from The Angry Birds Movie 3, cross-promoting the film in-game. The spider Fuzzy has been added as a playable character today in…",
-      "tags": []
-    },
-    {
-      "title": "Razer's wireless PC and PS5 controller has dropped by $67 for Black Friday - Perfect for GTA 6",
-      "link": "https://www.pcgamer.com/hardware/controllers/razers-wireless-pc-and-ps5-controller-has-dropped-by-usd67-for-black-friday-perfect-for-gta-6/",
-      "date": "2026-11-24T13:51:35.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/4qp8tZDeRfmKDGZZAsP22U-1920-80.jpg",
-      "summary": "No stick drift, supreme comfort, great customizability. It has it all.",
-      "tags": []
-    },
-    {
-      "title": "Truffade Thrax GTA 6 : Où trouver cette voiture pour Randy ?",
-      "link": "https://www.jeuxvideo.com/news/2116691/truffade-thrax-gta-6-ou-trouver-cette-voiture-pour-randy.htm",
-      "date": "2026-11-24T13:50:10.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179552/1795524141-7910-card.jpg",
-      "summary": "Une des meilleures voitures de Grand Theft Auto VI, même dans la catégorie Supercar, la Truffade Thrax est aussi très rare. Que ce soit pour remplir votre garage ou valider la…",
-      "tags": []
-    },
-    {
-      "title": "La Xbox Helix pourrait marquer la fin du multi payant chez les consoles de Microsoft, mais à une condition",
-      "link": "https://www.gameblog.fr/jeu-video/ed/news/xbox-helix-fin-multi-payant-changements-strategie-727403?utm_source=RSS",
-      "date": "2026-11-24T13:32:34.000Z",
-      "sourceId": "gameblog",
-      "image": "https://cdn-uploads.gameblog.fr/img/news/725197_6ad9d947e8514.jpg",
-      "summary": "Selon plusieurs rumeurs, la Xbox Helix pourrait mettre fin au multi payant chez les consoles de Microsoft, mais cela dépend de certains facteurs extérieurs.",
-      "tags": []
-    },
-    {
-      "title": "OneXPlayer X2 Evangelion EVA-02 : l’édition collector en précommande, que représentent vraiment les 99 $ demandés ?",
-      "link": "https://fr.ign.com/onexplayer-x2-evangelion-eva-02/94222/onexplayer-x2-evangelion-eva-02-ledition-collector-en-precommande-que-representent-vraiment-les-99-d",
-      "date": "2026-11-24T13:25:36.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/onexplayer-x2-evangelion-eva-02-1_9t7b.jpg",
-      "summary": "Asuka signe un PC hybride.",
-      "tags": []
-    },
-    {
-      "title": "The gaming headset I use everyday is $100 off for Black Friday - Turtle Beach Stealth Pro II is my go-to on PC and PS5",
-      "link": "https://www.pcgamer.com/hardware/gaming-headsets/the-gaming-headset-i-use-everyday-is-usd100-off-for-black-friday-turtle-beach-stealth-pro-ii-is-my-go-to-on-pc-and-ps5/",
-      "date": "2026-11-24T13:17:44.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/WgmwAHqfNgLU8eDPPqh6KL-1920-80.jpg",
-      "summary": "That's its lowest price by a whole $50.",
       "tags": []
     },
     {
@@ -1235,15 +1718,6 @@
       "tags": []
     },
     {
-      "title": "Interview - Et si finalement, le nouveau jeu de Kotaro Uchikoshi (Zero Escape, CRASH KEYS) n'était pas annulé ? Il répond à nos questions",
-      "link": "https://www.gamekult.com/actualite/et-si-finalement-le-nouveau-jeu-de-kotaro-uchikoshi-zero-escape-crash-keys-n-etait-pas-annule-il-repond-a-nos-questions-3050873159.html",
-      "date": "2026-11-24T12:57:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873159/et-si-finalement-le-nouveau-jeu-de-kotaro-uchikoshi-zero-escape-crash-keys-n-etait-pas-annule-il-repond-a-nos-questions-b53a19e1__800_800__339-0-1015-675.jpg",
-      "summary": "Nous ne l'avons pas directement rencontré mais maintenant, il a notre adresse mail : suite à l'annonce de sa nouvelle structure CRASH KEYS, nous avons contacté Kotaro Uchikoshi…",
-      "tags": []
-    },
-    {
       "title": "ITV Studios’ Metavision to bring Thunderbirds IP to Roblox",
       "link": "https://www.pocketgamer.biz/itv-studios-metavision-to-bring-thunderbirds-ip-to-roblox/",
       "date": "2026-11-24T12:35:00.000Z",
@@ -1253,93 +1727,12 @@
       "tags": []
     },
     {
-      "title": "World of Warcraft: Forever's been chasing bugs and gold exploits over the weekend—and now it turns out Sunder Armor might just not be working",
-      "link": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forevers-been-chasing-bugs-and-gold-exploits-over-the-weekend-and-now-it-turns-out-sunder-armor-might-just-not-be-working/",
-      "date": "2026-11-24T12:20:47.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ziAidtFyz3aDf7yhuiejdA-1920-80.png",
-      "summary": "Lightning and sunder.",
-      "tags": []
-    },
-    {
-      "title": "Splitscreen Croatia conference offers attendance packages for developers looking to showcase unreleased games to publishers and investors",
-      "link": "https://www.gamesindustry.biz/splitscreen-croatia-conference-offers-free-travel-packages-for-developers-looking-to-showcase-unreleased-games-to-publishers-and-investors",
-      "date": "2026-11-24T12:18:30.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/SPLITSCREEN---Official-Selection---1200x675---02.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Splitcreen Croatia, the new industry conference seeking to fill the gap left by Reboot Develop , has opened applications for its Official Selection showcase, which includes free…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 : les erreurs de réglage les plus fréquentes qui empêchent les joueurs de profiter pleinement des graphismes sur leur TV",
-      "link": "https://www.jeuxvideo.com/news/2116472/gta-6-les-erreurs-de-reglage-les-plus-frequentes-qui-empechent-les-joueurs-de-profiter-pleinement-des-graphismes-sur-leur-tv.htm",
-      "date": "2026-11-24T11:50:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179545/1795446613-2995-card.jpg",
-      "summary": "Entre le réglage du blanc papier et les pics de luminosité mal calibrés, voici comment éviter les pièges courants pour tirer le plein potentiel graphique de votre dalle sur GTA 6.",
-      "tags": []
-    },
-    {
-      "title": "Steam revamps its marketplace for the 2nd time this year",
-      "link": "https://www.pcgamer.com/software/platforms/steam-revamps-its-marketplace-for-the-2nd-time-this-year/",
-      "date": "2026-11-24T11:49:42.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/GGNVohdzdZcSEHAHnu9de8-1920-80.jpg",
-      "summary": "Big news for the skin barons in your life.",
-      "tags": []
-    },
-    {
-      "title": "Valve ferme la liste d'attente de la Steam Machine 2 To, faute de composants suffisants pour répondre à la demande",
-      "link": "https://www.gamekult.com/actualite/valve-ferme-la-liste-d-attente-de-la-steam-machine-2-to-faute-de-composants-suffisants-pour-repondre-a-la-demande-3050873160.html",
-      "date": "2026-11-24T11:47:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873160/valve-ferme-la-liste-d-attente-de-la-steam-machine-2-to-faute-de-composants-suffisants-pour-repondre-a-la-demande-e4bdcae7__800_800__1511-0-3840-2330.jpg",
-      "summary": "Vous voulez des nouvelles de la Steam Machine ? Sachez que Valve a honoré toutes les réservations de la Steam Machine d'entrée de gamme en 512 Go, et a fini d'envoyer ses…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 was the \"biggest launch in PlayStation history\", with the highest number of concurrent players ever",
-      "link": "https://www.gamesindustry.biz/gta-6-was-the-biggest-launch-in-playstation-history-with-the-highest-number-of-concurrent-players-ever",
-      "date": "2026-11-24T11:44:10.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/gta-6-drinks.webp?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Christmas did not come early for Sony, but it came close: the firm has declared that GTA 6 was the largest game launch in the platform's history, driving a record number of…",
-      "tags": []
-    },
-    {
       "title": "Epic Games to drop Blueprints from Unreal Engine 6 as AI reshapes migration plans",
       "link": "https://www.pocketgamer.biz/epic-games-to-drop-blueprints-from-unreal-engine-6-as-ai-reshapes-migration-plans/",
       "date": "2026-11-24T11:35:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142343/90349/unrealengine6_l660.jpg",
       "summary": "Epic Games has revealed that Unreal Engine 6 will not support its Blueprints visual scripting system or the Actor Gameplay Framework, saying AI will help developers transition to…",
-      "tags": []
-    },
-    {
-      "title": "Eletta - Trailer de lancement officiel",
-      "link": "https://fr.ign.com/eletta/94221/eletta-trailer-de-lancement-officiel",
-      "date": "2026-11-24T11:12:24.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/e/eletta-off/eletta-official-launch-trailer_efe4.png",
-      "summary": "Voici un aperçu de la bande-annonce de lancement d’Eletta, un jeu d’action-aventure de type dungeon crawler développé par ABGAST. Les joueurs devront se battre pour s’échapper de…",
-      "tags": []
-    },
-    {
-      "title": "Sovereign Tower : le RPG de gestion de la Table Ronde arrive sur Switch en janvier 2027",
-      "link": "https://www.gamekult.com/actualite/sovereign-tower-le-rpg-de-gestion-de-la-table-ronde-arrive-sur-switch-en-janvier-2027-3050873158.html",
-      "date": "2026-11-24T11:01:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873158/sovereign-tower-le-rpg-de-gestion-de-la-table-ronde-arrive-sur-switch-en-janvier-2027-396f03c0__800_800__0-0-1600-1601.jpg",
-      "summary": "Le studio indépendant rennais WILD WITS (Aetheris, Crown Gambit) et l'éditeur britannique Curve Games ont officialisé l'arrivée de leur RPG narratif médiéval-fantastique Sovereign…",
-      "tags": []
-    },
-    {
-      "title": "UK mobile developers can now apply for their share of a £260 million Google settlement",
-      "link": "https://www.gamesindustry.biz/uk-mobile-developers-can-now-apply-for-their-share-of-a-260-million-google-settlement",
-      "date": "2026-11-24T10:50:00.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/google-play.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "UK developers who released games, apps or content on the Google Play Store between August 2018 and July 2026 can now claim for their share of a &pound;260 million settlement…",
       "tags": []
     },
     {
@@ -1361,279 +1754,12 @@
       "tags": []
     },
     {
-      "title": "Everrest - Trailer de gameplay",
-      "link": "https://fr.ign.com/everrest/94220/everrest-trailer-de-gameplay",
-      "date": "2026-11-24T10:30:27.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/e/everrest-o/everrest-official-early-gameplay-trailer_thjs.png",
-      "summary": "Découvrez la première bande-annonce de gameplay d’Everrest, un roguelike d’action isométrique développé par YesNinja Games. Les joueurs exploreront un univers onirique en pixels…",
-      "tags": []
-    },
-    {
-      "title": "Les joueurs de GTA 6 ont le seum parce que le nouveau train peut être arrêté, contrairement à celui de GTA 5",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94213/les-joueurs-de-gta-6-ont-le-seum-parce-que-le-nouveau-train-peut-etre-arrete-contrairement-a-celui-d",
-      "date": "2026-11-24T10:17:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-play/gta-6-players-are-upset-its-new-train-can-actually-be-stoppe_cb6y.jpg",
-      "summary": "Ça se tient.",
-      "tags": []
-    },
-    {
-      "title": "World Eater - Trailer d'annonce officiel",
-      "link": "https://fr.ign.com/world-eater-2026/94219/world-eater-trailer-dannonce-officiel",
-      "date": "2026-11-24T10:08:52.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/video/w/world-eate/world-eater-official-announcement-trailer_rcp8.png",
-      "summary": "Découvrez la bande-annonce de World Eater, un jeu de minage en voxels développé par Sambosa. Les joueurs exploreront un monde composé de 100 milliards de voxels à l’aide d’une…",
-      "tags": []
-    },
-    {
-      "title": "Game and watch - God of War : sans surprise, l'actrice de Laufey dans le jeu reprend son rôle dans la série Prime Video",
-      "link": "https://www.gamekult.com/actualite/god-of-war-sans-surprise-l-actrice-de-laufey-dans-le-jeu-reprend-son-role-dans-la-serie-prime-video-3050873157.html",
-      "date": "2026-11-24T09:56:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873157/god-of-war-sans-surprise-l-actrice-de-laufey-dans-le-jeu-reprend-son-role-dans-la-serie-prime-video-dbfa35bf__800_800__366-0-1274-900.jpg",
-      "summary": "C'était une évidence. Déjà interprète de Faye/Laufey dans God of War Ragnarök et bientôt tête d'affiche du prochain God of War Laufey, Deborah Ann Woll va retrouver le rôle de la…",
-      "tags": []
-    },
-    {
-      "title": "L'application Waink de GTA 6 permet de débloquer de nouvelles coiffures et du maquillage pour Jason et Lucia",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94212/lapplication-waink-de-gta-6-permet-de-debloquer-de-nouvelles-coiffures-et-du-maquillage-pour-jason-e",
-      "date": "2026-11-24T09:55:19.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6s-wai/gta-6s-waink-app-can-unlock-new-hairstyles-and-makeup_mvdw.jpg",
-      "summary": "Ouvrez l’œil.",
-      "tags": []
-    },
-    {
-      "title": "Des joueurs ont découvert un bug permettant d'atteindre les 60 fps sur GTA 6",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94211/des-joueurs-ont-decouvert-un-bug-permettant-datteindre-les-60-fps-sur-gta-6",
-      "date": "2026-11-24T09:44:12.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/p/players-ha/players-have-found-a-gta-6-60fps-glitch-but-it-just-reaffirm_fc33.jpg",
-      "summary": "Mais ce bug ne fait que confirmer la limite de 30 fps imposée par Rockstar.",
-      "tags": []
-    },
-    {
-      "title": "Black Friday est le moment idéal pour renforcer la protection de vos activités de jeu et de streaming grâce à ExpressVPN - Sponsorisé",
-      "link": "https://fr.ign.com/expressvpn/94218/black-friday-est-le-moment-ideal-pour-renforcer-la-protection-de-vos-activites-de-jeu-et-de-streamin",
-      "date": "2026-11-24T09:41:35.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/screenshot/default/vpn_a2sf.jpg",
-      "summary": "Des offres exceptionnelles et une protection optimale.",
-      "tags": []
-    },
-    {
-      "title": "Par les créateurs d'Arcane sur Netflix, ce clip League of Legends a dépassé les 60 millions de vues en 1 mois sur YouTube",
-      "link": "https://www.jeuxvideo.com/news/2116488/par-les-createurs-d-arcane-sur-netflix-ce-clip-league-of-legends-a-depasse-les-60-millions-de-vues-en-1-mois-sur-youtube.htm",
-      "date": "2026-11-24T09:39:41.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179545/1795449474-3578-card.jpg",
-      "summary": "Après le sacre planétaire d'Arcane, le studio parisien frappe un grand coup avec un projet musical inattendu pour Riot Games. Entre défilé de mode futuriste et chorégraphies…",
-      "tags": []
-    },
-    {
-      "title": "Chercher les Effigies dans les arbres GTA 6 : Où les trouver pour la quête du Singe qui pue de Kirk ?",
-      "link": "https://www.jeuxvideo.com/news/2116624/chercher-les-effigies-dans-les-arbres-gta-6-ou-les-trouver-pour-la-quete-du-singe-qui-pue-de-kirk.htm",
-      "date": "2026-11-24T09:33:09.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179551/1795512435-2210-card.jpg",
-      "summary": "Dans les marécages de Pelican Valley, Kirk compte sur vous pour localiser les étranges sculptures attribuées à M. Mangrove. Voici un guide avec quelques conseils et la position…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 fait mieux que 40 ans de prévention pour la sécurité routière. Il fait prendre conscience d'un des principaux dangers de la route",
-      "link": "https://www.jeuxvideo.com/news/2116581/gta-6-fait-mieux-que-40-ans-de-prevention-pour-la-securite-routiere-il-fait-prendre-conscience-d-un-des-principaux-dangers-de-la-route.htm",
-      "date": "2026-11-24T09:30:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179545/1795451290-8845-card.jpg",
-      "summary": "On le sait : écrire des messages en conduisant est l’un des meilleurs moyens d’avoir un accident. La prévention routière nous alerte depuis 40 ans. Mais Rockstar a trouvé le moyen…",
-      "tags": []
-    },
-    {
       "title": "Who will you meet at PG Connects London 2027?",
       "link": "https://www.pocketgamer.biz/who-will-you-meet-at-pg-connects-london-2027/",
       "date": "2026-11-24T09:30:00.000Z",
       "sourceId": "pgbiz",
       "image": "https://media.pocketgamer.biz/images/142358/90271/pgc-ldn-27-attending-companies_l660.jpg",
       "summary": "In the New Year, more than 3,000 attendees from 70+ countries are expected to gather in the UK to Connect and do business at PG Connects London. Our flagship event of the year…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 est-il vraiment un briseur de couple ?",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94210/gta-6-est-il-vraiment-un-briseur-de-couple",
-      "date": "2026-11-24T09:24:30.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/a/are-couple/are-couples-really-breaking-up-over-gta-6_jeeh.png",
-      "summary": "À en croire les réseaux sociaux, GTA 6 met à mal les relations amoureuses. Ou, du moins, constitue un excellent moyen de susciter de l&#x27;engagement.",
-      "tags": []
-    },
-    {
-      "title": "Huître confite Disney Dreamlight Valley : Comment préparer ce plat 2 étoiles ?",
-      "link": "https://www.jeuxvideo.com/news/2116497/huitre-confite-disney-dreamlight-valley-comment-preparer-ce-plat-2-etoiles.htm",
-      "date": "2026-11-24T09:14:21.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179545/1795450186-7872-card.jpg",
-      "summary": "Les huîtres confites sont nécessaires lors de la quête \"Je peux parler baleine\" afin de nourrir un narval géant et ainsi progresser dans la quête d'histoire du nouveau DLC de…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 a tué Call of Duty (ou au moins l'a blessé très gravement)",
-      "link": "https://fr.ign.com/call-of-duty-modern-warfare-4/94215/gta-6-a-tue-call-of-duty-ou-au-moins-la-blesse-tres-gravement",
-      "date": "2026-11-24T08:59:02.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/c/call-of-du/call-of-dutys-player-count-dropped-by-over-40-following-gta_jnnr.jpg",
-      "summary": "Le nombre de joueurs de Call of Duty a chuté de plus de 40 % après la sortie de GTA 6, selon des analystes.",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Voyez-y un signe si vous voulez, mais dans une nouvelle offre d'emploi, Activision se présente comme \"la maison de Banjo-Kazooie\"",
-      "link": "https://www.gamekult.com/actualite/voyez-y-un-signe-si-vous-voulez-mais-dans-une-nouvelle-offre-d-emploi-activision-se-presente-comme-la-maison-de-banjo-kazooie-3050873143.html",
-      "date": "2026-11-24T08:45:00.000Z",
-      "sourceId": "gamekult",
-      "image": "https://cdn.gamekult.com/optim/images/news/30/3050873143/voyez-y-un-signe-si-vous-voulez-mais-dans-une-nouvelle-offre-d-emploi-activision-se-presente-comme-la-maison-de-banjo-kazooie-e7916ef2__800_800__340-0-1241-900.jpg",
-      "summary": "Une nouvelle offre d'emploi publiée sur la page LinkedIn d'Activision cite Banjo-Kazooie parmi les licences désormais associées à l'éditeur. Difficile dès lors de ne pas alimenter…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 ou photo IRL ? Le jeu de Rockstar est tellement beau que des gens peinent à faire la différence entre des photos et vidéos du monde réel et des images du jeu",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94214/gta-6-ou-photo-irl-le-jeu-de-rockstar-est-tellement-beau-que-des-gens-peinent-a-faire-la-difference",
-      "date": "2026-11-24T08:44:00.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-look/gta-6-looks-so-good-that-real-photos-and-videos-are-being-mi_tjnv.jpg",
-      "summary": "Faites le test.",
-      "tags": []
-    },
-    {
-      "title": "Scopely partners with Marvel for Monopoly Go and Avengers: Doomsday crossover",
-      "link": "https://www.pocketgamer.biz/scopely-partners-with-marvel-for-monopoly-go-and-avengers-doomsday-crossover/",
-      "date": "2026-11-23T18:14:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142338/90344/monopoly-go-doomsday-go-collab_l660.jpg",
-      "summary": "Scopely is collaborating with Marvel Games for an Avengers: Doomsday collaboration in Monopoly Go. The new season comes in time for the theatrical release of the latest Marvel…",
-      "tags": [
-        "patch"
-      ]
-    },
-    {
-      "title": "Monopoly Go gets an Avengers: Doomsday season in Scopely&#8217;s third Marvel crossover",
-      "link": "https://mobilegamer.biz/monopoly-go-gets-an-avengers-doomsday-season-in-scopelys-third-marvel-crossover/",
-      "date": "2026-11-23T18:00:13.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "It's the third time Scopely has brought Marvel to Monopoly Go since 2024.",
-      "tags": []
-    },
-    {
-      "title": "21 MENA startups graduate from the third Exel by Merak accelerator cohort",
-      "link": "https://www.pocketgamer.biz/21-mena-startups-graduate-from-the-third-exel-by-merak-accelerator-cohort/",
-      "date": "2026-11-23T17:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142308/90305/exel-by-merak_l660.jpg",
-      "summary": "Saudi-based accelerator Exel by Merak has graduated 21 MENA gaming startups from its third cohort at Demo Day on Monday, November 23rd. The studios presented to publishers…",
-      "tags": []
-    },
-    {
-      "title": "Exclusive: Monopoly Go surpasses $8 billion in lifetime player spending",
-      "link": "https://www.pocketgamer.biz/monopoly-go-surpasses-8-billion-in-lifetime-player-spending/",
-      "date": "2026-11-23T15:54:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142284/90288/monopoly-go-mr-monopoly-event-combos-trailer_l660.jpg",
-      "summary": "Monopoly Go has officially surpassed $8 billion in lifetime player spending, Scopely has confirmed to PocketGamer.biz. The milestone was achieved as of the summer, marking a…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 goes gangbusters, Netflix Games layoffs and Pikmin Bloom's unlikely rise | Week in Mobile Games podcast",
-      "link": "https://www.pocketgamer.biz/gta-6-goes-gangbusters-week-in-mobile-games-podcast/",
-      "date": "2026-11-23T15:50:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142319/90335/week-in-mobile-games-111_l660.jpg",
-      "summary": "PocketGamer.biz head of content Craig Chapple, editorial director of events Mariam Ahmad and features and data editor Aaron Astle talk through the latest games industry news on…",
-      "tags": []
-    },
-    {
-      "title": "Rockstar&#8217;s mobile downloads more than quadrupled thanks to GTA VI",
-      "link": "https://mobilegamer.biz/rockstars-mobile-downloads-more-than-quadrupled-thanks-to-gta-vi/",
-      "date": "2026-11-23T14:57:32.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "Rockstar's mobile games are now being downloaded more than 600,000 times a day.",
-      "tags": []
-    },
-    {
-      "title": "Nvidia reinstates Jensen Huang as president and CEO",
-      "link": "https://www.pocketgamer.biz/nvidia-reinstates-jensen-huang-as-president-and-ceo/",
-      "date": "2026-11-23T14:25:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142077/90341/jensen-huang-nvidia_l660.jpg",
-      "summary": "Nvidia has reinstated the ousted Jensen Huang back as the company's president and CEO. A statement said the board had received input from senior levels of the US Government. Based…",
-      "tags": []
-    },
-    {
-      "title": "US mobile game spending falls to lowest of the year on GTA 6 launch day",
-      "link": "https://www.pocketgamer.biz/us-mobile-game-spending-plummets-to-lowest-of-the-year-on-gta-6-launch-day/",
-      "date": "2026-11-23T14:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142325/90338/gta-6_l660.jpg",
-      "summary": "GTA 6's launch day marked the lowest day of spending for 2026 in the United States at $28.4m, according to AppMagic estimates. Net revenue for the seven days ending November 19th…",
-      "tags": []
-    },
-    {
-      "title": "Nintendo’s Shigeru Miyamoto to receive inaugural Legend Award at D.I.C.E. Awards",
-      "link": "https://www.pocketgamer.biz/nintendos-shigeru-miyamoto-to-receive-inaugural-legend-award-at-dice-awards/",
-      "date": "2026-11-23T12:27:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142327/90340/shigeru-miyamoto-nintendo-credit-dice_l660.jpg",
-      "summary": "Nintendo representative director and creative fellow Shigeru Miyamoto is to be bestowed the inaugural Legend Award at the upcoming D.I.C.E. Awards ceremony. The award will be…",
-      "tags": []
-    },
-    {
-      "title": "PUBG Mobile partners with Bentley to bring luxury vehicles to the game",
-      "link": "https://www.pocketgamer.biz/pubg-mobile-partners-with-bentley-to-bring-luxury-vehicles-to-the-game/",
-      "date": "2026-11-23T11:58:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142326/90339/pubg-bentley_l660.jpg",
-      "summary": "PUBG Mobile has partnered with British luxury car manufacturer Bentley to introduce three of its vehicles into the battle royale game. The collaboration went live on November…",
-      "tags": []
-    },
-    {
-      "title": "Hot Five: GTA 6’s blockbuster launch, layoffs at Jam City, and Google Play’s Best of Play 2026 winners",
-      "link": "https://www.pocketgamer.biz/hot-five-gta-6s-blockbuster-launch-layoffs-at-jam-city-and-google-plays-best-of-play-2026-winners/",
-      "date": "2026-11-23T11:05:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142324/90337/hot-five-november-3-2026_l660.jpg",
-      "summary": "To help get you primed and ready for another week in mobile gaming, we've curated the biggest stories you need to know from the last seven days. 1) The big data behind GTA 6's…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 generates $3.79bn in day one sales to become the biggest entertainment launch in history",
-      "link": "https://www.pocketgamer.biz/gta-6-generates-379bn-in-day-one-sales-to-become-the-biggest-entertainment-launch-in-history/",
-      "date": "2026-11-23T11:00:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/142323/90336/gta6-cover-art_l660.jpg",
-      "summary": "Rockstar Games' Grand Theft Auto VI generated $3,79 billion in day one retail sales, making it the biggest entertainment launch in history, according to parent company Take-Two…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Five tips to make the most of Pocket Gamer Connects London 2027",
-      "link": "https://www.pocketgamer.biz/five-tips-to-make-the-most-of-pocket-gamer-connects-london-2027/",
-      "date": "2026-11-23T09:30:00.000Z",
-      "sourceId": "pgbiz",
-      "image": "https://media.pocketgamer.biz/images/141433/90280/pgc-ldn27-featured-whyattend-1200x600_l660.jpg",
-      "summary": "As we approach the end of the year, what might next year hold for the industry? We're kicking off 2027 with Pocket Gamer Connects London on January 18th and 19th, the UK's leading…",
-      "tags": []
-    },
-    {
-      "title": "The soft launch games you need to know about from Supercell, EA, Moon Active, Zynga, more",
-      "link": "https://mobilegamer.biz/the-soft-launch-games-you-need-to-know-about/",
-      "date": "2026-11-23T09:30:00.000Z",
-      "sourceId": "mgbiz",
-      "image": null,
-      "summary": "Take a peek at the games in testing from the mobile games industry’s top publishers.",
       "tags": []
     },
     {
