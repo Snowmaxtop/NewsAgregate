@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T20:00:00.057Z",
+  "generatedAt": "2026-11-27T02:43:54.678Z",
   "sourceStatus": {
     "ign": "ok",
     "gamedev": "stale",
@@ -22,7 +22,7 @@
       "url": "https://fr.ign.com/feed.xml",
       "items": 40,
       "newest": "2026-11-26T16:50:27.000Z",
-      "kept": 15
+      "kept": 14
     },
     "gamedev": {
       "status": "stale",
@@ -36,14 +36,14 @@
       "url": "https://www.gamesindustry.biz/feed",
       "items": 100,
       "newest": "2026-11-26T16:53:20.000Z",
-      "kept": 7
+      "kept": 5
     },
     "jv": {
       "status": "ok",
       "url": "https://www.jeuxvideo.com/rss/rss.xml",
       "items": 20,
-      "newest": "2026-11-26T18:15:08.000Z",
-      "kept": 17
+      "newest": "2026-11-26T21:20:08.000Z",
+      "kept": 16
     },
     "gameblog": {
       "status": "ok",
@@ -63,21 +63,21 @@
       "status": "ok",
       "url": "https://kotaku.com/feed",
       "items": 20,
-      "newest": "2026-11-26T19:00:19.000Z",
-      "kept": 17
+      "newest": "2026-11-26T20:00:42.000Z",
+      "kept": 10
     },
     "pcgamer": {
       "status": "ok",
       "url": "https://www.pcgamer.com/feeds.xml",
       "items": 50,
-      "newest": "2026-11-26T18:31:22.000Z",
+      "newest": "2026-11-27T01:39:07.000Z",
       "kept": 50
     },
     "polygon": {
       "status": "ok",
       "url": "https://www.polygon.com/rss/index.xml",
       "items": 10,
-      "newest": "2026-11-26T19:00:18.000Z",
+      "newest": "2026-11-26T21:50:18.000Z",
       "kept": 10
     },
     "gamefile": {
@@ -117,6 +117,152 @@
     }
   },
   "articles": [
+    {
+      "title": "Microsoft announces it's deprecating the Telnet client in Windows, giving me a sudden flashback to when I used to use Telnet",
+      "link": "https://www.pcgamer.com/software/windows/microsoft-announces-its-deprecating-the-telnet-client-in-windows-giving-me-a-sudden-flashback-to-when-i-used-to-use-telnet/",
+      "date": "2026-11-27T01:39:07.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/JGWhX4ciZicn3CD8dUR8g-1920-80.jpg",
+      "summary": "Just think what you'll be able to do with those extra 156 KB they're freeing up.",
+      "tags": []
+    },
+    {
+      "title": "Vermintide 2 mod tools get a public release, and the game's 90% off on Steam too",
+      "link": "https://www.pcgamer.com/games/fps/vermintide-2-mod-tools-get-a-public-release-and-the-games-90-percent-off-on-steam-too/",
+      "date": "2026-11-27T01:28:24.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/SubVYEY5D6vgzjDNu7QSST-1920-80.jpg",
+      "summary": "Holy Sigmar, bless this ravaged body.",
+      "tags": []
+    },
+    {
+      "title": "'Blizzard I'm looking at you': Path of Exile 2 boss criticizes 'truly terrible' game announcements that hold the juiciest details until the end",
+      "link": "https://www.pcgamer.com/games/rpg/blizzard-im-looking-at-you-path-of-exile-2-boss-criticizes-truly-terrible-game-announcements-that-hold-the-juiciest-details-until-the-end/",
+      "date": "2026-11-26T23:00:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/HMRK6xpxefVxP2MDgUaKmG-1920-80.jpg",
+      "summary": "Grinding Gear Games' Jonathan Rogers urges devs to lead with their best stuff.",
+      "tags": []
+    },
+    {
+      "title": "Dawn of War 4's campaigns differ based on your choices: 'which character you choose and what decisions you make with them lead down different experiences of an overlapping story'",
+      "link": "https://www.pcgamer.com/games/rts/dawn-of-war-4s-campaigns-differ-based-on-your-choices-which-character-you-choose-and-what-decisions-you-make-with-them-lead-down-different-experiences-of-an-overlapping-story/",
+      "date": "2026-11-26T22:30:59.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/7S4FeArt6VyoGLPMzxWzD9-1920-80.jpg",
+      "summary": "Dawn of War 4 writer John French lays out how it works.",
+      "tags": []
+    },
+    {
+      "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
+      "link": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
+      "date": "2026-11-26T22:29:06.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/fcoJMA24BgZGj8SXahRBLF-1920-80.jpg",
+      "summary": "Guess who just got yelled at?",
+      "tags": []
+    },
+    {
+      "title": "WoW: Forever min-maxers are upset that its 40-player PvP mode now actually requires PvP to win",
+      "link": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-min-maxers-are-upset-that-its-40-player-pvp-mode-now-actually-requires-pvp-to-win/",
+      "date": "2026-11-26T22:05:00.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/DRAvip4buV4DMD7biWSmJ6-1920-80.jpg",
+      "summary": "Blizzard's latest patch prevents Alterac Valley from being a glorified reputation farm.",
+      "tags": [
+        "patch"
+      ]
+    },
+    {
+      "title": "Star Trek: Voyager Officially Revisits the Series' Best Two-Parter in a Brand-New Way",
+      "link": "https://www.polygon.com/star-trek-voyager-across-the-unknown-year-of-hell-dlc-announced/",
+      "date": "2026-11-26T21:50:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2026/05/star-trek-voyager.jpg",
+      "summary": "Star Trek: Voyager - Across the Unknown strategy game officially reveals Year of Hell DLC",
+      "tags": []
+    },
+    {
+      "title": "GTA 6 : les options graphiques cachées par Rockstar sur PS5, PS5 Pro, Xbox Series X et S. Toutes les consoles ne sont pas logées à la même enseigne.",
+      "link": "https://www.jeuxvideo.com/news/2117184/gta-6-les-options-graphiques-cachees-par-rockstar-sur-ps5-ps5-pro-xbox-series-x-et-s-toutes-les-consoles-ne-sont-pas-logees-a-la-meme-enseigne.htm",
+      "date": "2026-11-26T21:20:08.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179570/1795700834-114-card.jpg",
+      "summary": "Vous trouvez GTA 6 magnifique ? Et bien sachez que ça pourrait encore (bien) mieux ! Une fuite interne issue des fichiers du jeu dévoile l'intégralité des réglages graphiques…",
+      "tags": []
+    },
+    {
+      "title": "Amazon AU Black Friday is GO! The PC Gamer team has a massive collection of unbelievable deals ready for you to hit, with more added all day long!",
+      "link": "https://www.pcgamer.com/hardware/amazon-au-black-friday-is-go-the-pc-gamer-team-has-a-massive-collection-of-unbelievable-deals-ready-for-you-to-hit-with-more-added-all-day-long/",
+      "date": "2026-11-26T21:13:09.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/MQvH6QJprwrsayUZPtMogi-1920-80.jpg",
+      "summary": "Amazon Black Friday in Australia — the deals are go and we've got the best right here",
+      "tags": []
+    },
+    {
+      "title": "Best Black Friday PC gaming deals in Australia (2026)",
+      "link": "https://www.pcgamer.com/hardware/black-friday-is-underway-and-this-is-the-place-to-be-to-score-pc-gaming-deals-that-only-happen-once-a-year/",
+      "date": "2026-11-26T21:06:49.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/EesLoPzun52tX6u22GcmHS-1920-80.jpg",
+      "summary": "You've saved, you've waited, you've anticipated, now it's time to hit those deals and get the PC gear you been hanging for",
+      "tags": []
+    },
+    {
+      "title": "GTA: Boston Would Go Wicked Hard, Kid",
+      "link": "https://www.polygon.com/gta-6-boston-massachussetts/",
+      "date": "2026-11-26T21:00:18.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/image-10.png",
+      "summary": "Grand Theft Auto 6 is a perfect Florida satire, and now I'm dying to see Rockstar's take on Massachusetts.",
+      "tags": []
+    },
+    {
+      "title": "The Sims 4 Officially Makes 13 DLCs Free for a Limited Time",
+      "link": "https://www.polygon.com/the-sims-4-free-maker-pack-holiday-giveaway-2026/",
+      "date": "2026-11-26T20:46:54.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19683316/Same_Sex_Couple_16x9.jpg",
+      "summary": "The Sims 4 is hosting a holiday giveaway that allows players to claim up to 13 free Maker Packs throughout the next eight weeks.",
+      "tags": []
+    },
+    {
+      "title": "Les jeux gratuits du PlayStation Plus en décembre : notre avis sur ces 3 titres et faut-il y jouer même si on est tous sur GTA 6 ?",
+      "link": "https://www.jeuxvideo.com/news/2117120/les-jeux-gratuits-du-playstation-plus-en-decembre-notre-avis-sur-ces-3-titres-et-faut-il-y-jouer-meme-si-on-est-tous-sur-gta-6.htm",
+      "date": "2026-11-26T20:40:07.000Z",
+      "sourceId": "jv",
+      "image": "https://image.jeuxvideo.com/medias-lg/179569/1795688489-1554-card.jpg",
+      "summary": "Décembre rime avec cadeaux, et Sony n'a pas attendu Noël pour gâter les abonnés PlayStation Plus. Les possesseurs de PS5 et de PS4 voient débarquer trois jeux dans leur…",
+      "tags": []
+    },
+    {
+      "title": "Steam isn't doing 'an official Black Friday fest,' but it does have a page with hundreds of discounts and 'Black Friday' splashed across the top so you might want to check it out anyway",
+      "link": "https://www.pcgamer.com/games/steam-isnt-doing-an-official-black-friday-fest-but-it-does-have-a-page-with-hundreds-of-discounts-and-black-friday-splashed-across-the-top-so-you-might-want-to-check-it-out-anyway/",
+      "date": "2026-11-26T20:20:02.000Z",
+      "sourceId": "pcgamer",
+      "image": "https://cdn.mos.cms.futurecdn.net/WXCauYx5iuX7NSjYhqLCE4-1920-80.jpg",
+      "summary": "Updates to Steam's 'Discounts and Events' page are now live, and Valve wants to show them off.",
+      "tags": []
+    },
+    {
+      "title": "The 12 Best Gifts For RPG Lovers In 2026",
+      "link": "https://kotaku.com/12-best-gifts-for-rpg-fans-2001000412",
+      "date": "2026-11-26T20:00:42.000Z",
+      "sourceId": "kotaku",
+      "image": "https://kotaku.com/app/uploads/2026/07/elliot1-1280x720.jpg",
+      "summary": "From games to goofs, we're here to inspire you",
+      "tags": []
+    },
+    {
+      "title": "32 Years Later, Disney's Most Notorious Cash-Grab Sequel Is Better Than You Remember",
+      "link": "https://www.polygon.com/in-defense-of-the-return-of-jafar/",
+      "date": "2026-11-26T20:00:17.000Z",
+      "sourceId": "polygon",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/vs-disney-aladdinthereturnofjafardisney-0-49.jpg",
+      "summary": "The Aladdin sequel The Return of Jafar is often derided as a bad, cheap sequel which started Disney's direct-to-video sequel trend, but I love it",
+      "tags": []
+    },
     {
       "title": "GTA 6 Is A Tragedy Because You Cannot Sit Down And Eat Spaghetti",
       "link": "https://kotaku.com/gta-6-is-a-tragedy-because-you-cannot-sit-down-and-eat-spaghetti-2001000633",
@@ -552,15 +698,6 @@
       "tags": []
     },
     {
-      "title": "Epic Games Store Officially Makes a Top Co-op Game Free for a Limited Time",
-      "link": "https://www.polygon.com/epic-games-store-free-games-11-26-2026-download/",
-      "date": "2026-11-26T16:11:23.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/polygon-graphic-free-game-sale-banner-epic-games.jpg",
-      "summary": "The Epic Games Store has a selection of free PC games that changes every week. The latest free offering will be available until Dec. 3.",
-      "tags": []
-    },
-    {
       "title": "I track gaming PC prices all year and these are my favorite high-end PC deals this Black Friday",
       "link": "https://www.pcgamer.com/hardware/gaming-pcs/i-track-gaming-pc-prices-all-year-and-these-are-my-favorite-high-end-pc-deals-this-black-friday/",
       "date": "2026-11-26T16:11:04.000Z",
@@ -585,15 +722,6 @@
       "sourceId": "pcgamer",
       "image": "https://cdn.mos.cms.futurecdn.net/oPRrJ8oDBSPTpwsNqTZvrj-1920-80.jpg",
       "summary": "Grab this striped sports car for Randy.",
-      "tags": []
-    },
-    {
-      "title": "JJ Abrams’ Sci-Fi Thriller Found-Footage Masterpiece Is Being Removed From Paramount Plus",
-      "link": "https://www.polygon.com/cloverfield-leaving-paramount-plus/",
-      "date": "2026-11-26T16:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/mcdclov_ec014-1.jpg",
-      "summary": "Matt Reeves’ found footage film Cloverfield is leaving",
       "tags": []
     },
     {
@@ -779,15 +907,6 @@
       "tags": []
     },
     {
-      "title": "The One Reason Nintendo and Rockstar Can Make Games Like Ocarina of Time and GTA 6",
-      "link": "https://www.polygon.com/gta-6-ocarina-of-time-layoffs/",
-      "date": "2026-11-26T15:00:18.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/vintage_vice_city_pack_exclusive_looks_01-1.jpg",
-      "summary": "GTA 6 and the Zelda: Ocarina of Time remake are proof of the value of retaining talent long-term",
-      "tags": []
-    },
-    {
       "title": "GTA 6 sur PC : où en sont les versions pirates ? Entre performances en hausse et riposte de Rockstar, la situation évolue vite",
       "link": "https://www.jeuxvideo.com/news/2117172/gta-6-sur-pc-ou-en-sont-les-versions-pirates-entre-performances-en-hausse-et-riposte-de-rockstar-la-situation-evolue-vite.htm",
       "date": "2026-11-26T15:00:09.000Z",
@@ -860,15 +979,6 @@
       "tags": []
     },
     {
-      "title": "Harrison Ford’s 10/10 Action Thriller Is Leaving Streaming Soon",
-      "link": "https://www.polygon.com/harrison-ford-air-force-one-leaving-peacock-november-2026/",
-      "date": "2026-11-26T14:29:46.000Z",
-      "sourceId": "polygon",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/harrison-ford-air-force-one-hiding.webp",
-      "summary": "Air Force One is leaving Peacock on Nov. 30, 2026. Here’s why Harrison Ford’s classic action thriller is worth watching.",
-      "tags": []
-    },
-    {
       "title": "GUIDE GTA 6 : le top des 20 meilleures voitures à vendre pour vous faire un max d'argent",
       "link": "https://www.gameblog.fr/jeu-video/ed/soluces/gta-6-top-meilleures-voitures-a-vendre-plus-cher-727577?utm_source=RSS",
       "date": "2026-11-26T14:27:52.000Z",
@@ -884,87 +994,6 @@
       "sourceId": "jv",
       "image": "https://image.jeuxvideo.com/medias-lg/179570/1795699894-2382-card.jpg",
       "summary": "Symbole du grand luxe britannique dans les rues de Leonida, le Buckingham Windsor Drop se décline aussi en plusieurs éditions uniques dissimulées sur la carte. Découvrez où…",
-      "tags": []
-    },
-    {
-      "title": "This 34-inch ultrawide Asus capable of 400 nits and 180 Hz is the sensible-money $250 gaming monitor I'd buy this Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-monitors/this-34-inch-ultrawide-asus-capable-of-400-nits-and-180-hz-is-the-sensible-money-usd250-gaming-monitor-id-buy-this-black-friday/",
-      "date": "2026-11-26T14:23:40.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ytg9W5TDHr96viASBxay5n-1920-80.jpg",
-      "summary": "It's a lot of monitor for the money.",
-      "tags": []
-    },
-    {
-      "title": "These budget-friendly pads are the cheapest, quickest way to instantly upgrade your setup for under $25",
-      "link": "https://www.pcgamer.com/hardware/game-pads/these-budget-friendly-pads-are-the-cheapest-quickest-way-to-instantly-upgrade-your-setup-for-under-usd25/",
-      "date": "2026-11-26T14:20:36.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/HnGQPuJEk2xU29aLtyyTSG-1920-80.jpg",
-      "summary": "Be a master controller on the cheap.",
-      "tags": []
-    },
-    {
-      "title": "This is the best price I've seen on my favorite breezy gaming headset – 50% off the Asus ROG Pelta",
-      "link": "https://www.pcgamer.com/hardware/gaming-headsets/this-is-the-best-price-ive-seen-on-my-favorite-breezy-gaming-headset-50-percent-off-the-asus-rog-pelta/",
-      "date": "2026-11-26T14:19:54.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/w8DykEfTVqT3fpaXTzJZHn-1920-80.jpg",
-      "summary": "This headset felt like a godsend in the summer heat.",
-      "tags": []
-    },
-    {
-      "title": "This 2 TB NVMe SSD is down to its lowest price since January - $0.12/GB is tough to beat over Black Friday",
-      "link": "https://www.pcgamer.com/hardware/ssds/this-legitimately-good-2-tb-nvme-ssd-is-down-to-its-lowest-price-since-january-usd0-12-gb-is-tough-to-beat-over-black-friday/",
-      "date": "2026-11-26T14:10:29.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/ZwJknmdTz5SMqSGQhGpK8S-1920-80.png",
-      "summary": "A great way to dodge the past 12 months of price hikes.",
-      "tags": []
-    },
-    {
-      "title": "This compact power bank saved my Steam Frame's battery life and it's already over $50 off for Black Friday",
-      "link": "https://www.pcgamer.com/hardware/this-compact-power-bank-saved-my-steam-frames-battery-life-and-its-already-over-usd50-off-for-black-friday/",
-      "date": "2026-11-26T14:08:37.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/Mk893xmKteuiAyf4gw4MG3-1920-80.jpg",
-      "summary": "It's even liquid-cooled, which any PC gamer is sure to appreciate.",
-      "tags": []
-    },
-    {
-      "title": "Not only is the fantastic Gamesir G7 Pro controller on sale this Black Friday, but its souped-up 8K sibling is the same price",
-      "link": "https://www.pcgamer.com/hardware/controllers/not-only-is-the-fantastic-gamesir-g7-pro-controller-on-sale-this-black-friday-but-its-souped-up-8k-older-sibling-is-the-same-price/",
-      "date": "2026-11-26T14:03:30.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/p23GQtXSsWg3veuAeRFgwG-1920-80.jpg",
-      "summary": "At that point, why not get the upgrade?",
-      "tags": []
-    },
-    {
-      "title": "If you want to get better at driving in GTA 6, this controller is the best upgrade I've made to my setup",
-      "link": "https://www.pcgamer.com/hardware/controllers/if-you-want-to-get-better-at-driving-in-gta-6-this-controller-is-the-best-upgrade-ive-made-to-my-setup/",
-      "date": "2026-11-26T14:01:58.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/8WXbHx55CHzL2yuJyBWQFg-1920-80.jpg",
-      "summary": "The Razer Wolverine V3 Pro, with its swappable stems and Hall effect sticks is peak.",
-      "tags": []
-    },
-    {
-      "title": "I could never play WoW: Forever without an MMO mouse, and this Razer Naga squeaker is now 43% off for Black Friday",
-      "link": "https://www.pcgamer.com/hardware/gaming-mice/i-could-never-play-wow-forever-without-an-mmo-mouse-and-this-razer-naga-squeaker-is-now-43-off-for-black-friday/",
-      "date": "2026-11-26T13:59:19.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/rjyPWQ7vfFJnhkFz3jxG4c-1920-80.jpg",
-      "summary": "Yes, you do need an MMO mouse, even with a two-button rotation.",
-      "tags": []
-    },
-    {
-      "title": "8BitDo’s NES-themed gaming mouse was my go-to for almost a year and is 24% off this Black Friday - just $38",
-      "link": "https://www.pcgamer.com/hardware/gaming-mice/8bitdos-nes-themed-gaming-mouse-was-my-go-to-for-almost-a-year-and-is-24-percent-off-this-black-friday-just-usd38/",
-      "date": "2026-11-26T13:54:55.000Z",
-      "sourceId": "pcgamer",
-      "image": "https://cdn.mos.cms.futurecdn.net/eLwwH3uiArk34X8LjHqJEE-1920-80.jpg",
-      "summary": "Less than $40 for 8K, a charging dock, and a sweet look is pretty rare.",
       "tags": []
     },
     {
@@ -1289,15 +1318,6 @@
       "tags": []
     },
     {
-      "title": "Depuis 30 ans, on se trompe à propos de PlayStation : d'après le père de la PS1, Ken Kutaragi, le création de la marque n'a rien d'une vengeance face à Nintendo",
-      "link": "https://www.jeuxvideo.com/news/2116881/depuis-30-ans-on-se-trompe-a-propos-de-playstation-d-apres-le-pere-de-la-ps1-ken-kutaragi-le-creation-de-la-marque-n-a-rien-d-une-vengeance-face-a-nintendo.htm",
-      "date": "2026-11-26T09:30:08.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179562/1795617119-3117-card.jpg",
-      "summary": "C'est l'une des anecdotes les plus célèbres de l'histoire du jeu vidéo, de celles que l'on se plaît à raconter tant elles ressemblent à un scénario de cinéma. Seulement voilà…",
-      "tags": []
-    },
-    {
       "title": "New event: Co-Dev Summit joins PG Connects London",
       "link": "https://www.pocketgamer.biz/new-event-co-dev-summit-joins-pg-connects-london/",
       "date": "2026-11-26T09:30:00.000Z",
@@ -1370,15 +1390,6 @@
       "tags": []
     },
     {
-      "title": "Jeu culte de la Nintendo 64, Banjo-Kazooie pourrait revenir d’après cet indice. Mais pourquoi ce jeu était si bon ?",
-      "link": "https://www.jeuxvideo.com/news/2116903/jeu-culte-de-la-nintendo-64-banjo-kazooie-pourrait-revenir-d-apres-cet-indice-mais-pourquoi-ce-jeu-etait-si-bon.htm",
-      "date": "2026-11-26T07:40:07.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179562/1795620663-3451-card.jpg",
-      "summary": "Nous vous en parlions il y a quelques jours : l’arrivée de Rare chez Activision pourrait signifier le retour de licences cultes. Une offre publiée sur LinkedIn, aujourd’hui…",
-      "tags": []
-    },
-    {
       "title": "Chez Ubisoft, tout projet présenté en interne doit expliquer comment il utilisera l'IA générative",
       "link": "https://www.gamekult.com/actualite/chez-ubisoft-tout-projet-presente-en-interne-doit-expliquer-comment-il-utilisera-l-ia-generative-3050873191.html",
       "date": "2026-11-26T07:16:00.000Z",
@@ -1394,17 +1405,6 @@
       "sourceId": "gamekult",
       "image": "https://cdn.gamekult.com/optim/images/news/30/3050873145/gta-6-realisme-psychopathie-et-consequences-d-ou-vient-le-plaisir-331e1154__800_800__1237-0-2621-1383.jpg",
       "summary": "La sortie de GTA 6 aura été un sacré festival en termes de réception, mais surtout en termes d’attentes et c’est justement ces dernières que j’ai trouvées parfois un peu…",
-      "tags": [
-        "release"
-      ]
-    },
-    {
-      "title": "Maux de tête et nausées en jouant à GTA 6 : les réglages qui marchent pour les personnes touchées par le motion sickness",
-      "link": "https://www.jeuxvideo.com/news/2116808/maux-de-tete-et-nausees-en-jouant-a-gta-6-les-reglages-qui-marchent-pour-les-personnes-touchees-par-le-motion-sickness.htm",
-      "date": "2026-11-26T06:05:06.000Z",
-      "sourceId": "jv",
-      "image": "https://image.jeuxvideo.com/medias-lg/179560/1795603293-860-card.jpg",
-      "summary": "Après treize ans d'attente, la sortie de Grand Theft Auto VI provoque chez certains joueurs un effet secondaire inattendu : maux de tête, vertiges et nausées. On vous explique les…",
       "tags": [
         "release"
       ]
@@ -1428,111 +1428,12 @@
       "tags": []
     },
     {
-      "title": "Denny’s Posts Statement Celebrating Jensen Huang’s Return As Nvidia CEO: ‘Some Things You Just Don’t Take Off The Menu’",
-      "link": "https://kotaku.com/dennys-posts-statement-celebrating-jensen-huangs-return-as-nvidia-ceo-some-things-you-just-dont-take-off-the-menu-2001000521",
-      "date": "2026-11-26T00:03:24.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/jensenhuang-1-1280x720.jpg",
-      "summary": "The temporarily fired Nvidia boss previously worked at the diner chain",
-      "tags": []
-    },
-    {
-      "title": "Mike Tomlin Lives His Best Life In Minecraft While The Steelers Implode",
-      "link": "https://kotaku.com/mike-tomlin-lives-his-best-life-in-minecraft-while-the-steelers-implode-2001000512",
-      "date": "2026-11-25T22:55:05.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/minecraft-steelers-1280x668.jpg",
-      "summary": "The ex-NFL coach is enjoying his retirement as fans debate if he'd ever come back",
-      "tags": []
-    },
-    {
-      "title": "With Grand Theft Auto 6, The Series Has Outgrown Some Of Its Joke Brand Names",
-      "link": "https://kotaku.com/with-grand-theft-auto-6-the-series-has-outgrown-some-of-its-joke-brand-names-2001000507",
-      "date": "2026-11-25T22:54:04.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/gta-6-brands-1280x720.jpg",
-      "summary": "The mature storytelling is at odds with dumb product names like Zombix",
-      "tags": []
-    },
-    {
       "title": "Ubisoft lawyers defend CEO’s Skull & Bones boasts as ‘puffery’",
       "link": "https://www.gamefile.news/p/skull-and-bones-lawsuit",
       "date": "2026-11-25T22:11:24.000Z",
       "sourceId": "gamefile",
       "image": "https://substackcdn.com/image/fetch/$s_!vMeH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f3891f1-a10e-4cd2-8628-f3de14b36e67_1920x1080.jpeg",
       "summary": "PLUS: What to make of a GTA VI sales forecast that came in low",
-      "tags": []
-    },
-    {
-      "title": "US Forest Service Releases Bigfoot Reports That Read Like Something Out Of Control",
-      "link": "https://kotaku.com/us-forest-service-releases-bigfoot-reports-that-read-like-something-out-of-control-2001000476",
-      "date": "2026-11-25T22:08:39.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/bigfoot-files-1280x720.jpg",
-      "summary": "'In later conversations we found out that we all had a very uneasy feeling and could feel chills running up and down our backs'",
-      "tags": []
-    },
-    {
-      "title": "Jason’s Got Two Apples",
-      "link": "https://kotaku.com/grand-theft-auto-6-gta-6-apples-hungry-eating-jason-mandy-2001000489",
-      "date": "2026-11-25T21:45:29.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/apples-1280x720.jpg",
-      "summary": "An apple a day keeps the cops away in Grand Theft Auto 6",
-      "tags": []
-    },
-    {
-      "title": "Le directeur de l'animation de GTA 6 explique comment Rockstar a fait trois animations pour chaque interaction",
-      "link": "https://fr.ign.com/grand-theft-auto-6/94277/le-directeur-de-lanimation-de-gta-6-explique-comment-rockstar-a-fait-trois-animations-pour-chaque-in",
-      "date": "2026-11-25T21:37:37.000Z",
-      "sourceId": "ign",
-      "image": "https://sm.ign.com/ign_fr/news/g/gta-6-anim/gta-6-animation-director-reveals-rockstar-made-3-animations_gtth.jpg",
-      "summary": "Un verre dans chaque main. Mike Jones, directeur de l’animation de gameplay pour GTA 6, a révélé que l’équipe de Rockstar avait créé trois animations distinctes pour chaque…",
-      "tags": []
-    },
-    {
-      "title": "Here Are Some Video Game Conversation Starters That Aren&#8217;t About GTA 6",
-      "link": "https://kotaku.com/heres-some-video-game-conversation-starters-thats-not-about-gta-6-2001000451",
-      "date": "2026-11-25T21:07:26.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GettyImages-2241830880-1280x549.jpg",
-      "summary": "How to win friends and influence your Thanksgiving gaming discussion",
-      "tags": []
-    },
-    {
-      "title": "Marathon&#8217;s Trailers Are Still The Best",
-      "link": "https://kotaku.com/marathons-trailers-are-still-the-best-2001000455",
-      "date": "2026-11-25T21:00:22.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/Marathon_Symbiosis_Bishop_Art_NOTEXT-1280x720.jpg",
-      "summary": "Bungie is still churning out killer cinematics",
-      "tags": []
-    },
-    {
-      "title": "EA Sports FC 27 adds AI-recreated voice of late commentator John Motson",
-      "link": "https://www.gamesindustry.biz/ea-sports-fc-27-adds-ai-recreated-voice-of-late-commentator-john-motson",
-      "date": "2026-11-25T20:48:20.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/Screenshot-2026-11-25-at-20.38.28.png?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Electronic Arts is bringing back the voice of the late football commentator John Motson in EA Sports FC 27, recreated using a combination of archive recordings and generative AI.",
-      "tags": []
-    },
-    {
-      "title": "Ubisoft denies report that staff must justify not using generative AI in pitches",
-      "link": "https://www.gamesindustry.biz/ubisoft-staff-must-justify-not-using-generative-ai-in-pitches-report-claims",
-      "date": "2026-11-25T20:19:40.000Z",
-      "sourceId": "gibiz",
-      "image": "https://assetsio.gnwcdn.com/new_ubisoft_logo.webp?width=690&quality=85&format=jpg&auto=webp",
-      "summary": "Update, November 26, 2026: Ubisoft has issued a response to reports that teams are reportedly being asked to explain why they would or wouldn't use generative AI when pitching…",
-      "tags": []
-    },
-    {
-      "title": "GTA 6 Boss Reveals How That Very Surprising Cameo Happened And What It Means For The Character",
-      "link": "https://kotaku.com/gta-6-boss-reveals-how-that-very-surprising-cameo-happened-and-what-it-means-for-the-character-2000758616",
-      "date": "2026-11-25T20:00:22.000Z",
-      "sourceId": "kotaku",
-      "image": "https://kotaku.com/app/uploads/2026/11/GTa-6-cameo-blur-1280x720.jpg",
-      "summary": "A certain someone from the franchise's past makes a fun, brief, and important appearance near the end of GTA 6",
       "tags": []
     },
     {
